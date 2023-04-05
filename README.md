@@ -1,2 +1,2 @@
 # Web-of-Clint
-web of public health intelligence data tooling
+publiC heaLth INtelligence daTa tooling
