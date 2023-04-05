@@ -1,5 +1,5 @@
 # Web-of-Clint
-publi**C** hea**L**th **IN**telligence da**T**a tooling
+web of publi**C** hea**L**th **IN**telligence da**T**a tooling
 
 this repo is meant to add all documention, scripts, pieces of code which we will publically make available after the WHO project has ended
 
