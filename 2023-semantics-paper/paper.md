@@ -24,9 +24,9 @@ Overall, the Web of Data is being used in various fields to enable more efficien
 
 
 # references
-[[1] Data - W3C](https://www.w3.org/standards/semanticweb/data)
+1. [Data - W3C](https://www.w3.org/standards/semanticweb/data)
 The Semantic Web is a Web of Data — of dates and titles and part numbers and chemical properties and any other data one might conceive of. The collection of Semantic Web technologies (RDF, OWL, SKOS, SPARQL, etc.) provides an environment where application can query that data, draw inferences using vocabularies, etc.
-[[2] W3C Data Activity - Building the Web of Data](https://www.w3.org/2013/data/)
+2. [W3C Data Activity - Building the Web of Data](https://www.w3.org/2013/data/)
 Linked Data is about the use of URIs as names for things, the ability to dereference these URIs to get further information and to include links to other data. There are ever increasing sources of Linked Open Data on the Web, as well as data services that are restricted to the suppliers and consumers of those services.
-[[3] What is Web of Data | IGI Global](https://www.igi-global.com/dictionary/e-commerce-and-the-web-of-data/53537)
+3. [What is Web of Data | IGI Global](https://www.igi-global.com/dictionary/e-commerce-and-the-web-of-data/53537)
 What is Web of Data 1. The Web of Data is made of structured data read by agents that relate structured data located in servers through the existence of links – this data is also called Linked Data since it is data connected through links. The data that exists in the Web of Data is called meta data . Learn more in: E-Commerce and the Web of Data
