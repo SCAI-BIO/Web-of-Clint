@@ -1,0 +1,4445 @@
+{
+  "took": 2,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "eios-items_2023-01",
+        "_type": "_doc",
+        "_id": "401862973",
+        "_score": 1,
+        "_source": {
+          "entityType": "item",
+          "id": 401862973,
+          "title": "Nova York aprova compostagem com restos humanos",
+          "translatedTitle": "New York approves composting with human remains",
+          "link": "https://www.bncnoticias.com.br/noticia/11780//nova-york-aprova-compostagem-com-restos-humanos.html",
+          "description": "É o mais recente Estado americano a aprovar a prática — considerada mais verde do que cremação ou enterro tradicional. Empresas de compostagem dos EUA, como a Recompose, dizem que a prática é uma opção sustentável após a morte BBC Nova York se tornou o mais recente Estado dos EUA a autorizar a chamada compostagem humana.",
+          "translatedDescription": "Is the most recent us state to adopt the practice be greener than cremação or working. Composting of us companies, such as Recompose, say that the practice is a sustainable option after the death BBC new York became the most recent state to authorise the so-called composting.",
+          "pubDate": "2023-01-02T15:40:00Z",
+          "language": "Portuguese",
+          "languageCode": "pt",
+          "source": {
+            "entityType": "source",
+            "id": 12515,
+            "name": "bncnoticias ",
+            "optimaSourceId": "bncnoticias",
+            "country": "Brazil",
+            "countryIso": "br",
+            "subject": "General News",
+            "url": "https://www.bncnoticias.com.br/",
+            "languageCode": "pt",
+            "languageFull": "pt:",
+            "countryFull": "br:Brazil",
+            "sourceTags": [
+              {
+                "name": "italy",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-10-29T17:54:21.9360254Z",
+                "userId": 1656,
+                "userName": "marilia.lavocat@saude.gov.br",
+                "organisationId": 14
+              },
+              {
+                "name": "korea",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:06.8188343Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:30.3234477Z",
+                "userId": 1743,
+                "userName": "lakkrs@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:44:32.8235847Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "test",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-12-15T19:07:19.4365080Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "ministerios",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2020-08-10T13:17:12.8995703Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "moh",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2020-08-10T13:26:57.9802747Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "spain",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2021-11-07T12:38:03.8382190Z",
+                "userId": 1342,
+                "userName": "ciobanus@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "côte d'ivoire",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-12T02:27:31.1357091Z",
+                "userId": 3590,
+                "userName": "bacoul75@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "fever",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-17T18:08:40.5005209Z",
+                "userId": 3648,
+                "userName": "romkward26@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "brazil",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-08T12:41:52.4055145Z",
+                "userId": 3526,
+                "userName": "gcfigueira@gmail.com",
+                "organisationId": 19
+              },
+              {
+                "name": "morocco",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-15T15:00:31.3302085Z",
+                "userId": 1551,
+                "userName": "ghanemh@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "not reviewed",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-03-11T09:02:02.2430438Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "for testing",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-23T01:39:11.2585294Z",
+                "userId": 4185,
+                "userName": "cmchae@korea.kr",
+                "organisationId": 22
+              },
+              {
+                "name": "who",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-31T12:37:15.9844535Z",
+                "userId": 4138,
+                "userName": "raquelmedialdeacarrera@gmail.com",
+                "organisationId": 70
+              },
+              {
+                "name": "officialwho",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-12-04T13:04:38.5260616Z",
+                "userId": 5339,
+                "userName": "uo.koshalko@gmail.com",
+                "organisationId": 70
+              }
+            ],
+            "category": "National",
+            "region": "South America",
+            "type": "webnews",
+            "period": "hourly",
+            "version": 1574165704739,
+            "state": "active",
+            "lastUpdateDate": "2019-11-19T12:15:04.7390000Z",
+            "frequency": 1,
+            "continentCode": "SA",
+            "whoRegionCode": "AMR"
+          },
+          "fullText": "É o mais recente Estado americano a aprovar a prática — considerada mais verde do que cremação ou enterro tradicional. Empresas de compostagem dos EUA, como a Recompose, dizem que a prática é uma opção sustentável após a morte BBC Nova York se tornou o mais recente Estado dos EUA a autorizar a chamada compostagem humana. As pessoas agora podem ter seu corpo transformado em composto orgânico para adubo — o que é visto como uma alternativa sustentável ao enterro ou à cremação. Também conhecida como \"redução orgânica natural\", a prática consiste em deixar o corpo se decompor ao longo de várias semanas dentro de um compartimento fechado. LEIA TAMBÉM: A empresa americana que defende ‘compostagem humana’ como alternativa ‘verde’ a enterro ou cremação Compostagem ajuda a aproveitar resíduos orgânicos Startup de Teresina transforma lixo orgânico em fertilizante natural através da compostagem; conheça iniciativa Em 2019, Washington foi o primeiro Estado dos EUA a legalizar o procedimento. Colorado, Oregon, Vermont e Califórnia seguiram o exemplo. Nova York é, portanto, a sexta jurisdição americana a permitir a compostagem humana, após a governadora do Estado, a democrata Kathy Hochul, sancionar a legislação no último sábado (31/12). O procedimento é realizado em instalações especiais acima do solo. O corpo é colocado dentro de um compartimento fechado com matéria-orgânica selecionada, como lascas de madeira, alfafa e palha de capim, e gradualmente se decompõe sob a ação de micróbios. Após um período de cerca de um mês — e um processo de aquecimento para eliminar qualquer contaminação —, os entes queridos recebem o solo resultante. O composto pode ser usado no plantio de flores, hortaliças ou árvores. Uma empresa americana, chamada Recompose, afirma que seu serviço pode economizar uma tonelada de carbono em comparação com uma cremação ou um enterro tradicional. As emissões de dióxido de carbono são um dos principais fatores que contribuem para a mudança climática, porque retêm o calor da Terra em um fenômeno conhecido como efeito estufa. Os enterros tradicionais, que envolvem um caixão, também consomem madeira, terra e outros recursos naturais. Os defensores da compostagem humana afirmam que não só é uma opção mais sustentável, como também mais prática em cidades onde o terreno destinado a cemitérios é limitado. A aprovação do procedimento por Nova York foi \"um grande passo para a morte verde acessível a nível nacional\", declarou um provedor do serviço em Washington, chamado Return Home, ao jornal New York Post. Mas, para algumas pessoas, há questões éticas sobre o que acontece com o solo resultante da compostagem. Composto pode ser usado no plantio de flores, hortaliças ou árvores BBC Bispos católicos do Estado de Nova York se opuseram à legislação, argumentando que os corpos humanos não deveriam ser tratados como \"lixo doméstico\". Preocupações também foram levantadas em relação ao custo da compostagem. Mas a empresa Recompose — cuja unidade em Seattle é uma das primeiras do mundo — afirma que sua taxa de US$ 7 mil (cerca de R$ 36,5 mil) é \"comparável\" à taxa das opções concorrentes. A média de preço de um funeral com enterro nos EUA foi de US$ 7.848 em 2021; e US$ 6.971 com cremação, de acordo com a Associação Nacional de Diretores de Funerais (NFDA, na sigla em inglês). A compostagem humana já é legalizada em toda a Suécia. E enterros naturais — nos quais o corpo é enterrado sem caixão ou com um caixão biodegradável — são permitidos no Reino Unido. VÍDEO SOBRE COMPOSTAGEM Compostagem ajuda a aproveitar resíduos orgânicos",
+          "translatedText": "",
+          "tags": [
+            "l:Vaccinationrisks",
+            "f:7:Vaccines",
+            "f:7:Test",
+            "l:ImplantRisks",
+            "l:Carbon",
+            "l:OutBreaks",
+            "l:Contamination",
+            "l:TransplantRisks",
+            "l:PAHO",
+            "l:EURO"
+          ],
+          "affectedCountries": [
+            "SE:Sweden",
+            "US:United States of America"
+          ],
+          "affectedCountriesIso": [
+            "SE",
+            "US"
+          ],
+          "rssItemId": "bncnoticias-629efc1c401cc1f327f41ee2985a7dab",
+          "childIds": [],
+          "triggers": [
+            {
+              "key": "l:ImplantRisks",
+              "values": [
+                "morte"
+              ]
+            },
+            {
+              "key": "l:Carbon",
+              "values": [
+                "carbono"
+              ]
+            },
+            {
+              "key": "l:OutBreaks",
+              "values": [
+                "morte",
+                "resultante"
+              ]
+            },
+            {
+              "key": "l:Vaccinationrisks",
+              "values": [
+                "morte"
+              ]
+            },
+            {
+              "key": "l:Contamination",
+              "values": [
+                "morte"
+              ]
+            },
+            {
+              "key": "l:TransplantRisks",
+              "values": [
+                "morte"
+              ]
+            },
+            {
+              "key": "SE:Sweden",
+              "values": [
+                "Suécia"
+              ]
+            },
+            {
+              "key": "l:EURO",
+              "values": [
+                "Suécia"
+              ]
+            }
+          ],
+          "processedOnDate": "2023-01-02T15:43:13.6737136Z",
+          "locations": [
+            {
+              "geoData": {
+                "lat": 40.71427,
+                "lon": -74.00597
+              },
+              "iso2": "US",
+              "whoRegionCode": "AMR",
+              "continentCode": "NA",
+              "areas": [
+                "New York",
+                "Empire State",
+                "United States of America"
+              ],
+              "emmAreaId": 20922615,
+              "emmScore": 0,
+              "hasMaxEmmScore": true,
+              "area": {
+                "id": "geonames_5128638",
+                "areaType": [
+                  "A",
+                  "ADM1"
+                ],
+                "areaIds": [
+                  "geonames_5128638",
+                  "geonames_6252001"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_6252001",
+                  "idLevel1": "geonames_5128638",
+                  "idLevel2": "geonames_5128638",
+                  "idLevel3": "geonames_5128638",
+                  "idLevel4": "geonames_5128638",
+                  "idLevel5": "geonames_5128638"
+                },
+                "fullName": [
+                  "New York",
+                  "United States"
+                ],
+                "level": 1
+              },
+              "trigger": "Nova York"
+            },
+            {
+              "geoData": {
+                "lat": 39.98694,
+                "lon": -95.14498
+              },
+              "iso2": "US",
+              "whoRegionCode": "AMR",
+              "continentCode": "NA",
+              "areas": [
+                "Oregon",
+                "Holt",
+                "Missouri",
+                "United States of America"
+              ],
+              "emmAreaId": 189013239,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_5055521",
+                "areaType": [
+                  "A",
+                  "ADM2"
+                ],
+                "areaIds": [
+                  "geonames_5055521",
+                  "geonames_4398678",
+                  "geonames_6252001"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_6252001",
+                  "idLevel1": "geonames_4398678",
+                  "idLevel2": "geonames_5055521",
+                  "idLevel3": "geonames_5055521",
+                  "idLevel4": "geonames_5055521",
+                  "idLevel5": "geonames_5055521"
+                },
+                "fullName": [
+                  "Holt",
+                  "Missouri",
+                  "United States"
+                ],
+                "level": 2
+              },
+              "trigger": "Oregon"
+            },
+            {
+              "geoData": {
+                "lat": 47.60621,
+                "lon": -122.33207
+              },
+              "iso2": "US",
+              "whoRegionCode": "AMR",
+              "continentCode": "NA",
+              "areas": [
+                "Seattle",
+                "King",
+                "Evergreen State",
+                "United States of America"
+              ],
+              "emmAreaId": 2099580663,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_5799783",
+                "areaType": [
+                  "A",
+                  "ADM2"
+                ],
+                "areaIds": [
+                  "geonames_5799783",
+                  "geonames_5815135",
+                  "geonames_6252001"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_6252001",
+                  "idLevel1": "geonames_5815135",
+                  "idLevel2": "geonames_5799783",
+                  "idLevel3": "geonames_5799783",
+                  "idLevel4": "geonames_5799783",
+                  "idLevel5": "geonames_5799783"
+                },
+                "fullName": [
+                  "King",
+                  "Washington",
+                  "United States"
+                ],
+                "level": 2
+              },
+              "trigger": "Seattle"
+            },
+            {
+              "geoData": {
+                "lat": 59.32938,
+                "lon": 18.06871
+              },
+              "iso2": "SE",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Kingdom of Sweden"
+              ],
+              "emmAreaId": 224,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "trigger": "Suécia"
+            },
+            {
+              "geoData": {
+                "lat": 51.50853,
+                "lon": -0.12574
+              },
+              "iso2": "GB",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Britain"
+              ],
+              "emmAreaId": 244,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "trigger": "Reino Unido"
+            },
+            {
+              "geoData": {
+                "lat": 38.89511,
+                "lon": -77.03637
+              },
+              "iso2": "US",
+              "whoRegionCode": "AMR",
+              "continentCode": "NA",
+              "areas": [
+                "Washington",
+                "Washington",
+                "District of Columbia",
+                "United States of America"
+              ],
+              "emmAreaId": 16846071,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_11789030",
+                "areaType": [
+                  "A",
+                  "ADM3"
+                ],
+                "areaIds": [
+                  "geonames_11789030",
+                  "geonames_4140987",
+                  "geonames_4138106",
+                  "geonames_6252001"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_6252001",
+                  "idLevel1": "geonames_4138106",
+                  "idLevel2": "geonames_4140987",
+                  "idLevel3": "geonames_11789030",
+                  "idLevel4": "geonames_11789030",
+                  "idLevel5": "geonames_11789030"
+                },
+                "fullName": [
+                  "City of Washington",
+                  "Washington",
+                  "Washington, D.C.",
+                  "United States"
+                ],
+                "level": 3
+              },
+              "trigger": "Washington"
+            }
+          ],
+          "whoRegionCodes": [
+            "EUR",
+            "AMR"
+          ],
+          "continentCodes": [
+            "EU",
+            "NA"
+          ],
+          "mentionedPeople": {
+            "names": [
+              "LEIA TAMBÉM",
+              "Kathy Hochul"
+            ],
+            "entityIds": [
+              2061692,
+              1437998
+            ],
+            "occurrences": [
+              {
+                "id": 2061692,
+                "name": "LEIA TAMBÉM",
+                "type": "p",
+                "subType": "PER",
+                "trigger": "LEIA TAMBÉM",
+                "count": 1,
+                "positions": [
+                  691
+                ]
+              },
+              {
+                "id": 1437998,
+                "name": "Kathy Hochul",
+                "type": "p",
+                "subType": "PER",
+                "trigger": "Kathy Hochul",
+                "count": 1,
+                "positions": [
+                  1230
+                ]
+              }
+            ]
+          },
+          "mentionedOrganisations": {
+            "names": [
+              "BBC",
+              "New York Post"
+            ],
+            "entityIds": [
+              12648,
+              177979
+            ],
+            "occurrences": [
+              {
+                "id": 12648,
+                "name": "BBC",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "BBC",
+                "count": 2,
+                "positions": [
+                  276,
+                  2770
+                ]
+              },
+              {
+                "id": 177979,
+                "name": "New York Post",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "New York Post",
+                "count": 1,
+                "positions": [
+                  2582
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "_index": "eios-items_2023-01",
+        "_type": "_doc",
+        "_id": "401863008",
+        "_score": 1,
+        "_source": {
+          "entityType": "item",
+          "id": 401863008,
+          "title": "Los espectadores ven menos televisión: el consumo cae a su cifra más baja en tres décadas",
+          "translatedTitle": "Viewers see less television: consumption falls to its lowest in three decades",
+          "link": "https://www.burgosconecta.es/culturas/tv/espectadores-television-consumo-20230102145136-ntrc.html",
+          "description": "Los españoles cada vez pasan menos tiempo delante de la televisión tradicional. Con la vuelta a la normalidad, y tras el fin de la época más dura de la pandemia, que sirvió para reactivar momentáneamente un consumo televisivo que iba en decadencia, la audiencia opta por otro tipo de contenidos alternativos al que ofrecen las cadenas tradicionales.",
+          "translatedDescription": "The spanish each time spend less time in front of the traditional television. With the return to normality, and after the end of the time most of the pandemic, which served to revive momentarily a television consumption that was in decline, the hearing opting for another type of content that offer alternative to traditional chains.",
+          "pubDate": "2023-01-02T15:40:00Z",
+          "language": "Spanish; Castilian",
+          "languageCode": "es",
+          "source": {
+            "entityType": "source",
+            "id": 10672,
+            "name": "burgosconecta",
+            "optimaSourceId": "burgosconecta",
+            "country": "Spain",
+            "countryIso": "es",
+            "subject": "European News",
+            "url": "https://www.burgosconecta.es/",
+            "languageCode": "es",
+            "languageFull": "es:",
+            "countryFull": "es:Spain",
+            "sourceTags": [
+              {
+                "name": "italy",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-10-29T17:54:21.9360254Z",
+                "userId": 1656,
+                "userName": "marilia.lavocat@saude.gov.br",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:06.8188343Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:30.3234477Z",
+                "userId": 1743,
+                "userName": "lakkrs@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:44:32.8235847Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "test",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-12-15T19:07:19.4365080Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "ministerios",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2020-08-10T13:17:12.8995703Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "moh",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2020-08-10T13:26:57.9802747Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "spain",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2021-11-07T12:38:03.8382190Z",
+                "userId": 1342,
+                "userName": "ciobanus@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "côte d'ivoire",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-12T02:27:31.1357091Z",
+                "userId": 3590,
+                "userName": "bacoul75@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "fever",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-17T18:08:40.5005209Z",
+                "userId": 3648,
+                "userName": "romkward26@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "brazil",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-08T12:41:52.4055145Z",
+                "userId": 3526,
+                "userName": "gcfigueira@gmail.com",
+                "organisationId": 19
+              },
+              {
+                "name": "morocco",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-15T15:00:31.3302085Z",
+                "userId": 1551,
+                "userName": "ghanemh@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "not reviewed",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-03-11T09:02:02.2430438Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "for testing",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-23T01:39:11.2585294Z",
+                "userId": 4185,
+                "userName": "cmchae@korea.kr",
+                "organisationId": 22
+              },
+              {
+                "name": "who",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-31T12:37:15.9844535Z",
+                "userId": 4138,
+                "userName": "raquelmedialdeacarrera@gmail.com",
+                "organisationId": 70
+              },
+              {
+                "name": "officialwho",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-12-04T13:04:38.5260616Z",
+                "userId": 5339,
+                "userName": "uo.koshalko@gmail.com",
+                "organisationId": 70
+              }
+            ],
+            "category": "National",
+            "region": "European Union",
+            "type": "webnews",
+            "period": "daily",
+            "version": 1571229921425,
+            "state": "active",
+            "lastUpdateDate": "2019-10-16T12:45:21.4250000Z",
+            "frequency": 2,
+            "continentCode": "EU",
+            "whoRegionCode": "EUR"
+          },
+          "fullText": "Los españoles cada vez pasan menos tiempo delante de la televisión tradicional. Con la vuelta a la normalidad, y tras el fin de la época más dura de la pandemia, que sirvió para reactivar momentáneamente un consumo televisivo que iba en decadencia, la audiencia opta por otro tipo de contenidos alternativos al que ofrecen las cadenas tradicionales. Así, los espectadores vieron en 2022 hasta 183 minutos de media, lo que supone la cifra más baja desde 1992, cuando el promedio se situaba en 192', según datos del informe anual de GECA. La serie histórica desde que se miden datos recoge que el consumo cae por debajo de los 200 minutos, una situación que tan sólo ocurrió una vez anterior hace justamente treinta años. En el 2020, durante el confinamiento, se disparó hasta 233'. Dos años después, todos los públicos ven menos televisión que antes, sin excepción de la edad. Destaca el 'target' de los mayores de 65 años, el que más tiempo ha reducido su tiempo frente al televisor (-31'). Entre los más jóvenes, los números son más alarmantes y continúan en decadencia: de 13 a 24 años sólo ven 67 minutos al día, mientras que la franja infantil cae a 73'. Por sexos, las mujeres (198') dedican más horas a la pequeña pantalla que los hombres (168'). Asimismo, otro informe de la consultora Dos30', basado en los datos de Kantar, apunta a que Navarra (164'), Comunidad de Madrid (167') y Cataluña (169') son las regiones donde menos televisión se ha visto en 2022. Por el contrario, La Rioja (224'), Castilla-La Mancha (213') y Asturias (211') son los territorios donde más se consume.\n\nPor otra parte, Antena 3 se ha consolidado como la cadena más vista del país al promediar un 13,9% de cuota de pantalla, lo que supone una ligera subida de una décima respecto al año anterior. La de Atresmedia, no obstante, ha logrado liderar los doce meses de 2022, afianzando así la primera posición frente al 'annus horribilis' de Telecinco, que ha bajado en 2,6 puntos su media de 'share' (12,3%). Es la peor marca anual del principal canal de Mediaset desde sus inicios en 1990, siendo el último mes de diciembre el peor de su historia al caer a la tercera posición (10,7%), por detrás de La 1 (12,7%) y Antena 3 (13,5%). En este contexto, la primera cadena de TVE ha impulsado ligeramente sus números en 2022 al subir tres décimas hasta el 9,1% de cuota, gracias, en parte, al último mes del año, en el que La 1 vio disparada sus audiencias gracias al Mundial de Fútbol en Qatar. Así, La Sexta pierde tres décimas (6,1%) y Cuatro marca su peor dato (5,1%) desde el nacimiento de sus emisiones en 2005. La 2, en cambio, subió hasta el 3% de 'share'. Por comunidades autónomas, Antena 3 gana en la gran mayoría, excepto en Asturias, Euskadi, Navarra, Madrid y Canarias, donde vence Telecinco; o La Rioja y Cantabria, en las que lidera La 1. En Cataluña, la autonómica TV3 es la favorita de la población. El canal de Atresmedia, además, es líder en las franjas de sobremesa (16,2%) y 'prime time' (15,1%) gracias a formatos como 'La ruleta de la suerte', 'Pasapalabra' o 'El Hormiguero'. Telecinco domina la mañana (14,1%) con 'El programa de Ana Rosa' y el 'late night' (13,8%). El conjunto de las televisiones de pago lideran los fines de semana en 2022. Respecto a los informativos, los de Antena 3 arrasan frente a la competencia con una media del 19,3% y más de 2,1 millones de espectadores, siendo la edición presentada y dirigida por Vicente Vallés la más seguida (20,2% y 2.467.000 seguidores), frente a 'Informativos Telecinco' (12,5% y 1.415.000) y los 'Telediarios' de La 1 de TVE (10,4% y 1.196.000). La emisión más vista de 2022 corresponde a los penaltis entre Marruecos y España de octavos de final en el Mundial de Catar, con 12.6 millones de espectadores y un 70% de 'share'. Además, las votaciones del último Festival de Eurovisión (61,3% y 7.942.000), que llevó a Chanel a la tercera posición, es el programa no deportivo más seguido del año.",
+          "translatedText": "",
+          "tags": [
+            "l:Gathering",
+            "f:58:Mass Gathering",
+            "f:58:All Iraq Categories",
+            "l:EMRO",
+            "l:EURO"
+          ],
+          "affectedCountries": [
+            "ES:Spain",
+            "MA:Morocco",
+            "QA:Qatar"
+          ],
+          "affectedCountriesIso": [
+            "ES",
+            "MA",
+            "QA"
+          ],
+          "rssItemId": "burgosconecta-46f0b162341780f4b2075635490579e4",
+          "duplicateId": "laverdad-46f0b162341780f4b2075635490579e4",
+          "parentId": "laverdad-46f0b162341780f4b2075635490579e4",
+          "triggers": [
+            {
+              "key": "l:CanaryIslands",
+              "values": [
+                "Canarias"
+              ]
+            },
+            {
+              "key": "l:Gathering",
+              "values": [
+                "Festival"
+              ]
+            },
+            {
+              "key": "MA:Morocco",
+              "values": [
+                "Marruecos"
+              ]
+            },
+            {
+              "key": "QA:Qatar",
+              "values": [
+                "Qatar",
+                "Catar"
+              ]
+            },
+            {
+              "key": "ES:Spain",
+              "values": [
+                "La Rioja",
+                "Cataluña",
+                "Euskadi",
+                "Madrid",
+                "España",
+                "Cantabria",
+                "media",
+                "Navarra",
+                "Asturias"
+              ]
+            },
+            {
+              "key": "l:EMRO",
+              "values": [
+                "Marruecos"
+              ]
+            },
+            {
+              "key": "l:EURO",
+              "values": [
+                "La Rioja",
+                "Cataluña",
+                "Euskadi",
+                "Madrid",
+                "España",
+                "Cantabria",
+                "media",
+                "Navarra",
+                "Asturias"
+              ]
+            }
+          ],
+          "processedOnDate": "2023-01-02T15:43:13.7086354Z",
+          "locations": [
+            {
+              "geoData": {
+                "lat": 40.4165,
+                "lon": -3.70256
+              },
+              "iso2": "ES",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Madrid",
+                "Madrid",
+                "Autonomous Region of Madrid",
+                "Kingdom of Spain"
+              ],
+              "emmAreaId": 33626330,
+              "emmScore": 0,
+              "hasMaxEmmScore": true,
+              "area": {
+                "id": "geonames_6359304",
+                "areaType": [
+                  "A",
+                  "ADM3"
+                ],
+                "areaIds": [
+                  "geonames_6359304",
+                  "geonames_6355233",
+                  "geonames_3117732",
+                  "geonames_2510769"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_2510769",
+                  "idLevel1": "geonames_3117732",
+                  "idLevel2": "geonames_6355233",
+                  "idLevel3": "geonames_6359304",
+                  "idLevel4": "geonames_6359304",
+                  "idLevel5": "geonames_6359304"
+                },
+                "fullName": [
+                  "Madrid",
+                  "Madrid",
+                  "Madrid",
+                  "Spain"
+                ],
+                "level": 3
+              },
+              "trigger": "Madrid"
+            },
+            {
+              "geoData": {
+                "lat": 34.01325,
+                "lon": -6.83255
+              },
+              "iso2": "MA",
+              "whoRegionCode": "EMR",
+              "continentCode": "AF",
+              "areas": [
+                "Kingdom of Morocco"
+              ],
+              "emmAreaId": 159,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "trigger": "Marruecos"
+            },
+            {
+              "geoData": {
+                "lat": 25.28545,
+                "lon": 51.53096
+              },
+              "iso2": "QA",
+              "whoRegionCode": "EMR",
+              "continentCode": "AS",
+              "areas": [
+                "Qatar"
+              ],
+              "emmAreaId": 191,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "trigger": "Qatar"
+            }
+          ],
+          "whoRegionCodes": [
+            "EUR",
+            "EMR"
+          ],
+          "continentCodes": [
+            "EU",
+            "AF",
+            "AS"
+          ],
+          "mentionedPeople": {
+            "names": [
+              "Ana Rosa",
+              "Vicente Valles"
+            ],
+            "entityIds": [
+              161444,
+              306378
+            ],
+            "occurrences": [
+              {
+                "id": 161444,
+                "name": "Ana Rosa",
+                "type": "p",
+                "subType": "PER",
+                "trigger": "Ana Rosa",
+                "count": 1,
+                "positions": [
+                  3226
+                ]
+              },
+              {
+                "id": 306378,
+                "name": "Vicente Valles",
+                "type": "p",
+                "subType": "PER",
+                "trigger": "Vicente Vallés",
+                "count": 1,
+                "positions": [
+                  3524
+                ]
+              }
+            ]
+          },
+          "mentionedOrganisations": {
+            "names": [
+              "Mediaset"
+            ],
+            "entityIds": [
+              293970
+            ],
+            "occurrences": [
+              {
+                "id": 293970,
+                "name": "Mediaset",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "Mediaset",
+                "count": 1,
+                "positions": [
+                  2128
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "_index": "eios-items_2023-01",
+        "_type": "_doc",
+        "_id": "401863009",
+        "_score": 1,
+        "_source": {
+          "entityType": "item",
+          "id": 401863009,
+          "title": "Más de 60 militares rusos muertos en un ataque ucraniano en Donetsk",
+          "translatedTitle": "Over 60 russian military deaths in an attack in Donetsk ukrainian",
+          "link": "https://www.burgosconecta.es/internacional/europa/militares-rusos-muertos-20230102151928-ntrc.html",
+          "description": "El nuevo año comienza en Ucrania con más bombardeos. En esta ocasión, el Gobierno de Rusia ha confirmado este lunes la muerte de más de 60 militares en un ataque ejecutado por el Ejército de Kiev con un sistema de cohetes de artillería de alta movilidad (HIMARS) contra una localidad en la zona de la....",
+          "translatedDescription": "The new year begins in ukraine with more bombing. On this occasion, the government of russia has confirmed this Monday the death of more than 60 soldiers in an attack carried out by the army in Kiev with a system of high mobility artillery rockets (HIMARS) against a village in the area of the....",
+          "pubDate": "2023-01-02T15:40:00Z",
+          "language": "Spanish; Castilian",
+          "languageCode": "es",
+          "source": {
+            "entityType": "source",
+            "id": 10672,
+            "name": "burgosconecta",
+            "optimaSourceId": "burgosconecta",
+            "country": "Spain",
+            "countryIso": "es",
+            "subject": "European News",
+            "url": "https://www.burgosconecta.es/",
+            "languageCode": "es",
+            "languageFull": "es:",
+            "countryFull": "es:Spain",
+            "sourceTags": [
+              {
+                "name": "italy",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-10-29T17:54:21.9360254Z",
+                "userId": 1656,
+                "userName": "marilia.lavocat@saude.gov.br",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:06.8188343Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:30.3234477Z",
+                "userId": 1743,
+                "userName": "lakkrs@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:44:32.8235847Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "test",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-12-15T19:07:19.4365080Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "ministerios",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2020-08-10T13:17:12.8995703Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "moh",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2020-08-10T13:26:57.9802747Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "spain",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2021-11-07T12:38:03.8382190Z",
+                "userId": 1342,
+                "userName": "ciobanus@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "côte d'ivoire",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-12T02:27:31.1357091Z",
+                "userId": 3590,
+                "userName": "bacoul75@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "fever",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-17T18:08:40.5005209Z",
+                "userId": 3648,
+                "userName": "romkward26@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "brazil",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-08T12:41:52.4055145Z",
+                "userId": 3526,
+                "userName": "gcfigueira@gmail.com",
+                "organisationId": 19
+              },
+              {
+                "name": "morocco",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-15T15:00:31.3302085Z",
+                "userId": 1551,
+                "userName": "ghanemh@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "not reviewed",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-03-11T09:02:02.2430438Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "for testing",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-23T01:39:11.2585294Z",
+                "userId": 4185,
+                "userName": "cmchae@korea.kr",
+                "organisationId": 22
+              },
+              {
+                "name": "who",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-31T12:37:15.9844535Z",
+                "userId": 4138,
+                "userName": "raquelmedialdeacarrera@gmail.com",
+                "organisationId": 70
+              },
+              {
+                "name": "officialwho",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-12-04T13:04:38.5260616Z",
+                "userId": 5339,
+                "userName": "uo.koshalko@gmail.com",
+                "organisationId": 70
+              }
+            ],
+            "category": "National",
+            "region": "European Union",
+            "type": "webnews",
+            "period": "daily",
+            "version": 1571229921425,
+            "state": "active",
+            "lastUpdateDate": "2019-10-16T12:45:21.4250000Z",
+            "frequency": 2,
+            "continentCode": "EU",
+            "whoRegionCode": "EUR"
+          },
+          "fullText": "El nuevo año comienza en Ucrania con más bombardeos. En esta ocasión, el Gobierno de Rusia ha confirmado este lunes la muerte de más de 60 militares en un ataque ejecutado por el Ejército de Kiev con un sistema de cohetes de artillería de alta movilidad (HIMARS) contra una localidad en la zona de la región este de la Donetsk controlada por los prorrusos. La ofensiva, por la que han perecido 63 soldados, según el Ministerio de Defensa ruso, ha alcanzado un punto de despliegue temporal en la localidad de Makivka. «Se dará toda la asistencia y apoyo a los familiares y amigos de los militares muertos», señala el departamento. Asimismo, el Centro Conjunto de Control y Coordinación de Asuntos Relacionados con Crímenes de Guerra de Ucrania (JCCC) ha apuntado en su cuenta en Telegram que las Fuerzas Armadas de Ucrania han realizado varios ataques con artillería contra la ciudad de Donetsk, sin que por ahora haya informaciones sobre víctimas. Donetsk es, junto con Lugansk, el epicentro de un conflicto desde 2014, que se extendió a nivel nacional tras la orden del presidente de Rusia, Vladimir Putin, de lanzar una ofensiva militar contra Ucrania. Putin anunció en septiembre la anexión de Donetsk, Lugansk, Jersón y Zaporiyia, todas ellas ocupadas parcialmente en el marco de la invasión.",
+          "translatedText": "",
+          "tags": [
+            "l:Death",
+            "f:18:Outcomes",
+            "f:18:All JRC Categories",
+            "f:31:Outcomes",
+            "f:31:All UNODC Categories",
+            "l:EURO"
+          ],
+          "affectedCountries": [
+            "RU:Russian Fed.",
+            "UA:Ukraine"
+          ],
+          "affectedCountriesIso": [
+            "RU",
+            "UA"
+          ],
+          "rssItemId": "burgosconecta-0e92de2433b9a5ccf362c5f6c9751f2a",
+          "duplicateId": "DiarioVasco-0e92de2433b9a5ccf362c5f6c9751f2a",
+          "parentId": "DiarioVasco-0e92de2433b9a5ccf362c5f6c9751f2a",
+          "triggers": [
+            {
+              "key": "l:Death",
+              "values": [
+                "muertos",
+                "muerte"
+              ]
+            },
+            {
+              "key": "UA:Ukraine",
+              "values": [
+                "Donetsk",
+                "Ucrania",
+                "Kiev"
+              ]
+            },
+            {
+              "key": "RU:Russian Fed.",
+              "values": [
+                "Rusia"
+              ]
+            },
+            {
+              "key": "l:EURO",
+              "values": [
+                "Rusia"
+              ]
+            }
+          ],
+          "processedOnDate": "2023-01-02T15:43:13.9435693Z",
+          "locations": [
+            {
+              "geoData": {
+                "lat": 48.023,
+                "lon": 37.80224
+              },
+              "iso2": "UA",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Donetsk",
+                "Donetsk",
+                "Ukraine"
+              ],
+              "emmAreaId": 1308694770,
+              "emmScore": 0,
+              "hasMaxEmmScore": true,
+              "area": {
+                "id": "geonames_709716",
+                "areaType": [
+                  "A",
+                  "ADM1"
+                ],
+                "areaIds": [
+                  "geonames_709716",
+                  "geonames_690791"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_690791",
+                  "idLevel1": "geonames_709716",
+                  "idLevel2": "geonames_709716",
+                  "idLevel3": "geonames_709716",
+                  "idLevel4": "geonames_709716",
+                  "idLevel5": "geonames_709716"
+                },
+                "fullName": [
+                  "Donets’ka Oblast’",
+                  "Ukraine"
+                ],
+                "level": 1
+              },
+              "trigger": "Donetsk"
+            },
+            {
+              "geoData": {
+                "lat": 55.75222,
+                "lon": 37.61556
+              },
+              "iso2": "RU",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Russia"
+              ],
+              "emmAreaId": 194,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "trigger": "Rusia"
+            },
+            {
+              "geoData": {
+                "lat": 46.63695,
+                "lon": 32.61458
+              },
+              "iso2": "UA",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Kherson",
+                "Kherson Raion",
+                "Kherson Oblast",
+                "Ukraine"
+              ],
+              "emmAreaId": 18092274,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_706442",
+                "areaType": [
+                  "A",
+                  "ADM1"
+                ],
+                "areaIds": [
+                  "geonames_706442",
+                  "geonames_690791"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_690791",
+                  "idLevel1": "geonames_706442",
+                  "idLevel2": "geonames_706442",
+                  "idLevel3": "geonames_706442",
+                  "idLevel4": "geonames_706442",
+                  "idLevel5": "geonames_706442"
+                },
+                "fullName": [
+                  "Khersons’ka Oblast’",
+                  "Ukraine"
+                ],
+                "level": 1
+              },
+              "trigger": "Jersón"
+            },
+            {
+              "geoData": {
+                "lat": 47.85167,
+                "lon": 35.11714
+              },
+              "iso2": "UA",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Alexandrovsk",
+                "Zaporizhzhya Raion",
+                "Zaporizhzhya Oblast",
+                "Ukraine"
+              ],
+              "emmAreaId": 16987378,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "trigger": "Zaporiyia"
+            },
+            {
+              "geoData": {
+                "lat": 50.45466,
+                "lon": 30.5238
+              },
+              "iso2": "UA",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Kiev",
+                "Kyiv City",
+                "Ukraine"
+              ],
+              "emmAreaId": 17512690,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "trigger": "Kiev"
+            }
+          ],
+          "whoRegionCodes": [
+            "EUR"
+          ],
+          "continentCodes": [
+            "EU"
+          ],
+          "mentionedPeople": {
+            "names": [
+              "Vladimir Putin"
+            ],
+            "entityIds": [
+              24
+            ],
+            "occurrences": [
+              {
+                "id": 24,
+                "name": "Vladimir Putin",
+                "type": "p",
+                "subType": "PER",
+                "trigger": "Vladimir Putin",
+                "count": 1,
+                "positions": [
+                  1161
+                ]
+              }
+            ]
+          },
+          "mentionedOrganisations": {
+            "names": [
+              "Ministerio de Defensa"
+            ],
+            "entityIds": [
+              212558
+            ],
+            "occurrences": [
+              {
+                "id": 212558,
+                "name": "Ministerio de Defensa",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "Ministerio de Defensa",
+                "count": 1,
+                "positions": [
+                  485
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "_index": "eios-items_2023-01",
+        "_type": "_doc",
+        "_id": "401863010",
+        "_score": 1,
+        "_source": {
+          "entityType": "item",
+          "id": 401863010,
+          "title": "Una multitud silenciosa para despedir al papa emérito",
+          "translatedTitle": "A crowd silent to sack the pope emérito",
+          "link": "https://unionradio.net/una-multitud-silenciosa-para-despedir-al-papa-emerito/",
+          "description": "CIUDAD DEL VATICANO.- Una fila interminable de fieles atravesó hoy la basílica de San Pedro para despedir al papa emérito Benedicto XVI, procesionando ante su cuerpo en medio de un silencio reverencial y el ritmo sin pausa de una antigua letanía. Los restos de Ratzinger, fallecido el sábado con 95....",
+          "translatedDescription": "Vatican city. - a row of endless faithful experienced today st peter’s basilica to dismiss the emérito Pope Benedict XVI, procesionando before his body in the middle of a silence reverencial and pace without break of an old litany. The remains of Ratzinger, who died on Saturday with 95....",
+          "pubDate": "2023-01-02T15:41:00Z",
+          "language": "Spanish; Castilian",
+          "languageCode": "es",
+          "source": {
+            "entityType": "source",
+            "id": 2105,
+            "name": "VEN Unión Radio",
+            "optimaSourceId": "unionradio",
+            "language": "Spanish; Castilian",
+            "country": "Venezuela",
+            "countryIso": "ve",
+            "subject": "General News",
+            "url": "http://unionradio.net/",
+            "languageCode": "es",
+            "languageFull": "es:Spanish; Castilian",
+            "countryFull": "ve:Venezuela",
+            "sourceTags": [
+              {
+                "name": "animalhealth",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-01-23T13:03:56.1552508Z",
+                "userId": 1443,
+                "userName": "eios_user@gmail.com",
+                "organisationId": 8
+              },
+              {
+                "name": "tagjulie",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-01-23T13:13:49.7910204Z",
+                "userId": 1443,
+                "userName": "eios_user@gmail.com",
+                "organisationId": 8
+              },
+              {
+                "name": "italy",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-10-29T17:54:21.9360254Z",
+                "userId": 1656,
+                "userName": "marilia.lavocat@saude.gov.br",
+                "organisationId": 14
+              },
+              {
+                "name": "korea",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:06.8188343Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:30.3234477Z",
+                "userId": 1743,
+                "userName": "lakkrs@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:44:32.8235847Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "test",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-12-15T19:07:19.4365080Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "ministerios",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2020-08-10T13:17:12.8995703Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "moh",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2020-08-10T13:26:57.9802747Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "spain",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2021-11-07T12:38:03.8382190Z",
+                "userId": 1342,
+                "userName": "ciobanus@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "côte d'ivoire",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-12T02:27:31.1357091Z",
+                "userId": 3590,
+                "userName": "bacoul75@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "fever",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-17T18:08:40.5005209Z",
+                "userId": 3648,
+                "userName": "romkward26@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "brazil",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-08T12:41:52.4055145Z",
+                "userId": 3526,
+                "userName": "gcfigueira@gmail.com",
+                "organisationId": 19
+              },
+              {
+                "name": "morocco",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-15T15:00:31.3302085Z",
+                "userId": 1551,
+                "userName": "ghanemh@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "not reviewed",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-03-11T09:02:02.2430438Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "for testing",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-23T01:39:11.2585294Z",
+                "userId": 4185,
+                "userName": "cmchae@korea.kr",
+                "organisationId": 22
+              },
+              {
+                "name": "who",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-31T12:37:15.9844535Z",
+                "userId": 4138,
+                "userName": "raquelmedialdeacarrera@gmail.com",
+                "organisationId": 70
+              },
+              {
+                "name": "officialwho",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-12-04T13:04:38.5260616Z",
+                "userId": 5339,
+                "userName": "uo.koshalko@gmail.com",
+                "organisationId": 70
+              }
+            ],
+            "category": "National",
+            "region": "South America",
+            "type": "webnews",
+            "period": "hourly",
+            "version": 1571230052798,
+            "state": "active",
+            "lastUpdateDate": "2019-10-16T12:47:32.7980000Z",
+            "frequency": 1,
+            "continentCode": "SA",
+            "whoRegionCode": "AMR"
+          },
+          "fullText": "CIUDAD DEL VATICANO.- Una fila interminable de fieles atravesó hoy la basílica de San Pedro para despedir al papa emérito Benedicto XVI, procesionando ante su cuerpo en medio de un silencio reverencial y el ritmo sin pausa de una antigua letanía. Los restos de Ratzinger, fallecido el sábado con 95 años, serán expuestos hasta el miércoles sobre un catafalco de tela dorada a los pies del Altar de la Confesión y del baldaquino de Bernini, sobre el lugar en el que según la tradición fue sepultado San Pedro. La capilla ardiente recibió la visita de miles de personas -se esperan unas 35.000 diarias- y la fila daba incluso la vuelta a la plaza vaticana, donde aún de noche se congregaron cientos de fieles a la espera de que el templo abriera sus puertas. Se trata de hombres y mujeres, laicos y religiosos, y numerosos turistas que no quisieron perder la oportunidad de despedir a este papa discreto y docto que sorprendió al mundo en 2013 al renunciar a su alto ministerio, el primero en hacerlo en seis siglos. EFE.",
+          "translatedText": "",
+          "tags": [
+            "l:Death",
+            "f:18:Outcomes",
+            "f:18:All JRC Categories",
+            "f:31:Outcomes",
+            "f:31:All UNODC Categories"
+          ],
+          "affectedCountries": [
+            "VA:Holy See"
+          ],
+          "affectedCountriesIso": [
+            "VA"
+          ],
+          "rssItemId": "unionradio-614381cd89a25f7ca477d45a6c38a2f8",
+          "duplicateId": "infobae-4233239fdd0d1dbb03eecad868b82bcd",
+          "parentId": "infobae-4233239fdd0d1dbb03eecad868b82bcd",
+          "triggers": [
+            {
+              "key": "l:Death",
+              "values": [
+                "fallecido"
+              ]
+            },
+            {
+              "key": "VA:Holy See",
+              "values": [
+                "VATICANO"
+              ]
+            }
+          ],
+          "processedOnDate": "2023-01-02T15:43:14.0855354Z",
+          "locations": [
+            {
+              "geoData": {
+                "lat": 41.90225,
+                "lon": 12.4533
+              },
+              "iso2": "VA",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Holy See"
+              ],
+              "emmAreaId": 102,
+              "emmScore": 0,
+              "hasMaxEmmScore": true,
+              "trigger": "VATICANO"
+            },
+            {
+              "geoData": {
+                "lat": 17.91598,
+                "lon": -87.9659
+              },
+              "iso2": "BZ",
+              "whoRegionCode": "AMR",
+              "continentCode": "NA",
+              "areas": [
+                "Belize City",
+                "Belize District",
+                "Belize"
+              ],
+              "emmAreaId": 16908822,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_3582676",
+                "areaType": [
+                  "A",
+                  "ADM1"
+                ],
+                "areaIds": [
+                  "geonames_3582676",
+                  "geonames_3582678"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_3582678",
+                  "idLevel1": "geonames_3582676",
+                  "idLevel2": "geonames_3582676",
+                  "idLevel3": "geonames_3582676",
+                  "idLevel4": "geonames_3582676",
+                  "idLevel5": "geonames_3582676"
+                },
+                "fullName": [
+                  "Belize District",
+                  "Belize"
+                ],
+                "level": 1
+              },
+              "trigger": "San Pedro"
+            }
+          ],
+          "whoRegionCodes": [
+            "EUR"
+          ],
+          "continentCodes": [
+            "EU"
+          ],
+          "mentionedPeople": {
+            "names": [
+              "Pope Benedict XVI"
+            ],
+            "entityIds": [
+              143198
+            ],
+            "occurrences": [
+              {
+                "id": 143198,
+                "name": "Pope Benedict XVI",
+                "type": "p",
+                "subType": "PER",
+                "trigger": "Benedicto XVI",
+                "count": 1,
+                "positions": [
+                  177
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "_index": "eios-items_2023-01",
+        "_type": "_doc",
+        "_id": "401863018",
+        "_score": 1,
+        "_source": {
+          "entityType": "item",
+          "id": 401863018,
+          "title": "Nach zehnmonatiger Verhandlung: Urteil im Prozess um Mord an Maryam. H in Sicht",
+          "translatedTitle": "After ten month sodium negotiation: judgment in the process to murder of Maryam. H in sight",
+          "link": "https://www.tagesspiegel.de/berlin/nach-zehnmonatiger-verhandlung-urteil-im-prozess-um-mord-an-maryam-h-in-sicht-9115525.html",
+          "description": "Im Prozess um den gewaltsamen Tod einer Afghanin gegen zwei Brüder des 34-jährigen Opfers ist nach Planungen des Berliner Landgerichts ein Urteil in Sicht. Für den 9. Januar sind nach derzeitigem Stand die Plädoyers von Staatsanwaltschaft, Nebenklage und Verteidigung vorgesehen. Ein Urteil könnte dann am 19.",
+          "translatedDescription": "In the process the violent death of an afghan woman against two brothers of the 34 - year - old victim is in accordance with plans of the berlin landgericht a judgment in sight. For the 9. January are at present the pleas of public prosecutor, in addition to action and defence. A judgment could then be on 19.",
+          "pubDate": "2023-01-02T15:40:00Z",
+          "language": "German",
+          "languageCode": "de",
+          "source": {
+            "entityType": "source",
+            "id": 236,
+            "name": "Der tagesspiegel",
+            "optimaSourceId": "Tagespiegel",
+            "language": "German",
+            "country": "Germany",
+            "countryIso": "de",
+            "subject": "General News",
+            "url": "http://www.tagesspiegel.de",
+            "languageCode": "de",
+            "languageFull": "de:German",
+            "countryFull": "de:Germany",
+            "sourceTags": [
+              {
+                "name": "animalhealth",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-01-23T13:03:56.1552508Z",
+                "userId": 1443,
+                "userName": "eios_user@gmail.com",
+                "organisationId": 8
+              },
+              {
+                "name": "tagjulie",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-01-23T13:13:49.7910204Z",
+                "userId": 1443,
+                "userName": "eios_user@gmail.com",
+                "organisationId": 8
+              },
+              {
+                "name": "italy",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-10-29T17:54:21.9360254Z",
+                "userId": 1656,
+                "userName": "marilia.lavocat@saude.gov.br",
+                "organisationId": 14
+              },
+              {
+                "name": "korea",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:06.8188343Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:30.3234477Z",
+                "userId": 1743,
+                "userName": "lakkrs@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:44:32.8235847Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "test",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-12-15T19:07:19.4365080Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "ministerios",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2020-08-10T13:17:12.8995703Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "moh",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2020-08-10T13:26:57.9802747Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "spain",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2021-11-07T12:38:03.8382190Z",
+                "userId": 1342,
+                "userName": "ciobanus@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "côte d'ivoire",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-12T02:27:31.1357091Z",
+                "userId": 3590,
+                "userName": "bacoul75@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "fever",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-17T18:08:40.5005209Z",
+                "userId": 3648,
+                "userName": "romkward26@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "brazil",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-08T12:41:52.4055145Z",
+                "userId": 3526,
+                "userName": "gcfigueira@gmail.com",
+                "organisationId": 19
+              },
+              {
+                "name": "morocco",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-15T15:00:31.3302085Z",
+                "userId": 1551,
+                "userName": "ghanemh@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "not reviewed",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-03-11T09:02:02.2430438Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "for testing",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-23T01:39:11.2585294Z",
+                "userId": 4185,
+                "userName": "cmchae@korea.kr",
+                "organisationId": 22
+              },
+              {
+                "name": "who",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-31T12:37:15.9844535Z",
+                "userId": 4138,
+                "userName": "raquelmedialdeacarrera@gmail.com",
+                "organisationId": 70
+              },
+              {
+                "name": "officialwho",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-12-04T13:04:38.5260616Z",
+                "userId": 5339,
+                "userName": "uo.koshalko@gmail.com",
+                "organisationId": 70
+              }
+            ],
+            "category": "National",
+            "region": "European Union",
+            "type": "webnews",
+            "period": "daily",
+            "version": 1571230030555,
+            "state": "active",
+            "lastUpdateDate": "2019-10-16T12:47:10.5550000Z",
+            "frequency": 8,
+            "continentCode": "EU",
+            "whoRegionCode": "EUR"
+          },
+          "fullText": "Im Prozess um den gewaltsamen Tod einer Afghanin gegen zwei Brüder des 34-jährigen Opfers ist nach Planungen des Berliner Landgerichts ein Urteil in Sicht. Für den 9. Januar sind nach derzeitigem Stand die Plädoyers von Staatsanwaltschaft, Nebenklage und Verteidigung vorgesehen. Ein Urteil könnte dann am 19. Januar verkündet werden, teilte der Vorsitzende Richter am Montag nach zehnmonatiger Verhandlung mit. Allerdings ist noch offen, ob sich vor Beginn der Plädoyers der ältere Angeklagte ergänzend äußern wird.\n\nDie beiden 27 und 23 Jahre alten Brüder sollen ihre Schwester am 13. Juli 2021 ermordet haben, weil sich die zweifache Mutter Moralvorstellungen der afghanischen Familie nicht unterworfen und zudem nach ihrer Scheidung eine Liebesbeziehung geführt habe. Die Leiche sollen die Brüder den Erkenntnissen zufolge in einem Rollkoffer vom Bahnhof Berlin-Südkreuz per ICE nach Bayern gebracht haben. Rund drei Wochen später wurde die Tote in einem Erdloch in der Nähe des bayrischen Wohnortes des 27-Jährigen entdeckt. Der ältere Angeklagte hatte nach rund sechsmonatigem Prozess sein Schweigen gebrochen und in einer verlesenen Erklärung eine angebliche Spontantat geschildert. Es sei zu einem heftigen Streit um Geld für ihre Familie in der Heimat gekommen, hieß es darin. Er habe seine Schwester nicht töten wollen. Sein mitangeklagter Bruder sei nicht anwesend gewesen. Den 23-Jährigen habe er dann gezwungen, ihm bei der Verschleierung der Tat zu helfen, so der 27-Jährige. Mehr zu Femiziden bei Tagesspiegel Plus\n\nDie Anwälte des 23-Jährigen beantragten am nunmehr 38. Prozesstag erneut die Freilassung ihres Mandanten. Es gebe keine Anhaltspunkte für eine Täterschaft des 23-Jährigen, erklärten sie. Die beiden Verteidiger waren bereits vor rund drei Monaten mit einem Antrag auf Aufhebung des Haftbefehls gescheitert. Über den neuen Antrag hat das Gericht noch nicht entschieden. \n\nDer Fall hatte eine Debatte um die gescheiterte Integration von Flüchtlingen ausgelöst. Die Frau und die Brüder waren vor einigen Jahren aus Afghanistan nach Deutschland gekommen. Von ihrem afghanischen Mann hatte sie sich 2018 scheiden lassen. Der Prozess wird am 9. Januar fortgesetzt. (dpa)",
+          "translatedText": "",
+          "tags": [
+            "l:Death",
+            "f:18:Outcomes",
+            "f:18:All JRC Categories",
+            "f:31:Outcomes",
+            "f:31:All UNODC Categories",
+            "l:EMRO",
+            "l:EURO"
+          ],
+          "affectedCountries": [
+            "AF:Afghanistan",
+            "DE:Germany"
+          ],
+          "affectedCountriesIso": [
+            "AF",
+            "DE"
+          ],
+          "emmMisInfo": {
+            "label": "reliable",
+            "confidenceScore": 0.0002
+          },
+          "rssItemId": "Tagespiegel-efa6a489d5574a21471bc32d32d82212",
+          "duplicateId": "abendzeitung-muenchen-bc58c82dd30169722a4543867c9fb9d6",
+          "parentId": "abendzeitung-muenchen-bc58c82dd30169722a4543867c9fb9d6",
+          "triggers": [
+            {
+              "key": "l:Death",
+              "values": [
+                "Tod"
+              ]
+            },
+            {
+              "key": "AF:Afghanistan",
+              "values": [
+                "Afghanistan"
+              ]
+            },
+            {
+              "key": "DE:Germany",
+              "values": [
+                "Berliner",
+                "Berlin-Südkreuz",
+                "Deutschland"
+              ]
+            },
+            {
+              "key": "l:EMRO",
+              "values": [
+                "Afghanistan"
+              ]
+            },
+            {
+              "key": "l:EURO",
+              "values": [
+                "Berliner",
+                "Berlin-Südkreuz",
+                "Deutschland"
+              ]
+            }
+          ],
+          "processedOnDate": "2023-01-02T15:43:14.2855300Z",
+          "locations": [
+            {
+              "geoData": {
+                "lat": 49,
+                "lon": 11.5
+              },
+              "iso2": "DE",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Bavaria",
+                "Federal Republic of Germany"
+              ],
+              "emmAreaId": 6230,
+              "emmScore": 0,
+              "hasMaxEmmScore": true,
+              "area": {
+                "id": "geonames_2951839",
+                "areaType": [
+                  "A",
+                  "ADM1"
+                ],
+                "areaIds": [
+                  "geonames_2951839",
+                  "geonames_2921044"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_2921044",
+                  "idLevel1": "geonames_2951839",
+                  "idLevel2": "geonames_2951839",
+                  "idLevel3": "geonames_2951839",
+                  "idLevel4": "geonames_2951839",
+                  "idLevel5": "geonames_2951839"
+                },
+                "fullName": [
+                  "Bavaria",
+                  "Germany"
+                ],
+                "level": 1
+              },
+              "trigger": "Bayern"
+            },
+            {
+              "geoData": {
+                "lat": 34.52813,
+                "lon": 69.17233
+              },
+              "iso2": "AF",
+              "whoRegionCode": "EMR",
+              "continentCode": "AS",
+              "areas": [
+                "Afghanistan"
+              ],
+              "emmAreaId": 1,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "trigger": "Afghanistan"
+            }
+          ],
+          "whoRegionCodes": [
+            "EMR",
+            "EUR"
+          ],
+          "continentCodes": [
+            "AS",
+            "EU"
+          ]
+        }
+      },
+      {
+        "_index": "eios-items_2023-01",
+        "_type": "_doc",
+        "_id": "401863354",
+        "_score": 1,
+        "_source": {
+          "entityType": "item",
+          "id": 401863354,
+          "title": "PSG coach, Galtier confirms Messi’s return, makes demand",
+          "translatedTitle": "",
+          "link": "https://dailypost.ng/2023/01/02/psg-coach-galtier-confirms-messis-return-makes-demand/",
+          "description": "Paris Saint-Germain head coach, Christophe Galtier, has confirmed that superstar player, Lionel Messi, will return to training on Tuesday, January 3. Galtier also urged PSG fans to remember what Messi has done since the start of the season with the team now that the Argentina captain has achieved....",
+          "translatedDescription": "",
+          "pubDate": "2023-01-02T15:49:00Z",
+          "language": "English",
+          "languageCode": "en",
+          "source": {
+            "entityType": "source",
+            "id": 2288,
+            "name": "DailyPost Nigeria",
+            "optimaSourceId": "dailypost",
+            "language": "English",
+            "country": "Nigeria",
+            "countryIso": "ng",
+            "subject": "General News",
+            "url": "http://dailypost.ng/",
+            "languageCode": "en",
+            "languageFull": "en:English",
+            "countryFull": "ng:Nigeria",
+            "sourceTags": [
+              {
+                "name": "animalhealth",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-01-23T13:03:56.1552508Z",
+                "userId": 1443,
+                "userName": "eios_user@gmail.com",
+                "organisationId": 8
+              },
+              {
+                "name": "tagjulie",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-01-23T13:13:49.7910204Z",
+                "userId": 1443,
+                "userName": "eios_user@gmail.com",
+                "organisationId": 8
+              },
+              {
+                "name": "italy",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-10-29T17:54:21.9360254Z",
+                "userId": 1656,
+                "userName": "marilia.lavocat@saude.gov.br",
+                "organisationId": 14
+              },
+              {
+                "name": "korea",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:06.8188343Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:30.3234477Z",
+                "userId": 1743,
+                "userName": "lakkrs@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:44:32.8235847Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "test",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-12-15T19:07:19.4365080Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "ministerios",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2020-08-10T13:17:12.8995703Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "moh",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2020-08-10T13:26:57.9802747Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "spain",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2021-11-07T12:38:03.8382190Z",
+                "userId": 1342,
+                "userName": "ciobanus@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "côte d'ivoire",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-12T02:27:31.1357091Z",
+                "userId": 3590,
+                "userName": "bacoul75@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "fever",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-17T18:08:40.5005209Z",
+                "userId": 3648,
+                "userName": "romkward26@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "brazil",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-08T12:41:52.4055145Z",
+                "userId": 3526,
+                "userName": "gcfigueira@gmail.com",
+                "organisationId": 19
+              },
+              {
+                "name": "morocco",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-15T15:00:31.3302085Z",
+                "userId": 1551,
+                "userName": "ghanemh@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "not reviewed",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-03-11T09:02:02.2430438Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "afrique",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-03-12T08:42:23.5742938Z",
+                "userId": 1789,
+                "userName": "milee@who.int",
+                "organisationId": 65
+              },
+              {
+                "name": "for testing",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-23T01:39:11.2585294Z",
+                "userId": 4185,
+                "userName": "cmchae@korea.kr",
+                "organisationId": 22
+              },
+              {
+                "name": "who",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-31T12:37:15.9844535Z",
+                "userId": 4138,
+                "userName": "raquelmedialdeacarrera@gmail.com",
+                "organisationId": 70
+              },
+              {
+                "name": "officialwho",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-12-04T13:04:38.5260616Z",
+                "userId": 5339,
+                "userName": "uo.koshalko@gmail.com",
+                "organisationId": 70
+              }
+            ],
+            "category": "National",
+            "region": "Africa",
+            "type": "webnews",
+            "period": "daily",
+            "version": 1571229927727,
+            "state": "active",
+            "lastUpdateDate": "2019-10-16T12:45:27.7270000Z",
+            "frequency": 8,
+            "continentCode": "AF",
+            "whoRegionCode": "AFR"
+          },
+          "fullText": "Paris Saint-Germain head coach, Christophe Galtier, has confirmed that superstar player, Lionel Messi, will return to training on Tuesday, January 3. Galtier also urged PSG fans to remember what Messi has done since the start of the season with the team now that the Argentina captain has achieved his incredible goal of winning the FIFA World Cup trophy. Messi is set to get a rousing welcome in France after winning the FIFA World Cup with Argentina’s national team last December.\n\nThe former Barcelona captain, who has been on vacation since winning the 2022 World Cup in Qatar, is getting ready to head to the Parc des Princes and will be with PSG this week. Speaking about Messi, Galtier told the media after PSG’s 3-1 defeat to Lens in the Ligue 1 tie on Sunday: “We will be very happy to welcome him. Leo [Lionel Messi] will surely join us on January 3, so in 48 hours. “Obviously he’ll be well received at home. At the reception at the stadium, I have no doubts about the fact that he will be well received at the Parc des Princes. “He won the most beautiful trophy by being very good in this World Cup. Above all, now that he has achieved this incredible goal, we must remember what he has done since the start of the season with the team.”\n\nTransfer: I wanted to bring Messi – Al Nassr manager, Garcia reacts to Ronaldo’s arrival\n\nPSG coach, Galtier criticizes Mbappe, others, reveals why team lost 3-1 to Lens",
+          "translatedText": "",
+          "tags": [
+            "l:Gathering",
+            "f:58:Mass Gathering",
+            "f:58:All Iraq Categories",
+            "l:EMRO",
+            "l:PAHO",
+            "l:EURO"
+          ],
+          "affectedCountries": [
+            "AR:Argentina",
+            "FR:France",
+            "QA:Qatar"
+          ],
+          "affectedCountriesIso": [
+            "AR",
+            "FR",
+            "QA"
+          ],
+          "emmMisInfo": {
+            "label": "reliable",
+            "confidenceScore": 0.0003
+          },
+          "binaryCredibility": {
+            "labels": {
+              "Not-credible": {
+                "label": "Not-credible",
+                "probability": 0.996
+              },
+              "Credible": {
+                "label": "Credible",
+                "probability": 0.004
+              }
+            }
+          },
+          "multiCredibility": {
+            "labels": {
+              "Rumour": {
+                "label": "Rumour",
+                "probability": 0.734
+              },
+              "Credible": {
+                "label": "Credible",
+                "probability": 0.077
+              },
+              "Conspiracy Theory": {
+                "label": "Conspiracy Theory",
+                "probability": 0.006
+              },
+              "Extreme Bias": {
+                "label": "Extreme Bias",
+                "probability": 0.1
+              },
+              "Clickbait": {
+                "label": "Clickbait",
+                "probability": 0.006
+              },
+              "Other Non-credible": {
+                "label": "Other Non-credible",
+                "probability": 0.052
+              },
+              "Political": {
+                "label": "Political",
+                "probability": 0.003
+              },
+              "Disinformation": {
+                "label": "Disinformation",
+                "probability": 0.004
+              },
+              "Hate News": {
+                "label": "Hate News",
+                "probability": 0.01
+              },
+              "Satire": {
+                "label": "Satire",
+                "probability": 0.009
+              },
+              "Junk Science": {
+                "label": "Junk Science",
+                "probability": 0
+              }
+            }
+          },
+          "abstractiveSummary": "Lionel Messi will return to training with Paris Saint-Germain on Tuesday, January 3. PSG coach, Christophe Galtier, says Messi will be well received at the Parc des Princes. Argentina captain has been on vacation since winning the 2022 World Cup in Qatar.",
+          "rssItemId": "dailypost-9fd7010378399a948bc7ba3391e97ef6",
+          "childIds": [],
+          "triggers": [
+            {
+              "key": "l:Gathering",
+              "values": [
+                "World Cup"
+              ]
+            },
+            {
+              "key": "AR:Argentina",
+              "values": [
+                "Argentina"
+              ]
+            },
+            {
+              "key": "QA:Qatar",
+              "values": [
+                "Qatar"
+              ]
+            },
+            {
+              "key": "FR:France",
+              "values": [
+                "France",
+                "Paris"
+              ]
+            },
+            {
+              "key": "l:EMRO",
+              "values": [
+                "Qatar"
+              ]
+            },
+            {
+              "key": "l:PAHO",
+              "values": [
+                "Argentina"
+              ]
+            },
+            {
+              "key": "l:EURO",
+              "values": [
+                "France",
+                "Paris"
+              ]
+            }
+          ],
+          "processedOnDate": "2023-01-02T15:50:14.3006517Z",
+          "locations": [
+            {
+              "geoData": {
+                "lat": -34.61315,
+                "lon": -58.37723
+              },
+              "iso2": "AR",
+              "whoRegionCode": "AMR",
+              "continentCode": "SA",
+              "areas": [
+                "Argentina"
+              ],
+              "emmAreaId": 10,
+              "emmScore": 0,
+              "hasMaxEmmScore": true,
+              "trigger": "Argentina"
+            },
+            {
+              "geoData": {
+                "lat": 50.43302,
+                "lon": 2.82791
+              },
+              "iso2": "FR",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Lens",
+                "Pas-de-Calais",
+                "Hauts-de-France",
+                "France"
+              ],
+              "emmAreaId": 34947075150,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_2988430",
+                "areaType": [
+                  "A",
+                  "ADM2"
+                ],
+                "areaIds": [
+                  "geonames_2988430",
+                  "geonames_11071624",
+                  "geonames_3017382"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_3017382",
+                  "idLevel1": "geonames_11071624",
+                  "idLevel2": "geonames_2988430",
+                  "idLevel3": "geonames_2988430",
+                  "idLevel4": "geonames_2988430",
+                  "idLevel5": "geonames_2988430"
+                },
+                "fullName": [
+                  "Pas-de-Calais",
+                  "Hauts-de-France",
+                  "France"
+                ],
+                "level": 2
+              },
+              "trigger": "Lens"
+            },
+            {
+              "geoData": {
+                "lat": 48.85341,
+                "lon": 2.3488
+              },
+              "iso2": "FR",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "France"
+              ],
+              "emmAreaId": 78,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "trigger": "France"
+            },
+            {
+              "geoData": {
+                "lat": 41.38879,
+                "lon": 2.15899
+              },
+              "iso2": "ES",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Barcelona",
+                "Barcelona",
+                "Catalonia",
+                "Kingdom of Spain"
+              ],
+              "emmAreaId": 16911066,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_6356055",
+                "areaType": [
+                  "A",
+                  "ADM3"
+                ],
+                "areaIds": [
+                  "geonames_6356055",
+                  "geonames_3128759",
+                  "geonames_3336901",
+                  "geonames_2510769"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_2510769",
+                  "idLevel1": "geonames_3336901",
+                  "idLevel2": "geonames_3128759",
+                  "idLevel3": "geonames_6356055",
+                  "idLevel4": "geonames_6356055",
+                  "idLevel5": "geonames_6356055"
+                },
+                "fullName": [
+                  "Barcelona",
+                  "Barcelona",
+                  "Catalonia",
+                  "Spain"
+                ],
+                "level": 3
+              },
+              "trigger": "Barcelona"
+            },
+            {
+              "geoData": {
+                "lat": 25.28545,
+                "lon": 51.53096
+              },
+              "iso2": "QA",
+              "whoRegionCode": "EMR",
+              "continentCode": "AS",
+              "areas": [
+                "Qatar"
+              ],
+              "emmAreaId": 191,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "trigger": "Qatar"
+            }
+          ],
+          "whoRegionCodes": [
+            "AMR",
+            "EUR",
+            "EMR"
+          ],
+          "continentCodes": [
+            "SA",
+            "EU",
+            "AS"
+          ],
+          "mentionedPeople": {
+            "names": [
+              "Christophe Galtier",
+              "Lionel Messi"
+            ],
+            "entityIds": [
+              697034,
+              66075
+            ],
+            "occurrences": [
+              {
+                "id": 697034,
+                "name": "Christophe Galtier",
+                "type": "p",
+                "subType": "PER",
+                "trigger": "Christophe Galtier",
+                "count": 1,
+                "positions": [
+                  90
+                ]
+              },
+              {
+                "id": 66075,
+                "name": "Lionel Messi",
+                "type": "p",
+                "subType": "PER",
+                "trigger": "Messi",
+                "count": 5,
+                "positions": [
+                  28,
+                  253,
+                  414,
+                  736,
+                  1337
+                ]
+              },
+              {
+                "id": 66075,
+                "name": "Lionel Messi",
+                "type": "p",
+                "subType": "PER",
+                "trigger": "Lionel Messi",
+                "count": 2,
+                "positions": [
+                  147,
+                  871
+                ]
+              }
+            ]
+          },
+          "mentionedOrganisations": {
+            "names": [
+              "FIFA",
+              "World Cup",
+              "Ligue 1",
+              "Al Nassr",
+              "Paris Saint Germain"
+            ],
+            "entityIds": [
+              421670,
+              8306,
+              753593,
+              676590,
+              58134
+            ],
+            "occurrences": [
+              {
+                "id": 421670,
+                "name": "FIFA",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "FIFA",
+                "count": 2,
+                "positions": [
+                  391,
+                  480
+                ]
+              },
+              {
+                "id": 8306,
+                "name": "World Cup",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "World Cup",
+                "count": 4,
+                "positions": [
+                  396,
+                  485,
+                  620,
+                  1159
+                ]
+              },
+              {
+                "id": 753593,
+                "name": "Ligue 1",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "Ligue 1",
+                "count": 1,
+                "positions": [
+                  804
+                ]
+              },
+              {
+                "id": 676590,
+                "name": "Al Nassr",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "Al Nassr",
+                "count": 1,
+                "positions": [
+                  1345
+                ]
+              },
+              {
+                "id": 58134,
+                "name": "Paris Saint Germain",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "Paris Saint-Germain",
+                "count": 1,
+                "positions": [
+                  58
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "_index": "eios-items_2023-01",
+        "_type": "_doc",
+        "_id": "401863331",
+        "_score": 1,
+        "_source": {
+          "entityType": "item",
+          "id": 401863331,
+          "title": "Primera masacre del año: cuatro muertos tras ataque en Río de Oro, Cesar",
+          "translatedTitle": "First massacre of the year: four dead after attack on river gold, cease",
+          "link": "https://www.eluniversal.com.co/regional/cesar/primera-masacre-del-ano-cuatro-muertos-tras-ataque-en-rio-de-oro-cesar-YF7711247",
+          "description": "Colombia ya registra su primera masacre de 2023. El hecho de sangre tuvo lugar el domingo, 1 de enero, en el municipio de Río de Oro, en el departamento del Cesar, en un local comercial ubicado sobre la carretera hacia Ocaña (Norte de Santander), cuando un grupo de hombres disparó contra el....",
+          "translatedDescription": "Colombia already recorded its first massacre in 2023. The fact of blood took place on Sunday, 1 January, in the municipality of Río de Oro, in the department of cease, in a local commercial located on the road towards Ocaña (Norte de Santander), when a group of men fired against the....",
+          "pubDate": "2023-01-02T15:48:00Z",
+          "language": "Spanish; Castilian",
+          "languageCode": "es",
+          "source": {
+            "entityType": "source",
+            "id": 10468,
+            "name": "COL El Universal | Cartagena",
+            "optimaSourceId": "el-universal",
+            "country": "Colombia",
+            "countryIso": "co",
+            "subject": "General News",
+            "url": "http://www.eluniversal.com.co/",
+            "languageCode": "es",
+            "languageFull": "es:",
+            "countryFull": "co:Colombia",
+            "sourceTags": [
+              {
+                "name": "italy",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-10-29T17:54:21.9360254Z",
+                "userId": 1656,
+                "userName": "marilia.lavocat@saude.gov.br",
+                "organisationId": 14
+              },
+              {
+                "name": "korea",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:06.8188343Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:30.3234477Z",
+                "userId": 1743,
+                "userName": "lakkrs@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:44:32.8235847Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "test",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-12-15T19:07:19.4365080Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "ministerios",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2020-08-10T13:17:12.8995703Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "moh",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2020-08-10T13:26:57.9802747Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "spain",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2021-11-07T12:38:03.8382190Z",
+                "userId": 1342,
+                "userName": "ciobanus@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "côte d'ivoire",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-12T02:27:31.1357091Z",
+                "userId": 3590,
+                "userName": "bacoul75@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "fever",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-17T18:08:40.5005209Z",
+                "userId": 3648,
+                "userName": "romkward26@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "brazil",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-08T12:41:52.4055145Z",
+                "userId": 3526,
+                "userName": "gcfigueira@gmail.com",
+                "organisationId": 19
+              },
+              {
+                "name": "morocco",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-15T15:00:31.3302085Z",
+                "userId": 1551,
+                "userName": "ghanemh@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "not reviewed",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-03-11T09:02:02.2430438Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "for testing",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-23T01:39:11.2585294Z",
+                "userId": 4185,
+                "userName": "cmchae@korea.kr",
+                "organisationId": 22
+              },
+              {
+                "name": "who",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-31T12:37:15.9844535Z",
+                "userId": 4138,
+                "userName": "raquelmedialdeacarrera@gmail.com",
+                "organisationId": 70
+              },
+              {
+                "name": "officialwho",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-12-04T13:04:38.5260616Z",
+                "userId": 5339,
+                "userName": "uo.koshalko@gmail.com",
+                "organisationId": 70
+              }
+            ],
+            "category": "National",
+            "region": "South America",
+            "type": "webnews",
+            "period": "hourly",
+            "version": 1571229935991,
+            "state": "active",
+            "lastUpdateDate": "2019-10-16T12:45:35.9910000Z",
+            "frequency": 1,
+            "continentCode": "SA",
+            "whoRegionCode": "AMR"
+          },
+          "fullText": "Colombia ya registra su primera masacre de 2023. El hecho de sangre tuvo lugar el domingo, 1 de enero, en el municipio de Río de Oro, en el departamento del Cesar, en un local comercial ubicado sobre la carretera hacia Ocaña (Norte de Santander), cuando un grupo de hombres disparó contra el propietario del establecimiento y contra parejas que estaban en el lugar. Lea: Dos hombres murieron en el acto, mientras que dos mujeres fueron trasladadas a un hospital donde finalmente fallecieron por las heridas de arma blanca que les propinaron los atacantes, informó el Instituto de Estudios para el Desarrollo y la Paz (Indepaz).\n\nFecha: 01/01/23 Río de Oro, Cesar Se confirma la primera masacre del 2023, la cual ocurre en el municipio de Río de Oro en un estadero denominado como El Pentágono, en la vía Ocaña - Río de Oro. En este hecho tres personas fueron asesinadas y por lo menos una herida de gravedad. — INDEPAZ (@Indepaz) January 2, 2023 Por otra parte, este lunes se conoció el asesinato a tiros en el departamento de Antioquia del policía Pablo Antonio Dueñas, que hacía parte del esquema de seguridad del expresidente Álvaro Uribe, según informaron medios locales.\n\nEl uniformado se encontraba disfrutando un permiso de vacaciones por las fiestas de fin de año y su cuerpo fue hallado en la zona rural del municipio de Anzá, situado 83 kilómetros al oeste de Medellín, la capital regional.",
+          "translatedText": "",
+          "tags": [
+            "l:Death",
+            "f:18:Outcomes",
+            "f:18:All JRC Categories",
+            "f:31:Outcomes",
+            "f:31:All UNODC Categories",
+            "l:PAHO"
+          ],
+          "affectedCountries": [
+            "CO:Colombia"
+          ],
+          "affectedCountriesIso": [
+            "CO"
+          ],
+          "rssItemId": "el-universal-4f090c2154c640ef34186396f44da132",
+          "duplicateId": "eluniversal-CO-4f090c2154c640ef34186396f44da132",
+          "parentId": "eluniversal-CO-4f090c2154c640ef34186396f44da132",
+          "triggers": [
+            {
+              "key": "l:Death",
+              "values": [
+                "muertos"
+              ]
+            },
+            {
+              "key": "CO:Colombia",
+              "values": [
+                "Colombia"
+              ]
+            },
+            {
+              "key": "l:PAHO",
+              "values": [
+                "Colombia"
+              ]
+            }
+          ],
+          "processedOnDate": "2023-01-02T15:50:14.4406487Z",
+          "locations": [
+            {
+              "geoData": {
+                "lat": 8.2919,
+                "lon": -73.38485
+              },
+              "iso2": "CO",
+              "whoRegionCode": "AMR",
+              "continentCode": "SA",
+              "areas": [
+                "Río de Oro",
+                "Río de Oro",
+                "Departamento del Cesar",
+                "Colombia"
+              ],
+              "emmAreaId": 18494003,
+              "emmScore": 0,
+              "hasMaxEmmScore": true,
+              "area": {
+                "id": "geonames_3686880",
+                "areaType": [
+                  "A",
+                  "ADM1"
+                ],
+                "areaIds": [
+                  "geonames_3686880",
+                  "geonames_3686110"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_3686110",
+                  "idLevel1": "geonames_3686880",
+                  "idLevel2": "geonames_3686880",
+                  "idLevel3": "geonames_3686880",
+                  "idLevel4": "geonames_3686880",
+                  "idLevel5": "geonames_3686880"
+                },
+                "fullName": [
+                  "Departamento del Cesar",
+                  "Colombia"
+                ],
+                "level": 1
+              },
+              "trigger": "Río de Oro"
+            },
+            {
+              "geoData": {
+                "lat": 6.30322,
+                "lon": -75.85381
+              },
+              "iso2": "CO",
+              "whoRegionCode": "AMR",
+              "continentCode": "SA",
+              "areas": [
+                "Anzá",
+                "Anza",
+                "Antioquia",
+                "Colombia"
+              ],
+              "emmAreaId": 74585139,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_3689815",
+                "areaType": [
+                  "A",
+                  "ADM1"
+                ],
+                "areaIds": [
+                  "geonames_3689815",
+                  "geonames_3686110"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_3686110",
+                  "idLevel1": "geonames_3689815",
+                  "idLevel2": "geonames_3689815",
+                  "idLevel3": "geonames_3689815",
+                  "idLevel4": "geonames_3689815",
+                  "idLevel5": "geonames_3689815"
+                },
+                "fullName": [
+                  "Antioquia",
+                  "Colombia"
+                ],
+                "level": 1
+              },
+              "trigger": "Anzá"
+            },
+            {
+              "geoData": {
+                "lat": 43.46472,
+                "lon": -3.80444
+              },
+              "iso2": "ES",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Laredo",
+                "Cantabria",
+                "Cantabria",
+                "Kingdom of Spain"
+              ],
+              "emmAreaId": 1963005658,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_3109718",
+                "areaType": [
+                  "P",
+                  "PPLA"
+                ],
+                "areaIds": [
+                  "geonames_3109718",
+                  "geonames_6360720",
+                  "geonames_3109716",
+                  "geonames_3336898",
+                  "geonames_2510769"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_2510769",
+                  "idLevel1": "geonames_3336898",
+                  "idLevel2": "geonames_3109716",
+                  "idLevel3": "geonames_6360720",
+                  "idLevel4": "geonames_3109718",
+                  "idLevel5": "geonames_3109718"
+                },
+                "fullName": [
+                  "Santander",
+                  "Santander",
+                  "Cantabria",
+                  "Cantabria",
+                  "Spain"
+                ],
+                "level": 4
+              },
+              "trigger": "Santander"
+            },
+            {
+              "geoData": {
+                "lat": 8.23773,
+                "lon": -73.35604
+              },
+              "iso2": "CO",
+              "whoRegionCode": "AMR",
+              "continentCode": "SA",
+              "areas": [
+                "Ocaña",
+                "Ocaña",
+                "Departamento de Norte de Santander",
+                "Colombia"
+              ],
+              "emmAreaId": 117576243,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_3673798",
+                "areaType": [
+                  "A",
+                  "ADM1"
+                ],
+                "areaIds": [
+                  "geonames_3673798",
+                  "geonames_3686110"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_3686110",
+                  "idLevel1": "geonames_3673798",
+                  "idLevel2": "geonames_3673798",
+                  "idLevel3": "geonames_3673798",
+                  "idLevel4": "geonames_3673798",
+                  "idLevel5": "geonames_3673798"
+                },
+                "fullName": [
+                  "Departamento de Norte de Santander",
+                  "Colombia"
+                ],
+                "level": 1
+              },
+              "trigger": "Ocaña"
+            },
+            {
+              "geoData": {
+                "lat": 6.25184,
+                "lon": -75.56359
+              },
+              "iso2": "CO",
+              "whoRegionCode": "AMR",
+              "continentCode": "SA",
+              "areas": [
+                "Medellín",
+                "Medellín",
+                "Antioquia",
+                "Colombia"
+              ],
+              "emmAreaId": 25564211,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_3689815",
+                "areaType": [
+                  "A",
+                  "ADM1"
+                ],
+                "areaIds": [
+                  "geonames_3689815",
+                  "geonames_3686110"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_3686110",
+                  "idLevel1": "geonames_3689815",
+                  "idLevel2": "geonames_3689815",
+                  "idLevel3": "geonames_3689815",
+                  "idLevel4": "geonames_3689815",
+                  "idLevel5": "geonames_3689815"
+                },
+                "fullName": [
+                  "Antioquia",
+                  "Colombia"
+                ],
+                "level": 1
+              },
+              "trigger": "Medellín"
+            }
+          ],
+          "whoRegionCodes": [
+            "AMR"
+          ],
+          "continentCodes": [
+            "SA"
+          ],
+          "mentionedPeople": {
+            "names": [
+              "Pablo Antonio",
+              "Alvaro Uribe"
+            ],
+            "entityIds": [
+              403139,
+              319
+            ],
+            "occurrences": [
+              {
+                "id": 403139,
+                "name": "Pablo Antonio",
+                "type": "p",
+                "subType": "PER",
+                "trigger": "Pablo Antonio",
+                "count": 1,
+                "positions": [
+                  1123
+                ]
+              },
+              {
+                "id": 319,
+                "name": "Alvaro Uribe",
+                "type": "p",
+                "subType": "PER",
+                "trigger": "Álvaro Uribe",
+                "count": 1,
+                "positions": [
+                  1203
+                ]
+              }
+            ]
+          },
+          "mentionedOrganisations": {
+            "names": [
+              "The Pentagon"
+            ],
+            "entityIds": [
+              4360
+            ],
+            "occurrences": [
+              {
+                "id": 4360,
+                "name": "The Pentagon",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "El Pentágono",
+                "count": 1,
+                "positions": [
+                  854
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "_index": "eios-items_2023-01",
+        "_type": "_doc",
+        "_id": "401863320",
+        "_score": 1,
+        "_source": {
+          "entityType": "item",
+          "id": 401863320,
+          "title": "Treinta y seis fallecidos en las carreteras desde el comienzo de la Navidad",
+          "translatedTitle": "Thirty-six killed on roads since the beginning of the christmas",
+          "link": "https://www.cope.es/actualidad/sociedad/noticias/treinta-seis-fallecidos-las-carreteras-desde-comienzo-navidad-20230102_2477224",
+          "description": "Treinta y seis personas han fallecido en los 28 accidentes mortales registrados en las carreteras desde las 15.00 horas del viernes 23 de diciembre, víspera de Nochebuena, cuando arrancó el dispositivo especial de tráfico con motivo de las fiestas navideñas, hasta las doce de la noche de este domingo.",
+          "translatedDescription": "Thirty-six people have died in the 28 fatal accidents on the roads from the 15.00 hours of Friday, 23 December, on the eve of christmas eve, when started the special device of traffic on the occasion of the christmas festivities, until the twelve of the evening of this Sunday.",
+          "pubDate": "2023-01-02T15:47:00Z",
+          "language": "Spanish; Castilian",
+          "languageCode": "es",
+          "source": {
+            "entityType": "source",
+            "id": 4514,
+            "name": "cope",
+            "optimaSourceId": "cope",
+            "language": "Spanish; Castilian",
+            "country": "Spain",
+            "countryIso": "es",
+            "subject": "General News",
+            "url": "http://www.cope.es/",
+            "languageCode": "es",
+            "languageFull": "es:Spanish; Castilian",
+            "countryFull": "es:Spain",
+            "sourceTags": [
+              {
+                "name": "animalhealth",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-01-23T13:03:56.1552508Z",
+                "userId": 1443,
+                "userName": "eios_user@gmail.com",
+                "organisationId": 8
+              },
+              {
+                "name": "tagjulie",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-01-23T13:13:49.7910204Z",
+                "userId": 1443,
+                "userName": "eios_user@gmail.com",
+                "organisationId": 8
+              },
+              {
+                "name": "italy",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-10-29T17:54:21.9360254Z",
+                "userId": 1656,
+                "userName": "marilia.lavocat@saude.gov.br",
+                "organisationId": 14
+              },
+              {
+                "name": "korea",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:06.8188343Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:30.3234477Z",
+                "userId": 1743,
+                "userName": "lakkrs@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:44:32.8235847Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "test",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-12-15T19:07:19.4365080Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "ministerios",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2020-08-10T13:17:12.8995703Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "moh",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2020-08-10T13:26:57.9802747Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "spain",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2021-11-07T12:38:03.8382190Z",
+                "userId": 1342,
+                "userName": "ciobanus@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "côte d'ivoire",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-12T02:27:31.1357091Z",
+                "userId": 3590,
+                "userName": "bacoul75@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "fever",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-17T18:08:40.5005209Z",
+                "userId": 3648,
+                "userName": "romkward26@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "brazil",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-08T12:41:52.4055145Z",
+                "userId": 3526,
+                "userName": "gcfigueira@gmail.com",
+                "organisationId": 19
+              },
+              {
+                "name": "morocco",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-15T15:00:31.3302085Z",
+                "userId": 1551,
+                "userName": "ghanemh@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "not reviewed",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-03-11T09:02:02.2430438Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "for testing",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-23T01:39:11.2585294Z",
+                "userId": 4185,
+                "userName": "cmchae@korea.kr",
+                "organisationId": 22
+              },
+              {
+                "name": "who",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-31T12:37:15.9844535Z",
+                "userId": 4138,
+                "userName": "raquelmedialdeacarrera@gmail.com",
+                "organisationId": 70
+              },
+              {
+                "name": "officialwho",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-12-04T13:04:38.5260616Z",
+                "userId": 5339,
+                "userName": "uo.koshalko@gmail.com",
+                "organisationId": 70
+              }
+            ],
+            "category": "National",
+            "region": "European Union",
+            "type": "webnews",
+            "period": "daily",
+            "version": 1571229925511,
+            "state": "active",
+            "lastUpdateDate": "2019-10-16T12:45:25.5110000Z",
+            "frequency": 6,
+            "continentCode": "EU",
+            "whoRegionCode": "EUR"
+          },
+          "fullText": "Treinta y seis personas han fallecido en los 28 accidentes mortales registrados en las carreteras desde las 15.00 horas del viernes 23 de diciembre, víspera de Nochebuena, cuando arrancó el dispositivo especial de tráfico con motivo de las fiestas navideñas, hasta las doce de la noche de este domingo.\n\nTreinta y seis personas han fallecido en los 28 accidentes mortales registrados en las carreteras desde las 15.00 horas del viernes 23 de diciembre, víspera de Nochebuena, cuando arrancó el dispositivo especial de tráfico con motivo de las fiestas navideñas, hasta las doce de la noche de este domingo. Este es el balance provisional de siniestralidad vial de la Navidad, según los datos facilitados a Efe por la Dirección General de Tráfico (DGT). Al ser fiesta este lunes en cinco comunidades autónomas (Andalucía, Aragón, Asturias, Castilla y León y Murcia), la segunda fase de la operación especial, la de fin de año, concluirá esta medianoche. Entre las 15.00 horas del viernes y la medianoche del lunes 2 de enero, la DGT prevé que se produzcan 4,2 millones de desplazamientos por carretera. Aun queda una tercera fase del dispositivo que coincide con la celebración de los Reyes Magos y que finalizará a las doce de la noche del próximo domingo 8 de enero.",
+          "translatedText": "",
+          "tags": [
+            "l:Death",
+            "f:18:Outcomes",
+            "f:18:All JRC Categories",
+            "f:31:Outcomes",
+            "f:31:All UNODC Categories",
+            "l:EURO"
+          ],
+          "affectedCountries": [
+            "ES:Spain"
+          ],
+          "affectedCountriesIso": [
+            "ES"
+          ],
+          "rssItemId": "cope-3235a3ac867d31568706794b11d68f90",
+          "childIds": [],
+          "triggers": [
+            {
+              "key": "l:Death",
+              "values": [
+                "fallecido"
+              ]
+            },
+            {
+              "key": "ES:Spain",
+              "values": [
+                "Castilla y León",
+                "Murcia",
+                "Aragón",
+                "Asturias"
+              ]
+            },
+            {
+              "key": "l:EURO",
+              "values": [
+                "Castilla y León",
+                "Murcia",
+                "Aragón",
+                "Asturias"
+              ]
+            }
+          ],
+          "processedOnDate": "2023-01-02T15:50:15.0856511Z",
+          "locations": [
+            {
+              "geoData": {
+                "lat": 37.98704,
+                "lon": -1.13004
+              },
+              "iso2": "ES",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Moratalla",
+                "Murcia",
+                "Murcia",
+                "Kingdom of Spain"
+              ],
+              "emmAreaId": 2030116058,
+              "emmScore": 0,
+              "hasMaxEmmScore": true,
+              "area": {
+                "id": "geonames_6355234",
+                "areaType": [
+                  "A",
+                  "ADM2"
+                ],
+                "areaIds": [
+                  "geonames_6355234",
+                  "geonames_2513413",
+                  "geonames_2510769"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_2510769",
+                  "idLevel1": "geonames_2513413",
+                  "idLevel2": "geonames_6355234",
+                  "idLevel3": "geonames_6355234",
+                  "idLevel4": "geonames_6355234",
+                  "idLevel5": "geonames_6355234"
+                },
+                "fullName": [
+                  "Murcia",
+                  "Murcia",
+                  "Spain"
+                ],
+                "level": 2
+              },
+              "trigger": "Murcia"
+            }
+          ],
+          "whoRegionCodes": [
+            "EUR"
+          ],
+          "continentCodes": [
+            "EU"
+          ]
+        }
+      },
+      {
+        "_index": "eios-items_2023-01",
+        "_type": "_doc",
+        "_id": "401863293",
+        "_score": 1,
+        "_source": {
+          "entityType": "item",
+          "id": 401863293,
+          "title": "4 posturas de yoga para dormir mejor",
+          "translatedTitle": "4 positions of yoga to sleep better",
+          "link": "https://www.lavanguardia.com/magazine/lifestyle/20230102/8661487/4-posturas-yoga-dormir-mejor-pvlv.html",
+          "description": "En España, entre un 20 y un 48 % de la población adulta ha sufrido en algún momento dificultades para , según datos de la Sociedad Española de Neurología (SEN). Lo cierto es dormir y descansar debidamente es fundamental para la salud y el bienestar. El insomnio afecta negativamente al organismo ,....",
+          "translatedDescription": "In spain, between 20% and 48% of the adult population has suffered in difficulties for some time, according to data from the spanish society of neurology (SEN). The truth is sleep and rest properly it is vital to the health and welfare. The insomnia negatively affects the body,....",
+          "pubDate": "2023-01-02T15:47:00Z",
+          "language": "Spanish; Castilian",
+          "languageCode": "es",
+          "source": {
+            "entityType": "source",
+            "id": 1114,
+            "name": "La Vanguardia",
+            "optimaSourceId": "lavanguardia",
+            "language": "Spanish; Castilian",
+            "country": "Spain",
+            "countryIso": "es",
+            "subject": "General News",
+            "url": "https://www.lavanguardia.com/",
+            "languageCode": "es",
+            "languageFull": "es:Spanish; Castilian",
+            "countryFull": "es:Spain",
+            "sourceTags": [
+              {
+                "name": "animalhealth",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-01-23T13:03:56.1552508Z",
+                "userId": 1443,
+                "userName": "eios_user@gmail.com",
+                "organisationId": 8
+              },
+              {
+                "name": "tagjulie",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-01-23T13:13:49.7910204Z",
+                "userId": 1443,
+                "userName": "eios_user@gmail.com",
+                "organisationId": 8
+              },
+              {
+                "name": "italy",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-10-29T17:54:21.9360254Z",
+                "userId": 1656,
+                "userName": "marilia.lavocat@saude.gov.br",
+                "organisationId": 14
+              },
+              {
+                "name": "korea",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:06.8188343Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:30.3234477Z",
+                "userId": 1743,
+                "userName": "lakkrs@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:44:32.8235847Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "test",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-12-15T19:07:19.4365080Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "ministerios",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2020-08-10T13:17:12.8995703Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "moh",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2020-08-10T13:26:57.9802747Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "spain",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2021-11-07T12:38:03.8382190Z",
+                "userId": 1342,
+                "userName": "ciobanus@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "côte d'ivoire",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-12T02:27:31.1357091Z",
+                "userId": 3590,
+                "userName": "bacoul75@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "fever",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-17T18:08:40.5005209Z",
+                "userId": 3648,
+                "userName": "romkward26@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "brazil",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-08T12:41:52.4055145Z",
+                "userId": 3526,
+                "userName": "gcfigueira@gmail.com",
+                "organisationId": 19
+              },
+              {
+                "name": "morocco",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-15T15:00:31.3302085Z",
+                "userId": 1551,
+                "userName": "ghanemh@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "not reviewed",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-03-11T09:02:02.2430438Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "for testing",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-23T01:39:11.2585294Z",
+                "userId": 4185,
+                "userName": "cmchae@korea.kr",
+                "organisationId": 22
+              },
+              {
+                "name": "who",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-31T12:37:15.9844535Z",
+                "userId": 4138,
+                "userName": "raquelmedialdeacarrera@gmail.com",
+                "organisationId": 70
+              },
+              {
+                "name": "officialwho",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-12-04T13:04:38.5260616Z",
+                "userId": 5339,
+                "userName": "uo.koshalko@gmail.com",
+                "organisationId": 70
+              }
+            ],
+            "category": "National",
+            "region": "European Union",
+            "type": "webnews",
+            "period": "daily",
+            "version": 1571229963193,
+            "state": "active",
+            "lastUpdateDate": "2019-10-16T12:46:03.1930000Z",
+            "frequency": 8,
+            "continentCode": "EU",
+            "whoRegionCode": "EUR"
+          },
+          "fullText": "En España, entre un 20 y un 48 % de la población adulta ha sufrido en algún momento dificultades para , según datos de la Sociedad Española de Neurología (SEN). Lo cierto es dormir y descansar debidamente es fundamental para la salud y el bienestar. El insomnio afecta negativamente al organismo , con repercusiones tanto en la salud física como mental. La privación del sueño causa estragos en el sistema nervioso central, el sistema inmunitario, el sistema respiratorio y el sistema digestivo. Peor estado de ánimo, falta de energía y dificultad para concentrarnos son algunas de sus manifestaciones más notables en el día a día.\n\nAdemás de seguir una serie de rutinas y buenos hábitos –como evitar dispositivos electrónicos y cafeína antes de acostarnos–, el yoga es un gran aliado a la hora de dormir mejor. Entre sus virtudes no está solo ponernos en forma o ser más flexibles, sino que además reduce los niveles de estrés, propiciando que nos relajemos y lleguemos más tranquilos a la cama. Así, aumentan las posibilidades de disfrutar de un sueño profundo y reparador. Yoga: el secreto para dormir bien. Entre los muchos beneficios del yoga, esta práctica pone el foco en la relajación física y mental, de forma más pausada y serena que otros ejercicios. Consiste en una serie de posturas o asanas muy efectivas para estar más tranquilos antes de meternos en la cama. Reduce el estrés, ayuda a practicar la respiración consciente, alivia la tensión muscular y posibles dolores musculares o articulares, al tiempo que aumenta los niveles de melatonina. Pon música relajante, ropa cómoda y extiende tu esterilla, porque con las siguientes posturas entrarás en un estado de tranquilidad ideal para una noche de descanso absoluto. Lee también\n\n1 Baddha konasana o postura de la mariposa. Siéntate con la espalda recta y las rodillas flexionadas hacia fuera, juntando las plantas de los pies entre sí cerca del pubis con ayuda de las manos. 2 Balasana o postura del niño. Resulta de gran ayuda para estirar toda la espalda. Ponte de rodillas con los pies debajo de los glúteos y baja poco a poco la espalda hasta apoyar la frente en el suelo. Extiende los brazos hacia delante. 3 Savasana o postura del muerto. Túmbate boca arriba con las piernas estiradas con los pies hacia afuera y los brazos estirados a ambos lados ligeramente separados de los costados y con las palmas mirando hacia arriba. Relaja todo el cuerpo, asegurándote de que la espalda está bien apoyada en el suelo. Mantén la postura unos segundos concentrándote solo en tu relajación y respiración. 4 Viparita Karani en la pared. Una postura excelente para estirar las piernas y promover la circulación. Necesitarás una pared o un armario que te sirvan para apoyar las piernas totalmente estiradas. También puedes utilizar un cojín para elevar las caderas y que la posición te resulte más cómoda. Lee también",
+          "translatedText": "",
+          "tags": [
+            "l:Death",
+            "f:18:Outcomes",
+            "f:18:All JRC Categories",
+            "f:31:Outcomes",
+            "f:31:All UNODC Categories",
+            "l:EURO"
+          ],
+          "affectedCountries": [
+            "ES:Spain"
+          ],
+          "affectedCountriesIso": [
+            "ES"
+          ],
+          "rssItemId": "lavanguardia-f471bd2af18ee05cc591a91ab85d06c4",
+          "childIds": [],
+          "triggers": [
+            {
+              "key": "l:Death",
+              "values": [
+                "muerto"
+              ]
+            }
+          ],
+          "processedOnDate": "2023-01-02T15:49:18.8569169Z",
+          "locations": [
+            {
+              "geoData": {
+                "lat": 40.4165,
+                "lon": -3.70256
+              },
+              "iso2": "ES",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Kingdom of Spain"
+              ],
+              "emmAreaId": 218,
+              "emmScore": 0,
+              "hasMaxEmmScore": true,
+              "trigger": "España"
+            }
+          ],
+          "whoRegionCodes": [
+            "EUR"
+          ],
+          "continentCodes": [
+            "EU"
+          ],
+          "mentionedOrganisations": {
+            "names": [
+              "Sociedad Espanola"
+            ],
+            "entityIds": [
+              62585
+            ],
+            "occurrences": [
+              {
+                "id": 62585,
+                "name": "Sociedad Espanola",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "Sociedad Española",
+                "count": 1,
+                "positions": [
+                  160
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "_index": "eios-items_2023-01",
+        "_type": "_doc",
+        "_id": "401863297",
+        "_score": 1,
+        "_source": {
+          "entityType": "item",
+          "id": 401863297,
+          "title": "Rusia admite la muerte de 63 soldados en un ataque con misiles ucranianos en Donetsk",
+          "translatedTitle": "Russia admits the death of 63 soldiers in a rocket attack ukrainians in Donetsk",
+          "link": "https://www.lavanguardia.com/internacional/20230102/8665851/rusia-admite-muerte-63-soldados-ataque-misiles-ucranianos-donetsk.html",
+          "description": "El Ministerio de Defensa de Rusia admitió este lunes que al menos 63 solados rusos murieron en un ataque con misiles ucranianos contra sus cuarteles durante la Nochevieja en la ciudad de Makiivka, en la parte controlada por Rusia de la región ucraniana de Donetsk, anexionada por Moscú en septiembre pasado.",
+          "translatedDescription": "The ministry of defence of russia admitted this Monday that at least 63 solados russians were killed in a rocket attack against its ukrainian barracks during new year's eve in the city of Makiivka, in the part controlled by russia of the ukrainian region of Donetsk, annexed by moscow last September.",
+          "pubDate": "2023-01-02T15:47:00Z",
+          "language": "Spanish; Castilian",
+          "languageCode": "es",
+          "source": {
+            "entityType": "source",
+            "id": 1114,
+            "name": "La Vanguardia",
+            "optimaSourceId": "lavanguardia",
+            "language": "Spanish; Castilian",
+            "country": "Spain",
+            "countryIso": "es",
+            "subject": "General News",
+            "url": "https://www.lavanguardia.com/",
+            "languageCode": "es",
+            "languageFull": "es:Spanish; Castilian",
+            "countryFull": "es:Spain",
+            "sourceTags": [
+              {
+                "name": "animalhealth",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-01-23T13:03:56.1552508Z",
+                "userId": 1443,
+                "userName": "eios_user@gmail.com",
+                "organisationId": 8
+              },
+              {
+                "name": "tagjulie",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-01-23T13:13:49.7910204Z",
+                "userId": 1443,
+                "userName": "eios_user@gmail.com",
+                "organisationId": 8
+              },
+              {
+                "name": "italy",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-10-29T17:54:21.9360254Z",
+                "userId": 1656,
+                "userName": "marilia.lavocat@saude.gov.br",
+                "organisationId": 14
+              },
+              {
+                "name": "korea",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:20:39.4116394Z",
+                "userId": 1744,
+                "userName": "h22h22h22@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:06.8188343Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean source",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-11-07T05:21:30.3234477Z",
+                "userId": 1743,
+                "userName": "lakkrs@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "korean",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2019-11-07T05:44:32.8235847Z",
+                "userId": 1748,
+                "userName": "hepimoni@korea.kr",
+                "organisationId": 14
+              },
+              {
+                "name": "test",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2019-12-15T19:07:19.4365080Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "ministerios",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2020-08-10T13:17:12.8995703Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "moh",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2020-08-10T13:26:57.9802747Z",
+                "userId": 2096,
+                "userName": "quiambaoa@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "spain",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2021-11-07T12:38:03.8382190Z",
+                "userId": 1342,
+                "userName": "ciobanus@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "côte d'ivoire",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-12T02:27:31.1357091Z",
+                "userId": 3590,
+                "userName": "bacoul75@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "fever",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2021-11-17T18:08:40.5005209Z",
+                "userId": 3648,
+                "userName": "romkward26@gmail.com",
+                "organisationId": 14
+              },
+              {
+                "name": "brazil",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-08T12:41:52.4055145Z",
+                "userId": 3526,
+                "userName": "gcfigueira@gmail.com",
+                "organisationId": 19
+              },
+              {
+                "name": "morocco",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-02-15T15:00:31.3302085Z",
+                "userId": 1551,
+                "userName": "ghanemh@who.int",
+                "organisationId": 14
+              },
+              {
+                "name": "not reviewed",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-03-11T09:02:02.2430438Z",
+                "userId": 1598,
+                "userName": "mahranm@who.int",
+                "organisationId": 1
+              },
+              {
+                "name": "for testing",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-23T01:39:11.2585294Z",
+                "userId": 4185,
+                "userName": "cmchae@korea.kr",
+                "organisationId": 22
+              },
+              {
+                "name": "who",
+                "isPrivate": true,
+                "isDeleted": false,
+                "date": "2022-05-31T12:37:15.9844535Z",
+                "userId": 4138,
+                "userName": "raquelmedialdeacarrera@gmail.com",
+                "organisationId": 70
+              },
+              {
+                "name": "officialwho",
+                "isPrivate": false,
+                "isDeleted": false,
+                "date": "2022-12-04T13:04:38.5260616Z",
+                "userId": 5339,
+                "userName": "uo.koshalko@gmail.com",
+                "organisationId": 70
+              }
+            ],
+            "category": "National",
+            "region": "European Union",
+            "type": "webnews",
+            "period": "daily",
+            "version": 1571229963193,
+            "state": "active",
+            "lastUpdateDate": "2019-10-16T12:46:03.1930000Z",
+            "frequency": 8,
+            "continentCode": "EU",
+            "whoRegionCode": "EUR"
+          },
+          "fullText": "El Ministerio de Defensa de Rusia admitió este lunes que al menos 63 solados rusos murieron en un ataque con misiles ucranianos contra sus cuarteles durante la Nochevieja en la ciudad de Makiivka, en la parte controlada por Rusia de la región ucraniana de Donetsk, anexionada por Moscú en septiembre pasado. El Ministerio de Defensa ucraniano, por su parte, indicó anteriormente que el saldo mortal entre las filas rusas era de 400 bajas y unos 300 heridos, aunque la agencia Reuters no ha podido verificar ninguna de las dos cifras. Imágenes publicadas en internet mostraban un edificio que supuestamente era una escuela de formación profesional en la ciudad minera de Makiivka reducido a un montón humeante de escombros. \n\n“El régimen de Kyiv atacó con seis misiles HIMARS producidos en Estados Unidos un cuartel temporal de una de las unidades de militares rusos en la localidad de Makíivka”, declaró el portavoz del mando ruso, Igor Konashénkov, quien afirmó que la defensa antiaérea rusa derribó dos de los seis proyectiles. El Ministerio de Defensa de Rusia admitió este lunes que al menos 63 solados rusos murieron en un ataque con misiles ucranianos contra sus cuarteles durante la Nochevieja en la ciudad de Makiivka. Según Defensa, “a consecuencia del impacto de cuatro misiles (…) murieron 63 militares rusos”. “Los familiares y allegados de los militares fallecidos recibirán toda la ayuda y el apoyo necesarios”, añadió el mando ruso. En su cuenta de Facebook, las fuerzas ucranianas señalaron respecto al ataque que “Papá Noel empacó 400 cadáveres de cerdos rusos”. Una cifra que una fuente cercana a los dirigentes regionales designados por Moscú en Donetsk tildó de \"muy exagerada\". \"Durante la noche llegaron 58 heridos, lo que es mucho para un día normal y no mucho si se cree la información sobre cientos de muertos. Era una base de reclutas rusos movilizados\".\n\nRusia ha movilizado desde septiembre al menos 300.000 soldados, a quienes ha enviado para reforzar su campaña militar en Ucrania.",
+          "translatedText": "",
+          "tags": [
+            "l:Death",
+            "f:18:Outcomes",
+            "f:18:All JRC Categories",
+            "f:31:Outcomes",
+            "f:31:All UNODC Categories",
+            "l:OutBreaks",
+            "l:EURO"
+          ],
+          "affectedCountries": [
+            "RU:Russian Fed.",
+            "UA:Ukraine"
+          ],
+          "affectedCountriesIso": [
+            "RU",
+            "UA"
+          ],
+          "rssItemId": "lavanguardia-2901b81aeaeb84d103409d2f5988ef99",
+          "childIds": [],
+          "triggers": [
+            {
+              "key": "l:Death",
+              "values": [
+                "muertos",
+                "muerte"
+              ]
+            },
+            {
+              "key": "l:OutBreaks",
+              "values": [
+                "mortal"
+              ]
+            },
+            {
+              "key": "UA:Ukraine",
+              "values": [
+                "Donetsk",
+                "Kyiv",
+                "Ucrania"
+              ]
+            },
+            {
+              "key": "RU:Russian Fed.",
+              "values": [
+                "Rusia",
+                "Moscú"
+              ]
+            },
+            {
+              "key": "l:EURO",
+              "values": [
+                "Rusia",
+                "Moscú"
+              ]
+            }
+          ],
+          "processedOnDate": "2023-01-02T15:49:19.5226006Z",
+          "locations": [
+            {
+              "geoData": {
+                "lat": 48.023,
+                "lon": 37.80224
+              },
+              "iso2": "UA",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Donetsk",
+                "Donetsk",
+                "Ukraine"
+              ],
+              "emmAreaId": 1308694770,
+              "emmScore": 0,
+              "hasMaxEmmScore": true,
+              "area": {
+                "id": "geonames_709716",
+                "areaType": [
+                  "A",
+                  "ADM1"
+                ],
+                "areaIds": [
+                  "geonames_709716",
+                  "geonames_690791"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_690791",
+                  "idLevel1": "geonames_709716",
+                  "idLevel2": "geonames_709716",
+                  "idLevel3": "geonames_709716",
+                  "idLevel4": "geonames_709716",
+                  "idLevel5": "geonames_709716"
+                },
+                "fullName": [
+                  "Donets’ka Oblast’",
+                  "Ukraine"
+                ],
+                "level": 1
+              },
+              "trigger": "Donetsk"
+            },
+            {
+              "geoData": {
+                "lat": 55.75222,
+                "lon": 37.61556
+              },
+              "iso2": "RU",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Moscow",
+                "Moscow",
+                "Russia"
+              ],
+              "emmAreaId": 17632962,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_524894",
+                "areaType": [
+                  "A",
+                  "ADM1"
+                ],
+                "areaIds": [
+                  "geonames_524894",
+                  "geonames_2017370"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_2017370",
+                  "idLevel1": "geonames_524894",
+                  "idLevel2": "geonames_524894",
+                  "idLevel3": "geonames_524894",
+                  "idLevel4": "geonames_524894",
+                  "idLevel5": "geonames_524894"
+                },
+                "fullName": [
+                  "Moscow",
+                  "Russia"
+                ],
+                "level": 1
+              },
+              "trigger": "Moscú"
+            },
+            {
+              "geoData": {
+                "lat": 38.89511,
+                "lon": -77.03637
+              },
+              "iso2": "US",
+              "whoRegionCode": "AMR",
+              "continentCode": "NA",
+              "areas": [
+                "United States of America"
+              ],
+              "emmAreaId": 247,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "trigger": "Estados Unidos"
+            },
+            {
+              "geoData": {
+                "lat": 50.45466,
+                "lon": 30.5238
+              },
+              "iso2": "UA",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Kiev",
+                "Kyiv City",
+                "Ukraine"
+              ],
+              "emmAreaId": 17512690,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "trigger": "Kyiv"
+            },
+            {
+              "geoData": {
+                "lat": 48.04782,
+                "lon": 37.92576
+              },
+              "iso2": "UA",
+              "whoRegionCode": "EUR",
+              "continentCode": "EU",
+              "areas": [
+                "Makiivka",
+                "Makiivka City Council",
+                "Donetsk",
+                "Ukraine"
+              ],
+              "emmAreaId": 19732722,
+              "emmScore": 0,
+              "hasMaxEmmScore": false,
+              "area": {
+                "id": "geonames_709716",
+                "areaType": [
+                  "A",
+                  "ADM1"
+                ],
+                "areaIds": [
+                  "geonames_709716",
+                  "geonames_690791"
+                ],
+                "aggregationLevels": {
+                  "idLevel0": "geonames_690791",
+                  "idLevel1": "geonames_709716",
+                  "idLevel2": "geonames_709716",
+                  "idLevel3": "geonames_709716",
+                  "idLevel4": "geonames_709716",
+                  "idLevel5": "geonames_709716"
+                },
+                "fullName": [
+                  "Donets’ka Oblast’",
+                  "Ukraine"
+                ],
+                "level": 1
+              },
+              "trigger": "Makiivka"
+            }
+          ],
+          "whoRegionCodes": [
+            "EUR"
+          ],
+          "continentCodes": [
+            "EU"
+          ],
+          "mentionedPeople": {
+            "names": [
+              "Igor Konashenkov"
+            ],
+            "entityIds": [
+              886035
+            ],
+            "occurrences": [
+              {
+                "id": 886035,
+                "name": "Igor Konashenkov",
+                "type": "p",
+                "subType": "PER",
+                "trigger": "Igor Konashénkov",
+                "count": 1,
+                "positions": [
+                  1018
+                ]
+              }
+            ]
+          },
+          "mentionedOrganisations": {
+            "names": [
+              "Babbo Natale",
+              "Facebook",
+              "Ministerio de Defensa"
+            ],
+            "entityIds": [
+              29555,
+              988552,
+              212558
+            ],
+            "occurrences": [
+              {
+                "id": 29555,
+                "name": "Babbo Natale",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "Papá Noel",
+                "count": 1,
+                "positions": [
+                  1617
+                ]
+              },
+              {
+                "id": 988552,
+                "name": "Facebook",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "Facebook",
+                "count": 1,
+                "positions": [
+                  1550
+                ]
+              },
+              {
+                "id": 212558,
+                "name": "Ministerio de Defensa",
+                "type": "o",
+                "subType": "MSC",
+                "trigger": "Ministerio de Defensa",
+                "count": 3,
+                "positions": [
+                  89,
+                  397,
+                  1119
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

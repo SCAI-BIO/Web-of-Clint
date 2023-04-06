@@ -1,0 +1,190 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.fraunhofer.scai.bio</groupId>
+	<artifactId>eiostooling</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>EIOS Tooling</name>
+	<description>some library to work with EIOS files</description>
+
+	<issueManagement>
+		<system>Gitlab</system>
+		<url>https://gitlab.scai.fraunhofer.de/biodev</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>https://jenkins2.scai.fraunhofer.de</url>
+	</ciManagement>
+	<distributionManagement>
+		<repository>
+			<id>scai-release</id>
+			<name>scai-releases</name>
+			<url>https://arty.scai.fraunhofer.de/artifactory/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>scai-snapshots</id>
+			<name>scai-snapshots</name>
+			<url>https://arty.scai.fraunhofer.de/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<properties>
+		<docker.skip>true</docker.skip>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<javadoc.opts>-Xdoclint:none</javadoc.opts>
+		<build.timestamp>2020-11-11 13:49</build.timestamp>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<version.junit>4.13</version.junit>
+	</properties>
+
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>libs-release</name>
+			<url>https://arty.scai.fraunhofer.de:443/artifactory/libs-release</url>
+		</repository>
+		<repository>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<id>snapshots</id>
+			<name>libs-snapshot</name>
+			<url>https://arty.scai.fraunhofer.de:443/artifactory/libs-snapshot</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>plugins-release</name>
+			<url>https://arty.scai.fraunhofer.de:443/artifactory/plugins-release</url>
+		</pluginRepository>
+		<pluginRepository>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<id>snapshots</id>
+			<name>plugins-release</name>
+			<url>https://arty.scai.fraunhofer.de:443/artifactory/plugins-release</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.6.2</version>
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>de.fraunhofer.scai.bio</groupId>
+			<artifactId>DocTypeSystem</artifactId>
+			<version>1.3.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+		<!-- <dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-api</artifactId> 
+			</dependency> <dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId> 
+			</dependency> -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-core</artifactId>
+			<version>3.16.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-arq</artifactId>
+			<version>3.16.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.rdf4j</groupId>
+			<artifactId>rdf4j-model-vocabulary</artifactId>
+			<version>3.6.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>okhttp</artifactId>
+		</dependency>
+
+		<!-- <dependency> <groupId>org.elasticsearch.client</groupId> <artifactId>elasticsearch-rest-high-level-client</artifactId> 
+			<version>7.6.2</version> </dependency> <dependency> <groupId>org.elasticsearch</groupId> 
+			<artifactId>elasticsearch</artifactId> <version>7.6.2</version> </dependency> 
+			<dependency> <groupId>org.elasticsearch.client</groupId> <artifactId>elasticsearch-rest-client</artifactId> 
+			<version>7.6.2</version> </dependency> -->
+
+		<!-- <dependency> <groupId>org.elasticsearch.client</groupId> <artifactId>elasticsearch-rest-client</artifactId> 
+			<version>8.6.0</version> </dependency> <dependency> <groupId>org.elasticsearch.client</groupId> 
+			<artifactId>transport</artifactId> <version>7.17.8</version> </dependency> 
+			<dependency> <groupId>org.elasticsearch.client</groupId> <artifactId>x-pack-transport</artifactId> 
+			<version>7.17.8</version> </dependency> -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.47</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>de.fraunhofer.scai.bio.eiostooling.App</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+			<!-- <plugin> <groupId>pl.project13.maven</groupId> <artifactId>git-commit-id-plugin</artifactId> 
+				<executions> <execution> <id>get-the-git-infos</id> <goals> <goal>revision</goal> 
+				</goals> </execution> <execution> <id>validate-the-git-infos</id> <goals> 
+				<goal>validateRevision</goal> </goals> *NOTE*: The default phase of validateRevision 
+				is verify, but in case you want to change it, you can do so by adding the 
+				phase here <phase>package</phase> </execution> </executions> <configuration> 
+				<generateGitPropertiesFile>true</generateGitPropertiesFile> </configuration> 
+				</plugin> -->
+		</plugins>
+	</build>
+</project>

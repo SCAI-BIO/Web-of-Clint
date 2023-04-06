@@ -1,0 +1,178 @@
+{
+  "track_total_hits": true,
+  "aggs": {
+    "articlesGrid_nested": {
+      "aggs": {
+        "articlesGrid_filtered": {
+          "aggs": {
+            "articlesGrid": {
+              "aggs": {
+                "articlesGrid_reverseNested": {
+                  "reverse_nested": {}
+                }
+              },
+              "geohash_grid": {
+                "field": "locations.geoData",
+                "precision": 4              }
+            }
+          },
+          "filter": {
+            "bool": {
+              "must": [
+                {
+                  "terms": {
+                    "_name": "mentionedCountriesRegions",
+                    "locations.iso2": [
+                      "IQ",
+                      "LB",
+                      "SY",
+                      "TR"                    ]
+                  }
+                },
+                {
+                  "geo_polygon": {
+                    "_name": "locationFilters",
+                    "locations.geoData": {
+                      "points": [
+                        {
+                          "lat": 34.1679,
+                          "lon": 33.075602                        },
+                        {
+                          "lat": 39.277628,
+                          "lon": 33.075602                        },
+                        {
+                          "lat": 39.277628,
+                          "lon": 41.61294                        },
+                        {
+                          "lat": 34.1679,
+                          "lon": 41.61294                        },
+                        {
+                          "lat": 34.1679,
+                          "lon": 33.075602                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "_name": "locationFilters"            }
+          }
+        }
+      },
+      "nested": {
+        "path": "locations"      }
+    }
+  },
+  "from": 0,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "terms": {
+            "_name": "mentionedCountriesRegions",
+            "affectedCountriesIso": [
+              "IQ",
+              "LB",
+              "SY",
+              "TR"            ]
+          }
+        },
+        {
+          "bool": {
+            "must_not": [
+              {
+                "exists": {
+                  "field": "duplicateId",
+                  "_name": "isNotDuplicate"                }
+              }
+            ],
+            "_name": "isNotDuplicate"          }
+        },
+        {
+          "nested": {
+            "inner_hits": {
+              "size": 100,
+              "sort": [],
+              "_source": {
+                "includes": [
+                  "*"                ]
+              }
+            },
+            "path": "locations",
+            "query": {
+              "bool": {
+                "must": [
+                  {
+                    "geo_polygon": {
+                      "locations.geoData": {
+                        "points": [
+                          {
+                            "lat": 34.1679,
+                            "lon": 33.075602                          },
+                          {
+                            "lat": 39.277628,
+                            "lon": 33.075602                          },
+                          {
+                            "lat": 39.277628,
+                            "lon": 41.61294                          },
+                          {
+                            "lat": 34.1679,
+                            "lon": 41.61294                          },
+                          {
+                            "lat": 34.1679,
+                            "lon": 33.075602                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "terms": {
+                      "locations.iso2": [
+                        "IQ",
+                        "LB",
+                        "SY",
+                        "TR"                      ]
+                    }
+                  }
+                ],
+                "_name": "locationFilters"              }
+            }
+          }
+        },
+        {
+          "terms": {
+            "_name": "tags-0",
+            "tags": [
+              "l:Earthquakes"            ]
+          }
+        },
+        {
+          "terms": {
+            "_name": "tags-1",
+            "tags": [
+              "l:CholeraInfection",
+              "l:HealthSystemCapacity",
+              "l:HealthWorkforceSupply",
+              "l:IntensiveCareUnits"            ]
+          }
+        },
+        {
+          "range": {
+            "processedOnDate": {
+              "gte": "now-48h/m"            }
+          }
+        }
+      ]
+    }
+  },
+  "size": 50,
+  "sort": [
+    {
+      "processedOnDate": {
+        "order": "desc"      }
+    }
+  ],
+  "_source": {
+    "includes": [
+      "*"    ]
+  }
+}

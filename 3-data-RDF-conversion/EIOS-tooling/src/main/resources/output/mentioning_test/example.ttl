@@ -1,0 +1,466 @@
+@prefix PR:    <http://purl.obolibrary.org/obo/PR_> .
+@prefix ENVO:  <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix CARO:  <http://purl.obolibrary.org/obo/CARO_> .
+@prefix PECO:  <http://purl.obolibrary.org/obo/PECO_> .
+@prefix EPO:   <https://bio.scai.fraunhofer.de/ontology/epilepsy#> .
+@prefix CLO:   <http://purl.obolibrary.org/obo/CLO_> .
+@prefix PW:    <http://purl.obolibrary.org/obo/PW_> .
+@prefix HP:    <http://purl.obolibrary.org/obo/HP_> .
+@prefix PATO:  <http://purl.obolibrary.org/obo/PATO_> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix OGSF:  <http://purl.obolibrary.org/obo/OGSF_> .
+@prefix COVID-19: <https://bscantology/COVID_> .
+@prefix PDRO:  <http://purl.obolibrary.org/obo/PDRO_> .
+@prefix MONDO: <http://purl.obolibrary.org/obo/MONDO_> .
+@prefix MAMO:  <http://identifiers.org/mamo/MAMO_> .
+@prefix CHEBI: <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix MEDDRA: <http://purl.bioontology.org/ontology/MEDDRA/> .
+@prefix OPMI:  <http://purl.obolibrary.org/obo/OPMI_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix NCBITAXON: <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix NBO:   <http://purl.obolibrary.org/obo/NBO_> .
+@prefix HMDBMC: <https://hmdb.ca/metabolites/> .
+@prefix OMIABIS: <http://purl.obolibrary.org/obo/OMIABIS_> .
+@prefix VBO:   <http://purl.obolibrary.org/obo/VBO_> .
+@prefix CMO:   <http://purl.obolibrary.org/obo/CMO_> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix IAO:   <http://purl.obolibrary.org/obo/IAO_> .
+@prefix ZP:    <http://purl.obolibrary.org/obo/ZP_> .
+@prefix RO:    <http://purl.obolibrary.org/obo/RO_> .
+@prefix ARO:   <http://purl.obolibrary.org/obo/ARO_> .
+@prefix schema: <https://schema.org/> .
+@prefix RS:    <http://purl.obolibrary.org/obo/RS_> .
+@prefix ERO:   <http://purl.obolibrary.org/obo/ERO_> .
+@prefix EUPATH: <http://purl.obolibrary.org/obo/EUPATH_> .
+@prefix GENEPIO: <http://purl.obolibrary.org/obo/GENEPIO_> .
+@prefix mental_disorder: <https://bio.scai.fraunhofer.de/ontology/mental_disorder#> .
+@prefix BPDO:  <https://bio.scai.fraunhofer.de/ontology/bipolar_disorder#> .
+@prefix GNO:   <http://purl.obolibrary.org/obo/GNO_> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix FOODON: <http://purl.obolibrary.org/obo/FOODON_> .
+@prefix scai:  <https://www.scai.fraunhofer.de/> .
+@prefix TRANS: <http://purl.obolibrary.org/obo/TRANS_> .
+@prefix FLU:   <http://purl.obolibrary.org/obo/FLU_> .
+@prefix dbpedia-organization: <http://dbpedia.org/resource/> .
+@prefix VTO:   <http://purl.obolibrary.org/obo/VTO_> .
+@prefix IDOMAL: <http://purl.obolibrary.org/obo/IDOMAL_> .
+@prefix SEPIO: <http://purl.obolibrary.org/obo/SEPIO_> .
+@prefix ZDB:   <https://zfin.org/> .
+@prefix OGMS:  <http://purl.obolibrary.org/obo/OGMS_> .
+@prefix FMA:   <http://purl.obolibrary.org/obo/FMA_> .
+@prefix SO:    <http://purl.obolibrary.org/obo/SO_> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix SCAI:  <https://bio.scai.fraunhofer.de/ontology/> .
+@prefix loinc: <https://loinc.org/> .
+@prefix hpath: <https://github.com/Novartis/hpath/> .
+@prefix HMDB:  <https://hmdb.ca/metabolites/> .
+@prefix CL:    <http://purl.obolibrary.org/obo/CL_> .
+@prefix GSSO:  <http://purl.obolibrary.org/obo/GSSO_> .
+@prefix CO:    <http://www.cropontology.org/rdf/CO_> .
+@prefix CP:    <http://purl.obolibrary.org/obo/CP_> .
+@prefix CIDO:  <http://purl.obolibrary.org/obo/CIDO_> .
+@prefix OGG:   <http://purl.obolibrary.org/obo/OGG_> .
+@prefix ATC:   <https://identifiers.org/atc:> .
+@prefix OGI:   <http://purl.obolibrary.org/obo/OGI_> .
+@prefix ADORF: <https://gitlab.scai.fraunhofer.de/bio/ado-revision/ADO_> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ONTONEO: <http://purl.obolibrary.org/obo/ONTONEO_> .
+@prefix ADOSAS: <https://gitlab.scai.fraunhofer.de/bio/ado-revision/ADO_> .
+@prefix ZFIN:  <http://zfin.org/> .
+@prefix DRUGBANK: <https://identifiers.org/drugbank:> .
+@prefix NCIT:  <http://purl.obolibrary.org/obo/NCIT_> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix BFO:   <http://purl.obolibrary.org/obo/BFO_> .
+@prefix ORDO:  <http://www.orpha.net/ORDO/> .
+@prefix ADO:   <https://gitlab.scai.fraunhofer.de/bio/ado-revision/ADO_> .
+@prefix MPATH: <http://purl.obolibrary.org/obo/MPATH_> .
+@prefix atc:   <https://www.whocc.no/atc_ddd_index/?code=> .
+@prefix HsapDv: <http://purl.obolibrary.org/obo/HsapDv_> .
+@prefix OPS:   <https://www.dimdi.de/static/de/klassifikationen/ops/kode-suche/opshtml2020/> .
+@prefix ZFA:   <http://purl.obolibrary.org/obo/ZFA_> .
+@prefix IDO:   <http://purl.obolibrary.org/obo/IDO_> .
+@prefix XLMOD: <http://purl.obolibrary.org/obo/XLMOD_> .
+@prefix MC:    <http://purl.obolibrary.org/obo/MC_> .
+@prefix UBERON: <http://purl.obolibrary.org/obo/UBERON_> .
+@prefix MF:    <http://purl.obolibrary.org/obo/MF_> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix UO:    <http://purl.obolibrary.org/obo/UO_> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix COVID-owl: <https://bio.scai.fraunhofer.de/ontology/COVID.owl#> .
+@prefix MFOEM: <http://purl.obolibrary.org/obo/MFOEM_> .
+@prefix MP:    <http://purl.obolibrary.org/obo/MP_> .
+@prefix TXPO:  <http://purl.obolibrary.org/obo/TXPO_> .
+@prefix HSO:   <http://purl.obolibrary.org/obo/HSO_> .
+@prefix MS:    <http://purl.obolibrary.org/obo/MS_> .
+@prefix ZFS:   <http://purl.obolibrary.org/obo/ZFS_> .
+@prefix schizo: <https://bio.scai.fraunhofer.de/ontology/schizophrenia#> .
+@prefix EIOS:  <https://www.scai.fraunhofer.de/EiosTooling/> .
+@prefix MAXO:  <http://purl.obolibrary.org/obo/MAXO_> .
+@prefix gecco: <https://bio.scai.fraunhofer.de/ontology/GECCO_> .
+@prefix OMIT:  <http://purl.obolibrary.org/obo/OMIT_> .
+@prefix MMO:   <http://purl.obolibrary.org/obo/MMO_> .
+@prefix SYMP:  <http://purl.obolibrary.org/obo/SYMP_> .
+@prefix WHO_massgathering: <https://bio.scai.fraunhofer.de/ontology/WHO_massgathering#> .
+@prefix OAE:   <http://purl.obolibrary.org/obo/OAE_> .
+@prefix MFOMD: <http://purl.obolibrary.org/obo/MFOMD_> .
+@prefix marker: <http://www.informatics.jax.org/marker/key/> .
+@prefix SIO:   <http://semanticscience.org/resource/SIO_> .
+@prefix VO:    <http://purl.obolibrary.org/obo/VO_> .
+@prefix sctid: <http://purl.bioontology.org/ontology/SNOMEDCT/> .
+@prefix PCO:   <http://purl.obolibrary.org/obo/PCO_> .
+@prefix ADOTR: <https://gitlab.scai.fraunhofer.de/bio/ado-revision/ADO_> .
+@prefix who:   <https://int.who/> .
+@prefix GAZ:   <http://purl.obolibrary.org/obo/GAZ_> .
+@prefix STATO: <http://purl.obolibrary.org/obo/STATO_> .
+@prefix XCO:   <http://purl.obolibrary.org/obo/XCO_> .
+@prefix DOID:  <http://purl.obolibrary.org/obo/DOID_> .
+@prefix MESH:  <http://id.nlm.nih.gov/mesh/> .
+@prefix DRON:  <http://purl.obolibrary.org/obo/DRON_> .
+@prefix EFO:   <http://www.ebi.ac.uk/efo/EFO_> .
+@prefix OBA:   <http://purl.obolibrary.org/obo/OBA_> .
+@prefix COVID: <https://bio.scai.fraunhofer.de/ontology/COVID_> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix WHOdisaster: <https://bio.scai.fraunhofer.de/ontology/WHOdisaster#> .
+@prefix dbpedia-person: <http://dbpedia.org/resource/> .
+@prefix HGNC:  <https://identifiers.org/hgnc:> .
+@prefix HYPOTHESIS: <https://bio.scai.fraunhofer.de/ontology/hypothesis_> .
+@prefix OBI:   <http://purl.obolibrary.org/obo/OBI_> .
+@prefix CHMO:  <http://purl.obolibrary.org/obo/CHMO_> .
+@prefix SWISSPROT: <https://www.uniprot.org/uniprot/> .
+@prefix EPILEPSY: <https://bio.scai.fraunhofer.de/ontology/epilepsy/> .
+@prefix icd10: <https://www.dimdi.de/static/de/klassifikationen/icd/icd-10-gm/kode-suche/htmlgm2012/> .
+@prefix MOD:   <http://purl.obolibrary.org/obo/MOD_> .
+@prefix gn:    <https://sws.geonames.org/> .
+@prefix GO:    <http://purl.obolibrary.org/obo/GO_> .
+@prefix ENTREZGENE: <https://www.ncbi.nlm.nih.gov/gene/> .
+@prefix NCBITaxon: <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix SCTO:  <http://snomed.info/id/> .
+@prefix APOLLO-SV: <http://purl.obolibrary.org/obo/APOLLO_SV_> .
+@prefix dc11:  <http://purl.org/dc/elements/1.1/> .
+@prefix CTI:   <https://bio.scai.fraunhofer.de/ontology/CTI_> .
+@prefix OMRSE: <http://purl.obolibrary.org/obo/OMRSE_> .
+@prefix category: <https://int.who/EIOS_category/> .
+@prefix MIRO:  <http://purl.obolibrary.org/obo/MIRO_> .
+@prefix SCDO:  <http://purl.obolibrary.org/obo/SCDO_> .
+@prefix ZECO:  <http://purl.obolibrary.org/obo/ZECO_> .
+@prefix CTO:   <http://purl.obolibrary.org/obo/CTO_> .
+
+category:PAHO  a          who:Category ;
+        rdfs:label        "Colombia"@es , "Argentina"@en ;
+        dc11:identifier   "category:PAHO" ;
+        EIOS:mentionedIn  who:TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba , who:TextElement_dab15909-804b-32af-9f7f-e58d00130a0a , who:TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05 .
+
+<https://sws.geonames.org/5128638/>
+        a                 dcterms:Location ;
+        rdfs:label        "Nova York"@pt ;
+        dc11:identifier   "gn:5128638" ;
+        EIOS:mentionedIn  who:TextElement_0853782a-2b3f-3391-bae3-19e2bc2cc633 , who:TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105 .
+
+who:TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Paris Saint-Germain head coach, Christophe Galtier, has confirmed that superstar player, Lionel Messi, will return to training on Tuesday, January 3. Galtier also urged PSG fans to remember what Messi has done since the start of the season with the team now that the Argentina captain has achieved...." ;
+        dc11:identifier   "TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05" ;
+        EIOS:partOf       EIOS:Document_401863354 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+who:TextElement_2c527bef-aa8b-3315-bd4e-d8807daf06ba
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Over 60 russian military deaths in an attack in Donetsk ukrainian" ;
+        dc11:identifier   "TextElement_2c527bef-aa8b-3315-bd4e-d8807daf06ba" ;
+        EIOS:partOf       EIOS:Document_401863009 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+who:TextElement_1b351f82-47f0-3531-bac0-19e6df0dd9d9
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Primera masacre del año: cuatro muertos tras ataque en Río de Oro, Cesar" ;
+        dc11:identifier   "TextElement_1b351f82-47f0-3531-bac0-19e6df0dd9d9" ;
+        EIOS:partOf       EIOS:Document_401863331 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+category:Vaccinationrisks
+        a                 who:Category ;
+        rdfs:label        "morte"@pt ;
+        dc11:identifier   "category:Vaccinationrisks" ;
+        EIOS:mentionedIn  who:TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105 .
+
+who:TextElement_981a0d9b-8dfd-3ef4-a41f-2408d74939ad
+        a                 EIOS:Mentioning ;
+        rdfs:label        "CIUDAD DEL VATICANO.- Una fila interminable de fieles atravesó hoy la basílica de San Pedro para despedir al papa emérito Benedicto XVI, procesionando ante su cuerpo en medio de un silencio reverencial y el ritmo sin pausa de una antigua letanía. Los restos de Ratzinger, fallecido el sábado con 95...." ;
+        dc11:identifier   "TextElement_981a0d9b-8dfd-3ef4-a41f-2408d74939ad" ;
+        EIOS:partOf       EIOS:Document_401863010 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+EIOS:Document_401863293
+        a                schema:TextDigitalDocument ;
+        rdfs:label       "4 positions of yoga to sleep better"@en , "4 posturas de yoga para dormir mejor"@es ;
+        dc11:identifier  "EIOS:401863293_en" , "EIOS:401863293_es" .
+
+who:TextElement_ef8a62f7-2b7e-3ab1-9020-26fcfae5a04b
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Im Prozess um den gewaltsamen Tod einer Afghanin gegen zwei Brüder des 34-jährigen Opfers ist nach Planungen des Berliner Landgerichts ein Urteil in Sicht. Für den 9. Januar sind nach derzeitigem Stand die Plädoyers von Staatsanwaltschaft, Nebenklage und Verteidigung vorgesehen. Ein Urteil könnte dann am 19." ;
+        dc11:identifier   "TextElement_ef8a62f7-2b7e-3ab1-9020-26fcfae5a04b" ;
+        EIOS:partOf       EIOS:Document_401863018 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+EIOS:Document_401863331
+        a                schema:TextDigitalDocument ;
+        rdfs:label       "First massacre of the year: four dead after attack on river gold, cease"@en , "Primera masacre del año: cuatro muertos tras ataque en Río de Oro, Cesar"@es ;
+        dc11:identifier  "EIOS:401863331_en" , "EIOS:401863331_es" .
+
+<https://sws.geonames.org/3686880/>
+        a                 dcterms:Location ;
+        rdfs:label        "Río de Oro"@es ;
+        dc11:identifier   "gn:3686880" ;
+        EIOS:mentionedIn  who:TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba , who:TextElement_1b351f82-47f0-3531-bac0-19e6df0dd9d9 , who:TextElement_dab15909-804b-32af-9f7f-e58d00130a0a .
+
+dbpedia-person:Ministerio_de_Defensa
+        a                 foaf:Organization ;
+        rdfs:label        "Ministerio de Defensa"@es ;
+        dc11:identifier   "dbpedia-organization:Ministerio_de_Defensa" ;
+        EIOS:mentionedIn  who:TextElement_e200750c-5e7c-3828-9b33-f5c3d14180bb .
+
+EIOS:Document_401863009
+        a                schema:TextDigitalDocument ;
+        rdfs:label       "Over 60 russian military deaths in an attack in Donetsk ukrainian"@en , "Más de 60 militares rusos muertos en un ataque ucraniano en Donetsk"@es ;
+        dc11:identifier  "EIOS:401863009_en" , "EIOS:401863009_es" .
+
+who:TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Colombia already recorded its first massacre in 2023. The fact of blood took place on Sunday, 1 January, in the municipality of Río de Oro, in the department of cease, in a local commercial located on the road towards Ocaña (Norte de Santander), when a group of men fired against the...." ;
+        dc11:identifier   "TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba" ;
+        EIOS:partOf       EIOS:Document_401863331 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+<https://sws.geonames.org/3109718/>
+        a                 dcterms:Location ;
+        rdfs:label        "Santander"@es ;
+        dc11:identifier   "gn:3109718" ;
+        EIOS:mentionedIn  who:TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba , who:TextElement_dab15909-804b-32af-9f7f-e58d00130a0a .
+
+who:TextElement_0ece3b1c-3316-36fe-ba08-9ac1f82c0c9a
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Rusia admite la muerte de 63 soldados en un ataque con misiles ucranianos en Donetsk" ;
+        dc11:identifier   "TextElement_0ece3b1c-3316-36fe-ba08-9ac1f82c0c9a" ;
+        EIOS:partOf       EIOS:Document_401863297 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+<https://sws.geonames.org/3582676/>
+        a                 dcterms:Location ;
+        rdfs:label        "San Pedro"@es ;
+        dc11:identifier   "gn:3582676" ;
+        EIOS:mentionedIn  who:TextElement_981a0d9b-8dfd-3ef4-a41f-2408d74939ad .
+
+who:TextElement_83da0ee4-1454-3967-b9b9-9d12ce91171f
+        a                 EIOS:Mentioning ;
+        rdfs:label        "The ministry of defence of russia admitted this Monday that at least 63 solados russians were killed in a rocket attack against its ukrainian barracks during new year's eve in the city of Makiivka, in the part controlled by russia of the ukrainian region of Donetsk, annexed by moscow last September." ;
+        dc11:identifier   "TextElement_83da0ee4-1454-3967-b9b9-9d12ce91171f" ;
+        EIOS:partOf       EIOS:Document_401863297 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+who:TextElement_1108f3d6-ea28-33fc-8c34-a13023f74d5e
+        a                 EIOS:Mentioning ;
+        rdfs:label        "En España, entre un 20 y un 48 % de la población adulta ha sufrido en algún momento dificultades para , según datos de la Sociedad Española de Neurología (SEN). Lo cierto es dormir y descansar debidamente es fundamental para la salud y el bienestar. El insomnio afecta negativamente al organismo ,...." ;
+        dc11:identifier   "TextElement_1108f3d6-ea28-33fc-8c34-a13023f74d5e" ;
+        EIOS:partOf       EIOS:Document_401863293 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+who:TextElement_afbba861-f896-356c-80f8-48b9f24c8499
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Treinta y seis fallecidos en las carreteras desde el comienzo de la Navidad" ;
+        dc11:identifier   "TextElement_afbba861-f896-356c-80f8-48b9f24c8499" ;
+        EIOS:partOf       EIOS:Document_401863320 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+dbpedia-person:Pope_Benedict_XVI
+        a                 foaf:Person ;
+        rdfs:label        "Benedicto XVI"@es ;
+        dc11:identifier   "dbpedia-person:Pope_Benedict_XVI" ;
+        EIOS:mentionedIn  who:TextElement_981a0d9b-8dfd-3ef4-a41f-2408d74939ad .
+
+EIOS:Document_401863010
+        a                schema:TextDigitalDocument ;
+        rdfs:label       "A crowd silent to sack the pope emérito"@en , "Una multitud silenciosa para despedir al papa emérito"@es ;
+        dc11:identifier  "EIOS:401863010_en" , "EIOS:401863010_es" .
+
+EIOS:Document_401863008
+        a                schema:TextDigitalDocument ;
+        rdfs:label       "Viewers see less television: consumption falls to its lowest in three decades"@en , "Los espectadores ven menos televisión: el consumo cae a su cifra más baja en tres décadas"@es ;
+        dc11:identifier  "EIOS:401863008_en" , "EIOS:401863008_es" .
+
+<https://sws.geonames.org/3673798/>
+        a                 dcterms:Location ;
+        rdfs:label        "Ocaña"@es ;
+        dc11:identifier   "gn:3673798" ;
+        EIOS:mentionedIn  who:TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba , who:TextElement_dab15909-804b-32af-9f7f-e58d00130a0a .
+
+EIOS:Document_401863297
+        a                schema:TextDigitalDocument ;
+        rdfs:label       "Russia admits the death of 63 soldiers in a rocket attack ukrainians in Donetsk"@en , "Rusia admite la muerte de 63 soldados en un ataque con misiles ucranianos en Donetsk"@es ;
+        dc11:identifier  "EIOS:401863297_en" , "EIOS:401863297_es" .
+
+who:TextElement_e200750c-5e7c-3828-9b33-f5c3d14180bb
+        a                 EIOS:Mentioning ;
+        rdfs:label        "El Ministerio de Defensa de Rusia admitió este lunes que al menos 63 solados rusos murieron en un ataque con misiles ucranianos contra sus cuarteles durante la Nochevieja en la ciudad de Makiivka, en la parte controlada por Rusia de la región ucraniana de Donetsk, anexionada por Moscú en septiembre pasado." ;
+        dc11:identifier   "TextElement_e200750c-5e7c-3828-9b33-f5c3d14180bb" ;
+        EIOS:partOf       EIOS:Document_401863297 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+who:TextElement_2334ecf4-570f-3e26-9b74-e776ff9a802a
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Treinta y seis personas han fallecido en los 28 accidentes mortales registrados en las carreteras desde las 15.00 horas del viernes 23 de diciembre, víspera de Nochebuena, cuando arrancó el dispositivo especial de tráfico con motivo de las fiestas navideñas, hasta las doce de la noche de este domingo." ;
+        dc11:identifier   "TextElement_2334ecf4-570f-3e26-9b74-e776ff9a802a" ;
+        EIOS:partOf       EIOS:Document_401863320 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+who:Day_2023-01-02  a  EIOS:Date ;
+        rdfs:label  "2023-01-02" .
+
+who:TextElement_2244c927-171e-3013-9558-07a5331c2629
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Russia admits the death of 63 soldiers in a rocket attack ukrainians in Donetsk" ;
+        dc11:identifier   "TextElement_2244c927-171e-3013-9558-07a5331c2629" ;
+        EIOS:partOf       EIOS:Document_401863297 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+who:TextElement_0853782a-2b3f-3391-bae3-19e2bc2cc633
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Nova York aprova compostagem com restos humanos" ;
+        dc11:identifier   "TextElement_0853782a-2b3f-3391-bae3-19e2bc2cc633" ;
+        EIOS:partOf       EIOS:Document_401862973 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+category:ImplantRisks
+        a                 who:Category ;
+        rdfs:label        "morte"@pt ;
+        dc11:identifier   "category:ImplantRisks" ;
+        EIOS:mentionedIn  who:TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105 .
+
+category:OutBreaks  a     who:Category ;
+        rdfs:label        "morte"@pt ;
+        dc11:identifier   "category:OutBreaks" ;
+        EIOS:mentionedIn  who:TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105 .
+
+dbpedia-person:Sociedad_Espanola
+        a                 foaf:Organization ;
+        rdfs:label        "Sociedad Española"@es ;
+        dc11:identifier   "dbpedia-organization:Sociedad_Espanola" ;
+        EIOS:mentionedIn  who:TextElement_1108f3d6-ea28-33fc-8c34-a13023f74d5e .
+
+<https://sws.geonames.org/709716/>
+        a                 dcterms:Location ;
+        rdfs:label        "Donetsk"@es , "Makiivka"@es ;
+        dc11:identifier   "gn:709716" ;
+        EIOS:mentionedIn  who:TextElement_2244c927-171e-3013-9558-07a5331c2629 , who:TextElement_e200750c-5e7c-3828-9b33-f5c3d14180bb , who:TextElement_83da0ee4-1454-3967-b9b9-9d12ce91171f , who:TextElement_c9d9327d-a4e2-3cf6-b228-638ce3e6f5fa , who:TextElement_2c527bef-aa8b-3315-bd4e-d8807daf06ba , who:TextElement_0ece3b1c-3316-36fe-ba08-9ac1f82c0c9a .
+
+who:TextElement_b7f1bd7a-c179-3438-8d9d-6ca8a0888880
+        a                 EIOS:Mentioning ;
+        rdfs:label        "El nuevo año comienza en Ucrania con más bombardeos. En esta ocasión, el Gobierno de Rusia ha confirmado este lunes la muerte de más de 60 militares en un ataque ejecutado por el Ejército de Kiev con un sistema de cohetes de artillería de alta movilidad (HIMARS) contra una localidad en la zona de la...." ;
+        dc11:identifier   "TextElement_b7f1bd7a-c179-3438-8d9d-6ca8a0888880" ;
+        EIOS:partOf       EIOS:Document_401863009 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+who:TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105
+        a                 EIOS:Mentioning ;
+        rdfs:label        "É o mais recente Estado americano a aprovar a prática — considerada mais verde do que cremação ou enterro tradicional. Empresas de compostagem dos EUA, como a Recompose, dizem que a prática é uma opção sustentável após a morte BBC Nova York se tornou o mais recente Estado dos EUA a autorizar a chamada compostagem humana." ;
+        dc11:identifier   "TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105" ;
+        EIOS:partOf       EIOS:Document_401862973 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+<https://sws.geonames.org/524894/>
+        a                 dcterms:Location ;
+        rdfs:label        "Moscú"@es ;
+        dc11:identifier   "gn:524894" ;
+        EIOS:mentionedIn  who:TextElement_e200750c-5e7c-3828-9b33-f5c3d14180bb .
+
+EIOS:Document_401863354
+        a                schema:TextDigitalDocument ;
+        rdfs:label       "PSG coach, Galtier confirms Messi’s return, makes demand"@en ;
+        dc11:identifier  "EIOS:401863354_en" .
+
+category:Contamination
+        a                 who:Category ;
+        rdfs:label        "morte"@pt ;
+        dc11:identifier   "category:Contamination" ;
+        EIOS:mentionedIn  who:TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105 .
+
+who:TextElement_dab15909-804b-32af-9f7f-e58d00130a0a
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Colombia ya registra su primera masacre de 2023. El hecho de sangre tuvo lugar el domingo, 1 de enero, en el municipio de Río de Oro, en el departamento del Cesar, en un local comercial ubicado sobre la carretera hacia Ocaña (Norte de Santander), cuando un grupo de hombres disparó contra el...." ;
+        dc11:identifier   "TextElement_dab15909-804b-32af-9f7f-e58d00130a0a" ;
+        EIOS:partOf       EIOS:Document_401863331 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+category:EURO  a          who:Category ;
+        rdfs:label        "Moscú"@es , "Berliner"@de , "Rusia"@es , "Paris"@en ;
+        dc11:identifier   "category:EURO" ;
+        EIOS:mentionedIn  who:TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05 , who:TextElement_ef8a62f7-2b7e-3ab1-9020-26fcfae5a04b , who:TextElement_0ece3b1c-3316-36fe-ba08-9ac1f82c0c9a , who:TextElement_b7f1bd7a-c179-3438-8d9d-6ca8a0888880 , who:TextElement_e200750c-5e7c-3828-9b33-f5c3d14180bb .
+
+EIOS:Document_401863320
+        a                schema:TextDigitalDocument ;
+        rdfs:label       "Thirty-six killed on roads since the beginning of the christmas"@en , "Treinta y seis fallecidos en las carreteras desde el comienzo de la Navidad"@es ;
+        dc11:identifier  "EIOS:401863320_en" , "EIOS:401863320_es" .
+
+dbpedia-person:BBC  a     foaf:Organization ;
+        rdfs:label        "BBC"@pt ;
+        dc11:identifier   "dbpedia-organization:BBC" ;
+        EIOS:mentionedIn  who:TextElement_b450556a-97ad-32be-a01a-091ca9499ed1 , who:TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105 .
+
+category:Death  a         who:Category ;
+        rdfs:label        "muerte"@es , "Tod"@de , "fallecido"@es , "muertos"@es ;
+        dc11:identifier   "category:Death" ;
+        EIOS:mentionedIn  who:TextElement_afbba861-f896-356c-80f8-48b9f24c8499 , who:TextElement_b7f1bd7a-c179-3438-8d9d-6ca8a0888880 , who:TextElement_1b351f82-47f0-3531-bac0-19e6df0dd9d9 , who:TextElement_2334ecf4-570f-3e26-9b74-e776ff9a802a , who:TextElement_ef8a62f7-2b7e-3ab1-9020-26fcfae5a04b , who:TextElement_981a0d9b-8dfd-3ef4-a41f-2408d74939ad , who:TextElement_c9d9327d-a4e2-3cf6-b228-638ce3e6f5fa , who:TextElement_0ece3b1c-3316-36fe-ba08-9ac1f82c0c9a .
+
+who:TextElement_b450556a-97ad-32be-a01a-091ca9499ed1
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Is the most recent us state to adopt the practice be greener than cremação or working. Composting of us companies, such as Recompose, say that the practice is a sustainable option after the death BBC new York became the most recent state to authorise the so-called composting." ;
+        dc11:identifier   "TextElement_b450556a-97ad-32be-a01a-091ca9499ed1" ;
+        EIOS:partOf       EIOS:Document_401862973 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+category:TransplantRisks
+        a                 who:Category ;
+        rdfs:label        "morte"@pt ;
+        dc11:identifier   "category:TransplantRisks" ;
+        EIOS:mentionedIn  who:TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105 .
+
+dbpedia-person:Paris_Saint_Germain
+        a                 foaf:Organization ;
+        rdfs:label        "Paris Saint-Germain"@en ;
+        dc11:identifier   "dbpedia-organization:Paris_Saint_Germain" ;
+        EIOS:mentionedIn  who:TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05 .
+
+dbpedia-person:Christophe_Galtier
+        a                 foaf:Person ;
+        rdfs:label        "Christophe Galtier"@en ;
+        dc11:identifier   "dbpedia-person:Christophe_Galtier" ;
+        EIOS:mentionedIn  who:TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05 .
+
+EIOS:Document_401862973
+        a                schema:TextDigitalDocument ;
+        rdfs:label       "New York approves composting with human remains"@en , "Nova York aprova compostagem com restos humanos"@pt ;
+        dc11:identifier  "EIOS:401862973_en" , "EIOS:401862973_pt" .
+
+who:TextElement_c9d9327d-a4e2-3cf6-b228-638ce3e6f5fa
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Más de 60 militares rusos muertos en un ataque ucraniano en Donetsk" ;
+        dc11:identifier   "TextElement_c9d9327d-a4e2-3cf6-b228-638ce3e6f5fa" ;
+        EIOS:partOf       EIOS:Document_401863009 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+who:TextElement_be5eb3ba-0039-3664-831b-571a207e3bf5
+        a                 EIOS:Mentioning ;
+        rdfs:label        "PSG coach, Galtier confirms Messi’s return, makes demand" ;
+        dc11:identifier   "TextElement_be5eb3ba-0039-3664-831b-571a207e3bf5" ;
+        EIOS:partOf       EIOS:Document_401863354 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+EIOS:Document_401863018
+        a                schema:TextDigitalDocument ;
+        rdfs:label       "After ten month sodium negotiation: judgment in the process to murder of Maryam. H in sight"@en , "Nach zehnmonatiger Verhandlung: Urteil im Prozess um Mord an Maryam. H in Sicht"@de ;
+        dc11:identifier  "EIOS:401863018_en" , "EIOS:401863018_de" .
+
+dbpedia-person:Lionel_Messi
+        a                 foaf:Person ;
+        rdfs:label        "Messi"@en , "Lionel Messi"@en ;
+        dc11:identifier   "dbpedia-person:Lionel_Messi" ;
+        EIOS:mentionedIn  who:TextElement_be5eb3ba-0039-3664-831b-571a207e3bf5 , who:TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05 .

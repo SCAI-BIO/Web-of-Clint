@@ -1,0 +1,19 @@
+{ 
+  "track_total_hits": true,
+  "from": 0,
+  "query" : 
+	{  "match_all": {}  
+	}, 
+  "sort": [
+    {
+      "processedOnDate": {
+        "order": "desc"      },
+      "id" : {
+      "order": "asc" }  
+    }
+  ],
+  "_source": {
+    "includes": [
+      "*"    ]
+  }
+}

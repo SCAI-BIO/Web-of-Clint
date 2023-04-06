@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:ns0="https://www.scai.fraunhofer.de/EiosTooling/"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+  <rdf:Description rdf:about="https://int.who/EIOS_category/PAHO">
+    <rdf:type rdf:resource="https://int.who/Category"/>
+    <rdfs:label xml:lang="es">Colombia</rdfs:label>
+    <rdfs:label xml:lang="en">Argentina</rdfs:label>
+    <dc11:identifier>category:PAHO</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_dab15909-804b-32af-9f7f-e58d00130a0a"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05"/>
+  </rdf:Description>
+
+  <dc:Location rdf:about="https://sws.geonames.org/5128638/">
+    <rdfs:label xml:lang="pt">Nova York</rdfs:label>
+    <dc11:identifier>gn:5128638</dc11:identifier>
+    <ns0:mentionedIn>
+      <ns0:Mentioning rdf:about="https://int.who/TextElement_0853782a-2b3f-3391-bae3-19e2bc2cc633">
+        <rdfs:label>Nova York aprova compostagem com restos humanos</rdfs:label>
+        <dc11:identifier>TextElement_0853782a-2b3f-3391-bae3-19e2bc2cc633</dc11:identifier>
+        <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401862973"/>
+        <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+      </ns0:Mentioning>
+    </ns0:mentionedIn>
+
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105"/>
+  </dc:Location>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05">
+    <rdfs:label>Paris Saint-Germain head coach, Christophe Galtier, has confirmed that superstar player, Lionel Messi, will return to training on Tuesday, January 3. Galtier also urged PSG fans to remember what Messi has done since the start of the season with the team now that the Argentina captain has achieved....</rdfs:label>
+    <dc11:identifier>TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863354"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_2c527bef-aa8b-3315-bd4e-d8807daf06ba">
+    <rdfs:label>Over 60 russian military deaths in an attack in Donetsk ukrainian</rdfs:label>
+    <dc11:identifier>TextElement_2c527bef-aa8b-3315-bd4e-d8807daf06ba</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863009"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_1b351f82-47f0-3531-bac0-19e6df0dd9d9">
+    <rdfs:label>Primera masacre del año: cuatro muertos tras ataque en Río de Oro, Cesar</rdfs:label>
+    <dc11:identifier>TextElement_1b351f82-47f0-3531-bac0-19e6df0dd9d9</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863331"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <rdf:Description rdf:about="https://int.who/EIOS_category/Vaccinationrisks">
+    <rdf:type rdf:resource="https://int.who/Category"/>
+    <rdfs:label xml:lang="pt">morte</rdfs:label>
+    <dc11:identifier>category:Vaccinationrisks</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105"/>
+  </rdf:Description>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_981a0d9b-8dfd-3ef4-a41f-2408d74939ad">
+    <rdfs:label>CIUDAD DEL VATICANO.- Una fila interminable de fieles atravesó hoy la basílica de San Pedro para despedir al papa emérito Benedicto XVI, procesionando ante su cuerpo en medio de un silencio reverencial y el ritmo sin pausa de una antigua letanía. Los restos de Ratzinger, fallecido el sábado con 95....</rdfs:label>
+    <dc11:identifier>TextElement_981a0d9b-8dfd-3ef4-a41f-2408d74939ad</dc11:identifier>
+    <ns0:partOf>
+      <rdf:Description rdf:about="https://www.scai.fraunhofer.de/EiosTooling/Document_401863010">
+        <rdf:type rdf:resource="https://schema.org/TextDigitalDocument"/>
+        <rdfs:label xml:lang="en">A crowd silent to sack the pope emérito</rdfs:label>
+        <rdfs:label xml:lang="es">Una multitud silenciosa para despedir al papa emérito</rdfs:label>
+        <dc11:identifier>EIOS:401863010_en</dc11:identifier>
+        <dc11:identifier>EIOS:401863010_es</dc11:identifier>
+      </rdf:Description>
+    </ns0:partOf>
+
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <rdf:Description rdf:about="https://www.scai.fraunhofer.de/EiosTooling/Document_401863293">
+    <rdf:type rdf:resource="https://schema.org/TextDigitalDocument"/>
+    <rdfs:label xml:lang="en">4 positions of yoga to sleep better</rdfs:label>
+    <rdfs:label xml:lang="es">4 posturas de yoga para dormir mejor</rdfs:label>
+    <dc11:identifier>EIOS:401863293_en</dc11:identifier>
+    <dc11:identifier>EIOS:401863293_es</dc11:identifier>
+  </rdf:Description>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_ef8a62f7-2b7e-3ab1-9020-26fcfae5a04b">
+    <rdfs:label>Im Prozess um den gewaltsamen Tod einer Afghanin gegen zwei Brüder des 34-jährigen Opfers ist nach Planungen des Berliner Landgerichts ein Urteil in Sicht. Für den 9. Januar sind nach derzeitigem Stand die Plädoyers von Staatsanwaltschaft, Nebenklage und Verteidigung vorgesehen. Ein Urteil könnte dann am 19.</rdfs:label>
+    <dc11:identifier>TextElement_ef8a62f7-2b7e-3ab1-9020-26fcfae5a04b</dc11:identifier>
+    <ns0:partOf>
+      <rdf:Description rdf:about="https://www.scai.fraunhofer.de/EiosTooling/Document_401863018">
+        <rdf:type rdf:resource="https://schema.org/TextDigitalDocument"/>
+        <rdfs:label xml:lang="en">After ten month sodium negotiation: judgment in the process to murder of Maryam. H in sight</rdfs:label>
+        <rdfs:label xml:lang="de">Nach zehnmonatiger Verhandlung: Urteil im Prozess um Mord an Maryam. H in Sicht</rdfs:label>
+        <dc11:identifier>EIOS:401863018_en</dc11:identifier>
+        <dc11:identifier>EIOS:401863018_de</dc11:identifier>
+      </rdf:Description>
+    </ns0:partOf>
+
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <rdf:Description rdf:about="https://www.scai.fraunhofer.de/EiosTooling/Document_401863331">
+    <rdf:type rdf:resource="https://schema.org/TextDigitalDocument"/>
+    <rdfs:label xml:lang="en">First massacre of the year: four dead after attack on river gold, cease</rdfs:label>
+    <rdfs:label xml:lang="es">Primera masacre del año: cuatro muertos tras ataque en Río de Oro, Cesar</rdfs:label>
+    <dc11:identifier>EIOS:401863331_en</dc11:identifier>
+    <dc11:identifier>EIOS:401863331_es</dc11:identifier>
+  </rdf:Description>
+
+  <dc:Location rdf:about="https://sws.geonames.org/3686880/">
+    <rdfs:label xml:lang="es">Río de Oro</rdfs:label>
+    <dc11:identifier>gn:3686880</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_1b351f82-47f0-3531-bac0-19e6df0dd9d9"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_dab15909-804b-32af-9f7f-e58d00130a0a"/>
+  </dc:Location>
+
+  <foaf:Organization rdf:about="http://dbpedia.org/resource/Ministerio_de_Defensa">
+    <rdfs:label xml:lang="es">Ministerio de Defensa</rdfs:label>
+    <dc11:identifier>dbpedia-organization:Ministerio_de_Defensa</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_e200750c-5e7c-3828-9b33-f5c3d14180bb"/>
+  </foaf:Organization>
+
+  <rdf:Description rdf:about="https://www.scai.fraunhofer.de/EiosTooling/Document_401863009">
+    <rdf:type rdf:resource="https://schema.org/TextDigitalDocument"/>
+    <rdfs:label xml:lang="en">Over 60 russian military deaths in an attack in Donetsk ukrainian</rdfs:label>
+    <rdfs:label xml:lang="es">Más de 60 militares rusos muertos en un ataque ucraniano en Donetsk</rdfs:label>
+    <dc11:identifier>EIOS:401863009_en</dc11:identifier>
+    <dc11:identifier>EIOS:401863009_es</dc11:identifier>
+  </rdf:Description>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba">
+    <rdfs:label>Colombia already recorded its first massacre in 2023. The fact of blood took place on Sunday, 1 January, in the municipality of Río de Oro, in the department of cease, in a local commercial located on the road towards Ocaña (Norte de Santander), when a group of men fired against the....</rdfs:label>
+    <dc11:identifier>TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863331"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <dc:Location rdf:about="https://sws.geonames.org/3109718/">
+    <rdfs:label xml:lang="es">Santander</rdfs:label>
+    <dc11:identifier>gn:3109718</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_dab15909-804b-32af-9f7f-e58d00130a0a"/>
+  </dc:Location>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_0ece3b1c-3316-36fe-ba08-9ac1f82c0c9a">
+    <rdfs:label>Rusia admite la muerte de 63 soldados en un ataque con misiles ucranianos en Donetsk</rdfs:label>
+    <dc11:identifier>TextElement_0ece3b1c-3316-36fe-ba08-9ac1f82c0c9a</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863297"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <dc:Location rdf:about="https://sws.geonames.org/3582676/">
+    <rdfs:label xml:lang="es">San Pedro</rdfs:label>
+    <dc11:identifier>gn:3582676</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_981a0d9b-8dfd-3ef4-a41f-2408d74939ad"/>
+  </dc:Location>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_83da0ee4-1454-3967-b9b9-9d12ce91171f">
+    <rdfs:label>The ministry of defence of russia admitted this Monday that at least 63 solados russians were killed in a rocket attack against its ukrainian barracks during new year's eve in the city of Makiivka, in the part controlled by russia of the ukrainian region of Donetsk, annexed by moscow last September.</rdfs:label>
+    <dc11:identifier>TextElement_83da0ee4-1454-3967-b9b9-9d12ce91171f</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863297"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_1108f3d6-ea28-33fc-8c34-a13023f74d5e">
+    <rdfs:label>En España, entre un 20 y un 48 % de la población adulta ha sufrido en algún momento dificultades para , según datos de la Sociedad Española de Neurología (SEN). Lo cierto es dormir y descansar debidamente es fundamental para la salud y el bienestar. El insomnio afecta negativamente al organismo ,....</rdfs:label>
+    <dc11:identifier>TextElement_1108f3d6-ea28-33fc-8c34-a13023f74d5e</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863293"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_afbba861-f896-356c-80f8-48b9f24c8499">
+    <rdfs:label>Treinta y seis fallecidos en las carreteras desde el comienzo de la Navidad</rdfs:label>
+    <dc11:identifier>TextElement_afbba861-f896-356c-80f8-48b9f24c8499</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863320"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <foaf:Person rdf:about="http://dbpedia.org/resource/Pope_Benedict_XVI">
+    <rdfs:label xml:lang="es">Benedicto XVI</rdfs:label>
+    <dc11:identifier>dbpedia-person:Pope_Benedict_XVI</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_981a0d9b-8dfd-3ef4-a41f-2408d74939ad"/>
+  </foaf:Person>
+
+  <rdf:Description rdf:about="https://www.scai.fraunhofer.de/EiosTooling/Document_401863008">
+    <rdf:type rdf:resource="https://schema.org/TextDigitalDocument"/>
+    <rdfs:label xml:lang="en">Viewers see less television: consumption falls to its lowest in three decades</rdfs:label>
+    <rdfs:label xml:lang="es">Los espectadores ven menos televisión: el consumo cae a su cifra más baja en tres décadas</rdfs:label>
+    <dc11:identifier>EIOS:401863008_en</dc11:identifier>
+    <dc11:identifier>EIOS:401863008_es</dc11:identifier>
+  </rdf:Description>
+
+  <dc:Location rdf:about="https://sws.geonames.org/3673798/">
+    <rdfs:label xml:lang="es">Ocaña</rdfs:label>
+    <dc11:identifier>gn:3673798</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_dab15909-804b-32af-9f7f-e58d00130a0a"/>
+  </dc:Location>
+
+  <rdf:Description rdf:about="https://www.scai.fraunhofer.de/EiosTooling/Document_401863297">
+    <rdf:type rdf:resource="https://schema.org/TextDigitalDocument"/>
+    <rdfs:label xml:lang="en">Russia admits the death of 63 soldiers in a rocket attack ukrainians in Donetsk</rdfs:label>
+    <rdfs:label xml:lang="es">Rusia admite la muerte de 63 soldados en un ataque con misiles ucranianos en Donetsk</rdfs:label>
+    <dc11:identifier>EIOS:401863297_en</dc11:identifier>
+    <dc11:identifier>EIOS:401863297_es</dc11:identifier>
+  </rdf:Description>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_e200750c-5e7c-3828-9b33-f5c3d14180bb">
+    <rdfs:label>El Ministerio de Defensa de Rusia admitió este lunes que al menos 63 solados rusos murieron en un ataque con misiles ucranianos contra sus cuarteles durante la Nochevieja en la ciudad de Makiivka, en la parte controlada por Rusia de la región ucraniana de Donetsk, anexionada por Moscú en septiembre pasado.</rdfs:label>
+    <dc11:identifier>TextElement_e200750c-5e7c-3828-9b33-f5c3d14180bb</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863297"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_2334ecf4-570f-3e26-9b74-e776ff9a802a">
+    <rdfs:label>Treinta y seis personas han fallecido en los 28 accidentes mortales registrados en las carreteras desde las 15.00 horas del viernes 23 de diciembre, víspera de Nochebuena, cuando arrancó el dispositivo especial de tráfico con motivo de las fiestas navideñas, hasta las doce de la noche de este domingo.</rdfs:label>
+    <dc11:identifier>TextElement_2334ecf4-570f-3e26-9b74-e776ff9a802a</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863320"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <rdf:Description rdf:about="https://int.who/Day_2023-01-02">
+    <rdf:type>http://purl.obolibrary.org/obo/STATO_0000093</rdf:type>
+    <rdfs:label>2023-01-02</rdfs:label>
+  </rdf:Description>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_2244c927-171e-3013-9558-07a5331c2629">
+    <rdfs:label>Russia admits the death of 63 soldiers in a rocket attack ukrainians in Donetsk</rdfs:label>
+    <dc11:identifier>TextElement_2244c927-171e-3013-9558-07a5331c2629</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863297"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <rdf:Description rdf:about="https://int.who/EIOS_category/ImplantRisks">
+    <rdf:type rdf:resource="https://int.who/Category"/>
+    <rdfs:label xml:lang="pt">morte</rdfs:label>
+    <dc11:identifier>category:ImplantRisks</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://int.who/EIOS_category/OutBreaks">
+    <rdf:type rdf:resource="https://int.who/Category"/>
+    <rdfs:label xml:lang="pt">morte</rdfs:label>
+    <dc11:identifier>category:OutBreaks</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105"/>
+  </rdf:Description>
+
+  <foaf:Organization rdf:about="http://dbpedia.org/resource/Sociedad_Espanola">
+    <rdfs:label xml:lang="es">Sociedad Española</rdfs:label>
+    <dc11:identifier>dbpedia-organization:Sociedad_Espanola</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_1108f3d6-ea28-33fc-8c34-a13023f74d5e"/>
+  </foaf:Organization>
+
+  <dc:Location rdf:about="https://sws.geonames.org/709716/">
+    <rdfs:label xml:lang="es">Donetsk</rdfs:label>
+    <rdfs:label xml:lang="es">Makiivka</rdfs:label>
+    <dc11:identifier>gn:709716</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_2244c927-171e-3013-9558-07a5331c2629"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_e200750c-5e7c-3828-9b33-f5c3d14180bb"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_83da0ee4-1454-3967-b9b9-9d12ce91171f"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_c9d9327d-a4e2-3cf6-b228-638ce3e6f5fa"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_2c527bef-aa8b-3315-bd4e-d8807daf06ba"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_0ece3b1c-3316-36fe-ba08-9ac1f82c0c9a"/>
+  </dc:Location>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_b7f1bd7a-c179-3438-8d9d-6ca8a0888880">
+    <rdfs:label>El nuevo año comienza en Ucrania con más bombardeos. En esta ocasión, el Gobierno de Rusia ha confirmado este lunes la muerte de más de 60 militares en un ataque ejecutado por el Ejército de Kiev con un sistema de cohetes de artillería de alta movilidad (HIMARS) contra una localidad en la zona de la....</rdfs:label>
+    <dc11:identifier>TextElement_b7f1bd7a-c179-3438-8d9d-6ca8a0888880</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863009"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105">
+    <rdfs:label>É o mais recente Estado americano a aprovar a prática — considerada mais verde do que cremação ou enterro tradicional. Empresas de compostagem dos EUA, como a Recompose, dizem que a prática é uma opção sustentável após a morte BBC Nova York se tornou o mais recente Estado dos EUA a autorizar a chamada compostagem humana.</rdfs:label>
+    <dc11:identifier>TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401862973"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <dc:Location rdf:about="https://sws.geonames.org/524894/">
+    <rdfs:label xml:lang="es">Moscú</rdfs:label>
+    <dc11:identifier>gn:524894</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_e200750c-5e7c-3828-9b33-f5c3d14180bb"/>
+  </dc:Location>
+
+  <rdf:Description rdf:about="https://www.scai.fraunhofer.de/EiosTooling/Document_401863354">
+    <rdf:type rdf:resource="https://schema.org/TextDigitalDocument"/>
+    <rdfs:label xml:lang="en">PSG coach, Galtier confirms Messi’s return, makes demand</rdfs:label>
+    <dc11:identifier>EIOS:401863354_en</dc11:identifier>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://int.who/EIOS_category/Contamination">
+    <rdf:type rdf:resource="https://int.who/Category"/>
+    <rdfs:label xml:lang="pt">morte</rdfs:label>
+    <dc11:identifier>category:Contamination</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105"/>
+  </rdf:Description>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_dab15909-804b-32af-9f7f-e58d00130a0a">
+    <rdfs:label>Colombia ya registra su primera masacre de 2023. El hecho de sangre tuvo lugar el domingo, 1 de enero, en el municipio de Río de Oro, en el departamento del Cesar, en un local comercial ubicado sobre la carretera hacia Ocaña (Norte de Santander), cuando un grupo de hombres disparó contra el....</rdfs:label>
+    <dc11:identifier>TextElement_dab15909-804b-32af-9f7f-e58d00130a0a</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863331"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <rdf:Description rdf:about="https://int.who/EIOS_category/EURO">
+    <rdf:type rdf:resource="https://int.who/Category"/>
+    <rdfs:label xml:lang="es">Moscú</rdfs:label>
+    <rdfs:label xml:lang="de">Berliner</rdfs:label>
+    <rdfs:label xml:lang="es">Rusia</rdfs:label>
+    <rdfs:label xml:lang="en">Paris</rdfs:label>
+    <dc11:identifier>category:EURO</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_ef8a62f7-2b7e-3ab1-9020-26fcfae5a04b"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_0ece3b1c-3316-36fe-ba08-9ac1f82c0c9a"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_b7f1bd7a-c179-3438-8d9d-6ca8a0888880"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_e200750c-5e7c-3828-9b33-f5c3d14180bb"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://www.scai.fraunhofer.de/EiosTooling/Document_401863320">
+    <rdf:type rdf:resource="https://schema.org/TextDigitalDocument"/>
+    <rdfs:label xml:lang="en">Thirty-six killed on roads since the beginning of the christmas</rdfs:label>
+    <rdfs:label xml:lang="es">Treinta y seis fallecidos en las carreteras desde el comienzo de la Navidad</rdfs:label>
+    <dc11:identifier>EIOS:401863320_en</dc11:identifier>
+    <dc11:identifier>EIOS:401863320_es</dc11:identifier>
+  </rdf:Description>
+
+  <foaf:Organization rdf:about="http://dbpedia.org/resource/BBC">
+    <rdfs:label xml:lang="pt">BBC</rdfs:label>
+    <dc11:identifier>dbpedia-organization:BBC</dc11:identifier>
+    <ns0:mentionedIn>
+      <ns0:Mentioning rdf:about="https://int.who/TextElement_b450556a-97ad-32be-a01a-091ca9499ed1">
+        <rdfs:label>Is the most recent us state to adopt the practice be greener than cremação or working. Composting of us companies, such as Recompose, say that the practice is a sustainable option after the death BBC new York became the most recent state to authorise the so-called composting.</rdfs:label>
+        <dc11:identifier>TextElement_b450556a-97ad-32be-a01a-091ca9499ed1</dc11:identifier>
+        <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401862973"/>
+        <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+      </ns0:Mentioning>
+    </ns0:mentionedIn>
+
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105"/>
+  </foaf:Organization>
+
+  <rdf:Description rdf:about="https://int.who/EIOS_category/Death">
+    <rdf:type rdf:resource="https://int.who/Category"/>
+    <rdfs:label xml:lang="es">muerte</rdfs:label>
+    <rdfs:label xml:lang="de">Tod</rdfs:label>
+    <rdfs:label xml:lang="es">fallecido</rdfs:label>
+    <rdfs:label xml:lang="es">muertos</rdfs:label>
+    <dc11:identifier>category:Death</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_afbba861-f896-356c-80f8-48b9f24c8499"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_b7f1bd7a-c179-3438-8d9d-6ca8a0888880"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_1b351f82-47f0-3531-bac0-19e6df0dd9d9"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_2334ecf4-570f-3e26-9b74-e776ff9a802a"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_ef8a62f7-2b7e-3ab1-9020-26fcfae5a04b"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_981a0d9b-8dfd-3ef4-a41f-2408d74939ad"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_c9d9327d-a4e2-3cf6-b228-638ce3e6f5fa"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_0ece3b1c-3316-36fe-ba08-9ac1f82c0c9a"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://int.who/EIOS_category/TransplantRisks">
+    <rdf:type rdf:resource="https://int.who/Category"/>
+    <rdfs:label xml:lang="pt">morte</rdfs:label>
+    <dc11:identifier>category:TransplantRisks</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105"/>
+  </rdf:Description>
+
+  <foaf:Organization rdf:about="http://dbpedia.org/resource/Paris_Saint_Germain">
+    <rdfs:label xml:lang="en">Paris Saint-Germain</rdfs:label>
+    <dc11:identifier>dbpedia-organization:Paris_Saint_Germain</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05"/>
+  </foaf:Organization>
+
+  <foaf:Person rdf:about="http://dbpedia.org/resource/Christophe_Galtier">
+    <rdfs:label xml:lang="en">Christophe Galtier</rdfs:label>
+    <dc11:identifier>dbpedia-person:Christophe_Galtier</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05"/>
+  </foaf:Person>
+
+  <rdf:Description rdf:about="https://www.scai.fraunhofer.de/EiosTooling/Document_401862973">
+    <rdf:type rdf:resource="https://schema.org/TextDigitalDocument"/>
+    <rdfs:label xml:lang="en">New York approves composting with human remains</rdfs:label>
+    <rdfs:label xml:lang="pt">Nova York aprova compostagem com restos humanos</rdfs:label>
+    <dc11:identifier>EIOS:401862973_en</dc11:identifier>
+    <dc11:identifier>EIOS:401862973_pt</dc11:identifier>
+  </rdf:Description>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_c9d9327d-a4e2-3cf6-b228-638ce3e6f5fa">
+    <rdfs:label>Más de 60 militares rusos muertos en un ataque ucraniano en Donetsk</rdfs:label>
+    <dc11:identifier>TextElement_c9d9327d-a4e2-3cf6-b228-638ce3e6f5fa</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863009"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <ns0:Mentioning rdf:about="https://int.who/TextElement_be5eb3ba-0039-3664-831b-571a207e3bf5">
+    <rdfs:label>PSG coach, Galtier confirms Messi’s return, makes demand</rdfs:label>
+    <dc11:identifier>TextElement_be5eb3ba-0039-3664-831b-571a207e3bf5</dc11:identifier>
+    <ns0:partOf rdf:resource="https://www.scai.fraunhofer.de/EiosTooling/Document_401863354"/>
+    <ns0:publishedAt rdf:resource="https://int.who/Day_2023-01-02"/>
+  </ns0:Mentioning>
+
+  <foaf:Person rdf:about="http://dbpedia.org/resource/Lionel_Messi">
+    <rdfs:label xml:lang="en">Messi</rdfs:label>
+    <rdfs:label xml:lang="en">Lionel Messi</rdfs:label>
+    <dc11:identifier>dbpedia-person:Lionel_Messi</dc11:identifier>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05"/>
+    <ns0:mentionedIn rdf:resource="https://int.who/TextElement_be5eb3ba-0039-3664-831b-571a207e3bf5"/>
+  </foaf:Person>
+
+</rdf:RDF>

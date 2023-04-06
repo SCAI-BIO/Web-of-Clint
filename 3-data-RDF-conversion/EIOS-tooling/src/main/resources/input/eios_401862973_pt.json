@@ -1,0 +1,1543 @@
+{
+  "provenance" : {
+    "license" : "https://www.who.int/about/policies/terms-of-use",
+    "version" : "0.0.1-SNAPSHOT",
+    "source" : "https://int.who/EIOS",
+    "date" : 1675863904466,
+    "collection" : "EIOS",
+    "crc" : null,
+    "sourceLabel" : "EIOS",
+    "comments" : null
+  },
+  "documentElement" : {
+    "metaElement" : {
+      "bibliographic" : {
+        "documentAbstract" : {
+          "abstractSections" : [ {
+            "paragraphs" : [ {
+              "sentences" : null,
+              "structureElements" : [ {
+                "captionedBox" : null,
+                "code" : null,
+                "dataTable" : null,
+                "figure" : null,
+                "formula" : null,
+                "imageContent" : null,
+                "outline" : null,
+                "quotation" : null,
+                "table" : null,
+                "pmcTable" : null,
+                "textElement" : {
+                  "text" : "É o mais recente Estado americano a aprovar a prática — considerada mais verde do que cremação ou enterro tradicional. Empresas de compostagem dos EUA, como a Recompose, dizem que a prática é uma opção sustentável após a morte BBC Nova York se tornou o mais recente Estado dos EUA a autorizar a chamada compostagem humana.",
+                  "uuid" : "e20ac65f-94a0-39c1-874f-6fa6bfd65105",
+                  "annotations" : [ {
+                    "startOffset" : 221,
+                    "endOffset" : 226,
+                    "annotationType" : "trigger",
+                    "annotationText" : "TransplantRisks",
+                    "provenance" : {
+                      "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                      "version" : "0.0.1-SNAPSHOT",
+                      "source" : "https://int.who/EIOS_trigger",
+                      "date" : 1675863904519,
+                      "collection" : "https://int.who/401862973",
+                      "crc" : null,
+                      "sourceLabel" : "EIOS",
+                      "comments" : null
+                    }
+                  }, {
+                    "startOffset" : 221,
+                    "endOffset" : 226,
+                    "annotationType" : "trigger",
+                    "annotationText" : "Vaccinationrisks",
+                    "provenance" : {
+                      "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                      "version" : "0.0.1-SNAPSHOT",
+                      "source" : "https://int.who/EIOS_trigger",
+                      "date" : 1675863904519,
+                      "collection" : "https://int.who/401862973",
+                      "crc" : null,
+                      "sourceLabel" : "EIOS",
+                      "comments" : null
+                    }
+                  }, {
+                    "startOffset" : 221,
+                    "endOffset" : 226,
+                    "annotationType" : "trigger",
+                    "annotationText" : "Contamination",
+                    "provenance" : {
+                      "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                      "version" : "0.0.1-SNAPSHOT",
+                      "source" : "https://int.who/EIOS_trigger",
+                      "date" : 1675863904519,
+                      "collection" : "https://int.who/401862973",
+                      "crc" : null,
+                      "sourceLabel" : "EIOS",
+                      "comments" : null
+                    }
+                  }, {
+                    "startOffset" : 221,
+                    "endOffset" : 226,
+                    "annotationType" : "trigger",
+                    "annotationText" : "OutBreaks",
+                    "provenance" : {
+                      "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                      "version" : "0.0.1-SNAPSHOT",
+                      "source" : "https://int.who/EIOS_trigger",
+                      "date" : 1675863904519,
+                      "collection" : "https://int.who/401862973",
+                      "crc" : null,
+                      "sourceLabel" : "EIOS",
+                      "comments" : null
+                    }
+                  }, {
+                    "startOffset" : 231,
+                    "endOffset" : 240,
+                    "annotationType" : "gn",
+                    "annotationText" : "5128638",
+                    "provenance" : {
+                      "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                      "version" : "0.0.1-SNAPSHOT",
+                      "source" : "https://int.who/EIOS_gn",
+                      "date" : 1675863904519,
+                      "collection" : "https://int.who/401862973",
+                      "crc" : null,
+                      "sourceLabel" : "EIOS",
+                      "comments" : null
+                    }
+                  }, {
+                    "startOffset" : 221,
+                    "endOffset" : 226,
+                    "annotationType" : "trigger",
+                    "annotationText" : "ImplantRisks",
+                    "provenance" : {
+                      "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                      "version" : "0.0.1-SNAPSHOT",
+                      "source" : "https://int.who/EIOS_trigger",
+                      "date" : 1675863904519,
+                      "collection" : "https://int.who/401862973",
+                      "crc" : null,
+                      "sourceLabel" : "EIOS",
+                      "comments" : null
+                    }
+                  }, {
+                    "startOffset" : 227,
+                    "endOffset" : 230,
+                    "annotationType" : "dbpedia",
+                    "annotationText" : "BBC",
+                    "provenance" : {
+                      "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                      "version" : "0.0.1-SNAPSHOT",
+                      "source" : "https://int.who/EIOS_dbpedia",
+                      "date" : 1675863904519,
+                      "collection" : "https://int.who/401862973",
+                      "crc" : null,
+                      "sourceLabel" : "EIOS",
+                      "comments" : null
+                    }
+                  } ]
+                },
+                "sentence" : null,
+                "list" : null
+              } ]
+            } ],
+            "depth" : 0,
+            "rhetorical" : {
+              "text" : "Abstract",
+              "uuid" : "e353dbe4-2c86-34f3-b588-d4da0b517469",
+              "annotations" : null
+            },
+            "title" : {
+              "text" : "Abstract",
+              "uuid" : "e353dbe4-2c86-34f3-b588-d4da0b517469",
+              "annotations" : null
+            }
+          } ]
+        },
+        "authors" : [ {
+          "author" : {
+            "surname" : {
+              "text" : "system",
+              "uuid" : "54b53072-540e-3eb8-b8e9-343e71f28176",
+              "annotations" : null
+            },
+            "forename" : {
+              "text" : "EIOS",
+              "uuid" : "dc7cfda0-1337-3ee7-bba3-486a57a79964",
+              "annotations" : null
+            },
+            "affiliation" : null,
+            "degree" : null
+          },
+          "organization" : {
+            "organization" : {
+              "text" : "World Health Organization (WHO)",
+              "uuid" : "15df3c42-0545-3f05-af50-0b96eed8fcdb",
+              "annotations" : null
+            },
+            "affiliationInfos" : null
+          }
+        } ],
+        "pubDate" : {
+          "day" : 2,
+          "month" : 1,
+          "year" : 2023
+        },
+        "licenses" : null,
+        "title" : {
+          "titleText" : {
+            "text" : "Nova York aprova compostagem com restos humanos",
+            "uuid" : "0853782a-2b3f-3391-bae3-19e2bc2cc633",
+            "annotations" : null
+          },
+          "subtitleText" : null
+        },
+        "language" : {
+          "text" : "Portuguese",
+          "uuid" : "30e32c7c-4cf4-34e9-875e-60c14c442541",
+          "annotations" : null
+        },
+        "source" : {
+          "text" : "World Health Organization (WHO)",
+          "uuid" : "15df3c42-0545-3f05-af50-0b96eed8fcdb",
+          "annotations" : null
+        },
+        "issns" : null,
+        "publicationTypes" : [ {
+          "identifier" : {
+            "text" : "D018431",
+            "uuid" : "2318b526-aa35-3c81-8c9f-5805db5f7376",
+            "annotations" : null
+          },
+          "publicationType" : {
+            "text" : "General News",
+            "uuid" : "c8938098-591f-3ae6-9fa9-b4875e67f986",
+            "annotations" : null
+          }
+        } ]
+      },
+      "bibliography" : null,
+      "keywords" : [ {
+        "rhetorical" : {
+          "text" : "tags",
+          "uuid" : "d57ac452-5684-3d9b-93e2-422d91580fb9",
+          "annotations" : null
+        },
+        "keywordList" : [ {
+          "text" : "Vaccinationrisks",
+          "uuid" : "d8c076b9-fe0e-314e-8b20-593951b2340d",
+          "annotations" : null
+        }, {
+          "text" : "ImplantRisks",
+          "uuid" : "331f3a73-836e-3f3e-9cd0-71a7f5129cb8",
+          "annotations" : null
+        }, {
+          "text" : "Carbon",
+          "uuid" : "fbebe083-c5b1-35e0-8899-6c28fb19f9e4",
+          "annotations" : null
+        }, {
+          "text" : "OutBreaks",
+          "uuid" : "5fe9d3b6-c82a-37bc-a1e7-a78cea5484b1",
+          "annotations" : null
+        }, {
+          "text" : "Contamination",
+          "uuid" : "bf5895f7-6353-381f-b355-31678b5e53a8",
+          "annotations" : null
+        }, {
+          "text" : "TransplantRisks",
+          "uuid" : "20f237a3-3385-3f0f-afaa-29d0f51b9836",
+          "annotations" : null
+        }, {
+          "text" : "PAHO",
+          "uuid" : "7de80d5c-b09e-3195-8606-c0f6939e3d8d",
+          "annotations" : null
+        }, {
+          "text" : "EURO",
+          "uuid" : "fc6cedc5-9e45-32c2-983d-5f22f2a3107d",
+          "annotations" : null
+        } ]
+      }, {
+        "rhetorical" : {
+          "text" : "affected countries",
+          "uuid" : "acae8aa8-35c1-3c8f-8674-43a7b23c1167",
+          "annotations" : null
+        },
+        "keywordList" : [ {
+          "text" : "SE:Sweden",
+          "uuid" : "9d0bc2bc-935a-342a-bd7f-2eaf1e32d445",
+          "annotations" : null
+        }, {
+          "text" : "US:United States of America",
+          "uuid" : "251fc6d9-89d5-3b5d-a5c0-cc4e3b0f2884",
+          "annotations" : null
+        } ]
+      }, {
+        "rhetorical" : {
+          "text" : "WHO region codes",
+          "uuid" : "a943f569-2ee7-3ab7-9643-9b6a6516e5ac",
+          "annotations" : null
+        },
+        "keywordList" : [ {
+          "text" : "EUR",
+          "uuid" : "a055562b-db59-3d8b-a9cc-680367308118",
+          "annotations" : null
+        }, {
+          "text" : "AMR",
+          "uuid" : "f6948d0b-eb80-3e56-a37d-a39be843bf31",
+          "annotations" : null
+        } ]
+      }, {
+        "rhetorical" : {
+          "text" : "continent codes",
+          "uuid" : "b01173a1-d0ae-3fd6-8c00-452d13b8269d",
+          "annotations" : null
+        },
+        "keywordList" : [ {
+          "text" : "EU",
+          "uuid" : "f2e6e3b9-bff5-3f29-bf0e-9019a1ecabc5",
+          "annotations" : null
+        }, {
+          "text" : "NA",
+          "uuid" : "d4cd0dab-cf4c-3a22-ad92-fab40844c786",
+          "annotations" : null
+        } ]
+      }, {
+        "rhetorical" : {
+          "text" : "mentioned organizations",
+          "uuid" : "83d22ae6-6635-3a2f-b5dd-476a5ad5e77c",
+          "annotations" : null
+        },
+        "keywordList" : [ {
+          "text" : "BBC",
+          "uuid" : "a61d0066-1142-32d5-86ab-4e7fcf6d13c6",
+          "annotations" : null
+        }, {
+          "text" : "New York Post",
+          "uuid" : "f35f2eec-037f-3249-8649-6198d5dbd7c2",
+          "annotations" : null
+        } ]
+      }, {
+        "rhetorical" : {
+          "text" : "locations",
+          "uuid" : "b4c0b6c7-5f65-3ee8-89fd-20c087a4a533",
+          "annotations" : null
+        },
+        "keywordList" : [ {
+          "text" : "Nova York",
+          "uuid" : "c27767c9-6dc0-3914-a0c0-fbef93d80f22",
+          "annotations" : null
+        }, {
+          "text" : "Oregon",
+          "uuid" : "da4d1129-a255-383f-b03b-f32fde034ecc",
+          "annotations" : null
+        }, {
+          "text" : "Seattle",
+          "uuid" : "4c54c163-f43d-3ac8-912d-f032b3b07bff",
+          "annotations" : null
+        }, {
+          "text" : "Suécia",
+          "uuid" : "e15098d7-ce46-34e5-b96a-ae9408ea35a1",
+          "annotations" : null
+        }, {
+          "text" : "Reino Unido",
+          "uuid" : "d6ebbcbd-c52c-3535-a08f-3dd00777d13b",
+          "annotations" : null
+        }, {
+          "text" : "Washington",
+          "uuid" : "6d69689d-0056-327b-8e65-398abc70297a",
+          "annotations" : null
+        } ]
+      } ],
+      "concept" : {
+        "altLabel" : {
+          "text" : "unspecified",
+          "uuid" : "d415f0e3-0c47-3dfd-99bc-4f827329ef48",
+          "annotations" : null
+        },
+        "hiddenLabel" : null,
+        "identifier" : {
+          "text" : "401862973_SA",
+          "uuid" : "da03815b-8a3a-3feb-84c8-cd2956def665",
+          "annotations" : null
+        },
+        "identifierSource" : {
+          "text" : "EIOS",
+          "uuid" : "dc7cfda0-1337-3ee7-bba3-486a57a79964",
+          "annotations" : null
+        },
+        "identifierWithSource" : null,
+        "altLabels" : null,
+        "hiddenLabels" : null,
+        "prefLabel" : {
+          "text" : "EIOS:401862973_SA",
+          "uuid" : "839edc06-b92e-3eca-8776-9615df9522de",
+          "annotations" : null
+        }
+      }
+    },
+    "backMatter" : {
+      "bibliography" : {
+        "references" : {
+          "Origin" : {
+            "authors" : [ {
+              "author" : {
+                "surname" : {
+                  "text" : "bncnoticias ",
+                  "uuid" : "3ebfaebe-9d75-38c6-a6f5-8e6526f0bf93",
+                  "annotations" : null
+                },
+                "forename" : {
+                  "text" : "",
+                  "uuid" : "2fa4b3ef-7210-4198-9a75-5d7b2ef680d8",
+                  "annotations" : null
+                },
+                "affiliation" : null,
+                "degree" : null
+              },
+              "organization" : null
+            } ],
+            "date" : {
+              "day" : 19,
+              "month" : 11,
+              "year" : 2019
+            },
+            "publicationIds" : [ {
+              "text" : "12515",
+              "uuid" : "56460777-ebc3-3bf0-a78e-0b029f3e8c3b",
+              "annotations" : null
+            } ],
+            "language" : null,
+            "referenceSource" : {
+              "text" : "https://www.bncnoticias.com.br/",
+              "uuid" : "e895a6dd-aee4-3a06-90b1-1b84ad9b7ba6",
+              "annotations" : null
+            },
+            "publicationType" : {
+              "text" : "National",
+              "uuid" : "65ccf0f2-05fb-354d-94c4-70767026d75e",
+              "annotations" : null
+            },
+            "link" : null,
+            "title" : {
+              "titleText" : {
+                "text" : "Nova York aprova compostagem com restos humanos",
+                "uuid" : "0853782a-2b3f-3391-bae3-19e2bc2cc633",
+                "annotations" : null
+              },
+              "subtitleText" : null
+            }
+          }
+        },
+        "title" : null
+      },
+      "sections" : null
+    },
+    "bodyMatter" : {
+      "chapters" : null,
+      "sections" : [ {
+        "paragraphs" : [ {
+          "sentences" : null,
+          "structureElements" : [ {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "É o mais recente Estado americano a aprovar a prática — considerada mais verde do que cremação ou enterro tradicional.",
+                "uuid" : "ddbefb68-47b0-313f-a03f-1b26c4c98727",
+                "annotations" : null
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "Empresas de compostagem dos EUA, como a Recompose, dizem que a prática é uma opção sustentável após a morte BBC Nova York se tornou o mais recente Estado dos EUA a autorizar a chamada compostagem humana.",
+                "uuid" : "0fd76ac2-b87b-3cea-9337-e0551e7d301f",
+                "annotations" : [ {
+                  "startOffset" : 108,
+                  "endOffset" : 111,
+                  "annotationType" : "dbpedia",
+                  "annotationText" : "BBC",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_dbpedia",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 102,
+                  "endOffset" : 107,
+                  "annotationType" : "trigger",
+                  "annotationText" : "Vaccinationrisks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 102,
+                  "endOffset" : 107,
+                  "annotationType" : "trigger",
+                  "annotationText" : "OutBreaks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 102,
+                  "endOffset" : 107,
+                  "annotationType" : "trigger",
+                  "annotationText" : "Contamination",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 112,
+                  "endOffset" : 121,
+                  "annotationType" : "gn",
+                  "annotationText" : "5128638",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_gn",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 102,
+                  "endOffset" : 107,
+                  "annotationType" : "trigger",
+                  "annotationText" : "ImplantRisks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 102,
+                  "endOffset" : 107,
+                  "annotationType" : "trigger",
+                  "annotationText" : "TransplantRisks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "As pessoas agora podem ter seu corpo transformado em composto orgânico para adubo — o que é visto como uma alternativa sustentável ao enterro ou à cremação.",
+                "uuid" : "1f006c1d-cf36-3e4f-86d1-cfd0783a1e52",
+                "annotations" : null
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "Também conhecida como \"redução orgânica natural\", a prática consiste em deixar o corpo se decompor ao longo de várias semanas dentro de um compartimento fechado.",
+                "uuid" : "b1929c7b-65b3-359c-a5a3-f602f9f28271",
+                "annotations" : null
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "LEIA TAMBÉM:",
+                "uuid" : "786406b0-b8dc-3a71-b3cc-f3939d22fdf5",
+                "annotations" : [ {
+                  "startOffset" : 0,
+                  "endOffset" : 11,
+                  "annotationType" : "dbpedia",
+                  "annotationText" : "LEIA_TAMBÉM",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_dbpedia",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "A empresa americana que defende ‘compostagem humana’ como alternativa ‘verde’ a enterro ou cremação Compostagem ajuda a aproveitar resíduos orgânicos Startup de Teresina transforma lixo orgânico em fertilizante natural através da compostagem; conheça iniciativa Em 2019, Washington foi o primeiro Estado dos EUA a legalizar o procedimento.",
+                "uuid" : "f3ddc017-d7fc-3ff6-85b1-81dce1f5280b",
+                "annotations" : [ {
+                  "startOffset" : 271,
+                  "endOffset" : 281,
+                  "annotationType" : "gn",
+                  "annotationText" : "11789030",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_gn",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "Colorado, Oregon, Vermont e Califórnia seguiram o exemplo.",
+                "uuid" : "7c33d472-2690-370b-b41e-e025aabcf523",
+                "annotations" : [ {
+                  "startOffset" : 10,
+                  "endOffset" : 16,
+                  "annotationType" : "gn",
+                  "annotationText" : "5055521",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_gn",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "Nova York é, portanto, a sexta jurisdição americana a permitir a compostagem humana, após a governadora do Estado, a democrata Kathy Hochul, sancionar a legislação no último sábado (31/12).",
+                "uuid" : "adedf523-1857-35f7-938b-1aab457bdb47",
+                "annotations" : [ {
+                  "startOffset" : 127,
+                  "endOffset" : 139,
+                  "annotationType" : "dbpedia",
+                  "annotationText" : "Kathy_Hochul",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_dbpedia",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 0,
+                  "endOffset" : 9,
+                  "annotationType" : "gn",
+                  "annotationText" : "5128638",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_gn",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "O procedimento é realizado em instalações especiais acima do solo.",
+                "uuid" : "88df462c-7bd5-39c0-ae4b-a50ccd535a9e",
+                "annotations" : null
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "O corpo é colocado dentro de um compartimento fechado com matéria-orgânica selecionada, como lascas de madeira, alfafa e palha de capim, e gradualmente se decompõe sob a ação de micróbios.",
+                "uuid" : "f84406e0-72ce-379e-9204-75b39dfe4639",
+                "annotations" : null
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "Após um período de cerca de um mês — e um processo de aquecimento para eliminar qualquer contaminação —, os entes queridos recebem o solo resultante.",
+                "uuid" : "3679551c-ba68-387e-b5cf-bd50abf0185d",
+                "annotations" : [ {
+                  "startOffset" : 138,
+                  "endOffset" : 148,
+                  "annotationType" : "trigger",
+                  "annotationText" : "OutBreaks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "O composto pode ser usado no plantio de flores, hortaliças ou árvores.",
+                "uuid" : "3cee7189-487b-3ea8-806f-bacaaf982d71",
+                "annotations" : null
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "Uma empresa americana, chamada Recompose, afirma que seu serviço pode economizar uma tonelada de carbono em comparação com uma cremação ou um enterro tradicional.",
+                "uuid" : "28af851a-5d3a-3e2d-b4f2-b220b1b773f7",
+                "annotations" : [ {
+                  "startOffset" : 97,
+                  "endOffset" : 104,
+                  "annotationType" : "trigger",
+                  "annotationText" : "Carbon",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "As emissões de dióxido de carbono são um dos principais fatores que contribuem para a mudança climática, porque retêm o calor da Terra em um fenômeno conhecido como efeito estufa.",
+                "uuid" : "0e5a3f36-40df-3721-8927-5a777565b117",
+                "annotations" : [ {
+                  "startOffset" : 26,
+                  "endOffset" : 33,
+                  "annotationType" : "trigger",
+                  "annotationText" : "Carbon",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "Os enterros tradicionais, que envolvem um caixão, também consomem madeira, terra e outros recursos naturais.",
+                "uuid" : "52a21b45-dde4-3209-bff7-68e389eaafa0",
+                "annotations" : null
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "Os defensores da compostagem humana afirmam que não só é uma opção mais sustentável, como também mais prática em cidades onde o terreno destinado a cemitérios é limitado.",
+                "uuid" : "163d1511-eb97-3266-a30e-b14a005cc7bb",
+                "annotations" : null
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "A aprovação do procedimento por Nova York foi \"um grande passo para a morte verde acessível a nível nacional\", declarou um provedor do serviço em Washington, chamado Return Home, ao jornal New York Post.",
+                "uuid" : "366e206d-dfd2-30e8-84f5-16289e1bc655",
+                "annotations" : [ {
+                  "startOffset" : 146,
+                  "endOffset" : 156,
+                  "annotationType" : "gn",
+                  "annotationText" : "11789030",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_gn",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 70,
+                  "endOffset" : 75,
+                  "annotationType" : "trigger",
+                  "annotationText" : "OutBreaks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 70,
+                  "endOffset" : 75,
+                  "annotationType" : "trigger",
+                  "annotationText" : "Contamination",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 70,
+                  "endOffset" : 75,
+                  "annotationType" : "trigger",
+                  "annotationText" : "ImplantRisks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 70,
+                  "endOffset" : 75,
+                  "annotationType" : "trigger",
+                  "annotationText" : "Vaccinationrisks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 32,
+                  "endOffset" : 41,
+                  "annotationType" : "gn",
+                  "annotationText" : "5128638",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_gn",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 70,
+                  "endOffset" : 75,
+                  "annotationType" : "trigger",
+                  "annotationText" : "TransplantRisks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 189,
+                  "endOffset" : 202,
+                  "annotationType" : "dbpedia",
+                  "annotationText" : "New_York_Post",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_dbpedia",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "Mas, para algumas pessoas, há questões éticas sobre o que acontece com o solo resultante da compostagem.",
+                "uuid" : "28de259e-4b1b-3de6-85f1-294c0b3fc4c2",
+                "annotations" : [ {
+                  "startOffset" : 78,
+                  "endOffset" : 88,
+                  "annotationType" : "trigger",
+                  "annotationText" : "OutBreaks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "Composto pode ser usado no plantio de flores, hortaliças ou árvores BBC Bispos católicos do Estado de Nova York se opuseram à legislação, argumentando que os corpos humanos não deveriam ser tratados como \"lixo doméstico\".",
+                "uuid" : "60a911b6-e21d-38f3-a740-553278ed01e4",
+                "annotations" : [ {
+                  "startOffset" : 68,
+                  "endOffset" : 71,
+                  "annotationType" : "dbpedia",
+                  "annotationText" : "BBC",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_dbpedia",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 102,
+                  "endOffset" : 111,
+                  "annotationType" : "gn",
+                  "annotationText" : "5128638",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_gn",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "Preocupações também foram levantadas em relação ao custo da compostagem.",
+                "uuid" : "90c38ba6-00c4-3a93-8ecc-aee8ed0d9383",
+                "annotations" : null
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "Mas a empresa Recompose — cuja unidade em Seattle é uma das primeiras do mundo — afirma que sua taxa de US$ 7 mil (cerca de R$ 36,5 mil) é \"comparável\" à taxa das opções concorrentes.",
+                "uuid" : "5b0a68f4-00b1-3c04-b32e-2ff0fb5241eb",
+                "annotations" : [ {
+                  "startOffset" : 42,
+                  "endOffset" : 49,
+                  "annotationType" : "gn",
+                  "annotationText" : "5799783",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_gn",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "A média de preço de um funeral com enterro nos EUA foi de US$ 7.848 em 2021; e US$ 6.971 com cremação, de acordo com a Associação Nacional de Diretores de Funerais (NFDA, na sigla em inglês).",
+                "uuid" : "c36b1380-e582-30be-9efb-823af40002fc",
+                "annotations" : null
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "A compostagem humana já é legalizada em toda a Suécia.",
+                "uuid" : "17704fa2-d8ca-384a-9e73-e60264173c86",
+                "annotations" : [ {
+                  "startOffset" : 47,
+                  "endOffset" : 53,
+                  "annotationType" : "trigger",
+                  "annotationText" : "EURO",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "E enterros naturais — nos quais o corpo é enterrado sem caixão ou com um caixão biodegradável — são permitidos no Reino Unido.",
+                "uuid" : "5a815474-1893-3789-b5c1-e6c6d0798425",
+                "annotations" : null
+              }
+            },
+            "list" : null
+          }, {
+            "captionedBox" : null,
+            "code" : null,
+            "dataTable" : null,
+            "figure" : null,
+            "formula" : null,
+            "imageContent" : null,
+            "outline" : null,
+            "quotation" : null,
+            "table" : null,
+            "pmcTable" : null,
+            "textElement" : null,
+            "sentence" : {
+              "text" : {
+                "text" : "VÍDEO SOBRE COMPOSTAGEM Compostagem ajuda a aproveitar resíduos orgânicos",
+                "uuid" : "442685a6-40da-3968-9816-e52129bf19f6",
+                "annotations" : null
+              }
+            },
+            "list" : null
+          } ]
+        } ],
+        "depth" : 0,
+        "rhetorical" : {
+          "text" : "Main Section",
+          "uuid" : "2e61fecd-f9aa-3f2a-aa39-e9fb7abddb8f",
+          "annotations" : null
+        },
+        "title" : {
+          "text" : "Main",
+          "uuid" : "a02c83a7-dbd9-3295-beae-fb72c2bee2de",
+          "annotations" : null
+        }
+      } ],
+      "docAbstract" : null
+    },
+    "frontMatter" : {
+      "titleText" : {
+        "text" : "Nova York aprova compostagem com restos humanos",
+        "uuid" : "0853782a-2b3f-3391-bae3-19e2bc2cc633",
+        "annotations" : [ {
+          "startOffset" : 0,
+          "endOffset" : 9,
+          "annotationType" : "gn",
+          "annotationText" : "5128638",
+          "provenance" : {
+            "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+            "version" : "0.0.1-SNAPSHOT",
+            "source" : "https://int.who/EIOS_gn",
+            "date" : 1675863904519,
+            "collection" : "https://int.who/401862973",
+            "crc" : null,
+            "sourceLabel" : "EIOS",
+            "comments" : null
+          }
+        } ]
+      },
+      "documentAbstract" : {
+        "abstractSections" : [ {
+          "paragraphs" : [ {
+            "sentences" : null,
+            "structureElements" : [ {
+              "captionedBox" : null,
+              "code" : null,
+              "dataTable" : null,
+              "figure" : null,
+              "formula" : null,
+              "imageContent" : null,
+              "outline" : null,
+              "quotation" : null,
+              "table" : null,
+              "pmcTable" : null,
+              "textElement" : {
+                "text" : "É o mais recente Estado americano a aprovar a prática — considerada mais verde do que cremação ou enterro tradicional. Empresas de compostagem dos EUA, como a Recompose, dizem que a prática é uma opção sustentável após a morte BBC Nova York se tornou o mais recente Estado dos EUA a autorizar a chamada compostagem humana.",
+                "uuid" : "e20ac65f-94a0-39c1-874f-6fa6bfd65105",
+                "annotations" : [ {
+                  "startOffset" : 221,
+                  "endOffset" : 226,
+                  "annotationType" : "trigger",
+                  "annotationText" : "TransplantRisks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 221,
+                  "endOffset" : 226,
+                  "annotationType" : "trigger",
+                  "annotationText" : "Vaccinationrisks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 221,
+                  "endOffset" : 226,
+                  "annotationType" : "trigger",
+                  "annotationText" : "Contamination",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 221,
+                  "endOffset" : 226,
+                  "annotationType" : "trigger",
+                  "annotationText" : "OutBreaks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 231,
+                  "endOffset" : 240,
+                  "annotationType" : "gn",
+                  "annotationText" : "5128638",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_gn",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 221,
+                  "endOffset" : 226,
+                  "annotationType" : "trigger",
+                  "annotationText" : "ImplantRisks",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_trigger",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                }, {
+                  "startOffset" : 227,
+                  "endOffset" : 230,
+                  "annotationType" : "dbpedia",
+                  "annotationText" : "BBC",
+                  "provenance" : {
+                    "license" : "https://creativecommons.org/licenses/by/4.0/deed.de",
+                    "version" : "0.0.1-SNAPSHOT",
+                    "source" : "https://int.who/EIOS_dbpedia",
+                    "date" : 1675863904519,
+                    "collection" : "https://int.who/401862973",
+                    "crc" : null,
+                    "sourceLabel" : "EIOS",
+                    "comments" : null
+                  }
+                } ]
+              },
+              "sentence" : null,
+              "list" : null
+            } ]
+          } ],
+          "depth" : 0,
+          "rhetorical" : {
+            "text" : "Abstract",
+            "uuid" : "e353dbe4-2c86-34f3-b588-d4da0b517469",
+            "annotations" : null
+          },
+          "title" : {
+            "text" : "Abstract",
+            "uuid" : "e353dbe4-2c86-34f3-b588-d4da0b517469",
+            "annotations" : null
+          }
+        } ]
+      }
+    }
+  },
+  "docType" : "General News",
+  "originalMimeType" : "Application/JSON"
+}
