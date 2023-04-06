@@ -4,7 +4,7 @@ CLINT - the web of publiC heaLth INtelligence daTa
 
 # abstract
 
-cf. 
+cf. https://github.com/SCAI-BIO/Web-of-Clint/blob/main/2023-semantics-paper/abstract.md
 
 # introdcution
 
