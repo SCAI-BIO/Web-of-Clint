@@ -1,4 +1,4 @@
-#note: this is an example and needs to be modified
+# note: this is an example and needs to be modified
 
  - Purpose: The purpose of this paper is to report a study of how research literature addresses researchers' attitudes toward data repository use. In particular, the authors are interested in how the term data sharing is defined, how data repository use is reported and whether there is need for greater clarity and specificity of terminology.
  - Methodology: To study how the literature addresses researcher data repository use, relevant studies were identified by searching Library Information Science and Technology Abstracts, Library and Information Science Source, Thomas Reuters' Web of Science Core Collection and Scopus. A total of 62 studies were identified for inclusion in this meta-evaluation.
