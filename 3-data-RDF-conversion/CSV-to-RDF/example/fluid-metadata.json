@@ -1,0 +1,84 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/csvw",
+    {
+      "@language": "en"
+    }
+  ],
+  "nodeLabel": "FluID",
+  "url": "fluid_sample.csv",
+  "tableSchema": {
+    "columns": [
+      {
+        "name": "countryCode",
+        "titles": "country_code",
+        "propertyUrl": "https://www.geonames.org/ontology#countryCode",
+        "datatype": "string",
+        "uriref": "no"
+      },
+      {
+        "name": "location",
+        "titles": "country_area_territory",
+        "propertyUrl": "http://xmlns.com/foaf/0.1/name",
+        "datatype": "string",
+        "uriref": "no"
+      },
+      {
+        "name": "year",
+        "titles": "mmwr_year",
+        "propertyUrl": "https://www.w3.org/TR/owl-time/#time:year",
+        "datatype": "integer",
+        "uriref": "no"
+      },
+      {
+        "name": "week",
+        "titles": "mmwr_week",
+        "propertyUrl": "https://www.w3.org/TR/owl-time/#time:week",
+        "datatype": "integer",
+        "uriref": "no"
+      },
+      {
+        "name": "ageGroup",
+        "titles": "agegroup_code",
+        "propertyUrl": "http://purl.obolibrary.org/obo/NCIT_C20587",
+        "datatype": "string",
+        "uriref": "no"
+      },
+      {
+        "name": "adverseEvent",
+        "titles": "adverse_event",
+        "propertyUrl": "http://purl.obolibrary.org/obo/OAE_0000001",
+        "datatype": "string",
+        "uriref": "no"
+      },
+      {
+        "name": "numberCases",
+        "titles": "number_of_cases",
+        "propertyUrl": "http://purl.obolibrary.org/obo/HSO_0000321",
+        "datatype": "integer",
+        "uriref": "no"
+      },
+      {
+        "name": "inpatientVisits",
+        "titles": "inpatient_visits",
+        "propertyUrl": "http://purl.obolibrary.org/obo/OPMI_0000484",
+        "datatype": "integer",
+        "uriref": "no"
+      },
+      {
+        "name": "outPatientVisits",
+        "titles": "outpatients_visits",
+        "propertyUrl": "http://purl.obolibrary.org/obo/OPMI_0000485",
+        "datatype": "integer",
+        "uriref": "no"
+      },
+      {
+        "name": "numberDeaths",
+        "titles": "number_of_deaths",
+        "propertyUrl": "http://purl.obolibrary.org/obo/HSO_0000365",
+        "datatype": "integer",
+        "uriref": "no"
+      }
+    ]
+  }
+}
