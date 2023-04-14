@@ -55,6 +55,9 @@ this will produce four different RDF files in zipped [Turtle format](https://www
 
 #### schema and example of the RDF document
 
+each document is a TextDigitalDocument whicih is linked to the original source item, the derived document in the Elastic Search index, the publisher and related documents having the same content (e.g. a re-tweet).
+
+![schema of a document](document.png)
 
 ```
 @prefix schema: <http://schema.org/> .
@@ -107,3 +110,60 @@ who:Document_401863008
         foaf:name                   "burgosconecta"@es .
 ```
 
+#### schema and example of a mentioning
+
+each mentioning is a snippet of a EIOS document. All tagged categories are linked to the mentioning. Each mentioning does have at least a location from [geonames](https://www.geonames.org/) associated. Persons and organisations are mapped to [DBPedia](https://www.dbpedia.org/). 
+
+![schema of a mentioning](mentioning.png)
+
+```
+category:PAHO  a          who:Category ;
+        rdfs:label        "Colombia"@es , "Argentina"@en ;
+        dc11:identifier   "category:PAHO" ;
+        EIOS:mentionedIn  who:TextElement_b5f3ddef-7db5-3cf1-b703-4598ab571cba , who:TextElement_dab15909-804b-32af-9f7f-e58d00130a0a , who:TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05 .
+
+<https://sws.geonames.org/5128638/>
+        a                 dcterms:Location ;
+        rdfs:label        "Nova York"@pt ;
+        dc11:identifier   "gn:5128638" ;
+        EIOS:mentionedIn  who:TextElement_0853782a-2b3f-3391-bae3-19e2bc2cc633 , who:TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105 .
+
+who:TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Paris Saint-Germain head coach, Christophe Galtier, has confirmed that superstar player, Lionel Messi, will return to training on Tuesday, January 3. Galtier also urged PSG fans to remember what Messi has done since the start of the season with the team now that the Argentina captain has achieved...." ;
+        dc11:identifier   "TextElement_6201a911-e471-383a-a9d0-18bc8ff93e05" ;
+        EIOS:partOf       EIOS:Document_401863354 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+who:TextElement_2c527bef-aa8b-3315-bd4e-d8807daf06ba
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Over 60 russian military deaths in an attack in Donetsk ukrainian" ;
+        dc11:identifier   "TextElement_2c527bef-aa8b-3315-bd4e-d8807daf06ba" ;
+        EIOS:partOf       EIOS:Document_401863009 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+who:TextElement_1b351f82-47f0-3531-bac0-19e6df0dd9d9
+        a                 EIOS:Mentioning ;
+        rdfs:label        "Primera masacre del año: cuatro muertos tras ataque en Río de Oro, Cesar" ;
+        dc11:identifier   "TextElement_1b351f82-47f0-3531-bac0-19e6df0dd9d9" ;
+        EIOS:partOf       EIOS:Document_401863331 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+category:Vaccinationrisks
+        a                 who:Category ;
+        rdfs:label        "morte"@pt ;
+        dc11:identifier   "category:Vaccinationrisks" ;
+        EIOS:mentionedIn  who:TextElement_e20ac65f-94a0-39c1-874f-6fa6bfd65105 .
+
+who:TextElement_981a0d9b-8dfd-3ef4-a41f-2408d74939ad
+        a                 EIOS:Mentioning ;
+        rdfs:label        "CIUDAD DEL VATICANO.- Una fila interminable de fieles atravesó hoy la basílica de San Pedro para despedir al papa emérito Benedicto XVI, procesionando ante su cuerpo en medio de un silencio reverencial y el ritmo sin pausa de una antigua letanía. Los restos de Ratzinger, fallecido el sábado con 95...." ;
+        dc11:identifier   "TextElement_981a0d9b-8dfd-3ef4-a41f-2408d74939ad" ;
+        EIOS:partOf       EIOS:Document_401863010 ;
+        EIOS:publishedAt  who:Day_2023-01-02 .
+
+EIOS:Document_401863293
+        a                schema:TextDigitalDocument ;
+        rdfs:label       "4 positions of yoga to sleep better"@en , "4 posturas de yoga para dormir mejor"@es ;
+        dc11:identifier  "EIOS:401863293_en" , "EIOS:401863293_es" .
+```
