@@ -205,8 +205,8 @@ metadata:
   name: secoresearch-fuseki-secret
 type: Opaque
 data:
-  username: YWRtaW4=
-  password: NHo3bExNd0tYTjBjY1Jm
+  username: encrypted_username
+  password: encrypted_password
 
 ```
 
