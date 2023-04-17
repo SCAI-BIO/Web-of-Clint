@@ -1,10 +1,11 @@
 # Web-of-Clint
-web of publi**C** hea**L**th **IN**telligence da**T**a tooling
 
-this repo is meant to add all documention, scripts, pieces of code which we will publically make available after the WHO project has ended
+Web of publi**C** hea**L**th **IN**telligence da**T**a tooling
 
-## story for the webinar and semantics paper
-### use case
+This repo is meant to add all documentation, scripts, pieces of code which we will publically make available after the WHO project has ended.
+
+## Story for the webinar and semantics paper
+### Use case
 Alfredo the public health intelligence officer needs to load flight data into the KG -> in the end he has loaded all FilghtAware data using our tooling
 
 ### steps to load flight data
@@ -20,4 +21,4 @@ Alfredo the public health intelligence officer needs to load flight data into th
 1. getting alert and decision flight data is needed
 1. search for flight data sets in SCAIView
 1. selects proper data set and starts ETL pipeline
-1. analyses fligth data in KG, after ETL has finished
+1. analyses flight data in KG, after ETL has finished
