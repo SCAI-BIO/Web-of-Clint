@@ -13,7 +13,7 @@ to provide a transactional persistent storage layer.
 ### Semantic Computing Research Group
 The [Semantic Computing Research Group (SeCo)](https://seco.cs.aalto.fi/) 
 provides a Docker image which uses Apache Jena Fuseki and Apache TDB as the underlying triplestore database.
-While the direct usage of [Apache Fuseki Docker](https://jena.apache.org/documentation/fuseki2/fuseki-docker.html) is also possible 
+While the usage of [Apache Fuseki Docker](https://jena.apache.org/documentation/fuseki2/fuseki-docker.html) is also possible 
 the [SeCo image](https://hub.docker.com/r/secoresearch/fuseki/) provides a more configurable and more performant application
 with a useful and stable UI.
 
@@ -40,4 +40,5 @@ The flight data is available in the [SCAI Triplestore](https://triplestore.scaiv
 ![img.png](img.png)
 
 ## Preparation and deployment of Fuseki Triplestore
-To deploy the secoresearch/fuseki Docker image we decided to  
+To deploy the secoresearch/fuseki Docker image we used to build a pre-configured Docker image on [SCAI Artifactory](docker.arty.scai.fraunhofer.de) and deploy the image on our internal Kubernetes cluster.
+
