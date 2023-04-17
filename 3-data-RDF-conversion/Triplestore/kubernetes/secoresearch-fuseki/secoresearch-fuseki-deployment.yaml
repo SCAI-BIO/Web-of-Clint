@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    component: backend
+    deployment-id: secoresearch-fuseki
+  name: secoresearch-fuseki-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: secoresearch-fuseki
+      deployment-id: secoresearch-fuseki
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        component: secoresearch-fuseki
+        deployment-id: secoresearch-fuseki
+    spec:
+      securityContext:
+        fsGroup: 0
+      containers:
+        - env:
+          - name: QUERY_TIMEOUT
+            value: "360000"
+          - name: ADMIN_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: scainet-fuseki-who-secret
+                key: password
+          - name: USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: scainet-fuseki-who-secret
+                key: username
+          image: docker.example.com/secoresearch-fuseki:latest
+          name: secoresearch-fuseki
+          imagePullPolicy: Always
+          ports:
+            - name: secoresearch
+              containerPort: 3030
+              protocol: TCP
+          resources: {}
+          volumeMounts:
+            - mountPath: /fuseki-base/databases
+              name: secoresearch-fuseki-data
+              subPath: databases
+            - mountPath: /fuseki-base/configuration
+              name: secoresearch-fuseki-data
+              subPath: configuration
+            - mountPath: /fuseki-base/staging
+              name: secoresearch-fuseki-data
+              subPath: staging
+            - mountPath: /fuseki-base/backups
+              name: secoresearch-fuseki-data
+              subPath: backups
+      restartPolicy: Always
+      volumes:
+        - name: secoresearch-fuseki-data
+          persistentVolumeClaim:
+            claimName: secoresearch-fuseki-data

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    component: secoresearch-fuseki
+    deployment-id: secoresearch-fuseki
+  name: secoresearch-fuseki-service
+spec:
+  ports:
+    - name: "secoresearch"
+      port: 3030
+      targetPort: 3030
+  selector:
+    component: secoresearch-fuseki
+    deployment-id: secoresearch-fuseki

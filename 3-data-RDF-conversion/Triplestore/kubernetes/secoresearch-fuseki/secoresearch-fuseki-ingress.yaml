@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: secoresearch-fuseki-service-ingress
+  #namespace: xxx
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "300s"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "300s"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "300s"
+    nginx.ingress.kubernetes.io/proxy-body-size: 10g
+  labels:
+    component: secoresearch-fuseki
+    deployment-id: secoresearch-fuseki
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: triplestore.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: secoresearch-fuseki-service
+                port:
+                  name: "secoresearch"
