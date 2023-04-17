@@ -42,3 +42,4 @@ The flight data is available in the [SCAI Triplestore](https://triplestore.scaiv
 ## Preparation and deployment of Fuseki Triplestore
 To deploy the secoresearch/fuseki Docker image we used to build a pre-configured Docker image on [SCAI Artifactory](docker.arty.scai.fraunhofer.de) and deploy the image on our internal Kubernetes cluster.
 
+
