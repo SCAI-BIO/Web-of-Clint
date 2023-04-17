@@ -40,6 +40,31 @@ The flight data is available in the [SCAI Triplestore](https://triplestore.scaiv
 ![img.png](img.png)
 
 ## Preparation and deployment of Fuseki Triplestore
-To deploy the secoresearch/fuseki Docker image we used to build a pre-configured Docker image on [SCAI Artifactory](docker.arty.scai.fraunhofer.de) and deploy the image on our internal Kubernetes cluster.
+To deploy the secoresearch/fuseki Docker image we used to build a pre-configured Docker image on a dedicated Docker registry and deploy the image on our internal Kubernetes cluster.
 
+```
+cd path/to/secoresearch-fuseki
+build -t "docker.example.com/secoresearch-fuseki:0.0.1" -t "docker.example.com/secoresearch-fuseki:latest" -f Dockerfile
+```
 
+This will create 2 Docker images, one with version "0.0.1" and on with version tag "latest".
+
+After building the images you have to push them onto the dedicated docker registry:
+
+```
+docker push "docker.example.com/secoresearch-fuseki:0.0.1"
+docker push "docker.example.com/secoresearch-fuseki:latest"
+```
+
+OR run the Docker images on your host:
+```
+docker run --rm -it -p 3030:3030 --name fuseki -e ADMIN_PASSWORD=[PASSWORD] -e ENABLE_DATA_WRITE=[true|false] -e ENABLE_UPDATE=[true|false] -e ENABLE_UPLOAD=[true|false] -e QUERY_TIMEOUT=[number in milliseconds] --mount type=bind,source="$(pwd)"/fuseki-data,target=/fuseki-base/databases secoresearch/fuseki
+```
+See further information at [secoresearch/fuseki](https://hub.docker.com/r/secoresearch/fuseki/).
+
+To run secoresearch/fuseki on kubernetes:
+
+```
+cd path/to/kubernetes/secoreresearch-fuseki
+kubectl apply -f .
+```
