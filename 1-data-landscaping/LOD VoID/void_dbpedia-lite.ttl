@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/dbpedia-lite>
+        a                     void:Dataset ;
+        dcterms:description   "dbpedia lite takes some of the structured data in Wikipedia and presents it as Linked Data. It contains a small subset of the data that dbpedia contains; it does not attempt to extract data from the Wikipedia infoboxes. Data is fetched live from the Wikipedia API. It uses Wikipedia pageIds in its URIs to attempt to mitigate the problems of article titles changing over time.\r\n\r\nAs the data comes from WIkipedia, the licensing is the same.\r\n\r\nThis project is not affiliated with DBpedia.\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Nicholas Humfrey" ;
+                                foaf:mbox   "njh@aelius.com"
+                              ] ;
+        dcterms:subject       "no-provenance-metadata" , "wikipedia" , "published-by-third-party" , "lodcloud-diagram-2011-09-19" , "lod" , "format-owl" , "format-rdf" , "no-license-metadata" , "linked-data" , "crossdomain" , "lodcloud-diagram-2014-08-30" , "no-vocab-mappings" , "no-proprietary-vocab" , "format-foaf" , "format-rdfs" , "cross_domain" ;
+        dcterms:title         "dbpedia lite"@en ;
+        void:exampleResource  <http://dbpedialite.org/things/52780.rdf> ;
+        void:triples          200000000 ;
+        foaf:homepage         <http://dbpedialite.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbpedia-lite> ;
+  void:triples  10000000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/dbpedia-lite> ;
+  void:triples  10000000
+] .

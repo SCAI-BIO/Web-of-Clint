@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-vavai-organizations> , <http://lod-cloud.net/dataset/cz-vavai-research-plans> ;
+  void:triples  800
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-vavai-funding-providers> , <http://lod-cloud.net/dataset/cz-vavai-research-plans> ;
+  void:triples  800
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-vavai-programmes> , <http://lod-cloud.net/dataset/cz-vavai-research-plans> ;
+  void:triples  800
+] .
+
+<http://lod-cloud.net/dataset/cz-vavai-research-plans>
+        a                     void:Dataset ;
+        dcterms:description   "Institutional research plans of R&D from http://www.isvav.cz/ ."@en ;
+        dcterms:publisher     [ rdfs:label  "Petr Škoda" ;
+                                foaf:mbox   "skoda@opendata.cz"
+                              ] ;
+        dcterms:subject       "format-skos" , "deref-vocab" , "provenance-metadata" , "published-by-third-party" , "no-vocab-mappings" , "license-metadata" , "government" , "format-dcterms" , "lod" ;
+        dcterms:title         "Institutional research plans"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/vavai/zamer/AV0Z00950701%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Fresearch-plans&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          143182 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/vavai/zamer/AV0Z00950701> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-research-plans.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-research-plans-vocabulary.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Fresearch-plans%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        foaf:homepage         <http://linked.opendata.cz/resource/dataset/vavai/research-plans> .

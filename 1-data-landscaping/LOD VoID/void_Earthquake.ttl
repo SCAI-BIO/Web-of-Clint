@@ -1,0 +1,39 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/Face Link> , <http://lod-cloud.net/dataset/Earthquake> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bfo> , <http://lod-cloud.net/dataset/Earthquake> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/SocialLink> , <http://lod-cloud.net/dataset/Earthquake> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linked-open-vocabularies-lov> , <http://lod-cloud.net/dataset/Earthquake> ;
+  void:triples  80
+] .
+
+<http://lod-cloud.net/dataset/Earthquake>
+        a                    void:Dataset ;
+        dcterms:description  "Related to emergency response"@en ;
+        dcterms:publisher    [ rdfs:label  "sonia" ;
+                               foaf:mbox   "soniamehla_6160014@nitkkr.ac.in"
+                             ] ;
+        dcterms:subject      "emergency response" , "Flood" , "Earthquake" , "search and rescue" , "natural disaster" , "geography" ;
+        dcterms:title        "Emergency situation"@en ;
+        void:dataDump        <https://raw.githubusercontent.com/sonia04021991/Ontology/main/eso.rdf> ;
+        void:sparqlEndpoint  <https://www.orpha.net/sparql> ;
+        void:triples         3000 ;
+        foaf:homepage        <https://raw.githubusercontent.com/sonia04021991/Ontology> .
+
+[ void:target   <http://lod-cloud.net/dataset/Terrorist Attack 1> , <http://lod-cloud.net/dataset/Earthquake> ;
+  void:triples  60
+] .

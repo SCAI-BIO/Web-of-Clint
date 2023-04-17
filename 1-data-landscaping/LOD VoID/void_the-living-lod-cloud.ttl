@@ -1,0 +1,52 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/the-living-lod-cloud>
+        a                    void:Dataset ;
+        dcterms:description  "A lodcloud diagram, automatically. Based on quality standards."@en ;
+        dcterms:publisher    [ rdfs:label  "Timothy Lebo" ;
+                               foaf:mbox   "lebot@rpi.edu"
+                             ] ;
+        dcterms:subject      "format-sioc" , "format-pmlj" , "format-datafaqs" , "format-pmlp" , "format-prov" , "format-rdf" , "datafaqs" , "format-dc" , "format-foaf" , "format-oboro" , "format-doap" , "format-void" , "format-vann" , "format-conv" , "linked data" , "format-opm" , "format-irw" , "format-rdfs" , "format-ov" , "format-owl" , "format-pml" , "format-sio" , "format-sd" , "user_generated" , "format-con" , "format-skos" , "format-dcat" ;
+        dcterms:title        "The Living LOD Cloud"@en ;
+        void:dataDump        <http://purl.org/twc/lodcloud/source/tw-rpi-edu/file/cr-full-dump/version/latest/conversion/purl-org-twc-lodcloud.nt.gz> ;
+        void:triples         3639 ;
+        dcat:distribution    [ dcat:accessURL  <http://www.w3.org/ns/dcat> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rdfs.org/ns/void> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.w3.org/2000/01/rdf-schema> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://inference-web.org/2.0/pml-provenance.owl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/twc/vocab/conversion/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/vocab/vann/> ] ;
+        dcat:distribution    [ dcat:accessURL  dcterms: ] ;
+        dcat:distribution    [ dcat:accessURL  <http://openprovenance.org/ontology> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/timrdf/lodcloud> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://semanticscience.org/resource/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.w3.org/2004/02/skos/core> ] ;
+        dcat:distribution    [ dcat:accessURL  foaf: ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/twc/lodcloud> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.w3.org/ns/prov> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://usefulinc.com/ns/doap> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.w3.org/2000/10/swap/pim/contact> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://inference-web.org/2.0/pml-justification.owl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://obofoundry.org/ro/ro.owl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.ontologydesignpatterns.org/ont/web/irw.owl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rdfs.org/sioc/ns> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/twc/vocab/datafaqs> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/net/provenance/ns> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://open.vocab.org/terms/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.w3.org/1999/02/22-rdf-syntax-ns> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.w3.org/ns/sparql-service-description> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://provenanceweb.org/ns/pml> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.w3.org/2002/07/owl> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/twc-logd> , <http://lod-cloud.net/dataset/the-living-lod-cloud> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/the-living-lod-cloud> ;
+  void:triples  1
+] .

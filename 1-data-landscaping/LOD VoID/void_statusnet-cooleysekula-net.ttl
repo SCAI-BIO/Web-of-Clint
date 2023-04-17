@@ -1,0 +1,49 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-cooleysekula-net> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-cooleysekula-net> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> , <http://lod-cloud.net/dataset/statusnet-cooleysekula-net> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/statusnet-cooleysekula-net>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://cooleysekula.net"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "crawledLinkedDataCloud2014" , "format-rdf" , "format-pos" , "format-foaf" , "social web" , "format-bio" , "LinkedDataCrawl2014" , "lodcloud-diagram-2014-08-30" , "format-rdfs" , "format-sioc" ;
+        dcterms:title         "statusnet-cooleysekula-net"@en ;
+        void:exampleResource  <http://chirp.cooleysekula.net/jtuggle/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-cooleysekula-net> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-cooleysekula-net> ;
+  void:triples  30
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-cooleysekula-net> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-cooleysekula-net> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-jonkman-ca> , <http://lod-cloud.net/dataset/statusnet-cooleysekula-net> ;
+  void:triples  8
+] .

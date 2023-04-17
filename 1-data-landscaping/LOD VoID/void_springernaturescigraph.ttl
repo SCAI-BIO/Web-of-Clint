@@ -1,0 +1,39 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/nlm_2007_mesh> , <http://lod-cloud.net/dataset/springernaturescigraph> ;
+  void:triples  1580
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/springernaturescigraph> ;
+  void:triples  350
+] .
+
+<http://lod-cloud.net/dataset/springernaturescigraph>
+        a                     void:Dataset ;
+        dcterms:description   "SciGraph is the Springer Nature Linked Data platform that collates information from across the research landscape, i.e. the things, documents, people, places and relations of importance to the science and scholarly domain. Metadata for millions of entities are available to explore online, as well as for downloading to reuse within your own application."@en ;
+        dcterms:publisher     [ rdfs:label  "Michele Pasin" ;
+                                foaf:mbox   "scigraph@springernature.com"
+                              ] ;
+        dcterms:subject       "scientific publishing" , "chapters" , "articles" , "research organizations" , "books" , "grants" , "publications" ;
+        dcterms:title         "Springer Nature SciGraph"@en ;
+        void:dataDump         <http://scigraph.springernature.com/explorer/downloads/> ;
+        void:exampleResource  <http://scigraph.springernature.com/things/journal-brands/012496b06989edb434c6b8e1d0b0a7db> ;
+        void:triples          "979658882"^^xsd:int ;
+        foaf:homepage         <https://www.springernature.com/scigraph> .
+
+[ void:target   <http://lod-cloud.net/dataset/grid_dataset> , <http://lod-cloud.net/dataset/springernaturescigraph> ;
+  void:triples  5923024
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/doi> , <http://lod-cloud.net/dataset/springernaturescigraph> ;
+  void:triples  13310639
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/springernaturescigraph> ;
+  void:triples  1649135
+] .

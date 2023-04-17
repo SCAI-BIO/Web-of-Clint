@@ -1,0 +1,41 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-imirhil-fr> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-imirhil-fr> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/statusnet-imirhil-fr>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://imirhil.fr"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-foaf" , "crawledLinkedDataCloud2014" , "lodcloud-diagram-2014-08-30" , "format-pos" , "format-rdf" , "LinkedDataCrawl2014" , "social_networking" , "social web" , "format-sioc" ;
+        dcterms:title         "statusnet-imirhil-fr"@en ;
+        void:exampleResource  <http://status.imirhil.fr/aeris/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-imirhil-fr> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-belfalas-org> , <http://lod-cloud.net/dataset/statusnet-imirhil-fr> ;
+  void:triples  8
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-gegeweb-org> , <http://lod-cloud.net/dataset/statusnet-imirhil-fr> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-scoffoni-net> , <http://lod-cloud.net/dataset/statusnet-imirhil-fr> ;
+  void:triples  1
+] .

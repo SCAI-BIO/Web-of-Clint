@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/framebase-schema>
+        a                    void:Dataset ;
+        dcterms:description  "FrameBase is a linked open knowledge base meant to *uniformly represent a wide range of knowledge*, tackling semantic heterogeneity among various sources of structured knowledge, such as the ones in the Linked Open Data cloud. It provides a flexible and uniform way of capturing n-ary relationships by adapting and combining repositories of frames from the fields of linguistics and cognitive science (FrameNet and WordNet) to establish a large and wide-coverage vocabulary that can be used to represent complex knowledge and extended with more specific elements.\r\n\r\nThere are two interconnected representation levels in FrameBase:\r\n\r\n* A highly expressive layer where information is represented with explicit entities instantiating the frames, and representing specific situations, processes or events of any kind, organized into a rich hierarchy.\r\n\r\n* A less expressive but simpler layer based on direct binary predicates between the elements (participants, properties) of the frames. This level is more compact to store and query, and it is connected with the other layer by means Reification-Dereification (ReDer) rules. It can also be used to connect to similar predicates in other sources of structured knowledge or natural language.\r\n\r\nFrameBase is distributed in RDF (Resource Description Format), though it can be translated to other formats.\r\n\r\nFrameBase connects to other knowledge bases by means of integration rules that can link data in ways that cannot be implemented with existing binary properties like owl:sameAs and rdfs:subClassOf .\r\n\r\nFurthermore, because of FrameNet's ties to linguistic semantics, it offers additional possibilities for interfacing with natural language, both for querying and text mining."@en ;
+        dcterms:publisher    [ rdfs:label  "FrameBase team" ;
+                               foaf:mbox   "jacobo@rouces.org"
+                             ] ;
+        dcterms:subject      "data heterogeneity" , "data mining" , "semantic web" , "knowledge bases" , "rdf" , "linguistics" , "linked data" , "graph databases" ;
+        dcterms:title        "FrameBase schema"@en ;
+        void:triples         500000 ;
+        dcat:distribution    [ dcat:accessURL  <http://www.framebase.org/data> ] ;
+        foaf:homepage        <http://www.framebase.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/framebase-schema> ;
+  void:triples  25000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wordnet-rdf> , <http://lod-cloud.net/dataset/framebase-schema> ;
+  void:triples  6000
+] .

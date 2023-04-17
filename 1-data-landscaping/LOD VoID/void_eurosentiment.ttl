@@ -1,0 +1,53 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/eurosentiment> ;
+  void:triples  "unknown"^^xsd:integer
+] .
+
+<http://lod-cloud.net/dataset/eurosentiment>
+        a                    void:Dataset ;
+        dcterms:description  "Gabriela Vulcu, Raul Lario Monje, Mario Munoz, Paul Buitelaar and Carlos A. Iglesias (2014), Linked-Data based Domain-Specific Sentiment Lexicons, In: Proceedings of the 3rd Workshop on Linked Data in Linguistics (LDL-2014), Reykjavik, Iceland, May 2014\r\n\r\n    Resource Type: \tLexicon\r\n    Resource Name: \tEUROSENTIMENT domain-specific sentiment lexicons\t\r\n    Size: \t9160\t\r\n    Resource Production Status: \tNewly created-in progress\t\r\n    Language(s): \tW\t\r\n    Modality: \tWritten\t\r\n    Use of the Resource: \tEmotion Recognition/Generation\t\r\n    Resource Availability: \tFreely Avalable\t\r\n    Resource URL (if available): \thttp://140.203.155.231:8080/eurosentiment/\t\r\n    Resource Description: \tPlease see the submitted article. It describes this language resource and all other involved. "@en ;
+        dcterms:publisher    [ rdfs:label  "Gabriela Vulcu et al." ;
+                               foaf:mbox   "gabriela.vulcu@insight-centre.org"
+                             ] ;
+        dcterms:subject      "linguistic" , "lod" , "sentiment" , "llod" , "lexicon" , "ldl-2014" ;
+        dcterms:title        "EuroSentiment"@en ;
+        void:sparqlEndpoint  <http://virtuoso-eurosentiment.paradigmatecnologico.com/sparql> ;
+        void:triples         975566 ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000028_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000025_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000026_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000021_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/electronics_en_human_final_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000013_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000029_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/human_de_cars_250_revised_final_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/hotel_pt_human_final_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000030_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000014_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000031_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/hotel_es_human_final_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000016_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000020_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/electronics_es_human_final_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000034_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000017_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000019_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000033_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/hotel_ca_human_final_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/electronics_ca_human_final_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000024_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000023_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/electronics_pt_human_final_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000022_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000015_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000030_000001.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000035_000001_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/hotel_en_human_final_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/human_de_tech_250_revised_final_metadata.nq> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000018_000001_metadata.nq> ] .

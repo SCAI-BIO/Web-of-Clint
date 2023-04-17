@@ -1,0 +1,36 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/reference-data-gov-uk> ;
+  void:triples  22
+] .
+
+<http://lod-cloud.net/dataset/reference-data-gov-uk>
+        a                     void:Dataset ;
+        dcterms:description   "Reference data for linked UK government data:\r\n\r\n* People\r\n* Departments\r\n* Namespace for various time intervals (separate sub-package package:data-gov-uk-time-intervals)\r\n\r\n### Linked Data API\r\n\r\nRoots:\r\n\r\nhttp://reference.data.gov.uk/doc/department\r\nhttp://reference.data.gov.uk/doc/mp"@en ;
+        dcterms:publisher     [ rdfs:label  "Data.gov.uk Team" ;
+                                foaf:mbox   "team@data.gov.uk"
+                              ] ;
+        dcterms:subject       "format-org" , "country-uk" , "lod" , "format-dc" , "published-by-producer" , "no-license-metadata" , "lodcloud-diagram-2011-09-19" , "lodcloud-diagram-2014-08-30" , "government" , "format-foaf" , "no-provenance-metadata" , "broken_link" , "format-skos" , "uk" , "no-vocab-mappings" , "ukgov" , "deref-vocab" ;
+        dcterms:title         "reference.data.gov.uk"@en ;
+        void:exampleResource  <http://reference.data.gov.uk/id/mp/witney/david-cameron> , <http://reference.data.gov.uk/id/department/dfe> ;
+        void:sparqlEndpoint   <http://services.data.gov.uk/reference/sparql> ;
+        void:triples          45809 ;
+        dcat:distribution     [ dcat:accessURL  <http://reference.data.gov.uk/doc/mp> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://source.data.gov.uk/data/reference/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://reference.data.gov.uk/doc/department> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://reference.data.gov.uk/def/central-government> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://services.data.gov.uk/reference/search> ] ;
+        foaf:homepage         <http://reference.data.gov.uk/> .
+
+[ void:target   <http://lod-cloud.net/dataset/data-gov-uk-time-intervals> , <http://lod-cloud.net/dataset/reference-data-gov-uk> ;
+  void:triples  1518
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/london-gazette> , <http://lod-cloud.net/dataset/reference-data-gov-uk> ;
+  void:triples  1405
+] .

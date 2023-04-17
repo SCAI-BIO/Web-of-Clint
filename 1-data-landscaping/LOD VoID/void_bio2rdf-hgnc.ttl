@@ -1,0 +1,74 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ensembl> , <http://lod-cloud.net/dataset/bio2rdf-hgnc> ;
+  void:triples  56758
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-vega> , <http://lod-cloud.net/dataset/bio2rdf-hgnc> ;
+  void:triples  24348
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-hgnc>
+        a                     void:Dataset ;
+        dcterms:description   "The HGNC gives unique and meaningful names to every human gene. For each known human gene we approve a gene name and symbol (short-form abbreviation).  All approved symbols are stored in the HGNC database."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "bio2rdf" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "published-by-third-party" , "lifesciences" , "deref-vocab" , "format-rdf" , "format-dc" , "license-metadata" , "lod" , "lodcloud-diagram-2011-09-19" , "vocab-mappings" , "life_sciences" , "format-rdfs" ;
+        dcterms:title         "Bio2RDF::Hgnc"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/hgnc/hgnc_complete_set.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/hgnc:7> ;
+        void:sparqlEndpoint   <http://hgnc.bio2rdf.org/sparql> ;
+        void:triples          3628205 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/hgnc/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/hgnc/bio2rdf_hgnc_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/hgnc/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/hgnc/bio2rdf-hgnc.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/hgnc/hgnc.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/hgnc/hgnc.html> ] ;
+        foaf:homepage         <http://hgnc.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-hgnc> ;
+  void:triples  16672
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ucsc> , <http://lod-cloud.net/dataset/bio2rdf-hgnc> ;
+  void:triples  21270
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/bio2rdf-hgnc> ;
+  void:triples  19603
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-hgnc> ;
+  void:triples  34453
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/bio2rdf-hgnc> ;
+  void:triples  14252
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mgi> , <http://lod-cloud.net/dataset/bio2rdf-hgnc> ;
+  void:triples  17768
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-rgd> , <http://lod-cloud.net/dataset/bio2rdf-hgnc> ;
+  void:triples  17417
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ccds> , <http://lod-cloud.net/dataset/bio2rdf-hgnc> ;
+  void:triples  29446
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-refseq> , <http://lod-cloud.net/dataset/bio2rdf-hgnc> ;
+  void:triples  36512
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-hgnc> ;
+  void:triples  41826
+] .

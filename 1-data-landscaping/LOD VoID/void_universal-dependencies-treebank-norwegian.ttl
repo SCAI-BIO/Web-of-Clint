@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/universal-dependencies-treebank-norwegian>
+        a                    void:Dataset ;
+        dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Norwegian treebank.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Øvrelid, Lilja; Jørgensen, Fredrik Contact:" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "corpus" , "linguistics" , "lod" ;
+        dcterms:title        "Universal Dependencies Treebank Norwegian"@en ;
+        void:triples         310222 ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/04c1abc1-b1e6-427a-8f95-c02306febac9/resource/0bc799f5-ace5-471e-8d7a-dee04d508c7f/download/udnorwegian.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Norwegian-Bokmaal/archive/master.zip> ] ;
+        foaf:homepage        <https://github.com/UniversalDependencies/UD_Norwegian-Bokmaal> .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-norwegian> ;
+  void:triples  72
+] .

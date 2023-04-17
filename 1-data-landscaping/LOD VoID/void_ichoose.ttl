@@ -1,0 +1,49 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/ichoose> ;
+  void:triples  2
+] .
+
+<http://lod-cloud.net/dataset/ichoose>
+        a                     void:Dataset ;
+        dcterms:description   "SUNY Albany Center for Technology in Government I-Choose project"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-coin" , "format-dbpedia" , "format-foaf" , "format-sioc" , "provenance-metadata" , "format-pmlj" , "format-vann" , "format-conv" , "lod" , "format-void" , "format-pmlp" , "format-org" , "format-tag" , "format-rdfs" , "format-pml" , "format-sio" , "format-owl" , "format-doap" , "format-ov" , "deref-vocab" , "vocab-mappings" , "user_generated" , "format-con" , "prizms" , "format-datafaqs" , "format-prov" , "format-dcat" , "format-rdf" , "format-dc" ;
+        dcterms:title         "ichoose"@en ;
+        void:dataDump         <http://ichoose.tw.rpi.edu/source/ichoose/file/cr-full-dump/version/latest/conversion/ichoose-tw-rpi-edu.nt.gz> ;
+        void:exampleResource  <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/exporter-database/agromercado-floid6230.xls-customerlog/version/2013-Jun-21/customer_17> , <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/roaster-database/maritime-floid5547.xls-supplierlog/version/2013-Jun-21/Importadores_de_la_Caf_Justo_de_la_Paz> , <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jun-21/company/1341.0> ;
+        void:sparqlEndpoint   <http://ichoose.tw.rpi.edu/sparql> ;
+        void:triples          99411 ;
+        dcat:distribution     [ dcat:accessURL  <http://inference-web.org/2.0/pml-justification.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/dcat> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/1999/02/22-rdf-syntax-ns> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://inference-web.org/2.0/pml-provenance.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2000/10/swap/pim/contact> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/vocab/vann/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/court/def/2009/coin> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://provenanceweb.org/ns/pml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://open.vocab.org/terms/> ] ;
+        dcat:distribution     [ dcat:accessURL  foaf: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://usefulinc.com/ns/doap> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/prov> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ichoose.tw.rpi.edu/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2002/07/owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2000/01/rdf-schema> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ichoose.tw.rpi.edu/source/ichoose/file/cr-sitemap/version/latest/conversion/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://dbpedia.org/resource/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.holygoat.co.uk/owl/redwood/0.1/tags/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/conversion/> ] ;
+        dcat:distribution     [ dcat:accessURL  dcterms: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdfs.org/sioc/ns> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/org> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://semanticscience.org/resource/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/datafaqs> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdfs.org/ns/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ichoose.tw.rpi.edu/source/ichoose/file/cr-aggregated-params/version/latest/conversion/ichoose-cr-aggregated-params-latest.ttl.gz> ] .

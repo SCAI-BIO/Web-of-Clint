@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/rechtspraak> ;
+  void:triples  220058
+] .
+
+<http://lod-cloud.net/dataset/rechtspraak>
+        a                     void:Dataset ;
+        dcterms:description   "RDF version of the official case law dataset of the Netherlands Council of the Judiciary (at [http://www.rechtspraak.nl](http://www.rechtspraak.nl)). It contains approximately 145k descriptions of court proceedings, linked to DBPedia and Geonames (places mentioned in cases). It contains all Dutch courts and their locations.\r\n\r\nURIs are dereferenceable.\r\n\r\nExample: [http://linkeddata.few.vu.nl/rechtspraak/uitspraak/BM4461](http://linkeddata.few.vu.nl/rechtspraak/uitspraak/BM4461)\r\n\r\nThis dataset was developed within the BEST project at the VU University Amsterdam."@en ;
+        dcterms:publisher     [ rdfs:label  "Rinke Hoekstra" ;
+                                foaf:mbox   "hoekstra@few.vu.nl"
+                              ] ;
+        dcterms:subject       "void-sparql-endpoint" , "government" , "format-geonames" , "lod" , "format-metalex" , "format-geo" , "no-license-metadata" , "deref-vocab" , "format-owl" , "format-dbo" , "published-by-third-party" , "vu" , "provenance-metadata" , "lodcloud-diagram-2011-09-19" , "broken_link" , "format-dbpedia" , "law" , "format-rdf" , "case-law" , "no-vocab-mappings" ;
+        dcterms:title         "Rechtspraak.nl"@en ;
+        void:exampleResource  <http://linkeddata.few.vu.nl/rechtspraak/uitspraak/BM4461> ;
+        void:sparqlEndpoint   <http://eculture2.cs.vu.nl:5020/sparql/> ;
+        void:triples          1931860 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.best-project.nl/rechtspraak.ttl> ] ;
+        foaf:homepage         <http://www.best-project.nl> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rechtspraak> ;
+  void:triples  575
+] .

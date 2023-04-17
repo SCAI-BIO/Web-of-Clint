@@ -1,0 +1,60 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-icd10pcs> ;
+  void:triples  144
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-icd10pcs> ;
+  void:triples  44
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc2p> , <http://lod-cloud.net/dataset/bioportal-icd10pcs> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-icd10pcs> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icd9cm> , <http://lod-cloud.net/dataset/bioportal-icd10pcs> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-icd10pcs> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-icd10pcs> ;
+  void:triples  13
+] .
+
+<http://lod-cloud.net/dataset/bioportal-icd10pcs>
+        a                    void:Dataset ;
+        dcterms:description  "ICD-10-PCS, 2009"@en ;
+        dcterms:publisher    [ rdfs:label  "Pat Brooks" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "biomedicine" , "format-rdf" , "ontology" , "format-rrf" , "lod" , "life_sciences" , "published-by-third-party" , "bioportal" ;
+        dcterms:title        "ICD-10-PCS"@en ;
+        void:triples         1844776 ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/46303?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1425> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-icd10pcs> ;
+  void:triples  26
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-icd10pcs> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-icd10pcs> ;
+  void:triples  17
+] .

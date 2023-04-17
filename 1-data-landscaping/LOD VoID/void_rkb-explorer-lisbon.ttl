@@ -1,0 +1,54 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/rkb-explorer-lisbon>
+        a                     void:Dataset ;
+        dcterms:description   "This repository contains data supplied from Fundação da Faculdade de Ciencas da Universidade de Lisboa."@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "void-sparql-endpoint" , "lodcloud.unconnected" , "publications" , "lod" , "provenance-metadata" , "format-rdf" , "deref-vocab" , "published-by-third-party" ;
+        dcterms:title         "Fundação da Faculdade de Ciencas da Universidade de Lisboa (RKBExplorer)"@en ;
+        void:exampleResource  <http://lisbon.rkbexplorer.com/id/person-01007> ;
+        void:sparqlEndpoint   <http://lisbon.rkbexplorer.com/sparql> ;
+        void:triples          32737 ;
+        dcat:distribution     [ dcat:accessURL  <http://lisbon.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lisbon.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lisbon.rkbexplorer.com/sitemap.xml> ] ;
+        foaf:homepage         <http://lisbon.rkbexplorer.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-roma> , <http://lod-cloud.net/dataset/rkb-explorer-lisbon> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eurecom> , <http://lod-cloud.net/dataset/rkb-explorer-lisbon> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/rkb-explorer-lisbon> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-lisbon> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-italy> , <http://lod-cloud.net/dataset/rkb-explorer-lisbon> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-lisbon> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-lisbon> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ft> , <http://lod-cloud.net/dataset/rkb-explorer-lisbon> ;
+  void:triples  1
+] .

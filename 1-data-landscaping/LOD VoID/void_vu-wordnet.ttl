@@ -1,0 +1,34 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/cornetto> , <http://lod-cloud.net/dataset/vu-wordnet> ;
+  void:triples  84473
+] .
+
+<http://lod-cloud.net/dataset/vu-wordnet>
+        a                    void:Dataset ;
+        dcterms:description  "RDF conversion of Princeton's package:wordnet, version 3.0. With many links to package:w3c-wordnet, package:lexvo and the Dutch package:cornetto ."@en ;
+        dcterms:publisher    [ rdfs:label  "Mark van Assem, Antoine Isaac, Jacco van Ossenbruggen" ;
+                               foaf:mbox   "Jacco.van.Ossenbruggen@cwi.nl"
+                             ] ;
+        dcterms:subject      "published-by-third-party" , "lodcloud-diagram-2014-08-30" , "no-vocab-mappings" , "deref-vocab" , "thesaurus" , "no-provenance-metadata" , "lod" , "linkeddata" , "no-license-metadata" , "rdf" , "crossdomain" , "language" , "linguistics" , "wordnet" , "lodcloud-diagram-2011-09-19" , "vu" ;
+        dcterms:title        "WordNet 3.0 (VU Amsterdam)"@en ;
+        void:triples         4573749 ;
+        dcat:distribution    [ dcat:accessURL  <http://semanticweb.cs.vu.nl/europeana/sparql/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/vocabularies/princeton/wn30/synset-chair-noun-1.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/jrvosse/wordnet-3.0-rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://semanticweb.cs.vu.nl/lod/wn30/rdf/void.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/vocabularies/princeton/wn30/synset-chair-noun-1> ] ;
+        foaf:homepage        <http://semanticweb.cs.vu.nl/lod/wn30/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/vu-wordnet> ;
+  void:triples  117659
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/w3c-wordnet> , <http://lod-cloud.net/dataset/vu-wordnet> ;
+  void:triples  112788
+] .

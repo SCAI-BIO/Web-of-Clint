@@ -1,0 +1,66 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-risks> ;
+  void:triples  12
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-risks>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "format-foaf" , "no-vocab-mappings" , "format-akt" , "format-rdf" , "void-sparql-endpoint" , "lod" , "published-by-third-party" , "format-resex" , "format-dc" , "lodcloud-diagram-2014-08-30" , "publications" , "format-void" , "deref-vocab" , "format-courseware" , "format-scovo" , "provenance-metadata" , "no-license-metadata" , "lodcloud-diagram-2011-09-19" ;
+        dcterms:title         "RISKS Digest (RKBExplorer)"@en ;
+        void:exampleResource  <http://risks.rkbexplorer.com/id/Risks-1.20.html-subj1.1> ;
+        void:sparqlEndpoint   <http://risks.rkbexplorer.com/sparql/> ;
+        void:triples          322913 ;
+        dcat:distribution     [ dcat:accessURL  <http://risks.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://risks.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://risks.rkbexplorer.com/models/dump.tgz> ] ;
+        foaf:homepage         <http://risks.rkbexplorer.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-risks> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-risks> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-risks> ;
+  void:triples  58
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-jisc> , <http://lod-cloud.net/dataset/rkb-explorer-risks> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-risks> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ieee> , <http://lod-cloud.net/dataset/rkb-explorer-risks> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-risks> ;
+  void:triples  37
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-risks> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-risks> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-risks> ;
+  void:triples  15
+] .

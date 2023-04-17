@@ -1,0 +1,39 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/whisky-circle-info> ;
+  void:triples  62
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/whisky-circle-info> ;
+  void:triples  80
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/whisky-circle-info> ;
+  void:triples  135
+] .
+
+<http://lod-cloud.net/dataset/whisky-circle-info>
+        a                     void:Dataset ;
+        dcterms:description   "Whisky Circle dataset, built with WordLift for the https://www.whisky-circle.info/ website"@en ;
+        dcterms:publisher     [ rdfs:label  "WordLift Team" ;
+                                foaf:mbox   "andrea@wordlift.io"
+                              ] ;
+        dcterms:subject       "cross_domain" , "whisky" , "wordlift" ;
+        dcterms:title         "Whisky Circle"@en ;
+        void:dataDump         <https://api.wordlift.it/datasets/wl0164.rdf> ;
+        void:exampleResource  <http://data.wordlift.io/wl0164/entity/schottland> ;
+        void:triples          "6690"^^xsd:int ;
+        foaf:homepage         <https://www.whisky-circle.info/> .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/whisky-circle-info> ;
+  void:triples  174
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/whisky-circle-info> ;
+  void:triples  180
+] .

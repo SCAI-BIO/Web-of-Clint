@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/asn-us> ;
+  void:triples  378
+] .
+
+<http://lod-cloud.net/dataset/asn-us>
+        a                     void:Dataset ;
+        dcterms:description   "The [Achievement Standards Network](http://asn.jesandco.org \"Achievement Standards Network\") (ASN) provides open access to machine-readable representations of learning objectives published by education agencies and organizations. This is the ASN:US dataset of \"published\" learning objectives.  The ASN is also used in Australia [(ASN:AU)](http://www.australiancurriculum.edu.au/Technical/Introduction \"ASN:AU\").\r\n\r\nThe ASN is is funded in part by the [Bill & Melinda Gates Foundation](http://gatesfoundation.org \"Bill & Melinda Gates Foundation\") and was initially funded by the [National Science Foundation](http://www.nsf.gov/ \"National Science Foundation\")."@en ;
+        dcterms:publisher     [ rdfs:label  "JES & Co." ;
+                                foaf:mbox   "technicalsupport@jesandco.org"
+                              ] ;
+        dcterms:subject       "lod" , "format-asn" , "license-metadata" , "government" , "lodcloud-diagram-2014-08-30" , "format-dc" , "format-dcterms" , "published-by-third-party" , "learning outcomes" , "format-skos" , "united states" , "education" , "no-proprietary-vocab" , "provenance-metadata" ;
+        dcterms:title         "ASN:US"@en ;
+        void:exampleResource  <http://asn.jesandco.org/resources/S2377506.n3> , <http://asn.jesandco.org/resources/S2377506.xml> , <http://asn.jesandco.org/resources/S2377506.ttl> ;
+        void:sparqlEndpoint   <http://sparql.jesandco.org:8890/sparql> ;
+        void:triples          4632275 ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-08-21T205204/ASN_published_dump.rdf.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/ASN/schema/core/> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-08-17T160730/asn_published_xml.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://sparql.jesandco.org:8890/fct/> ] ;
+        foaf:homepage         <http://asn.jesandco.org> .

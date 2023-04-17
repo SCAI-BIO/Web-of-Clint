@@ -1,0 +1,38 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/temple-ov-thee-lemur-datasets>
+        a                     void:Dataset ;
+        dcterms:description   "This resource provides 3 groups of RDF datasets. 1. Esoteric subjects such as tarot and alchemy. These all interlink and the Horoscope, Tarot, Planets and Elements sets link into DBPedia resources for Starsigns, Metals, Tarot Suits, Planets, Gems, and the Narnia novels(!)\r\n\r\n2. Descriptions of Game States such as tic-tac-toe and chess. Do not attmpt to spider these as they are effectively infinite.\r\n\r\n3. Deliberately perverse datasets including Daily Mail cancer. Where possible, the causes and preventions of cancer are linked to their DBPedia indentifiers. Other perverse datasets are considered 'toys' and not linked here. They are listed on the homepage."@en ;
+        dcterms:publisher     [ rdfs:label  "Christopher Gutteridge" ;
+                                foaf:mbox   "cjg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "published-by-producer" , "perverse" , "games" , "format-owl" , "lod" , "lodcloud-diagram-2011-09-19" , "format-dc" , "tarot" , "cross_domain" , "format-rdf" , "deref-vocab" , "crossdomain" , "no-provenance-metadata" , "no-license-metadata" , "chess" , "format-foaf" , "occult" , "no-vocab-mappings" , "humour" ;
+        dcterms:title         "Temple ov thee Lemur"@en ;
+        void:exampleResource  <http://data.totl.net/playingcards/deck> ;
+        void:triples          10000 ;
+        dcat:distribution     [ dcat:accessURL  <http://data.totl.net/tictactoe/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.totl.net/he/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.totl.net/cancer_causes.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.totl.net/tarot-rwcs/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.totl.net/zodiac/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.totl.net/kabbalah/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.totl.net/4inarow/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.totl.net/element/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.totl.net/tarot/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.totl.net/planet/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.totl.net/playingcards/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.totl.net/chess/> ] ;
+        foaf:homepage         <http://data.totl.net/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/temple-ov-thee-lemur-datasets> ;
+  void:triples  500
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semantictweet> , <http://lod-cloud.net/dataset/temple-ov-thee-lemur-datasets> ;
+  void:triples  1
+] .

@@ -1,0 +1,34 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/elviajero>
+        a                     void:Dataset ;
+        dcterms:description   "El Viajero's tourism dataset integrates the various contents from newspapers and digital platforms belonging to the Prisa Digital Group in the domain of news and blogs about travel. \r\nIt relies on the Open Provenance Model to capture the provenance of each resource, and it gathers information about more than 20.000 travel guides, pictures, videos and posts belonging to the platforms."@en ;
+        dcterms:publisher     [ rdfs:label  "Ontology Engineering Group, Facultad de Informática, Universidad Politécnica de Madrid." ;
+                                foaf:mbox   "dgarijov@gmail.com"
+                              ] ;
+        dcterms:subject       "trip-management" , "format-opmv" , "lod" , "user_generated" , "geographic" , "el-viajero" , "places" , "format-rdfs" , "vocab-mappings" , "travel" , "provenance-metadata" , "format-opmo" , "format-geo" , "tourism" , "points_of_interest" , "format-mpeg7" , "format-dc" , "no-license-metadata" , "travel-guides" , "published-by-third-party" , "deref-vocab" , "format-rdf" , "format-sioc" , "media" ;
+        dcterms:title         "El Viajero's tourism dataset"@en ;
+        void:dataDump         <http://webenemasuno.linkeddata.es/source/rdf/data.zip> ;
+        void:exampleResource  <http://webenemasuno.linkeddata.es/data/elviajero/resource/Guide/20080112ELPVIAPOR_1.TES?output=xml> , <http://webenemasuno.linkeddata.es/data/elviajero/resource/Guide/20080112ELPVIAPOR_1.TES?output=ttl> ;
+        void:sparqlEndpoint   <http://webenemasuno.linkeddata.es/sparql> ;
+        void:triples          9262184 ;
+        dcat:distribution     [ dcat:accessURL  <http://webenemasuno.linkeddata.es/sparql.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://webenemasuno.linkeddata.es/metadata> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://webenemasuno.linkeddata.es/OPMO/OPMO.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://webenemasuno.linkeddata.es/MPEG7/MPEG7.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://webenemasuno.linkeddata.es/OPMO/OPMO.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://webenemasuno.linkeddata.es/browser.html> ] ;
+        foaf:homepage         <http://webenemasuno.linkeddata.es/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/elviajero> ;
+  void:triples  3093
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geolinkeddata> , <http://lod-cloud.net/dataset/elviajero> ;
+  void:triples  55224
+] .

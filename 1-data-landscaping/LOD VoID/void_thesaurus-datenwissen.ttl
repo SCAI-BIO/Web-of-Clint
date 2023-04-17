@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/thesaurus-datenwissen>
+        a                     void:Dataset ;
+        dcterms:description   "This service exposes the data from openthesaurus.de as Linked Data."@en ;
+        dcterms:publisher     [ rdfs:label  "Angelo Veltens" ;
+                                foaf:mbox   "angelo.veltens@online.de"
+                              ] ;
+        dcterms:subject       "lod" , "published-by-third-party" , "publications" , "lodcloud.needsinfo" , "lodcloud.nolinks" , "no-vocab-mappings" , "lodcloud.unconnected" , "no-proprietary-vocab" ;
+        dcterms:title         "Thesaurus Datenwissen"@en ;
+        void:exampleResource  <http://thesaurus.datenwissen.de/hervorragend#term> ;
+        void:triples          64154 ;
+        foaf:homepage         <http://thesaurus.datenwissen.de/> .

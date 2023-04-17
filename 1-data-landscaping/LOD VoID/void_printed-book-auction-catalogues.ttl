@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/printed-book-auction-catalogues> ;
+  void:triples  1607
+] .
+
+<http://lod-cloud.net/dataset/printed-book-auction-catalogues>
+        a                     void:Dataset ;
+        dcterms:description   "The books are those listed in the English language section of Dutch printed book auction catalogues of collections of scholars and religious ministers. In some cases, the prior owner of the books listed was from England; in others they were of dutch nationality. For more information about printed book auction catalogues, see http://bibliopolis.nl"@en ;
+        dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
+                                foaf:mbox   "keithalexander@keithalexander.co.uk"
+                              ] ;
+        dcterms:subject       "license-metadata" , "english" , "provenance-metadata" , "lod" , "historical" , "lld" , "publications" , "published-by-third-party" , "no-vocab-mappings" , "format-rdfs" , "catalogue" , "auction" , "book" , "puritans" , "holland" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "format-rdf" , "printed" , "dutch" , "bibliographic" ;
+        dcterms:title         "English Language Books listed in Printed Book Auction Catalogues from 17th Century Holland"@en ;
+        void:exampleResource  <http://keithalexander.co.uk/pbac/identified/agents/405.rdf> ;
+        void:sparqlEndpoint   <http://api.talis.com/stores/pbac/services/sparql> ;
+        void:triples          55214 ;
+        dcat:distribution     [ dcat:accessURL  <http://keithalexander.co.uk/pbac> ] ;
+        foaf:homepage         <http://keithalexander.co.uk/pbac> .

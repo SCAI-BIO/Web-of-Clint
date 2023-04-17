@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/sweto-dblp>
+        a                    void:Dataset ;
+        dcterms:description  "Data exposed: ontology focused on bibliography data of publications from DBLP with additions that include affiliations, universities, and publishers\r\n\r\nSize of dump and data set: 11M triples (1.1GB)\r\n\r\n\r\nNo dereferenceable URIs found."@en ;
+        dcterms:publisher    [ rdfs:label  "Boanerges Aleman-Meza" ;
+                               foaf:mbox   "bam75@yahoo.com"
+                             ] ;
+        dcterms:subject      "format-rdf" , "bibliographic" , "format-dc" , "ontology" , "size-large" , "format-foaf" , "publications" , "lodcloud.unconnected" , "rdf" , "lodcloud.needsfixing" , "ckanupload.esw.200910" , "lodcloud.nolinks" , "lod" , "library" , "linkeddata" ;
+        dcterms:title        "SwetoDblp"@en ;
+        void:triples         11000000 ;
+        dcat:distribution    [ dcat:accessURL  <http://knoesis.wright.edu/resources/library-resources/ontologies/swetodblp/april2008/swetodblp_april_2008.rdf.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://knoesis.wright.edu/resources/library-resources/ontologies/swetodblp/august2007/opus_august2007.rdf> ] ;
+        foaf:homepage        <http://knoesis.wright.edu/library/ontologies/swetodblp/> .

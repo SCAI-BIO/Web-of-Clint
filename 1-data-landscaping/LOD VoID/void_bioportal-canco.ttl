@@ -1,0 +1,848 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sep> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icf_x1> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  43
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ogi> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  65
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ctcae> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  89
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-fbbt> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  345
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-npo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  267
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pr> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  68
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ontoorpha> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  329
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  1545
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-shr> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  53
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cpt> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  59
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  2357
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bho> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  120
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cogpo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  77
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-exo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  27
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  1910
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-gaz> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  47
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-gfo-bio> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  31
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-fbsp> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  27
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icps> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cheminf> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  76
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-oae> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  53
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bt> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  48
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-flu> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  122
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-teo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  168
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pko> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  470
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-dikb-evidence> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-aba> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  38
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tmo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  115
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  1210
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sso> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  26
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa2> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  244
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hpio> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  91
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10cm> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  278
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pato> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  91
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-atmo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bila> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  57
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-dc_cl> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  48
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  1706
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc2p> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  493
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hao> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  100
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cno> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hp_x1> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  366
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hom_ehs> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-jerm> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  51
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sao> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  100
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  363
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-zfa> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  746
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  131
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-odgi> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  78
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  217
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-spo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  26
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ep> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  210
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nemo_x1> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  168
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  515
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sitbac> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hcpcs> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cogat> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sbo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  23
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x2> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  61
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rnao> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  47
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-clo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  472
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  174
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-swo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  27
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pvonto> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  4167
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-fbcv> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  52
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  4957
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icd9cm> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  490
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ecg> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  345
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mao> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  46
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-omrse> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  45
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ms> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  31
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nigo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  2082
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-aao> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  324
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-spto> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  103
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nmr> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  44
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  2433
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-neomarkontology> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mfo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  77
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-so_x1> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  32
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  204
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ctx> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  45
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cco> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  46
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ocre> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-propreo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-adw> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-phare> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  51
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  627
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-xao> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  339
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  1329
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cmo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  366
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mf> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  63
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tao> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  728
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bfo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  40
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pedterm> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  156
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-neumore> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-po_x1> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  32
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-opl> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  75
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vivo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  29
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cl> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  59
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-chebi> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  813
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ma> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  427
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  1576
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-aeo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  80
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-iev> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ontodm> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  75
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mfoem> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  64
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nbo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ino> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  46
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  365
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bro_x1> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  500
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-who> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  227
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mhc> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-medlineplus> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  377
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bootstrep> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  51
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-po> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  71
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cao> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  56
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  856
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tok> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rctontology> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  330
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-fhho> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  29
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-imr> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  71
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-doid> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  695
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-imgt> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bto> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  710
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ido> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  75
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-lhn> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  1618
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mi> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  60
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-caro> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ddi> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  167
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  5412
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncbitaxon> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  49
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-aero> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  112
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-air> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  46
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sio> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  160
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-spd> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  29
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vhog> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  360
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-miro> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  59
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-envo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-peo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snpo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  53
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-zea> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  22
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  2269
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mp> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  157
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tgma> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  67
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rxnorm> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  442
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bao> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  220
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-unitsontology> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  35
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bp> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x1> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  66
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-iao> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  59
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-omit> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  64
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-gro_x2> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  51
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cpr> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  67
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  1204
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pdq> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  384
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-roleo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  251
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ogms> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  57
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-xco> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  23
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vandf> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  355
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  83
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-wbbt> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  115
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mcv> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ogmd> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-gro_x1> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  974
+] .
+
+<http://lod-cloud.net/dataset/bioportal-canco>
+        a                    void:Dataset ;
+        dcterms:description  "The Cancer Chemoprevention Ontology constitutes a vocabulary that is able to describe and semantically interconnect the different paradigms of the cancer chemoprevention domain."@en ;
+        dcterms:publisher    [ rdfs:label  "Dimitris Zeginis" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "format-owl" , "ontology" , "bioportal" , "format-rdf" , "life_sciences" , "published-by-third-party" , "lod" , "biomedicine" ;
+        dcterms:title        "Cancer Chemoprevention Ontology"@en ;
+        void:triples         122470 ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47162?apikey=BP_API_KEY> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/3030> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  1254
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tads> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  22
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  1021
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bspo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bcgo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  34
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vao> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  61
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-po_x2> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  1012
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mcbcc> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  111
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-eo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  27
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  302
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  681
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  110
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pol> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-uo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  95
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-neomark> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  41
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  427
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  228
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  49
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe-sbc> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  94
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-idobru> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  125
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-chem2bio2owl> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  452
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-natpro> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  697
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pma> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  163
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hlth_indics> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  34
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nddf> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  312
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nonrctontology> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  5637
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mpath> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  132
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pmr> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bodysystem> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-canco> ;
+  void:triples  1924
+] .

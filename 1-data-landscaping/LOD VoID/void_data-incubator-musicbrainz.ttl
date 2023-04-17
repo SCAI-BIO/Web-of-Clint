@@ -1,0 +1,32 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/data-incubator-musicbrainz> ;
+  void:triples  543325
+] .
+
+<http://lod-cloud.net/dataset/data-incubator-musicbrainz>
+        a                     void:Dataset ;
+        dcterms:description   "An RDF conversion of the PostgreSQL database dumps made available by the MusicBrainz project (package:musicbrainz) and hosted under the Talis Connected Commons scheme. It contains RDF representations of albums, artists, tracks, labels and their relationships.\r\n\r\nNote: this dataset is no longer available."@en ;
+        dcterms:publisher     [ rdfs:label  "Ian Davis" ;
+                                foaf:mbox   "nospam@iandavis.com"
+                              ] ;
+        dcterms:subject       "format-bio" , "license-metadata" , "no-deref-vocab" , "published-by-third-party" , "format-foaf" , "provenance-metadata" , "format-dc" , "music" , "lodcloud-diagram-2011-09-19" , "format-mo" , "format-owl" , "talis" , "lodcloud-diagram-2007-05-01" , "format-gr" , "media" , "format-rdf" , "format-ov" , "social_networking" , "broken_link" , "format-skos" , "no-vocab-mappings" ;
+        dcterms:title         "Data Incubator: MusicBrainz"@en ;
+        void:exampleResource  <http://musicbrainz.dataincubator.org/release/e33609a4-fcda-4ebe-b845-b6503a6c0405> , <http://musicbrainz.dataincubator.org/label/ce24ab18-1bd6-4293-a486-546d13d6a5e2> , <http://musicbrainz.dataincubator.org/artist/8970d868-0723-483b-a75b-51088913d3d4> ;
+        void:sparqlEndpoint   <http://api.talis.com/stores/musicbrainz/services/sparql> ;
+        void:triples          178775789 ;
+        dcat:distribution     [ dcat:accessURL  <http://musicbrainz.dataincubator.org/> ] ;
+        foaf:homepage         <http://musicbrainz.dataincubator.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-incubator-musicbrainz> ;
+  void:triples  76171
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-incubator-discogs> , <http://lod-cloud.net/dataset/data-incubator-musicbrainz> ;
+  void:triples  236258
+] .

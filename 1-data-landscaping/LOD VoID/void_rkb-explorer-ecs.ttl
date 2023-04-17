@@ -1,0 +1,30 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-ecs> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-ecs>
+        a                     void:Dataset ;
+        dcterms:description   "Semantic repository that contains and publishes co-reference information, forming the underlying distributed storage model behind the RKB Explorer initiative."@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "provenance-metadata" , "published-by-producer" , "void-sparql-endpoint" , "deref-vocab" , "lodcloud-diagram-2014-08-30" , "crossdomain" , "cross_domain" , "format-rdf" , "format-owl" , "lod" ;
+        dcterms:title         "School of Electronics and Computer Science, University of Southampton"@en ;
+        void:exampleResource  <http://www.rkbexplorer.com/ontologies/coref#coreferenceData> ;
+        void:sparqlEndpoint   <http://ecs.rkbexplorer.com/sparql> ;
+        void:triples          "0"^^xsd:int ;
+        dcat:distribution     [ dcat:accessURL  <http://ecs.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ecs.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ecs.rkbexplorer.com/models/void.ttl> ] ;
+        foaf:homepage         <http://ecs.rkbexplorer.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-ecs> ;
+  void:triples  552
+] .

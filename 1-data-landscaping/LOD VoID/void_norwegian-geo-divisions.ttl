@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/norwegian-geo-divisions>
+        a                     void:Dataset ;
+        dcterms:description   "A dataset with Norwegian Administrative Divisions and their administrative centers."@en ;
+        dcterms:publisher     [ rdfs:label  "Kjetil Kjernsmo" ;
+                                foaf:mbox   "kjetil@kjernsmo.net"
+                              ] ;
+        dcterms:subject       "topic.geographic" , "license-metadata" , "geography" , "lod" , "format-geo" , "format-ngeoi" , "geographic" , "published-by-third-party" , "format-rdf" , "provenance-metadata" , "format-owl" , "format-dct" , "no-proprietary-vocab" , "format-geonames" , "format-rdfs" , "format-cc" ;
+        dcterms:title         "Norwegian geo-divisions"@en ;
+        void:exampleResource  <http://data.lenka.no/geo/inndeling/06> , <http://data.lenka.no/geo/sted/60196> ;
+        void:sparqlEndpoint   <http://data.lenka.no/sparql> ;
+        void:triples          8399 ;
+        dcat:distribution     [ dcat:accessURL  <http://data.lenka.no/dumps/kommune-navn.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.lenka.no/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.lenka.no/dumps/fylke-geonames.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.lenka.no/dumps/kommunesentre-geonames.ttl> ] ;
+        foaf:homepage         <http://data.lenka.no/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/norwegian-geo-divisions> ;
+  void:triples  835
+] .

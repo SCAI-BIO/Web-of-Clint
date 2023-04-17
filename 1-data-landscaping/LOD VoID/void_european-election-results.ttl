@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/european-election-results>
+        a                     void:Dataset ;
+        dcterms:description   "EU Election Results from 2009."@en ;
+        dcterms:publisher     [ rdfs:label  "Tim Hodson" ;
+                                foaf:mbox   "tim.hodson@kasabi.com"
+                              ] ;
+        dcterms:subject       "eu-institution" , "provenance-metadata" , "lodcloud" , "government" , "deref-vocab" , "linkeddata" , "format-rdfs" , "european parliament" , "geographic" , "published-by-third-party" , "license-metadata" , "latc" , "eu" , "format-qb" , "europe" , "lod" , "rdf" , "format-skos" ;
+        dcterms:title         "European Election Results"@en ;
+        void:exampleResource  <http://elections.publicdata.eu/data/political_group/efd> , <http://elections.publicdata.eu/data/2009/national_parties/observation/7> , <http://elections.publicdata.eu/data/country/nl> ;
+        void:sparqlEndpoint   <http://api.talis.com/stores/elections/services/sparql> ;
+        void:triples          3165 ;
+        dcat:distribution     [ dcat:accessURL  <http://elections.publicdata.eu/void.ttl> ] ;
+        foaf:homepage         <http://elections.publicdata.eu> .
+
+[ void:target   <http://lod-cloud.net/dataset/eurostat-linked-data> , <http://lod-cloud.net/dataset/european-election-results> ;
+  void:triples  27
+] .

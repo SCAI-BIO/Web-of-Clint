@@ -1,0 +1,43 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/proton> , <http://lod-cloud.net/dataset/umbel> ;
+  void:triples  444
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/opencyc> , <http://lod-cloud.net/dataset/umbel> ;
+  void:triples  27917
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/umbel> ;
+  void:triples  257
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/umbel> ;
+  void:triples  671
+] .
+
+<http://lod-cloud.net/dataset/umbel>
+        a                     void:Dataset ;
+        dcterms:description   "A lightweight, reference structure of 28,000 subject concepts for the Web. UMBEL is jointly developed and maintained by [Structured Dynamics LLC](http://structureddynamics.com) and [Ontotext AD](http://www.ontotext.com/).\r\n\r\nThere is a total of 46,173 external data links."@en ;
+        dcterms:publisher     [ rdfs:label  "Michael K Bergman" ;
+                                foaf:mbox   "mike@mkbergman.com"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "broken_link" , "no-provenance-metadata" , "linked-data" , "format-rdf" , "published-by-producer" , "concepts" , "vocab-mappings" , "linkeddata" , "schemata" , "lod" , "format-umbel" , "format-rdfs" , "format-owl" , "cross_domain" , "format-foaf" , "subjects" , "reference-concepts" , "crossdomain" , "format-lingvoj" , "format-vann" , "format-skos" , "no-license-metadata" , "format-vs" , "linked-open-data" , "deref-vocab" ;
+        dcterms:title         "UMBEL (Upper Mapping and Binding Exchange Layer)"@en ;
+        void:dataDump         <http://umbel.googlecode.com/svn/trunk/v100/Reference%20Structure/umbel_reference_concepts_v100.n3> ;
+        void:exampleResource  <http://umbel.org/umbel/rc/Abolitionism> ;
+        void:triples          478585 ;
+        dcat:distribution     [ dcat:accessURL  <http://umbel.googlecode.com/svn/trunk/v100/External%20Ontologies/dbpediaOntology.n3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://umbel.googlecode.com/svn/trunk/v100/Ontology/umbel_v100.n3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://umbel.googlecode.com/svn/trunk/v100/External%20Ontologies/proton.n3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://umbel.structureddynamics.com/> ] ;
+        foaf:homepage         <http://umbel.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/wikipedia> , <http://lod-cloud.net/dataset/umbel> ;
+  void:triples  16884
+] .

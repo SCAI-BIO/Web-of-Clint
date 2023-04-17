@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/arrayexpress_e-mtab-104>
+        a                     void:Dataset ;
+        dcterms:description   "Rat bladder cancer cells (AY-27 cell line) were inoculated intravesically into syngeneic female Fischer rats. The bladder was analyzed by histology and Affymetrix GeneChips and compared to bladders from sham operated and normal rats."@en ;
+        dcterms:publisher     [ rdfs:label  "Endre Anderssen" ;
+                                foaf:mbox   "endre.anderssen@gmail.com"
+                              ] ;
+        dcterms:subject       "format-prov" , "lifesciences" , "provenance-metadata" , "format-obo" , "lod" , "format-efo" , "no-proprietary-vocab" , "life_sciences" , "published-by-third-party" ;
+        dcterms:title         "Transcription profiling of rat bladder after inoculation with bladder cancer cells"@en ;
+        void:exampleResource  <http://purl.org/twc/arrayexpress/E-MTAB-104> ;
+        void:sparqlEndpoint   <http://purl.org/twc/arrayexpress/virtuoso/sparql> ;
+        void:triples          2613 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/arrayexpress/dump/E-MTAB-104.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.ebi.ac.uk/efo> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/arrayexpress_e-mtab-104> ;
+  void:triples  1
+] .

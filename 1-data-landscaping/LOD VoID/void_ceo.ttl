@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/ceo>
+        a                    void:Dataset ;
+        dcterms:description  "Linked data about cultural-historical objects. This includes built and archaeological national monuments, finds, find locations, complexes, archaeological complexes, research areas and sites.\nThis dataset offers linked open data from the Archaeological Information System (Archis) and the National Monument Register. Both databases are maintained by the RCE.\nArchis contains data on archaeological sites and sites in the Netherlands. The National Monuments Register contains information about all monuments in the Netherlands that have been designated by the State as protected monuments. These are historical buildings, archaeological sites or green, landscaped buildings."@en ;
+        dcterms:publisher    [ rdfs:label  "Joop Vanderheiden" ;
+                               foaf:mbox   "j.vanderheiden@cultureelerfgoed.nl"
+                             ] ;
+        dcterms:subject      "heritage" , "archaeology" , "government" , "cultural heritage" , "archeology" ;
+        dcterms:title        "Linked Data Cultural Heritage Agency of the Netherlands"@en ;
+        void:sparqlEndpoint  <https://linkeddata.cultureelerfgoed.nl/sparql> ;
+        void:triples         65048765 ;
+        foaf:homepage        <https://linkeddata.cultureelerfgoed.nl/> .
+
+[ void:target   <http://lod-cloud.net/dataset/cht> , <http://lod-cloud.net/dataset/ceo> ;
+  void:triples  1
+] .

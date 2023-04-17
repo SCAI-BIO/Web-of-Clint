@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/gipuzkoademografia>
+        a                     void:Dataset ;
+        dcterms:description   "Gipuzkoako zenbait herriren populazioaren jatorria"@en ;
+        dcterms:publisher     [ rdfs:label  "GipuzkoaIrekia" ;
+                                foaf:mbox   "megana@eurohelp.es"
+                              ] ;
+        dcterms:subject       "license-metadata" , "lod" , "format-rdf" , "government" ;
+        dcterms:title         "Gipuzkoa Demografia"@en ;
+        void:exampleResource  <http://datos.eurohelp.es/PruebasFinales/resource/ataun_2014_urtekojaiotzenestatistika_1> ;
+        void:sparqlEndpoint   <http://ckan.eurohelp.es:8890/sparql> ;
+        void:triples          1711 ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.eurohelp.es/engimu/rdf/?project=PruebasFinales&file=ataun2014.csv> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.eurohelp.es/engimu/void/?project=PruebasFinales&file=ataun2014.csv> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.eurohelp.es/engimu/?project=PruebasFinales&file=ataun2014.csv> ] ;
+        foaf:homepage         <http://datahub.io/dataset/GipuzkoaDemografia> .

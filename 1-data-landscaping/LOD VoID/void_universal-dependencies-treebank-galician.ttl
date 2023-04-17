@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/universal-dependencies-treebank-galician>
+        a                    void:Dataset ;
+        dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Galician treebank.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Gómez Guinovart, Xavier" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "linguistics" , "lod" , "corpus" ;
+        dcterms:title        "Universal Dependencies Treebank Galician"@en ;
+        void:triples         138852 ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/4a41b95f-30e4-41ac-b3f7-d51cf8520203/resource/a663c46c-a999-442a-bdbe-48ea80e14c89/download/udgalician.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Galician/archive/master.zip> ] ;
+        foaf:homepage        <https://github.com/UniversalDependencies/UD_Galician> .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-galician> ;
+  void:triples  72
+] .

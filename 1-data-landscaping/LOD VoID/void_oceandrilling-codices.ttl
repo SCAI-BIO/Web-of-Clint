@@ -1,0 +1,29 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/oceandrilling-codices> ;
+  void:triples  3022
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/oceandrilling-codices> ;
+  void:triples  3022
+] .
+
+<http://lod-cloud.net/dataset/oceandrilling-codices>
+        a                     void:Dataset ;
+        dcterms:description   "Codices:  Drill Site and Expedition Data\r\n\r\nCodices exposes general site data (location, depth, recovery, etc) along with publication links and other associated data.\r\n\r\n\r\nWe are still in a development mode and working in particular and the namespace URI's and their hosting. So some elements here will change as we tweak responsibility for maintaining namespaces and curating them. You are welcome (encouraged) to explore our sparql endpoint (http://data.oceandrilling.org/sparql) and engage us, comment and criticize. (Doug)\r\n\r\nThis site is guided by the linked data pattern (http://linkeddata.org/). Information on this effort and the steps being taken to expose data in this approach are described here.\r\n\r\nThis data represents only a small percentage of the data available but is sufficient for testing at this time. Additional data related to log files from LDEO, timescales from CHRONOS and data from TAMU are yet to be loaded. \r\n\r\nhttp://data.oceandrilling.org/linkeddata.html"@en ;
+        dcterms:publisher     [ rdfs:label  "Consortium for Ocean Leadership" ;
+                                foaf:mbox   "dfils@oceanleadership.org"
+                              ] ;
+        dcterms:subject       "provenance-metadata" , "published-by-producer" , "lod" , "format-geo" , "ocean" , "format-skos" , "license-metadata" , "geographic" , "drilling" , "format-owl" , "geography" , "lodcloud-diagram-2011-09-19" , "no-deref-vocab" , "void-sparql-endpoint" ;
+        dcterms:title         "Ocean Drilling - Codices"@en ;
+        void:exampleResource  <http://data.oceandrilling.org/codices/lsh/313/1/C> ;
+        void:sparqlEndpoint   <http://data.oceandrilling.org/sparql> ;
+        void:triples          24489366 ;
+        dcat:distribution     [ dcat:accessURL  <http://data.oceandrilling.org/models/codices.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.oceandrilling.org/descriptions/codices.void> ] ;
+        foaf:homepage         <http://data.oceandrilling.org/codices/> .

@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/CoDa>
+        a                     void:Dataset ;
+        dcterms:description   "An annotated history of empirical studies on human cooperation in social dilemmas. Social Dilemmas are situations that involve a conflict of interests and people must choose between a behavior that is best for themselves and a behavior that is best for the collective. Cooperation is choosing to do a behavior that is best for the collective. CoDa contains six decades of studies on individual decision making in dyads and groups facing social dilemmas.The databank contains studies on human cooperation published in Chinese, English, and Japanese. Experts annotated these studies for 275 variables, including the quantitative results (effect sizes). We developed an ontology that defines and relates concepts in cooperation research and that can represent the relationships between individual study results. We have created an application that allows users to search the databank, and enables users to retrieve studies that test the relation of variables with cooperation, visualize these study results, and perform (1) meta-analyses, (2) meta-regressions, (3) estimates of publication bias, and (4) statistical power analyses for future studies."@en ;
+        dcterms:publisher     [ rdfs:label  "Benny Markovitch" ;
+                                foaf:mbox   "benny.markovitch@triply.cc"
+                              ] ;
+        dcterms:subject       "Public Goods Game" , "Economics" , "Cooperation research" , "Psychology" , "Resource Dilemma" , "social dilemmas" , "Sociology" , "life_sciences" , "Prisoner's dilemma" ;
+        dcterms:title         "Cooperation Databank"@en ;
+        void:dataDump         <https://data.cooperationdatabank.org/coda/databank/download.trig.gz> ;
+        void:exampleResource  <https://data.cooperationdatabank.org/id/ENG01818_1.1.1.2.d> , <https://data.cooperationdatabank.org/id/ENG00013> , <https://data.cooperationdatabank.org/id/ENG01818_1.1.1> , <https://data.cooperationdatabank.org/coda/-/stories/overview> , <https://data.cooperationdatabank.org/id/ENG01818_1> ;
+        void:sparqlEndpoint   <https://api.cooperationdatabank.org/datasets/coda/databank/services/databank/sparql> ;
+        void:triples          795849 ;
+        foaf:homepage         <https://data.cooperationdatabank.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/doi> , <http://lod-cloud.net/dataset/CoDa> ;
+  void:triples  1645
+] .

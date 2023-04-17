@@ -1,0 +1,116 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  29
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa2> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  14
+] .
+
+<http://lod-cloud.net/dataset/bioportal-aba>
+        a                    void:Dataset ;
+        dcterms:description  "Allen Brain Atlas P56 Mouse Ontology"@en ;
+        dcterms:publisher    [ rdfs:label  "Allen Institute for Brain Science" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "format-rdf" , "biomedicine" , "life_sciences" , "published-by-third-party" , "ontology" , "format-owl" , "lod" , "bioportal" ;
+        dcterms:title        "ABA Adult Mouse Brain"@en ;
+        void:triples         9617 ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/40133?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1290> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  200
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  63
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  94
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  87
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  25
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bto> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  36
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tao> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  33
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-zfa> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  142
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vhog> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  38
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  38
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  146
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  106
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  23
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  58
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  69
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  34
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ma> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  74
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  67
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-aba> ;
+  void:triples  146
+] .

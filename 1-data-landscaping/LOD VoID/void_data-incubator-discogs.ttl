@@ -1,0 +1,30 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-incubator-discogs> ;
+  void:triples  5169
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbtune-myspace> , <http://lod-cloud.net/dataset/data-incubator-discogs> ;
+  void:triples  6350
+] .
+
+<http://lod-cloud.net/dataset/data-incubator-discogs>
+        a                    void:Dataset ;
+        dcterms:description  "This dataset contains information about audio recordings, including commercial releases, promotional releases and bootleg or off-label releases. Discogs is one of the largest online databases of electronic music releases and of releases on vinyl media. The source data comes from submissions contributed by users who have registered accounts on discogs.com. This version is based on the regularly monthly data releases from the website which have been placed into the Public Domain.\r\n\r\n*Note* this RDF version of Discogs is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)"@en ;
+        dcterms:publisher    [ rdfs:label  "Leigh Dodds" ;
+                               foaf:mbox   "leigh@ldodds.com"
+                             ] ;
+        dcterms:subject      "format-foaf" , "format-owl" , "license-metadata" , "format-dc" , "music" , "lodcloud-diagram-2011-09-19" , "format-exif" , "format-sioc" , "format-rdf" , "media" , "format-mo" , "records" ;
+        dcterms:title        "Discogs in RDF"@en ;
+        void:triples         191968935 ;
+        dcat:distribution    [ dcat:accessURL  <http://archive.org/download/kasabi/discogs.gz> ] ;
+        foaf:homepage        <http://kasabi.com/dataset/discogs> .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/data-incubator-discogs> ;
+  void:triples  1740
+] .

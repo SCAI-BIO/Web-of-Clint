@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/fishes-of-texas>
+        a                     void:Dataset ;
+        dcterms:description   "The [Fishes of Texas Project](http://www.fishesoftexas.org) is a multi-year research project that attempts to consolidate, standardize and fully georeference all of the known scientific information on the freshwater fishes of Texas. This package is the Linked Data version of the project's published data.\r\n\r\n### Not yet fully available\r\n\r\nThis dataset is only available from temporary URIs as of September 2010, see example resource links.\r\n\r\nA SPARQL endpoint is planned here: [http://data.fishesoftexas.org/sparql](http://data.fishesoftexas.org/sparql)"@en ;
+        dcterms:publisher     [ rdfs:label  "Juan F. Sequeda" ;
+                                foaf:mbox   "jsequeda@cs.utexas.edu"
+                              ] ;
+        dcterms:subject       "geography" , "texas" , "published-by-producer" , "fish" , "geographic" , "broken_link" , "format-rdfs" , "no-deref-vocab" , "format-rdf" , "lod" , "rdf" , "biodiversity" , "lodcloud-diagram-2011-09-19" ;
+        dcterms:title         "Fishes of Texas"@en ;
+        void:exampleResource  <http://data.fishesoftexas.org:8080/fish/taxon61199#thing> , <http://data.fishesoftexas.org/fish/taxon61199#thing> ;
+        void:triples          528897 ;
+        foaf:homepage         <http://data.fishesoftexas.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/fishes-of-texas> ;
+  void:triples  15241
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/taxonconcept> , <http://lod-cloud.net/dataset/fishes-of-texas> ;
+  void:triples  226
+] .

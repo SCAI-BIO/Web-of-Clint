@@ -1,0 +1,104 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-chebi> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nddf> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vandf> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  91
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snpo> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  71
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  70
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-amino-acid> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  45
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  61
+] .
+
+<http://lod-cloud.net/dataset/bioportal-cdao>
+        a                    void:Dataset ;
+        dcterms:description  "A formalization of concepts and relations relevant to evolutionary comparative analysis, such as phylogenetic trees, OTUs (operational taxonomic units) and compared characters (including molecular characters as well as other types). CDAO is being developed by scientists in biology, evolution, and computer science"@en ;
+        dcterms:publisher    [ rdfs:label  "Jim Balhoff" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "biomedicine" , "lod" , "bioportal" , "published-by-third-party" , "format-owl" , "ontology" , "life_sciences" , "format-rdf" ;
+        dcterms:title        "Comparative Data Analysis Ontology"@en ;
+        void:triples         2565 ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/40648?apikey=BP_API_KEY> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1128> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-npo> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  30
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  55
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-so_x1> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  26
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  54
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  36
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rxnorm> , <http://lod-cloud.net/dataset/bioportal-cdao> ;
+  void:triples  20
+] .

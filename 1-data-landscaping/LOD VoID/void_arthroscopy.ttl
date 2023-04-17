@@ -1,0 +1,44 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dblp-deusto-gnoss> , <http://lod-cloud.net/dataset/arthroscopy> ;
+  void:triples  789
+] .
+
+<http://lod-cloud.net/dataset/arthroscopy>
+        a                     void:Dataset ;
+        dcterms:description   "<p> The arthroscopy community is the adecuate space for all those who take part on the arthroscopic surgical procedures of the locomotor system. Its meaning is to create and share knowledge concerning the answers to the current and effective matters on these kind of arthroscopic proceedings: surgical, anesthesic, rehabilitative or even organizing ones.</p>\r\n<p>The arthroscopy community works with <a href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.</p>\r\n\r\n<p> Portal de Artroscopia es un espacio de aprendizaje para todas las personas que participan en los procedimientos quirúrgicos artroscópicos del aparato locomotor. El propósito es generar y compartir conocimiento sobre las soluciones a los problemas reales y concretos en este tipo procedimientos, sean estos quirúrgicos, de anestesia, de rehabilitación o de organización. </p><p> Portal de Artroscopia trabaja con <a href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. El proyecto Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.\r\n</p>"@en ;
+        dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
+                                foaf:mbox   "gnoss@gnoss.com"
+                              ] ;
+        dcterms:subject       "locomotor system" , "foaf" , "format-dc" , "no-vocab-mappings" , "sioc" , "artrocopia" , "format-skos" , "format-sioc" , "format-foaf" , "wrapper" , "country.es" , "Arthroscopy" , "user_generated" , "procesos quirúrgicos" , "surgical procedures" , "sp" , "lod" , "spain" , "no-proprietary-vocab" , "format-dcam" , "skos" , "country-spain" , "language-spa" , "socialweb" , "aparato locomotor" , "health" , "license-metadata" , "format-wot" , "corporate excellence" , "laboratorio de ideas" , "format-rdfg" , "usergeneratedcontent" , "published-by-third-party" , "provenance-metadata" , "dc" , "arthroscopic proceedings" , "schemata" ;
+        dcterms:title         "Arthroscopy community"@en ;
+        void:exampleResource  <http://portalartroscopia.com/en/community/Arthroscopy/resource/Reparacion-de-cartilago-en-la-rodilla/a7617f64-8a3c-4913-aea1-17657100cc45?rdf> , <http://portalartroscopia.com/en/community/Arthroscopy/resource/Reconstruccion-de-LCA-mediante-tendones-isquiotibi/267556b2-67f0-4264-8071-1932151c8439> , <http://portalartroscopia.com/en/community/Arthroscopy/advanced-search/tag/Arthroscopy?rdf> ;
+        void:triples          62355 ;
+        dcat:distribution     [ dcat:accessURL  <http://museos.gnoss.com/voidArtroscopyGNOSS.n3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://gnoss.com/gnoss.owl> ] ;
+        foaf:homepage         <http://gnoss.com/comunidad/Arthroscopy> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/arthroscopy> ;
+  void:triples  223
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/arthroscopy> ;
+  void:triples  383
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/arthroscopy> ;
+  void:triples  6088
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/arthroscopy> ;
+  void:triples  16245
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gnoss> , <http://lod-cloud.net/dataset/arthroscopy> ;
+  void:triples  2
+] .

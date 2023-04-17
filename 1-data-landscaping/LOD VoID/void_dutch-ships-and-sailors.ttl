@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/dutch-ships-and-sailors>
+        a                     void:Dataset ;
+        dcterms:description   "Dutch Ships and Sailors brings together four Dutch maritime historical datasets. The datasets are modeled as Linked Data, with internal and external links and a schema mapping to a common DSS schema. The four RDF datasets are:\r\n\r\n1. The Northern Monsterrollen databases, which contain elaborate data on the crew composition of ships from the Northern Netherlands (c. 1800-1930) and provide information on the sailors involved,such as the places of origin, wage and age.\r\n2. The VOC Opvarenden database, providing extensive data on crews of VOC ships leaving the Dutch Republic.\r\n3. The Dutch-Asiatic Shipping (DAS) database, providing data on all inter-continental voyages of VOC ships.\r\n4. The Generale Zeemonsterrollen (GZM) database, providing data on the crew composition and sometimes location of VOC ships stationed in Asia and not engaged in inter-continental shipping."@en ;
+        dcterms:publisher     [ rdfs:label  "Victor de Boer" ;
+                                foaf:mbox   "v.de.boer@vu.nl"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "lod" , "publications" , "dutch" , "digital history" , "economic-history" , "maritime" , "history" , "nederlands" , "sailors" , "e-history" , "ships" ;
+        dcterms:title         "Dutch Ships and Sailors"@en ;
+        void:exampleResource  <http://semanticweb.cs.vu.nl/dss/api/export_graph?graph=http%3A%2F%2Fpurl.org%2Fcollections%2Fnl%2Fdss%2Fdss_schema.ttl&mimetype=text%2Fplain&format=turtle> , <http://purl.org/collections/nl/dss/mdb/aanmonstering-del_gem-1890-35> ;
+        void:sparqlEndpoint   <http://semanticweb.cs.vu.nl/dss/sparql/> , <http://dutchshipsandsailors.nl/data/sparql/> ;
+        void:triples          30801840 ;
+        dcat:distribution     [ dcat:accessURL  <http://semanticweb.cs.vu.nl/dss/> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/dutch-ships-and-sailors> ;
+  void:triples  2510
+] .

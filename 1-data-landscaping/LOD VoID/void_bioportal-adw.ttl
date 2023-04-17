@@ -1,0 +1,124 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  13
+] .
+
+<http://lod-cloud.net/dataset/bioportal-adw>
+        a                    void:Dataset ;
+        dcterms:description  "An ontology for animal life history and natural history characteristics suitable for populations and higher taxonomic entities."@en ;
+        dcterms:publisher    [ rdfs:label  "Animal Diversity Web technical staff" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "life_sciences" , "format-owl" , "published-by-third-party" , "lod" , "biomedicine" , "bioportal" , "ontology" , "format-rdf" ;
+        dcterms:title        "Animal natural history and life history"@en ;
+        void:triples         2151 ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/44451?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1530> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-gaz> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pma> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  30
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mcv> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  75
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-npo> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  56
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-envo> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe-sbc> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  33
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pato> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  64
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  69
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ep> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-adw> ;
+  void:triples  31
+] .

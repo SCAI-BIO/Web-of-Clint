@@ -1,0 +1,30 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/apertium-rdf-eu-en>
+        a                    void:Dataset ;
+        dcterms:description  "RDF version of the Apertium bilingual dictionary EU-EN. The original dataset (in LMF) comes from http://hdl.handle.net/10230/22870 . The RDF version of the lexica is modelled using lemon (http://lemon-model.net/) and the translation module (http://purl.org/net/translation). More about the Apertium RDF dictionaries at http://linguistic.linkeddata.es/apertium/\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Universitat Pompeu Fabra. Institut Universitari de Lingüística Aplicada (IULA) ; Universitat d'Alacant. Grup Transducens ; Universitat Politècnica de Catalunya. TALP Research Center ; Euskal Herriko Unibertsitatea. IXA Taldea ; Prompsit Language Engineering, S.L\t " ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lod" , "linguistics" , "bilingual" , "lexicon" , "lemon" , "dictionary" , "linguistic lod" , "rdf" , "Basque" , "Apertium" , "multilingual" , "llod" , "translation" , "English" ;
+        dcterms:title        "Apertium RDF EU-EN"@en ;
+        void:triples         265466 ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconEU> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/sparql/> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-03-06T10:23:53.827Z/apertium-eu-en-dataset-metadata.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconEN> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-02-27T16:10:10.474Z/apertium-eu-en-rdf.zip> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/tranSetEU-EN> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/babelnet> , <http://lod-cloud.net/dataset/apertium-rdf-eu-en> ;
+  void:triples  9332
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/apertium-rdf-eu-en> ;
+  void:triples  19223
+] .

@@ -1,0 +1,51 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/agrovoc> ;
+  void:triples  11013
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/agrovoc> ;
+  void:triples  206
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fao-geopolitical-ontology> , <http://lod-cloud.net/dataset/agrovoc> ;
+  void:triples  253
+] .
+
+<http://lod-cloud.net/dataset/agrovoc>
+        a                    void:Dataset ;
+        dcterms:description  "AGROVOC is a controlled vocabulary covering all areas of interest of the Food and Agriculture Organization (FAO) of the United Nations, including food, nutrition, agriculture, forestry, fisheries, scientific and common names of animals and plants, environment, biological notions, techniques of plant cultivation and more.. It is published by FAO and edited by a community of experts.\n\nAGROVOC is an RDF/ SKOS-XL concept scheme, and a Linked Open Data (LOD) set edited by the VocBench tool. It is available in up to 41 languages. The basic notions for a concept scheme are: concepts and terms. Concepts are grouped into 25 broad subject areas. For more information on the structure of the thesaurus and its historical background please consult the thesaurus introduction.\n\nAGROVOC is widely used in specialized libraries as well as digital libraries and repositories to index content and for the purpose of text mining. It is also used as a specialized tagging resource for knowledge and content organization by FAO and other third-party stakeholders."@en ;
+        dcterms:publisher    [ rdfs:label  "Inmaculada SubiratsColl" ;
+                               foaf:mbox   "imma.subirats@fao.org"
+                             ] ;
+        dcterms:subject      "scientific and common names of animals and plants" , "forestry" , "nutrition" , "food" , "environment" , "agriculture" , "techniques of plant cultivation" , "biological notions" , "fisheries" , "life_sciences" ;
+        dcterms:title        "AGROVOC"@en ;
+        void:dataDump        <https://agrovoc.fao.org/latestAgrovoc/agrovoc_core.rdf.zip> , <https://agrovoc.fao.org/latestAgrovoc/agrovoc_core.nt.zip> , <https://agrovoc.fao.org/latestAgrovoc/agrovoc_lod.nq.zip> , <https://agrovoc.fao.org/latestAgrovoc/agrovoc_lod.nt.zip> ;
+        void:sparqlEndpoint  <https://agrovoc.fao.org/sparql> ;
+        void:triples         5878468 ;
+        foaf:homepage        <http://www.fao.org/agrovoc/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dewey_decimal_classification> , <http://lod-cloud.net/dataset/agrovoc> ;
+  void:triples  401
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eurovoc> , <http://lod-cloud.net/dataset/agrovoc> ;
+  void:triples  1783
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/agrovoc> ;
+  void:triples  1079
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/environmental-applications-reference-thesaurus> , <http://lod-cloud.net/dataset/agrovoc> ;
+  void:triples  1385
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gemet> , <http://lod-cloud.net/dataset/agrovoc> ;
+  void:triples  1185
+] .

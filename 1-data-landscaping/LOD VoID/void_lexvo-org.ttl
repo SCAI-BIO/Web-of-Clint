@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/lexvo-org> ;
+  void:triples  4362
+] .
+
+<http://lod-cloud.net/dataset/lexvo-org>
+        a                    void:Dataset ;
+        dcterms:description  "Lexvo.org brings information about languages, words, characters, and other human language-related entities to the Linked Data Web and Semantic Web. The Linked Data Web is a worldwide initiative to create a Web of Data that exposes the relationships between entities in our world. Lexvo.org adds a new perspective to this Web by exposing how everything in our world is connected in terms of language, e.g. by considering semantic relationships between multilingual labels (like book or New York). Lexvo not only defines global IDs (URIs) for language-related objects, but also ensures that these identifiers are dereferenceable and highly interconnected as well as externally linked to a variety of resources on the Web. "@en ;
+        dcterms:publisher    [ rdfs:label  "Gerard de Melo" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "language linguistics crossdomain deref-vocab format-rdf linkeddata lod provenance-metadata rdf" ;
+        dcterms:title        "Lexvo.org"@en ;
+        void:triples         1000000 ;
+        dcat:distribution    [ dcat:accessURL  <http://www.lexvo.org/resources/lexvo_latest.rdf.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.lexvo.org/resources/lexvo_latest.rdf.gz> ] ;
+        foaf:homepage        <http://www.lexvo.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/lexvo-org> ;
+  void:triples  4364
+] .

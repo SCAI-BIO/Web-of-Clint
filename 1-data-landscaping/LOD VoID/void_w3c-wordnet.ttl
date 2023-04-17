@@ -1,0 +1,20 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/w3c-wordnet>
+        a                     void:Dataset ;
+        dcterms:description   "Presents a standard conversion of Princeton WordNet to RDF/OWL. It describes how it was converted and gives examples of how it may be queried for use in Semantic Web applications.\r\n\r\nEditors:\r\nMark van Assem, Vrije Universiteit Amsterdam\r\nAldo Gangemi, ISTC-CNR, Rome\r\nGuus Schreiber, Vrije Universiteit Amsterdam"@en ;
+        dcterms:publisher     [ rdfs:label  "W3C" ;
+                                foaf:mbox   "public-swbp-wg@w3.org"
+                              ] ;
+        dcterms:subject       "format-vu-wordnet" , "published-by-third-party" , "lod" , "no-provenance-metadata" , "format-rdf" , "crossdomain" , "lodcloud-diagram-2011-09-19" , "linguistics" , "no-vocab-mappings" , "lodcloud-diagram-2014-08-30" , "deref-vocab" , "w3c" , "no-license-metadata" , "nlp" , "lodcloud.nolinks" ;
+        dcterms:title         "WordNet 2.0 (W3C)"@en ;
+        void:exampleResource  <http://www.w3.org/2006/03/wn/wn20/instances/wordsense-entity-noun-1> ;
+        void:triples          710000 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2006/03/wn/wn20/download/wn20full.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2006/03/wn/wn20/schemas/wnfull.rdfs> ] ;
+        foaf:homepage         <http://www.w3.org/TR/wordnet-rdf> .

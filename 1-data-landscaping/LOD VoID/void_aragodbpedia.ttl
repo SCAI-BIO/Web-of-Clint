@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/aragodbpedia>
+        a                     void:Dataset ;
+        dcterms:description   "This dataset contains data obtained through an automatic extraction process from Aragopedia (http://opendata.aragon.es/aragopedia/), and contains information about all the municipalities, boroughs, and provinces of the region of Aragón, in Spain. "@en ;
+        dcterms:publisher     [ rdfs:label  "Aragón Open Data" ;
+                                foaf:mbox   "opendata@aragon.es"
+                              ] ;
+        dcterms:subject       "Spain" , "Aragón" , "no-proprietary-vocab" , "geographic" , "published-by-producer" , "geography" , "lod" , "government" , "Aragón Government" ;
+        dcterms:title         "AragoDBPedia - aragon open data"@en ;
+        void:exampleResource  <http://opendata.aragon.es/recurso/territorio/Municipio/Ababuj.ttl?api_key=e103dc13eb276ad734e680f5855f20c6> , <http://opendata.aragon.es/recurso/territorio/Municipio/Ababuj.rdf?api_key=e103dc13eb276ad734e680f5855f20c6> ;
+        void:sparqlEndpoint   <http://opendata.aragon.es/sparql> ;
+        void:triples          "0"^^xsd:int ;
+        dcat:distribution     [ dcat:accessURL  <http://opendata.aragon.es/def/Aragopedia.html> ] ;
+        foaf:homepage         <https://opendata.aragon.es> .
+
+[ void:target   <http://lod-cloud.net/dataset/ei2a> , <http://lod-cloud.net/dataset/aragodbpedia> ;
+  void:triples  768
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-es> , <http://lod-cloud.net/dataset/aragodbpedia> ;
+  void:triples  768
+] .

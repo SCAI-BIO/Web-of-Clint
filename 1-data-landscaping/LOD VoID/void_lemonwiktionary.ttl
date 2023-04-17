@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/lemonwiktionary>
+        a                     void:Dataset ;
+        dcterms:description   "[Lemon](http://www.lemon-model.net) data extracted from Wiktionary"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "llod" , "wiktionary" , "lemon" , "crossdomain" , "lod" , "linguistics" ;
+        dcterms:title         "LemonWiktionary"@en ;
+        void:exampleResource  <http://lemon-model.net/lexica/wiktionary_en/en/Lexicon> ;
+        void:triples          5000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://lemon-model.net/lexica/wiktionary_en/en/en.nt.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lemon-model.net/lexica/wiktionary_en/de/Lexicon> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lemon-model.net/lexica/wiktionary_en/nl/Lexicon> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lemon-model.net/lexica/wiktionary_en/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lemon-model.net/lexica/wiktionary_en/fr/Lexicon> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lemon-model.net/lexica/wiktionary_en/es/Lexicon> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lemon-model.net/lexica/wiktionary_en/ja/Lexicon> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/wiktionary-dbpedia-org> , <http://lod-cloud.net/dataset/lemonwiktionary> ;
+  void:triples  500000
+] .

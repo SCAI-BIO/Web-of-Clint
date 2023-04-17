@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/http://productontology.org> , <http://lod-cloud.net/dataset/cpa-2008> ;
+  void:triples  27812
+] .
+
+<http://lod-cloud.net/dataset/cpa-2008>
+        a                     void:Dataset ;
+        dcterms:description   "The Statistical classification of products by activity (CPA)  is a product scheme classification used to extract statistics. It was a previous attempt to CPV.\r\n\r\nAuthors:\r\n\r\n-Jose María Alvarez Rodríguez & Jose Emilio Labra Gayo\r\n\r\nWESO-University of Oviedo"@en ;
+        dcterms:publisher     [ rdfs:label  "Jose María Alvarez Rodríguez at WESO (University of Oviedo)" ;
+                                foaf:mbox   "josem.alvarez@weso.es"
+                              ] ;
+        dcterms:subject       "provenance-metadata" , "format-dcterms" , "pscs" , "cpa" , "vocab-mappings" , "format-skosxl" , "deref-vocab" , "government" , "format-skos" , "weso" , "uniovi" , "linkeddata" , "oviedo" , "license-metadata" , "lod" , "published-by-third-party" , "public_contracts" , "format-gr" , "format-dc" , "cpa-2008" , "10ders" , "geodata" , "procurement" , "euroalert" , "linkedopendata" , "e-procurement" , "university-of-oviedo" ;
+        dcterms:title         "CPA 2008"@en ;
+        void:exampleResource  <http://purl.org/weso/pscs/data/cpa/2008/resource/011111?output=xml> ;
+        void:sparqlEndpoint   <http://purl.org/weso/sparql> ;
+        void:triples          92749 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/cpa/2008/resource/ds> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/cpa/2008/resource/ds> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/cpa/2008/cpa-2008.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/psc-ontology.ttl> ] ;
+        foaf:homepage         <http://www.josemalvarez.es/web/2011/11/16/product-scheme-classifications/> .

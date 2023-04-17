@@ -1,0 +1,45 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/stw-thesaurus-for-economics> , <http://lod-cloud.net/dataset/ontobeef-domain> ;
+  void:triples  119
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nalt> , <http://lod-cloud.net/dataset/ontobeef-domain> ;
+  void:triples  546
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/agrovoc-skos> , <http://lod-cloud.net/dataset/ontobeef-domain> ;
+  void:triples  797
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gemet> , <http://lod-cloud.net/dataset/ontobeef-domain> ;
+  void:triples  211
+] .
+
+<http://lod-cloud.net/dataset/ontobeef-domain>
+        a                     void:Dataset ;
+        dcterms:description   "Ontology of Beef created within ProOptiBeef project \r\n([www.prooptibeef.pl](http://www.prooptibeef.pl/ \"ProOptiBeef\")).\r\n\r\nLinks with LOD datasets (27.06.2013): \r\n\r\n- 797 links with AGROVOC, \r\n- 211 links with GEMET, \r\n- 546 links with NAL and \r\n- 119 links with STW.\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Polish Beef Association" ;
+                                foaf:mbox   "robert@trypuz.pl"
+                              ] ;
+        dcterms:subject       "license-metadata" , "animals" , "deref-vocab" , "published-by-producer" , "lod" , "provenance-metadata" , "meat" , "format-skos" , "food" , "vocab-mappings" , "linked-open-data" , "agriculture" , "beef production" , "beef" , "format-owl" , "life_sciences" , "lifesciences" ;
+        dcterms:title         "OntoBeef Domain"@en ;
+        void:exampleResource  <http://onto.beef.org.pl/ontobeef/Ontology?siri=D;c201&output=hrrdf> ;
+        void:sparqlEndpoint   <http://onto.beef.org.pl/sparql> ;
+        void:triples          13099 ;
+        dcat:distribution     [ dcat:accessURL  <http://onto.beef.org.pl/ontobeef/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://onto.beef.org.pl/ontobeef/files/Domain.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://onto.beef.org.pl/ontobeef/files/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://onto.beef.org.pl/ontobeef/files/ontobeef-gemet.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://onto.beef.org.pl/ontobeef/files/ontobeef-nal.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://onto.beef.org.pl/ontobeef/Ontology?siri=D;c201&output=rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://onto.beef.org.pl/ontobeef/files/ontobeef-agrovoc.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://onto.beef.org.pl/ontobeef/files/ontobeef-stw.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://onto.beef.org.pl/domain/c201> ] ;
+        foaf:homepage         <http://onto.beef.org.pl/ontobeef> .

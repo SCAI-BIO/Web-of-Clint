@@ -1,0 +1,37 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geospecies> , <http://lod-cloud.net/dataset/taxonconcept-assets> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gnu-licenses> , <http://lod-cloud.net/dataset/taxonconcept-assets> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nalt> , <http://lod-cloud.net/dataset/taxonconcept-assets> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/taxonconcept-assets>
+        a                     void:Dataset ;
+        dcterms:description   "Descriptions of pictures showing species"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "format-wdrs" , "format-foaf" , "non-deref-vocab" , "crawledLinkedDataCloud2014" , "format-rdfs" , "format-rdf" , "lifesciences" , "format-dcterm" , "format-pos" , "format-cc" , "life_sciences" , "LinkedDataCrawl2014" ;
+        dcterms:title         "taxonconcept-assets"@en ;
+        void:exampleResource  <http://assets.taxonconcept.org/seuuids/603bebac-cc44-4168-bbf7-b11b976f9d79/gallery.rdf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/taxonconcept> , <http://lod-cloud.net/dataset/taxonconcept-assets> ;
+  void:triples  57
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/taxonconcept-assets> ;
+  void:triples  9
+] .

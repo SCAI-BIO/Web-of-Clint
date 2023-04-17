@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/euskadi-farmacias>
+        a                     void:Dataset ;
+        dcterms:description   "Cada ZIP contiene las farmacias de una provincia: Bizkaia, Gipuzkoa y Álava.\r\n\r\nFarmacias existentes en Euskadi. Los datos incluyen, entre otros, dirección, datos de contacto, horarios y coordenadas GPS.\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Departamento de Sanidad y Consumo. Gobierno Vasco." ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-cc" , "medicamentos" , "drug" , "published-by-third-party" , "lodcloud.unconnected" , "health" , "botica" , "farmacia" , "lod" , "government" , "no-deref-vocab" , "salud" ;
+        dcterms:title         "Farmacias en Euskadi"@en ;
+        void:exampleResource  <http://opendata.euskadi.net/contenidos/ds_localizaciones/farmacias_de_euskadi/farmacia> ;
+        void:triples          35 ;
+        dcat:distribution     [ dcat:accessURL  <http://opendata.euskadi.net/contenidos/ds_localizaciones/farmacias_de_euskadi/opendata/r01DataSet.rdf> ] ;
+        foaf:homepage         <http://opendata.euskadi.net/w79-contdata/es/contenidos/ds_localizaciones/farmacias_de_euskadi/es_farmacia/farmacias.html> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/euskadi-farmacias> ;
+  void:triples  5
+] .

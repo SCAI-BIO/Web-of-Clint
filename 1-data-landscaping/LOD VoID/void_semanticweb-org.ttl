@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/revyu> , <http://lod-cloud.net/dataset/semanticweb-org> ;
+  void:triples  51
+] .
+
+<http://lod-cloud.net/dataset/semanticweb-org>
+        a                     void:Dataset ;
+        dcterms:description   "Semantic Wiki about the Semantic Web community"@en ;
+        dcterms:publisher     [ rdfs:label  "Markus Krötzsch" ;
+                                foaf:mbox   "mak@aifb.uni-karlsruhe.de"
+                              ] ;
+        dcterms:subject       "lod" , "no-license-metadata" , "user_generated" , "format-rdf" , "no-proprietary-vocab" , "wiki" , "no-vocab-mappings" , "published-by-producer" , "no-provenance-metadata" , "usergeneratedcontent" ;
+        dcterms:title         "semanticweb.org"@en ;
+        void:exampleResource  <http://semanticweb.org/id/Pacific_Ocean> ;
+        void:triples          50000 ;
+        dcat:distribution     [ dcat:accessURL  <http://semanticweb.org/RDF/alldata.xml> ] ;
+        foaf:homepage         <http://semanticweb.org/> .

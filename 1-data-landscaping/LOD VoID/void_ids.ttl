@@ -1,0 +1,37 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/wals> , <http://lod-cloud.net/dataset/ids> ;
+  void:triples  216
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wiktionary-dbpedia-org> , <http://lod-cloud.net/dataset/ids> ;
+  void:triples  1832
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/ids> ;
+  void:triples  217
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/glottolog-langdoc> , <http://lod-cloud.net/dataset/ids> ;
+  void:triples  216
+] .
+
+<http://lod-cloud.net/dataset/ids>
+        a                     void:Dataset ;
+        dcterms:description   "1200 words in 200 languages"@en ;
+        dcterms:publisher     [ rdfs:label  "Bernard Comrie" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "linguistics" , "linguistic" , "crossdomain" , "typology" , "published-by-producer" , "lod" , "LOD" ;
+        dcterms:title         "Intercontinental Dictionary Series"@en ;
+        void:exampleResource  <http://mlode.nlp2rdf.org/resource/data/ids/entry/e110-c17?output=ttl> ;
+        void:sparqlEndpoint   <http://mlode.nlp2rdf.org/sparql> ;
+        void:triples          2000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://mlode.nlp2rdf.org/datasets/ids.nt.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://dl.dropbox.com/u/65483422/ids-model-diagram.png> ] ;
+        foaf:homepage         <http://lingweb.eva.mpg.de/ids/> .

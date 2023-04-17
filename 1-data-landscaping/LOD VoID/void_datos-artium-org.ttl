@@ -1,0 +1,74 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  27127
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  2174
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  11678
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/hungarian-national-library-catalog> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  91752
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  0
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/marc-codes> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  0
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/open-library> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  0
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lobid-resources> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  0
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lobid-organisations> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  32
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  0
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/europeana-lod-v1> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  8955
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bluk-bnb> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  2693
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/datos-bne-es> , <http://lod-cloud.net/dataset/datos-artium-org> ;
+  void:triples  0
+] .
+
+<http://lod-cloud.net/dataset/datos-artium-org>
+        a                     void:Dataset ;
+        dcterms:description   "Open linked data from the Library and Museum of ARTIUM"@en ;
+        dcterms:publisher     [ rdfs:label  "Aliada Consortium" ;
+                                foaf:mbox   "info@aliada-project.eu"
+                              ] ;
+        dcterms:subject       "no-vocab-mappings" , "license-metadata" , "no-proprietary-vocab" , "format-skos" , "format-wgs84" , "provenance-metadata" , "lod" , "format-owltime" , "publications" , "format-frbroo" , "format-owl" , "format-foaf" , "published-by-producer" ;
+        dcterms:title         "datos-artium-org"@en ;
+        void:dataDump         <http://datos.artium.org/datadumps/museum_1446191873722_20151030000001.nt.gz> , <http://datos.artium.org/datadumps/links_1446192090866_20151030000001.nt.gz> , <http://datos.artium.org/datadumps/auth_1446191929685_20151030000001.nt.gz> , <http://datos.artium.org/datadumps/links_1446191974417_20151030000001.nt.gz> , <http://datos.artium.org/datadumps/bib_1446192001737_20151030000001.nt.gz> , <http://datos.artium.org/datadumps/links_1446191901731_20151030000001.nt.gz> ;
+        void:exampleResource  <http://datos.artium.org/datadumps/DCExample.rdf> , <http://datos.artium.org/datadumps/MARCBIBExample.rdf> , <http://datos.artium.org/datadumps/MARCAUTHExample.rdf> , <http://datos.artium.org/datadumps/LIDOExample.rdf> ;
+        void:sparqlEndpoint   <http://datos.artium.org/sparql> ;
+        void:triples          4436657 ;
+        dcat:distribution     [ dcat:accessURL  <http://datos.artium.org/datadumps/datosartiumorg.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://aliada-project.eu/2014/aliada-ontology#> ] ;
+        foaf:homepage         <http://biblioteca.artium.org> .

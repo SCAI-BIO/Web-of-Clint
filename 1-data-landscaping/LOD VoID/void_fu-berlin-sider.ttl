@@ -1,0 +1,44 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-diseasome> , <http://lod-cloud.net/dataset/fu-berlin-sider> ;
+  void:triples  238
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/fu-berlin-sider> ;
+  void:triples  2126
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/tcmgenedit_dataset> , <http://lod-cloud.net/dataset/fu-berlin-sider> ;
+  void:triples  171
+] .
+
+<http://lod-cloud.net/dataset/fu-berlin-sider>
+        a                     void:Dataset ;
+        dcterms:description   "The Linked Data version of SIDER which contains information on marketed drugs and their adverse effects. The information is extracted from public documents and package inserts.\r\n\r\nLicensing\r\n\r\nThe data is available under a mix of Creative Commons Zero and Creative SA-BY-NC."@en ;
+        dcterms:publisher     [ rdfs:label  "Anja Jentzsch" ;
+                                foaf:mbox   "anja@anjeve.de"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "published-by-third-party" , "lod" , "lifesciences" , "deref-vocab" , "life_sciences" , "lodcloud-diagram-2011-09-19" , "vocab-mappings" , "format-rdf" , "no-license-metadata" , "no-provenance-metadata" ;
+        dcterms:title         "SIDER: Side Effect Resource"@en ;
+        void:dataDump         <http://www4.wiwiss.fu-berlin.de/sider/sider_dump.nt.bz2> ;
+        void:exampleResource  <http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/1003> ;
+        void:sparqlEndpoint   <http://www4.wiwiss.fu-berlin.de/sider/sparql> ;
+        void:triples          192515 ;
+        foaf:homepage         <http://www4.wiwiss.fu-berlin.de/sider/> .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-drugbank> , <http://lod-cloud.net/dataset/fu-berlin-sider> ;
+  void:triples  1140
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-dailymed> , <http://lod-cloud.net/dataset/fu-berlin-sider> ;
+  void:triples  1986
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-stitch> , <http://lod-cloud.net/dataset/fu-berlin-sider> ;
+  void:triples  14894
+] .

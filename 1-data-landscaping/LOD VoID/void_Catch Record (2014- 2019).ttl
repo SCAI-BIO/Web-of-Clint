@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/Water Areas Classification> , <http://lod-cloud.net/dataset/Catch+Record+%282014-+2019%29> ;
+  void:triples  4858158
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/FAO species> , <http://lod-cloud.net/dataset/Catch+Record+%282014-+2019%29> ;
+  void:triples  4858160
+] .
+
+<http://lod-cloud.net/dataset/Catch+Record+%282014-+2019%29>
+        a                    void:Dataset ;
+        dcterms:description  "Catch records data from Norway (2014-2019), transformed and published as Linked Data. The source data is in CSV format which has been processed, transformed and published as Linked Data, enabling their integration with other datasets in the LOD datasets. The catch record data involves the catch amount in tonnes for each year, along with the species caught and vessel and fishermen data. fishing regions and catch area data is also included in the respective years in the dataset. The dataset is already linked with some of these datasets, including FAO species, FAO fishing areas, and the ISO-3166 standard codes. The source CSV files can be found in https://www.fiskeridir.no/Tall-og-analyse/AApne-data/AApne-datasett/Fangstdata-koblet-med-fartoeydata."@en ;
+        dcterms:publisher    [ rdfs:label  "Raul Palma, Soumya Brahma" ;
+                               foaf:mbox   "rpalma@man.poznan.pl"
+                             ] ;
+        dcterms:subject      "life_sciences" ;
+        dcterms:title        "Norway catch records dataset @PSNC"@en ;
+        void:sparqlEndpoint  <https://www.foodie-cloud.org/sparql> ;
+        void:triples         192867166 ;
+        foaf:homepage        <https://www.foodie-cloud.org/fct/> .

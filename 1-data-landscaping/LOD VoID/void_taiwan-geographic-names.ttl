@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/taiwan-geographic-names>
+        a                    void:Dataset ;
+        dcterms:description  "This is a Taiwan geographic name(台灣地名) linked open data service. This service aims to provide a unique ID for linking Taiwan place names."@en ;
+        dcterms:publisher    [ rdfs:label  "Dongpo Deng" ;
+                               foaf:mbox   "dongpo.deng@gmail.com"
+                             ] ;
+        dcterms:subject      "taiwan" , "lod" , "format.geonames" , "台灣" , "geospatial" ;
+        dcterms:title        "Taiwan geographic names"@en ;
+        void:sparqlEndpoint  <http://pomelo.iis.sinica.edu.tw:2020/sparql> ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <http://pomelo.iis.sinica.edu.tw:2020> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/taiwan-geographic-names> ;
+  void:triples  3000
+] .

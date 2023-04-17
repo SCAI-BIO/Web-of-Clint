@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/iislod-test>
+        a                     void:Dataset ;
+        dcterms:description   "Sample linked data converted from Union Catalog of Digital Archives Taiwan."@en ;
+        dcterms:publisher     [ rdfs:label  "Institute of Information Science, Academia Sinica" ;
+                                foaf:mbox   "cjlee@iis.sinica.edu.tw"
+                              ] ;
+        dcterms:subject       "format-wde" , "format-cc" , "format-prov" , "format-dct" , "published-by-third-party" , "no-vocab-mappings" , "lodcloud.nolinks" , "license-metadata" , "format-schema" , "format-r4r" , "vocab-mappings" , "no-deref-vocab" , "lod" , "format-org" , "format-xsd" , "publications" , "lodcloud.unconnected" , "format-skos" , "format-rdfs" , "provenance-metadata" , "format-foaf" , "format-dc" ;
+        dcterms:title         "Test Site, LOD Lab 317"@en ;
+        void:exampleResource  <http://data.odw.tw/record/d3108593.ttl> ;
+        void:sparqlEndpoint   <http://sparql.odw.tw> ;
+        void:triples          5188 .

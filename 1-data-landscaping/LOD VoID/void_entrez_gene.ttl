@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/entrez_gene>
+        a                     void:Dataset ;
+        dcterms:description   "### About\r\n\r\nData exposed: Select fields from Entrez Gene records\r\nSize of dump and data set: 7.7 MB\r\nNotes: NCBI Copyright and Disclaimers\r\n\r\n### Openness\r\n\r\nData appears to be in public domain. [Disclaimer](http://www.ncbi.nlm.nih.gov/About/disclaimer.html) says:\r\n\r\n> Information that is created by or for the US government on this site is within the public domain. Public domain information on the National Library of Medicine (NLM) Web pages may be freely distributed and copied. However, it is requested that in any subsequent use of this work, NLM be given appropriate acknowledgment."@en ;
+        dcterms:publisher     [ rdfs:label  " <URI>" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "no-deref-vocab" , "published-by-third-party" , "genetics" , "rdf" , "format-rdf" , "lifesciences" , "lodcloud.nolinks" , "country-usa" , "format-xhtml" , "lod" , "life_sciences" , "science" , "linkeddata" , "ckanupload.esw.200910" ;
+        dcterms:title         "Entrez Gene"@en ;
+        void:exampleResource  <http://purl.org/commons/record/ncbi_gene/10269> ;
+        void:triples          1327212 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/hcls/2007/kb-sources/gene-owl.tgz> ] ;
+        foaf:homepage         <http://www.ncbi.nlm.nih.gov/gene> .

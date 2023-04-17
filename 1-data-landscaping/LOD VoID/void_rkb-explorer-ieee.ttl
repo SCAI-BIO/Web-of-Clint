@@ -1,0 +1,102 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-risks> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ulm> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  9
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-resex> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-roma> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  417
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  2949
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ibm> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  29
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  7
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  643
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  73
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  5867
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-pisa> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  17
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-ieee>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "publications" , "format-rdf" , "no-license-metadata" , "lodcloud-diagram-2011-09-19" , "lod" , "void-sparql-endpoint" , "published-by-third-party" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "no-vocab-mappings" , "deref-vocab" ;
+        dcterms:title         "IEEE Papers (RKBExplorer)"@en ;
+        void:exampleResource  <http://ieee.rkbexplorer.com/id/person-21757c2767705194600b55ff6b0ef692-1e427d6bbb6d2bb2aa5434059d6c58f4> ;
+        void:sparqlEndpoint   <http://ieee.rkbexplorer.com/sparql/> ;
+        void:triples          91564 ;
+        dcat:distribution     [ dcat:accessURL  <http://ieee.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ieee.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ieee.rkbexplorer.com/models/void.ttl> ] ;
+        foaf:homepage         <http://ieee.rkbexplorer.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  97
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  1182
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-curriculum> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-nsf> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  50
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-ieee> ;
+  void:triples  516
+] .

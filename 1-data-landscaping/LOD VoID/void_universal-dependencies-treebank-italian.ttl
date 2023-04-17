@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-italian> ;
+  void:triples  72
+] .
+
+<http://lod-cloud.net/dataset/universal-dependencies-treebank-italian>
+        a                    void:Dataset ;
+        dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Italian treebank.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Bosco, Cristina; Lenci, Alessandro; Montemagni, Simonetta; Simi, Maria" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "corpus" , "linguistics" , "lod" ;
+        dcterms:title        "Universal Dependencies Treebank Italian"@en ;
+        void:triples         272913 ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/69473f3f-7593-4c81-86e6-def3ca79b579/resource/fc55b86f-09a6-4c1f-a25d-577f2ec21cc4/download/uditalian.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Italian/archive/master.zip> ] ;
+        foaf:homepage        <https://github.com/UniversalDependencies/UD_Italian> .

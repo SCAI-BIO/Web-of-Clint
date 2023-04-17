@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/linked-open-piracy>
+        a                     void:Dataset ;
+        dcterms:description   "Maritime piracy event descriptions from the International Chamber of Commerce International Maritime Bureau\r\n\r\n## Accessing the dataset\r\n\r\n* SPARQL query form\r\n* No dereferenceable URIs for the RDF data"@en ;
+        dcterms:publisher     [ rdfs:label  "Willem Robert van Hage" ;
+                                foaf:mbox   "W.R.van.Hage@vu.nl"
+                              ] ;
+        dcterms:subject       "sea" , "events" , "lodcloud.nolinks" , "shipping-safety" , "geographic" , "lodcloud.unconnected" , "lodcloud-diagram-2014-08-30" , "maritime" , "imb" , "piracy" , "government" , "nga" , "lod" , "hijackings" , "attacks" , "published-by-producer" , "deref-vocab" , "icc" ;
+        dcterms:title         "Linked Open Piracy"@en ;
+        void:exampleResource  <http://semanticweb.cs.vu.nl/poseidon/ns/instances/event_2006_214> ;
+        void:triples          30583 ;
+        dcat:distribution     [ dcat:accessURL  <http://semanticweb.cs.vu.nl/poseidon/ns/api/export_graph?format=rdfxml&graph=file:///home/poseidon/piracy_lod/piracy/eez.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://semanticweb.cs.vu.nl/poseidon/ns/api/export_graph?format=rdfxml&graph=file:///home/poseidon/piracy_lod/piracy/types_and_mappings.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://semanticweb.cs.vu.nl/poseidon/ns/api/export_graph?format=rdfxml&graph=http://semanticweb.cs.vu.nl/2009/11/sem/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://semanticweb.cs.vu.nl/poseidon/ns/api/export_graph?format=rdfxml&graph=file:///home/poseidon/piracy_lod/piracy/piracy_events_imb_mss_eez.rdf> ] ;
+        foaf:homepage         <http://semanticweb.cs.vu.nl/poseidon/ns/home> .

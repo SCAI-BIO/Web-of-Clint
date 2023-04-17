@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/http://productontology.org> , <http://lod-cloud.net/dataset/isic-v4> ;
+  void:triples  2995
+] .
+
+<http://lod-cloud.net/dataset/isic-v4>
+        a                     void:Dataset ;
+        dcterms:description   "International Standard Industrial Classification of All Economic Activities, United Nations Statistics Division is a product scheme classification used by the United Nations to create statistics. \r\n\r\nAuthors:\r\n\r\nJose María Alvarez Rodríguez & Jose Emilio Labra Gayo \r\n\r\nWESO-University of Oviedo"@en ;
+        dcterms:publisher     [ rdfs:label  "Jose María Alvarez Rodríguez at WESO (University of Oviedo)" ;
+                                foaf:mbox   "josem.alvarez@weso.es"
+                              ] ;
+        dcterms:subject       "v4" , "vocab-mappings" , "oviedo" , "provenance-metadata" , "geodata" , "isic" , "weso" , "uniovi" , "lod" , "license-metadata" , "format-skos" , "format-dcterms" , "deref-vocab" , "format-gr" , "10ders" , "e-procurement" , "procurement" , "format-skosxl" , "euroalert" , "public_contracts" , "format-dc" , "published-by-third-party" , "linkeddata" , "linkedopendata" , "pscs" , "university-of-oviedo" , "government" ;
+        dcterms:title         "ISIC V4"@en ;
+        void:exampleResource  <http://purl.org/weso/pscs/data/isic/v4/resource/0116?output=xml> ;
+        void:sparqlEndpoint   <http://156.35.82.103/sparql> ;
+        void:triples          18986 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/isic/v4/resource/ds> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/isic/v4/isic-v4.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/psc-ontology.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/data/isic/v4/resource/ds?output=ttl> ] ;
+        foaf:homepage         <http://www.josemalvarez.es/web/2011/11/16/product-scheme-classifications/> .

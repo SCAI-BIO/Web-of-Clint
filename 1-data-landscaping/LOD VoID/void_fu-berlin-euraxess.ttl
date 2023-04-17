@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/fu-berlin-euraxess> ;
+  void:triples  200
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/fu-berlin-euraxess> ;
+  void:triples  200
+] .
+
+<http://lod-cloud.net/dataset/fu-berlin-euraxess>
+        a                     void:Dataset ;
+        dcterms:description   "EURAXESS Jobs is a website for research job vacancies, funding opportunities and fellowships throughout Europe."@en ;
+        dcterms:publisher     [ rdfs:label  "Anja Jentzsch" ;
+                                foaf:mbox   "anja@anjeve.de"
+                              ] ;
+        dcterms:subject       "lod" , "government" , "business" , "published-by-third-party" , "deref-vocab" , "latc" ;
+        dcterms:title         "EURAXESS - Researchers in Motion"@en ;
+        void:exampleResource  <http://www4.wiwiss.fu-berlin.de/euraxess/resource/Job/19451361> ;
+        void:sparqlEndpoint   <http://www4.wiwiss.fu-berlin.de/euraxess/sparql> ;
+        void:triples          2110003 ;
+        foaf:homepage         <http://www4.wiwiss.fu-berlin.de/euraxess/> .

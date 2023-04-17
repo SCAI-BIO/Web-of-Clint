@@ -1,0 +1,37 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/getty-aat> , <http://lod-cloud.net/dataset/ASCDC-CRB> ;
+  void:triples  1911
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/loc> , <http://lod-cloud.net/dataset/ASCDC-CRB> ;
+  void:triples  90
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ASCDC - DNB> , <http://lod-cloud.net/dataset/ASCDC-CRB> ;
+  void:triples  39
+] .
+
+<http://lod-cloud.net/dataset/ASCDC-CRB>
+        a                     void:Dataset ;
+        dcterms:description   "The LOD dataset of ASCDC_Database of Chinese Rare Books (CRB) was created by the Academia Sinica Center for Digital Cultures (ASCDC) and based on the metadata from the online database of the “Digital Library of Chinese Rare Books” (古漢籍善本數位化資料庫, http://rarebookdl.ihp.sinica.edu.tw/rarebook/Search/index.jsp). This digital library was established and maintained by the Fu Ssu-nien Library at the Institute of History and Philology, Academia Sinica, Taipei, Taiwan (ROC). The data includes titles and information on more than 900 Chinese rare books and manuscripts collected by the Library of Congress, Princeton University Library, Harvard–Yenching Library and Fu Ssu-nien Library. Containing 39,911 data records and 140,638 triples, the textual content within the LOD dataset is licensed under the Creative Commons Attribution (CC0), while the digital images are under the CC-BY-NC-SA 3.0 license."@en ;
+        dcterms:publisher     [ rdfs:label  "Dr. Shu-Jiun Sophy Chen (Academia Sinica Center for Digital Cultures, Taiwan R.O.C.)" ;
+                                foaf:mbox   "sophy@gate.sinica.edu.tw"
+                              ] ;
+        dcterms:subject       "Fu Ssu-nien Library" , "Institute of History and Philology" , "ASCDC" , "Academia Sinica" , "Chinese Rare Books" , "publications" , "Taiwan" , "History" ;
+        dcterms:title         "Database of Chinese Rare Books (CRB)"@en ;
+        void:dataDump         <https://data.ascdc.tw/en/index.php> , <https://data.ascdc.tw/dataset/ASCDC-CRB.ttl> ;
+        void:exampleResource  <https://data.ascdc.tw/Book/crb/Book_Item/105966> , <https://data.ascdc.tw/Book/crb/Book_Work/114487> , <https://data.ascdc.tw/Book/crb/Book_Instance/100542> ;
+        void:sparqlEndpoint   <https://data.ascdc.tw/en/sparql.php> ;
+        void:triples          140638 ;
+        dcat:distribution     [ dcat:accessURL  <https://data.ascdc.tw/en/data.php> ] ;
+        foaf:homepage         <https://data.ascdc.tw/en/data.php> .
+
+[ void:target   <http://lod-cloud.net/dataset/getty-tgn> , <http://lod-cloud.net/dataset/ASCDC-CRB> ;
+  void:triples  30
+] .

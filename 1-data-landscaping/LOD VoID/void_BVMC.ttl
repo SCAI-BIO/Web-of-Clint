@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/BVMC>
+        a                     void:Dataset ;
+        dcterms:description   "The catalogue of the Biblioteca Virtual Miguel de Cervantes contains about 200,000 records which were originally created in compliance with the MARC21 standard.\n\nThe database content has been later mapped to RDF triples which employ mainly the RDA vocabulary (Resource Description and Access) to describe the entities, as well as their properties and relationships."@en ;
+        dcterms:publisher     [ rdfs:label  "FBVMC development team" ;
+                                foaf:mbox   "desarrollo@cervantesvirtual.com"
+                              ] ;
+        dcterms:subject       "publications" , "Miguel de Cervantes" , "Library LOD" ;
+        dcterms:title         "Biblioteca Virtual Miguel de Cervantes"@en ;
+        void:exampleResource  <http://data.cervantesvirtual.com/person/40> ;
+        void:sparqlEndpoint   <http://data.cervantesvirtual.com/sparql> ;
+        void:triples          13000000 ;
+        foaf:homepage         <http://data.cervantesvirtual.com> .

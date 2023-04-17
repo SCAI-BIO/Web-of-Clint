@@ -1,0 +1,86 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  50
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  8
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  162
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ieee> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  28
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-pisa>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "no-vocab-mappings" , "format-dc" , "deref-vocab" , "no-license-metadata" , "lod" , "format-rdf" , "provenance-metadata" , "published-by-third-party" , "format-akt" , "void-sparql-endpoint" , "publications" ;
+        dcterms:title         "Università di Pisa (RKBExplorer)"@en ;
+        void:exampleResource  <http://pisa.rkbexplorer.com/id/publications/person-225919aa> ;
+        void:sparqlEndpoint   <http://pisa.rkbexplorer.com/sparql/> ;
+        void:triples          43219 ;
+        dcat:distribution     [ dcat:accessURL  <http://pisa.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://pisa.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://pisa.rkbexplorer.com/models/void.ttl> ] ;
+        foaf:homepage         <http://pisa.rkbexplorer.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  171
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  35
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ulm> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  8
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ibm> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  22
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-resex> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  22
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-pisa> ;
+  void:triples  15
+] .

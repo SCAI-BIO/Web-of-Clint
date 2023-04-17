@@ -1,0 +1,39 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/locv>
+        a                     void:Dataset ;
+        dcterms:description   "Interconnecting computer vision datasets"@en ;
+        dcterms:publisher     [ rdfs:label  "Timothy Lebo" ;
+                                foaf:mbox   "lebot@rpi.edu"
+                              ] ;
+        dcterms:subject       "format-con" , "format-pmlp" , "format-prov" , "format-pmlj" , "format-dc" , "format-opm" , "format-doap" , "computer vision" , "format-sd" , "format-foaf" , "format-pml" , "format-dcat" , "format-vann" , "format-rdf" , "format-rdfs" , "format-oboro" , "format-conv" , "format-void" , "linked data" , "format-ov" ;
+        dcterms:title         "Linked Open Computer Vision"@en ;
+        void:dataDump         <http://locv.tw.rpi.edu/source/us/file/cr-full-dump/version/latest/conversion/locv-tw-rpi-edu.nt.gz> ;
+        void:exampleResource  <http://locv.tw.rpi.edu/source/us/dataset/cv-lineage/vision-mas-ecp-fr/facades-benchmark-2011/esat-kuleuven-be/three-layered-facade> ;
+        void:triples          10781 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/conversion/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://open.vocab.org/terms/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2000/01/rdf-schema> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://locv.tw.rpi.edu/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/sparql-service-description> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/prov> ] ;
+        dcat:distribution     [ dcat:accessURL  foaf: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://inference-web.org/2.0/pml-justification.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://obofoundry.org/ro/ro.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://openprovenance.org/ontology> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/dcat> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://usefulinc.com/ns/doap> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/1999/02/22-rdf-syntax-ns> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdfs.org/ns/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://github.com/timrdf/locv> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/net/provenance/ns> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://inference-web.org/2.0/pml-provenance.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://provenanceweb.org/ns/pml> ] ;
+        dcat:distribution     [ dcat:accessURL  dcterms: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/vocab/vann/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2000/10/swap/pim/contact> ] .

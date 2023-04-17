@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/Swift>
+        a                    void:Dataset ;
+        dcterms:description  "The Swift Vocabulary is an SKOS-based vocabulary about the Swift programming language."@en ;
+        dcterms:publisher    [ rdfs:label  "Christian Grévisse" ;
+                               foaf:mbox   "christian.grevisse@uni.lu"
+                             ] ;
+        dcterms:subject      "user_generated" , "swift" , "programming language" ;
+        dcterms:title        "Swift Vocabulary"@en ;
+        void:dataDump        <https://alma.uni.lu/ontology/swift/5.2/swift.rdf> , <https://alma.uni.lu/ontology/swift/5.2/swift.ttl> ;
+        void:sparqlEndpoint  <https://alma.uni.lu/sparql> ;
+        void:triples         1226 ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/cgrevisse/swift-vocabulary> ] ;
+        foaf:homepage        <http://purl.org/lu/uni/alma/swift> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/Swift> ;
+  void:triples  98
+] .

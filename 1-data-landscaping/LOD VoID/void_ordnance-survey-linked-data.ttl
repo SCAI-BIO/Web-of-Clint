@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/ordnance-survey-linked-data>
+        a                     void:Dataset ;
+        dcterms:description   "See also package:ordnance_survey.\r\n\r\n### Published data\r\n\r\n* Geographical data about England, Wales, and Scotland\r\n* Provides identifiers for counties, cities, wards, census areas\r\n* Provides identifiers for postcodes\r\n* Relationships between geographical areas (containment, borders)\r\n\r\n### Licence\r\n\r\nOS Open Data Licence\r\n\r\n> The following attribution statement applies to this licence:\r\n> Contains Ordnance Survey data © Crown copyright and database right 2010\r\n> These terms have been aligned to be interoperable with any Creative Commons Attribution 3.0\r\nLicence.\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Ordnance Survey" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "sparql" , "geographic" , "format-foaf" , "published-by-producer" , "lodcloud.nolinks" , "license-metadata" , "deref-vocab" , "ordnance-survey" , "geo" , "format-admingeo" , "lod" , "country-uk" , "provenance-metadata" , "format-rdf" , "geography" , "format-dc" , "format-owl" , "format-spacerel" , "postcode" , "no-vocab-mappings" ;
+        dcterms:title         "Ordnance Survey Linked Data"@en ;
+        void:exampleResource  <http://data.ordnancesurvey.co.uk/id/postcodeunit/SO164GU> , <http://data.ordnancesurvey.co.uk/id/7000000000037256> ;
+        void:sparqlEndpoint   <http://api.talis.com/stores/ordnance-survey/services/sparql> ;
+        void:triples          2788872 ;
+        dcat:distribution     [ dcat:accessURL  <http://data.ordnancesurvey.co.uk/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.ordnancesurvey.co.uk/> ] ;
+        foaf:homepage         <http://data.ordnancesurvey.co.uk/> .

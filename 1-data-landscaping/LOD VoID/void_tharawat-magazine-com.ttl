@@ -1,0 +1,39 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/tharawat-magazine-com> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/tharawat-magazine-com> ;
+  void:triples  291
+] .
+
+<http://lod-cloud.net/dataset/tharawat-magazine-com>
+        a                     void:Dataset ;
+        dcterms:description   "Tharawat dataset, Knowledge Graph built using WordLift from the website https://www.tharawat-magazine.com/"@en ;
+        dcterms:publisher     [ rdfs:label  "WordLift Team" ;
+                                foaf:mbox   "andrea@wordlift.io"
+                              ] ;
+        dcterms:subject       "tharawat" , "family business" , "publications" , "wordlift" ;
+        dcterms:title         "tharawat magazine"@en ;
+        void:dataDump         <https://api.wordlift.it/datasets/tharawat.rdf> ;
+        void:exampleResource  <http://data.tharawat-magazine.com/tharawat/entity/ananthakrishnan_ak_sankaranarayanan> ;
+        void:triples          "35852"^^xsd:int ;
+        foaf:homepage         <https://www.tharawat-magazine.com/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/tharawat-magazine-com> ;
+  void:triples  59
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/tharawat-magazine-com> ;
+  void:triples  272
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/tharawat-magazine-com> ;
+  void:triples  197
+] .

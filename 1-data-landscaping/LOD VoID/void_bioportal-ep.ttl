@@ -1,0 +1,460 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mi> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  22
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  128
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ecg> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-clo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-uo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  326
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc2p> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  18
+] .
+
+<http://lod-cloud.net/dataset/bioportal-ep>
+        a                    void:Dataset ;
+        dcterms:description  "The Cardiac Electrophysiology Ontology contains terms describing single-channel electrophysiological experiments and data obtained using voltage-clamp, current clamp and fluorescence imaging techniques applied at the cell level and multi-channel fluorescence imaging techniques applied at the cell, tissue and whole heart levels."@en ;
+        dcterms:publisher    [ rdfs:label  "Raimond L. Winslow, PhD" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "biomedicine" , "published-by-third-party" , "format-rdf" , "ontology" , "format-owl" , "lod" , "life_sciences" , "bioportal" ;
+        dcterms:title        "Cardiac Electrophysiology Ontology"@en ;
+        void:triples         31827 ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/39038?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1142> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  31
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ogms> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-gfo-bio> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cogpo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  37
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-gaz> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  143
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  2332
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hpio> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-idobru> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sep> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x2> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  23
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ypo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  108
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  2444
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mf> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pato> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  2318
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-to> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-opl> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ontodm> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-omrse> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  31
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  673
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-imr> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-apo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  96
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-aero> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  29
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snpo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  27
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-unitsontology> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  38
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sao> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  43
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ocre> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pma> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  72
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  2331
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nbo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hp_x1> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-exo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  57
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sio> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  61
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cno> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cco> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-propreo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  178
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bt> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nemo_x1> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  96
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  196
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ino> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mp> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  26
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-odgi> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  214
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bootstrep> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nigo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-so_x1> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  176
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  33
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-phare> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-teo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  355
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  23
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mfoem> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bho> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  25
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-npo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  171
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pedterm> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-oae> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cpr> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  648
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mfo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe-sbc> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  78
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  210
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sbo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ms> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  22
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  39
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x1> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  22
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-jerm> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  148
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  48
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  2332
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cheminf> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  35
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  813
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ddi> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  54
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-spto> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  149
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tmo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  23
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  35
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cogat> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-iao> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-fbcv> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  56
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bao> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  83
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-adw> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-gro_x2> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bcgo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ido> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-flu> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  40
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ogi> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-medlineplus> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  39
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  150
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rs> , <http://lod-cloud.net/dataset/bioportal-ep> ;
+  void:triples  21
+] .

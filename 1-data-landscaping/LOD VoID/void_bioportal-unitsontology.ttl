@@ -1,0 +1,84 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-teo> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  36
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bao> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  25
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  16
+] .
+
+<http://lod-cloud.net/dataset/bioportal-unitsontology>
+        a                    void:Dataset ;
+        dcterms:description  "A small ontology for the units of measurement developed during the development of the Sleep Domain Ontology (SDO). It supports the use of SDO within the PhysioMIMI application."@en ;
+        dcterms:publisher    [ rdfs:label  "Sivaram Arabandi" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "bioportal" , "lod" , "life_sciences" , "format-owl" , "published-by-third-party" , "ontology" , "format-rdf" , "biomedicine" ;
+        dcterms:title        "Units Ontology"@en ;
+        void:triples         407 ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/46042?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1650> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  64
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  32
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-npo> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  26
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe-sbc> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  22
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  40
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  34
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ep> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  38
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-uo> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  33
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  35
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-unitsontology> ;
+  void:triples  10
+] .

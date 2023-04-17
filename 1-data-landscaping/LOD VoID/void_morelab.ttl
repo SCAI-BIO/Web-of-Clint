@@ -1,0 +1,40 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/morelab> ;
+  void:triples  35
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/l3s-dblp> , <http://lod-cloud.net/dataset/morelab> ;
+  void:triples  128
+] .
+
+<http://lod-cloud.net/dataset/morelab>
+        a                     void:Dataset ;
+        dcterms:description   "A dataset that describes staff, publications and proyects of MoreLab, an ICT research group within the Deusto Institute of Technology (DeustoTech) at University of Deusto.\r\n\r\nData is available in RDF format through resolvable URIs and a SPARQL endpoint."@en ;
+        dcterms:publisher     [ rdfs:label  "Morelab" ;
+                                foaf:mbox   "m.emaldi@deusto.es"
+                              ] ;
+        dcterms:subject       "format-yago" , "format-bibo" , "no-proprietary-vocab" , "opendata" , "format-meta" , "format-prv" , "research" , "computer-science" , "format-re" , "published-by-producer" , "format-dcterms" , "format-rdf" , "format-skos" , "publications" , "format-rel" , "lod" , "format-geo" , "format-dc" , "format-rdfs" , "no-provenance-metadata" , "format-sioc" , "format-units" , "format-uranai" , "format-xsd" , "format-foaf" , "format-geonames" , "projects" , "format-swrc" , "format-mvcb" , "lodcloud-diagram-2014-08-30" , "format-prvtypes" , "format-contact" , "no-license-metadata" , "format-owl" ;
+        dcterms:title         "MORElab"@en ;
+        void:exampleResource  <http://apps.morelab.deusto.es/labman/data/people/diego-lopez-de-ipina> ;
+        void:sparqlEndpoint   <http://apps.morelab.deusto.es/labman/sparql> ;
+        void:triples          3561 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.morelab.deusto.es/sitemap.xml> ] ;
+        foaf:homepage         <http://www.morelab.deusto.es> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/morelab> ;
+  void:triples  38
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/morelab> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-incubator-our-airports> , <http://lod-cloud.net/dataset/morelab> ;
+  void:triples  2
+] .

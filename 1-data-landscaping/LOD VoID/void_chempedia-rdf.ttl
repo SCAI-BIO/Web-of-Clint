@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/chempedia-rdf>
+        a                    void:Dataset ;
+        dcterms:description  "RDF version of the ChemPedia substances data.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lod" , "lodcloud.unconnected" , "lodcloud.nolinks" , "deref-vocab" , "healthsciences" , "format-rdf" , "published-by-third-party" , "provenance-metadata" , "lifesciences" , "license-metadata" , "linkedchemistrydotinfo" ;
+        dcterms:title        "ChemPedia RDF"@en ;
+        void:triples         4548 ;
+        dcat:distribution    [ dcat:accessURL  <http://rdf.openmolecules.net/chempedia/onto#> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.iupac.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.w3.org/2002/07/owl#> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/dc/elements/1.1/> ] ;
+        foaf:homepage        <http://figshare.com/articles/ChemPedia_as_RDF/681678> .

@@ -1,0 +1,324 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cao> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  49
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-swo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bfo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  39
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-uo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  315
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-aero> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  187
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cheminf> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  163
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-miro> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  39
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  107
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nemo_x1> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  79
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  57
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-spto> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mi> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  149
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cpr> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  58
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  32
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  51
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ogi> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  41
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ooevv> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ecg> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  58
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ontodt> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  299
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sao> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  38
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hpio> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  45
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  149
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  106
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pvonto> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  168
+] .
+
+<http://lod-cloud.net/dataset/bioportal-teo>
+        a                    void:Dataset ;
+        dcterms:description  "The Time Event Ontology (TEO) is an ontology for representing events, time, and their relationships."@en ;
+        dcterms:publisher    [ rdfs:label  "Cui Tao" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "bioportal" , "ontology" , "biomedicine" , "format-owl" , "format-rdf" , "life_sciences" , "lod" , "published-by-third-party" ;
+        dcterms:title        "Time Event Ontology"@en ;
+        void:triples         9032 ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47318?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/3042> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  251
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snpo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-flu> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  148
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-omrse> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  50
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-idobru> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  56
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mfoem> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  162
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bao> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  150
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-iao> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  97
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-npo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  145
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  37
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ogms> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  50
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  46
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-clo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  148
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-neumore> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-opl> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  51
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  91
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mf> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  162
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ontodm> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  163
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  70
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tmo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  101
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  73
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-unitsontology> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  36
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ocre> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-neomark> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cogpo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  152
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ms> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  61
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ep> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  355
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ino> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  39
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe-sbc> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  50
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-odgi> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  49
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nmr> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  37
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  201
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sio> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  58
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-oae> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  47
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pato> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  26
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  39
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ddi> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  166
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  70
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  75
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rnao> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  40
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ido> , <http://lod-cloud.net/dataset/bioportal-teo> ;
+  void:triples  51
+] .

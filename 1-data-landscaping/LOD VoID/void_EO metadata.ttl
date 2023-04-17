@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/EO+metadata>
+        a                    void:Dataset ;
+        dcterms:description  "EO metadata collected from the public Lesproject Micka registry (https://micka.lesprojekt.cz/en/), which includes information of over 100K geospatial datasets. Micka is a software for spatial data / services metadata management according to ISO, OGC and INSPIRE standards. It allows to retrieve the metadata in RDF forms using Geo-DCAT (an extension of DCAT) for the representation of geographic metadata compliant with the DCAT application profile for European data portals. As such metadata cannot be queried as Linked Data therefore the goal was to make it available in the form of Linked Data in order to enable its integration with other datasets, e.g., Open Land Use (OLU). The process for publication was straightforward: a dump of all the metadata in RDF format was generated from Micka, which was then loaded into the Virtuoso triplestore. Some exemplary SPARQL queries were then generated to identify connection points for integration, e.g., get OLU entries and their metadata given a municipal code and type of area (e.g., agricultural lands). "@en ;
+        dcterms:publisher    [ rdfs:label  "Raul Palma, Soumya Brahma" ;
+                               foaf:mbox   "rpalma@man.poznan.pl"
+                             ] ;
+        dcterms:subject      "geospatial" , "EO" , "geography" , "metadata" ;
+        dcterms:title        "Micka (EO metadata) @PSNC"@en ;
+        void:sparqlEndpoint  <https://www.foodie-cloud.org/sparql> ;
+        void:triples         10456676 ;
+        foaf:homepage        <https://www.foodie-cloud.org/fct/> .

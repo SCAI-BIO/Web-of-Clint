@@ -1,0 +1,44 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/miguiadeviajes-gnoss> ;
+  void:triples  51820
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/webnmasunotraveler> , <http://lod-cloud.net/dataset/miguiadeviajes-gnoss> ;
+  void:triples  3533
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/miguiadeviajes-gnoss> ;
+  void:triples  3191
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/miguiadeviajes-gnoss> ;
+  void:triples  43773
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/miguiadeviajes-gnoss> ;
+  void:triples  38419
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gnoss> , <http://lod-cloud.net/dataset/miguiadeviajes-gnoss> ;
+  void:triples  2
+] .
+
+<http://lod-cloud.net/dataset/miguiadeviajes-gnoss>
+        a                     void:Dataset ;
+        dcterms:description   "<a href=\"http://miguiadeviajes.net/\">MiGuiadeViajes.net</a>\r\nis a semantic collection of travel guides, sightseeing tours and trips especially recommended for tourists, travellers and backpackers. The community allows you to find where to go, where to eat or sleep in different countries, regions and cities with the GNOSS facet-based search engine.\r\n<a href=\"http://gnoss.com/\">GNOSS</a>\r\npromotes this community based on the standards of the Semantic Web and Linked Open Data. MiGuiadeViajes.net offers a selection of 3,533 resources (November 2012). The content of Miguiadeviajes.net belongs to \r\n<a href=\"http://thedatahub.org/dataset/webnmasunotraveler\">El Viajero's tourism dataset</a>\r\n, that integrates the various contents from newspapers and digital platforms belonging to the Prisa Digital Group in the domain of news and blogs about travel.\r\n</p>\r\n\r\n<p>\r\nGuías de viaje, rutas turísticas y escapadas componen \r\n<a href=\"http://miguiadeviajes.net/\">MiGuiadeViajes.net</a>\r\n, una selección de recomendaciones para viajeros, turistas y aventureros. La comunidad permite buscar dónde ir, dónde\r\n<strong> </strong>\r\ncomer o dónde dormir por países, regiones y ciudades gracias al \r\n<a href=\"http://gnoss.com/comunidad/nextweb/recurso/Busquedas-facetadas-o-razonadas/13fd22d5-704d-412c-b35f-31ddc4b7238e\">buscador facetado de GNOSS</a>\r\n.\r\n</p>\r\n<p>\r\n<a href=\"http://gnoss.com/\">GNOSS</a>\r\n promueve esta comunidad  desarrollada y fundamentada en los estándares de la Web Semántica y de los Datos Abiertos Enlazados (Linked Open Data). MiGuiadeViajes.net dispone en la actualidad de 3.533 recursos (Noviembre 2012). El contenido procede del\r\n<a href=\"http://thedatahub.org/dataset/webnmasunotraveler\">dataset de El Viajero</a>\r\n, que integra artículos, guías y reportajes turísticos de los periódicos y plataformas digitales del Grupo Prisa.\r\n</p>"@en ;
+        dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
+                                foaf:mbox   "gnoss@gnoss.com"
+                              ] ;
+        dcterms:subject       "donde comer" , "guía de viaje" , "spain" , "dónde dormir" , "rutas de viaje" , "wrapper" , "lod" , "ruta de viaje" , "country.es" , "camping" , "skos" , "user_generated" , "rutas turísticas" , "published-by-third-party" , "dónde ir" , "no-vocab-mappings" , "format-sioc" , "viajes online" , "rutas con encanto" , "language-spa" , "socialweb" , "turismo rural" , "guía de viajes" , "country-spain" , "guías de españa" , "format-skos" , "format-dcam" , "guías de viaje" , "format-wot" , "itinerarios" , "sp" , "sioc" , "viajes" , "turismo de aventura" , "format-dc" , "schemata" , "turismo de campo" , "turismo de montaña" , "escapadas" , "turismo" , "playa" , "license-metadata" , "foaf" , "no-proprietary-vocab" , "provenance-metadata" , "usergeneratedcontent" , "rutas" , "dc" , "format-rdfg" , "format-foaf" ;
+        dcterms:title         "Mi Guía de Viajes, colección de guías de viaje para viajeros (GNOSS)"@en ;
+        void:exampleResource  <http://miguiadeviajes.net/comunidad/guiasdeviaje/recurso/Mil-y-un-templos-en-Bagan/2d2fdb04-cab5-452f-aa63-e8f636ccb521?rdf> , <http://miguiadeviajes.net/comunidad/guiasdeviaje/recurso/Esperando-la-gran-ola/fec6e038-f831-47c5-9115-8fee40d08a68?rdf> , <http://miguiadeviajes.net/en/community/guiasdeviaje/advanced-search/tag/monte?rdf> ;
+        void:triples          376825 ;
+        dcat:distribution     [ dcat:accessURL  <http://miguiadeviajes.net/voidMisguíasdeviajeGNOSS.n3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://gnoss.com/gnoss.owl> ] ;
+        foaf:homepage         <http://miguiadeviajes.net> .

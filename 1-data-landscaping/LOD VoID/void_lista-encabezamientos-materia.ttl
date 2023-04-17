@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/lista-encabezamientos-materia> ;
+  void:triples  6660
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-bnf-fr> , <http://lod-cloud.net/dataset/lista-encabezamientos-materia> ;
+  void:triples  7572
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/lista-encabezamientos-materia> ;
+  void:triples  8937
+] .
+
+<http://lod-cloud.net/dataset/lista-encabezamientos-materia>
+        a                     void:Dataset ;
+        dcterms:description   "Este nuevo recurso informático que la Dirección General de Libro, Archivos y Bibliotecas pone a disposición del ciudadano supone un importante avnace tecnologico pueste que implica la tranformación de la Lista de Encabezamietos de Materia (LEM) al Simple Knowledge Organization System SKOS, uno de los pilares del Linked Open Data y de su adaptación a Europeana como uno de los namespaces constitutivos del Europeana Data Model. \r\nSe ha establecido ademas, siempre que ha sido posible, un skos:closeMatch con los LCSH y se está progresando para proporcionar una funcionalidad análoga con RAMEAU o SWD.\r\nIncorpora además un fichero en zip de los registros MARC dea utoridades de materia, es decir aquellos basados en el campo 150 en los que se ha añadido las URI de las LEM y las del LCSH.\r\n\r\n---\r\n\r\nThis new digital resource that the Dirección General del Libro, Archivos y Bibliotecas offers to its users represents a huge technological step forward, for it means the transformation of the Subject Headings List (Lista de Encabezamientos de Materia, LEM) to the Simple Knowledge Organization System (SKOS), one of the main pillars of Linked Open Data and of its adaptation to Europeana as one of the Europeana Data Model primary namespaces.\r\nskos:closeMatch links to LCSH have been defined whenever possible, and work is being done towards establishing similar links to RAMEAU and SWD.\r\nThe list is also presented in a zipped MARC file of subject authorities (those based on field 150 in which LEM and LCSH URIs have been added)."@en ;
+        dcterms:publisher     [ rdfs:label  "Ministerio de Educación, Cultura y Deporte - Gobierno de España" ;
+                                foaf:mbox   "lemskos@mcu.es"
+                              ] ;
+        dcterms:subject       "publications" , "bibliographic" , "lod" , "no-proprietary-vocab" , "library" , "format-skos" , "void-sparql-endpoint" , "no-license-metadata" , "provenance-metadata" , "linkeddata" , "lem" , "published-by-producer" , "lld" , "format-rdf" ;
+        dcterms:title         "Lista de  Encabezamientos de Materia as Linked Open Data"@en ;
+        void:exampleResource  <http://id.sgcb.mcu.es/Autoridades/LEM201000848/concept> , <http://id.sgcb.mcu.es/data/Autoridades/LEM201000848/concept.ttl> , <http://id.sgcb.mcu.es/Autoridades/conceptScheme> ;
+        void:sparqlEndpoint   <http://id.sgcb.mcu.es/sparql> ;
+        void:triples          193865 ;
+        dcat:distribution     [ dcat:accessURL  <http://id.sgcb.mcu.es/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://id.sgcb.mcu.es/fct> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://id.sgcb.mcu.es/lem/ficheros/lem-marc21.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://id.sgcb.mcu.es/lem/ficheros/lem-rdf-xml.zip> ] ;
+        foaf:homepage         <http://id.sgcb.mcu.es> .

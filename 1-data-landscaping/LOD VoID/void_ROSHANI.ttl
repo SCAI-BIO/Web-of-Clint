@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/ROSHANI>
+        a                    void:Dataset ;
+        dcterms:description  "ONTOLOGY OF TERRORIST ATTACK"@en ;
+        dcterms:publisher    [ rdfs:label  "ROSHANI " ;
+                               foaf:mbox   "roshani2203@gmail.com"
+                             ] ;
+        dcterms:subject      "user_generated" ;
+        dcterms:title        "ontology terrorist attack"@en ;
+        void:dataDump        <https://drive.google.com/file/d/13BxztYE_p5n3EZhyLpiU30J8EoRdvH10/view> ;
+        void:triples         "0"^^xsd:int ;
+        foaf:homepage        <https://drive.google.com/open?id=13BxztYE_p5n3EZhyLpiU30J8EoRdvH10> .

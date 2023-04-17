@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/fao-geopolitical-ontology>
+        a                     void:Dataset ;
+        dcterms:description   "The FAO geopolitical ontology provides a master reference for geopolitical information, as it manages names in multiple languages (English, French, Spanish, Arabic, Chinese, Russian and Italian); maps standard coding systems (UN, ISO, FAOSTAT, AGROVOC, DBPedia, etc); provides relations among territories (land borders, group membership, etc); and tracks historical changes.\r\n\r\nThe ontology contains <br>\r\n*number of triples : 22495 triples  <br>\r\n*links to other data sets: 195 links to DBPEDIA <br>\r\n\r\n\r\nThe Food and Agriculture Organization of the United Nations (FAO) leads international efforts to defeat hunger and serves as a knowledge network.\r\n\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "FAO Country profiles" ;
+                                foaf:mbox   "FAO-country-profiles@fao.org"
+                              ] ;
+        dcterms:subject       "crossdomain" , "lod.fao.geopolitical" , "faostat" , "russian" , "government" , "italian" , "lod" , "geographic" , "deref-vocab" , "llod" , "names" , "lodcloud-diagram-2011" , "fao" , "services" , "vocab-mappings" , "lodcloud.unconnected" , "ontology" , "access-web" , "group" , "track" , "country-netherlands" , "format-owl" , "french" , "memberships" , "change" , "historical" , "published-by-producer" , "agrovoc" , "rdf" , "english" , "chinese" , "dbpedia" , "arabic" , "spanish" , "un" , "geography" , "iso3" , "profiles" , "schemata" , "information" , "owl" , "format-dc" , "country" , "code" , "lodcloud-diagram-2014-08-30" , "borders" , "provenance-metadata" , "id" , "geopolitical" , "lodcloud-diagram-2014" , "lodcloud.nolinks" , "no-license-metadata" , "iso2" ;
+        dcterms:title         "FAO geopolitical ontology"@en ;
+        void:exampleResource  <http://www.fao.org/countryprofiles/geoinfo/geopolitical/data/self_governing> , <http://www.fao.org/countryprofiles/geoinfo/geopolitical/page/self_governing> ;
+        void:triples          22495 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.fao.org/countryprofiles/geoinfo/modulemaker/index.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.fao.org/countryprofiles/geoinfo/geopolitical/data> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2002/07/owl#sameAs> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://aims.fao.org/aos/geopolitical.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.fao.org/countryprofiles/webservices.asp> ] ;
+        foaf:homepage         <http://www.fao.org/countryprofiles/geoinfo.asp?lang=en> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/fao-geopolitical-ontology> ;
+  void:triples  195
+] .

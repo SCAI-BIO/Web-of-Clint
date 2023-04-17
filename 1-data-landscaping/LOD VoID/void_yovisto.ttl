@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/yovisto>
+        a                     void:Dataset ;
+        dcterms:description   "Yovisto is a video search engine specialized in academic lecture recordings and conference talks. Unlike other video search engines, Yovisto provides a time based video index,\r\nwhich allows to search within the videos? content. Automated analysis techniques such as scene detection\r\nand intelligent character recognition are used for metadata generation. Time dependent collaborative annotation enables the user to annotate tags and comments at any\r\npoint within a video."@en ;
+        dcterms:publisher     [ rdfs:label  "Yovisto.com" ;
+                                foaf:mbox   "info@yovisto.com"
+                              ] ;
+        dcterms:subject       "no-vocab-mappings" , "format-foaf" , "education" , "academic" , "format-tag" , "crossdomain" , "format-mpeg7" , "science" , "void-sparql-endpoint" , "published-by-producer" , "e-learning" , "no-license-metadata" , "lod" , "format-dc" , "deref-vocab" , "usergeneratedcontent" , "video" , "lodcloud-diagram-2011-09-19" , "multimedia" , "format-cc" , "no-provenance-metadata" , "user_generated" ;
+        dcterms:title         "Yovisto - academic video search"@en ;
+        void:exampleResource  <http://www.yovisto.com/resource/speaker/470> ;
+        void:sparqlEndpoint   <http://sparql.yovisto.com/> ;
+        void:triples          4932352 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.yovisto.com/sitemapext.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.yovisto.com/labs/dumps/latest.ttl.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.yovisto.com/ontology/0.9/index.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.yovisto.com/> ] ;
+        foaf:homepage         <http://www.yovisto.com/ontology/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/yovisto> ;
+  void:triples  300
+] .

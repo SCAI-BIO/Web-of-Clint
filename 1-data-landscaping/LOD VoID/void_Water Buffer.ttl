@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/Water+Buffer>
+        a                    void:Dataset ;
+        dcterms:description  "This data contains the water buffer and water body related data from Czech republic. The source data was in shapefiles which is transformed into linked data."@en ;
+        dcterms:publisher    [ rdfs:label  "Raul Palma, Soumya Brahma" ;
+                               foaf:mbox   "rpalma@man.poznan.pl"
+                             ] ;
+        dcterms:subject      "czech republic" , "water buffer zones" , "geography" , "water bodies" , "agriculture" ;
+        dcterms:title        "Water buffer dataset from Czech Republic @PSNC"@en ;
+        void:sparqlEndpoint  <https://www.foodie-cloud.org/sparql> ;
+        void:triples         3978517 ;
+        foaf:homepage        <https://www.foodie-cloud.org/fct/> .

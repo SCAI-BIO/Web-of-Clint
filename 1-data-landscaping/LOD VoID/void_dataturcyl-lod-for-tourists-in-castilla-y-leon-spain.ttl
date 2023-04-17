@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/RDFLicense> , <http://lod-cloud.net/dataset/dataturcyl-lod-for-tourists-in-castilla-y-leon-spain> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dataturcyl-lod-for-tourists-in-castilla-y-leon-spain> ;
+  void:triples  1992
+] .
+
+<http://lod-cloud.net/dataset/dataturcyl-lod-for-tourists-in-castilla-y-leon-spain>
+        a                     void:Dataset ;
+        dcterms:description   "The aim of this project, called DATATURCYL, is to reuse and redistribute open data provided by the Junta de Castilla y León to enrich and enhance information services about tourism in the community. To provide them with an added value, this project embraces the Linked Open Data philosophy. In our particular case, the information for tourism (bars, restaurants, hotels, etc.) is converted to RDF and enriched with geographic data sources and open knowledge in Dbpedia."@en ;
+        dcterms:publisher     [ rdfs:label  "Daniel Revilla" ;
+                                foaf:mbox   "danrevi@gmail.com"
+                              ] ;
+        dcterms:subject       "lod" , "government" ;
+        dcterms:title         "DATATURCYL - LOD for tourists in Castilla y León (Spain)"@en ;
+        void:exampleResource  <http://visualdataweb.infor.uva.es:8080/opendata/resource/campings/acueducto.ttl> ;
+        void:sparqlEndpoint   <http://visualdataweb.infor.uva.es/sparql> ;
+        void:triples          332991 ;
+        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/opendata/resource/cafeterias> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/opendata/resource/otrasactividades> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/opendata/resource/hoteles> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/opendata/resource/museos> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/opendata/resource/turismorural> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/opendata/resource/campings> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/opendata/resource/restaurantes> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/opendata/resource/bares> ] .

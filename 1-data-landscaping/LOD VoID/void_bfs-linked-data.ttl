@@ -1,0 +1,38 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/bfs-linked-data>
+        a                     void:Dataset ;
+        dcterms:description   "Bundesamt für Statistik - Swiss Federal Statistical Office data. Currently contains only the classifications."@en ;
+        dcterms:publisher     [ rdfs:label  "Sarven Capadisli" ;
+                                foaf:mbox   "info@csarven.ca"
+                              ] ;
+        dcterms:subject       "projects" , "country" , "demographics" , "country-codes" , "published-by-third-party" , "international" , "format-skos" , "void-sparql-endpoint" , "license-metadata" , "statistics" , "lodcloud.candidate" , "indicators" , "lod" , "government" , "format-dcterms" , "economics" , "linked-data" , "format-rdf" , "format-sdmx" , "format-qb" , "national" , "provenance-metadata" , "lodcloud" , "switzerland" , "no-proprietary-vocab" , "format-prov" , "vocab-mappings" ;
+        dcterms:title         "Bundesamt für Statistik (BFS) - Swiss Federal Statistical Office (FSO) Linked Data"@en ;
+        void:exampleResource  <http://bfs.270a.info/code/1.0/CL_STATES_AND_TERRITORIES> ;
+        void:sparqlEndpoint   <http://bfs.270a.info/sparql> ;
+        void:triples          1050000 ;
+        dcat:distribution     [ dcat:accessURL  <http://bfs.270a.info/data/meta.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://bfs.270a.info/data/meta.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://fao.270a.info/.well-known/void> ] ;
+        foaf:homepage         <http://bfs.270a.info/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/bfs-linked-data> ;
+  void:triples  261
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/world-bank-linked-data> , <http://lod-cloud.net/dataset/bfs-linked-data> ;
+  void:triples  185
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ecb-linked-data> , <http://lod-cloud.net/dataset/bfs-linked-data> ;
+  void:triples  221
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/imf-linked-data> , <http://lod-cloud.net/dataset/bfs-linked-data> ;
+  void:triples  24
+] .

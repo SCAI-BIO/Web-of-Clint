@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/opencalais> ;
+  void:triples  1000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/opencalais> ;
+  void:triples  1000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/opencalais> ;
+  void:triples  1000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedmdb> , <http://lod-cloud.net/dataset/opencalais> ;
+  void:triples  1000
+] .
+
+<http://lod-cloud.net/dataset/opencalais>
+        a                     void:Dataset ;
+        dcterms:description   "OpenCalais is a web service that extracts semantic metadata from text content, such as web pages."@en ;
+        dcterms:publisher     [ rdfs:label  "Thomson Reuters" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-rdf" , "no-vocab-mappings" , "format-geo" , "format-foaf" , "lodcloud-diagram-2014-08-30" , "no-provenance-metadata" , "nlp" , "crossdomain" , "deref-vocab" , "lod" , "debug-tinylod" , "no-license-metadata" , "cross_domain" , "published-by-third-party" , "lodcloud-diagram-2011-09-19" ;
+        dcterms:title         "OpenCalais"@en ;
+        void:exampleResource  <http://d.opencalais.com/genericHasher-1/bcc912a5-ce31-3071-8d7e-f862e7fdf229.html> , <http://d.opencalais.com/genericHasher-1/5f968907-d20d-3a45-a882-0d9ba4311230.html> , <http://d.opencalais.com/er/company/ralg-tr1r/9e3f6c34-aa6b-3a3b-b221-a07aa7933633> ;
+        void:triples          4500000 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.opencalais.com/documentation/linked-data-entities> ] ;
+        foaf:homepage         <http://www.opencalais.com/> .

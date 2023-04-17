@@ -1,0 +1,30 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-ic> , <http://lod-cloud.net/dataset/cz-ovm> ;
+  void:triples  7551
+] .
+
+<http://lod-cloud.net/dataset/cz-ovm>
+        a                     void:Dataset ;
+        dcterms:description   "This dataset contains detailed information about every institution of public power in the Czech Republic"@en ;
+        dcterms:publisher     [ rdfs:label  "Ministerstvo vnitra České republiky" ;
+                                foaf:mbox   "klimek@opendata.cz"
+                              ] ;
+        dcterms:subject       "format-dcterms" , "format-foaf" , "format-gr" , "lod" , "no-vocab-mappings" , "no-provenance-metadata" , "format-adms" , "deref-vocab" , "czech republic" , "license-metadata" , "published-by-third-party" , "format-schema" , "government" , "format-skos" , "czech" ;
+        dcterms:title         "Institutions of public power of the Czech Republic"@en ;
+        void:exampleResource  <https://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttps://linked.opendata.cz/zdroj/ovm/Podolanka%3E&default-graph-uri=https%3A%2F%2Flinked.opendata.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fovm&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <https://linked.opendata.cz/sparql> ;
+        void:triples          1351432 ;
+        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttps%3A%2F%2Flinked.opendata.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fovm%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/soubor/ovm/ovm.trig.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/zdroj/ovm/Podolanka> ] ;
+        foaf:homepage         <https://linked.opendata.cz/zdroj/datová-sada/ovm> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-ruian> , <http://lod-cloud.net/dataset/cz-ovm> ;
+  void:triples  7551
+] .

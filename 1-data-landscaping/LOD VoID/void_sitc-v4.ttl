@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/sitc-v4>
+        a                     void:Dataset ;
+        dcterms:description   "The Standard International Trade Classification V4 is used by the United Nations to create statistics. \r\n\r\nAuthors of the linked data version:\r\n\r\n-Jose María Alvarez Rodríguez & Jose Emilio Labra Gayo\r\n\r\nWESO-University of Oviedo\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Jose María Alvarez Rodríguez at WESO (University of Oviedo)" ;
+                                foaf:mbox   "josem.alvarez@weso.es"
+                              ] ;
+        dcterms:subject       "deref-vocab" , "stic" , "e-procurement" , "format-gr" , "public_contracts" , "government" , "provenance-metadata" , "oviedo" , "pscs" , "10ders" , "v4" , "format-dcterms" , "license-metadata" , "procurement" , "lod" , "euroalert" , "linkedopendata" , "format-dc" , "weso" , "vocab-mappings" , "format-skos" , "university-of-oviedo" , "format-skosxl" , "uniovi" , "published-by-third-party" , "linkeddata" , "geodata" ;
+        dcterms:title         "SITC-V4"@en ;
+        void:exampleResource  <http://purl.org/weso/pscs/data/sitc/v4/resource/01112?output=xml> ;
+        void:sparqlEndpoint   <http://purl.org/weso/sparql> ;
+        void:triples          70887 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/sitc/v4/resource/ds> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/sitc/v4/resource/ds> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/psc-ontology.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/sitc/v4/sitc-v4.ttl> ] ;
+        foaf:homepage         <http://www.josemalvarez.es/web/2011/11/16/product-scheme-classifications/> .
+
+[ void:target   <http://lod-cloud.net/dataset/http://productontology.org> , <http://lod-cloud.net/dataset/sitc-v4> ;
+  void:triples  23534
+] .

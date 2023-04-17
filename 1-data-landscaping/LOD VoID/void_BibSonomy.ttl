@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/BibSonomy>
+        a                     void:Dataset ;
+        dcterms:description   "BibSonomy is a social bookmarking system. The dataset contains user-generated metadata about web pages and scholarly publications, specifically, tags, that is, freely chosen keywords.  BibSonomy provides metadata to web pages using owl:sameAs links as well links to DBLP."@en ;
+        dcterms:publisher     [ rdfs:label  "Robert Jäschke" ;
+                                foaf:mbox   "jaeschke@l3s.de"
+                              ] ;
+        dcterms:subject       "tagging" , "folksonomy" , " " , "social bookmarking" , "publications" , "bibsonomy" ;
+        dcterms:title         "BibSonomy - The blue social bookmark and publication sharing system."@en ;
+        void:exampleResource  <https://dblp.l3s.de/d2r/page/authors/A'lishia_Bowman> , <https://www.bibsonomy.org/publrss/user/dblp> ;
+        void:triples          8929782 ;
+        foaf:homepage         <https://www.bibsonomy.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/l3s-dblp> , <http://lod-cloud.net/dataset/BibSonomy> ;
+  void:triples  1000
+] .

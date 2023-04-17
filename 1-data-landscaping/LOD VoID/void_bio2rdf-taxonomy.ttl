@@ -1,0 +1,38 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-http> , <http://lod-cloud.net/dataset/bio2rdf-taxonomy> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-obi> , <http://lod-cloud.net/dataset/bio2rdf-taxonomy> ;
+  void:triples  23
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-taxonomy>
+        a                     void:Dataset ;
+        dcterms:description   "The NCBI taxonomy database contains the names of all organisms that are represented in the genetic databases with at least one nucleotide or protein sequence."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "bio2rdf" , "lifesciences" , "format-rdf" , "provenance-metadata" , "deref-vocab" , "vocab-mappings" , "format-dc" , "format-rdfs" , "lod" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "life_sciences" , "published-by-third-party" ;
+        dcterms:title         "Bio2RDF::Taxonomy"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/taxonomy/taxonomy-nodes.nq.gz> , <http://download.bio2rdf.org/current/taxonomy/taxonomy-gencode.nq.gz> , <http://download.bio2rdf.org/current/taxonomy/taxonomy-names.nq.gz> , <http://download.bio2rdf.org/current/taxonomy/taxonomy-citations.nq.gz> , <http://download.bio2rdf.org/current/taxonomy/taxonomy-division.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/taxonomy:9606> ;
+        void:sparqlEndpoint   <http://taxonomy.bio2rdf.org/sparql> ;
+        void:triples          21310356 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/taxonomy/taxonomy.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/taxonomy/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/taxonomy/bio2rdf-taxonomy.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/taxonomy/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/taxonomy/bio2rdf_taxonomy_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/taxonomy/taxonomy.html> ] ;
+        foaf:homepage         <http://taxonomy.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-doi> , <http://lod-cloud.net/dataset/bio2rdf-taxonomy> ;
+  void:triples  2
+] .

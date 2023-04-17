@@ -1,0 +1,40 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/sdmx-concept> , <http://lod-cloud.net/dataset/nomenclator-asturias> ;
+  void:triples  377582
+] .
+
+<http://lod-cloud.net/dataset/nomenclator-asturias>
+        a                     void:Dataset ;
+        dcterms:description   "This dataset created by the SADEI contains information about the populated places of my area, Asturias in the period 2005-2010, including:\r\n\r\n-Codes to identify the type of a populated place: CC/PP/EE (C: code of first level division called “Concejo”, P: code of second level division called Parroquia Rural and EE: code of third level division the real place)\r\n\r\n-Name in Spanish and Asturian\r\n\r\n-Statistics about: altitude, distance, area, men, women and number of apartments (main and not main)\r\n\r\nThe dataset has been transformed by WESO Research Group at the University of Oviedo."@en ;
+        dcterms:publisher     [ rdfs:label  "Jose María Alvarez Rodríguez at WESO (University of Oviedo)" ;
+                                foaf:mbox   "josem.alvarez@weso.es"
+                              ] ;
+        dcterms:subject       "format-dcterms" , "format-dc" , "oviedo" , "linkedopendata" , "format-skosxl" , "geodata" , "provenance-metadata" , "published-by-third-party" , "license-metadata" , "deref-vocab" , "vocab-mappings" , "uniovi" , "government" , "format-skos" , "weso" , "linkeddata" , "format-qb" , "lod" ;
+        dcterms:title         "Nomenclator Asturias"@en ;
+        void:exampleResource  <http://purl.org/weso/nomenclator/asturias/observation/population/m1018> ;
+        void:sparqlEndpoint   <http://purl.org/weso/sparql> ;
+        void:triples          4508050 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/nomenclator/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/static/nomenclator/datasets/nomenclator-onto.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/static/nomenclator/datasets/entities-places.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/static/nomenclator/datasets/nomenclator-observations.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/nomenclator/ls> ] ;
+        foaf:homepage         <http://www.josemalvarez.es/web/2011/11/01/nomenclator-asturias-2010/> .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/nomenclator-asturias> ;
+  void:triples  377582
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geolinkeddata> , <http://lod-cloud.net/dataset/nomenclator-asturias> ;
+  void:triples  29
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/nomenclator-asturias> ;
+  void:triples  78859
+] .

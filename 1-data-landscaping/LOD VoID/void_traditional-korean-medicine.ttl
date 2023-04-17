@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncbitaxon> , <http://lod-cloud.net/dataset/traditional-korean-medicine> ;
+  void:triples  2119
+] .
+
+<http://lod-cloud.net/dataset/traditional-korean-medicine>
+        a                     void:Dataset ;
+        dcterms:description   "Traditional Korean medicine (Hangul: 한의학, Hanja: 韓醫學) developed with the influence of other traditional medicine. Its techniques in treatment and diagnosis are both similar and unique to other traditional medicine. (Visit Wikipedia, http://en.wikipedia.org/wiki/Traditional_Korean_medicine.)\r\n\r\n\"Ontology-based Traditional Korean Medicine Knowledge Framework\" project is systematization of core knowledge of TKM and enhancing the applicability of the knowledge. This project is supported by Korean government and Korea Institute of Oriental Medicine is pursuing this project since 2009.\r\n\r\nTo achieve this, our group is constructing ontology for TKM, in particular, patient status and medicinal treatment for them. The center is conceptualizing disease, pattern, symptom and medical test result to define patient status and medicinal materials, formulas, acupuncture and moxibustion for treatment method.\r\n\r\nFor information about terms of traditional medicine in the area of East Asia, read this WHO standard, http://tkm.kiom.re.kr/ontology/doc/WHO-IST.pdf. This paper can be found at http://www.wpro.who.int/publications/PUB_9789290612487.htm. (Last check: Dec. 17th, 2009)\r\n\r\nAs a first step for construction, the center is focusing on medicinal materials including biological materials (plants and animals), minerals (stone and metal resources)."@en ;
+        dcterms:publisher     [ rdfs:label  "Hyunchul Jang" ;
+                                foaf:mbox   "hcjang@kiom.re.kr"
+                              ] ;
+        dcterms:subject       "linked-data" , "no-provenance-metadata" , "medicines" , "no-vocab-mappings" , "no-deref-vocab" , "lod" , "published-by-producer" , "lifesciences" , "format-ncbitaxon" ;
+        dcterms:title         "Traditional Korean Medicine Ontology"@en ;
+        void:exampleResource  <http://tkm.kiom.re.kr/ontology/get?query=MM%E4%BA%BA%E8%94%98> , <http://ontology.kiom.re.kr/ontology/ginseng_example.rdf> ;
+        void:sparqlEndpoint   <http://tkm.kiom.re.kr/ontology/sparql> ;
+        void:triples          51932 ;
+        dcat:distribution     [ dcat:accessURL  <http://ontology.kiom.re.kr/ontology/lod.rdf> ] ;
+        foaf:homepage         <http://tkm.kiom.re.kr> .

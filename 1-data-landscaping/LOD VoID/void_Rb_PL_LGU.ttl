@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/Rb_PL_LGU>
+        a                    void:Dataset ;
+        dcterms:description  "There are four financial statement tables for every year in the 2013-2018 interval - Rb-27s contains detailed information about revenues, Rb-28s contains expenditures data, Rb-Z contains data about debt and Rb-NDS contains aggregated financial data, like total revenues, total expenditures, change indebt etc."@en ;
+        dcterms:publisher    [ rdfs:label  "Krzysztof Waśko" ;
+                               foaf:mbox   "krzysztof.wasko@incrating.pl"
+                             ] ;
+        dcterms:subject      "user_generated" ;
+        dcterms:title        "Polish LGU financial statements"@en ;
+        void:sparqlEndpoint  <http://185.94.71.25:62020/snorql/> ;
+        void:triples         7000000 ;
+        foaf:homepage        <http://185.94.71.25:62020> .

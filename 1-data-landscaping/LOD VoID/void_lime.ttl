@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/lime>
+        a                    void:Dataset ;
+        dcterms:description  "LIME (LInguistic MEtadata) is a vocabulary for expressing linguistic metadata about linguistic resources and linguistically grounded datasets. \r\n\r\nThe metadata vocabulary has been initially presented at the LDL conference and then contributed as the metadata module of the OntoLex suite of Ontology-Lexicon vocabularies. The last publication about it has been presented at ESWC2015\r\n\r\nMore info about its current status of development, its related scientific publications and software, and future evolutions, can be gathered here: http://art.uniroma2.it/lime/\r\n\r\nThe LIME section of the Final model specification of OntoLex contains the latest version of the vocabulary: https://www.w3.org/community/ontolex/wiki/Final_Model_Specification#Metadata_.28lime.29"@en ;
+        dcterms:publisher    [ rdfs:label  "Armando Stellato" ;
+                               foaf:mbox   "stellato@info.uniroma2.it"
+                             ] ;
+        dcterms:subject      "LDL" , "LDL-2014" , "metadata" , "OntoLex" , "ESWC" , "ESWC-2015" , "lrec-2014" , "lod" , "llod" , "linguistic" ;
+        dcterms:title        "Linguistic Metadata (LIME) vocabulary"@en ;
+        void:triples         158 ;
+        dcat:distribution    [ dcat:accessURL  <http://eelst.cs.unibo.it/apps/LODE/source?url=http://art.uniroma2.it/ontologies/lime> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.essepuntato.it/lode/owlapi/reasoner/http://art.uniroma2.it/ontologies/lime> ] .

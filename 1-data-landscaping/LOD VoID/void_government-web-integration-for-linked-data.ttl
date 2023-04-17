@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/government-web-integration-for-linked-data>
+        a                     void:Dataset ;
+        dcterms:description   "GovWILD integrates Open Government Data about politicians, parties, government agencies, funds, companies, and industrial leaders into a clean and consistent data set. This interlinked data is visualized on a Web interface to be explored by citizens and is available for download and further analysis. It can be used to uncover hidden connections between individuals in government and industry, to aggregate financial data, and to deep-dive into the network of politics and industry."@en ;
+        dcterms:publisher     [ rdfs:label  "GovWild.org" ;
+                                foaf:mbox   "team@govwild.org"
+                              ] ;
+        dcterms:subject       "gov" , "format-rdf" , "lodcloud-diagram-2011-09-19" , "no-deref-vocab" , "lodcloud-diagram-2014-08-30" , "opendatachallenge" , "published-by-third-party" , "lod" , "government" ;
+        dcterms:title         "GovWILD - Government Web Integration for Linked Data"@en ;
+        void:exampleResource  <http://govwild.org/rdf/?uri=http%3A%2F%2Fgovwild.org%2Fid%2Fperson%2FAngela_Merkel_deBundestag_370_P> ;
+        void:sparqlEndpoint   <http://govwild.org/sparql> ;
+        void:triples          42773056 ;
+        dcat:distribution     [ dcat:accessURL  <http://govwild.org/rdf/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://govwild.hpi-web.de/downloads/govwild-json-2012-01-30.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://govwild.hpi-web.de/downloads/govwild-rdf-2012-01-30.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://govwild.hpi-web.de/0.6/GWOntology.rdf> ] ;
+        foaf:homepage         <http://govwild.hpi-web.de/project/govwild-sources.html> .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/government-web-integration-for-linked-data> ;
+  void:triples  132953
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/government-web-integration-for-linked-data> ;
+  void:triples  5845
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/government-web-integration-for-linked-data> ;
+  void:triples  6702
+] .

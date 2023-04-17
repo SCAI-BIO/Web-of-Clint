@@ -1,0 +1,324 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  29
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  384
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  7043
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mddb> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-air> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  3274
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  26
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-who> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  132
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-shr> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mp> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  41
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-medlineplus> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  315
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-eo> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bho> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  1627
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  194
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-imr> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  75
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-chebi> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  519
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mthch> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  510
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  40
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rs> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  433
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ontoorpha> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  110
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  74
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  4125
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cpt> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  48
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snpo> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-omit> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pr> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  81
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  33
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nddf> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  1473
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10cm> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  313
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  2854
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  2894
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-doid> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  341
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pma> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  41
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  561
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hp_x1> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  81
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  25
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-npo> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  46
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  64
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  110
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  26
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-idobru> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  6249
+] .
+
+<http://lod-cloud.net/dataset/bioportal-pdq>
+        a                    void:Dataset ;
+        dcterms:description  "Physician Data Query (PDQ) Terminology is part of NCI's comprehensive cancer information database, which contains expert summaries on a wide range of cancer topics, a listing of some 30,000 cancer clinical trials from around the world, a directory of genetics services professionals, the NCI Dictionary of Cancer Terms, and the NCI Drug Dictionary."@en ;
+        dcterms:publisher    [ rdfs:label  "Volker Englisch" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "bioportal" , "format-rdf" , "format-rrf" , "ontology" , "biomedicine" , "published-by-third-party" , "lod" , "life_sciences" ;
+        dcterms:title        "Physician Data Query"@en ;
+        void:triples         124212 ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45074?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1349> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rxnorm> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  2808
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncbitaxon> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  29
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  1447
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-gaz> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bao> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  33
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vo> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  36
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ctcae> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hcpcs> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cco> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  25
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  411
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  178
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mcbcc> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icd9cm> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  241
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  282
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mi> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vandf> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  1486
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  2751
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  316
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc2p> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  302
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  41
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-phare> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-fbcv> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mpath> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  29
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pedterm> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  22
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-natpro> , <http://lod-cloud.net/dataset/bioportal-pdq> ;
+  void:triples  306
+] .

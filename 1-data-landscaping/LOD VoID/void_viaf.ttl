@@ -1,0 +1,32 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/viaf>
+        a                     void:Dataset ;
+        dcterms:description   "VIAF (Virtual International Autority File) is an OCLC dataset and service -- built in cooperation with national libraries and other partners -- that virtually combines multiple LAM (Library Archives Museum) name authority files into a single name authority service. Put simply it is a large database of people and organizations that occur in library catalogs.\r\n\r\n\r\nVIAF is a joint project of 20  national libraries, implemented and hosted by OCLC. The project's goal is to lower the cost and increase the utility of library authority files by matching and linking the authority files of national libraries, and then making that information available on the Web.\r\n\r\n### Openness\r\n\r\nThe data is released under Open Data Commons Attribution license. Attribution is requested as follows:\r\n\r\n> Adherence to ODC Attribution instructions for the correct assertion of attribution is encouraged. The preferred form of attribution for VIAF is:\r\n>\r\n> \"This [title of report or article or dataset] contains information from VIAF (Virtual International Authority File) which is made available under the ODC Attribution License.\"\r\n> \r\n> Special cases: In circumstances where providing the full attribution statement above is not technically feasible, the use of canonical VIAF URIs is adequate to satisfy Section 4.3 of the ODC Attribution License.\r\n\r\n#### Older information preserved for archival purposes\r\n\r\nOCLC is currently in discussion with partners about how to license material. [Message from Thom Hickey, OCLC Chief Scientist](http://groups.google.com/group/nyt_linked_open_data/browse_thread/thread/46ea00276e3d5a2e#) on public Google Groups mailing list in January 2010 states:\r\n\r\n> VIAF is a joint project with the contributing institutions and OCLC doesn?t claim any rights to the data beyond what the group has.  Unfortunately the group as a whole has problems coming up with a statement of exactly what is permitted.  In lieu of that, our position is that the data on the site is freely available for use through the APIs, although if someone wants a copy of the whole thing they would have to apply to the VIAF consortium (they could do that through me or Barbara Tillett at LC).  Along those same lines, if someone is going to have substantial activity against VIAF (multiple queries/second) we?d like to know about it ahead of time. \r\n\r\n> Over the next few months we will be working on a better statement of what?s permitted, but our intention is to make the data as freely available as possible (even to the NYT). \r\n\r\n\r\nFurther update from Thom Hickey:\r\n(http://outgoing.typepad.com/outgoing/2011/03/use-of-viaf.html)\r\n\r\n> I responded to a recent blog post on LibraryThing which mentioned restrictions on the use of VIAF and its relationship to the LC authority file.\r\n\r\n> In fact, VIAF is open for use by anyone.  Here's what I said about the use of VIAF:\r\n\r\n> VIAF is a project led by LC, the French and German national libraries and OCLC. There are no restrictions on its use. Dumps of the complete file are available, but need the approval of the project leaders.\r\n\r\n> VIAF is not designed to replace the LC/NACO authority file, but rather is built from it and a number of similar files.\r\n\r\n> I hope that is clear.  We really do want people to use VIAF!\r\n\r\nGood news, but no explicit license or complete dumps freely available without asking, so not (yet) OKD compliant "@en ;
+        dcterms:publisher     [ rdfs:label  "OCLC Online Computer Library Center, Inc." ;
+                                foaf:mbox   "oclc@oclc.org"
+                              ] ;
+        dcterms:subject       "lod" , "format-skos" , "no-deref-vocab" , "format-rdf" , "published-by-producer" , "lodcloud-diagram-2014-08-30" , "lld" , "no-provenance-metadata" , "no-license-metadata" , "publications" , "format-owl" , "bibliographic" , "library" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" ;
+        dcterms:title         "VIAF: The Virtual International Authority File"@en ;
+        void:exampleResource  <http://viaf.org/viaf/40280446/> , <http://viaf.org/viaf/86518157> ;
+        void:triples          200000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://viaf.org/viaf/data/viaf-20130615-persist-rdf.xml.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://viaf.org/viaf/data/viaf-20130615-links.txt.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://viaf.org/viaf/data/viaf-20130615-clusters.xml.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://viaf.org/viaf/data/viaf-20130615-clusters-marc21.xml.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://viaf.org/viaf/data/viaf-20130615-clusters-marc21.iso.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://viaf.org/viaf/data/viaf-20130615-clusters-rdf.xml.gz> ] ;
+        foaf:homepage         <http://viaf.org/viaf/data/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/viaf> ;
+  void:triples  4000000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/viaf> ;
+  void:triples  10000
+] .

@@ -1,0 +1,29 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/geolinkeddata> ;
+  void:triples  51
+] .
+
+<http://lod-cloud.net/dataset/geolinkeddata>
+        a                     void:Dataset ;
+        dcterms:description   "GeoLinkedData (.es) is an open initiative whose aim is to enrich the Web of Data with Spanish geospatial data. This initiative started off by publishing diverse information sources belonging to the National Geographic Institute of Spain. Such sources are made available as RDF (Resource Description Framework) knowledge bases according to the Linked Data principles. These data are interlinked with other knowledge bases belonging to the Linking Open Data Initiative."@en ;
+        dcterms:publisher     [ rdfs:label  "Ontology Engineering Group, Facultad de Informática, Universidad Politécnica de Madrid." ;
+                                foaf:mbox   "admin_linkeddata@delicias.dia.fi.upm.es"
+                              ] ;
+        dcterms:subject       "no-license-metadata" , "geodata" , "format-rdf" , "geography" , "published-by-third-party" , "sparql" , "geographic" , "no-provenance-metadata" , "government" , "lod" , "deref-vocab" , "country-spain" , "no-vocab-mappings" , "format-dc" ;
+        dcterms:title         "GeoLinkedData"@en ;
+        void:dataDump         <http://geo.linkeddata.es/source/rdf/NOMGEO/NOMGEO_provincias.rdf> ;
+        void:exampleResource  <http://geo.linkeddata.es/resource/Provincia/Madrid> ;
+        void:sparqlEndpoint   <http://geo.linkeddata.es/sparql> ;
+        void:triples          21564199 ;
+        dcat:distribution     [ dcat:accessURL  <http://geo.linkeddata.es/source/rdf/ontology/> ] ;
+        foaf:homepage         <http://geo.linkeddata.es/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/geolinkeddata> ;
+  void:triples  51
+] .

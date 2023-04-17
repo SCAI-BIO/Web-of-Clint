@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/statusnet-my-status-tk>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://my-status.tk"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "social web" , "lodcloud-diagram-2014-08-30" , "format-pos" , "format-foaf" , "LinkedDataCrawl2014" , "format-rdf" , "format-sioc" , "social_networking" , "crawledLinkedDataCloud2014" ;
+        dcterms:title         "statusnet-my-status-tk"@en ;
+        void:exampleResource  <http://my-status.tk/hauke/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-my-status-tk> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-my-status-tk> ;
+  void:triples  1
+] .

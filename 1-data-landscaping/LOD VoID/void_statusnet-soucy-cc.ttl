@@ -1,0 +1,109 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-hackerposse-com> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-chromic-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  4
+] .
+
+<http://lod-cloud.net/dataset/statusnet-soucy-cc>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://soucy.cc"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-rdf" , "format-foaf" , "lodcloud-diagram-2014-08-30" , "format-bio" , "LinkedDataCrawl2014" , "format-sioc" , "crawledLinkedDataCloud2014" , "format-pos" , "social web" ;
+        dcterms:title         "statusnet-soucy-cc"@en ;
+        void:exampleResource  <http://status.soucy.cc/hs0ucy/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-gegeweb-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-lebsanft-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-shnoulle-net> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-deuxpi-ca> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-recit-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-belfalas-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-imirhil-fr> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-thelovebug-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-somsants-net> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-orangeseeds-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-scoffoni-net> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-ssweeny-net> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+  void:triples  4
+] .

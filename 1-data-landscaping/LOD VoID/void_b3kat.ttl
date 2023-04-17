@@ -1,0 +1,39 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/b3kat> ;
+  void:triples  74722718
+] .
+
+<http://lod-cloud.net/dataset/b3kat>
+        a                     void:Dataset ;
+        dcterms:description   "Joint Union Catalogue of 200 academic libraries in the german states of Bavaria, Berlin and Brandenburg. The data contains descriptions of 28Mio. titles and 69Mio. holdings available in these libraries. The available data dump in Turtle is approx. 9GB. "@en ;
+        dcterms:publisher     [ rdfs:label  "Bavarian State Library, Bavarian Library Union, Cooperative Library Network Berlin-Brandenburg" ;
+                                foaf:mbox   "lod@bsb-muenchen.de"
+                              ] ;
+        dcterms:subject       "brandenburg" , "no-proprietary-vocab" , "license-metadata" , "bibliographic" , "no-provenance-metadata" , "lld" , "format-dc" , "publications" , "library" , "bavaria" , "lod" , "germany" , "published-by-producer" , "format-dcterms" , "government" , "lodcloud-diagram-2014-08-30" , "berlin" , "format-bibo" ;
+        dcterms:title         "B3Kat - Library Union Catalogues of Bavaria, Berlin and Brandenburg"@en ;
+        void:exampleResource  <http://lod.b3kat.de/data/title/BV000023809> ;
+        void:sparqlEndpoint   <http://lod.b3kat.de/sparql> ;
+        void:triples          1022898443 ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.b3kat.de/download/lod.b3kat.de.part3.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.b3kat.de/.well-known/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.b3kat.de/download/lod.b3kat.de.part2.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.b3kat.de/download/lod.b3kat.de.part5.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.b3kat.de/download/lod.b3kat.de.part0.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.b3kat.de/download/lod.b3kat.de.part1.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.b3kat.de/download> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.b3kat.de/download/lod.b3kat.de.part4.ttl.gz> ] ;
+        foaf:homepage         <http://lod.b3kat.de> .
+
+[ void:target   <http://lod-cloud.net/dataset/lobid-resources> , <http://lod-cloud.net/dataset/b3kat> ;
+  void:triples  34624
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dewey_decimal_classification> , <http://lod-cloud.net/dataset/b3kat> ;
+  void:triples  3655789
+] .

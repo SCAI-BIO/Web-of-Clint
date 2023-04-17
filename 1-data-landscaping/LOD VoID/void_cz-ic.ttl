@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/cz-ic>
+        a                     void:Dataset ;
+        dcterms:description   "File with all Czech business entity names and their identification numbers"@en ;
+        dcterms:publisher     [ rdfs:label  "Ministerstvo financí České republiky" ;
+                                foaf:mbox   "klimek@opendata.cz"
+                              ] ;
+        dcterms:subject       "czech republic" , "czech" , "published-by-third-party" , "license-metadata" , "format-skos" , "no-vocab-mappings" , "format-schema" , "government" , "no-provenance-metadata" , "lod" , "deref-vocab" , "format-gr" , "format-adms" ;
+        dcterms:title         "Czech Business Entity identification numbers and names"@en ;
+        void:exampleResource  <https://nkod.opendata.cz/sparql?query=DESCRIBE+%3Chttps://linked.opendata.cz/zdroj/ekonomický-subjekt/10093206%3E&default-graph-uri=https%3A%2F%2Flinked.opendata.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fseznam-i%C4%8D&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <https://nkod.opendata.cz/sparql> ;
+        void:triples          45780110 ;
+        dcat:distribution     [ dcat:accessURL  <https://nkod.opendata.cz/sparql?query=DESCRIBE+%3Chttps%3A%2F%2Flinked.opendata.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fseznam-i%C4%8D%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/soubor/seznam-ič/seznam-ič.trig.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/zdroj/ekonomický-subjekt/10093206> ] ;
+        foaf:homepage         <https://linked.opendata.cz/zdroj/datová-sada/seznam-ič> .

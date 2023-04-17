@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/dbkwik>
+        a                     void:Dataset ;
+        dcterms:description   "Towards Knowledge Graph Creation from Thousands of Wikis"@en ;
+        dcterms:publisher     [ rdfs:label  "Alexandra Hofmann, Samresh Perchani, Jan Portisch,Sven Hertling, Heiko Paulheim" ;
+                                foaf:mbox   "sven@informatik.uni-mannheim.de"
+                              ] ;
+        dcterms:subject       "Linked Dataset" , "format-rdfs" , "format-rdf" , "crossdomain" , "Wikia" , "lod" ;
+        dcterms:title         "DBkWik"@en ;
+        void:dataDump         <http://data.dws.informatik.uni-mannheim.de/dbkwik/dbkwik.nt.gz> ;
+        void:exampleResource  <http://dbkwik.webdatacommons.org/HarryPotter/resource/Harry_Potter> ;
+        void:sparqlEndpoint   <http://dbkwik.webdatacommons.org/sparql> ;
+        void:triples          26694082 ;
+        dcat:distribution     [ dcat:accessURL  <http://dbkwik.webdatacommons.org> ] ;
+        foaf:homepage         <http://dbkwik.webdatacommons.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbkwik> ;
+  void:triples  768902
+] .

@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/europeana-sparql>
+        a                     void:Dataset ;
+        dcterms:description   "Europeana EDM data loaded to OWLIM, with SPARQL and visualization. \r\nContinuing development as part of @eCreativeEU"@en ;
+        dcterms:publisher     [ rdfs:label  "Ontotext" ;
+                                foaf:mbox   "info@ontotext.com"
+                              ] ;
+        dcterms:subject       "culture" , "europeana" , "cross_domain" , "published-by-third-party" , "topic.media" , "culturalheritage" , "no-vocab-mappings" , "lod" , "sparql-endpoint" , "europeana data model" , "edm" , "sparql" , "format-edm" ;
+        dcterms:title         "Europeana SPARQL"@en ;
+        void:exampleResource  <http://europeana.ontotext.com/europeana/tab?uri=http%3A%2F%2Fdata.europeana.eu%2Fitem%2F01004%2FE17BBC456775874D778D9540864548CF298254C4&role=CHO> , <http://europeana.ontotext.com/europeana/tab?uri=http%3A%2F%2Fdata.europeana.eu%2Fitem%2F01004%2FE17BBC456775874D778D9540864548CF298254C4&role=Graph&inference=all> , <http://europeana.ontotext.com/download/n3?uri=http://data.europeana.eu/item/01004/E17BBC456775874D778D9540864548CF298254C4&format=n3&inference=all> ;
+        void:sparqlEndpoint   <http://europeana.ontotext.com/sparql> ;
+        void:triples          " 3798446742"^^xsd:integer ;
+        dcat:distribution     [ dcat:accessURL  <http://data.europeana.eu/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.europeana.eu/schemas/edm/> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/europeana-sparql> ;
+  void:triples  1650634
+] .

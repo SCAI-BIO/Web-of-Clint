@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/dbtune-artists-last-fm> ;
+  void:triples  5000000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbtune-musicbrainz> , <http://lod-cloud.net/dataset/dbtune-artists-last-fm> ;
+  void:triples  5000000
+] .
+
+<http://lod-cloud.net/dataset/dbtune-artists-last-fm>
+        a                     void:Dataset ;
+        dcterms:description   "### Description\r\n\r\nThis service provides an RDF representation of music artists and their similar artists based on the Last.fm API. Responses are linked with identifiers from package:bbc-music as well as with package:dbtune-musicbrainz.\r\n\r\nRDF representations are designed using the Music Ontology and MuSim the music similarity ontology.\r\n\r\n### Statistics\r\n\r\nThe size and link statistics are wild guesses. Googling for Last.fm artist pages yields ~5M results. We assume that each one has ~50 triples and one outlink each to package:dbtune-musicbrainz and package:bbc-music."@en ;
+        dcterms:publisher     [ rdfs:label  "Kurt Jacobson" ;
+                                foaf:mbox   "kurtjx@gmail.com"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2011-09-19" , "format-mo" , "no-provenance-metadata" , "format-rdf" , "no-proprietary-vocab" , "media" , "lodcloud-diagram-2014-08-30" , "lod" , "music" , "no-license-metadata" , "dbtune" , "api" , "format-foaf" , "published-by-third-party" , "no-vocab-mappings" ;
+        dcterms:title         "DBTune.org Artists: Last.fm"@en ;
+        void:exampleResource  <http://dbtune.org/artists/last-fm/James%20Brown> ;
+        void:triples          250000000 ;
+        foaf:homepage         <http://dbtune.org/artists/last-fm/> .

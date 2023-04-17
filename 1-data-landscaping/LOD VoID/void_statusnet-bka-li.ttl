@@ -1,0 +1,73 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-thelovebug-org> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-lebsanft-org> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-chromic-org> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-1w6-org> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-schiessle-org> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-kaimi-cc> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  4
+] .
+
+<http://lod-cloud.net/dataset/statusnet-bka-li>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://bka.li"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "social web" , "format-foaf" , "format-bio" , "format-sioc" , "LinkedDataCrawl2014" , "format-pos" , "crawledLinkedDataCloud2014" , "social_networking" , "format-rdf" ;
+        dcterms:title         "statusnet-bka-li"@en ;
+        void:exampleResource  <http://bka.li/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-bka-li> ;
+  void:triples  1
+] .

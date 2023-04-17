@@ -1,0 +1,39 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/didactalia> , <http://lod-cloud.net/dataset/edublogs> ;
+  void:triples  18595
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/edublogs> ;
+  void:triples  1376
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/edublogs> ;
+  void:triples  612
+] .
+
+<http://lod-cloud.net/dataset/edublogs>
+        a                    void:Dataset ;
+        dcterms:description  "El premio anual \"Edublogs\" pretende valorar la importancia y repercusión de los blogs en ​​la educación, como herramienta didáctica para el desarrollo de contenidos curriculares y motivación de los alumnos . Otros objetivos son : reconocer el trabajo del profesorado en la red demostrando su utilidad pedagógica ; servir de escaparate motivador de una corriente educativa dentro de la blogosfera , que ayuda a la generalización del uso de las TIC en la aula y favorecer espacios de opinión y debate sobre la necesidad de avanzar en el uso de los blogs en el entorno educativo . Las categorías del premio se organizan en : bloque de profesores, bloques colectivos de profesorado, blogs de centros educativos, blogs de aula y bloques de asesoramiento, formación y asociaciones educativas. A este premio pueden presentarse bloques de cualquier país siempre y cuando estén escritos en alguna de las lenguas oficiales del Estado Español: castellano, catalán, euskera y gallego. Además, también se admiten bloques escritos en otra lengua que forme parte de las asignaturas cursadas en los centros educativos de España ."@en ;
+        dcterms:publisher    [ rdfs:label  "GNOSS Team" ;
+                               foaf:mbox   "gnoss@gnoss.com"
+                             ] ;
+        dcterms:subject      "gnoss" , "formación" , "educaci" , "blogs" , "edublogs" , "media" ;
+        dcterms:title        "Edublogs"@en ;
+        void:triples         286653 ;
+        dcat:distribution    [ dcat:accessURL  <http://espiraledublogs.org/comunidad/Edublogs/recurso/ceip-valdespartera-nuestro-proyecto-colaborativo-d/7dd43c06-9132-1fff-a184-8785c595c94e?rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://espiraledublogs.org/comunidad/Edublogs/recurso/experimentos-en-educacion-primaria-e-infantil/1622470d-3d39-4dac-b1eb-6d71b020c439?rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://espiraledublogs.org/comunidad/Edublogs/edublogs?rdf> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/edublogs> ;
+  void:triples  18300
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/edublogs> ;
+  void:triples  6397
+] .

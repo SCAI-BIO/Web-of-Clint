@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/seoul-bike-data>
+        a                    void:Dataset ;
+        dcterms:description  "This dataset contains data from the seoul, Korea about bike rental et al."@en ;
+        dcterms:publisher    [ rdfs:label  "takhee kim" ;
+                               foaf:mbox   "takfeb@gmail.com"
+                             ] ;
+        dcterms:subject      "user_generated" ;
+        dcterms:title        "seoul-bike-data"@en ;
+        void:dataDump        <http://ec2-13-125-246-132.ap-northeast-2.compute.amazonaws.com/DAV/home/takheekim/rdf_sink/bike.ttl> ;
+        void:sparqlEndpoint  <http://13.125.246.132/sparql> ;
+        void:triples         15746 ;
+        foaf:homepage        <http://13.125.246.132> .

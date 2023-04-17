@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/UniProt> , <http://lod-cloud.net/dataset/nextprot> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/uniprotkb> , <http://lod-cloud.net/dataset/nextprot> ;
+  void:triples  2
+] .
+
+<http://lod-cloud.net/dataset/nextprot>
+        a                    void:Dataset ;
+        dcterms:description  "neXtProt is an innovative knowledge platform dedicated to human proteins. This resource contains a wealth of high-quality data on all the human proteins that are produced by the 20'000 protein-coding genes found in the human genome. The content of neXtProt is continuously extended so as to provide many more carefully selected data sets and analysis tools."@en ;
+        dcterms:publisher    [ rdfs:label  "neXtProt team" ;
+                               foaf:mbox   "support@nextprot.org"
+                             ] ;
+        dcterms:subject      "protein resource" , "Proteome" , "Protein modifications" , "Model organisms" , "Variants" , "Proteins" , "life_sciences" ;
+        dcterms:title        "neXtProt"@en ;
+        void:sparqlEndpoint  <https://sparql.nextprot.org/> ;
+        void:triples         1384908234 ;
+        foaf:homepage        <https://www.nextprot.org/> .

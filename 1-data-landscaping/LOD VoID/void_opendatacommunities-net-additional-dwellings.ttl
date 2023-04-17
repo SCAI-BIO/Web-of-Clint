@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/opendatacommunities-net-additional-dwellings>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "crawledLinkedDataCloud2014" , "LinkedDataCrawl2014" , "format-void" , "format-rdf" , "dataset-level-metadata" , "license-metadata" , "dump" , "format-dcat" , "provenance-metadata" , "format-rdfs" , "lodcloud-diagram-2014-08-30" , "government" , "format-dcterm" , "sparql" ;
+        dcterms:title         "opendatacommunities-net-additional-dwellings"@en ;
+        void:exampleResource  <http://opendatacommunities.org/data/net-additional-dwellings> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-net-additional-dwellings> ;
+  void:triples  1
+] .

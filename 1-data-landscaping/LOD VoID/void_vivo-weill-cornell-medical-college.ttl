@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia > , <http://lod-cloud.net/dataset/vivo-weill-cornell-medical-college> ;
+  void:triples  58
+] .
+
+<http://lod-cloud.net/dataset/vivo-weill-cornell-medical-college>
+        a                    void:Dataset ;
+        dcterms:description  "VIVO is a research-focused discovery tool that enables collaboration among scientists across all disciplines. VIVO contains information about researchers associated with the Clinical and Translational Science Center."@en ;
+        dcterms:publisher    [ rdfs:label  "VIVO" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "deref-vocab" , "no-license-metadata" , "format-vitro" , "format-rdf" , "social_networking" , "published-by-producer" , "vivo" , "science" , "education" , "lod" , "publications" , "format-rdfs" , "social-networks" , "no-provenance-metadata" , "no-vocab-mappings" ;
+        dcterms:title        "VIVO Weill Cornell Medical College"@en ;
+        void:triples         193000 ;
+        dcat:distribution    [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-04-02T142918/weill-rdf-dump.rdf> ] ;
+        foaf:homepage        <http://vivo.med.cornell.edu/> .

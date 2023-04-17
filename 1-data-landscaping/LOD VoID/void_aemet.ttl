@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/aemet>
+        a                     void:Dataset ;
+        dcterms:description   "AemetLinked Data (.es) is an open initiative of the Ontology Engineering Group (OEG) whose aim is to enrich the Web of Data with Spanish geospatial data. This initiative started off by publishing diverse information sources belonging to the Spanish Meteorological Agency."@en ;
+        dcterms:publisher     [ rdfs:label  "Ontology Engineering Group, Facultad de Informática, Universidad Politécnica de Madrid." ;
+                                foaf:mbox   "dgarijov@gmail.com"
+                              ] ;
+        dcterms:subject       "ssn-ontology" , "cross_domain" , "linked-sensor-data" , "vocab-mappings" , "weather-forecasts" , "weather" , "topic.geographic" , "no-license-metadata" , "deref-vocab" , "published-by-third-party" , "format-geobuddies" , "format-w3c-owl-time" , "provenance-metadata" , "format-geo" , "format-ssn" , "topic.crossdomain" , "meteorology" , "crossdomain" , "geographic" , "lod" , "spain" ;
+        dcterms:title         "AEMET metereological dataset"@en ;
+        void:dataDump         <http://aemet.linkeddata.es/source/rdf/data.zip> ;
+        void:exampleResource  <http://aemet.linkeddata.es/resource/WeatherStation/id08001?output=ttl> , <http://aemet.linkeddata.es/resource/WeatherStation/id08001> ;
+        void:sparqlEndpoint   <http://aemet.linkeddata.es/sparql> ;
+        void:triples          62932032 ;
+        dcat:distribution     [ dcat:accessURL  <http://aemet.linkeddata.es/sparql_en.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://aemet.linkeddata.es/files/aemetontologynetworkv2.rar> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://aemet.linkeddata.es/metadata/aemetvoid.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://aemet.linkeddata.es/files/aemet%20ontology%20network%20v2.rar> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://aemet.linkeddata.es/browser_en.html> ] ;
+        foaf:homepage         <http://aemet.linkeddata.es/> .
+
+[ void:target   <http://lod-cloud.net/dataset/DBpedia> , <http://lod-cloud.net/dataset/aemet> ;
+  void:triples  82
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geolinkeddata> , <http://lod-cloud.net/dataset/aemet> ;
+  void:triples  153
+] .

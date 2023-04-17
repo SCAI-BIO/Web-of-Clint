@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/drug-data-hifm>
+        a                     void:Dataset ;
+        dcterms:description   "Linked Open Drug Data from the Health Insurance Fund of the Republic of Macedonia. \r\n\r\nThe dataset provides data about the referent (nominal) prices of drugs in Macedonia, along with the generic drug name, brand name, packaging, manufacturer, etc. The drugs from the dataset are linked among themselves with a \"similar to\" relation, and with an \"owl:seeAlso\" relation with corresponding drugs from the [DrugBank dataset](http://wifo5-03.informatik.uni-mannheim.de/drugbank/ \"DrugBank\"). Both relations are based on the drug ATC code.\r\n\r\nThe drug data from the Fund is described using a custom HIFM ontology, along with relations from the DrugBank dataset. \r\n\r\nFor more info on the dataset, please refer to [this paper](http://e-tnc.com/etnc/Portals/3/papers/loddhifm-ciit2013.pdf \"LODD from the HIFM\")."@en ;
+        dcterms:publisher     [ rdfs:label  "Milos Jovanovik" ;
+                                foaf:mbox   "milos.jovanovik@finki.ukim.mk"
+                              ] ;
+        dcterms:subject       "drugs" , "deref-vocab" , "health" , "published-by-third-party" , "hifm" , "no-provenance-metadata" , "government" , "healthcare" , "no-license-metadata" , "Macedonia" , "lod" , "prices" , "health insurance fund" , "format-drugbank" ;
+        dcterms:title         "Drug Data from the Health Insurance Fund of Macedonia"@en ;
+        void:exampleResource  <http://linkeddata.finki.ukim.mk/lod/data/hifm#963089> ;
+        void:sparqlEndpoint   <http://linkeddata.finki.ukim.mk/sparql> ;
+        void:triples          21233 ;
+        dcat:distribution     [ dcat:accessURL  <http://linkeddata.finki.ukim.mk/DAV/ontology/data/hifm.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/net/hifm/data> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/net/hifm/ontology> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-drugbank> , <http://lod-cloud.net/dataset/drug-data-hifm> ;
+  void:triples  1015
+] .

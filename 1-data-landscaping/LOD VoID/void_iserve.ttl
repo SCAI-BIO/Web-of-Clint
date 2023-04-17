@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/iserve>
+        a                    void:Dataset ;
+        dcterms:description  "iServe is the place on the Web where linked data meets services. In a nutshell, iServe is a platform for publishing Semantic Web Services as linked data, no matter their original format."@en ;
+        dcterms:publisher    [ rdfs:label  "iServe Team" ;
+                               foaf:mbox   "iserve-general@googlegroups.com"
+                             ] ;
+        dcterms:subject      "license-metadata" , "lodcloud-diagram-2011-09-19" , "format-wl" , "lodcloud-diagram-2014-08-30" , "crossdomain" , "cross_domain" , "format-sawsdl" , "format-msm" , "lod" , "format-rdf" , "format-hrests" , "no-vocab-mappings" , "provenance-metadata" , "format-http" , "published-by-producer" , "format-msm-wsdl" , "format-msm-nfp" , "deref-vocab" , "void-sparql-endpoint" ;
+        dcterms:title        "iServe: Linked Services Registry"@en ;
+        void:sparqlEndpoint  <http://iserve.kmi.open.ac.uk/iserve/sparql> ;
+        void:triples         2239738 ;
+        dcat:distribution    [ dcat:accessURL  <http://iserve.kmi.open.ac.uk/iserve/id/services/774d974e-175b-4747-9326-63787de9e086/twitter> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://iserve.kmi.open.ac.uk/iserve/void.ttl#iServe> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://iserve.kmi.open.ac.uk/ns/msm> ] ;
+        foaf:homepage        <http://iserve.kmi.open.ac.uk/> .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/iserve> ;
+  void:triples  536
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/iserve> ;
+  void:triples  394
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/iserve> ;
+  void:triples  448
+] .

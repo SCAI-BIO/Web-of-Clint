@@ -1,0 +1,52 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/bioportal-mmo> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-mmo> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-mmo> ;
+  void:triples  42
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-mmo> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-mmo> ;
+  void:triples  23
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-mmo> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-mmo> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-mmo> ;
+  void:triples  43
+] .
+
+<http://lod-cloud.net/dataset/bioportal-mmo>
+        a                    void:Dataset ;
+        dcterms:description  "The Measurement Method Ontology is designed to represent the variety of methods used to make qualitative and quantitative clincial and phenotype measurements both in the clinic and with model organisms."@en ;
+        dcterms:publisher    [ rdfs:label  "Mary Shimoyama" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "life_sciences" , "published-by-third-party" , "bioportal" , "format-obo" , "ontology" , "lod" , "biomedicine" , "format-rdf" ;
+        dcterms:title        "Measurement Method Ontology"@en ;
+        void:triples         2018 ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47158?apikey=BP_API_KEY> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1584> .

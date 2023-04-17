@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/cz-cuzk-cadastre-offices>
+        a                     void:Dataset ;
+        dcterms:description   "Cadastre offices from Czech land registry"@en ;
+        dcterms:publisher     [ rdfs:label  "Jakub Klímek" ;
+                                foaf:mbox   "klimek@opendata.cz"
+                              ] ;
+        dcterms:subject       "published-by-third-party" , "czech-republic" , "no-vocab-mappings" , "lod" , "government" , "format-schema" , "deref-vocab" , "license-metadata" , "czech" , "provenance-metadata" ;
+        dcterms:title         "Cadastre offices from Czech land registry"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://ruian.linked.opendata.cz/resource/pracoviste-resortu/502%3E&default-graph-uri=http%3A%2F%2Fruian.linked.opendata.cz%2Fresource%2Fdataset%2Fcuzk%2Fpracoviste-resortu&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          14781 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Fruian.linked.opendata.cz%2Fresource%2Fdataset%2Fcuzk%2Fpracoviste-resortu%2Fdistribution%2Frdf%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ruian.linked.opendata.cz/resource/pracoviste-resortu/502> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/CUZK_2-vocab.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/CUZK_52-pracoviste-resortu.trig> ] ;
+        foaf:homepage         <http://ruian.linked.opendata.cz/resource/dataset/cuzk/pracoviste-resortu> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-ruian> , <http://lod-cloud.net/dataset/cz-cuzk-cadastre-offices> ;
+  void:triples  13000
+] .

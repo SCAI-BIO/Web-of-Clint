@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/vivo-university-of-florida> ;
+  void:triples  58
+] .
+
+<http://lod-cloud.net/dataset/vivo-university-of-florida>
+        a                     void:Dataset ;
+        dcterms:description   "VIVO is a resource of the University of Florida that provides information on people, departments, facilities, courses, grants, and publications. Information is available as Linked Data and RDF dump. A SPARQL Endpoint can be used at http://vivo.ufl.edu:2020\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Christopher P. Barnes" ;
+                                foaf:mbox   "cpb@ufl.edu"
+                              ] ;
+        dcterms:subject       "social-networks" , "no-provenance-metadata" , "published-by-producer" , "lodcloud-diagram-2014-08-30" , "format-rdfs" , "vivo" , "format-rdf" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "no-vocab-mappings" , "deref-vocab" , "education" , "lod" , "science" , "publications" ;
+        dcterms:title         "VIVO University of Florida"@en ;
+        void:exampleResource  <http://vivo.ufl.edu/individual/n1622> , <http://vivo.ufl.edu/individual/n6593> , <http://sparql.vivo.ufl.edu> ;
+        void:triples          2384224 ;
+        dcat:distribution     [ dcat:accessURL  <http://vivo.ufl.edu/UF-VIVO.n3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://softlayer.dl.sourceforge.net/project/vivo/Ontology/vivo-core-1.1.owl> ] ;
+        foaf:homepage         <http://vivo.ufl.edu> .

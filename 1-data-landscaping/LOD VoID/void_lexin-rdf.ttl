@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/lexin-rdf>
+        a                    void:Dataset ;
+        dcterms:description  "Lexin, a bilingual dictionary in RDF.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Dana Dannells" ;
+                               foaf:mbox   "dana.dannells@svenska.gu.se"
+                             ] ;
+        dcterms:subject      "multilingual" , "llod" , "linguistic" , "lexical-resource" ;
+        dcterms:title        "LEXIN-RDF"@en ;
+        void:sparqlEndpoint  <http://demo.spraakdata.gu.se/ltlod/test/> ;
+        void:triples         1386577 ;
+        dcat:distribution    [ dcat:accessURL  <http://spraakbanken.gu.se/rdf/lexin.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-10-14T10:43:25.510Z/lexin-nt.gz> ] .

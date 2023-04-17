@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/fao-geopolitical-ontology> , <http://lod-cloud.net/dataset/agris> ;
+  void:triples  500000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/agrovoc-skos> , <http://lod-cloud.net/dataset/agris> ;
+  void:triples  10000000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/agris> ;
+  void:triples  3000000
+] .
+
+<http://lod-cloud.net/dataset/agris>
+        a                     void:Dataset ;
+        dcterms:description   "AGRIS is one of the most important world-wide information systems in the area of the agricultural sciences. AGRIS is an initiative that was set up by FAO of the United Nations in 1974 to make information on agriculture research globally available. The historical overall objective of AGRIS is to improve access and exchange of information serving “the information needs of developed and developing countries on a partnership basis”."@en ;
+        dcterms:publisher     [ rdfs:label  "FAO OEKC" ;
+                                foaf:mbox   "agris@fao.org"
+                              ] ;
+        dcterms:subject       "deref-vocab" , "agriculture" , "forestry" , "publications" , "fisheries" , "hunger" , "published-by-third-party" , "lod" ;
+        dcterms:title         "AGRIS"@en ;
+        void:dataDump         <http://lprapp14.fao.org/agris_data/LOD/rdf_output.tar.gz> ;
+        void:exampleResource  <http://agris.fao.org/aos/records/data/JP2010001379?output=xml> ;
+        void:sparqlEndpoint   <http://202.45.139.84:10035/catalogs/fao/repositories/agris> ;
+        void:triples          239565943 ;
+        dcat:distribution     [ dcat:accessURL  <http://agris.fao.org/void.ttl> ] ;
+        foaf:homepage         <http://agris.fao.org/aos/records/info.html> .

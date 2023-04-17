@@ -1,0 +1,42 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mesh> , <http://lod-cloud.net/dataset/bio2rdf-orphanet> ;
+  void:triples  377
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-hgnc> , <http://lod-cloud.net/dataset/bio2rdf-orphanet> ;
+  void:triples  243
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-orphanet>
+        a                     void:Dataset ;
+        dcterms:description   "Orphanet is a database of information on rare diseases and orphan drugs for all publics. Its aim is to contribute to the improvement of the diagnosis, care and treatment of patients with rare diseases."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "lod" , "vocab-mappings" , "license-metadata" , "format-rdf" , "bio2rdf" , "life_sciences" , "published-by-third-party" , "format-rdfs" , "format-dc" , "lifesciences" , "provenance-metadata" , "deref-vocab" ;
+        dcterms:title         "Bio2RDF::Orphanet"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/orphanet/orphanet-d2s.nq.gz> , <http://download.bio2rdf.org/current/orphanet/orphanet-epi.nq.gz> , <http://download.bio2rdf.org/current/orphanet/orphanet-disease.nq.gz> , <http://download.bio2rdf.org/current/orphanet/orphanet-signs.nq.gz> , <http://download.bio2rdf.org/current/orphanet/orphanet-genes.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/orphanet:85163> ;
+        void:sparqlEndpoint   <http://orphanet.bio2rdf.org/sparql> ;
+        void:triples          377947 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/orphanet/bio2rdf-orphanet.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/orphanet/bio2rdf_orphanet_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/orphanet/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/orphanet/orphanet.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/orphanet/orphanet.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/orphanet/sitemap.xml> ] ;
+        foaf:homepage         <http://orphanet.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/bio2rdf-orphanet> ;
+  void:triples  3071
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-reactome> , <http://lod-cloud.net/dataset/bio2rdf-orphanet> ;
+  void:triples  300
+] .

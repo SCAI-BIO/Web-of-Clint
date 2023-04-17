@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/socialsemweb-thesaurus> ;
+  void:triples  300
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/socialsemweb-thesaurus> ;
+  void:triples  200
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/socialsemweb-thesaurus> ;
+  void:triples  100
+] .
+
+<http://lod-cloud.net/dataset/socialsemweb-thesaurus>
+        a                     void:Dataset ;
+        dcterms:description   "People, organisations, applications and technologies etc. relevant for the area of the Social Semantic Web"@en ;
+        dcterms:publisher     [ rdfs:label  "Semantic Web Company" ;
+                                foaf:mbox   "office@semantic-web.at"
+                              ] ;
+        dcterms:subject       "crossdomain" , "published-by-producer" , "social_networking" , "usergeneratedcontent" , "socialweb" , "deref-vocab" , "semanticweb" , "people" , "lodcloud-diagram-2014-08-30" , "technology" , "thesaurus" , "research" , "format-skos" , "format-owl" , "lodcloud-diagram-2011-09-19" , "lod" ;
+        dcterms:title         "Social Semantic Web Thesaurus"@en ;
+        void:dataDump         <http://ckan.net/storage/f/file/80d5f096-e1ad-489f-9ff4-793e6f5f04d2> ;
+        void:exampleResource  <http://vocabulary.semantic-web.at/semweb/253> ;
+        void:sparqlEndpoint   <http://vocabulary.semantic-web.at/PoolParty/sparql/semweb> ;
+        void:triples          20000 ;
+        dcat:distribution     [ dcat:accessURL  <http://vocabulary.semantic-web.at/semweb.rdf> ] ;
+        foaf:homepage         <http://vocabulary.semantic-web.at/PoolParty/wiki/semweb> .

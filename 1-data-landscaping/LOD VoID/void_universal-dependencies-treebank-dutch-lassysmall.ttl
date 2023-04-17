@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/universal-dependencies-treebank-dutch-lassysmall>
+        a                    void:Dataset ;
+        dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Dutch-LassySmall treebank.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Bouma, Gosse; van Noord, Gertjan" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lod" , "linguistics" , "corpus" ;
+        dcterms:title        "Universal Dependencies Treebank Dutch-LassySmall"@en ;
+        void:triples         98107 ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Dutch-LassySmall/archive/master.zip> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/1b752dc7-2e99-4453-95c7-629d27a6f3c6/resource/43134eba-1439-4e4f-a478-1496504979bf/download/uddutch-lassysmall.rdf> ] ;
+        foaf:homepage        <https://github.com/UniversalDependencies/UD_Dutch-LassySmall> .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-dutch-lassysmall> ;
+  void:triples  72
+] .

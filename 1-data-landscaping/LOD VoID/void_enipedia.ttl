@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/enipedia>
+        a                     void:Dataset ;
+        dcterms:description   "Enipedia is an active exploration into the applications of wikis and the semantic web for energy and industry issues. Through this we seek to create a collaborative environment for discussion, while also providing the tools that allow for data from different sources to be connected, queried, and visualized from different perspectives. \t"@en ;
+        dcterms:publisher     [ rdfs:label  "Enipedia Team @ Energy and Industry Section, TBM, Delft University of Technology" ;
+                                foaf:mbox   "c.b.davis@tudelft.nl"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2011-09-19" , "crossdomain" , "published-by-producer" , "format-wiki" , "cross_domain" , "industry" , "energy" , "lodcloud-diagram-2014-08-30" , "published-by-third-party" , "license-metadata" , "no-proprietary-vocab" , "lod" ;
+        dcterms:title         "Enipedia - Energy Industry Data"@en ;
+        void:exampleResource  <http://enipedia.tudelft.nl/wiki/Special:ExportRDF/Navajo_Powerplant> ;
+        void:sparqlEndpoint   <http://enipedia.tudelft.nl/sparql> ;
+        void:triples          4180734 ;
+        dcat:distribution     [ dcat:accessURL  <http://enipedia.tudelft.nl/blog> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://enipedia.tudelft.nl/downloads/enipedia.rdf> ] ;
+        foaf:homepage         <http://enipedia.tudelft.nl> .
+
+[ void:target   <http://lod-cloud.net/dataset/open-energy-info-wiki> , <http://lod-cloud.net/dataset/enipedia> ;
+  void:triples  189
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/enipedia> ;
+  void:triples  1365
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/world-factbook-fu-berlin> , <http://lod-cloud.net/dataset/enipedia> ;
+  void:triples  204
+] .

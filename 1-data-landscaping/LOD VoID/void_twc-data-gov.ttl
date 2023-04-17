@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/twc-data-gov>
+        a                    void:Dataset ;
+        dcterms:description  "duplicate of package:twc-logd"@en ;
+        dcterms:publisher    [ rdfs:label  "Tetherless World Constellation, RPI" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "population" , "government" , "meta.duplicate" , "rdf" , "statistics" , "medical" , "format-rdf" , "environment" , "library" , "ckanupload.esw.200910" , "energy" , "housing" , "labour" , "linkeddata" ;
+        dcterms:title        "TWC Data-gov"@en ;
+        void:triples         5074932510 ;
+        dcat:distribution    [ dcat:accessURL  <http://data-gov.tw.rpi.edu/wiki/TWC_Data-Gov_Corpus> ] ;
+        foaf:homepage        <http://data-gov.tw.rpi.edu> .

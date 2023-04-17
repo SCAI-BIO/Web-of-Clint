@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/framester> ;
+  void:triples  6100025
+] .
+
+<http://lod-cloud.net/dataset/framester>
+        a                    void:Dataset ;
+        dcterms:description  "The Framester resource is the main outcome of the framester project (https://w3id.org/framester). All the RDF files are serialized in TURTLE format. The corresponding triples can be also found uploaded on the Framester's SPARQL endpoint available at (https://w3id.org/framester/sparql).\r\nA series of statistics (e.g. number of triples, predicats, classes) are available at (https://w3id.org/framester/stats) of the dataset are available.\r\nThe void description of the dataset is available at https://w3id.org/framester/dataset"@en ;
+        dcterms:publisher    [ rdfs:label  "Aldo Gangemi" ;
+                               foaf:mbox   "aldo.gangemi@cnr.it"
+                             ] ;
+        dcterms:subject      "BabelNet" , "FrameNet" , "Frame" , "LOD" , "FoundationalOntologies" , "Framester" , "WordNet" , "llod" , "VerbNet" , "Semantics" , "DOLCE" , "D0" ;
+        dcterms:title        "Framester"@en ;
+        void:triples         32105685 ;
+        dcat:distribution    [ dcat:accessURL  <https://doi.org/10.6084/m9.figshare.4994537> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://w3id.org/framester/sparql> ] ;
+        foaf:homepage        <https://w3id.org/framester> .
+
+[ void:target   <http://lod-cloud.net/dataset/babelnet> , <http://lod-cloud.net/dataset/framester> ;
+  void:triples  171296
+] .

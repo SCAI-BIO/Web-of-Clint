@@ -1,0 +1,32 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/thesaurus-w>
+        a                     void:Dataset ;
+        dcterms:description   "This dataset includes four authority lists (subject headings, historical contexts, actions and document types) used to describe material in French local archives."@en ;
+        dcterms:publisher     [ rdfs:label  "Service interministériel des Archives de France" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "no-proprietary-vocab" , "format-rdf" , "lod" , "publications" , "lld" , "published-by-producer" , "format-skos" ;
+        dcterms:title         "Thesaurus W for Local Archives"@en ;
+        void:exampleResource  <http://www.archivesdefrance.culture.gouv.fr/thesaurus/data/T1-503> ;
+        void:sparqlEndpoint   <http://www.archivesdefrance.culture.gouv.fr/thesaurus/sparql> ;
+        void:triples          11000 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.archivesdefrance.culture.gouv.fr/thesaurus/data/Matiere?includeSchemes=true> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.archivesdefrance.culture.gouv.fr/thesaurus/data/Actions?includeSchemes=true> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.archivesdefrance.culture.gouv.fr/thesaurus/data/Contexte?includeSchemes=true> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.archivesdefrance.culture.gouv.fr/thesaurus/resource/T1-518> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.archivesdefrance.culture.gouv.fr/thesaurus/data/Typologie?includeSchemes=true> ] ;
+        foaf:homepage         <http://www.archivesdefrance.culture.gouv.fr/thesaurus/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/thesaurus-w> ;
+  void:triples  627
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/stitch-rameau> , <http://lod-cloud.net/dataset/thesaurus-w> ;
+  void:triples  1048
+] .

@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/openlibrary> , <http://lod-cloud.net/dataset/university-sussex-reading-lists> ;
+  void:triples  27751
+] .
+
+<http://lod-cloud.net/dataset/university-sussex-reading-lists>
+        a                     void:Dataset ;
+        dcterms:description   "To find and access your readings:\r\nSearch using the course title or course code\r\nFollow the links through to a reading list provided for your course\r\nClick on individual items to show library availability and/or full text of online resources\r\nSign in with your ITS username and password to add personal study notes to items in your list\r\nIf your reading list is not available, check your Study Direct course site."@en ;
+        dcterms:publisher     [ rdfs:label  "Ian Davis" ;
+                                foaf:mbox   "ian.davis@talis.com"
+                              ] ;
+        dcterms:subject       "format-sioc" , "education" , "format-dc" , "lld" , "lodcloud-diagram-2011-09-19" , "no-provenance-metadata" , "publications" , "no-vocab-mappings" , "higher-education" , "no-proprietary-vocab" , "lod" , "no-license-metadata" , "format-rdf" , "published-by-producer" , "talis" ;
+        dcterms:title         "University of Sussex Reading Lists"@en ;
+        void:exampleResource  <http://liblists.sussex.ac.uk/lists/0B9D65E5-BB0B-F4CD-7BD9-E55B18BF7400> ;
+        void:triples          1762492 ;
+        foaf:homepage         <http://liblists.sussex.ac.uk> .

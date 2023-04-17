@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-housing-rank-la-2010>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "LinkedDataCrawl2014" , "dump" , "format-cube" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "dataset-level-metadata" , "license-metadata" , "format-dcterm" , "government" , "crawledLinkedDataCloud2014" , "format-void" , "format-rdf" , "format-rdfs" , "format-dcat" , "sparql" ;
+        dcterms:title         "opendatacommunities-societal-wellbeing-deprivation-imd-housing-rank-la-2010"@en ;
+        void:exampleResource  <http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-housing-rank-la-2010/E07000134> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-housing-rank-la-2010> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-housing-rank-la-2010> ;
+  void:triples  1
+] .

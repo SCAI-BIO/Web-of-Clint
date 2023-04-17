@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/semantic-web-dog-food>
+        a                     void:Dataset ;
+        dcterms:description   "### About\r\n\r\nData exposed: Metadata (papers, presentations, people) for several semantic web related conferences and workshops, including the most recent ISWC, ESWC and WWW events.\r\n\r\nNotes: The dump locations can be found in the site's semantic sitemap\r\n\r\n### Openness\r\n\r\nNo information found."@en ;
+        dcterms:publisher     [ rdfs:label  "Knud Möller" ;
+                                foaf:mbox   "admin@data.semanticweb.org"
+                              ] ;
+        dcterms:subject       "ckanupload.esw.200910" , "format-rdf" , "no-provenance-metadata" , "lod" , "no-vocab-mappings" , "format-foaf" , "rdf" , "semantic-web" , "published-by-producer" , "linkeddata" , "no-license-metadata" , "no-proprietary-vocab" , "publications" ;
+        dcterms:title         "Semantic Web Dog Food Corpus"@en ;
+        void:exampleResource  <http://data.semanticweb.org/organization/freie-universitaet-berlin> ;
+        void:sparqlEndpoint   <http://data.semanticweb.org/sparql> ;
+        void:triples          191391 ;
+        dcat:distribution     [ dcat:accessURL  <http://data.semanticweb.org/dumps> ] ;
+        foaf:homepage         <http://data.semanticweb.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/revyu> , <http://lod-cloud.net/dataset/semantic-web-dog-food> ;
+  void:triples  234
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semanticweb-org> , <http://lod-cloud.net/dataset/semantic-web-dog-food> ;
+  void:triples  369
+] .

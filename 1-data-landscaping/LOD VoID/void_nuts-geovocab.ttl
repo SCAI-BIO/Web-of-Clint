@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/nuts-geovocab>
+        a                     void:Dataset ;
+        dcterms:description   "The NUTS (Nomenclature of Territorial Units for Statistics)  is a classification defined by the Eurostat office of the European Union. Here we present the NUTS regions along with geographic information as a sample use of the NeoGeo RDF Vocabulary for GeoData. "@en ;
+        dcterms:publisher     [ rdfs:label  "Eurostat" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "published-by-third-party" , "lod" , "geographic" , "lodcloud-diagram-2014-08-30" , "geography" , "deref-vocab" , "government" , "nuts" , "no-proprietary-vocab" , "eurostat" ;
+        dcterms:title         "NUTS (GeoVocab)"@en ;
+        void:exampleResource  <http://nuts.geovocab.org/id/nuts1> , <http://nuts.geovocab.org/id/LV> ;
+        void:triples          300000 ;
+        dcat:distribution     [ dcat:accessURL  <http://nuts.geovocab.org/data/0.91/nuts-rdf-0.91.ttl> ] ;
+        foaf:homepage         <http://nuts.geovocab.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/linked-eurostat> , <http://lod-cloud.net/dataset/nuts-geovocab> ;
+  void:triples  1500
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/nuts-geovocab> ;
+  void:triples  50
+] .

@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/uk-legislation-api> , <http://lod-cloud.net/dataset/esd-standards> ;
+  void:triples  937
+] .
+
+<http://lod-cloud.net/dataset/esd-standards>
+        a                     void:Dataset ;
+        dcterms:description   "Standard controlled vocabularies used within the UK public sector."@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   "support@esd.org.uk"
+                              ] ;
+        dcterms:subject       "government" , "ukgov" , "country-uk" , "lodcloud-diagram-2014-08-30" , "no-provenance-metadata" , "lod" , "no-proprietary-vocab" , "no-license-metadata" , "format-skos" , "no-vocab-mappings" , "lodcloud-diagram-2011-09-19" , "published-by-producer" ;
+        dcterms:title         "ESD Standards: Controlled lists for the UK public sector"@en ;
+        void:exampleResource  <http://id.esd.org.uk/service/13.rdf> , <http://id.esd.org.uk/duty/208.rdf> ;
+        void:triples          234230 ;
+        foaf:homepage         <http://standards.esd.org.uk/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/esd-standards> ;
+  void:triples  25
+] .

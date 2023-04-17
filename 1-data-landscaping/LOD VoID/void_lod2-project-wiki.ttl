@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/lod2-project-wiki> ;
+  void:triples  75
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/lod2-project-wiki> ;
+  void:triples  24
+] .
+
+<http://lod-cloud.net/dataset/lod2-project-wiki>
+        a                     void:Dataset ;
+        dcterms:description   "Projekt Wiki of the LOD2 EU Project"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "crawledLinkedDataCloud2014" , "lodcloud-diagram-2014-08-30" , "LinkedDataCrawl2014" , "format-owl" , "format-tsioc" , "publications" , "format-sioc" , "format-dcterm" , "format-doap" , "format-skos" , "format-foaf" , "format-lod2" , "format-rdf" , "format-rdfs" , "non-deref-vocab" ;
+        dcterms:title         "LOD2 Project Wiki"@en ;
+        void:exampleResource  <http://lod2.eu/model/export/?m=http://lod2.eu/&f=rdfxml> ;
+        void:triples          "0"^^xsd:int ;
+        foaf:homepage         <http://lod2.eu> .

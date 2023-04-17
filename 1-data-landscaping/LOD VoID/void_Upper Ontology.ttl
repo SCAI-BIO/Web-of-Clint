@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/Upper+Ontology>
+        a                    void:Dataset ;
+        dcterms:description  "This is the Ontology that defines the structure of universe and concept of reality. In super ontology  there is a distinction between defining and characteristic features. The devised super ontology and hence the domain ontologies can be reused across applications because of the generalized representation scheme used that is an EHCPR. An Extended Hierarchical Censored Production Rules (EHCPRs) system is a knowledge representation system for reasoning with real life problems and a step towards a generalized representation system."@en ;
+        dcterms:publisher    [ rdfs:label  "Sonika" ;
+                               foaf:mbox   "sonika.malik@gmail.com"
+                             ] ;
+        dcterms:subject      "user_generated" , "Space" , "Time" , "EHCPR" , "Matter" ;
+        dcterms:title        "Sup_Ont: An Upper Ontology"@en ;
+        void:sparqlEndpoint  <https://query.wikidata.org/bigdata/namespace/wdq/sparql?query={SPARQL}> ;
+        void:triples         120 ;
+        foaf:homepage        <https://sonika-malik.github.io/super-ontology/sup_proton.xml> .
+
+[ void:target   <http://lod-cloud.net/dataset/Generalized Super Ontology> , <http://lod-cloud.net/dataset/Upper+Ontology> ;
+  void:triples  33
+] .

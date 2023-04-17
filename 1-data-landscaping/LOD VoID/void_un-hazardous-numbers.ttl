@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/un-hazardous-numbers>
+        a                     void:Dataset ;
+        dcterms:description   "UN Numbers are categories of harzardous materials.  See http://en.wikipedia.org/wiki/UN_numbers for more details."@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "deref-vocab" , "lodcloud.nolinks" , "dc" , "lod" , "government" , "format-owl" , "format-dc" , "license-metadata" , "published-by-third-party" , "format-rdfs" , "lodcloud.unconnected" , "format-rdf" , "provenance-metadata" ;
+        dcterms:title         "UN Hazardous Materials Numbers"@en ;
+        void:exampleResource  <http://data.kasabi.com/dataset/un-hazardous-material-numbers/1203.rdf> ;
+        void:sparqlEndpoint   <http://api.kasabi.com/dataset/un-hazardous-material-numbers/apis/sparql> ;
+        void:triples          26550 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2002/07/owl#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.kasabi.com/dataset/un-hazardous-material-numbers/> ] ;
+        dcat:distribution     [ dcat:accessURL  rdfs: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/dc/elements/1.1/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.kasabi.com/dataset/un-hazardous-material-numbers> ] ;
+        foaf:homepage         <http://kasabi.com/dataset/un-hazardous-material-numbers> .

@@ -1,0 +1,32 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/cz-sao-check-actions>
+        a                     void:Dataset ;
+        dcterms:description   "Inspections of the Supreme Audit Office of the Czech Republic"@en ;
+        dcterms:publisher     [ rdfs:label  "Martin Nečaský" ;
+                                foaf:mbox   "necasky@opendata.cz"
+                              ] ;
+        dcterms:subject       "lod" , "format-frbr" , "czech-republic" , "license-metadata" , "government" , "format-fabio" , "vocab-mappings" , "no-deref-vocab" , "format-interval" , "format-skos" , "published-by-third-party" , "format-schema" , "czech" , "provenance-metadata" , "format-dcterms" ;
+        dcterms:title         "Inspections of the Supreme Audit Office of the Czech Republic"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://data.nku.cz/resource/check-action/2012/33%3E&default-graph-uri=http%3A%2F%2Fdata.nku.cz%2Fresource%2Fdataset%2Fcheck-actions&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          27144 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/sao-ontology.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Fdata.nku.cz%2Fresource%2Fdataset%2Fcheck-actions%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/sao-check-actions.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.nku.cz/resource/check-action/2012/33> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://internal.opendata.cz/dumps/sao-ontology.trig> ] ;
+        foaf:homepage         <http://data.nku.cz/resource/dataset/check-actions> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-ovm> , <http://lod-cloud.net/dataset/cz-sao-check-actions> ;
+  void:triples  3528
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-gov-uk-time-intervals> , <http://lod-cloud.net/dataset/cz-sao-check-actions> ;
+  void:triples  1105
+] .

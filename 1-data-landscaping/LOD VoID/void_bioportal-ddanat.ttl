@@ -1,0 +1,40 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/bioportal-ddanat>
+        a                    void:Dataset ;
+        dcterms:description  "A structured controlled vocabulary of the anatomy of the slime-mould <i>Dictyostelium discoideum</i>."@en ;
+        dcterms:publisher    [ rdfs:label  "Rex Chisholm" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "format-rdf" , "format-obo" , "life_sciences" , "published-by-third-party" , "bioportal" , "biomedicine" , "ontology" , "lod" ;
+        dcterms:title        "Dictyostelium discoideum anatomy"@en ;
+        void:triples         2740 ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45398?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1008> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-ddanat> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-ddanat> ;
+  void:triples  35
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-ddanat> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cl> , <http://lod-cloud.net/dataset/bioportal-ddanat> ;
+  void:triples  31
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-ddanat> ;
+  void:triples  12
+] .

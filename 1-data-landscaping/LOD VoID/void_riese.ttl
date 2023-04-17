@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/riese> ;
+  void:triples  100000
+] .
+
+<http://lod-cloud.net/dataset/riese>
+        a                     void:Dataset ;
+        dcterms:description   "The statistical data published on riese was originally published by Eurostat. \r\n\r\n### Openness: Open (?)\r\n\r\n[About page](http://riese.joanneum.at/about.html) has cc-by on page but not clear whether this applies to data. Page also states:\r\n\r\n> The statistical data published on riese was originally published by Eurostat. Provided that the source is acknowledged, Eurostat data may be reproduced under the conditions specified in the general copyright notice."@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "statistics" , "europe" , "lodcloud-diagram-2011-09-19" , "lod" , "published-by-third-party" , "no-vocab-mappings" , "no-provenance-metadata" , "geographic" , "no-proprietary-vocab" , "no-license-metadata" , "format-rdf" ;
+        dcterms:title         "RDFizing and Interlinking the EuroStat Data Set Effort"@en ;
+        void:dataDump         <http://riese.joanneum.at/dump/> ;
+        void:exampleResource  <http://riese.joanneum.at/data/bp010/2007m01_ea> ;
+        void:triples          5000000 ;
+        foaf:homepage         <http://riese.joanneum.at/data/> .

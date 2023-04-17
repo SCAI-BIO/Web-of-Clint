@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/dutch-national-regulations-metalex>
+        a                    void:Dataset ;
+        dcterms:description  "This dataset contains almost all Dutch national regulations in the CEN MetaLex XML, RDF Linked Data and Pajek Network formats. Current coverage is in the order of 27k documents, practically all regulations hosted at [http://overheid.wetten.nl](http://overheid.wetten.nl).\r\n\r\nThe regulations are automatically converted on a daily basis by means of a (hopefully) generic conversion script, that is able to perform a similar conversion for any 'legislative' XML based on a standard mapping from legacy XML elements to CEN MetaLex.\r\n\r\nMetadata follows the guidelines of the CEN MetaLex standard. Legislative events are represented both by means of the MetaLex ontology, as well as using the Open Provenance Model vocabulary (OPMV) and the Simple Event Model (SEM)\r\n\r\nAll URIs are resolvable following the Linked Data principles for Cool URIs."@en ;
+        dcterms:publisher    [ rdfs:label  "Rinke Hoekstra" ;
+                               foaf:mbox   "hoekstra@uva.nl"
+                             ] ;
+        dcterms:subject      "opendatachallenge" , "linked-data" , "legislation" , "format-sem" , "vocab-mappings" , "metalex" , "void-sparql-endpoint" , "lodcloud.unconnected" , "format-time" , "lodcloud.nolinks" , "norm" , "format-metalex" , "regulation" , "case-law" , "format-dc" , "rdf" , "provenance-metadata" , "format-foaf" , "format-opmv" , "xml" , "metalex-format" , "lod" , "format-rdf" ;
+        dcterms:title        "MetaLex Document Server"@en ;
+        void:sparqlEndpoint  <http://doc.metalex.eu:8000/sparql/> ;
+        void:triples         99480958 ;
+        dcat:distribution    [ dcat:accessURL  <http://doc.metalex.eu/static/void.ttl> ] ;
+        foaf:homepage        <http://doc.metalex.eu> .

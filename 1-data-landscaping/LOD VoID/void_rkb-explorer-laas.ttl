@@ -1,0 +1,118 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kaunas> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-courseware> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  82
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-irit> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  31
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-resex> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ieee> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  154
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ulm> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  56
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-curriculum> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-roma> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-laas>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "no-vocab-mappings" , "published-by-third-party" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "void-sparql-endpoint" , "deref-vocab" , "publications" , "lod" , "format-rdf" , "provenance-metadata" ;
+        dcterms:title         "LAAS-CNRS (RKBExplorer)"@en ;
+        void:exampleResource  <http://laas.rkbexplorer.com/id/person-99a6f7d873876fe69e100fa5e1642c85> ;
+        void:sparqlEndpoint   <http://laas.rkbexplorer.com/sparql/> ;
+        void:triples          52312 ;
+        dcat:distribution     [ dcat:accessURL  <http://laas.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://laas.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://laas.rkbexplorer.com/models/void.ttl> ] ;
+        foaf:homepage         <http://laas.rkbexplorer.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  61
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  402
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  27
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ibm> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-pisa> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  23
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  173
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  126
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  49
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  76
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  341
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eurecom> , <http://lod-cloud.net/dataset/rkb-explorer-laas> ;
+  void:triples  7
+] .

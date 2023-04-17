@@ -1,0 +1,276 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa2> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  163
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  62
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vao> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  211
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  188
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-zfa> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  479
+] .
+
+<http://lod-cloud.net/dataset/bioportal-xao>
+        a                    void:Dataset ;
+        dcterms:description  "A structured controlled vocabulary of the anatomy and development of the African clawed frog (<i>Xenopus laevis</i>)."@en ;
+        dcterms:publisher    [ rdfs:label  "Peter pvize" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "published-by-third-party" , "ontology" , "biomedicine" , "format-rdf" , "bioportal" , "life_sciences" , "lod" , "format-obo" ;
+        dcterms:title        "Xenopus anatomy and development"@en ;
+        void:triples         16711 ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/46918?apikey=BP_API_KEY> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1095> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  624
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  37
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-wbbt> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  39
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bspo> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  203
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  501
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mfo> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  58
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tads> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-opl> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bho> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  23
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  587
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bto> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  218
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  45
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  33
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bila> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  56
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  693
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-aeo> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  93
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-aao> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  909
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pma> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  32
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nemo_x1> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-fbcv> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  195
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tgma> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  33
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe-sbc> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  272
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-dc_cl> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-spd> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cl> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  162
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  44
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hao> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  57
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  261
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  339
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  472
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  142
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  263
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  194
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bao> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  253
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bodysystem> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icf_x1> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  83
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  50
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  2185
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vhog> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  261
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  300
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tao> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  412
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-caro> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  54
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-fbbt> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  89
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ma> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  178
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  415
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  171
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sao> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-xao> ;
+  void:triples  38
+] .

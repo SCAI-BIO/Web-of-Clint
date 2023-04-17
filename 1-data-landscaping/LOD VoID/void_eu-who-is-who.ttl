@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/eu-institutions> , <http://lod-cloud.net/dataset/eu-who-is-who> ;
+  void:triples  3260
+] .
+
+<http://lod-cloud.net/dataset/eu-who-is-who>
+        a                     void:Dataset ;
+        dcterms:description   "Data scraped from [EU Whoiswho](http://europa.eu/whoiswho/public/index.cfm?lang=en), the official directory of the European Union. The dataset contains people, organisations and organisational hierarchy."@en ;
+        dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
+                                foaf:mbox   "keithalexander@keithalexander.co.uk"
+                              ] ;
+        dcterms:subject       "published-by-third-party" , "eu-institution" , "no-license-metadata" , "latc" , "eu" , "format-foaf" , "no-deref-vocab" , "lod" , "format-dct" , "government" , "politics" , "provenance-metadata" ;
+        dcterms:title         "EU Who Is Who"@en ;
+        void:dataDump         <http://whoiswho.publicdata.eu/dump/whoiswho.nt> ;
+        void:exampleResource  <http://whoiswho.publicdata.eu/data/institutions/1063.rdf> ;
+        void:sparqlEndpoint   <http://api.talis.com/stores/whoiswho/services/sparql> ;
+        void:triples          198786 ;
+        dcat:distribution     [ dcat:accessURL  <http://whoiswho.publicdata.eu/void.ttl> ] ;
+        foaf:homepage         <http://whoiswho.publicdata.eu/> .

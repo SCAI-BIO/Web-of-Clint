@@ -1,0 +1,31 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/sandrart-net> ;
+  void:triples  2880
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/sandrart-net> ;
+  void:triples  425
+] .
+
+<http://lod-cloud.net/dataset/sandrart-net>
+        a                     void:Dataset ;
+        dcterms:description   "This dataset offers objects (persons, places, works of art, bibliographic items as well as their relations) from an online edition of Joachim von Sandrart’s “Teutsche Academie der Bau-, Bild- und Mahlerey-Künste”, a German three-volume book from the late 17th century.\r\n\r\nPlease note: Data is not yet complete."@en ;
+        dcterms:publisher     [ rdfs:label  "Various" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-ecrm" , "cross_domain" , "art" , "format-rdaGr2" , "crossdomain" , "lod" , "art-history" , "published-by-producer" , "arts" , "format-geonames" , "no-proprietary-vocab" , "format-foaf" ;
+        dcterms:title         "sandrart.net"@en ;
+        void:exampleResource  <http://ta.sandrart.net/-person-2162> ;
+        void:triples          140000 ;
+        dcat:distribution     [ dcat:accessURL  <http://ta.sandrart.net/data/lod.rdf.gz> ] ;
+        foaf:homepage         <http://ta.sandrart.net/edition-information/services/linked-open-data-rdf/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/sandrart-net> ;
+  void:triples  2970
+] .

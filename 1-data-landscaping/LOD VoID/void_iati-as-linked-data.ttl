@@ -1,0 +1,43 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/cia-world-factbook> , <http://lod-cloud.net/dataset/iati-as-linked-data> ;
+  void:triples  240
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/transparency-linked-data> , <http://lod-cloud.net/dataset/iati-as-linked-data> ;
+  void:triples  182
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/iati-as-linked-data> ;
+  void:triples  2486
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fao-linked-data> , <http://lod-cloud.net/dataset/iati-as-linked-data> ;
+  void:triples  191
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/world-bank-linked-data> , <http://lod-cloud.net/dataset/iati-as-linked-data> ;
+  void:triples  212
+] .
+
+<http://lod-cloud.net/dataset/iati-as-linked-data>
+        a                     void:Dataset ;
+        dcterms:description   "International Aid Transparancy Initiative model and data from IATIRegistry as Linked Open Data. \r\n\r\nFor more information see: http://iati2lod.appspot.com\r\n\r\nIt is widely recognized that the effectiveness of aid can be improved by providing transparant insight into aid activities. The International Aid Transparency Initiative (IATI), a multi-stakeholder initiative that seeks to improve the transparency of aid, has developed an open standard for the publication of aid information. As of 2013, over 150 donors, NGOs and governments have registered to the IATI registry for publishing their aid activities in this XML standard. Based on the IATI data, we have created a Linked Data model and converted the open data to Linked Data. In order to show the added benefits of Linked Data, we have linked the IATI dataset to various other datasets such as World Bank indicators and DBPedia information. Finally, we have created several applications which combine the information from the IATI dataset and the datasets it was linked to. As a result, we have shown that creating Linked Data for the IATI dataset and linking it to other datasets give new valuable insights in aid transparency. Based on actual information needs and use cases of IATI users, we were able to show that linking IATI data adds significant value to the data and is able to fulfill the needs of IATI users."@en ;
+        dcterms:publisher     [ rdfs:label  "Kasper Brandt" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "accountibility" , "lod" , "international-development" , "Aid" , "Development" , "lodcloud-diagram-2014-08-30" , "Transparency" , "government" , "linked data" , "ld4d" , "ict4d" , "developing countries" ;
+        dcterms:title         "IATI as Linked Data"@en ;
+        void:exampleResource  <http://purl.org/collections/iati/codelist/Country/TD> ;
+        void:sparqlEndpoint   <http://semanticweb.cs.vu.nl/iati/sparql/> ;
+        void:triples          36629045 ;
+        dcat:distribution     [ dcat:accessURL  <https://bitbucket.org/biktorrr/iati2lod_data> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/iati-as-linked-data> ;
+  void:triples  484
+] .

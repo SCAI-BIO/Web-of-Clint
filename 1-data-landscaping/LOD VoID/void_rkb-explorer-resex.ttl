@@ -1,0 +1,82 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  291
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ibm> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  7
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-resex>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "format-rdf" , "void-sparql-endpoint" , "publications" , "lodcloud-diagram-2011-09-19" , "deref-vocab" , "lod" , "provenance-metadata" , "published-by-third-party" , "no-vocab-mappings" , "lodcloud-diagram-2014-08-30" , "no-license-metadata" , "format-akt" , "format-dc" ;
+        dcterms:title         "ReSIST Resilience Mechanisms (RKBExplorer.com)"@en ;
+        void:exampleResource  <http://resex.rkbexplorer.com/id/resilience-mechanism-65b5cef4> ;
+        void:sparqlEndpoint   <http://resex.rkbexplorer.com/sparql/> ;
+        void:triples          55582 ;
+        dcat:distribution     [ dcat:accessURL  <http://resex.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://resex.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://resex.rkbexplorer.com/sitemap.xml> ] ;
+        foaf:homepage         <http://resex.rkbexplorer.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ieee> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-pisa> , <http://lod-cloud.net/dataset/rkb-explorer-resex> ;
+  void:triples  3
+] .

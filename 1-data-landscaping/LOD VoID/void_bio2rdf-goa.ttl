@@ -1,0 +1,54 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/bio2rdf-goa> ;
+  void:triples  283697
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-goa> ;
+  void:triples  5324440
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pdb> , <http://lod-cloud.net/dataset/bio2rdf-goa> ;
+  void:triples  215583
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-goa>
+        a                     void:Dataset ;
+        dcterms:description   "The GOA (Gene Ontology Annotation) project provides high-quality Gene Ontology (GO) annotations to proteins in the UniProt Knowledgebase (UniProtKB) and International Protein Index (IPI). This involves electronic annotation and the integration of high-quality manual GO annotation from all GO Consortium model organism groups and specialist groups."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "format-dc" , "format-rdf" , "vocab-mappings" , "provenance-metadata" , "bio2rdf" , "lifesciences" , "lodcloud-diagram-2014-08-30" , "lod" , "deref-vocab" , "license-metadata" , "published-by-third-party" , "life_sciences" , "format-rdfs" ;
+        dcterms:title         "Bio2RDF::Goa"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/goa/goa_mouse.nq.gz> , <http://download.bio2rdf.org/current/goa/goa_dicty.nq.gz> , <http://download.bio2rdf.org/current/goa/goa_pdb.nq.gz> , <http://download.bio2rdf.org/current/goa/goa_fly.nq.gz> , <http://download.bio2rdf.org/current/goa/goa_arabidopsis.nq.gz> , <http://download.bio2rdf.org/current/goa/goa_dog.nq.gz> , <http://download.bio2rdf.org/current/goa/goa_human.nq.gz> , <http://download.bio2rdf.org/current/goa/goa_cow.nq.gz> , <http://download.bio2rdf.org/current/goa/goa_pig.nq.gz> , <http://download.bio2rdf.org/current/goa/goa_chicken.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/go:0006915> ;
+        void:sparqlEndpoint   <http://goa.bio2rdf.org/sparql> ;
+        void:triples          97520151 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/goa/bio2rdf-goa.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/goa/goa.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/goa/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/goa/bio2rdf_goa_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/goa/goa.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/goa/> ] ;
+        foaf:homepage         <http://goa.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-go> , <http://lod-cloud.net/dataset/bio2rdf-goa> ;
+  void:triples  21460
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-eco> , <http://lod-cloud.net/dataset/bio2rdf-goa> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxonomy> , <http://lod-cloud.net/dataset/bio2rdf-goa> ;
+  void:triples  5522
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-goa> ;
+  void:triples  99332
+] .

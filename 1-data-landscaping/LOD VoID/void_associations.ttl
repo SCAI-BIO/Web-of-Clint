@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/associations>
+        a                     void:Dataset ;
+        dcterms:description   "A collection of associations and mapping to DBpedia entities. Currently consisting of 780000 human associations from the Edinburgh Associative Thesaurus (as RDF) and a verified mapping of 790 strong distinct associations (corresponding to ~25000 human associations) to DBpedia entities.\r\n\r\nSee https://w3id.org/associations for more information."@en ;
+        dcterms:publisher     [ rdfs:label  "Jörn Hees" ;
+                                foaf:mbox   "associations+spamprotect+remove+if+human@joernhees.de"
+                              ] ;
+        dcterms:subject       "psychological" , "associations" , "lod" , "published-by-producer" , "human associations" , "psychology" , "word associations" , "semantic associations" , "lifesciences" , "format-rdfs" , "Artificial Intelligence" , "machine learning" , "linguistics" , "thesaurus" , "linguistic" ;
+        dcterms:title         "associations"@en ;
+        void:dataDump         <https://w3id.org/associations/eat.nt.gz> ;
+        void:exampleResource  <https://w3id.org/associations/mapping_eat_dbpedia#crop/wheat> ;
+        void:triples          1680000 ;
+        dcat:distribution     [ dcat:accessURL  <https://w3id.org/associations> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://w3id.org/associations/mapping_eat_dbpedia.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://w3id.org/associations/vocab.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://w3id.org/associations/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://w3id.org/associations/mapping_eat_dbpedia.tsv> ] ;
+        foaf:homepage         <https://w3id.org/associations> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/associations> ;
+  void:triples  1580
+] .

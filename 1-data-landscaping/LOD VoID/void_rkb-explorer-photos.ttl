@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/rkb-explorer-photos>
+        a                    void:Dataset ;
+        dcterms:description  ""@en ;
+        dcterms:publisher    [ rdfs:label  "Hugh Glaser" ;
+                               foaf:mbox   "hg@ecs.soton.ac.uk"
+                             ] ;
+        dcterms:subject      "broken_link" , "provenance-metadata" , "publications" , "format-rdf" , "void-sparql-endpoint" , "lod" ;
+        dcterms:title        "photos"@en ;
+        void:sparqlEndpoint  <http://photos.rkbexplorer.com/sparql> ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <http://photos.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://photos.rkbexplorer.com/models/void.ttl> ] ;
+        foaf:homepage        <http://photos.rkbexplorer.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-photos> ;
+  void:triples  100
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/flickr-wrappr> , <http://lod-cloud.net/dataset/rkb-explorer-photos> ;
+  void:triples  99
+] .

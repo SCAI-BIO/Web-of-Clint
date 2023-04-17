@@ -1,0 +1,69 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-bka-li> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  5
+] .
+
+<http://lod-cloud.net/dataset/statusnet-opensim-chat-eu>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://opensim-chat.eu"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-foaf" , "format-rdf" , "LinkedDataCrawl2014" , "format-sioc" , "format-rdfs" , "social web" , "lodcloud-diagram-2014-08-30" , "crawledLinkedDataCloud2014" , "format-bio" , "format-pos" ;
+        dcterms:title         "statusnet-opensim-chat-eu"@en ;
+        void:exampleResource  <http://opensim-chat.eu/vanish/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-legadolibre-com-ar> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-gomertronic-com> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  9
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-1w6-org> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-mamalibre-com-ar> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> ;
+  void:triples  2
+] .

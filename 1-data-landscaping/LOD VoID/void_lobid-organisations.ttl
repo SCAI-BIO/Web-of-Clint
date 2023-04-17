@@ -1,0 +1,32 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-de> , <http://lod-cloud.net/dataset/lobid-organisations> ;
+  void:triples  1289
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/lobid-organisations> ;
+  void:triples  3520
+] .
+
+<http://lod-cloud.net/dataset/lobid-organisations>
+        a                     void:Dataset ;
+        dcterms:description   "lobid-organisation is an Index of libraries and related organisations\r\nIt provides URIs for > 44 k  *library-organisations* and *museums*.The URIs are based on the existing and well established International Standard Identifier for Libraries and Related Organizations (*ISIL*) which can also act as MARC Organization Codes. They are assigned to library institutions by national or institutional agencies. There are ca. **44.000** institutions described.\r\n\r\nYou can find additional information about this data [here](https://wiki1.hbz-nrw.de/pages/viewpage.action?pageId=1572888)."@en ;
+        dcterms:publisher     [ rdfs:label  "North Rhine-Westphalian Library Service Center" ;
+                                foaf:mbox   "semweb@hbz-nrw.de"
+                              ] ;
+        dcterms:subject       "format-vcard" , "museum" , "lodcloud.nolinks" , "library" , "organisations" , "format-foaf" , "archive" , "addresses" , "publications" , "no-vocab-mappings" , "authority" , "lodcloud-diagram-2014-08-30" , "geography" , "published-by-producer" , "lld" , "format-geo" , "format-hcard" , "format-xsd" , "germany" , "organizations" , "license-metadata" , "lod" , "no-proprietary-vocab" , "lodcloud-diagram-2011-09-19" , "provenance-metadata" , "authorities" , "format-geonames" ;
+        dcterms:title         "lobid-organisations"@en ;
+        void:exampleResource  <http://lobid.org/organisation/DE-Wup4> ;
+        void:sparqlEndpoint   <http://lobid.org/sparql/> ;
+        void:triples          776735 ;
+        dcat:distribution     [ dcat:accessURL  <http://lobid.org/dataset/organisation/about.ttl> ] ;
+        foaf:homepage         <http://lobid.org/organisation> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/lobid-organisations> ;
+  void:triples  13253
+] .

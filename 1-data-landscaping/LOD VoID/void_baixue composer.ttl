@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/baixue+composer>
+        a                    void:Dataset ;
+        dcterms:description  "baixue composer"@en ;
+        dcterms:publisher    [ rdfs:label  "wageawgw" ;
+                               foaf:mbox   "ewagrehawg@qage.com"
+                             ] ;
+        dcterms:subject      "cross_domain" ;
+        dcterms:title        "baixue composer"@en ;
+        void:dataDump        <https://demo.ckan.org/dataset/27ddc796-ff3b-472f-9ff2-c613b22911b7/resource/0cdae291-2588-4ae5-a13b-dcc074d66262/download/composer.ttl> ;
+        void:triples         "0"^^xsd:int ;
+        foaf:homepage        <http://baixue.com> .

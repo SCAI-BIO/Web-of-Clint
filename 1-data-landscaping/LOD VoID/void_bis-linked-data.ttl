@@ -1,0 +1,73 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/nasa> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  46
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  534
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  515
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/imf-linked-data> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  72
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/transparency-linked-data> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  406
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/oecd-linked-data> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/uis-linked-data> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  2310
+] .
+
+<http://lod-cloud.net/dataset/bis-linked-data>
+        a                     void:Dataset ;
+        dcterms:description   "BIS data and metadata"@en ;
+        dcterms:publisher     [ rdfs:label  "Sarven Capadisli" ;
+                                foaf:mbox   "info@csarven.ca"
+                              ] ;
+        dcterms:subject       "no-proprietary-vocab" , "format-prov" , "format-dcterms" , "lodcloud-candidate" , "international" , "void-sparql-endpoint" , "statistics" , "format-qb" , "published-by-third-party" , "europe" , "lodcloud" , "bank" , "format-skos" , "license-metadata" , "country-codes" , "format-rdf" , "government" , "format-sdmx" , "linked-data" , "economics" , "vocab-mappings" , "indicators" , "provenance-metadata" , "lod" ;
+        dcterms:title         "Bank for International Settlements (BIS) Linked Data"@en ;
+        void:exampleResource  <http://bis.270a.info/dataset/BIS_M_CIBL_IB> ;
+        void:sparqlEndpoint   <http://bis.270a.info/sparql> ;
+        void:triples          54200000 ;
+        dcat:distribution     [ dcat:accessURL  <http://bis.270a.info/data/meta.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://bis.270a.info/data/data.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://bis.270a.info/.well-known/void> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/frb-linked-data> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  54
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fao-linked-data> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  472
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/world-bank-linked-data> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  487
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ecb-linked-data> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  574
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bfs-linked-data> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  466
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/the-eurostat-linked-data> , <http://lod-cloud.net/dataset/bis-linked-data> ;
+  void:triples  489
+] .

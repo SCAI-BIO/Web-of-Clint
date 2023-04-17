@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/Face Link> , <http://lod-cloud.net/dataset/HealthCare+Ontology> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/SocialLink> , <http://lod-cloud.net/dataset/HealthCare+Ontology> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/HealthCare+Ontology>
+        a                    void:Dataset ;
+        dcterms:description  "A sensor based Health Care Ontology"@en ;
+        dcterms:publisher    [ rdfs:label  "Dr. Sanju Tiwari" ;
+                               foaf:mbox   "tiwarisanju18@ieee.org"
+                             ] ;
+        dcterms:subject      "life_sciences" ;
+        dcterms:title        "HealthCare Ontology"@en ;
+        void:dataDump        <http://bioportal.bioontology.org/ontologies/HCOT> ;
+        void:sparqlEndpoint  <https://www.orpha.net/sparql> ;
+        void:triples         48 ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/HCOT> .

@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/gwa-ili> , <http://lod-cloud.net/dataset/english-wordnet> ;
+  void:triples  117791
+] .
+
+<http://lod-cloud.net/dataset/english-wordnet>
+        a                     void:Dataset ;
+        dcterms:description   "English WordNet is a new wordnet for English based on the Princeton WordNet, but  developed under an open-source model. In particular, this version of WordNet  has been developed by multiple people around the world through GitHub, fixes many errors in previous wordnets for English."@en ;
+        dcterms:publisher     [ rdfs:label  "John McCrae" ;
+                                foaf:mbox   "john@mccr.ae"
+                              ] ;
+        dcterms:subject       "wordnet" , "linguistics" , "llod" , "lexicon" ;
+        dcterms:title         "English WordNet"@en ;
+        void:dataDump         <https://en-word.net/static/english-wordnet-2019.ttl.gz> , <https://en-word.net/static/english-wordnet-2019.xml.gz> ;
+        void:exampleResource  <https://en-word.net/ttl/lemma/milk> ;
+        void:triples          "0"^^xsd:int ;
+        foaf:homepage         <https://en-word.net> .

@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/rkb-explorer-oai>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "no-license-metadata" , "format-foaf" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "void-sparql-endpoint" , "format-rdf" , "lod" , "provenance-metadata" , "publications" , "deref-vocab" , "no-vocab-mappings" , "lodcloud-diagram-2014-08-30" , "format-dc" ;
+        dcterms:title         "Open Archive Initiative Harvest over OAI-PMH (RKBExplorer)"@en ;
+        void:exampleResource  <http://oai.rkbexplorer.com/id/eprints.aston.ac.uk/person-27de9959dd8fe48b5e154f61ef6541ae-8d6ca3a18076768bde32679de0a6644f> ;
+        void:sparqlEndpoint   <http://oai.rkbexplorer.com/sparql/> ;
+        void:triples          24206591 ;
+        dcat:distribution     [ dcat:accessURL  <http://oai.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://oai.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://oai.rkbexplorer.com/sitemap.xml> ] ;
+        foaf:homepage         <http://oai.rkbexplorer.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/southampton-ecs-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-oai> ;
+  void:triples  184
+] .

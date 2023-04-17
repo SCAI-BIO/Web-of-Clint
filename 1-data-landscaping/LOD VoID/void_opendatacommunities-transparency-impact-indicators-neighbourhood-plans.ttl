@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-neighbourhood-plans> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-neighbourhood-plans>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "crawledLinkedDataCloud2014" , "format-cube" , "format-rdfs" , "government" , "format-sdmxd" , "dataset-level-metadata" , "sparql" , "provenance-metadata" , "LinkedDataCrawl2014" , "license-metadata" , "format-void" , "format-rdf" , "dump" , "format-dcterm" , "lodcloud-diagram-2014-08-30" , "format-dcat" ;
+        dcterms:title         "opendatacommunities-transparency-impact-indicators-neighbourhood-plans"@en ;
+        void:exampleResource  <http://opendatacommunities.org/data/transparency/impact-indicators/neighbourhood-plans/2013-03> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-neighbourhood-plans> ;
+  void:triples  1
+] .

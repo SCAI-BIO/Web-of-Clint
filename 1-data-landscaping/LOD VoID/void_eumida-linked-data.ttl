@@ -1,0 +1,32 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/linked-nuts> , <http://lod-cloud.net/dataset/eumida-linked-data> ;
+  void:triples  286
+] .
+
+<http://lod-cloud.net/dataset/eumida-linked-data>
+        a                     void:Dataset ;
+        dcterms:description   "Data about European Higher Education Institutions, including statistics from 2008 regarding numbers of students, foreign students, PhD students etc. Based on the EUMIDA report."@en ;
+        dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
+                                foaf:mbox   "ckan@keithalexander.co.uk"
+                              ] ;
+        dcterms:subject       "published-by-third-party" , "no-deref-vocab" , "format-dcterm" , "latc" , "format-ov" , "lod" , "government" , "eu-institution" ;
+        dcterms:title         "EUMIDA as Linked Data"@en ;
+        void:exampleResource  <http://eumida.publicdata.eu/data/institution/AT055.rdf> , <http://eumida.publicdata.eu/data/dataset/doctorates-awarded.rdf> , <http://eumida.publicdata.eu/data/institution/AT055/ISCED6-Students-enrolled.rdf> ;
+        void:sparqlEndpoint   <http://api.talis.com/stores/eumida/services/sparql> ;
+        void:triples          133085 ;
+        dcat:distribution     [ dcat:accessURL  <http://eumida.publicdata.eu/void.ttl> ] ;
+        foaf:homepage         <http://eumida.publicdata.eu/> .
+
+[ void:target   <http://lod-cloud.net/dataset/eurostat-linked-data> , <http://lod-cloud.net/dataset/eumida-linked-data> ;
+  void:triples  27
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nuts-geovocab> , <http://lod-cloud.net/dataset/eumida-linked-data> ;
+  void:triples  286
+] .

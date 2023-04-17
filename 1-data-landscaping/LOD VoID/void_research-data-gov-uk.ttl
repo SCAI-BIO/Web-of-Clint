@@ -1,0 +1,38 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/research-data-gov-uk> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/education-data-gov-uk> , <http://lod-cloud.net/dataset/research-data-gov-uk> ;
+  void:triples  375
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/research-data-gov-uk> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/business-data-gov-uk> , <http://lod-cloud.net/dataset/research-data-gov-uk> ;
+  void:triples  598
+] .
+
+<http://lod-cloud.net/dataset/research-data-gov-uk>
+        a                     void:Dataset ;
+        dcterms:description   "Research-related data from data.gov.uk:\r\n\r\n* [Namespace for research projects](http://research.data.gov.uk/doc/project)\r\n* Engineering and Physical Sciences Research Council (EPSRC) funded projects\r\n* Medical Research Council (MRC) funded projects\r\n* Technology Strategy Board (TSB) funded projects\r\n* Grant schemes\r\n* People associated with projects\r\n\r\nThe data is from the BIS dataset.\r\n\r\nPart of package:data-gov-uk"@en ;
+        dcterms:publisher     [ rdfs:label  "Data.gov.uk Team" ;
+                                foaf:mbox   "team@data.gov.uk"
+                              ] ;
+        dcterms:subject       "format-skos" , "no-provenance-metadata" , "data.gov.uk" , "no-vocab-mappings" , "funding" , "government" , "deref-vocab" , "research" , "lodcloud-diagram-2011-09-19" , "format-foaf" , "no-license-metadata" , "published-by-producer" , "format-rdf" , "lod" ;
+        dcterms:title         "research.data.gov.uk"@en ;
+        void:dataDump         <http://source.data.gov.uk/data/research/bis-research-explorer/2010-03-04/research.data.gov.uk.nt> ;
+        void:exampleResource  <http://research.data.gov.uk/doc/project/epsrc/DT/E005039/1.rdf> ;
+        void:sparqlEndpoint   <http://services.data.gov.uk/research/sparql> ;
+        void:triples          43334 ;
+        dcat:distribution     [ dcat:accessURL  <http://services.data.gov.uk/research/search> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://research.data.gov.uk/doc/project> ] ;
+        foaf:homepage         <http://research.data.gov.uk/> .

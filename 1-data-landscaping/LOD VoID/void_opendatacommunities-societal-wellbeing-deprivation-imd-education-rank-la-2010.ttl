@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-education-rank-la-2010> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-education-rank-la-2010> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-education-rank-la-2010>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "format-rdf" , "dump" , "dataset-level-metadata" , "sparql" , "crawledLinkedDataCloud2014" , "LinkedDataCrawl2014" , "provenance-metadata" , "format-dcterm" , "government" , "format-dcat" , "format-rdfs" , "format-void" , "format-cube" , "license-metadata" ;
+        dcterms:title         "opendatacommunities-societal-wellbeing-deprivation-imd-education-rank-la-2010"@en ;
+        void:exampleResource  <http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-education-rank-la-2010/E07000139> ;
+        void:triples          "0"^^xsd:int .

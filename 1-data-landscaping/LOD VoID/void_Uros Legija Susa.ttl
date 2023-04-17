@@ -1,0 +1,17 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/Uros+Legija+Susa>
+        a                    void:Dataset ;
+        dcterms:description  "U ime Legije"@en ;
+        dcterms:publisher    [ rdfs:label  "Uros Susa" ;
+                               foaf:mbox   "urossusa56@yahoo.com"
+                             ] ;
+        dcterms:subject      "user_generated" , "Numbers" ;
+        dcterms:title        "Legija Stranaca"@en ;
+        void:triples         5 ;
+        foaf:homepage        <http://www.legion-etrangere.com> .

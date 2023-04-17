@@ -1,0 +1,17 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/FAO+species>
+        a                    void:Dataset ;
+        dcterms:description  "Taxonomic classification of biological entities, data is maintained in ASFIS, by FAO. This model implements the ontology design patterns for taxonomic classifications. See http://ontologydesignpatterns.org. This ontology has been made for testing purposes and should not be used as official expressions of any of the classifications systems modelled.  Source: NeOn project, creator: Caterina Caracciolo, KCEW - FA"@en ;
+        dcterms:publisher    [ rdfs:label  "Raul Palma, Soumya Brahma" ;
+                               foaf:mbox   "rpalma@man.poznan.pl"
+                             ] ;
+        dcterms:subject      "life_sciences" ;
+        dcterms:title        "FAO ASFIS classification of biological entities @PSNC"@en ;
+        void:triples         318359 ;
+        foaf:homepage        <https://www.foodie-cloud.org/fct/> .

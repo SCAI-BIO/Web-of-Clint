@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/umthes>
+        a                     void:Dataset ;
+        dcterms:description   "A German-centric thesaurus about environmental protection, maintained by the Federal Environment Agency, Germany. Includes English translations of most terms."@en ;
+        dcterms:publisher     [ rdfs:label  "Barbara Fock" ;
+                                foaf:mbox   "barbara.fock@uba.de"
+                              ] ;
+        dcterms:subject       "search" , "format-rdf" , "government" , "format-skos" , "thesaurus" , "environment" , "access-api" , "rdf" , "published-by-producer" , "access-www" , "format-xhtml" ;
+        dcterms:title         "German environmental thesaurus UMTHES"@en ;
+        void:exampleResource  <https://sns.uba.de/umthes/_00015423.rdf> , <https://sns.uba.de/umthes/_1512052c.nt> , <https://sns.uba.de/umthes/_00025221> , <https://sns.uba.de/umthes/_00604562.ttl> ;
+        void:triples          300000 ;
+        foaf:homepage         <https://sns.uba.de/umthes/> .
+
+[ void:target   <http://lod-cloud.net/dataset/gemet> , <http://lod-cloud.net/dataset/umthes> ;
+  void:triples  3511
+] .

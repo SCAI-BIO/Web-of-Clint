@@ -1,0 +1,118 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/twc-ieeevis> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/twc-logd> , <http://lod-cloud.net/dataset/twc-ieeevis> ;
+  void:triples  101
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dcs-sheffield> , <http://lod-cloud.net/dataset/twc-ieeevis> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/twc-ieeevis> ;
+  void:triples  9
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semanticweb-org> , <http://lod-cloud.net/dataset/twc-ieeevis> ;
+  void:triples  299
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/twc-ieeevis> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/twc-ieeevis> ;
+  void:triples  27400
+] .
+
+<http://lod-cloud.net/dataset/twc-ieeevis>
+        a                     void:Dataset ;
+        dcterms:description   "Collection of the datasets used by papers published in [IEEE VIS](http://ieeevis.org/) and related conferences, provided as [Linked Open Data](http://linkeddata.org/). This dataset is derived from the individual datasets listed in the [ieee-vis](http://datahub.io/group/ieee-vis) group. (Note that this LOD bubble should be connected to http://datahub.io/dataset/rkb-explorer-ieee/related)"@en ;
+        dcterms:publisher     [ rdfs:label  "Timothy Lebo" ;
+                                foaf:mbox   "lebot@rpi.edu"
+                              ] ;
+        dcterms:subject       "format-dc" , "format-dcat" , "format-nfo" , "format-conv" , "format-pmlp" , "vocab-mappings" , "format-qb" , "format-bibo" , "format-vann" , "format-sio" , "format-owl" , "format-doap" , "format-datafaqs" , "lodcloud-diagram-2014-08-30" , "format-graffle" , "format-oboro" , "format-event" , "no-license-metadata" , "format-rdfs" , "format-pml" , "format-sioc" , "format-grddl" , "published-by-third-party" , "prizms" , "crossdomain" , "format-tag" , "publications" , "format-vsr" , "datafaqs" , "deref-vocab" , "format-rdf" , "format-ov" , "format-con" , "format-prv" , "format-foaf" , "format-skos" , "format-dbpedia" , "provenance-metadata" , "lod" , "format-prov" , "format-irw" , "format-opm" , "format-pmlj" , "format-void" , "format-coin" , "format-geo" ;
+        dcterms:title         "IEEE VIS Source Data"@en ;
+        void:dataDump         <http://ieeevis.tw.rpi.edu/source/ieeevis-tw-rpi-edu/file/cr-full-dump/version/latest/conversion/ieeevis-tw-rpi-edu.nt.gz> ;
+        void:exampleResource  <http://ieeevis.tw.rpi.edu/source/ieeevis-tw-rpi-edu/dataset/movie-characters/version/2013-May-22/r2-d2> , <http://dx.doi.org/10.1109/TVCG.2010.181> , <http://ieeevis.tw.rpi.edu/source/eagereyes-org/dataset/acceptance-rates/venue/eurovis/year/1999/submitted> ;
+        void:sparqlEndpoint   <http://ieeevis.tw.rpi.edu/nosparql> ;
+        void:triples          19935340 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2003/01/geo/wgs84_pos> ] ;
+        dcat:distribution     [ dcat:accessURL  dcat: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://obofoundry.org/ro/ro.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2000/10/swap/pim/contact> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/datafaqs#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ieeevis.tw.rpi.edu/source/ieeevis-tw-rpi-edu/file/cr-aggregated-params/version/latest/conversion/ieeevis-tw-rpi-edu-cr-aggregated-params-latest.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/net/provenance/ns> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.semanticdesktop.org/ontologies/nfo/#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2002/07/owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2003/g/data-view#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdfs.org/sioc/ns> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://inference-web.org/2.0/pml-provenance.owl#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/vsr/graffle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://usefulinc.com/ns/doap#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/dcat> ] ;
+        dcat:distribution     [ dcat:accessURL  rdfs: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://provenanceweb.org/ns/pml#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/conversion/> ] ;
+        dcat:distribution     [ dcat:accessURL  foaf: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://dbpedia.org/resource/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/vsr> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/court/def/2009/coin#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.holygoat.co.uk/owl/redwood/0.1/tags/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://inference-web.org/2.0/pml-justification.owl#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://inference-web.org/2.0/pml-justification.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdfs.org/sioc/ns#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://provenanceweb.org/ns/pml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2003/01/geo/wgs84_pos#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://inference-web.org/2.0/pml-provenance.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  void: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/prov> ] ;
+        dcat:distribution     [ dcat:accessURL  dcterms: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2000/10/swap/pim/contact#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/datafaqs> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2004/02/skos/core#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://obofoundry.org/ro/ro.owl#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://usefulinc.com/ns/doap> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/net/provenance/ns#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://openprovenance.org/ontology> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2003/g/data-view> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2002/07/owl#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/1999/02/22-rdf-syntax-ns> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://openprovenance.org/ontology#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.ontologydesignpatterns.org/ont/web/irw.owl#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2000/01/rdf-schema> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/linked-data/cube#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/NET/c4dm/event.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ieeevis.tw.rpi.edu/novoid.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/vocab/vann/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://semanticscience.org/resource/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.ontologydesignpatterns.org/ont/web/irw.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/vsr#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ieeevis.tw.rpi.edu/source/ieeevis-tw-rpi-edu/file/cr-sitemap/version/latest/conversion/sitemap.xml.hide> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/court/def/2009/coin> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/vsr/graffle#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/linked-data/cube> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/prov#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/ontology/bibo/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2004/02/skos/core> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdfs.org/ns/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://open.vocab.org/terms/> ] ;
+        foaf:homepage         <http://ieeevis.tw.rpi.edu> .
+
+[ void:target   <http://lod-cloud.net/dataset/l3s-dblp> , <http://lod-cloud.net/dataset/twc-ieeevis> ;
+  void:triples  26
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedmdb> , <http://lod-cloud.net/dataset/twc-ieeevis> ;
+  void:triples  19
+] .

@@ -1,0 +1,204 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-gaz> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ma> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  35
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-aeo> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  25
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-hao> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  23
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bila> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  55
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  45
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cl> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  35
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  53
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  123
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  39
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  55
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  115
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  102
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mfo> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  39
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bto> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  64
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  194
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  147
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  25
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  51
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  86
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  45
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-pr> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa2> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  26
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  107
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-xao> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  39
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  37
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  83
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  58
+] .
+
+<http://lod-cloud.net/dataset/bioportal-wbbt>
+        a                    void:Dataset ;
+        dcterms:description  "A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>."@en ;
+        dcterms:publisher    [ rdfs:label  "Raymond Lee" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "biomedicine" , "life_sciences" , "format-obo" , "format-rdf" , "lod" , "published-by-third-party" , "ontology" , "bioportal" ;
+        dcterms:title        "C. elegans gross anatomy"@en ;
+        void:triples         97058 ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47291?apikey=BP_API_KEY> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1048> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  92
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  95
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-zfa> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  53
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-tao> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  54
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vhog> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  37
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-fbbt> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  61
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-cco> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  23
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-aao> , <http://lod-cloud.net/dataset/bioportal-wbbt> ;
+  void:triples  42
+] .

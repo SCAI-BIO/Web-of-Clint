@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/fu-berlin-cordis>
+        a                     void:Dataset ;
+        dcterms:description   "The Community Research and Development Information Service (CORDIS) contains information on all EU programmes and projects."@en ;
+        dcterms:publisher     [ rdfs:label  "Anja Jentzsch" ;
+                                foaf:mbox   "mail@anjajentzsch.de"
+                              ] ;
+        dcterms:subject       "published-by-third-party" , "no-provenance-metadata" , "government" , "no-license-metadata" , "deref-vocab" , "no-vocab-mappings" , "lodcloud-diagram-2011-09-19" , "format-rdf" , "format-dc" , "format-foaf" , "business" , "lod" , "latc" ;
+        dcterms:title         "Community Research and Development Information Service (CORDIS)"@en ;
+        void:exampleResource  <http://www4.wiwiss.fu-berlin.de/cordis/resource/Project/65146> ;
+        void:sparqlEndpoint   <http://www4.wiwiss.fu-berlin.de/cordis/sparql> ;
+        void:triples          7107144 ;
+        foaf:homepage         <http://www4.wiwiss.fu-berlin.de/cordis/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/fu-berlin-cordis> ;
+  void:triples  285256
+] .

@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/debian-package-tracking-system>
+        a                    void:Dataset ;
+        dcterms:description  "Data on all Debian packages is available as RDF via content negotiation from the Debian QA website. This uses the ADMS.SW standard.\r\n\r\nMore background in [this blog post](http://www-public.telecom-sudparis.eu/~berger_o/weblog/2012/08/29/debian-package-tracking-system-now-produces-rdf-description-of-source-packages/)."@en ;
+        dcterms:publisher    [ rdfs:label  "Olivier Berger" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "software" , "lodcloud.nolinks" , "doap" , "lod" , "rdfxml" , "opensource" , "social_networking" , "debian" , "adms.sw" , "rdf" , "packages" , "lodcloud" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:title        "Debian Package Tracking System"@en ;
+        void:triples         1500000 ;
+        dcat:distribution    [ dcat:accessURL  <http://packages.qa.debian.org/a/apache2.rdf> ] ;
+        foaf:homepage        <http://packages.qa.debian.org/common/RDF.html> .

@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/OLU+>
+        a                    void:Dataset ;
+        dcterms:description  "Open Land Use Map is a composite map that is intended to create detailed land-use maps of various regions based on certain pan-Europen datasets such as CORINE Landcover, UrbanAtlas enriched by available regional data. The dataset is derived from available open datasources at different levels of detail and coverage. These data sources include: 1) Digital cadastral maps if available 2) Land Parcel Identification System if Available 3) Urban Atlas(European Environmental Agency) 4) CORINE Land Cover 2006 (European Environmental Agency) 5) Open Street Map The order of the data sources is according to the level of detail and, therefore, the priority for data integration. The dataset includes agriculture related lands (hilucs_code<200) from Czech, Poland, Spain & for few main cities in Czech Republic (centers of NUTS3 regions), Poland (agglomeration areas from Urban Atlas) and Spain (agglomeration areas from Urban Atlas)"@en ;
+        dcterms:publisher    [ rdfs:label  "Raul Palma, Soumya Brahma" ;
+                               foaf:mbox   "rpalma@man.poznan.pl"
+                             ] ;
+        dcterms:subject      "agglomeration" , "agriculture" , "Open land use" , " " , "europe" , "geography" , "land use" ;
+        dcterms:title        "Open Land Use"@en ;
+        void:sparqlEndpoint  <https://www.foodie-cloud.org/sparql> ;
+        void:triples         127926060 ;
+        foaf:homepage        <https://www.foodie-cloud.org/fct/> .

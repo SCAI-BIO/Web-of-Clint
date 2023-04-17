@@ -1,0 +1,48 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-chem2bio2owl> , <http://lod-cloud.net/dataset/bioportal-bp> ;
+  void:triples  35
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-sbo> , <http://lod-cloud.net/dataset/bioportal-bp> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-mi> , <http://lod-cloud.net/dataset/bioportal-bp> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-dikb-evidence> , <http://lod-cloud.net/dataset/bioportal-bp> ;
+  void:triples  29
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-bp> ;
+  void:triples  34
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-bp> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-bp> ;
+  void:triples  10
+] .
+
+<http://lod-cloud.net/dataset/bioportal-bp>
+        a                    void:Dataset ;
+        dcterms:description  "The BioPAX ontology (www.biopax.org) is a standard language for formally representing biological pathways. BioPAX Level 3 supports the representation of metabolic pathways, signal transduction pathways, protein-protein interaction networks, gene regulatory networks and genetic interactions."@en ;
+        dcterms:publisher    [ rdfs:label  "Dr Emek Demir" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "format-owl" , "bioportal" , "published-by-third-party" , "life_sciences" , "ontology" , "biomedicine" , "format-rdf" , "lod" ;
+        dcterms:title        "BioPAX"@en ;
+        void:triples         1230 ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/44167?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1522> .

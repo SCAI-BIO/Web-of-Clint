@@ -1,0 +1,48 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/sudocfr> , <http://lod-cloud.net/dataset/datos-bne-es> ;
+  void:triples  9725
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/datos-bne-es> ;
+  void:triples  454068
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/datos-bne-es> ;
+  void:triples  3112900
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/datos-bne-es> ;
+  void:triples  76413
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/libris> , <http://lod-cloud.net/dataset/datos-bne-es> ;
+  void:triples  10884
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/datos-bne-es> ;
+  void:triples  36431
+] .
+
+<http://lod-cloud.net/dataset/datos-bne-es>
+        a                    void:Dataset ;
+        dcterms:description  "Open bibliographic linked data from the Spanish National LIbrary including 4 million authority records, 2.4 million bibliographic records resulting in over 58 million triples.\r\n\r\nThe Spanish data are modelled using IFLA vocabularies.  For the migration and linkage, we used Marimba, a particular tool developed by us and designed for being used by librarians.\r\n\r\n### Data\r\n\r\n* 4 Million authority records\r\n* 2.4 million of bibliographic records\r\n* 58 million of RDF triples\r\n* 600K links with other resources (VIAF, SUDOC, GND (German national library), Libris, DBpedia)\r\n\r\nMore detail is provided at: <http://www.bne.es/es/Catalogos/DatosEnlazados/FuentesDatos/>\r\n\r\n> The data are taken from the catalog bibliographic and authority of the National Library of Spain. 3,900,000 have been extracted bibliographic resource records, papers belonging to modern, old, electronic resources, manuscripts, periodicals, maps, prints, photographs, printed music, sound and audiovisual recordings.\r\n> \r\n> Have also been extracted 4,200,000 authority records of persons, entities, conferences, uniform titles and subjects, which are used in bibliographic records. Both sets of records are coded according to the MARC21 format.\r\n> \r\n> So far it has become a very representative subset of the library catalog, consisting of 2.4 million bibliographic records of monographs modern formats, old printed music and sound recordings."@en ;
+        dcterms:publisher    [ rdfs:label  "Ontology Engineering Group, Facultad de Informática, Universidad Politécnica de Madrid" ;
+                               foaf:mbox   "dvila@fi.upm.es"
+                             ] ;
+        dcterms:subject      "publications" , "lodcloud" , "format.ifla" , "bibliographic" , "format.rdf" , "cc0" , "no-license-metadata" , "no-proprietary-vocab" , "lod" , "published-by-producer" ;
+        dcterms:title        "datos.bne.es"@en ;
+        void:sparqlEndpoint  <http://datos.bne.es/sparql> ;
+        void:triples         58053215 ;
+        dcat:distribution    [ dcat:accessURL  <http://datos.bne.es/resource/XX1718747> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://datos.bne.es/datadumps/links-viaf.nt.bz2> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://datos.bne.es/datadumps/links-others.nt.bz2> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://datos.bne.es/datadumps/aut091211.nt.bz2> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://datos.bne.es/datadumps/bib121211.nt.bz2> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T142816/bne.ttl> ] ;
+        foaf:homepage        <http://datos.bne.es> .

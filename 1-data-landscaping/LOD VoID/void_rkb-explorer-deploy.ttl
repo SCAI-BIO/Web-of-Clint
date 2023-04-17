@@ -1,0 +1,66 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-deploy> ;
+  void:triples  34
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-deploy> ;
+  void:triples  49
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-deploy> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-deploy> ;
+  void:triples  82
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-deploy> ;
+  void:triples  43
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-deploy> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-deploy> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-deploy> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-deploy> ;
+  void:triples  67
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/rkb-explorer-deploy> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-deploy> ;
+  void:triples  13
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-deploy>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "format-dc" , "no-vocab-mappings" , "deref-vocab" , "publications" , "lodcloud-diagram-2011-09-19" , "lod" , "published-by-third-party" , "no-license-metadata" , "format-rdf" , "format-akt" , "void-sparql-endpoint" , "provenance-metadata" ;
+        dcterms:title         "DEPLOY (RKBExplorer)"@en ;
+        void:exampleResource  <http://deploy.rkbexplorer.com/id/eprints-79> ;
+        void:sparqlEndpoint   <http://deploy.rkbexplorer.com/sparql/> ;
+        void:triples          41071 ;
+        dcat:distribution     [ dcat:accessURL  <http://deploy.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://deploy.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://deploy.rkbexplorer.com/models/dump.tgz> ] ;
+        foaf:homepage         <http://deploy.rkbexplorer.com> .

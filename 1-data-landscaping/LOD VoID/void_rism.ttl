@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/rism>
+        a                    void:Dataset ;
+        dcterms:description  "Répertoire International des Sources Musicales (RISM) is an international, non-profit organization with the aim of comprehensively documenting extant musical sources anywhere in the world. \r\n\r\nThe dataset offered here contains over 870,000 records, mostly for music manuscripts. These records hand down the works of some 27,000 composers, whose sources are preserved in the libraries and archives of 36 countries."@en ;
+        dcterms:publisher    [ rdfs:label  "RISM" ;
+                               foaf:mbox   "magda.gerritsen@bsb-muenchen.de"
+                             ] ;
+        dcterms:subject      "format-bibo" , "music-encoding" , "format-dcterms" , "rdf" , "lld" , "library" , "format-dc" , "lod" , "bibliographic" , "music" , "license-metadata" ;
+        dcterms:title        "Répertoire International des Sources Musicales - RISM"@en ;
+        void:sparqlEndpoint  <http://data.rism.info/sparql> ;
+        void:triples         17217885 ;
+        dcat:distribution    [ dcat:accessURL  <https://opac.rism.info/fileadmin/user_upload/lod/update/rismTitleRDF.ttl.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://opac.rism.info/id/rismid/454008332?format=rdf> ] .

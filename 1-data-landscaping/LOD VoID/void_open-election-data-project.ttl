@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/open-election-data-project>
+        a                     void:Dataset ;
+        dcterms:description   "This is the official list of registered political parties sourced from the Electoral Commission's website. The Resource URI refers to the linked-data resource URI that should be used to identify parties in a linked-data context, such as when making election results available as data.\r\n\r\nOpenness: Open data logo but no explicit license mentioned."@en ;
+        dcterms:publisher     [ rdfs:label  "Chris Taggart " ;
+                                foaf:mbox   "info@openelectiondata.org.uk"
+                              ] ;
+        dcterms:subject       "country-uk" , "lodcloud-diagram-2011-09-19" , "no-proprietary-vocab" , "government" , "lodcloud-diagram-2014-08-30" , "lod" , "policy" , "linked-open-data" , "election" , "no-provenance-metadata" , "format-dct" , "format-rdf" , "format-skos" , "published-by-third-party" , "no-license-metadata" ;
+        dcterms:title         "Open Election Data Project"@en ;
+        void:exampleResource  <http://openelectiondata.org/parties/280.rdf> ;
+        void:triples          16789 ;
+        dcat:distribution     [ dcat:accessURL  <http://openelectiondata.org/parties.xml> ] ;
+        foaf:homepage         <http://openelectiondata.org/parties> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/open-election-data-project> ;
+  void:triples  87
+] .

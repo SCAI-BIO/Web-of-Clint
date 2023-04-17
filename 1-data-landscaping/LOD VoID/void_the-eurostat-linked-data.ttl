@@ -1,0 +1,52 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/the-eurostat-linked-data>
+        a                     void:Dataset ;
+        dcterms:description   "All Eurostat statistics, converted to RDF and re-published using [Linked Data principles](http://linkeddata.org/). This service is operated by [DERI](http://www.deri.ie/). For the license, see [Eurostat's](http://epp.eurostat.ec.europa.eu/portal/page/portal/about_eurostat/policies/copyright_licence_policy) copyright policy."@en ;
+        dcterms:publisher     [ rdfs:label  "Aftab Iqbal (DERI)" ;
+                                foaf:mbox   "aftab.iqbal@deri.org"
+                              ] ;
+        dcterms:subject       "debt" , "void-sparql-endpoint" , "information-communication-technologies" , "format-geo" , "energy" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "format-sdmx" , "country-codes" , "social-development" , "health" , "europe" , "population" , "international" , "environment" , "format-rdf" , "format-dcterms" , "eu-institution" , "indicators" , "lodcloud" , "format-skos" , "lod" , "linked-data" , "statistics" , "published-by-third-party" , "format-qb" , "socioeconomics" , "deref-vocab" , "government" , "currency" , "lodcloud.candidate" ;
+        dcterms:title         "The Eurostat Linked Data"@en ;
+        void:exampleResource  <http://eurostat.linked-statistics.org/data/nrg_ind_334a.rdf> ;
+        void:sparqlEndpoint   <http://eurostat.linked-statistics.org/sparql> ;
+        void:triples          8000000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://eurostat.linked-statistics.org/data/bs_bs14_04.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://eurostat.linked-statistics.org/dsd/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://eurostat.linked-statistics.org/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://eurostat.linked-statistics.org/dic/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://eurostat.linked-statistics.org/data/> ] ;
+        foaf:homepage         <http://eurostat.linked-statistics.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/the-eurostat-linked-data> ;
+  void:triples  1559
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eurostat-rdf> , <http://lod-cloud.net/dataset/the-eurostat-linked-data> ;
+  void:triples  2048
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/the-eurostat-linked-data> ;
+  void:triples  1635
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linked-nuts> , <http://lod-cloud.net/dataset/the-eurostat-linked-data> ;
+  void:triples  2068
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linked-eurostat> , <http://lod-cloud.net/dataset/the-eurostat-linked-data> ;
+  void:triples  4401
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nuts-geovocab> , <http://lod-cloud.net/dataset/the-eurostat-linked-data> ;
+  void:triples  1927
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-eurostat> , <http://lod-cloud.net/dataset/the-eurostat-linked-data> ;
+  void:triples  425
+] .

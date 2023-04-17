@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/naics-2007>
+        a                     void:Dataset ;
+        dcterms:description   "The North American Industry Classification System (NAICS) is the standard used by Federal statistical agencies in classifying business establishments for the purpose of collecting, analyzing, and publishing statistical data related to the U.S. business economy.\r\n\r\nAuthors of the linked data version:\r\n\r\n-Jose María Alvarez Rodríguez & Jose Emilio Labra Gayo\r\n\r\nWESO-University of Oviedo"@en ;
+        dcterms:publisher     [ rdfs:label  "Jose María Alvarez Rodríguez at WESO (University of Oviedo)" ;
+                                foaf:mbox   "josem.alvarez@weso.es"
+                              ] ;
+        dcterms:subject       "vocab-mappings" , "format-dcterms" , "linkeddata" , "procurement" , "euroalert" , "linkedopendata" , "public_contracts" , "oviedo" , "naics" , "license-metadata" , "government" , "format-skosxl" , "format-skos" , "lod" , "format-dc" , "geodata" , "naics-2007" , "10ders" , "published-by-third-party" , "deref-vocab" , "format-gr" , "provenance-metadata" , "pscs" , "weso" , "university-of-oviedo" , "uniovi" , "e-procurement" ;
+        dcterms:title         "NAICS 2007"@en ;
+        void:exampleResource  <http://purl.org/weso/pscs/data/naics/2007/resource/11111?output=xml> ;
+        void:sparqlEndpoint   <http://purl.org/weso/sparql> ;
+        void:triples          36292 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/psc-ontology.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/naics/2007/resource/ds> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/naics/2007/resource/ds> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/naics/2007/naics-2007.ttl> ] ;
+        foaf:homepage         <http://www.josemalvarez.es/web/2011/11/16/product-scheme-classifications/> .
+
+[ void:target   <http://lod-cloud.net/dataset/http://productontology.org> , <http://lod-cloud.net/dataset/naics-2007> ;
+  void:triples  8485
+] .

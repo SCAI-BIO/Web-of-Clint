@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-coreyavis-com> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-coreyavis-com> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/statusnet-coreyavis-com>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://coreyavis.com"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "social web" , "format-pos" , "format-foaf" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "format-sioc" , "crawledLinkedDataCloud2014" , "LinkedDataCrawl2014" ;
+        dcterms:title         "statusnet-coreyavis-com"@en ;
+        void:exampleResource  <http://status.coreyavis.com/foaf> ;
+        void:triples          "0"^^xsd:int .

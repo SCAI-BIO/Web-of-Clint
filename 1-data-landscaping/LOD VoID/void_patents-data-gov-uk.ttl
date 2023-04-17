@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/patents-data-gov-uk>
+        a                     void:Dataset ;
+        dcterms:description   "[Namespace for patent applications](http://patents.data.gov.uk/doc/application) from data.gov.uk. This data comes from the BIS dataset.\r\n\r\nPart of package:data-gov-uk"@en ;
+        dcterms:publisher     [ rdfs:label  "Data.gov.uk Team" ;
+                                foaf:mbox   "team@data.gov.uk"
+                              ] ;
+        dcterms:subject       "patents" , "format-dc" , "government" , "lodcloud-diagram-2011-09-19" , "published-by-producer" , "deref-vocab" , "format-rdf" , "lod" ;
+        dcterms:title         "patents.data.gov.uk"@en ;
+        void:dataDump         <http://source.data.gov.uk/data/patents/bis-research-explorer/2010-03-04/patents.data.gov.uk.nt> ;
+        void:exampleResource  <http://patents.data.gov.uk/doc/application/GB2315698> ;
+        void:sparqlEndpoint   <http://services.data.gov.uk/patents/sparql> ;
+        void:triples          11627 ;
+        dcat:distribution     [ dcat:accessURL  <http://patents.data.gov.uk/doc/application> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://services.data.gov.uk/patents/search> ] ;
+        foaf:homepage         <http://patents.data.gov.uk/> .
+
+[ void:target   <http://lod-cloud.net/dataset/research-data-gov-uk> , <http://lod-cloud.net/dataset/patents-data-gov-uk> ;
+  void:triples  491
+] .

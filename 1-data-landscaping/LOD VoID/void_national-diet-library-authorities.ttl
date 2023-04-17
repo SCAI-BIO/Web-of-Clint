@@ -1,0 +1,29 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/national-diet-library-authorities> ;
+  void:triples  2673
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/national-diet-library-authorities> ;
+  void:triples  4545
+] .
+
+<http://lod-cloud.net/dataset/national-diet-library-authorities>
+        a                     void:Dataset ;
+        dcterms:description   "Name authorities and subject headings of Japan's National Library are provided as Linked Data. Each record is described with such vocabularies as SKOS, SKOS-XL, DC and RDA Elements G2. Records are linked to LCSH, VIAF etc. with SKOS mapping properties where applicable."@en ;
+        dcterms:publisher     [ rdfs:label  "National Diet Library of Japan" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "health" , "authorities" , "published-by-producer" , "lod" , "lodcloud-diagram-2014-08-30" , "country-japan" , "format-skos" , "lld" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "library" , "format-dc" , "subjects" , "format-rdf" , "government" ;
+        dcterms:title         "Web NDL Authorities - National Diet Library of Japan"@en ;
+        void:exampleResource  <http://id.ndl.go.jp/auth/ndlna/00054222> ;
+        void:sparqlEndpoint   <http://id.ndl.go.jp/auth/ndla/> ;
+        void:triples          15000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://iss.ndl.go.jp/ndla/wp-content/uploads/2011/04/ndlsh-rdf.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://iss.ndl.go.jp/ndla/sparql/> ] ;
+        foaf:homepage         <http://id.ndl.go.jp/auth/ndla> .

@@ -1,0 +1,17 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/Shripriya+Dubey>
+        a                    void:Dataset ;
+        dcterms:description  "An ontology showing ah hierarchy of persons in a university and subjects. It specifies a relationship between teachers and subjects and students and subjects."@en ;
+        dcterms:publisher    [ rdfs:label  "Shripriya Dubey" ;
+                               foaf:mbox   "shriya2021@gmail.com"
+                             ] ;
+        dcterms:subject      "publications" ;
+        dcterms:title        "Person"@en ;
+        void:triples         "0"^^xsd:int ;
+        foaf:homepage        <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-30> .

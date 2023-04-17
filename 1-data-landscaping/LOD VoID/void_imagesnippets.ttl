@@ -1,0 +1,43 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/imagesnippets> ;
+  void:triples  199
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/art-and-architecture-thesaurus> , <http://lod-cloud.net/dataset/imagesnippets> ;
+  void:triples  "4111 "^^xsd:integer
+] .
+
+<http://lod-cloud.net/dataset/imagesnippets>
+        a                     void:Dataset ;
+        dcterms:description   "Contains descriptions of a variety of photographic images, using properties defined by the Lightweight Image Ontology."@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "published-by-third-party" , "cross_domain" , "usergeneratedcontent" , "lod" , "crossdomain" ;
+        dcterms:title         "Imagesnippets Image Descriptions"@en ;
+        void:exampleResource  <http://www.imagesnippets.com/imgtag/rdf/info@margaretwarren.us/lightning_kansas0003> , <http://www.imagesnippets.com/imgtag/rdf/info@margaretwarren.us/honey_moon_13> , <http://www.imagesnippets.com/imgtag/rdf/info@margaretwarren.us/http%253A%252F%252Ffarm9.staticflickr.com%252F8518%252F8418131043_a2486ed90f_o.jpg> ;
+        void:sparqlEndpoint   <http://www.imagesnippets.com/sparql/images> ;
+        void:triples          "1011804 "^^xsd:integer ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/net/lio> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.imagesnippets.com/dataset/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.imagesnippets.com/dataset/imagesnippets.nt.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.imagesnippets.com/dataset/imagesnippets.nq.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.imagesnippets.com/dataset/> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/imagesnippets> ;
+  void:triples  "4326 "^^xsd:integer
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/imagesnippets> ;
+  void:triples  "28176 "^^xsd:integer
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/imagesnippets> ;
+  void:triples  "4888 "^^xsd:integer
+] .

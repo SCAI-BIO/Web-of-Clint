@@ -1,0 +1,20 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/linked-life-data>
+        a                     void:Dataset ;
+        dcterms:description   "Linked Life Data is aggregation of more than 25 popular biomedical data sources.\r\n\r\n### DOWNLOADS\r\nhttp://linkedlifedata.com/sources\r\n\r\n### SPARQL\r\nhttp://linkedlifedata.com/sparql"@en ;
+        dcterms:publisher     [ rdfs:label  "Ontotext AD" ;
+                                foaf:mbox   "lifeskim@ontotext.com"
+                              ] ;
+        dcterms:subject       "lod" , "format-po" , "lodcloud-diagram-2014-08-30" , "life_sciences" , "dataset-collection" , "deref-vocab" , "lifesciences" , "pdds" , "published-by-third-party" ;
+        dcterms:title         "Linked Life Data"@en ;
+        void:exampleResource  <http://linkedlifedata.com/resource/entrezgene/id/5742> ;
+        void:sparqlEndpoint   <http://linkedlifedata.com/sparql> ;
+        void:triples          5120886447 ;
+        dcat:distribution     [ dcat:accessURL  <http://linkedlifedata.com/sources> ] ;
+        foaf:homepage         <http://linkedlifedata.com/> .

@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/babelnet> , <http://lod-cloud.net/dataset/masc-bn-nif> ;
+  void:triples  286416
+] .
+
+<http://lod-cloud.net/dataset/masc-bn-nif>
+        a                    void:Dataset ;
+        dcterms:description  "This dataset contains the MASC 3.0 corpus, a large English corpus covering a wide range of genres of written and spoken text, enhanced with semantic annotations, both word senses and named entities. Annotations are drawn from the sense/entity inventory derived from BabelNet 2.0, a multilingual semantic network which integrates both lexicographic and  encyclopedic knowledge."@en ;
+        dcterms:publisher    [ rdfs:label  "Roberto Navigli" ;
+                               foaf:mbox   "navigli@di.uniroma1.it"
+                             ] ;
+        dcterms:subject      "annotation" , "linguistic" , "llod" , "masc" , "linguistics" , "nif" , "babelnet" , "format-nif" ;
+        dcterms:title        "MASC-BN-NIF"@en ;
+        void:triples         5620229 ;
+        dcat:distribution    [ dcat:accessURL  <http://lcl.uniroma1.it/MASC-NEWS/> ] .

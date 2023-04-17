@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/SocialRoles>
+        a                    void:Dataset ;
+        dcterms:description  "The FRSR vocabulary contains terms useful for finding out more about social roles of a family relation. The approach taken is to describe roles of a person in a society in which he/she is living. this roles could be a father, mother,son or daughter.  These social roles are different from occupational roles. these roles are based on relations. Another purpose of this vocabulary is to show the metamodeling feature through punning. Like Father is a class as well is an instance of class socialroles."@en ;
+        dcterms:publisher    [ rdfs:label  "Haya Qureshi" ;
+                               foaf:mbox   "hmq.17@hotmail.com"
+                             ] ;
+        dcterms:subject      "social_networking" ;
+        dcterms:title        "FamilyRelations as SocialRole"@en ;
+        void:dataDump        <https://datahub.io/hmqq/lod-frsr-witty-swan-49> ;
+        void:triples         134 ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.cwrc.ca/ontologies/cwrc> ] ;
+        dcat:distribution    [ dcat:accessURL  foaf: ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/vocab/bio/0.1/> ] ;
+        foaf:homepage        <http://metamodeling.com/owl/familyrelations> .

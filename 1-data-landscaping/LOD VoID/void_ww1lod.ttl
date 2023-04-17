@@ -1,0 +1,36 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/muninn> , <http://lod-cloud.net/dataset/ww1lod> ;
+  void:triples  11
+] .
+
+<http://lod-cloud.net/dataset/ww1lod>
+        a                    void:Dataset ;
+        dcterms:description  "This dataset contains strictly quality-controlled rich information on events, actors and places related to the First World War. As such, it is meant to be used as a reference dataset to which other datasets (e.g. museum or library collections dealing with WW1 topics) can be linked."@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "format-cidoc-crm" , "format-org" , "format-foaf" , "culturalheritage" , "deref-vocab" , "format-skos" , "format-georss" , "lod" , "history" , "format-schema" , "format-geo" , "format-rdf" , "publications" , "world-war-one" ;
+        dcterms:title        "World War 1 as Linked Open Data"@en ;
+        void:sparqlEndpoint  <http://ldf.fi/ww1lod/sparql> ;
+        void:triples         40160 ;
+        dcat:distribution    [ dcat:accessURL  <http://ldf.fi/ww1lod/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://ldf.fi/ww1lod/void/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://ldf.fi/ww1lod/6db396b8> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/ww1lod> ;
+  void:triples  152
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/ww1lod> ;
+  void:triples  1248
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/pcdhn> , <http://lod-cloud.net/dataset/ww1lod> ;
+  void:triples  29
+] .

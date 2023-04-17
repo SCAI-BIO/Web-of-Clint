@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-hii-co-il> ;
+  void:triples  3
+] .
+
+<http://lod-cloud.net/dataset/statusnet-hii-co-il>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://hii.co.il"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-rdf" , "lodcloud-diagram-2014-08-30" , "format-foaf" , "format-rdfs" , "format-sioc" , "format-pos" , "crawledLinkedDataCloud2014" , "format-bio" , "LinkedDataCrawl2014" , "social web" ;
+        dcterms:title         "statusnet-hii-co-il"@en ;
+        void:exampleResource  <http://hii.co.il/denny900/foaf> ;
+        void:triples          "0"^^xsd:int .

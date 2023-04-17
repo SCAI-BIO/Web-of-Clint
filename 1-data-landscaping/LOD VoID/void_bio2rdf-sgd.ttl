@@ -1,0 +1,82 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  15442
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  5906
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-chebi> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ec> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  870
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-sgd>
+        a                     void:Dataset ;
+        dcterms:description   "The Saccharomyces Genome Database (SGD) collects and organizes information about the molecular biology and genetics of the yeast Saccharomyces cerevisiae. SGD contains a variety of biological information and tools with which to search and analyze it."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "lod" , "life_sciences" , "license-metadata" , "format-rdfs" , "bio2rdf" , "published-by-third-party" , "format-rdf" , "lifesciences" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "vocab-mappings" , "format-dc" ;
+        dcterms:title         "Bio2RDF::Sgd"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/sgd/sgd.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/sgd:S000006169> ;
+        void:sparqlEndpoint   <http://sgd.bio2rdf.org/sparql> ;
+        void:triples          12494945 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/sgd/sgd.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/sgd/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/sgd/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/sgd/sgd.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/sgd/bio2rdf-sgd.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/sgd/bio2rdf_sgd_sio_mapping.owl> ] ;
+        foaf:homepage         <http://sgd.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-so> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-gi> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  37605
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-refseq> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  5824
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-apo> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  241
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-go> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  5105
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-gene3d> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  893
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-eco> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  875109
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-goa> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-obi> , <http://lod-cloud.net/dataset/bio2rdf-sgd> ;
+  void:triples  10475
+] .

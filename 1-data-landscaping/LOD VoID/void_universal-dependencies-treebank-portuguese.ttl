@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-portuguese> ;
+  void:triples  72
+] .
+
+<http://lod-cloud.net/dataset/universal-dependencies-treebank-portuguese>
+        a                    void:Dataset ;
+        dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Portuguese treebank.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Zeman, Daniel; Popel, Martin; Mareček, David; Silveira, Natalia; Martins, André" ;
+                               foaf:mbox   "zeman@ufal.mff.cuni.cz"
+                             ] ;
+        dcterms:subject      "lod" , "linguistics" , "corpus" ;
+        dcterms:title        "Universal Dependencies Treebank Portuguese"@en ;
+        void:triples         209977 ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/a61de4d7-5612-43dc-ab6c-663f52c7e4d3/resource/7232dc5a-7909-4a7d-b02c-471d1bc79347/download/udportuguese.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Portuguese/archive/master.zip> ] ;
+        foaf:homepage        <https://github.com/UniversalDependencies/UD_Portuguese> .

@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-to> , <http://lod-cloud.net/dataset/bioportal-co_wheat> ;
+  void:triples  34
+] .
+
+<http://lod-cloud.net/dataset/bioportal-co_wheat>
+        a                    void:Dataset ;
+        dcterms:description  "This ontology defines traits of the International Wheat Information System (IWIS) database and wheat descriptor."@en ;
+        dcterms:publisher    [ rdfs:label  "Rosemary Shrestha; Elizabeth Arnaud" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "bioportal" , "life_sciences" , "format-rdf" , "ontology" , "format-obo" , "published-by-third-party" , "biomedicine" , "lod" ;
+        dcterms:title        "Wheat trait"@en ;
+        void:triples         2647 ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/44779?apikey=BP_API_KEY> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1545> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-co_wheat> ;
+  void:triples  10
+] .

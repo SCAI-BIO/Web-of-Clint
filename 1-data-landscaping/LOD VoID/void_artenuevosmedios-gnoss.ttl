@@ -1,0 +1,44 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/artenuevosmedios-gnoss> ;
+  void:triples  620
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gnoss> , <http://lod-cloud.net/dataset/artenuevosmedios-gnoss> ;
+  void:triples  76
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/artenuevosmedios-gnoss> ;
+  void:triples  663
+] .
+
+<http://lod-cloud.net/dataset/artenuevosmedios-gnoss>
+        a                     void:Dataset ;
+        dcterms:description   "<p>\r\n<a href=\"http://red.gnoss.com/comunidad/Interactivos\">Entornos Interactivos. Arte en los nuevos medios</a>\r\n is a community promoted by Jaime Munárriz Ortiz, Professor and Associate Dean for Research and Graduate School of Fine Arts at the University Complutense of Madrid, for the subject Image Synthesis and Interactive Environments, of the Research Master in Art and Creation. The community works with \r\n<a href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>\r\n. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. Green Competitiveness offers a selection of 135 resources (November 2012). It includes a facet-based engine search and enriched contexts. Both are developments by GNOSS.\r\n</p>\r\n\r\n<p>\r\n<a href=\"http://red.gnoss.com/comunidad/Interactivos\">Entornos Interactivos. Arte en los nuevos medios</a>\r\n es una comunidad promovida por Jaime Munárriz Ortiz, profesor y Vicedecano de Investigación y Posgrado de la\r\n<a href=\"http://www.bellasartes.ucm.es/\">Facultad de Bellas Artes</a>\r\nde la Universidad Complutense de Madrid, para la asignatura Imagen de Síntesis y Entornos Interactivos, del Máster en Investigación en Arte y Creación. La comunidad trabaja con software de \r\n<a href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>\r\n. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. NextWeb ofrece en este caso una selección de 135 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.\r\n</p>"@en ;
+        dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
+                                foaf:mbox   "gnoss@gnoss.com"
+                              ] ;
+        dcterms:subject       "format-wot" , "usergeneratedcontent" , "arte digital" , "country.es" , "format-rdfg" , "Vida artificial" , "sp" , "user_generated" , "corporate excellence" , "no-proprietary-vocab" , "format-dc" , "socialweb" , "laboratorio de ideas" , "format-skos" , "instalaciones" , "sensores" , "country-spain" , "sioc" , "spain" , "published-by-third-party" , "arte sonoro" , "license-metadata" , "schemata" , "format-sioc" , "format-dcam" , "language-spa" , "skos" , "lod" , "proyecciones escénicas" , "entornos interactivos" , "foaf" , "no-vocab-mappings" , "format-foaf" , "provenance-metadata" , "programación gráfica" , "dc" , "wrapper" ;
+        dcterms:title         "Entornos interactivos. Arte en los nuevos medios (GNOSS)"@en ;
+        void:exampleResource  <http://red.gnoss.com/en/community/Interactivos/resource/Video-Projection-Tools--VPT/0278522a-59f9-4cf4-a766-d6f121da1ba6?rdf> , <http://red.gnoss.com/en/community/Interactivos/advanced-search/tag/arte?rdf> , <http://red.gnoss.com/en/community/Interactivos/resource/Scramble-Suit--Kyle-McDonald-Arturo-Castro/468deccf-8fef-4cd4-8782-25990cc20cb3> ;
+        void:triples          7736 ;
+        dcat:distribution     [ dcat:accessURL  <http://gnoss.com/gnoss.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ineverycrea.net/voidArteNuevosMediosGNOSS.n3> ] ;
+        foaf:homepage         <http://gnoss.com/comunidad/Interactivos> .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/artenuevosmedios-gnoss> ;
+  void:triples  425
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/artenuevosmedios-gnoss> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/mismuseos-gnoss> , <http://lod-cloud.net/dataset/artenuevosmedios-gnoss> ;
+  void:triples  205
+] .

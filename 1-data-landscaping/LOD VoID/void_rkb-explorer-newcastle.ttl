@@ -1,0 +1,126 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  796
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  1421
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-newcastle>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "format-rdf" , "lod" , "void-sparql-endpoint" , "provenance-metadata" , "deref-vocab" , "format-dc" , "lodcloud-diagram-2014-08-30" , "published-by-third-party" , "format-akt" , "no-license-metadata" , "publications" ;
+        dcterms:title         "University of Newcastle upon Tyne (RKBExplorer)"@en ;
+        void:exampleResource  <http://newcastle.rkbexplorer.com/id/person-10> ;
+        void:sparqlEndpoint   <http://newcastle.rkbexplorer.com/sparql/> ;
+        void:triples          87505 ;
+        dcat:distribution     [ dcat:accessURL  <http://newcastle.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://newcastle.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://newcastle.rkbexplorer.com/sitemap.xml> ] ;
+        foaf:homepage         <http://newcastle.rkbexplorer.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-courseware> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  78
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  1142
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ieee> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  82
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  8
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  728
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/southampton-ecs-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  7
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  1453
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  864
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-deploy> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  2259
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-roma> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-pisa> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  8
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ibm> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  131
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  227
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-resex> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ulm> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  7
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-nsf> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  40
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-curriculum> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-epsrc> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-irit> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  30
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-newcastle> ;
+  void:triples  4
+] .

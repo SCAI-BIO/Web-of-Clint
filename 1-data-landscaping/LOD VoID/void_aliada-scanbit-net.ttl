@@ -1,0 +1,74 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lobid-organisations> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  9
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lobid-resources> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  84
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/europeana-lod-v1> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  0
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bluk-bnb> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  0
+] .
+
+<http://lod-cloud.net/dataset/aliada-scanbit-net>
+        a                     void:Dataset ;
+        dcterms:description   "Open linked data from the Library and Museum of ARTIUM"@en ;
+        dcterms:publisher     [ rdfs:label  "Aliada Consortium" ;
+                                foaf:mbox   "info@aliada-project.eu"
+                              ] ;
+        dcterms:subject       "no-proprietary-vocab" , "license-metadata" , "lod" , "format-skos" , "no-vocab-mappings" , "format-owltime" , "provenance-metadata" , "publications" , "format-wgs84" , "format-owl" , "format-frbroo" , "format-foaf" , "published-by-producer" ;
+        dcterms:title         "aliada-scanbit-net"@en ;
+        void:dataDump         <http://aliada.scanbit.net:8891/datadumps/links_1472739186414_20160901000001.nt.gz> , <http://aliada.scanbit.net:8891/datadumps/bib_1472739183281_20160901000001.nt.gz> ;
+        void:exampleResource  <http://aliada.scanbit.net:8891/datadumps/MARCBIBExample.rdf> , <http://aliada.scanbit.net:8891/datadumps/DCExample.rdf> , <http://aliada.scanbit.net:8891/datadumps/LIDOExample.rdf> , <http://aliada.scanbit.net:8891/datadumps/MARCAUTHExample.rdf> ;
+        void:sparqlEndpoint   <http://aliada.scanbit.net:8891/sparql> ;
+        void:triples          20055 ;
+        dcat:distribution     [ dcat:accessURL  <http://aliada-project.eu/2014/aliada-ontology#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://aliada.scanbit.net:8891/datadumps/aliadascanbitnet8891.ttl> ] ;
+        foaf:homepage         <http://biblioteca.artium.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/marc-codes> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/hungarian-national-library-catalog> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/open-library> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  75
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  291
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  227
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/datos-bne-es> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  551
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  1695
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/aliada-scanbit-net> ;
+  void:triples  0
+] .

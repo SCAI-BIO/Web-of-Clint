@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/statusnet-m-kuttner-com>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://m-kuttner.com"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-rdf" , "format-rdfs" , "format-pos" , "lodcloud-diagram-2014-08-30" , "LinkedDataCrawl2014" , "social web" , "crawledLinkedDataCloud2014" , "format-foaf" , "format-sioc" , "social_networking" ;
+        dcterms:title         "statusnet-m-kuttner-com"@en ;
+        void:exampleResource  <http://m-kuttner.com/status/admin/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-m-kuttner-com> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-m-kuttner-com> ;
+  void:triples  1
+] .

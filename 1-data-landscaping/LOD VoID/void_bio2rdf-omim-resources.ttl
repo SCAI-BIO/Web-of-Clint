@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/bio2rdf-omim-resources>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-rdf" , "dataset-level-metadata" , "format-void" , "format-rdfs" , "format-dcterm" , "LinkedDataCrawl2014" , "format-owl" , "lifesciences" , "crawledLinkedDataCloud2014" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:title         "bio2rdf-omim-resources"@en ;
+        void:exampleResource  <http://bio2rdf.org/omim_resource:157140_allele_24> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/bio2rdf-omim-resources> ;
+  void:triples  1
+] .

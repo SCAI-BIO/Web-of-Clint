@@ -1,0 +1,34 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/polymath-virtual-library> ;
+  void:triples  57
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/oclc-fast> , <http://lod-cloud.net/dataset/polymath-virtual-library> ;
+  void:triples  25
+] .
+
+<http://lod-cloud.net/dataset/polymath-virtual-library>
+        a                     void:Dataset ;
+        dcterms:description   "The Polymath Virtual Library aims to bring together the works of the most important Hispanic polymaths and to establish semantic relationships between them, expressing the different schools of thought, from Seneca to Octavio Paz. The aim is to bring together information, data, digital texts and web resources about Spanish, Hispano-American, Brazilian and Portuguese polymaths from all times. These datasets consists of  polymath authority data (Spanish, Latin American, Brasilian and Portuguese)  expressed in <a href=\"http://pro.europeana.eu/web/guest/edm-documentation\" title=\"Europeana Data Model\">\r\nEuropeana Data Model</a>. Links to VIAF and DBpedia in progress. "@en ;
+        dcterms:publisher     [ rdfs:label  "Xavier Agenjo" ;
+                                foaf:mbox   "xavier.agenjo@larramendi.es"
+                              ] ;
+        dcterms:subject       "europeana data model" , "no-proprietary-vocab" , "lld" , "published-by-producer" , "format-skos" , "lod" , "library" , "linguistics" , "format-edm" , "bibliographic data" , "authority" , "crossdomain" ;
+        dcterms:title         "Polymath Virtual Library (Authority data) - Fundación Ignacio Larramendi"@en ;
+        void:exampleResource  <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T161210/Unamuno_Miguel-de.rdf> , <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T161117/Menendez_Pelayo.rdf> , <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T161002/Francisco_Sanchez.rdf> ;
+        void:triples          "0"^^xsd:int ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T160611/Poligrafos_hispanoamericanos_edm.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T160246/Poligrafos_espanoles_edm.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T160857/Poligrafos_brasilenos_edm.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T160728/Poligrafos_portugueses_edm.zip> ] ;
+        foaf:homepage         <http://www.larramendi.es/i18n/estaticos/contenido.cmd?pagina=estaticos/bibliotecaIL> .
+
+[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/polymath-virtual-library> ;
+  void:triples  321
+] .

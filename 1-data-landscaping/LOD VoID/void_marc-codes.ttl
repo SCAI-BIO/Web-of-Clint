@@ -1,0 +1,38 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/marc-codes> ;
+  void:triples  599
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/marc-codes> ;
+  void:triples  534
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wikipedia> , <http://lod-cloud.net/dataset/marc-codes> ;
+  void:triples  136
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/marc-codes> ;
+  void:triples  2232
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lingvoj> , <http://lod-cloud.net/dataset/marc-codes> ;
+  void:triples  421
+] .
+
+<http://lod-cloud.net/dataset/marc-codes>
+        a                     void:Dataset ;
+        dcterms:description   "Currently provides the MARC codes (http://www.loc.gov/standards/valuelist/) for languages, geographic areas, countries and forms of musical composition."@en ;
+        dcterms:publisher     [ rdfs:label  "Ross Singer" ;
+                                foaf:mbox   "rossfsinger@gmail.com"
+                              ] ;
+        dcterms:subject       "library" , "publications" , "no-proprietary-vocab" , "format-dc" , "no-vocab-mappings" , "published-by-third-party" , "lodcloud-diagram-2011-09-19" , "format-xhtml" , "no-license-metadata" , "format-rdf" , "format-mo" , "lld" , "format-geo" , "no-provenance-metadata" , "format-skos" , "lod" ;
+        dcterms:title         "MARC Codes List"@en ;
+        void:exampleResource  <http://purl.org/NET/marccodes/muscomp/fg.html> , <http://purl.org/NET/marccodes/gacs/a-bx.rdf> , <http://purl.org/NET/marccodes/languages/bel.txt> ;
+        void:triples          8816 ;
+        foaf:homepage         <http://purl.org/NET/marccodes/> .

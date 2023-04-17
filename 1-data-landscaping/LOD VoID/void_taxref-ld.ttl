@@ -1,0 +1,30 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/taxref-ld>
+        a                     void:Dataset ;
+        dcterms:description   "TAXREF-LD is the Linked Data knowledge graph representing TAXREF (https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref?lg=en), the French national taxonomical register for fauna, flora and fungus, that covers mainland France and overseas territories. In version 15, TAXREF-LD registers 657,000+ scientific names and 199,000+ species.\n\nTAXREF-LD is a joint initiative of the National Museum of Natural History (http://www.mnhn.fr/) and the I3S laboratory (http://www.i3s.unice.fr/) (University Côte d'Azur, CNRS, Inria). The model is described in [1].\n\n[1] Michel F., Gargominy O., Tercerie S. & Faron-Zucker C. (2017). A Model to Represent Nomenclatural and Taxonomic Information as Linked Data. Application to the French Taxonomic Register, TAXREF. In _Proceedings of the 2nd International Workshop on Semantics for Biodiversity (S4BioDiv) co-located with ISWC 2017_ vol. 1933. Vienna, Austria. CEUR."@en ;
+        dcterms:publisher     [ rdfs:label  "Inventaire National du Patrimoine Naturel (INPN)" ;
+                                foaf:mbox   "taxref@mnhn.fr"
+                              ] ;
+        dcterms:subject       "schemata" , "lod" , "biodiversity" , "format-rdfs" , "license-metadata" , "deref-vocab" , "vocab-mappings" , "taxonomy" , "species" , "lifesciences" , "format-skos" , "flora" , "provenance-metadata" , "format-ncbitaxon" , "format-geonames" , "format-txn" , "format-rdf" , "fauna" , "format-dc" , "published-by-third-party" , "format-dwc" , "format-geospecies" , "format-foaf" , "life_sciences" ;
+        dcterms:title         "TAXREF-LD: Knowledge Graph of the French taxonomic registery"@en ;
+        void:dataDump         <https://zenodo.org/record/5876775/files/taxrefld15.1.tar?download=1> ;
+        void:exampleResource  <http://taxref.mnhn.fr/lod/taxon/60878> , <https://github.com/frmichel/taxref-ld/tree/master/dataset/examples> ;
+        void:sparqlEndpoint   <https://taxref.mnhn.fr/sparql> ;
+        void:triples          35353007 ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.githubusercontent.com/frmichel/taxref-ld/master/dataset/Taxrefld_static_dataset_description.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://taxref.mnhn.fr/.well-known/void> ] ;
+        foaf:homepage         <https://github.com/frmichel/taxref-ld/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncbitaxon> , <http://lod-cloud.net/dataset/taxref-ld> ;
+  void:triples  84336
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/agrovoc> , <http://lod-cloud.net/dataset/taxref-ld> ;
+  void:triples  2875
+] .

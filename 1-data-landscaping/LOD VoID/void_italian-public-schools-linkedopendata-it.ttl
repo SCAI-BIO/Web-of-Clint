@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/italian-public-schools-linkedopendata-it>
+        a                     void:Dataset ;
+        dcterms:description   "Contains addresses, type, contacts and other info about more 50.000 public schools in italy.\r\n\r\nThe dataset is currently in alpha stage: its quality needs to be improved and schools are not yet georeferenced.\r\n\r\nMore information at [http://www.linkedopendata.it/datasets/scuole](http://www.linkedopendata.it/datasets/scuole)"@en ;
+        dcterms:publisher     [ rdfs:label  "linkedopendata.it" ;
+                                foaf:mbox   "info@linkedopendata.it"
+                              ] ;
+        dcterms:subject       "license-metadata" , "lod" , "format-vcard" , "format-rdf" , "country-italy" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "pre-schools" , "lodcloud.nolinks" , "publications" , "void-sparql-endpoint" , "provenance-metadata" , "published-by-producer" , "linkeddata" , "no-proprietary-vocab" , "education" ;
+        dcterms:title         "Italian public schools (LinkedOpenData.it)"@en ;
+        void:exampleResource  <http://data.linkedopendata.it/scuole/resource/RMTA047015> ;
+        void:sparqlEndpoint   <http://sparql.linkedopendata.it/scuole> ;
+        void:triples          168638 ;
+        dcat:distribution     [ dcat:accessURL  <http://void.linkedopendata.it/scuole> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://dump.linkedopendata.it/scuole> ] ;
+        foaf:homepage         <http://www.linkedopendata.it/datasets/scuole> .

@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/SocialLink> ;
+  void:triples  643235
+] .
+
+<http://lod-cloud.net/dataset/SocialLink>
+        a                    void:Dataset ;
+        dcterms:description  "We present SocialLink, a publicly available Linked Open Data dataset that matches social media accounts on Twitter to the corresponding entities in multiple language chapters of DBpedia. By effectively bridging the Twitter social media world and the Linked Open Data cloud, SocialLink enables knowledge transfer between the two: on the one hand, it supports Semantic Web practitioners in better harvesting the vast amounts of valuable, up-to-date information available in Twitter; on the other hand, it permits Social Media researchers to leverage DBpedia data when processing the noisy, semi-structured data of Twitter. "@en ;
+        dcterms:publisher    [ rdfs:label  "Yaroslav Nechaev" ;
+                               foaf:mbox   "remper@me.com"
+                             ] ;
+        dcterms:subject      "social_networking" , "social media" , "twitter" , "machine learning" , "dbpedia" ;
+        dcterms:title        "SocialLink"@en ;
+        void:dataDump        <https://zenodo.org/record/1451797> , <http://sociallink.futuro.media/v3.0/sociallink.final.tql.gz> ;
+        void:sparqlEndpoint  <http://sociallink.futuro.media/sparql> ;
+        void:triples         80101425 ;
+        foaf:homepage        <http://sociallink.futuro.media> .

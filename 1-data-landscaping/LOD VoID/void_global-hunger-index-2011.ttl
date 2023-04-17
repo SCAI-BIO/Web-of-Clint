@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/global-hunger-index-2011> ;
+  void:triples  260
+] .
+
+<http://lod-cloud.net/dataset/global-hunger-index-2011>
+        a                    void:Dataset ;
+        dcterms:description  "The Global Hunger Index (GHI) offers a useful multidimensional overview of global hunger. The 2011 GHI is the sixth in an annual series that records the state of global, regional, and national hunger.\r\n\r\nThe GHI captures three dimensions of hunger: insufficient availability of calories, shortfalls in the nutritional status of children, and child mortality. Accordingly, the Index includes the following three equally weighted indicators: the proportion of people who are undernourished, as estimated by the Food and Agriculture Organization of the United Nations (FAO); the prevalence of underweight in children under the age of five, as compiled by the World Health Organization (WHO); and the under-five mortality rate, as reported by the United Nations Children’s Fund (UNICEF). The 2011 index includes GHI values for four time periods, recalculated using the latest source data, to allow an exploration of change over time. "@en ;
+        dcterms:publisher    [ rdfs:label  "International Food Policy Research Institute" ;
+                               foaf:mbox   "ifpri@cgiar.org"
+                             ] ;
+        dcterms:subject      "development" , "cross_domain" , "published-by-producer" , "format-qb" , "lodcloud" , "crossdomain" , "lod" , "license-metadata" , "no-proprietary-vocab" , "food" , "hunger" ;
+        dcterms:title        "Global Hunger Index (2011)"@en ;
+        void:triples         19369 ;
+        dcat:distribution    [ dcat:accessURL  <http://data.kasabi.com/dataset/global-hunger-index> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.ifpri.org/sites/default/files/ghi2011data.xlsx> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://data.ifpri.org/rdf/ghi/raw/Global-Hunger-Index-2011.rdf> ] ;
+        foaf:homepage        <http://www.ifpri.org/publication/2011-global-hunger-index> .

@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/rainis-and-aspazija-linked-digital-collection>
+        a                     void:Dataset ;
+        dcterms:description   "Linked Digital Collection \"Rainis and Aspazija\" created by the National Library of Latvia.\r\n\r\nIt is a cultural heritage collection (containing information about two famous Latvian cultural personalities - Rainis and Aspazija) that emphasizes links between collection objects. A subset of objects are transcribed and annotated with mentions of named entities, adding these entities as new collection objects.\r\n\r\nThe collection is published as Linked Data. See dataset resources for further information about it.\r\n\r\nPublication: http://ceur-ws.org/Vol-1608/paper-04.pdf"@en ;
+        dcterms:publisher     [ rdfs:label  "Uldis Bojars" ;
+                                foaf:mbox   "uldis.bojars@lnb.lv"
+                              ] ;
+        dcterms:subject       "publications" , "literature" , "library" , "lod" , "Latvia" , "culturalheritage" , "lld" , "Aspazija" , "Rainis" ;
+        dcterms:title         "\"Rainis and Aspazija\" Linked Digital Collection"@en ;
+        void:exampleResource  <http://runa.lnb.lv/60884/> , <http://runa.lnb.lv/62056/> , <http://runa.lnb.lv/110023/> , <http://runa.lnb.lv/60316.rdf> , <http://runa.lnb.lv/60316.ttl> , <http://runa.lnb.lv/60316/> , <http://runa.lnb.lv/33383.ttl> ;
+        void:triples          34660 ;
+        dcat:distribution     [ dcat:accessURL  <https://datahub.ckan.io/dataset/4329e622-a001-4922-b111-60b9046c4660/resource/85f69bce-c988-4100-aa2a-656038956347/download/runaalluris.txt> ] ;
+        foaf:homepage         <http://runa.lnb.lv> .
+
+[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/rainis-and-aspazija-linked-digital-collection> ;
+  void:triples  446
+] .

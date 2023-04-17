@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/odc-lsoa> , <http://lod-cloud.net/dataset/english-index-of-multiple-deprivation-score-2010> ;
+  void:triples  32482
+] .
+
+<http://lod-cloud.net/dataset/english-index-of-multiple-deprivation-score-2010>
+        a                     void:Dataset ;
+        dcterms:description   "This dataset contains the main Index of Multiple Deprivation scores for 2010. It was created from data provided by the Department of Communities and Local Government. See <a href=\"http://www.communities.gov.uk/publications/corporate/statistics/indices2010\">here</a> for details.\r\n\r\n194892 triples."@en ;
+        dcterms:publisher     [ rdfs:label  "Bill Roberts" ;
+                                foaf:mbox   "bill@swirrl.com"
+                              ] ;
+        dcterms:subject       "crime" , "deprivation" , "license-metadata" , "lod" , "employment" , "environment" , "imd" , "no-vocab-mappings" , "housing" , "government" , "health" , "deref-vocab" , "education" , "department-of-infrastructure-transport-regional-development-and-local-government" , "linkeddata" , "provenance-metadata" , "geographic" , "published-by-third-party" ;
+        dcterms:title         "English Index of Multiple Deprivation Score 2010"@en ;
+        void:exampleResource  <http://opendatacommunities.org/doc/IMD/2010/IMD-score/LSOA/E01000001.ttl> ;
+        void:sparqlEndpoint   <http://opendatacommunities.org/sparql> ;
+        void:triples          194892 ;
+        dcat:distribution     [ dcat:accessURL  <http://opendatacommunities.org/datasets/imd-score-2010.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://opendatacommunities-downloads.s3.amazonaws.com/imd-2010-imd-score.ttl.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://opendatacommunities.org/def/IMD> ] ;
+        foaf:homepage         <http://opendatacommunities.org/datasets/imd-score-2010> .

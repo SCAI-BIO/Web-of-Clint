@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-ic> , <http://lod-cloud.net/dataset/cz-contracts> ;
+  void:triples  2169
+] .
+
+<http://lod-cloud.net/dataset/cz-contracts>
+        a                     void:Dataset ;
+        dcterms:description   "This dataset contains data from the registry of contracts of the Czech Republic - contracts"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "government" , "published-by-third-party" , "czech" , "format-dcterms" , "format-skos" , "deref-vocab" , "czech-republic" , "no-vocab-mappings" , "lod" , "format-schema" , "format-gr" , "format-adms" , "license-metadata" , "provenance-metadata" ;
+        dcterms:title         "Registry of contracts of the Czech Republic - Contracts"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdomain%2Fseznam.gov.cz%2Fsmlouvy%2F260167803%3E&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          245107 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/seznam.gov.cz/smlouvy/260167803> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fseznam.gov.cz%2Frejstriky%2Fsmlouvy%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/gov-cz-smlouvy.trig> ] ;
+        foaf:homepage         <http://linked.opendata.cz/resource/dataset/seznam.gov.cz/rejstriky/smlouvy> .

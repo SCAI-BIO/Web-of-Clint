@@ -1,0 +1,60 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/twc-opendap> ;
+  void:triples  2
+] .
+
+<http://lod-cloud.net/dataset/twc-opendap>
+        a                     void:Dataset ;
+        dcterms:description   "Linked Data Provenance for OPeNDAP data processing."@en ;
+        dcterms:publisher     [ rdfs:label  "Timothy Lebo" ;
+                                foaf:mbox   "lebot@rpi.edu"
+                              ] ;
+        dcterms:subject       "format-con" , "format-oboro" , "format-pmlj" , "format-bibo" , "format-sio" , "publications" , "format-vsr" , "format-irw" , "format-bte" , "format-prov" , "format-dbpedia" , "format-void" , "format-rdfs" , "deref-vocab" , "format-formats" , "prizms" , "linked-data" , "provenance-metadata" , "format-foaf" , "format-dcat" , "format-schema" , "format-owl" , "format-vann" , "lod" , "format-pmlp" , "format-opm" , "format-conv" , "provenance" , "format-sd" , "format-ov" , "format-datafaqs" , "format-pml" , "format-rdf" , "vocab-mappings" , "format-skos" , "format-doap" , "format-pronom" , "format-tag" , "format-dc" , "format-nif" ;
+        dcterms:title         "twc-opendap"@en ;
+        void:dataDump         <http://opendap.tw.rpi.edu/source/us/file/cr-full-dump/version/latest/conversion/opendap-tw-rpi-edu.nt.gz> ;
+        void:exampleResource  <http://opendap.tw.rpi.edu/id/component/olfs> ;
+        void:sparqlEndpoint   <http://opendap.tw.rpi.edu/sparql> ;
+        void:triples          6437058 ;
+        dcat:distribution     [ dcat:accessURL  dcterms: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://schema.org/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/vocab/vann/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2002/07/owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://usefulinc.com/ns/doap> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://provenanceweb.org/ns/pml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/vsr> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/sparql-service-description> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://opendap.tw.rpi.edu/source/us/file/cr-sitemap/version/latest/conversion/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2004/02/skos/core> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://open.vocab.org/terms/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/between-the-edges/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/net/provenance/ns> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/formats/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2000/01/rdf-schema> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.holygoat.co.uk/owl/redwood/0.1/tags/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/dcat> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdfs.org/ns/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/datafaqs> ] ;
+        dcat:distribution     [ dcat:accessURL  foaf: ] ;
+        dcat:distribution     [ dcat:accessURL  <https://github.com/tetherless-world/opendap> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.ontologydesignpatterns.org/ont/web/irw.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://opendap.tw.rpi.edu/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://dbpedia.org/resource/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/ontology/bibo/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://reference.data.gov.uk/technical-registry/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://inference-web.org/2.0/pml-provenance.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/1999/02/22-rdf-syntax-ns> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://opendap.tw.rpi.edu/source/us/file/cr-aggregated-params/version/latest/conversion/us-cr-aggregated-params-latest.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://openprovenance.org/ontology> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/prov> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2000/10/swap/pim/contact> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://semanticscience.org/resource/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/vocab/conversion/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://obofoundry.org/ro/ro.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://inference-web.org/2.0/pml-justification.owl> ] .

@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/glottolog>
+        a                     void:Dataset ;
+        dcterms:description   "Glottolog provides information about descriptive literature for all the world's languages. It also provides a language classification as well as knowledge bases for names, codes, and locations.\r\nThe licence is CC-SA"@en ;
+        dcterms:publisher     [ rdfs:label  "Sebastian Nordhoff and Harald Hammarström" ;
+                                foaf:mbox   "glottolog@eva.mpg.de"
+                              ] ;
+        dcterms:subject       "license-metadata" , "provenance-metadata" , "format-foaf" , "format-frbr" , "llod" , "no-proprietary-vocab" , "format-skos" , "linguistic" , "format-dcterms" , "bibliography" , "deref-vocab" , "format-bibo" , "publications" , "format-wgs" , "linguistics" , "typology" , "published-by-producer" , "lod" , "format-gold" , "format-lexvo" ;
+        dcterms:title         "Glottolog"@en ;
+        void:dataDump         <http://glottolog.org/static/download/glottolog-language.n3.gz> ;
+        void:exampleResource  <http://www.glottolog.org/resource/reference/id/39524.rdf> , <http://glottolog.org/resource/languoid/id/kiny1244.rdf> ;
+        void:triples          10000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://glottolog.org/static/download/glottolog-language.csv.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://glottolog.org/void.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://glottolog.org/static/download/glottolog-source.bib.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://glottolog.org/static/download/glottolog-source.n3.gz> ] ;
+        foaf:homepage         <http://glottolog.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/glottolog> ;
+  void:triples  7000
+] .

@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/cz-vavai-programmes>
+        a                     void:Dataset ;
+        dcterms:description   "R&D Programmes from http://www.isvav.cz/."@en ;
+        dcterms:publisher     [ rdfs:label  "Petr Škoda" ;
+                                foaf:mbox   "skoda@opendata.cz"
+                              ] ;
+        dcterms:subject       "published-by-third-party" , "license-metadata" , "lod" , "government" , "no-vocab-mappings" , "format-dcterms" , "provenance-metadata" , "format-skos" , "deref-vocab" ;
+        dcterms:title         "R&D Programmes"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/vavai/aktivita/AA%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Fprogrammes&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          3353 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Fprogrammes%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-programmes.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-programmes-vocabulary.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/vavai/aktivita/AA> ] ;
+        foaf:homepage         <http://linked.opendata.cz/resource/dataset/vavai/programmes> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-vavai-funding-providers> , <http://lod-cloud.net/dataset/cz-vavai-programmes> ;
+  void:triples  250
+] .

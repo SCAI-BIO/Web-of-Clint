@@ -1,0 +1,42 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dm2e> , <http://lod-cloud.net/dataset/judaicalink> ;
+  void:triples  3107
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/judaicalink> ;
+  void:triples  116
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/judaicalink> ;
+  void:triples  1412
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/judaicalink> ;
+  void:triples  261
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/judaicalink> ;
+  void:triples  109
+] .
+
+<http://lod-cloud.net/dataset/judaicalink>
+        a                    void:Dataset ;
+        dcterms:description  "Linking encyclopediae on Jewish culture and history."@en ;
+        dcterms:publisher    [ rdfs:label  "Kai Eckert" ;
+                               foaf:mbox   "kai@informatik.uni-mannheim.de"
+                             ] ;
+        dcterms:subject      "encyclopedia" , "lod" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:title        "JudaicaLink"@en ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <http://data.judaicalink.org/data/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://data.judaicalink.org/data/> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/judaicalink> ;
+  void:triples  2101
+] .

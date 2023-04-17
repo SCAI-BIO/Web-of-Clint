@@ -1,0 +1,37 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/warsampo> ;
+  void:triples  311
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/doi> , <http://lod-cloud.net/dataset/warsampo> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/muninn-world-war-i> , <http://lod-cloud.net/dataset/warsampo> ;
+  void:triples  147
+] .
+
+<http://lod-cloud.net/dataset/warsampo>
+        a                    void:Dataset ;
+        dcterms:description  "This dataset includes harmonized data of different kinds concerning the Second World War in Finland, separated in different graphs representing events, actors, places, photographs, and other aspects and documentation of the war. To test and demonstrate its usefulness, this data service is in use in the semantic portal [WarSampo](http://sotasampo.fi/en/) explained in more detail in the [project page](http://seco.cs.aalto.fi/projects/sotasampo)."@en ;
+        dcterms:publisher    [ rdfs:label  "Mikko Koho" ;
+                               foaf:mbox   "mikko.koho@aalto.fi"
+                             ] ;
+        dcterms:subject      "CIDOC" , "lod" , "format-dct" , "format-foaf" , "cross_domain" , "history" , "format-geo" , "Finland" , "format-rdf" , "format-skos" , "deref-vocab" , "Lapland War" , "format-crm" , "Winter War" , "Lapin sota" , "sota" , "CRM" , "war" , "culturalheritage" , "military history" , "CIDOC CRM" , "talvisota" , "jatkosota" , "Second World War" , "format-schema" , "Continuation War" ;
+        dcterms:title        "WarSampo"@en ;
+        void:dataDump        <https://doi.org/10.5281/zenodo.3431121> ;
+        void:sparqlEndpoint  <http://ldf.fi/warsa/sparql> ;
+        void:triples         14280903 ;
+        dcat:distribution    [ dcat:accessURL  <http://ldf.fi/warsa/actors/person_1> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.ldf.fi/dataset/warsa/> ] ;
+        foaf:homepage        <http://www.ldf.fi/dataset/warsa> .
+
+[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/warsampo> ;
+  void:triples  159
+] .

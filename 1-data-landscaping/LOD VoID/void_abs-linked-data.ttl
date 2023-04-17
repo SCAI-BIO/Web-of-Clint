@@ -1,0 +1,61 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/fao-linked-data> , <http://lod-cloud.net/dataset/abs-linked-data> ;
+  void:triples  99
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/uis-linked-data> , <http://lod-cloud.net/dataset/abs-linked-data> ;
+  void:triples  495
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/abs-linked-data> ;
+  void:triples  99
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ecb-linked-data> , <http://lod-cloud.net/dataset/abs-linked-data> ;
+  void:triples  99
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/transparency-linked-data> , <http://lod-cloud.net/dataset/abs-linked-data> ;
+  void:triples  99
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/world-bank-linked-data> , <http://lod-cloud.net/dataset/abs-linked-data> ;
+  void:triples  99
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/the-eurostat-linked-data> , <http://lod-cloud.net/dataset/abs-linked-data> ;
+  void:triples  99
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/abs-linked-data> ;
+  void:triples  99
+] .
+
+<http://lod-cloud.net/dataset/abs-linked-data>
+        a                     void:Dataset ;
+        dcterms:description   "ABS data and metadata"@en ;
+        dcterms:publisher     [ rdfs:label  "Sarven Capadisli" ;
+                                foaf:mbox   "info@csarven.ca"
+                              ] ;
+        dcterms:subject       "lodcloud" , "linked-data" , "format-prov" , "lodcloud.candidate" , "no-proprietary-vocab" , "format-sdmx" , "economics" , "statistics" , "format-dcterms" , "indicators" , "country-codes" , "void-sparql-endpoint" , "format-skos" , "government" , "lod" , "published-by-third-party" , "license-metadata" , "format-rdf" , "provenance-metadata" , "vocab-mappings" , "format-qb" ;
+        dcterms:title         "Australian Bureau of Statistics (ABS) Linked Data"@en ;
+        void:exampleResource  <http://abs.270a.info/dataset/ABS_CENSUS2011_T03_LGA> ;
+        void:sparqlEndpoint   <http://abs.270a.info/sparql> ;
+        void:triples          2357400000 ;
+        dcat:distribution     [ dcat:accessURL  <http://abs.270a.info/.well-known/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://abs.270a.info/data/meta.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://abs.270a.info/data/data.tar.gz> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/bfs-linked-data> , <http://lod-cloud.net/dataset/abs-linked-data> ;
+  void:triples  99
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bis-linked-data> , <http://lod-cloud.net/dataset/abs-linked-data> ;
+  void:triples  198
+] .

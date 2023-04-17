@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-vavai-projects> , <http://lod-cloud.net/dataset/cz-vavai-results> ;
+  void:triples  850000
+] .
+
+<http://lod-cloud.net/dataset/cz-vavai-results>
+        a                     void:Dataset ;
+        dcterms:description   "Results of R&D."@en ;
+        dcterms:publisher     [ rdfs:label  "Petr Škoda" ;
+                                foaf:mbox   "skoda@opendata.cz"
+                              ] ;
+        dcterms:subject       "lod" , "provenance-metadata" , "format-skos" , "deref-vocab" , "published-by-third-party" , "no-vocab-mappings" , "format-dcterms" , "license-metadata" , "government" ;
+        dcterms:title         "Results of R&D"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/vavai/vysledek/RIV%2F00023001%3A_____%2F93%3A0%21RIV%2F1999%2FMZ0%2FL17009%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Fresults&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          42176844 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-results.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Fresults%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-results-vocabulary.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/vavai/vysledek/RIV%2F00023001%3A_____%2F93%3A0%21RIV%2F1999%2FMZ0%2FL17009> ] ;
+        foaf:homepage         <http://linked.opendata.cz/resource/dataset/vavai/results> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-vavai-research-plans> , <http://lod-cloud.net/dataset/cz-vavai-results> ;
+  void:triples  850000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-vavai-organizations> , <http://lod-cloud.net/dataset/cz-vavai-results> ;
+  void:triples  850000
+] .

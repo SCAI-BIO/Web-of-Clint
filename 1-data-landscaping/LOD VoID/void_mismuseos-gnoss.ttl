@@ -1,0 +1,48 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/mismuseos-gnoss> ;
+  void:triples  1129
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/mismuseos-gnoss> ;
+  void:triples  28715
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/museosespania-gnoss> , <http://lod-cloud.net/dataset/mismuseos-gnoss> ;
+  void:triples  8949
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gnoss> , <http://lod-cloud.net/dataset/mismuseos-gnoss> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/mismuseos-gnoss> ;
+  void:triples  1071
+] .
+
+<http://lod-cloud.net/dataset/mismuseos-gnoss>
+        a                     void:Dataset ;
+        dcterms:description   "<p>\r\n<a href=\"http://mismuseos.net/en/community/museos\">MisMuseos.net</a> is a semantic index of artistic resources (museums, artists and artwork) powered by <a href=\"http://gnoss.com/\">GNOSS</a>. MisMuseos.net structures, organizes and offers you, in accordance with the principles promoted by the Linked Data Project, an extensive catalog of works of art that museums publish on the Web. MisMuseos.net connects them with educational recommendations and contexts. <p> The information on public cultural goods comes from data published in the Europeana dataset as RDF (Resource Description Framework), CER.ES Collection (Red Digital de Colecciones de Museos de España) and online public museums collections in Spain not included in CER.ES. MisMuseos.net offers a selection of 8,947 resources (November 2012).</p>\r\n</p>\r\n\r\n<p>\r\nMuseos, Obras de Arte y Artistas componen la colección de <a href=\"http://mismuseos.net/\">MisMuseos.net</a>, el gran índice de recursos artísticos en Internet promovido por \r\n<a href=\"http://gnoss.com/\">GNOSS</a> y destinado al enriquecimiento de la Web Semántica. MisMuseos.net estructura, organiza y pone a tu alcance, de acuerdo con los principios promovidos por el Linked Data Project, un extenso catálogo de las obras de arte que los museos publican en la Red conectándolo con otras bases de conocimiento educativas existentes en la iniciativa Linking Open permitiendo la generación de contextos educativos relacionados con los bienes culturales. </p>\r\n<p> La información sobre bienes culturales públicos procede de los datos publicados en el Europeana dataset como RDF (Resource Description Framework), de la colección CER.ES (Red Digital de Colecciones de Museos de España), y de las colecciones online de los museos públicos de España no incluidos en CER.ES. MisMuseos.net dispone en la actualidad de 8.947 obras de arte (Noviembre 2012)</p>"@en ;
+        dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
+                                foaf:mbox   "gnoss@gnoss.com"
+                              ] ;
+        dcterms:subject       "wrapper" , "mncars" , "license-metadata" , "published-by-third-party" , "exposiciones de museos" , "obras de museos" , "foaf" , "format-dcam" , "sioc" , "catálogo de arte" , "exposiciones" , "catálogo de obras de arte" , "índice de obras de arte" , "pinacoteca digital" , "escuelas artísticas" , "cuadro" , "country-spain" , "catálogo semántico" , "sp" , "obras de arte por época" , "colección de arte" , "pintores" , "obras de arte por estilo" , "instalaciones" , "provenance-metadata" , "usergeneratedcontent" , "museo de bellas artes de bilbao" , "artista" , "pintura" , "spain" , "lod" , "schemata" , "country.es" , "publications" , "museos" , "no-proprietary-vocab" , "language-spa" , "escultura" , "obras de arte" , "pinacoteca virtual" , "obras de arte por museo" , "format-skos" , "museo del prado" , "recursos artísticos" , "dc" , "format-foaf" , "format-wot" , "artistas" , "no-vocab-mappings" , "pinacoteca" , "obras de arte por autor" , "escultores" , "museo nacional centro de arte reina sofía" , "format-rdfg" , "socialweb" , "colección de obras de arte" , "skos" , "colecciones de arte" , "format-sioc" , "format-dc" ;
+        dcterms:title         "Mis Museos, índice semántico de museos, artistas y obras de arte (GNOSS)"@en ;
+        void:exampleResource  <http://mismuseos.net/en/community/museos/advanced-search/tag/barroco?rdf> , <http://mismuseos.net/comunidad/museos/recurso/Guernica/cac61948-81db-4f01-a505-8718e92bb414?rdf> , <http://mismuseos.net/comunidad/museos/recurso/La-maja-vestida/28347478-566c-445d-b6e6-339a10f9cdc6?rdf> ;
+        void:triples          1235894 ;
+        dcat:distribution     [ dcat:accessURL  <http://mismuseos.net/voidMisMuseosGNOSS.n3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://gnoss.com/gnoss.owl> ] ;
+        foaf:homepage         <http://mismuseos.net/> .
+
+[ void:target   <http://lod-cloud.net/dataset/didactalia> , <http://lod-cloud.net/dataset/mismuseos-gnoss> ;
+  void:triples  44745
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/mismuseos-gnoss> ;
+  void:triples  59
+] .

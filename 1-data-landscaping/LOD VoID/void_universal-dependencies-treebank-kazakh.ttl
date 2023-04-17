@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/universal-dependencies-treebank-kazakh>
+        a                    void:Dataset ;
+        dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Kazakh treebank.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Makazhanov, Aibek; Washington, Jonathan North; Tyers, Francis" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "corpus" , "lod" , "linguistics" ;
+        dcterms:title        "Universal Dependencies Treebank Kazakh"@en ;
+        void:triples         6023 ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/a425a448-ac4c-48cd-94e9-aca8c5f1d0d9/resource/4c91a6a1-ed1f-4cc8-bf69-4c3c8b624121/download/udkazakh.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Kazakh/archive/master.zip> ] ;
+        foaf:homepage        <https://github.com/UniversalDependencies/UD_Kazakh> .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-kazakh> ;
+  void:triples  72
+] .

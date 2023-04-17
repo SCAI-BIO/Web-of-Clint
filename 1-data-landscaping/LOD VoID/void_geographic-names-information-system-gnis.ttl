@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/geographic-names-information-system-gnis> ;
+  void:triples  45532
+] .
+
+<http://lod-cloud.net/dataset/geographic-names-information-system-gnis>
+        a                    void:Dataset ;
+        dcterms:description  "The GNIS contains information about physical and cultural geographic features in the United States and associated areas, both current and historical (not including roads and highways). The database holds the Federally recognized name of each feature and defines the location of the feature by state, county, USGS topographic map, and geographic coordinates."@en ;
+        dcterms:publisher    [ rdfs:label  "Blake Regalia" ;
+                               foaf:mbox   "blake.regalia@gmail.com"
+                             ] ;
+        dcterms:subject      "usgs" , "geography" , "gnis" , "geographic" , "geology" , "semantic web" ;
+        dcterms:title        "Geographic Names Information System (GNIS)"@en ;
+        void:sparqlEndpoint  <http://usgs-stko.geog.ucsb.edu:8080/sparql/select> ;
+        void:triples         3508685 ;
+        dcat:distribution    [ dcat:accessURL  <http://usgs-stko.geog.ucsb.edu/resource/cegis.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://usgs-stko.geog.ucsb.edu/resource/sd.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://usgs-stko.geog.ucsb.edu/resource/GNIS-LD.zip> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://usgs-stko.geog.ucsb.edu/resource/void.ttl> ] .

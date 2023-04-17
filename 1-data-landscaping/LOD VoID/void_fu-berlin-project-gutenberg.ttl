@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/fu-berlin-project-gutenberg>
+        a                     void:Dataset ;
+        dcterms:description   "Metadata about public domain works available at Project Gutenberg.\r\n\r\nData last updated in 2007."@en ;
+        dcterms:publisher     [ rdfs:label  "Christian Bizer" ;
+                                foaf:mbox   "chris@bizer.de"
+                              ] ;
+        dcterms:subject       "no-provenance-metadata" , "lodcloud-diagram-2011-09-19" , "lodcloud-diagram-2014-08-30" , "lod" , "lodcloud-diagram-2007-05-01" , "publications" , "lodcloud.nolinks" , "published-by-third-party" , "format-dcmit" , "no-license-metadata" , "no-vocab-mappings" , "deref-vocab" , "format-rdf" ;
+        dcterms:title         "Project Gutenberg in RDF (FU Berlin)"@en ;
+        void:exampleResource  <http://www4.wiwiss.fu-berlin.de/gutendata/resource/etext10128> ;
+        void:sparqlEndpoint   <http://www4.wiwiss.fu-berlin.de/gutendata/sparql> ;
+        void:triples          10000 ;
+        foaf:homepage         <http://www4.wiwiss.fu-berlin.de/gutendata/> .

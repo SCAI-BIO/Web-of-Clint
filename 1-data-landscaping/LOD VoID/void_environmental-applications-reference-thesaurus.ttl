@@ -1,0 +1,45 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/environmental-applications-reference-thesaurus>
+        a                     void:Dataset ;
+        dcterms:description   "The Environmental Applications Reference Thesaurus (EARTh) has been compiled and is maintained by the  CNR-IIA-EKOLab  to facilitate the indexing, retrieval, harmonizing and integration of human- and machine-readable environmental information from disparate sources, across the cultural and linguistic barriers. Ownership of such material always remains with the CNR-IIA-EKOLab.\r\n\r\nEARTh has been firstly made available as linked data as an activity within the European Project NatureSDIPlus (ECP-2007-GEO-317007). It is currently maintained  in the context of LusTRE, a framework under development within the EU project eENVplus (CIP-ICT-PSP grant No. 325232) that aims at combining existing thesauri to support the management of environmental resources. LusTRE considers the heterogeneity in scopes and levels of abstraction of environmental thesauri as an asset when managing environmental data, it exploits linked data best practices SKOS (Simple Knowledge Organization System) and RDF (Resource Description Framework) in order to provide a multi-thesauri solution for INSPIRE data themes related to the environment. \r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Paolo Plini (CNR-IIA-EKOLab) " ;
+                                foaf:mbox   "plini@iia.cnr.it"
+                              ] ;
+        dcterms:subject       "lld" , "geography" , "format-rdf" , "void-sparql-endpoint" , "published-by-third-party" , "license-metadata" , "thesaurus" , "no-proprietary-vocab" , "lod" , "schemata" , "lodcloud-diagram-2011-09-19" , "format-skos" , "provenance-metadata" , "vocab-mappings" , "geographic" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:title         "EARTh"@en ;
+        void:exampleResource  <http://linkeddata.ge.imati.cnr.it/resource/EARTh/100000> ;
+        void:sparqlEndpoint   <http://linkeddata.ge.imati.cnr.it:8890/sparql> ;
+        void:triples          133315 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.oclc.org/net/DumpEarthRDF> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.oclc.org/NET/EARThVOID> ] ;
+        foaf:homepage         <http://thesaurus.iia.cnr.it/index.php/vocabularies/earth> .
+
+[ void:target   <http://lod-cloud.net/dataset/thist> , <http://lod-cloud.net/dataset/environmental-applications-reference-thesaurus> ;
+  void:triples  1447
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/environmental-applications-reference-thesaurus> ;
+  void:triples  1862
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/agrovoc-skos> , <http://lod-cloud.net/dataset/environmental-applications-reference-thesaurus> ;
+  void:triples  1458
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/umthes> , <http://lod-cloud.net/dataset/environmental-applications-reference-thesaurus> ;
+  void:triples  " 2970 "^^xsd:integer
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gemet> , <http://lod-cloud.net/dataset/environmental-applications-reference-thesaurus> ;
+  void:triples  4365
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eurovoc-in-skos> , <http://lod-cloud.net/dataset/environmental-applications-reference-thesaurus> ;
+  void:triples  1346
+] .

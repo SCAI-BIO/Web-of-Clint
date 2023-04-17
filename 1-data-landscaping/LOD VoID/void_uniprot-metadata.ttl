@@ -1,0 +1,37 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/uniprot-metadata> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/uniprot-metadata>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "life_sciences" , "format-owl" , "lifesciences" , "format-dcterm" , "crawledLinkedDataCloud2014" , "format-rdf" , "LinkedDataCrawl2014" , "format-skos" , "format-rdfs" ;
+        dcterms:title         "uniprot-metadata"@en ;
+        void:exampleResource  <http://www.uniprot.org/database/CTD.rdf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/aspire-ucl> , <http://lod-cloud.net/dataset/uniprot-metadata> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/w3c> , <http://lod-cloud.net/dataset/uniprot-metadata> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/uniprot-metadata> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-wildlife-finder> , <http://lod-cloud.net/dataset/uniprot-metadata> ;
+  void:triples  2
+] .

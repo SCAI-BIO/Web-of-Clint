@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/universal-dependencies-treebank-coptic>
+        a                    void:Dataset ;
+        dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Coptic treebank.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Davidson, Elizabeth; Zeldes, Amir" ;
+                               foaf:mbox   "amir.zeldes@georgetown.edu"
+                             ] ;
+        dcterms:subject      "lod" , "linguistics" , "corpus" ;
+        dcterms:title        "Universal Dependencies Treebank Coptic"@en ;
+        void:triples         5220 ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/6c72b87e-8ae1-4105-87b4-1890f8c83dc0/resource/f354f34a-6a12-4f60-82e8-19b68726c5b9/download/udcoptic.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Coptic/archive/master.zip> ] ;
+        foaf:homepage        <https://github.com/UniversalDependencies/UD_Coptic> .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-coptic> ;
+  void:triples  72
+] .

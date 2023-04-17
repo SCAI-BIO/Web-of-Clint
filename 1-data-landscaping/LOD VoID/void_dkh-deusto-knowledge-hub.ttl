@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/dkh-deusto-knowledge-hub>
+        a                    void:Dataset ;
+        dcterms:description  "Deusto Knowledge Hub es un espacio web común a disposición de la comunidad universitaria de Deusto para descubrir y aportar el conocimiento que generan en la actividad diaria, tanto docentes, investigadores, personal de administración/servicios, como estudiantes. El espacio web permite que un usuario interrogue sobre aquello que quiere buscar obteniendo una información precisa para seguir interrogando. Tambien es posible comenzar la búsqueda atendiendo a las tres grandes áreas universitarias: investigación, docencia e información institucional. \r\n\r\nDeusto Knowledge Hub ha permitido una integración total de la información, sin ser invasivo ni sustituir los sistemas actualmente existentes, que siguen operando y gestionando procesos universitarios. Tras establecer y pensar el Modelo Digital Semántico Universitario se acometió un proceso de representación semántica de todos los contenidos, generando un gran grafo universitario y desplegando las opciones de búsqueda y recuperación de la información más acorde a las necesidades planteadas. \r\n\r\nEl establecimiento de una política de publicación en Linked Open Data por parte de la Universidad de Deusto permite hacer más transparente a la Universidad, generar sistemas de búsqueda que son sistemas de aprendizaje y de gestión en la medida en que el sistema de búsqueda facetada embebe o incorpora gran parte de los informes necesarios por parte de la gestión así como da facilidades a la hora de descubrir conocimiento oculto en las bases de datos y sistemas de gestión universitario que actualmente operan de forma aislada, fragmentada, dispersa, sin integración."@en ;
+        dcterms:publisher    [ rdfs:label  " GNOSS Team" ;
+                               foaf:mbox   "gnoss@gnoss.com"
+                             ] ;
+        dcterms:subject      "conocimiento" , "explorer" , "dkh" , "buscador" , "metabuscador" , "deusto" , "repositorio" , "dkh explorer" , "gnoss" , "deusto knowledge hub" , "universidad de deusto" ;
+        dcterms:title        "DKH (Deusto Knowledge Hub)"@en ;
+        void:triples         6424491 ;
+        dcat:distribution    [ dcat:accessURL  <http://dkh.deusto.es/comunidad/explorer/recurso/the-impact-of-business-innovation-modes-on-innovat/f0738db5-67db-4df8-b2a8-6cd91d1cb558?rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://dkh.deusto.es/comunidad/explorer/recurso/programa-de-psicologia-social/0cfe5509-41d4-42e4-bfa2-160f690b977a?rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://dkh.deusto.es/comunidad/explorer/busqueda?rdf:type=news> ] .

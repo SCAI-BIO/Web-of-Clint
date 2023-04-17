@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/dbtune-audioscrobbler>
+        a                     void:Dataset ;
+        dcterms:description   "### Description\r\n\r\nThis service provides a live RDF representation of your last 10 tracks submitted to [AudioScrobbler/Last.fm](http://www.audioscrobbler.net/). There are many AudioScrobbler clients for a wide range of media players. It now also provides you with the list of your friends (using their URI on this service, allowing to access their friends and scrobbles).\r\n\r\nThis representations is designed using the Music Ontology, FOAF and a small AudioScrobble ontology. Moreover, it is interlinked with corresponding dereferencable URIs in the Musicbrainz repository (see this quick explanation of why this is important).\r\n\r\n### Statistics\r\n\r\nThe triple count and MusicBrainz link count are based on estimates of total user numbers."@en ;
+        dcterms:publisher     [ rdfs:label  "Yves Raimond" ;
+                                foaf:mbox   "yves@dbtune.org"
+                              ] ;
+        dcterms:subject       "no-vocab-mappings" , "no-license-metadata" , "dbtune" , "music" , "no-deref-vocab" , "no-provenance-metadata" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "media" , "lod" , "format-rdf" ;
+        dcterms:title         "DBTune.org AudioScrobbler RDF Service"@en ;
+        void:exampleResource  <http://dbtune.org/last-fm/anjeve> ;
+        void:triples          600000000 ;
+        foaf:homepage         <http://dbtune.org/last-fm/> .
+
+[ void:target   <http://lod-cloud.net/dataset/zitgist-musicbrainz> , <http://lod-cloud.net/dataset/dbtune-audioscrobbler> ;
+  void:triples  15000000
+] .

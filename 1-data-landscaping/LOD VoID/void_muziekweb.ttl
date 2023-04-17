@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbtune-musicbrainz> , <http://lod-cloud.net/dataset/muziekweb> ;
+  void:triples  391073
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-incubator-discogs> , <http://lod-cloud.net/dataset/muziekweb> ;
+  void:triples  482265
+] .
+
+<http://lod-cloud.net/dataset/muziekweb>
+        a                     void:Dataset ;
+        dcterms:description   "Muziekweb is the music library of the Netherlands. Musicweb aims to offer music and the information about music accessible to everyone. Muziekweb has since 1961 built a collection of 600,000 CDs, 300,000 LPs and 30,000 music DVDs. The site is a source of information about music that has been released in the Netherlands during the past fifty years, and an ideal place to get to know more music.\n\nOn Muziekweb you will find:\nInformation about pop, classical, jazz and world music. \nLinks to streaming services to fully listen to music.                                                                                                                                                                                          \nObjective and reliable descriptions of albums, artists and music styles.                                                                                                                                                                        \nCollections of historical value made accessible digitally via the special collections page.                                                                              \nIn-depth and accessible pieces on numerous musical topics, written by experts.                                                                                                                                                                                        \n\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Muziekweb" ;
+                                foaf:mbox   "info@muziekweb.nl"
+                              ] ;
+        dcterms:subject       "media" , "Records" , "Media" , "Music" , "Dutch" ;
+        dcterms:title         "Muziekweb"@en ;
+        void:dataDump         <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/download.nt.gz> , <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/download.ttl.gz> , <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/download.trig.gz> , <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/download.nq.gz> ;
+        void:exampleResource  <https://data.muziekweb.nl/Link/HFX0244> , <https://data.muziekweb.nl/Link/M00000023349> , <https://data.muziekweb.nl/Link/JK132334> , <https://data.muziekweb.nl/Link/HBX0637> ;
+        void:sparqlEndpoint   <https://api.data.muziekweb.nl/datasets/muziekweborganization/Muziekweb/services/Muziekweb/sparql> , <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/sparql/Muziekweb> ;
+        void:triples          31579141 ;
+        dcat:distribution     [ dcat:accessURL  <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/assets/5e96feb56ac1c3036f26eaa4> ] ;
+        foaf:homepage         <https://data.muziekweb.nl/> .
+
+[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/muziekweb> ;
+  void:triples  39067
+] .

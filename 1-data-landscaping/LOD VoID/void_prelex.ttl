@@ -1,0 +1,29 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/prelex>
+        a                    void:Dataset ;
+        dcterms:description  "PreLex provides access to documents regarding inter-institutional law of the European Union. The original website provides only access to the documents via search, whereas the extracted data also contains metadata for better filtering and querying possibilities. The data that was published as Linked Data in this task was not extracted from the original source, but from an already existing API for European Union legislation. If you want to browse the data, please use the links in the \"navigation box\" on the left side. Furthermore, it is possible to create your own SPARQL queries for obtaining lists of combined information.\r\nThis dataset (http://prelex.publicdata.eu/) was triplified and published by the research group AKSW (Agile Knowledge Engineering and Semantic Web). For further information about AKSW please visit our website."@en ;
+        dcterms:publisher    [ rdfs:label  "Philipp Frischmuth" ;
+                               foaf:mbox   "frischmuth@informatik.uni-leipzig.de"
+                             ] ;
+        dcterms:subject      "legal" , "latc" , "lodcloud" , "lod" , "government" ;
+        dcterms:title        "PreLex"@en ;
+        void:sparqlEndpoint  <http://prelex.publicdata.eu/sparql> ;
+        void:triples         1051352 ;
+        dcat:distribution    [ dcat:accessURL  <http://prelex.publicdata.eu/r/organization/DG+Fisheries> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://prelex.publicdata.eu/resource/export/f/rdfxml?r=http%3A%2F%2Fprelex.publicdata.eu%2Fr%2Forganization%2FDG%2BFisheries> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://prelex.publicdata.eu/model/export/?m=http%3A%2F%2Fprelex.publicdata.eu%2F&f=rdfxml> ] ;
+        foaf:homepage        <http://prelex.publicdata.eu/> .
+
+[ void:target   <http://lod-cloud.net/dataset/eur-lex-rdf> , <http://lod-cloud.net/dataset/prelex> ;
+  void:triples  11637
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/prelex> ;
+  void:triples  1
+] .

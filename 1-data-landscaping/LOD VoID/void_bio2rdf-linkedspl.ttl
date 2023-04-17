@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/bio2rdf-linkedspl>
+        a                     void:Dataset ;
+        dcterms:description   "LinkedSPL is a Linked Data version of DailyMed"@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "lod" , "provenance-metadata" , "published-by-third-party" , "license-metadata" , "vocab-mappings" , "lifesciences" , "deref-vocab" , "format-rdfs" , "format-dc" , "bio2rdf" , "format-rdf" ;
+        dcterms:title         "Bio2RDF::Linkedspl"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/linkedspl/linkedspl.nt.gz> ;
+        void:exampleResource  <http://bio2rdf.org/linkedspl:0000076a-fc39-4208-ace8-6c2cb367904f> ;
+        void:sparqlEndpoint   <http://linkedspl.bio2rdf.org/sparql> ;
+        void:triples          2174579 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/linkedspl/linkedspl.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/linkedspl/linkedspl.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/linkedspl/bio2rdf-linkedspl.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/linkedspl/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/linkedspl/bio2rdf_linkedspl_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/linkedspl/> ] ;
+        foaf:homepage         <http://linkedspl.bio2rdf.org/> .

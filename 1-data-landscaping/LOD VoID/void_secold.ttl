@@ -1,0 +1,37 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/secold> ;
+  void:triples  2100
+] .
+
+<http://lod-cloud.net/dataset/secold>
+        a                     void:Dataset ;
+        dcterms:description   "SECOLD contains structured source code facts from open source projects. It is developed to service source code mining, search and traceability research and tools by providing structural source code search over open source code on the Internet.\r\n\r\nIt has 1.5 billion facts extracted from more than 1 million source code file. SECOLD is connected to DBpedia, freebase and opencyc.\r\n\r\nIt extracts fine-grained facts from source code in several levels (e.g. presentation, syntax, and semantic).\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Iman Keivanloo" ;
+                                foaf:mbox   "keivanloo@ieee.org"
+                              ] ;
+        dcterms:subject       "format-rdf" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "source_code" , "lod" , "usergeneratedcontent" , "software" , "open_source" , "no-provenance-metadata" , "deref-vocab" , "published-by-producer" ;
+        dcterms:title         "Source Code Ecosystem Linked Data"@en ;
+        void:dataDump         <http://aseg.cs.concordia.ca/secold/download/static/secold_v_001.tar> ;
+        void:exampleResource  <http://aseg.cs.concordia.ca/secold/download/static/secold_001_samples/sample_fqn_java.util.Collection.rdf> , <http://aseg.cs.concordia.ca/secold/download/static/secold_001_samples/sample_snapshot_of_lucene_project.rdf> , <http://aseg.cs.concordia.ca/secold/download/static/secold_001_samples/sample_project_apache_lucene.rdf> , <http://aseg.cs.concordia.ca/secold/download/static/secold_001_samples/sample_variation_of_a_java_class.rdf> ;
+        void:sparqlEndpoint   <http://aseg.cs.concordia.ca/secold/sparqlendpoint> ;
+        void:triples          1500000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://aseg.cs.concordia.ca/secold/download> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://aseg.cs.concordia.ca/ontologies/2010/11/meton.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://aseg.cs.concordia.ca/ontologies/2010/11/veron.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://aseg.cs.concordia.ca/ontologies/2010/11/socon.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://aseg.cs.concordia.ca/secold/sparql/> ] ;
+        foaf:homepage         <http://aseg.cs.concordia.ca/secold> .
+
+[ void:target   <http://lod-cloud.net/dataset/opencyc> , <http://lod-cloud.net/dataset/secold> ;
+  void:triples  2000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/secold> ;
+  void:triples  25
+] .

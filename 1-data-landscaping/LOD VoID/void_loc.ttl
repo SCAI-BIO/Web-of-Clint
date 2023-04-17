@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/loc>
+        a                     void:Dataset ;
+        dcterms:description   "Linked Open Colors, dataset created for the April Fools' Day of 2011 as an informal initiative for promoting Linked Data. \r\nhttp://lists.w3.org/Archives/Public/public-lod/2011Apr/0003.html"@en ;
+        dcterms:publisher     [ rdfs:label  "Sergio Fernández" ;
+                                foaf:mbox   "sergio.fernandez@fundacionctic.org"
+                              ] ;
+        dcterms:subject       "aprilfools" , "ctic" , "format-rdf" , "crossdomain" , "published-by-third-party" , "lod" , "no-proprietary-vocab" ;
+        dcterms:title         "Linked Open Colors"@en ;
+        void:exampleResource  <http://purl.org/colors/rgb/ff0000> ;
+        void:triples          160000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://linkedopencolors.appspot.com/void.rdf> ] ;
+        foaf:homepage         <http://linkedopencolors.appspot.com/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/loc> ;
+  void:triples  16000000
+] .

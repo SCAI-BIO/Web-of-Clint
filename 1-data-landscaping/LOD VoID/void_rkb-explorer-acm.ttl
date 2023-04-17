@@ -1,0 +1,150 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  210
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-acm>
+        a                     void:Dataset ;
+        dcterms:description   "Linked Data version of publications of the Association for Computing Machinery (ACM), along with details of their authors."@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "void-sparql-endpoint" , "published-by-third-party" , "provenance-metadata" , "format-akt" , "lodcloud-diagram-2014-08-30" , "publications" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "no-license-metadata" , "lod" , "format-rdf" , "format-dc" ;
+        dcterms:title         "Association for Computing Machinery (ACM) (RKBExplorer)"@en ;
+        void:exampleResource  <http://acm.rkbexplorer.com/id/998550> ;
+        void:sparqlEndpoint   <http://acm.rkbexplorer.com/sparql/> ;
+        void:triples          12402336 ;
+        dcat:distribution     [ dcat:accessURL  <http://acm.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://acm.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://acm.rkbexplorer.com/models/dump.tgz> ] ;
+        foaf:homepage         <http://acm.rkbexplorer.com/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-curriculum> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-roma> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  66
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  38
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  4783
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  52286
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ibm> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  196
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  70169
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  208852
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-deepblue> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/southampton-ecs-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  67
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  99757
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-irit> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  827
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-epsrc> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ieee> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  2465
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  869965
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eurecom> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  42
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ulm> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  18
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  33
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  899
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  15116
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-risks> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  55
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-courseware> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  9
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  2114
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ft> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-resex> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  102
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  44
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-pisa> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  100
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-nsf> , <http://lod-cloud.net/dataset/rkb-explorer-acm> ;
+  void:triples  34
+] .

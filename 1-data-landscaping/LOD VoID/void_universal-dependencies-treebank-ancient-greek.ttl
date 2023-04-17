@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/universal-dependencies-treebank-ancient-greek>
+        a                    void:Dataset ;
+        dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Ancient_Greek treebank."@en ;
+        dcterms:publisher    [ rdfs:label  "Celano, Giuseppe G. A.; Zeman, Daniel" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "linguistics" , "corpus" , "lod" ;
+        dcterms:title        "Universal Dependencies Treebank Ancient_Greek"@en ;
+        void:triples         244993 ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/860319a1-0558-4ecd-872a-ee40f5b620a0/resource/c00d234a-2f39-4652-a625-d4db15017c2f/download/udancientgreek.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Ancient_Greek/archive/master.zip> ] ;
+        foaf:homepage        <https://github.com/UniversalDependencies/UD_Ancient_Greek> .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-ancient-greek> ;
+  void:triples  72
+] .

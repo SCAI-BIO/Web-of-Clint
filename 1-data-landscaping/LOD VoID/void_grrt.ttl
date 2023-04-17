@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/grrt> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/grrt>
+        a                     void:Dataset ;
+        dcterms:description   "List of accommodations in Tuscany, Italy.\r\nThe dataset uses GoodRelations and vcard and includes addresses, contact information (where available) and geo-reference. Note: geo-reference is provided in a best effort way, might contain errors."@en ;
+        dcterms:publisher     [ rdfs:label  "Linkedopendata.it" ;
+                                foaf:mbox   "info@linkedopendata.it"
+                              ] ;
+        dcterms:subject       "accommodation" , "government" , "format-gr" , "goodrelations" , "italy" , "provenance-metadata" , "void-sparql-endpoint" , "geography" , "format-rdf" , "deref-vocab" , "license-metadata" , "tourism" , "hotels" , "linkeddata" , "format-vcard" , "tuscany" , "lod" , "lodcloud.unconnected" , "published-by-third-party" ;
+        dcterms:title         "Accommodations in Tuscany (LinkedOpenData.it)"@en ;
+        void:exampleResource  <http://data.linkedopendata.it/grrt/resource/HOTEL_HERMITAGE_2> ;
+        void:sparqlEndpoint   <http://sparql.linkedopendata.it/grrt> ;
+        void:triples          434714 ;
+        dcat:distribution     [ dcat:accessURL  <http://dump.linkedopendata.it/grrt> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://void.linkedopendata.it/grrt> ] ;
+        foaf:homepage         <http://www.linkedopendata.it/datasets/grrt> .

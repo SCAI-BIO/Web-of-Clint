@@ -1,0 +1,41 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/ocd> , <http://lod-cloud.net/dataset/reload> ;
+  void:triples  596
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/reload> ;
+  void:triples  8548
+] .
+
+<http://lod-cloud.net/dataset/reload>
+        a                     void:Dataset ;
+        dcterms:description   "ReLoad project will foster experimentation with the technology and methods of linked open data for archival resources and its goal is the creation of a web of linked archival data"@en ;
+        dcterms:publisher     [ rdfs:label  "Reload Team: Archivio Centrale dello Stato, Istituto per i Beni culturali dell?Emilia-Romagna, regesta.exe" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "library" , "LODLAM" , "lodcloud-diagram-2014-08-30" , "open_archives" , "archives" , "country-italy" , "publications" , "lod" ;
+        dcterms:title         "Repository for Linked Open Archival Data"@en ;
+        void:exampleResource  <http://lod.xdams.org/reload/oad/uod/CD1700000001> ;
+        void:sparqlEndpoint   <http://lod.xdams.org/sparql> ;
+        void:triples          10455463 ;
+        dcat:distribution     [ dcat:accessURL  <https://github.com/regestaexe/ReloadProject/tree/master/data/acs/luoghiACS.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://github.com/regestaexe/ReloadProject/tree/master/data/ibc/caster_soggettiProduttori.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://github.com/regestaexe/ReloadProject/tree/master/data/ibc/caster_complessi.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://github.com/regestaexe/ReloadProject/tree/master/data/acs/entiMaic.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://github.com/regestaexe/ReloadProject/tree/master/data/cd/commissioniParlamentariInchiesta.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://github.com/regestaexe/ReloadProject/tree/master/data/acs/uodMAIC.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://github.com/regestaexe/ReloadProject/tree/master/data/acs/titolarioMAIC.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://github.com/regestaexe/ReloadProject/tree/master/data/ibc/caster_soggettiConservatori.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://github.com/regestaexe/ReloadProject/tree/master/data/cd/assembleaCostituente.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://labs.regesta.com/progettoReload/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://github.com/regestaexe/ReloadProject/tree/master/data/acs/personeMaic.rdf> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/reload> ;
+  void:triples  8133
+] .

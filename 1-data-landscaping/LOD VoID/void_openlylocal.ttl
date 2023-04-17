@@ -1,0 +1,36 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/openlylocal> ;
+  void:triples  400
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/opencorporates> , <http://lod-cloud.net/dataset/openlylocal> ;
+  void:triples  60000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/openlylocal> ;
+  void:triples  13500
+] .
+
+<http://lod-cloud.net/dataset/openlylocal>
+        a                     void:Dataset ;
+        dcterms:description   "The project provides a unified way of accessing UK Local Government information. It has information on (as per 2011-12-03):\r\n\r\n* 163 councils\r\n* 11,418 councillors\r\n* 6,728 committees\r\n* 77,830 committee meetings\r\n* 498 hyperlocal sites\r\n* 44,855 documents\r\n* Over 270,956 pieces of data\r\n* 2,368,794 financial transactions\r\n\r\nMost of the data is accessible as XML, JSON and RDF through a simple API (just add .json or .xml to the URL). There is also a Google Gadget, an app for Hyperlocal sites using Ning, and a javascript widget.\r\n\r\n### Openness\r\n\r\n  * Open. CC-BY-SA and ODbL. See [license info](http://openlylocal.com/info/licence_info) page.\r\n  * No bulk download though API access to most of the underlying data."@en ;
+        dcterms:publisher     [ rdfs:label  "Chris Taggart http://countculture.wordpress.com/" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "no-license-metadata" , "format.foaf" , "no-provenance-metadata" , "lod" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "deref-vocab" , "format.geonames" , "access.api" , "gov" , "country.uk" , "local-government" , "government" , "access.www" , "published-by-third-party" , "lodcloud-diagram-2014-08-30" , "local-authorities" ;
+        dcterms:title         "Openly Local :: Making Local Government More Transparent"@en ;
+        void:exampleResource  <http://openlylocal.com/councils/156.rdf> ;
+        void:triples          10000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://openlylocal.com/councils.json> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://openlylocal.com/info/api> ] ;
+        foaf:homepage         <http://openlylocal.com/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/openlylocal> ;
+  void:triples  13500
+] .

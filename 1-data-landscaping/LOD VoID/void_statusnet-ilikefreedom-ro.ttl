@@ -1,0 +1,57 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> ;
+  void:triples  15
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-mrblog-nl> , <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://ilikefreedom.ro"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-sioc" , "format-rdf" , "crawledLinkedDataCloud2014" , "social web" , "format-pos" , "format-foaf" , "LinkedDataCrawl2014" , "lodcloud-diagram-2014-08-30" , "format-bio" ;
+        dcterms:title         "statusnet-ilikefreedom-ro"@en ;
+        void:exampleResource  <http://sn.ilikefreedom.ro/eniac/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-hackerposse-com> , <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-fcac-com> , <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> ;
+  void:triples  1
+] .

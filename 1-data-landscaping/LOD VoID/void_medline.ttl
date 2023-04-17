@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/medline>
+        a                    void:Dataset ;
+        dcterms:description  "RDF representation of the Medline catalogue. Information about 19 million articles linked to http://dx.doi.org/ with article identifiers and http://crossref.org/ with journal identifiers."@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "format-void" , "format-dcat" , "format-bibo" , "format-rdfs" , "format-rdf" , "lld" , "format-foaf" , "lod" ;
+        dcterms:title        "medline"@en ;
+        void:triples         1016652223 ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/okfn/medline/catalogue> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/okfn/medline/records> ] ;
+        foaf:homepage        <http://purl.org/okfn/medline> .
+
+[ void:target   <http://lod-cloud.net/dataset/doi> , <http://lod-cloud.net/dataset/medline> ;
+  void:triples  137232958
+] .

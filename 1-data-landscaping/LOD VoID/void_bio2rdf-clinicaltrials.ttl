@@ -1,0 +1,38 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-clinicaltrials> ;
+  void:triples  18322
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-clinicaltrials>
+        a                     void:Dataset ;
+        dcterms:description   "ClinicalTrials.gov is a registry and results database of publicly and privately supported clinical studies of human participants conducted around the world. "@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "license-metadata" , "life_sciences" , "vocab-mappings" , "deref-vocab" , "lodcloud-diagram-2014-08-30" , "format-dc" , "format-rdfs" , "bio2rdf" , "provenance-metadata" , "lifesciences" , "lod" , "format-rdf" , "published-by-third-party" ;
+        dcterms:title         "Bio2RDF::Clinicaltrials"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/clinicaltrials/clinicaltrials.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/clinicaltrials:NCT00050895> ;
+        void:sparqlEndpoint   <http://clinicaltrials.bio2rdf.org/sparql> ;
+        void:triples          8323598 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/clinicaltrials/clinicaltrials.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/clinicaltrials/> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/clinicaltrials/bio2rdf_clinicaltrials_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/clinicaltrials/bio2rdf-clinicaltrials.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/clinicaltrials/clinicaltrials.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/clinicaltrials/sitemap.xml> ] ;
+        foaf:homepage         <http://clinicaltrials.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-obi> , <http://lod-cloud.net/dataset/bio2rdf-clinicaltrials> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-clinicaltrials> ;
+  void:triples  592167
+] .

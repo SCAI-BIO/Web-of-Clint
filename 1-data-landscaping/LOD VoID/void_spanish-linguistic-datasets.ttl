@@ -1,0 +1,17 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/spanish-linguistic-datasets>
+        a                    void:Dataset ;
+        dcterms:description  "Spanish Linguistic Datasets (SLD) is an open initiative to expose as Linked Data available Spanish Linguistic resources maintained at OEG. It is worth noting that we host Spanish multilingual resources.\r\nAt the moment, the collection of SLDs are (1) NC geo dictionary. Nomeclator Conciso; (2) BCN geo dictionary. Base Cartogrófica Numérica; (3) Badele lexical database. and (4) BNE thesaurus. "@en ;
+        dcterms:publisher    [ rdfs:label  "Spanish Linguistic Community" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "linguistics" , "Spanish" , "thesaurus" , "geodata" , "lexicon" ;
+        dcterms:title        "Spanish Linguistic Datasets"@en ;
+        void:sparqlEndpoint  <http://linguistic.linkeddata.es/sparql> ;
+        void:triples         16111 .

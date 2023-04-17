@@ -1,0 +1,29 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/agrinepaldata> ;
+  void:triples  38469
+] .
+
+<http://lod-cloud.net/dataset/agrinepaldata>
+        a                    void:Dataset ;
+        dcterms:description  "Ontology Based Data Access and Integration for Improving the Effectiveness of Farming in Nepal"@en ;
+        dcterms:publisher    [ rdfs:label  "Mohamed Sherif" ;
+                               foaf:mbox   "sherif@informatic.uni-leipzig.de"
+                             ] ;
+        dcterms:subject      "aksw" , "government" , "lod" ;
+        dcterms:title        "AgriNepalData"@en ;
+        void:sparqlEndpoint  <http://agrinepaldata.com/sparql> ;
+        void:triples         1433631 ;
+        dcat:distribution    [ dcat:accessURL  <http://agrinepaldata.com/download/agrinepaldataont.owl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://agrinepaldata.com/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://agrinepaldata.com/downloads/agrinepal.zip> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://agrinepaldata.com/download/void.ttl> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/agrovoc> , <http://lod-cloud.net/dataset/agrinepaldata> ;
+  void:triples  32294
+] .

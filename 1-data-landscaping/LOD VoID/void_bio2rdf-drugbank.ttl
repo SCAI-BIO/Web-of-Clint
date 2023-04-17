@@ -1,0 +1,114 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pdb> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  5189
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-chemspider> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  4469
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pharmgkb> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  1637
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  11802
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ndc> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  1094
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-hgnc> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  2467
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-bindingdb> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  904
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  4191
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-genbank> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  3384
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-genecards> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  2102
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-atc> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  1479
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-wikipedia> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  1876
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-gi> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  2849
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  251571
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-gtp> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  310
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-iuphar> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  310
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-drugbank>
+        a                     void:Dataset ;
+        dcterms:description   "The DrugBank database is a bioinformatics and chemoinformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "lifesciences" , "provenance-metadata" , "format-rdfs" , "vocab-mappings" , "published-by-third-party" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "format-dc" , "bio2rdf" , "format-rdf" , "lod" , "life_sciences" , "deref-vocab" ;
+        dcterms:title         "Bio2RDF::Drugbank"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/drugbank/drugbank_drugs.nq.gz> , <http://download.bio2rdf.org/current/drugbank/drugbank.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/drugbank:DB00001> ;
+        void:sparqlEndpoint   <http://drugbank.bio2rdf.org/sparql> ;
+        void:triples          3672531 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/drugbank/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/drugbank/bio2rdf_drugbank_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/drugbank/bio2rdf-drugbank.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/drugbank/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/drugbank/drugbank.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/drugbank/drugbank.schema.owl> ] ;
+        foaf:homepage         <http://drugbank.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-dpd> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  980
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uspto> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  1510
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-chebi> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  1930
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-genatlas> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  1671
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ahfs> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  275
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-kegg> , <http://lod-cloud.net/dataset/bio2rdf-drugbank> ;
+  void:triples  2603
+] .

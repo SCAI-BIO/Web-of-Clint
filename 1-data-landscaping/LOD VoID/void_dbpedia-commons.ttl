@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/dbpedia-commons>
+        a                    void:Dataset ;
+        dcterms:description  "DBpedia Commons provides the Wikimedia Commons dataset as Linked Data"@en ;
+        dcterms:publisher    [ rdfs:label  "DBpedia Association" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lod" , "Media" , "Cross-domain" ;
+        dcterms:title        "DBpedia Commons"@en ;
+        void:sparqlEndpoint  <http://commons.dbpedia.org/sparql> ;
+        void:triples         137421337 .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbpedia-commons> ;
+  void:triples  11974
+] .

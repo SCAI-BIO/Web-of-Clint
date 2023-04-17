@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/cz-list-of-databoxes>
+        a                     void:Dataset ;
+        dcterms:description   "Data box is a verified electronic mailbox mandatory for all companies and voluntary for individuals for communication with the Czech public administration."@en ;
+        dcterms:publisher     [ rdfs:label  "Ministerstvo vnitra České republiky" ;
+                                foaf:mbox   "klimek@opendata.cz"
+                              ] ;
+        dcterms:subject       "license-metadata" , "czech" , "czech republic" , "no-provenance-metadata" , "format-foaf" , "format-xsd" , "deref-vocab" , "lod" , "published-by-third-party" , "format-skos" , "no-vocab-mappings" , "government" , "data box" ;
+        dcterms:title         "List of Czech data boxes"@en ;
+        void:exampleResource  <https://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttps://linked.opendata.cz/zdroj/datové-schránky/22ba4zp%3E&default-graph-uri=https%3A%2F%2Flinked.opendata.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fdatov%C3%A9-schr%C3%A1nky&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <https://linked.opendata.cz/sparql> ;
+        void:triples          8181740 ;
+        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/soubor/datové-schránky/datové-schránky.trig.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/zdroj/datové-schránky/22ba4zp> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttps%3A%2F%2Flinked.opendata.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fdatov%C3%A9-schr%C3%A1nky%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        foaf:homepage         <https://linked.opendata.cz/zdroj/datová-sada/datové-schránky> .

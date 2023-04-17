@@ -1,0 +1,130 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-pisa> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-italy> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ieee> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  561
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-curriculum> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  31
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-jisc> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eurecom> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  695
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  183945
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  43
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  106009
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-irit> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  155
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ulm> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  17
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-kisti>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "format-void" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "no-license-metadata" , "format-scovo" , "publications" , "lod" , "no-vocab-mappings" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "void-sparql-endpoint" , "format-dc" , "published-by-third-party" , "test" , "format-foaf" , "provenance-metadata" ;
+        dcterms:title         "Korean Institute of Science Technology and Information (RKBExplorer)"@en ;
+        void:exampleResource  <http://kisti.rkbexplorer.com/id/PER_00000000000000131417> ;
+        void:sparqlEndpoint   <http://kisti.rkbexplorer.com/sparql/> ;
+        void:triples          12815726 ;
+        dcat:distribution     [ dcat:accessURL  <http://kisti.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kisti.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kisti.rkbexplorer.com/models/dump.tgz> ] ;
+        foaf:homepage         <http://kisti.rkbexplorer.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  63800
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ibm> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  101
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  25
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  239
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-lisbon> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ft> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-roma> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  25
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-resex> , <http://lod-cloud.net/dataset/rkb-explorer-kisti> ;
+  void:triples  2
+] .

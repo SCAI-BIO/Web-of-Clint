@@ -1,0 +1,57 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/babelnet> ;
+  void:triples  3850334
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/babelnet> ;
+  void:triples  474189
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/babelnet> ;
+  void:triples  3517616
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wiktionary-dbpedia-org> , <http://lod-cloud.net/dataset/babelnet> ;
+  void:triples  285912
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wikipedia> , <http://lod-cloud.net/dataset/babelnet> ;
+  void:triples  86241042
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/babelnet> ;
+  void:triples  27585374
+] .
+
+<http://lod-cloud.net/dataset/babelnet>
+        a                    void:Dataset ;
+        dcterms:description  "BabelNet is both a multilingual encyclopedic dictionary, with lexicographic and encyclopedic coverage of terms, and an ontology which connects concepts and named entities in a very large network of semantic relations, made up of 13,801,844 millions of nodes, called Babel synsets. Each Babel synset represents a given meaning and contains all the synonyms which in different languages express that meaning. The BabelNet resource is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported license. The different resources from which BabelNet originates are made available under different licenses, as follows: WordNet: http://wordnet.princeton.edu/wordnet/license/, Wikipedia: Creative Commons Attribution-ShareAlike 3.0 Unported license, Wiktionary: Creative Commons Attribution-ShareAlike 3.0 Unported license, OmegaWiki: Creative Commons Attribution 2.5 Generic license or higher, ItalWordNet: Open Data Commons Attribution 1.0 License, and Open Multilingual WordNet: different licenses according to the language, as indicated at http://compling.hss.ntu.edu.sg/omw/. When applicable, specific license rights are specified through the property dcterms:license. Please make sure of using data in compliance with their respective licenses."@en ;
+        dcterms:publisher    [ rdfs:label  "Roberto Navigli" ;
+                               foaf:mbox   "navigli@di.uniroma1.it"
+                             ] ;
+        dcterms:subject      "lexico" , "lemon" , "linguistics" , "lexical-resources" , "void-sparql-endpoint" , "format-rdf" , "ldl-2014" , "access-web" , "llod" ;
+        dcterms:title        "BabelNet"@en ;
+        void:sparqlEndpoint  <http://babelnet.org/sparql/> ;
+        void:triples         1971744856 ;
+        dcat:distribution    [ dcat:accessURL  <http://babelnet.org> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://babelnet.org/data/babelnet-2.0-lemon-URIs.tar.xz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://babelnet.org/data/babelnet-2.0-lemon-IRIs.tar.xz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://babelnet.org/rdf/> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/lemonuby> , <http://lod-cloud.net/dataset/babelnet> ;
+  void:triples  22298
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/babelnet> ;
+  void:triples  75326283
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wordnet-rdf> , <http://lod-cloud.net/dataset/babelnet> ;
+  void:triples  322519
+] .
