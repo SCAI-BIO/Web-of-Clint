@@ -37,5 +37,7 @@ In this example we are looking for all **flights with destination** (<http://fli
 
 The flight data is available in the [SCAI Triplestore](https://triplestore.scaiview.com) in dataset **flightaware**.
 
+![img.png](img.png)
+
 ## Preparation and deployment of Fuseki Triplestore
 To deploy the secoresearch/fuseki Docker image we decided to  
