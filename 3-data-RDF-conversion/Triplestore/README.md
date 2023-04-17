@@ -66,10 +66,10 @@ See further information at [secoresearch/fuseki](https://hub.docker.com/r/secore
 
 There are k8s configuration files available in folder kubernetes/secoresearch-fuseki.
 
-***secoresearch-fuseki-data-persistentvolumeclaim.yaml***
+**secoresearch-fuseki-data-persistentvolumeclaim.yaml**
 
-Configure the ***storageClassName*** to match the configuration of your k8s cluster.
-Configure the size of the PVC in value ***storage***
+Configure the ```storageClassName``` to match the configuration of your k8s cluster.
+Configure the size of the PVC in value ```storage```
 
 ```
 apiVersion: v1
@@ -88,7 +88,7 @@ spec:
       storage: 100Gi
 ```
 
-***secoresearch-fuseki-deployment.yaml***
+**secoresearch-fuseki-deployment.yaml**
 
 ```
 apiVersion: apps/v1
@@ -156,9 +156,9 @@ spec:
             claimName: secoresearch-fuseki-data
 ```
 
-***secoresearch-fuseki-ingress.yaml***
+**secoresearch-fuseki-ingress.yaml**
 
-Configure the ***host***
+Configure the **host**
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -189,7 +189,7 @@ spec:
                   name: "secoresearch"
 ```
 
-***secoresearch-fuseki-secret.yaml***
+**secoresearch-fuseki-secret.yaml**
 
 To create an encrypted username and password use the following command on a terminal:
 ```
@@ -210,7 +210,7 @@ data:
 
 ```
 
-***secoresearch-fuseki-service.yaml***
+**secoresearch-fuseki-service.yaml**
 
 ```
 apiVersion: v1
