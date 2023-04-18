@@ -1,0 +1,48 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/flickr-wrappr> , <http://lod-cloud.net/dataset/event-media> ;
+  void:triples  14000000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/event-media> ;
+  void:triples  15420
+] .
+
+<http://lod-cloud.net/dataset/event-media>
+        a                     void:Dataset ;
+        dcterms:description   "This dataset is composed of events and media descriptions associated with these events. It is obtained from three large public event directories (last.fm, eventful and upcoming) represented with the LODE ontology and from large media directories (flickr, youtube) represented with the W3C Media Ontology. It is interlinked with the larger Linked Open Data cloud and in particular with DBpedia, Freebase, Geonames. It also contains links to numerous related web pages, including MusicBrainz, Geonames, Last.fm, Eventful, Upcoming and Foursquare.\r\n\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Raphael Troncy" ;
+                                foaf:mbox   "raphael.troncy@eurecom.fr"
+                              ] ;
+        dcterms:subject       "format-ma" , "published-by-third-party" , "provenance-metadata" , "format-rdf" , "deref-vocab" , "format-lode" , "format-sioc" , "format-dc" , "no-license-metadata" , "events" , "usergeneratedcontent" , "vocab-mappings" , "format-foaf" , "lod" , "media" ;
+        dcterms:title         "EventMedia"@en ;
+        void:dataDump         <http://www.eurecom.fr/~troncy/ic2011/Artists_sameAs.nt> , <http://www.eurecom.fr/~troncy/ic2011/Events_sameAs.nt> , <http://www.eurecom.fr/~troncy/ic2011/Venues_sameAs.nt> ;
+        void:exampleResource  <http://data.linkedevents.org/agent/0a5a771a-5410-4c15-b695-b8059616e52f> ;
+        void:sparqlEndpoint   <http://eventmedia.eurecom.fr/sparql> ;
+        void:triples          36274454 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.eurecom.fr/~troncy/ldtc2010/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linkedevents.org/ontology/2010-10-07/rdfxml/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linkedevents.org/ontology/2010-10-07/rdfxml/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/ma-ont#> ] ;
+        foaf:homepage         <http://eventmedia.eurecom.fr/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbtune-musicbrainz> , <http://lod-cloud.net/dataset/event-media> ;
+  void:triples  42889
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/event-media> ;
+  void:triples  955
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/event-media> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/uberblic> , <http://lod-cloud.net/dataset/event-media> ;
+  void:triples  40498
+] .

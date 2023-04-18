@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/FHIR+STU3>
+        a                    void:Dataset ;
+        dcterms:description  "FHIR STU3"@en ;
+        dcterms:publisher    [ rdfs:label  "Adolph Trudeau" ;
+                               foaf:mbox   "adolph.trudeau@mdanderson.org"
+                             ] ;
+        dcterms:subject      "user_generated" ;
+        dcterms:title        "FHIR STU3"@en ;
+        void:dataDump        <http://hl7.org/fhir/STU3/fhir.ttl> ;
+        void:triples         "0"^^xsd:int ;
+        foaf:homepage        <http://hl7.org/fhir/STU3/> .

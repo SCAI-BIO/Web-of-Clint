@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linked-open-numbers> ;
+  void:triples  320
+] .
+
+<http://lod-cloud.net/dataset/linked-open-numbers>
+        a                     void:Dataset ;
+        dcterms:description   "A dataset of the natural numbers. Published on April 1st, 2010."@en ;
+        dcterms:publisher     [ rdfs:label  "Denny Vrande?i?" ;
+                                foaf:mbox   "denny.vrandecic@kit.edu"
+                              ] ;
+        dcterms:subject       "format-rdf" , "no-proprietary-vocab" , "cross_domain" , "lodcloud-diagram-2011-09-19" , "no-provenance-metadata" , "lod" , "published-by-producer" , "no-vocab-mappings" , "no-license-metadata" , "crossdomain" ;
+        dcterms:title         "Linked Open Numbers"@en ;
+        void:exampleResource  <http://km.aifb.kit.edu/projects/numbers/n7> ;
+        void:triples          140000000 ;
+        foaf:homepage         <http://km.aifb.kit.edu/projects/numbers/> .

@@ -1,0 +1,30 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/bricklink> ;
+  void:triples  25797
+] .
+
+<http://lod-cloud.net/dataset/bricklink>
+        a                     void:Dataset ;
+        dcterms:description   "Bricklink is an unofficial lego marketplace. Essentially it is the EBay for lego, where you can buy or sell anything to do with Lego. The lego community maintain a number of fantastic resources that catalogue all of the Lego products, often down to the detail of the number, colour and type of each part in a lego set. The catalogue that powers the Bricklink website is available for download and reuse and has been used to create this dataset.\r\n\r\nCurrently the dataset consists of descriptions of over 9000 Lego sets and over 23,000 Lego parts. A number of the lego sets have detailed inventories including number, type and colour of parts. There are also links to sets, instructions and part images.\r\n\r\n*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Leigh Dodds" ;
+                                foaf:mbox   "leigh@ldodds.com"
+                              ] ;
+        dcterms:subject       "published-by-third-party" , "media" , "format-rdf" , "lodcloud-diagram-2011-09-19" , "published" ;
+        dcterms:title         "Bricklink"@en ;
+        void:dataDump         <http://archive.org/download/kasabi/bricklink.gz> ;
+        void:exampleResource  <http://data.kasabi.com/dataset/bricklink/colour/67.rdf> ;
+        void:sparqlEndpoint   <http://api.kasabi.com/dataset/bricklink/apis/sparql> ;
+        void:triples          3314214 ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/api/search-api-bricklink> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/bricklink/apis/reconciliation> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/api/sparql-endpoint-bricklink> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.kasabi.com/dataset/bricklink> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/bricklink/apis/augmentation> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/bricklink/apis/lookup> ] ;
+        foaf:homepage         <http://kasabi.com/dataset/bricklink> .

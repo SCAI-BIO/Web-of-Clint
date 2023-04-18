@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/aspire-mmu>
+        a                     void:Dataset ;
+        dcterms:description   "Course reading lists from Manchester Metropolitan University."@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "bibliographic" , "academic" , "reading-lists" , "library" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:title         "Talis Aspire - Manchester Metropolitan University"@en ;
+        void:exampleResource  <http://lists.lib.mmu.ac.uk/lists/CB6CEEB7-47AF-F243-3E45-3C0A916F6C17.rdf> , <http://lists.lib.mmu.ac.uk/lists/CB6CEEB7-47AF-F243-3E45-3C0A916F6C17.html> ;
+        void:triples          4077093 ;
+        foaf:homepage         <http://lists.lib.mmu.ac.uk/index.html> .

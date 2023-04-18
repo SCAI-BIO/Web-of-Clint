@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/clld-wals> , <http://lod-cloud.net/dataset/clld-phoible> ;
+  void:triples  1666
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/clld-phoible> ;
+  void:triples  1672
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/clld-phoible> ;
+  void:triples  1672
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gold> , <http://lod-cloud.net/dataset/clld-phoible> ;
+  void:triples  61973
+] .
+
+<http://lod-cloud.net/dataset/clld-phoible>
+        a                    void:Dataset ;
+        dcterms:description  "PHOIBLE Online published by the CLLD project"@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "llod" , "lod" , "linguistics" ;
+        dcterms:title        "CLLD-PHOIBLE"@en ;
+        void:triples         1664872 ;
+        dcat:distribution    [ dcat:accessURL  <http://phoible.org/void.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://phoible.org/static/download/phoible-dataset.n3.gz> ] ;
+        foaf:homepage        <http://phoible.org> .

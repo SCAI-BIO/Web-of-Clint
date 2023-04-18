@@ -1,0 +1,17 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/Kronika+naukowa+Biblioteki+Jagiello%C5%84skiej>
+        a                    void:Dataset ;
+        dcterms:description  "Kronika"@en ;
+        dcterms:publisher    [ rdfs:label  "Aleksandra Szpak" ;
+                               foaf:mbox   "aleksa.szp@gmail.com"
+                             ] ;
+        dcterms:subject      "publications" ;
+        dcterms:title        "Kronika naukowa Biblioteki Uniwersyteckiej w Łodzi"@en ;
+        void:triples         "0"^^xsd:int ;
+        foaf:homepage        <http://rocznikibiblioteczne.ibi.uni.wroc.pl/woluminy/tom-i-zeszyty-1-2-1957/> .

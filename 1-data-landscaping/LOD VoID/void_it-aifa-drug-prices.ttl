@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/it-aifa-drug-prices>
+        a                     void:Dataset ;
+        dcterms:description   "The dataset provides prices of medicinal products marketed in Italian republic. The dataset was created on the base of information published by Italian Medicines Agency (http://www.agenziafarmaco.gov.it/)."@en ;
+        dcterms:publisher     [ rdfs:label  "Petr Škoda" ;
+                                foaf:mbox   "skoda@opendata.cz"
+                              ] ;
+        dcterms:subject       "czech" , "published-by-third-party" , "format-skos" , "lod" , "provenance-metadata" , "czech-republic" , "no-vocab-mappings" , "government" , "deref-vocab" , "license-metadata" ;
+        dcterms:title         "List of prices of medicinal products marketed in Italian Republic"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/it/aifa/medicinal-product-packaging/39716182%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fit%2Faifa%2Fdrug-prices&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          ""^^xsd:integer ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fit%2Faifa%2Fdrug-prices%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/it-aifa-drug-prices.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/it/aifa/medicinal-product-packaging/39716182> ] ;
+        foaf:homepage         <http://linked.opendata.cz/resource/dataset/it/aifa/drug-prices> .

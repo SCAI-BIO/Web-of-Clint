@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/yso>
+        a                     void:Dataset ;
+        dcterms:description   "General Finnish Ontology YSO is a trilingual ontology consisting mainly of general concepts. YSO has been founded on the basis of concepts in Finnish cultural sphere. As an indexing tool it is best applicable when indexed material is interdiscliplinary and its themes vary to a great extent."@en ;
+        dcterms:publisher     [ rdfs:label  "Finto service" ;
+                                foaf:mbox   "finto-posti@helsinki.fi"
+                              ] ;
+        dcterms:subject       "thesaurus" , "multilingual" , "published-by-producer" , "finland" , "lld" , "format-skos" , "ontology" , "publications" , "library" , "format-dc" ;
+        dcterms:title         "YSO - General Finnish Ontology"@en ;
+        void:dataDump         <http://finto.fi/rest/v1/yso/data?format=text/turtle> , <http://finto.fi/rest/v1/yso/data?format=application/rdf%2Bxml> ;
+        void:exampleResource  <http://www.yso.fi/onto/yso/p26001> ;
+        void:triples          570000 ;
+        foaf:homepage         <http://finto.fi/yso/> .
+
+[ void:target   <http://lod-cloud.net/dataset/ysa> , <http://lod-cloud.net/dataset/yso> ;
+  void:triples  29400
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/yso> ;
+  void:triples  14000
+] .

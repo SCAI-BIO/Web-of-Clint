@@ -1,0 +1,49 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-drugbank> , <http://lod-cloud.net/dataset/tcmgenedit_dataset> ;
+  void:triples  385
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-diseasome> , <http://lod-cloud.net/dataset/tcmgenedit_dataset> ;
+  void:triples  376
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/entrez_gene> , <http://lod-cloud.net/dataset/tcmgenedit_dataset> ;
+  void:triples  944
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-sider> , <http://lod-cloud.net/dataset/tcmgenedit_dataset> ;
+  void:triples  171
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/tcmgenedit_dataset> ;
+  void:triples  1400
+] .
+
+<http://lod-cloud.net/dataset/tcmgenedit_dataset>
+        a                     void:Dataset ;
+        dcterms:description   "Data exposed: Traditional Chinese medicine, gene and disease association dataset and a linkset mapping TCM gene symbols to Extrez Gene IDs created by Neurocommons\r\n\r\nSize of dump and data set: 288kb compressed\r\n\r\nNotes: Creative Commons with Attributions"@en ;
+        dcterms:publisher     [ rdfs:label  "Jun Zhao" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "no-vocab-mappings" , "format-rdf" , "published-by-third-party" , "no-provenance-metadata" , "lod" , "rdf" , "genetics" , "size-kb" , "no-license-metadata" , "medical" , "linkeddata" , "lifesciences" , "life_sciences" , "no-deref-vocab" , "ckanupload.esw.200910" , "lodcloud-diagram-2011-09-19" ;
+        dcterms:title         "TCMGeneDIT Dataset"@en ;
+        void:exampleResource  <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/disease/Hyperthyroidism> ;
+        void:sparqlEndpoint   <http://www.open-biomed.org.uk/sparql/endpoint/tcm> ;
+        void:triples          117643 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.open-biomed.org.uk/tcmdata/tcm_rdf_data_release3_190609.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.open-biomed.org.uk/tcmdata/tcm_rdf_data_release3_190609_turtle.tar.gz> ] ;
+        foaf:homepage         <http://code.google.com/p/junsbriefcase/wiki/TGDdataset> .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedct> , <http://lod-cloud.net/dataset/tcmgenedit_dataset> ;
+  void:triples  141
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-dailymed> , <http://lod-cloud.net/dataset/tcmgenedit_dataset> ;
+  void:triples  21
+] .

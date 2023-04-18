@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/reactome-rdf>
+        a                    void:Dataset ;
+        dcterms:description  "BioPAX representation of the Reactome database"@en ;
+        dcterms:publisher    [ rdfs:label  "Reactome Consortium" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "vocab-mappings" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "lifesciences" , "published-by-producer" , "rdf" , "bioinformatics" , "lod" , "pathways" , "reactions" , "life_sciences" , "linked data" ;
+        dcterms:title        "Reactome RDF"@en ;
+        void:sparqlEndpoint  <https://www.ebi.ac.uk/rdf/services/reactome/sparql> ;
+        void:triples         14285698 ;
+        dcat:distribution    [ dcat:accessURL  <ftp://ftp.ebi.ac.uk/pub/databases/RDF/reactome/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rdf.ebi.ac.uk/dataset/reactome/49/dataset-void.ttl> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/uniprotkb> , <http://lod-cloud.net/dataset/reactome-rdf> ;
+  void:triples  100793
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/identifiers.org> , <http://lod-cloud.net/dataset/reactome-rdf> ;
+  void:triples  469870
+] .

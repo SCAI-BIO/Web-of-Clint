@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rdfs> , <http://lod-cloud.net/dataset/russian-universities-specialities> ;
+  void:triples  10000
+] .
+
+<http://lod-cloud.net/dataset/russian-universities-specialities>
+        a                    void:Dataset ;
+        dcterms:description  "This ontology describes a degree of higher education and the direction of bachelor's and master's degrees in the Russian Federation and their compliance with the various official lists. It is assumed that a given ontology can be used in various applications of the Semantic Web in Russian higher education."@en ;
+        dcterms:publisher    [ rdfs:label  "Alexey Dmitriev" ;
+                               foaf:mbox   "aleks23041996@gmail.com"
+                             ] ;
+        dcterms:subject      "vocab-mappings" , "published-by-producer" , "speciality" , "no-proprietary-vocab" , "lodcloud.nolinks" , "lod" , "no-license-metadata" , "russian" , "education" , "no-provenance-metadata" , "university" , "format-rdfs" ;
+        dcterms:title        "Russian Universities Specialities"@en ;
+        void:sparqlEndpoint  <http://sparql.sstu.ru:3030/speciality-vocabulary/query> ;
+        void:triples         17376 ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/c8bb2280-5919-4fbb-85b1-52d03d403e21/resource/38b05231-715e-411e-9c04-4752d08dfa6d/download/specialitydatahub.rdf> ] ;
+        foaf:homepage        <http://sparql.sstu.ru:3030/speciality-vocabulary/query> .

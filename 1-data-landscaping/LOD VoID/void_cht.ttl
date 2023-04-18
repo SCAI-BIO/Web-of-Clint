@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-nl> , <http://lod-cloud.net/dataset/cht> ;
+  void:triples  1996
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/getty-aat> , <http://lod-cloud.net/dataset/cht> ;
+  void:triples  1683
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/cht> ;
+  void:triples  36
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/cht> ;
+  void:triples  42
+] .
+
+<http://lod-cloud.net/dataset/cht>
+        a                    void:Dataset ;
+        dcterms:description  "Concepts that cover the cultural heritage field in the Netherlands."@en ;
+        dcterms:publisher    [ rdfs:label  "Joop Vanderheiden" ;
+                               foaf:mbox   "j.vanderheiden@cultureelerfgoed.nl"
+                             ] ;
+        dcterms:subject      "government" , "Architecture" , "Arthistory" , "cultural heritage" , "archaeology" , "historical buildings" ;
+        dcterms:title        "Cultural Heritage Thesaurus"@en ;
+        void:dataDump        <https://data.cultureelerfgoed.nl/term/id/cht/export/term/id/cht.ttl> ;
+        void:sparqlEndpoint  <https://digitaalerfgoed.poolparty.biz/PoolParty/sparql/term/id/cht> ;
+        void:triples         645403 ;
+        foaf:homepage        <https://data.cultureelerfgoed.nl/> .

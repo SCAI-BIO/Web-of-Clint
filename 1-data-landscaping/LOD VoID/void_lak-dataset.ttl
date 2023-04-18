@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/lak-dataset> ;
+  void:triples  150
+] .
+
+<http://lod-cloud.net/dataset/lak-dataset>
+        a                     void:Dataset ;
+        dcterms:description   "The LAK dataset provides access to structured fulltext and metadata from key research publications in the field of learning analytics and educational data mining (see http://lak.linkededucation.org for details). It is regularly updated with data, for instance, from the LAK or EDM Conference series. "@en ;
+        dcterms:publisher     [ rdfs:label  "LAK Data Team" ;
+                                foaf:mbox   "admin@data.linkededucation.org"
+                              ] ;
+        dcterms:subject       "deref-vocab" , "learning-analytics" , "format-http" , "bibliographic data" , "cross_domain" , "education" , "format-rdf" , "l3s" , "lod" , "sparql-endpoint" , "crossdomain" , "published-by-producer" , "topic.crossdomain" , "sparql" ;
+        dcterms:title         "Learning Analytics and Knowledge (LAK) Dataset"@en ;
+        void:dataDump         <http://lak.linkededucation.org/lak/LAK-DATASET-DUMP.nt.zip> ;
+        void:exampleResource  <http://data.linkededucation.org/resource/lak/conference/lak2013/paper/93> ;
+        void:sparqlEndpoint   <http://data.linkededucation.org/request/lak-conference/sparql> ;
+        void:triples          "27.843"^^xsd:integer ;
+        dcat:distribution     [ dcat:accessURL  <http://lak.linkededucation.org/schema/lak.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lak.linkededucation.org/lak/LAK-DATASET-DUMP.rdf.zip> ] ;
+        foaf:homepage         <http://www.solaresearch.org/resources/lak-dataset/> .

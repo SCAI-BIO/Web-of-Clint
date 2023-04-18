@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/epa-tri>
+        a                     void:Dataset ;
+        dcterms:description   "Toxics Release Inventory (TRI) is a resource for learning about toxic chemical releases and pollution prevention activities reported by industrial and federal facilities. TRI data support informed decision-making by communities, government agencies, companies, and others."@en ;
+        dcterms:publisher     [ rdfs:label  "EPA Office of Environmental Information" ;
+                                foaf:mbox   "admin@3roundstones.com"
+                              ] ;
+        dcterms:subject       "lod" , "government" , "environmental" ;
+        dcterms:title         "EPA-TRI"@en ;
+        void:exampleResource  <https://opendata.epa.gov/data/trireport/1399130026545.ttl> ;
+        void:triples          137423327 ;
+        dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov/meta/tri/schema.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov/meta/tri/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov> ] ;
+        foaf:homepage         <https://opendata.epa.gov> .
+
+[ void:target   <http://lod-cloud.net/dataset/epa-frs> , <http://lod-cloud.net/dataset/epa-tri> ;
+  void:triples  58562
+] .

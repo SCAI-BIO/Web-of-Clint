@@ -1,0 +1,38 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/lingvoj>
+        a                     void:Dataset ;
+        dcterms:description   "### Description\r\n\r\nLingvoj means languages in Esperanto. From the frontpage of <http://www.lingvoj.org/>:\r\n\r\nSince the launch of lingvoj.org in 2007, the linked data cloud has grown at a steady pace, and a growing number of URI sets have been published to identify human languages.  Lexvo.org   is providing the most exhaustive of those so far, in which URIs for languages are integrated in a global approach of terminology. Through exchanges with Gerard de Melo, editor at Lexvo.org, it has been decided to redirect and deprecate lingvoj.org URIs for individual languages to the benefit of the more stable and exhaustive publication at Lexvo.org.\r\n\r\nMost lingvoj.org URIs for individual languages are redirected to lexvo.org URIs through content negotiation. A few exceptions are URIs of languages with no ISO 639-3 codes, since lexvo URIs are built on those codes, and languages with a regional tag, such as en-us. \r\n\r\nThe  lingvoj-to-lexvo RDF file provides the mappings and equivalence between lingvo and lexvo URIs. Applications using the lingvoj.org URIs are invited to change their references accordingly, although the redirection mechanism should avoid any breakdown of applications using lingvoj.org URIs. \r\n\r\n### Openness: OPEN\r\n\r\n  * License: not specified but Open Data logo prominently displayed and part of the Linked Data effort so assumed to be open.\r\n  * Access: Good.\r\n    * bulk. (download of rdf file)"@en ;
+        dcterms:publisher     [ rdfs:label  "Bernard Vatant" ;
+                                foaf:mbox   "bernard [dot] vatant [at] mondeca [dot] com"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "lod" , "llod" , "published-by-producer" , "language" , "format-owl" , "lodcloud-diagram-2011-09-19" , "rdf" , "linked-data" , "crossdomain" , "linguistics" , "format-dc" , "provenance-metadata" , "deref-vocab" , "no-vocab-mappings" , "license-not-specified" , "format-rdf" , "license-metadata" ;
+        dcterms:title         "lingvoj ? Languages of the World (Multilingual RDF Descriptions)"@en ;
+        void:exampleResource  <http://www.lingvoj.org/lang/fr> ;
+        void:triples          22442 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.lingvoj.org/lingvoj-to-lexvo.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.lingvoj.org/ontology.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.lingvoj.org/lingvoj.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.lingvoj.org/void> ] ;
+        foaf:homepage         <http://www.lingvoj.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/umbel> , <http://lod-cloud.net/dataset/lingvoj> ;
+  void:triples  132
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbtune-musicbrainz> , <http://lod-cloud.net/dataset/lingvoj> ;
+  void:triples  71
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/lingvoj> ;
+  void:triples  215
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/lingvoj> ;
+  void:triples  510
+] .

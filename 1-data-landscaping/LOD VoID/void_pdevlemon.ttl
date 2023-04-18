@@ -1,0 +1,17 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/pdevlemon>
+        a                    void:Dataset ;
+        dcterms:description  "The Pattern Dictionary of English Verbs (PDEV) describes English verbs according to usage patterns found in corpora (British National Corpus) using a technique called Corpus Pattern Analysis, invented by senior lexicographer Patrick Hanks.\r\n\r\nPDEV provides insight into how verbs collocate with nouns and other words using an empirically well-founded apparatus of syntactic and semantic categories. PDEV is a valuable resource for NLP and text processing because it specifies in detail the contextual conditions that determine meaning of a word.\r\n\r\nPDEV is work in progress, created manually by lexicographers, and converted to RDF using the lemon model by Ismail El Maarouf. The RDF resource is called PDEV-lemon and is available under a CC-by-SA licence.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Patrick Hanks, Jane Bradbury, Ismail El Maarouf" ;
+                               foaf:mbox   "elmaarouf.ismail@yahoo.fr"
+                             ] ;
+        dcterms:subject      "lexinfo" , "lexicography" , "lemon" , "lexicon" , "linguistics" , "framenet" ;
+        dcterms:title        "pdevlemon"@en ;
+        void:dataDump        <http://pdev.org.uk/pdevlemonfiles/pdevlemon.nt.tar.gz> ;
+        void:triples         233372 .

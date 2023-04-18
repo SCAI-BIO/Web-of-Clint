@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/eurostat-rdf> , <http://lod-cloud.net/dataset/fu-berlin-eurostat> ;
+  void:triples  424
+] .
+
+<http://lod-cloud.net/dataset/fu-berlin-eurostat>
+        a                     void:Dataset ;
+        dcterms:description   "This dataset contains several statistical indicators for European countries and NUTS Level-2 Regions (NUTS: Nomenclature of Territorial Units for Statistics). Most statistical data are time series, therefore only the latest availabe value is provided here.\r\n\r\n### Issues\r\n\r\nDate of extraction: 06-14-2007; hence this dataset is seriously outdated.\r\n\r\nlinks:ontologycentral-eurostat: 424"@en ;
+        dcterms:publisher     [ rdfs:label  "Christian Bizer" ;
+                                foaf:mbox   "chris@bizer.de"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "no-provenance-metadata" , "government" , "published-by-third-party" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "eurostat" , "lod" , "no-vocab-mappings" , "geographic" , "deref-vocab" ;
+        dcterms:title         "Eurostat in RDF (FU Berlin)"@en ;
+        void:exampleResource  <http://www4.wiwiss.fu-berlin.de/eurostat/data/regions/Border_Midland_And_Western?output=n3> , <http://www4.wiwiss.fu-berlin.de/eurostat/data/regions/Border_Midland_And_Western?output=rdfxml> ;
+        void:sparqlEndpoint   <http://www4.wiwiss.fu-berlin.de/eurostat/sparql> ;
+        void:triples          8850 ;
+        foaf:homepage         <http://www4.wiwiss.fu-berlin.de/eurostat/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/fu-berlin-eurostat> ;
+  void:triples  129
+] .

@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-planet-libre-org> , <http://lod-cloud.net/dataset/statusnet-otbm-fr> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-otbm-fr> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-otbm-fr> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-otbm-fr> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/statusnet-otbm-fr>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://otbm.fr"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-rdf" , "crawledLinkedDataCloud2014" , "LinkedDataCrawl2014" , "format-foaf" , "social web" , "format-bio" , "lodcloud-diagram-2014-08-30" , "format-sioc" , "format-pos" ;
+        dcterms:title         "statusnet-otbm-fr"@en ;
+        void:exampleResource  <http://status.otbm.fr/enky/foaf> ;
+        void:triples          "0"^^xsd:int .

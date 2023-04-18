@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/st-andrews-resource-lists>
+        a                     void:Dataset ;
+        dcterms:description   "Search for lists, modules & courses\r\n\r\n  \r\nBrowse hierarchy | Recent changes"@en ;
+        dcterms:publisher     [ rdfs:label  "Ian Davis" ;
+                                foaf:mbox   "ian.davis@talis.com"
+                              ] ;
+        dcterms:subject       "education" , "no-proprietary-vocab" , "format-rdf" , "no-vocab-mappings" , "lod" , "higher-education" , "no-provenance-metadata" , "talis" , "published-by-producer" , "lodcloud-diagram-2011-09-19" , "publications" , "no-license-metadata" ;
+        dcterms:title         "St. Andrews University Resource Lists"@en ;
+        void:exampleResource  <http://resourcelists.st-andrews.ac.uk/lists/A99D9239-0866-D6F4-9728-61E65C2C0974> ;
+        void:triples          1223619 ;
+        foaf:homepage         <http://resourcelists.st-andrews.ac.uk/> .
+
+[ void:target   <http://lod-cloud.net/dataset/openlibrary> , <http://lod-cloud.net/dataset/st-andrews-resource-lists> ;
+  void:triples  37784
+] .

@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/basque-eurowordnet-lemon-lexicon-3-0>
+        a                    void:Dataset ;
+        dcterms:description  "This is the Basque EuroWordNet-Lemon lexicon. The lexicon was created from the Spanish Word-Net-LMF lexicon which is part of the Multilingual Central Repository (MCR http://adimen.si.ehu.es/web/MCR). The lexicon conforms to the 'lemon' specification."@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lemon" , "lexinfo" , "lexicon" , "linguistics" , "EuroWordNet" ;
+        dcterms:title        "Basque EuroWordNet-lemon lexicon (3.0)"@en ;
+        void:triples         1215583 ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/martavillegas/EuroWordNetLemon/blob/master/eus-30-lmf.xml.ttl> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/basque-eurowordnet-lemon-lexicon-3-0> ;
+  void:triples  27222
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/sumo> , <http://lod-cloud.net/dataset/basque-eurowordnet-lemon-lexicon-3-0> ;
+  void:triples  79149
+] .

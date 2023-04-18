@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-vavai-programmes> , <http://lod-cloud.net/dataset/cz-vavai-projects> ;
+  void:triples  42000
+] .
+
+<http://lod-cloud.net/dataset/cz-vavai-projects>
+        a                     void:Dataset ;
+        dcterms:description   "R&D Projects from http://www.isvav.cz/ ."@en ;
+        dcterms:publisher     [ rdfs:label  "Petr Škoda" ;
+                                foaf:mbox   "skoda@opendata.cz"
+                              ] ;
+        dcterms:subject       "lod" , "deref-vocab" , "provenance-metadata" , "format-dcterms" , "no-vocab-mappings" , "license-metadata" , "published-by-third-party" , "format-skos" , "government" ;
+        dcterms:title         "R&D Projects"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/vavai/projekt/TA01010078%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Fprojects&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          4460700 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/vavai/projekt/TA01010078> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-projects-vocabulary.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-projects.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Fprojects%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        foaf:homepage         <http://linked.opendata.cz/resource/dataset/vavai/projects> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-vavai-organizations> , <http://lod-cloud.net/dataset/cz-vavai-projects> ;
+  void:triples  250000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-vavai-tenders> , <http://lod-cloud.net/dataset/cz-vavai-projects> ;
+  void:triples  42000
+] .

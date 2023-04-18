@@ -1,0 +1,29 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-panda-id-au> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-panda-id-au> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-ourcoffs-org-au> , <http://lod-cloud.net/dataset/statusnet-panda-id-au> ;
+  void:triples  2
+] .
+
+<http://lod-cloud.net/dataset/statusnet-panda-id-au>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://panda.id.au"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "social web" , "crawledLinkedDataCloud2014" , "lodcloud-diagram-2014-08-30" , "format-sioc" , "social_networking" , "format-foaf" , "format-rdf" , "LinkedDataCrawl2014" , "format-pos" ;
+        dcterms:title         "statusnet-panda-id-au"@en ;
+        void:exampleResource  <http://status.panda.id.au/foaf> ;
+        void:triples          "0"^^xsd:int .

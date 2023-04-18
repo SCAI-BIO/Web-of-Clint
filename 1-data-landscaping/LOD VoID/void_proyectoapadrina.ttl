@@ -1,0 +1,40 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/proyectoapadrina> ;
+  void:triples  7310
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/proyectoapadrina> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/proyectoapadrina> ;
+  void:triples  3385
+] .
+
+<http://lod-cloud.net/dataset/proyectoapadrina>
+        a                     void:Dataset ;
+        dcterms:description   "<p> <a href=\"http://red.gnoss.com/comunidad/MPV-APADRINA\">Proyecto Apadrina</a>  is a learning community of students of Higher Grade in Business Management and Marketing from the <a href=\"http://www.iesprofesormaximotrueba.es/\">IES Profesor Máximo Trueba</a> (Boadilla del Monte, Madrid, Spain) and <a href=\"http://www.educa.madrid.org/portal/c/portal/layout?p_l_id=953.1\">IES Icaro</a> (Getafe, Madrid, Spain). The students have worked on topics of marketing at the point of sale or merchandising with companies and shops in Madrid. They have even created two virtual companies operating in both centers: ICI merchandising and Truemark. Proyecto Apadrina has been directed by Laura Cristanchi and Carolina Colorado.\r\n\r\n\r\nProyecto Apadrina works with <a href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. Proyecto Apadrina offers a selection of 1,235 resources (November 2012). It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.\r\n\r\n</p>\r\n\r\n<p>\r\n<a href=\"http://red.gnoss.com/comunidad/MPV-APADRINA\">Proyecto Apadrina</a> es una comunidad de aprendizaje de los alumnos de Grado Superior de Gestión Comercial y Marketing de los <a href=\"http://www.iesprofesormaximotrueba.es/\">IES Profesor Máximo Trueba</a> (Boadilla del Monte, Madrid; España) e <a href=\"http://www.educa.madrid.org/portal/c/portal/layout?p_l_id=953.1\">IES Icaro</a> (Getafe, Madrid; España) en la que han trabajado de manera colaborativa. Consiste en el asesoramiento en prácticas sobre temas de marketing en el punto de venta o merchandising a comercios y empresas de la Comunidad de Madrid por parte de los propios alumnos, que incluso han constituido dos empresas virtuales que funcionan en ambos centros: ICI merchandising y TrueMark. El Proyecto Apadrina ha sido dirigido por las profesoras Carolina Cristanchi y Laura Colorado. Proyecto Apadrina trabaja con  <a href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. Proyecto Apadrina ofrece en este caso una selección de 1.235 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos.\r\n\r\n</p>"@en ;
+        dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
+                                foaf:mbox   "gnoss@gnoss.com"
+                              ] ;
+        dcterms:subject       "format-rdfg" , "format-dc" , "sioc" , "format-foaf" , "format-wot" , "provenance-metadata" , "format-skos" , "country-spain" , "language-spa" , "marketing punto de venta" , "skos" , "socialweb" , "schemata" , "apadrina" , "user_generated" , "no-proprietary-vocab" , "proyecto" , "dc" , "wrapper" , "marketing creativo" , "format-dcam" , "license-metadata" , "buzz marketing publicity" , "usergeneratedcontent" , "spain" , "format-sioc" , "no-vocab-mappings" , "lod" , "foaf" , "published-by-third-party" , "sp" , "country.es" , "marketing creativo online" ;
+        dcterms:title         "Proyecto Apadrina,  Marketing Punto de Venta"@en ;
+        void:exampleResource  <http://red.gnoss.com/en/community/MPV-APADRINA/resource/Aportacion-a-nuestra-CEO/2f90c137-1d35-4945-946a-89d771d06c5a?rdf> , <http://red.gnoss.com/en/community/MPV-APADRINA/resource/PLANES-PARA-LA-TERCERA-EVALUACION-IES-ICARO/66b818a4-1364-4888-be4c-ebd5f8c56172?rdf> , <http://red.gnoss.com/en/community/MPV-APADRINA/advanced-search/tag/marketing?rdf> ;
+        void:triples          71440 ;
+        dcat:distribution     [ dcat:accessURL  <http://gnoss.com/gnoss.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://red.gnoss.com/voidMarketingGNOSS.n3> ] ;
+        foaf:homepage         <http://gnoss.com/comunidad/MPV-APADRINA> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/proyectoapadrina> ;
+  void:triples  7379
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gnoss> , <http://lod-cloud.net/dataset/proyectoapadrina> ;
+  void:triples  1292
+] .

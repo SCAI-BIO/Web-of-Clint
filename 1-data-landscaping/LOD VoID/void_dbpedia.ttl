@@ -1,0 +1,147 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  99075
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-diseasome> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  1943
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/transport-data-gov-uk> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  3768
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-sider> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  751
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/education-data-gov-uk> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  1697
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-dblp> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  196
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-drugbank> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  729
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  3400000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/tcmgenedit_dataset> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  904
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geospecies> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  15972
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/flickr-wrappr> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  8800000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  18100000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/2000-us-census-rdf> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  12529
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-eurostat> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  137
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  86547
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-project-gutenberg> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  2510
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedmdb> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  13800
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rdf-book-mashup> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  9078
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  10359
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/opencyc> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  20362
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbtune-musicbrainz> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  22981
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  22
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/uk-legislation-api> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  33
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/revyu> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/world-factbook-fu-berlin> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  233
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wikicompany> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  8348
+] .
+
+<http://lod-cloud.net/dataset/dbpedia>
+        a                    void:Dataset ;
+        dcterms:description  "DBpedia.org is a community effort to extract structured information from Wikipedia and to make this information available on the Web. DBpedia allows you to ask sophisticated queries against Wikipedia and to link other datasets on the Web to Wikipedia data.\r\n\r\nThe English version of the DBpedia knowledge base currently describes 6.0M entities of which 4.6M have abstracts, 1.53M have geo coordinates and 1.6M depictions. In total, 5.2M resources are classified in a consistent ontology, consisting of 1.5M persons, 810K places (including 505K populated places), 490K works (including 135K music albums, 106K films and 20K video games), 275K organizations (including 67K companies and 53K educational institutions), 301K species and 5K diseases. The total number of resources in English DBpedia is 16.9M that, besides the 6.0M resources, includes 1.7M skos concepts (categories), 7.3M redirect pages, 260K disambiguation pages and 1.7M intermediate nodes.\r\n \r\nAltogether the DBpedia 2016-04 release consists of 9.5 billion (2015-10: 8.8 billion) pieces of information (RDF triples) out of which 1.3 billion (2015-10: 1.1 billion) were extracted from the English edition of Wikipedia, 5.0 billion (2015-04: 4.4 billion) were extracted from other language editions and 3.2 billion (2015-10: 3.2 billion) from DBpedia Commons and Wikidata. In general, we observed a growth in mapping-based statements of about 2%.\r\n \r\nThorough statistics can be found on the DBpedia website and general information on the DBpedia datasets here."@en ;
+        dcterms:publisher    [ rdfs:label  "DBpedia Team - http://wiki.dbpedia.org/Imprint" ;
+                               foaf:mbox   "dbpedia-discussion@lists.sourceforge.net"
+                             ] ;
+        dcterms:subject      "access-www" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "ckanupload.esw.200910" , "no-vocab-mappings" , "lodcloud-diagram-2007-10-08" , "rdf" , "access-bulk" , "search" , "deref-vocab" , "lodcloud-diagram-2007-05-01" , "no-license-metadata" , "cross_domain" , "void-sparql-endpoint" , "format-prov" , "format-foaf" , "format-rdf" , "format-owl" , "format-rdfs" , "wikipedia" , "provenance-metadata" , "format-xhtml" , "published-by-producer" , "access-api" , "crossdomain" , "lod" ;
+        dcterms:title        "DBpedia"@en ;
+        void:dataDump        <http://downloads.dbpedia.org/> ;
+        void:sparqlEndpoint  <http://dbpedia.org/sparql> ;
+        void:triples         9500000000 ;
+        dcat:distribution    [ dcat:accessURL  <http://dbpedia.org/resource/Berlin> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://dbpedia.org/data/Berlin.n3> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://wiki.dbpedia.org/Downloads> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://wiki.dbpedia.org/sitemap> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://downloads.dbpedia.org/2016-04/dbpedia_2016-04.owl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://dbpedia.org/data/Berlin.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://dbpedia.org/void/Dataset> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://dbpedia.org/page/Berlin> ] ;
+        foaf:homepage        <http://dbpedia.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/eunis> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  3600
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-dailymed> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  43
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/w3c-wordnet> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  467101
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/italian-public-schools-linkedopendata-it> , <http://lod-cloud.net/dataset/dbpedia> ;
+  void:triples  5822
+] .

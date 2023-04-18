@@ -1,0 +1,49 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dm2e> ;
+  void:triples  14210
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/dm2e> ;
+  void:triples  1574
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/dm2e> ;
+  void:triples  1868
+] .
+
+<http://lod-cloud.net/dataset/dm2e>
+        a                    void:Dataset ;
+        dcterms:description  "Metadata about digitalised manuscripts coming from the DM2E project (http://dm2e.eu). "@en ;
+        dcterms:publisher    [ rdfs:label  "Dominique Ritze" ;
+                               foaf:mbox   "dominique@informatik.uni-mannheim.de"
+                             ] ;
+        dcterms:subject      "lod" , "publications" , "manuscripts" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:title        "DM2E"@en ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <http://data.dm2e.eu> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/judaicalink> , <http://lod-cloud.net/dataset/dm2e> ;
+  void:triples  3108
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/dm2e> ;
+  void:triples  22698
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/dm2e> ;
+  void:triples  5770
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/dm2e> ;
+  void:triples  570
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/dm2e> ;
+  void:triples  552
+] .

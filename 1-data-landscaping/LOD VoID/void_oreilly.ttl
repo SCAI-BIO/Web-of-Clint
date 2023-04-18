@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/open-library> , <http://lod-cloud.net/dataset/oreilly> ;
+  void:triples  2
+] .
+
+<http://lod-cloud.net/dataset/oreilly>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "LinkedDataCrawl2014" , "provenance-metadata" , "format-dcam" , "format-foaf" , "part-deref-vocab" , "publications" , "format-rdf" , "format-owl" , "format-skos" , "crawledLinkedDataCloud2014" , "format-dcterm" , "lodcloud-diagram-2014-08-30" , "format-vcard2006" , "format-rdfs" ;
+        dcterms:title         "oreilly"@en ;
+        void:exampleResource  <http://purl.oreilly.com/resource-center/category_mobileAndEreaders> ;
+        void:triples          "0"^^xsd:int .

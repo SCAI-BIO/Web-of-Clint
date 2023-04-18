@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/cipfa>
+        a                     void:Dataset ;
+        dcterms:description   "Chartered Institute of Public Finance and Accountancy"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "government" , "deref-vocab" , "format-rdfs" , "crawledLinkedDataCloud2014" , "format-dcterm" , "format-skos" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "LinkedDataCrawl2014" ;
+        dcterms:title         "CIPFA"@en ;
+        void:exampleResource  <http://doc.cipfa.org.uk/Objective/1063.rdf> ;
+        void:triples          "0"^^xsd:int ;
+        foaf:homepage         <http://www.cipfa.org.uk> .
+
+[ void:target   <http://lod-cloud.net/dataset/esd-standards> , <http://lod-cloud.net/dataset/cipfa> ;
+  void:triples  1158
+] .

@@ -1,0 +1,73 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/hellenic-fire-brigade> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gutenberg> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semanticweb-org> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eea-rod> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  40
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/myopenlink-dataspaces> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rdfohloh> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lod2-project-wiki> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  34
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  43
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/apache> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/hellenic-police> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  28
+] .
+
+<http://lod-cloud.net/dataset/w3c>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-vann" , "format-icaltzd" , "format-cc" , "part-deref-vocab" , "crawledLinkedDataCloud2014" , "format-bibo" , "format-time" , "format-cal" , "format-acl" , "lodcloud-diagram-2014-08-30" , "format-voaf" , "format-rss" , "format-oa" , "deref-vocab" , "format-cert" , "format-sioc" , "format-adms" , "format-grddl" , "license-metadata" , "crossdomain" , "LinkedDataCrawl2014" , "format-doap" , "format-fresnel" , "format-vs" , "format-swrl" , "format-exif" , "provenance-metadata" , "format-airport" , "format-dcterm" , "format-te" , "non-deref-vocab" , "format-foaf" , "format-daml" , "format-w3con" , "format-owl" , "format-skos" , "format-content" , "format-dctypes" , "format-admin" , "format-log" , "format-wn" , "format-sd" , "format-doc" , "format-wdrs" , "format-pos" , "format-timeline" , "format-formats" , "format-rdfs" , "cross_domain" , "format-radion" , "format-swc" , "format-xhv" , "format-rdf" , "format-org" , "format-vcard2006" , "format-wot" , "format-fowl" , "format-c4dm" ;
+        dcterms:title         "W3C"@en ;
+        void:exampleResource  <http://www.w3.org/People/djweitzner/public/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/w3c> ;
+  void:triples  311
+] .

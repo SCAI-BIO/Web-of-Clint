@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/vivo-indiana-university> ;
+  void:triples  58
+] .
+
+<http://lod-cloud.net/dataset/vivo-indiana-university>
+        a                     void:Dataset ;
+        dcterms:description   "Information about Indiana University faculty and staff across, available as RDF dump and Linked Data. Currently populated with information about members of the VIVO team at IU, it will eventually be expanded to contain information about other participating researchers, departments, and centers at IU. This is a part of package:vivo."@en ;
+        dcterms:publisher     [ rdfs:label  "Indiana University" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "science" , "format-rdfs" , "vivo" , "social-networks" , "lodcloud-diagram-2014-08-30" , "no-vocab-mappings" , "published-by-producer" , "education" , "lodcloud-diagram-2011" , "no-license-metadata" , "deref-vocab" , "publications" , "lod" , "lodcloud-diagram-2011-09-19" , "no-provenance-metadata" , "lodcloud-diagram-2014" , "format-rdf" ;
+        dcterms:title         "VIVO Indiana"@en ;
+        void:exampleResource  <http://vivo.iu.edu/individual/BL-SLIS/BL-SLIS.rdf> , <http://vivo.iu.edu/individual/IndianaUniversity/IndianaUniversity.rdf> ;
+        void:triples          500000 ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-29T154559/2012-05-23_vivo.iu.edu_export.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://softlayer.dl.sourceforge.net/project/vivo/Ontology/vivo-core-1.1.owl> ] ;
+        foaf:homepage         <http://vivo.iu.edu> .

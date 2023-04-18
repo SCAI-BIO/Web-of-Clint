@@ -1,0 +1,46 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/vivo-wustl> , <http://lod-cloud.net/dataset/vivo2doi> ;
+  void:triples  86301
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/vivo-university-of-florida> , <http://lod-cloud.net/dataset/vivo2doi> ;
+  void:triples  1887251
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/vivo-weill-cornell-medical-college> , <http://lod-cloud.net/dataset/vivo2doi> ;
+  void:triples  542769
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/vivo-scripps-research-institute> , <http://lod-cloud.net/dataset/vivo2doi> ;
+  void:triples  50911
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/doi> , <http://lod-cloud.net/dataset/vivo2doi> ;
+  void:triples  23352
+] .
+
+<http://lod-cloud.net/dataset/vivo2doi>
+        a                     void:Dataset ;
+        dcterms:description   "A proof-of-concept application was created to automatically cross-link publications that were written by the same person through harvesting linked open data from institution-based research networking systems. This is important because it (1) helps people identify related articles when exploring the biomedical literature, (2) gives scientists appropriate credit for the work they have done, and (3) makes it easier to find experts in a subject area.\r\n\r\nThis project was funded by NSF SciSIP Award #1238469, NIH grants 8UL1TR000170 and 1UL1TR001102, and Harvard University and its affiliated academic health centers."@en ;
+        dcterms:publisher     [ rdfs:label  "Nick Benik, Timothy Lebo, Griffin M Weber" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "literature" , "deref-vocab" , "license-metadata" , "academic" , "provenance-metadata" , "format-void" , "publications" , "lifesciences" , "format-bibo" , "lod" , "format-sio" , "doi" , "format-foaf" , "published-by-producer" , "vivo" , "format-prov" ;
+        dcterms:title         "vivo2doi"@en ;
+        void:exampleResource  <http://lod.hackerceo.org/ANGEL/VIVO2DOI/http-reach.suny.edu/individual/Yamamoto_A> ;
+        void:triples          7073060 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/prov#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/ontology/bibo/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lodcloud.tw.rpi.edu/source/hackerceo-org/vivo2doi/version/2015-Aug-02/publish/vivo2doi_20150802.nt.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  void: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.hackerceo.org/ANGEL/VIVO2DOI/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  foaf: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://semanticscience.org/resource/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/net/provenance/ns#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://research.hackerceo.org/renaissance/ANGEL/Datasets/VIVO2DOI> ] .

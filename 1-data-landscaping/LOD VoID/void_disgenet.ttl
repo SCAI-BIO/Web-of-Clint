@@ -1,0 +1,69 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mesh> , <http://lod-cloud.net/dataset/disgenet> ;
+  void:triples  8558
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-dbsnp> , <http://lod-cloud.net/dataset/disgenet> ;
+  void:triples  45813
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linked-life-data> , <http://lod-cloud.net/dataset/disgenet> ;
+  void:triples  1390561
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/disgenet> ;
+  void:triples  14619
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/disgenet> ;
+  void:triples  308996
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-icd9cm> , <http://lod-cloud.net/dataset/disgenet> ;
+  void:triples  2075
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/disgenet> ;
+  void:triples  10141
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-orphanet> , <http://lod-cloud.net/dataset/disgenet> ;
+  void:triples  2543
+] .
+
+<http://lod-cloud.net/dataset/disgenet>
+        a                     void:Dataset ;
+        dcterms:description   "Linked Data version of DisGeNET-RDF, which is a Resource Description Framework (RDF) representation of the DisGeNET database, integrating gene, and variant-disease associations from a variety of authoritative sources on human genetics and text mining.  The Linked Data version of DisGeNET is an alternative way to access DisGeNET and provides new opportunities for data integration, querying and linking DisGeNET data with other external RDF datasets.\nThere are four main components in the RDF dataset: GDA content, VDA content, metadata description of the RDF dataset (VoID description), and linkouts to other Linked Datasets. The current RDF representation of DisGeNET (v7.0.0) has 99,057,987 triples serialized in Turtle syntax. The triples annotate 1,134,942 gene-disease associations (GDAs), 21,671 genes, and 30,170 diseases, disorders, traits, and clinical or abnormal human phenotypes and 369,554 variant-disease associations (VDAs), between 194,515 variants and 14,155 diseases, traits, and phenotypes. The RDF graph model is centered around two concepts the GDA concept and the VDA concept and their attributes.\n\nweb: http://rdf.disgenet.org/"@en ;
+        dcterms:publisher     [ rdfs:label  "IBI Group" ;
+                                foaf:mbox   "lfurlong@imim.es"
+                              ] ;
+        dcterms:subject       "human diseases" , "lod" , "gene" , "format-skos" , "biomedicine" , "lifesciences" , "genotype-phenotype" , "no-proprietary-vocab" , "format-rdf" , "animal model" , "format-dc" , "format-xsd" , "format-void" , "text-mining" , "format-rdfs" , "disgenet" , "format-foaf" , "gene-disease network" , "gene-disease ontology" , "phenotype" , "rdf" , "provenance-metadata" , "gene-disease text-mining" , "published-by-producer" , "format-owl" , "gene-disease" , "format-sio" , "genotype" , "license-metadata" , "disease" , "life_sciences" , "human genes" , "gene-disease associations" ;
+        dcterms:title         "DisGeNET"@en ;
+        void:dataDump         <http://rdf.disgenet.org/download/v6.0.0/> ;
+        void:exampleResource  <http://rdf.disgenet.org/resource/example/DGN62f27b11f686fcc408502737f5ee7a4b> ;
+        void:sparqlEndpoint   <http://rdf.disgenet.org/sparql/> ;
+        void:triples          21730060 ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.disgenet.org/fct/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.disgenet.org/download/v6.0.0/> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://www.disgenet.org/static/disgenet_ap1/images/rdf/disgenet_rdf_schema_v6.png> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.disgenet.org/download/v6.0.0/void.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.disgenet.org/resource/gda/DGN06666ac1f20dc99b0e3f7780a305e805> ] ;
+        foaf:homepage         <http://ibi.imim.es/> .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-diseasome> , <http://lod-cloud.net/dataset/disgenet> ;
+  void:triples  17181
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/disgenet> ;
+  void:triples  17181
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/disgenet> ;
+  void:triples  5026
+] .

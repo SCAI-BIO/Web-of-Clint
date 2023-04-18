@@ -1,0 +1,61 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/oecd-linked-data> , <http://lod-cloud.net/dataset/uis-linked-data> ;
+  void:triples  17337
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/imf-linked-data> , <http://lod-cloud.net/dataset/uis-linked-data> ;
+  void:triples  119
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/frb-linked-data> , <http://lod-cloud.net/dataset/uis-linked-data> ;
+  void:triples  800
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ecb-linked-data> , <http://lod-cloud.net/dataset/uis-linked-data> ;
+  void:triples  855
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/uis-linked-data> ;
+  void:triples  964
+] .
+
+<http://lod-cloud.net/dataset/uis-linked-data>
+        a                     void:Dataset ;
+        dcterms:description   "UIS  data and metadata"@en ;
+        dcterms:publisher     [ rdfs:label  "Sarven Capadisli" ;
+                                foaf:mbox   "info@csarven.ca"
+                              ] ;
+        dcterms:subject       "linked-data" , "international" , "license-metadata" , "format-dcterms" , "format-prov" , "format-skos" , "format-sdmx" , "statistics" , "united nations" , "indicators" , "published-by-third-" , "economics" , "provenance-metadata" , "no-proprietary-vocab" , "lodcloud.candidate" , "format-rdf" , "void-sparql-endpoint" , "format-qb" , "lod" , "films" , "communication" , "UN" , "world" , "vocab-mappings" , "europe" , "demographics" , "government" , "economic" , "country-codes" , "education" , "lodcloud" , "heritage" , "science and technology" , "projects" , "published-by-third-party" ;
+        dcterms:title         "UNESCO Institute for Statistics (UIS) Linked Data"@en ;
+        void:exampleResource  <http://uis.270a.info/dataset/CUL_DS> ;
+        void:sparqlEndpoint   <http://uis.270a.info/sparql> ;
+        void:triples          10400000 ;
+        dcat:distribution     [ dcat:accessURL  <http://uis.270a.info/.well-known/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://uis.270a.info/data/data.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://uis.270a.info/data/meta.tar.gz> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/transparency-linked-data> , <http://lod-cloud.net/dataset/uis-linked-data> ;
+  void:triples  854
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fao-linked-data> , <http://lod-cloud.net/dataset/uis-linked-data> ;
+  void:triples  825
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bfs-linked-data> , <http://lod-cloud.net/dataset/uis-linked-data> ;
+  void:triples  849
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/the-eurostat-linked-data> , <http://lod-cloud.net/dataset/uis-linked-data> ;
+  void:triples  964
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/world-bank-linked-data> , <http://lod-cloud.net/dataset/uis-linked-data> ;
+  void:triples  964
+] .

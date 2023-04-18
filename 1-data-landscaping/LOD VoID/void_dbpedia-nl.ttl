@@ -1,0 +1,157 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/dbpedia-nl>
+        a                     void:Dataset ;
+        dcterms:description   "DBpedia is a \"community effort to extract structured information from Wikipedia and to make this information available on the Web. DBpedia allows you to ask sophisticated queries against Wikipedia, and to link other data sets on the Web to Wikipedia data. We hope this will make it easier for the amazing amount of information in Wikipedia to be used in new and interesting ways, and that it might inspire new mechanisms for navigating, linking and improving the encyclopaedia itself.\" "@en ;
+        dcterms:publisher     [ rdfs:label  "Dutch DBpedia Team - http://nl.dbpedia.org/" ;
+                                foaf:mbox   "dbpedia-dutch@lists.sourceforge.net"
+                              ] ;
+        dcterms:subject       "format-xhtml" , "format-foaf" , "access-api" , "no-license-metadata" , "cross_domain" , "no-provenance-metadata" , "lod" , "void-sparql-endpoint" , "deref-vocab" , "wikipedia" , "format-rdf" , "no-vocab-mappings" , "lodcloud-diagram-2014-08-30" , "search" , "rdf" , "format-rdfs" , "crossdomain" , "access-www" , "llod" , "access-bulk" , "published-by-producer" ;
+        dcterms:title         "DBpedia in Dutch"@en ;
+        void:dataDump         <http://nl.dbpedia.org/downloads/nlwiki/> ;
+        void:exampleResource  <http://nl.dbpedia.org/page/Amsterdam> , <http://nl.dbpedia.org/data/Amsterdam.nt> , <http://nl.dbpedia.org/data/Amsterdam.n3> , <http://nl.dbpedia.org/data/Amsterdam.rdf> ;
+        void:sparqlEndpoint   <http://nl.dbpedia.org/sparql> ;
+        void:triples          79674010 ;
+        dcat:distribution     [ dcat:accessURL  <http://nl.dbpedia.org/resource/Amsterdam> ] ;
+        foaf:homepage         <http://nl.dbpedia.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/gutenberg> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  874
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/openei> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  367
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eunis> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  541
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/opencyc> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  15016
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  303500
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/tcmgenedit_dataset> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  182
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dblp> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/drugbank> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  755
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/2000-us-census-rdf> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  11769
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  566737
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-diseasome> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  308
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wordnet> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  85486
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/umbel> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  112698
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geospecies> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  4273
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gadm-geovocab> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  1902
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-pt> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  303833
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbtune> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  48
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  46025
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-el> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  40921
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-wildlife-finder> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  237
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-cordis> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  41
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-fr> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  406628
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-de> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  359909
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  47397
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/world-factbook-fu-berlin> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  280
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/revyu> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-sider> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  947
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-dailymed> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  329
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/musicbrainz> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  5993
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  415255
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/amsterdam-museum-as-edm-lod> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  180
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/italian-public-schools-linkedopendata-it> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  5686
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedmdb> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  3712
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/dbpedia-nl> ;
+  void:triples  4829
+] .

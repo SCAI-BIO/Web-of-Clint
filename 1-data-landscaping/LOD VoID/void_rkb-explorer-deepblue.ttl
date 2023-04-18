@@ -1,0 +1,46 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-deepblue> ;
+  void:triples  8
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-deepblue>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "provenance-metadata" , "debug-tinylod" , "published-by-third-party" , "format-akt" , "no-license-metadata" , "lodcloud-diagram-2014-08-30" , "format-dc" , "format-rdf" , "void-sparql-endpoint" , "lod" , "no-vocab-mappings" , "lodcloud.unconnected" , "deref-vocab" , "publications" ;
+        dcterms:title         "Deep Blue (RKBExplorer)"@en ;
+        void:exampleResource  <http://deepblue.rkbexplorer.com/id/person-0d961f4145be8efdede333a02e0e5596> ;
+        void:sparqlEndpoint   <http://deepblue.rkbexplorer.com/sparql/> ;
+        void:triples          39421 ;
+        dcat:distribution     [ dcat:accessURL  <http://deepblue.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://deepblue.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://deepblue.rkbexplorer.com/sitemap.xml> ] ;
+        foaf:homepage         <http://deepblue.rkbexplorer.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-deepblue> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-deepblue> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-deepblue> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-deepblue> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-deepblue> ;
+  void:triples  1
+] .

@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/rdfize-lastfm>
+        a                     void:Dataset ;
+        dcterms:description   "A Linked Data wrapper around some of the last.fm API."@en ;
+        dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
+                                foaf:mbox   "keith.alexander@talis.com"
+                              ] ;
+        dcterms:subject       "no-license-metadata" , "lodcloud-diagram-2011-09-19" , "lastfm" , "published-by-third-party" , "format-rdf" , "provenance-metadata" , "media" , "no-proprietary-vocab" , "format-vcard" , "format-foaf" , "no-vocab-mappings" , "lod" , "lodcloud-diagram-2014-08-30" , "music" ;
+        dcterms:title         "Last.FM RDFization of Events, Artists, and Users"@en ;
+        void:exampleResource  <http://lastfm.rdfize.com/events/937256> ;
+        void:triples          400000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://lastfm.rdfize.com/meta.n3> ] ;
+        foaf:homepage         <http://lastfm.rdfize.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rdfize-lastfm> ;
+  void:triples  23000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbtune-artists-last-fm> , <http://lod-cloud.net/dataset/rdfize-lastfm> ;
+  void:triples  5000000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/rdfize-lastfm> ;
+  void:triples  5000000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/qdos> , <http://lod-cloud.net/dataset/rdfize-lastfm> ;
+  void:triples  40000000
+] .

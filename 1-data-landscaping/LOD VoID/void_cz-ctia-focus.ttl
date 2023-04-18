@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-ctia-inspections> , <http://lod-cloud.net/dataset/cz-ctia-focus> ;
+  void:triples  205000
+] .
+
+<http://lod-cloud.net/dataset/cz-ctia-focus>
+        a                     void:Dataset ;
+        dcterms:description   "Focus of the Czech Trade Inspection Authority's inspections"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "provenance-metadata" , "license-metadata" , "lod" , "format-schema" , "published-by-third-party" , "government" , "no-vocab-mappings" , "no-proprietary-vocab" ;
+        dcterms:title         "Focus of the Czech Trade Inspection Authority's inspections"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdomain%2Fcoi.cz%2Fcheck-action%2F101201028015901%3E&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          470924 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fcoi.cz%2Fzamereni%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/coi.cz/check-action/101201028015901> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/coi-zamereni.trig> ] ;
+        foaf:homepage         <http://linked.opendata.cz/resource/dataset/coi.cz/zamereni> .

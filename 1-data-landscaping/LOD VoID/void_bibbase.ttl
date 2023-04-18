@@ -1,0 +1,41 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-dblp> , <http://lod-cloud.net/dataset/bibbase> ;
+  void:triples  5000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/l3s-dblp> , <http://lod-cloud.net/dataset/bibbase> ;
+  void:triples  7161
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/bibbase> ;
+  void:triples  53
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ieee> , <http://lod-cloud.net/dataset/bibbase> ;
+  void:triples  75
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/bibbase> ;
+  void:triples  361
+] .
+
+<http://lod-cloud.net/dataset/bibbase>
+        a                     void:Dataset ;
+        dcterms:description   "BibBase.org facilitates the dissemination of scientific publications over the Internet. BibBase makes it easy for scientists to maintain their publications pages. As a scientist, you simply maintain a bibtex-file of your publications, including links to the papers, and BibBase does the rest. When a web user visits your publications page, BibBase dynamically generates an always up-to-date HTML page from the bibtex file, and even allows the user to sort the publications by other than the default ordering (e.g. year, author, keywords, research area, publication type). BibBase has been used by several scientists and research groups since 2006."@en ;
+        dcterms:publisher     [ rdfs:label  "Christian Fritz, Oktie Hassanzadeh, Reynold S. Xin" ;
+                                foaf:mbox   "oktie@cs.toronto.edu"
+                              ] ;
+        dcterms:subject       "license-metadata" , "lld" , "bibtex" , "library" , "lod" , "data" , "lodcloud-diagram-2011-09-19" , "bib" , "publications" , "format-foaf" , "bibliographic" , "no-provenance-metadata" , "citation" , "lodcloud-diagram-2014-08-30" , "published-by-third-party" , "co-reference" , "format-rdf" , "no-proprietary-vocab" , "format-bibtex" ;
+        dcterms:title         "BibBase"@en ;
+        void:exampleResource  <http://data.bibbase.org/author/christian-bizer> ;
+        void:sparqlEndpoint   <http://data.bibbase.org:2020/sparql> ;
+        void:triples          200000 ;
+        dcat:distribution     [ dcat:accessURL  <http://data.bibbase.org> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.bibbase.org:2020> ] ;
+        foaf:homepage         <http://data.bibbase.org> .

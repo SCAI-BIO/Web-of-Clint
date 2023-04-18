@@ -1,0 +1,29 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/wiktionary-dbpedia-org> , <http://lod-cloud.net/dataset/sentiws> ;
+  void:triples  4233
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/sentiws> ;
+  void:triples  3462
+] .
+
+<http://lod-cloud.net/dataset/sentiws>
+        a                     void:Dataset ;
+        dcterms:description   "SentimentWortschatz, or SentiWS for short, is a publicly available German-language resource for sentiment analysis, opinion mining etc. It lists positive and negative polarity bearing words weighted within the interval of [-1; 1] plus their part of speech tag, and if applicable, their inflections. The current version of SentiWS (v1.8b) contains 1,650 positive and 1,818 negative words, which sum up to 15,649 positive and 15,632 negative word forms incl. their inflections, respectively. It not only contains adjectives and adverbs explicitly expressing a sentiment, but also nouns and verbs implicitly containing one.\r\n\r\nSee: R. Remus, U. Quasthoff & G. Heyer: SentiWS - a Publicly Available German-language Resource for Sentiment Analysis.\r\nIn: Proceedings of the 7th International Language Ressources and Evaluation (LREC'10), 2010"@en ;
+        dcterms:publisher     [ rdfs:label  "Original Data: R. Remus, U. Quasthoff & G. Heyer, RDF-Conversion by Mohamed Sherif" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "lod" , "linguistics" , "crossdomain" ;
+        dcterms:title         "SentimentWortschatz"@en ;
+        void:exampleResource  <http://mlode.nlp2rdf.org/page/sentiws/word/Abstumpfung> ;
+        void:sparqlEndpoint   <http://mlode.nlp2rdf.org/sparql> ;
+        void:triples          30339 ;
+        dcat:distribution     [ dcat:accessURL  <http://mlode.nlp2rdf.org/datasets/sentiWs.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://wortschatz.informatik.uni-leipzig.de/download/SentiWS_v1.8c.zip> ] ;
+        foaf:homepage         <http://asv.informatik.uni-leipzig.de/download/sentiws.html> .

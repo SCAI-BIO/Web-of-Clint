@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/prefix-cc>
+        a                     void:Dataset ;
+        dcterms:description   "A community-curated collection of namespace prefix mappings for use in RDF applications.\r\n\r\nFeatures a lookup API and bulk download."@en ;
+        dcterms:publisher     [ rdfs:label  "Richard Cyganiak" ;
+                                foaf:mbox   "richard@cyganiak.de"
+                              ] ;
+        dcterms:subject       "format-vann" , "no-proprietary-vocab" , "no-license-metadata" , "lodcloud-diagram-2014-08-30" , "lod" , "no-provenance-metadata" , "prefix" , "namespace" , "published-by-producer" , "rdf" , "user_generated" , "usergeneratedcontent" ;
+        dcterms:title         "prefix.cc"@en ;
+        void:exampleResource  <http://prefix.cc/foaf.file.vann> ;
+        void:triples          8000 ;
+        dcat:distribution     [ dcat:accessURL  <http://prefix.cc/about/api> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prefix.cc/popular/all.file.vann> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prefix.cc/popular/all.file.json> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prefix.cc/popular/all.file.csv> ] ;
+        foaf:homepage         <http://prefix.cc/> .

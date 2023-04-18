@@ -1,0 +1,229 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  36
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  71
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-legadolibre-com-ar> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-deuxpi-ca> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-gegeweb-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-kaimi-cc> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-sebseb01-net> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-qth-fr> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-glou-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-alexandrefranke-com> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-chromic-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-scoffoni-net> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-imirhil-fr> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-exdc-net> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-20100-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-shnoulle-net> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-ssweeny-net> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-schiessle-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-fcac-com> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-keuser-fr> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-gomertronic-com> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-thelovebug-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-belfalas-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  8
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-jonkman-ca> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-lebsanft-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-planet-libre-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-bka-li> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  5
+] .
+
+<http://lod-cloud.net/dataset/statusnet-postblue-info>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://postblue.info"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "crawledLinkedDataCloud2014" , "format-bio" , "LinkedDataCrawl2014" , "social_networking" , "format-sioc" , "lodcloud-diagram-2014-08-30" , "format-foaf" , "format-pos" , "social web" , "format-rdf" ;
+        dcterms:title         "statusnet-postblue-info"@en ;
+        void:exampleResource  <http://sn.postblue.info/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-thornton2-com> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-somsants-net> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-mrblog-nl> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-samnoble-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-hackerposse-com> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-timttmy-co-uk> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-qdnx-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-otbm-fr> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-piana-eu> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-tekk-com-ar> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-lydiastench-com> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-datenfahrt-org> , <http://lod-cloud.net/dataset/statusnet-postblue-info> ;
+  void:triples  4
+] .

@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/Suface+Foresti%C3%A8re+Mondiale+1990-2016> ;
+  void:triples  4024
+] .
+
+<http://lod-cloud.net/dataset/Suface+Foresti%C3%A8re+Mondiale+1990-2016>
+        a                    void:Dataset ;
+        dcterms:description  "Surface boisée de chaque pays (ou groupe de pays, e.g UE ou continents), en pourcentage de leur superficie totale, entre 1990 et 2016. Les régions boisées sont des terres naturelles ou plantées abritant des arbres d’au moins 5 mètres in situ, qu’elles soient productives ou pas, et excluent les zones boisées des systèmes de production agricole (par exemple, dans les plantations fruitières et les systèmes d’agrosylviculture) et les arbres des parcs et jardins urbains."@en ;
+        dcterms:publisher    [ rdfs:label  "Minh-Hoang DANG" ;
+                               foaf:mbox   "minhhoangdang@hotmail.com"
+                             ] ;
+        dcterms:subject      "cross_domain" , "surface forestiere" ;
+        dcterms:title        "Suface Forestière Mondiale 1990-2016"@en ;
+        void:dataDump        <https://mmisw.org/ont/api/v0/ont?format=jsonld&iri=https://mmisw.org/ont/~mhoangvslev/surface_forestiere> , <https://mmisw.org/ont/api/v0/ont?format=nt&iri=https://mmisw.org/ont/~mhoangvslev/surface_forestiere> , <https://mmisw.org/ont/api/v0/ont?format=rj&iri=https://mmisw.org/ont/~mhoangvslev/surface_forestiere> , <https://mmisw.org/ont/api/v0/ont?format=ttl&iri=https://mmisw.org/ont/~mhoangvslev/surface_forestiere> , <https://mmisw.org/ont/api/v0/ont?format=rdf&iri=https://mmisw.org/ont/~mhoangvslev/surface_forestiere> ;
+        void:sparqlEndpoint  <https://mmisw.org/sparql> ;
+        void:triples         34875 ;
+        foaf:homepage        <https://data.world/mhoangvslev/suface-forestire-mondiale-1990-2016> .
+
+[ void:target   <http://lod-cloud.net/dataset/w3c> , <http://lod-cloud.net/dataset/Suface+Foresti%C3%A8re+Mondiale+1990-2016> ;
+  void:triples  9389
+] .

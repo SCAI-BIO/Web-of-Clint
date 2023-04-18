@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/enakting-population>
+        a                     void:Dataset ;
+        dcterms:description   "Data extracted from the census data provided by UK's Office for National Statistics grouped by parliamentary constituencies.\r\n\r\nDates from mid 2001 to mid 2007."@en ;
+        dcterms:publisher     [ rdfs:label  "Tope Omitola" ;
+                                foaf:mbox   "t.omitola@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "no-provenance-metadata" , "published-by-third-party" , "format-rdf" , "lodcloud-diagram-2011-09-19" , "lod" , "government" , "lodcloud-diagram-2014-08-30" , "no-proprietary-vocab" ;
+        dcterms:title         "EnAKTing Population Dataset"@en ;
+        void:exampleResource  <http://population.psi.enakting.org/id/St_Albans/rdf> ;
+        void:triples          2316831 ;
+        dcat:distribution     [ dcat:accessURL  <http://population.psi.enakting.org/id/void> ] ;
+        foaf:homepage         <http://population.psi.enakting.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/enakting-population> ;
+  void:triples  533
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkbexplorer> , <http://lod-cloud.net/dataset/enakting-population> ;
+  void:triples  2
+] .

@@ -1,0 +1,117 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-bka-li> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-ssweeny-net> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-alexandrefranke-com> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  22
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-thelovebug-org> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-jonkman-ca> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-spraci-org> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-gomertronic-com> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-piana-eu> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-mrblog-nl> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-status-cat> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  4
+] .
+
+<http://lod-cloud.net/dataset/statusnet-macno-org>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://macno.org"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-foaf" , "format-rdf" , "format-pos" , "lodcloud-diagram-2014-08-30" , "social web" , "LinkedDataCrawl2014" , "format-sioc" , "crawledLinkedDataCloud2014" , "format-bio" , "format-rdfs" ;
+        dcterms:title         "statusnet-macno-org"@en ;
+        void:exampleResource  <http://stream.macno.org/binclock/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  17
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-timttmy-co-uk> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-maymay-net> , <http://lod-cloud.net/dataset/statusnet-macno-org> ;
+  void:triples  1
+] .

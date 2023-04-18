@@ -1,0 +1,31 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/chronicling-america> ;
+  void:triples  1000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/chronicling-america> ;
+  void:triples  10000
+] .
+
+<http://lod-cloud.net/dataset/chronicling-america>
+        a                     void:Dataset ;
+        dcterms:description   "Chronicling America provides access to information about historic newspapers and select digitized newspaper pages.\r\n\r\n140,000 newspapers, 3.2 million pages.\r\n\r\n### Issues\r\n\r\nThe statistics below are complete guesses. Link information is incomplete."@en ;
+        dcterms:publisher     [ rdfs:label  "Library of Congress" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-frbr" , "published-by-producer" , "media" , "lodcloud-diagram-2011-09-19" , "format-ore" , "lod" , "format-dc" , "no-proprietary-vocab" , "format-rdfs" , "no-license-metadata" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "lld" , "newspaper" , "no-provenance-metadata" , "no-vocab-mappings" ;
+        dcterms:title         "Chronicling America"@en ;
+        void:exampleResource  <http://chroniclingamerica.loc.gov/lccn/sn83030214/1905-01-15/ed-1/seq-25.rdf> , <http://chroniclingamerica.loc.gov/awardees/mohi.rdf> , <http://chroniclingamerica.loc.gov/lccn/sn83045555/1889-11-21/ed-1.rdf> , <http://chroniclingamerica.loc.gov/lccn/sn85038615.rdf> ;
+        void:triples          20000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://chroniclingamerica.loc.gov/newspapers.rdf> ] ;
+        foaf:homepage         <http://chroniclingamerica.loc.gov/about/api/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lingvoj> , <http://lod-cloud.net/dataset/chronicling-america> ;
+  void:triples  1000
+] .

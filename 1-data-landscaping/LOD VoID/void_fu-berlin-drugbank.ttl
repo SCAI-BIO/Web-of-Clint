@@ -1,0 +1,69 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/fu-berlin-drugbank> ;
+  void:triples  4660
+] .
+
+<http://lod-cloud.net/dataset/fu-berlin-drugbank>
+        a                     void:Dataset ;
+        dcterms:description   "The Linked Data version of DrugBank which is a repository of almost 5000 FDA-approved small molecule and biotech drugs. It contains detailed information about drugs including chemical, pharmacological and pharmaceutical data; along with comprehensive drug target data such as sequence, structure, and pathway information\r\n\r\nlinks:bio2rdf-kegg 913\r\nlinks:bio2rdf-symbol 1533"@en ;
+        dcterms:publisher     [ rdfs:label  "Anja Jentzsch" ;
+                                foaf:mbox   "anja@anjeve.de"
+                              ] ;
+        dcterms:subject       "no-license-metadata" , "deref-vocab" , "lod" , "lodcloud-diagram-2011-09-19" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "void-sparql-endpoint" , "no-provenance-metadata" , "published-by-third-party" , "lifesciences" , "life_sciences" , "vocab-mappings" ;
+        dcterms:title         "DrugBank"@en ;
+        void:dataDump         <http://www4.wiwiss.fu-berlin.de/drugbank/drugbank_dump.nt.bz2> ;
+        void:exampleResource  <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00001> ;
+        void:sparqlEndpoint   <http://www4.wiwiss.fu-berlin.de/drugbank/sparql> ;
+        void:triples          765936 ;
+        dcat:distribution     [ dcat:accessURL  <http://www4.wiwiss.fu-berlin.de/drugbank/sitemap.xml> ] ;
+        foaf:homepage         <http://www4.wiwiss.fu-berlin.de/drugbank/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-kegg-compound> , <http://lod-cloud.net/dataset/fu-berlin-drugbank> ;
+  void:triples  1331
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pfam> , <http://lod-cloud.net/dataset/fu-berlin-drugbank> ;
+  void:triples  19028
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-chebi> , <http://lod-cloud.net/dataset/fu-berlin-drugbank> ;
+  void:triples  736
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pdb> , <http://lod-cloud.net/dataset/fu-berlin-drugbank> ;
+  void:triples  3379
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/fu-berlin-drugbank> ;
+  void:triples  4220
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-hgnc> , <http://lod-cloud.net/dataset/fu-berlin-drugbank> ;
+  void:triples  1675
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-dailymed> , <http://lod-cloud.net/dataset/fu-berlin-drugbank> ;
+  void:triples  1597
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/tcmgenedit_dataset> , <http://lod-cloud.net/dataset/fu-berlin-drugbank> ;
+  void:triples  385
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-cas> , <http://lod-cloud.net/dataset/fu-berlin-drugbank> ;
+  void:triples  2240
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedct> , <http://lod-cloud.net/dataset/fu-berlin-drugbank> ;
+  void:triples  6064
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/fu-berlin-drugbank> ;
+  void:triples  96
+] .

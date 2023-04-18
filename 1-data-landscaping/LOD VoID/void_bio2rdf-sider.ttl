@@ -1,0 +1,42 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-stitch> , <http://lod-cloud.net/dataset/bio2rdf-sider> ;
+  void:triples  2204
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-sider>
+        a                     void:Dataset ;
+        dcterms:description   "SIDER contains information on marketed medicines and their recorded adverse drug reactions. The information is extracted from public documents and package inserts. The available information include side effect frequency, drug and side effect classifications as well as links to further information, for example drug?target relations."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "deref-vocab" , "vocab-mappings" , "provenance-metadata" , "format-rdfs" , "bio2rdf" , "published-by-third-party" , "lifesciences" , "life_sciences" , "license-metadata" , "lod" , "format-dc" , "format-rdf" ;
+        dcterms:title         "Bio2RDF::Sider"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/sider/sider-label_mapping.nq.gz> , <http://download.bio2rdf.org/current/sider/sider-adverse_effects_raw.nq.gz> , <http://download.bio2rdf.org/current/sider/sider-meddra_freq_parsed.nq.gz> , <http://download.bio2rdf.org/current/sider/sider-indications_raw.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/sider:20111220_b379b413-5d66-4adb-8521-3978f10bbd1d> ;
+        void:sparqlEndpoint   <http://sider.bio2rdf.org/sparql> ;
+        void:triples          17627864 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/sider/sider.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/sider/sider.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/sider/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/sider/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/sider/bio2rdf-sider.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/sider/bio2rdf_sider_sio_mapping.owl> ] ;
+        foaf:homepage         <http://sider.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-umls> , <http://lod-cloud.net/dataset/bio2rdf-sider> ;
+  void:triples  6439
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-dailymed> , <http://lod-cloud.net/dataset/bio2rdf-sider> ;
+  void:triples  16869
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-sider> ;
+  void:triples  1195406
+] .

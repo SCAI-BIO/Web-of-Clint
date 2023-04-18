@@ -1,0 +1,161 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  34
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-chickenkiller-com> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-gomertronic-com> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  44
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-timttmy-co-uk> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  38
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-cooleysekula-net> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  51
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-jonkman-ca> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  25
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-chromic-org> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  28
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-legadolibre-com-ar> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-ssweeny-net> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-qdnx-org> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-1w6-org> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-somsants-net> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-tekk-com-ar> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  575
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-fcac-com> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-piana-eu> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  35
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  98
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-maymay-net> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  235
+] .
+
+<http://lod-cloud.net/dataset/statusnet-fragdev-com>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://fragdev.com"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-sioc" , "social web" , "format-bio" , "crawledLinkedDataCloud2014" , "format-rdfs" , "social_networking" , "LinkedDataCrawl2014" , "format-rdf" , "format-foaf" , "format-pos" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:title         "statusnet-fragdev-com"@en ;
+        void:exampleResource  <http://micro.fragdev.com/navigium/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-thornton2-com> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  9
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-mrblog-nl> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-lydiastench-com> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  45
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  90
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-fcestrada-com> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-thelovebug-org> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  35
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  21
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-ourcoffs-org-au> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  5
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-dtdns-net> , <http://lod-cloud.net/dataset/statusnet-fragdev-com> ;
+  void:triples  4
+] .

@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/flickr-wrappr>
+        a                     void:Dataset ;
+        dcterms:description   "The flickr wrappr extends DBpedia with RDF links to photos posted on flickr. For each of the 1.95 million DBpedia concepts, the wrappr generates a collection of flickr photos that depict the concept. "@en ;
+        dcterms:publisher     [ rdfs:label  "Christian Becker" ;
+                                foaf:mbox   "chris@beckr.org"
+                              ] ;
+        dcterms:subject       "no-vocab-mappings" , "lod" , "no-provenance-metadata" , "lodcloud-diagram-2011-09-19" , "usergeneratedcontent" , "format-foaf" , "published-by-third-party" , "no-license-metadata" , "lodcloud-diagram-2014-08-30" , "no-proprietary-vocab" , "user_generated" , "format-vcard" , "format-rdf" ;
+        dcterms:title         "flickr? wrappr"@en ;
+        void:exampleResource  <http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/White_House> ;
+        void:triples          56100000 ;
+        foaf:homepage         <http://www4.wiwiss.fu-berlin.de/flickrwrappr> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/flickr-wrappr> ;
+  void:triples  3400000
+] .

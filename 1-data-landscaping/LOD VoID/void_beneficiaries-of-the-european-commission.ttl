@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/beneficiaries-of-the-european-commission> ;
+  void:triples  199168
+] .
+
+<http://lod-cloud.net/dataset/beneficiaries-of-the-european-commission>
+        a                     void:Dataset ;
+        dcterms:description   "The names of the beneficiaries of ca. ?10 billion of grants and other forms of support, awarded (in budgetary terms: 'committed') by the Commission every year, either directly or through 'executive agencies' set up to help it run EU funded programmes. The site also contains certain procurement contracts, excluding for the moment those linked to administrative expenditure of the Commission.\r\nThis information is separate from information on funds managed by EU or non-EU national governments or other parties on the behalf of the Commission.\r\nThe original site of the European Commission shows only lists of awarded amounts and beneficiaries - it does not provide amounts consolidated per country, budget line, etc. .\r\nThe original dataset can be found at EU Commission Financial Transparency System which is also listed at ckan."@en ;
+        dcterms:publisher     [ rdfs:label  "Michael Martin" ;
+                                foaf:mbox   "martin@informatik.uni-leipzig.de"
+                              ] ;
+        dcterms:subject       "date-2007" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "format-html" , "latc" , "eu" , "ontowiki" , "system" , "format-foaf" , "lod" , "linked-data" , "fts" , "government" , "transparency" , "format-rdf" , "budget" , "european-commission" , "date-2008" , "finance" , "date-2009" , "business" , "region-eu" , "procurement" , "deref-vocab" , "financial" ;
+        dcterms:title         "EU: fintrans.publicdata.eu"@en ;
+        void:exampleResource  <http://fintrans.publicdata.eu/ec/resource/su/SCR.706541.1> ;
+        void:sparqlEndpoint   <http://fintrans.publicdata.eu/sparql> ;
+        void:triples          1897840 ;
+        dcat:distribution     [ dcat:accessURL  <http://fintrans.publicdata.eu/ec/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://fintrans.publicdata.eu/> ] ;
+        foaf:homepage         <http://fintrans.publicdata.eu/> .

@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/dbtune-john-peel-sessions>
+        a                     void:Dataset ;
+        dcterms:description   "RDF conversion of a dataset released by the BBC, about the [John Peel sessions](http://en.wikipedia.org/wiki/John_Peel#Peel_sessions), a long-lived series of live music performances on BBC Radio 1, hosted by DJ John Peel."@en ;
+        dcterms:publisher     [ rdfs:label  "Yves Raimond" ;
+                                foaf:mbox   "yves@dbtune.org"
+                              ] ;
+        dcterms:subject       "format-owl" , "media" , "linkeddata" , "published-by-third-party" , "format-rdf" , "format-mo" , "lod" , "no-proprietary-vocab" , "no-license-metadata" , "no-vocab-mappings" , "ckanupload.esw.200910" , "lodcloud-diagram-2014-08-30" , "no-provenance-metadata" , "lodcloud-diagram-2011-09-19" , "rdf" ;
+        dcterms:title         "DBTune.org John Peel sessions RDF server"@en ;
+        void:exampleResource  <http://dbtune.org/bbc/peel/producer/ef41b85c7e5fc82c4a9bfc7f2293fbd2> ;
+        void:sparqlEndpoint   <http://dbtune.org/bbc/peel/sparql/> ;
+        void:triples          277000 ;
+        dcat:distribution     [ dcat:accessURL  <http://moustaki.org/resources/peel.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://moustaki.org/resources/dbpedia-johnpeel.tar.gz> ] ;
+        foaf:homepage         <http://dbtune.org/bbc/peel/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbtune-john-peel-sessions> ;
+  void:triples  1143
+] .

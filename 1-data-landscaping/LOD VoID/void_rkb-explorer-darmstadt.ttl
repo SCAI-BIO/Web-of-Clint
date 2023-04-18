@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-darmstadt> ;
+  void:triples  7
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-darmstadt>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
+                                foaf:mbox   "hg@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "lodcloud.unconnected" , "no-license-metadata" , "void-sparql-endpoint" , "format-dc" , "publications" , "no-vocab-mappings" , "published-by-third-party" , "deref-vocab" , "format-rdf" , "format-akt" , "lod" , "provenance-metadata" ;
+        dcterms:title         "Technische Universität Darmstadt (RKBExplorer)"@en ;
+        void:exampleResource  <http://darmstadt.rkbexplorer.com/id/person-1248337cae47063dccb9e5eea87baccc> ;
+        void:sparqlEndpoint   <http://darmstadt.rkbexplorer.com/sparql/> ;
+        void:triples          35325 ;
+        dcat:distribution     [ dcat:accessURL  <http://darmstadt.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://darmstadt.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://darmstadt.rkbexplorer.com/models/void.ttl> ] ;
+        foaf:homepage         <http://darmstadt.rkbexplorer.com> .

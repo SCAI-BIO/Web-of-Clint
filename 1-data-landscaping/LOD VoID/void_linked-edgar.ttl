@@ -1,0 +1,30 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/linked-edgar>
+        a                     void:Dataset ;
+        dcterms:description   "Wrapper for SEC Edgar data, (which are the legal submissions, usually by publicly floated companies, to the Securities and Exchanges Commission, USA). Currently providing XBRL forms (10-Q, 10-K, 8-K, S4-A, 6-K, 10-Q/A) and form 4. "@en ;
+        dcterms:publisher     [ rdfs:label  "U.S. Securities and Exchange Commission (SEC)" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "edgar" , "wrapper" , "country.us" , "no-proprietary-vocab" , "published-by-third-party" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "lod" , "format-rdf" , "sec" , "government" ;
+        dcterms:title         "Linked EDGAR (OntologyCentral)"@en ;
+        void:exampleResource  <http://edgarwrap.ontologycentral.com/cik/links.rdf> , <http://edgarwrap.ontologycentral.com/feed/usgaap> , <http://edgarwrap.ontologycentral.com/cik/1014931> , <http://edgarwrap.ontologycentral.com/sic/> ;
+        void:triples          32000000 ;
+        foaf:homepage         <http://edgarwrap.ontologycentral.com/> .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/linked-edgar> ;
+  void:triples  120627
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/sec-rdfabout> , <http://lod-cloud.net/dataset/linked-edgar> ;
+  void:triples  200000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linked-edgar> ;
+  void:triples  50
+] .

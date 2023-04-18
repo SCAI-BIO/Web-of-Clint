@@ -1,0 +1,20 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/glastonbury-2011>
+        a                     void:Dataset ;
+        dcterms:description   "This has been screen scraped from the Glastonbury website."@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "glastonbury" , "programme" , "usergeneratedcontent" , "rdf" , "published-by-third-party" , "music" , "lodcloud.unconnected" , "arts" , "lod" , "deref-vocab" , "lodcloud.nolinks" , "festival" ;
+        dcterms:title         "Glastonbury 2011 Programme"@en ;
+        void:exampleResource  <http://programme.ecs.soton.ac.uk/glastonbury/2011/glastonbury2011.rdf#session-7979af337cd00d6b9e9d481a954953d5-Sunday-12:56> ;
+        void:triples          42581 ;
+        dcat:distribution     [ dcat:accessURL  <http://programme.ecs.soton.ac.uk/glastonbury/2011/homepages.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://programme.ecs.soton.ac.uk/glastonbury/2011/glastonbury2011.rdf> ] ;
+        foaf:homepage         <http://programme.ecs.soton.ac.uk/glastonbury/2011/> .

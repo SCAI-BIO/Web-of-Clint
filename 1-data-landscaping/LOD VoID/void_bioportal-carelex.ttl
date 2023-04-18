@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/bioportal-carelex>
+        a                    void:Dataset ;
+        dcterms:description  "Categories and terms used to classify content (documents, images, etc) in electronic content repositories for life science / BioPharma.  Initial version contains content model for use with clinical trial electronic Trial Master Files or eTMF's.  A Content model contains content classification categories (classes) and metadata properties (data properties).  Metadata Properties are shown as a class for convenience.  In implementation, metadata properties should be assigned to each Content Type.   Instances of Content Types can contain actual content items (documents, etc).   The CareLex Ontology is described in specification published at www.CareLex.org/publications."@en ;
+        dcterms:publisher    [ rdfs:label  "Zack Schmidt" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lod" , "biomedicine" , "ontology" , "bioportal" , "format-rdf" , "format-owl" , "published-by-third-party" , "life_sciences" ;
+        dcterms:title        "CareLex"@en ;
+        void:triples         4140 ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47410?apikey=BP_API_KEY> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/3008> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-carelex> ;
+  void:triples  43
+] .

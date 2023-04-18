@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/eea-rod>
+        a                     void:Dataset ;
+        dcterms:description   "ROD is the EEA's reporting obligations database. It contains records describing environmental reporting obligations that countries have towards international organisations.\r\n\r\nROD is part of Reportnet. Reportnet is group of web applications and processes developed by the EEA to support international environmental reporting. \r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Søren Roug" ;
+                                foaf:mbox   "soren.roug@eea.europa.eu"
+                              ] ;
+        dcterms:subject       "void-sparql-endpoint" , "lod" , "license-metadata" , "environment" , "published-by-producer" , "government" , "format-rdf" ;
+        dcterms:title         "EEA Reporting Obligations Database"@en ;
+        void:exampleResource  <http://rod.eionet.europa.eu/obligations/523> ;
+        void:sparqlEndpoint   <http://cr.eionet.europa.eu/sparql> ;
+        void:triples          28000 ;
+        dcat:distribution     [ dcat:accessURL  <ttp://rod.eionet.europa.eu/issues> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rod.eionet.europa.eu/void.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rod.eionet.europa.eu/obligations.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rod.eionet.europa.eu/instruments.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rod.eionet.europa.eu/spatial> ] ;
+        foaf:homepage         <http://rod.eionet.europa.eu/> .

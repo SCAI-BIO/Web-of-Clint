@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-es> , <http://lod-cloud.net/dataset/zhishi-lemon> ;
+  void:triples  "77,392"^^xsd:integer
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/zhishi-me> , <http://lod-cloud.net/dataset/zhishi-lemon> ;
+  void:triples  "229,606"^^xsd:integer
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/babelnet> , <http://lod-cloud.net/dataset/zhishi-lemon> ;
+  void:triples  "16,424"^^xsd:integer
+] .
+
+<http://lod-cloud.net/dataset/zhishi-lemon>
+        a                    void:Dataset ;
+        dcterms:description  "[Zhishi.me](http://zhishi.me/) is an effort to build Chinese Linking Open Data. Currently, it covers three largest Chinese encyclopedias: Baidu Baike, Hudong Baike and Chinese Wikipedia. Additional information about Zhishi.me can be found in this [published paper](http://iswc2011.semanticweb.org/fileadmin/iswc/Papers/In-Use/70320209.pdf)\r\n\r\n[Zhishi.lemon](http://lemon.zhishi.me/) is a newly developed dataset based on the lemon model that constitutes the lexical realization of Zhishi.me. It combines the [lemon core](http://www.lemon-model.net/) with the [lemon translation module](http://linguistic.linkeddata.es/def/translation-content/index.html) in order to build a linked data lexicon in Chinese with translations into Spanish and English. Links to BabelNet (a vast multilingual encyclopedic resource) have been provided as well. The license of the dataset is CC-BY.\r\n\r\nWe also present a [SPARQL endpoint](http://lemon.zhishi.me/sparql.html) for user to query our dataset. For more information, we provide two detailed schema diagrams with several instance examples to help users better understand the dataset and create more valuable SPARQL queries. You can download them from the following two dois: [Chinese Lexicalization Module](https://dx.doi.org/10.6084/m9.figshare.3438545.v1), [Multilingual Translation Module](https://dx.doi.org/10.6084/m9.figshare.3438548.v1)."@en ;
+        dcterms:publisher    [ rdfs:label  "East China University of Science and Technology" ;
+                               foaf:mbox   "whfcarter@ecust.edu.cn"
+                             ] ;
+        dcterms:subject      "lod" , "dbpedia" , "lemon" , "babelnet" , "zhishi.me" , "llod" ;
+        dcterms:title        "zhishi.lemon"@en ;
+        void:triples         "7,036,338"^^xsd:integer ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/3132a738-4714-4036-ae11-843af152dba5/resource/7837b0ab-b0bd-494d-8dc7-b520a15a531a/download/example.nt> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/3132a738-4714-4036-ae11-843af152dba5/resource/d4337c93-ada3-4978-9154-740b1f8e6b1e/download/meta.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://drive.google.com/file/d/0B8VUbXki5Q0ibEIzbkUxSnQ5Ulk/view?usp=sharing> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-en> , <http://lod-cloud.net/dataset/zhishi-lemon> ;
+  void:triples  "218,654"^^xsd:integer
+] .

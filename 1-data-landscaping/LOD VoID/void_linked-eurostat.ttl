@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/eurostat-rdf> , <http://lod-cloud.net/dataset/linked-eurostat> ;
+  void:triples  50
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linked-eurostat> ;
+  void:triples  45
+] .
+
+<http://lod-cloud.net/dataset/linked-eurostat>
+        a                     void:Dataset ;
+        dcterms:description   "A mediator that translates original Eurostat files to RDF at lookup time. Total dataset size approx. 40 million triples. Updated twice daily.\r\n\r\nIncludes visualisation demos at http://estatwrap.ontologycentral.com/"@en ;
+        dcterms:publisher     [ rdfs:label  "Eurostat" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "european" , "lodcloud-diagram-2014-08-30" , "eurostat" , "published-by-third-party" , "wrapper" , "format-rdf" , "no-proprietary-vocab" , "lod" , "geographic" , "nuts" , "lodcloud-diagram-2011-09-19" , "statistics" , "government" ;
+        dcterms:title         "Linked Eurostat (OntologyCentral)"@en ;
+        void:exampleResource  <http://estatwrap.ontologycentral.com/id/tsieb010> , <http://estatwrap.ontologycentral.com/dic/geo> , <http://estatwrap.ontologycentral.com/id/tsieb020> ;
+        void:triples          40000000 ;
+        foaf:homepage         <http://ontologycentral.com/2009/01/eurostat/> .

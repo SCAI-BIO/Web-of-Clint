@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/CPC> , <http://lod-cloud.net/dataset/European+Patent+Information> ;
+  void:triples  19300000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/marc-codes> , <http://lod-cloud.net/dataset/European+Patent+Information> ;
+  void:triples  18000000
+] .
+
+<http://lod-cloud.net/dataset/European+Patent+Information>
+        a                     void:Dataset ;
+        dcterms:description   "This data set contains information about all EP patents, like applications, publications, technical classifications, citations, patent families and related non-EP patents.\nThe data set is updated weekly"@en ;
+        dcterms:publisher     [ rdfs:label  "Martin Kracker / European Patent Office" ;
+                                foaf:mbox   "mkracker@epo.org"
+                              ] ;
+        dcterms:subject       "patent priorities" , "patent publication" , "patent applications" , "IPC" , "citations" , "non-patent literature" , "CPC" , "bibliographic data" , "patents" , "agents" , "legal representatives" , "technical classifications" , "inventors" , "applicants" , "government" ;
+        dcterms:title         "EPO patents"@en ;
+        void:dataDump         <https://data.epo.org/linked-data/download/> ;
+        void:exampleResource  <http://data.epo.org/linked-data/id/application/EP/01903571.ttl> , <http://data.epo.org/linked-data/data/publication/EP/1253719/B1/-.ttl> ;
+        void:sparqlEndpoint   <https://data.epo.org/linked-data/query> ;
+        void:triples          600000000 ;
+        foaf:homepage         <https://www.epo.org/linked-data/> .

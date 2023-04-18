@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/sandre> ;
+  void:triples  1982
+] .
+
+<http://lod-cloud.net/dataset/sandre>
+        a                     void:Dataset ;
+        dcterms:description   "Taxons of the French Water Information System (SIE)"@en ;
+        dcterms:publisher     [ rdfs:label  "Louis Crespin" ;
+                                foaf:mbox   "l.crespin@oieau.fr"
+                              ] ;
+        dcterms:subject       "france" , "taxonomy" , "water" , "life_sciences" , "taxon" ;
+        dcterms:title         "Taxons "@en ;
+        void:dataDump         <> ;
+        void:exampleResource  <http://id.eaufrance.fr/apt/3944.rdf> ;
+        void:sparqlEndpoint   <http://id.eaufrance.fr/sparql> ;
+        void:triples          "104907"^^xsd:int ;
+        foaf:homepage         <http://sandre.eaufrance.fr/> .

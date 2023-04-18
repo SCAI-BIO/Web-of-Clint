@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/webnmasunotraveler>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-foaf" , "format-rdfs" , "format-hartigprov" , "media" , "lodcloud-diagram-2014-08-30" , "dataset-level-metadata" , "format-opmo" , "format-sioc" , "format-prvt" , "format-pos" , "crawledLinkedDataCloud2014" , "lodcloud-diagram-2011-09-19" , "format-rdfg" , "format-void" , "format-rdf" , "LinkedDataCrawl2014" , "format-dcterm" , "format-owl" ;
+        dcterms:title         "webnmasunotraveler"@en ;
+        void:exampleResource  <http://webenemasuno.linkeddata.es/data/elviajero/resource/Point/POINT48.85666666666667_2.350833333333333> ;
+        void:triples          "0"^^xsd:int ;
+        foaf:homepage         <http://webenemasuno.linkeddata.es> .
+
+[ void:target   <http://lod-cloud.net/dataset/elviajero> , <http://lod-cloud.net/dataset/webnmasunotraveler> ;
+  void:triples  22
+] .

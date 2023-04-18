@@ -1,0 +1,45 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/tip>
+        a                    void:Dataset ;
+        dcterms:description  "A SPARQL endpoint of Taiwan Indigenous People provides Taiwan Indigenous people information, including 6 major subjects : [Ethnic](http://lod.apc.gov.tw:8890/schemas/Ethnic_Introduction/), [Culture](http://lod.apc.gov.tw:8890/schemas/Cultural_Creative/), [Travel](http://lod.apc.gov.tw:8890/schemas/Travel/), [Gourmet](http://lod.apc.gov.tw:8890/schemas/Gourmet/), [Ceremony](http://lod.apc.gov.tw:8890/schemas/Ceremony/) and [Business] (http://lod.apc.gov.tw:8890/schemas/Business/).\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Tai-Ting Wu" ;
+                               foaf:mbox   "taitingwu@itri.org.tw"
+                             ] ;
+        dcterms:subject      "government" , "lod" , "Indigenous People" , "Taiwan" , "aboriginal" , "indigenous" ;
+        dcterms:title        "TIP"@en ;
+        void:sparqlEndpoint  <http://lod.apc.gov.tw/sparql> ;
+        void:triples         264034 .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/tip> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/tip> ;
+  void:triples  91
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wikipediaontology> , <http://lod-cloud.net/dataset/tip> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/tip> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/tip> ;
+  void:triples  314
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/tip> ;
+  void:triples  89
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/yago-knowledge> , <http://lod-cloud.net/dataset/tip> ;
+  void:triples  89
+] .

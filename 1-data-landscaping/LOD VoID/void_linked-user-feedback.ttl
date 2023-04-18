@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/iserve> , <http://lod-cloud.net/dataset/linked-user-feedback> ;
+  void:triples  150
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedmdb> , <http://lod-cloud.net/dataset/linked-user-feedback> ;
+  void:triples  523
+] .
+
+<http://lod-cloud.net/dataset/linked-user-feedback>
+        a                     void:Dataset ;
+        dcterms:description   "The Linked User Feedback (LUF) dataset contains user-generated feedback in the form of ratings, comments and taggings, which are gathered via an API that third party applications can make use of."@en ;
+        dcterms:publisher     [ rdfs:label  "LUF team" ;
+                                foaf:mbox   "galvaro@isoco.com"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "deref-vocab" , "provenance-metadata" , "format-foaf" , "reviews" , "published-by-producer" , "usergeneratedcontent" , "format-rev" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "format-rdf" , "lod" , "no-vocab-mappings" , "format-tag" ;
+        dcterms:title         "Linked User Feedback"@en ;
+        void:exampleResource  <http://soa4all.isoco.net/luf/data/comments/47fce8e735a1bfea56ef6efce145aad2?output=xml> , <http://soa4all.isoco.net/luf/data/taggings/17fcbb512192004a909505e447a9ffca?output=xml> , <http://soa4all.isoco.net/luf/data/ratings/10a7060888668fcedcc02328a3d1a041?output=xml> ;
+        void:sparqlEndpoint   <http://soa4all.isoco.net/luf/sparql> ;
+        void:triples          240000 ;
+        dcat:distribution     [ dcat:accessURL  <http://soa4all.isoco.net/luf/about/downloads/luf_statements.zip> ] ;
+        foaf:homepage         <http://soa4all.isoco.net/luf/about/> .

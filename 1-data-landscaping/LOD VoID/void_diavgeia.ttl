@@ -1,0 +1,49 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/eurostat> , <http://lod-cloud.net/dataset/diavgeia> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/hellenic-police> , <http://lod-cloud.net/dataset/diavgeia> ;
+  void:triples  45
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/diavgeia> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/kalikratis-municipalities> , <http://lod-cloud.net/dataset/diavgeia> ;
+  void:triples  355
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/hellenic-fire-brigade> , <http://lod-cloud.net/dataset/diavgeia> ;
+  void:triples  156
+] .
+
+<http://lod-cloud.net/dataset/diavgeia>
+        a                     void:Dataset ;
+        dcterms:description   "The Clarity program introduces for the first time in Greece the obligation to publish all the decisions on the Internet, with the exception of decisions that contain sensitive personal data and/or information on national security. It is quite an innovative program, even by European standards, aiming first of all to bring about the maximum publicity of the government policy and administrative action. The use of Internet guarantees wide publicity and access to information, progressively contributing to a culture change in the whole of the Public Administration."@en ;
+        dcterms:publisher     [ rdfs:label  "Spiros Alexiou" ;
+                                foaf:mbox   "spiros.alexiou@gmail.com"
+                              ] ;
+        dcterms:subject       "openspending" , "license-metadata" , "format-foaf" , "format-owl" , "format-skos" , "linked data" , "lod" , "provenance-metadata" , "greece" , "opendata" , "format-dc" , "no-proprietary-vocab" , "clarity" , "format-rdf" , "published-by-third-party" , "diavgeia" , "greek" , "government" ;
+        dcterms:title         "Diavgeia"@en ;
+        void:exampleResource  <https://commondatastorage.googleapis.com/ckannet-storage/2012-08-27T164505/Diavgeia_demo_RDF_XML.rdf> ;
+        void:triples          48051108 ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-09-27T161432/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://diavgeia.math.auth.gr/sparql> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-08-27T164145/Diavgeia_demo_NTriples.nt> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-08-27T163756/Diavgeia_demo_RDF_XML.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2013-02-08T154930/MinistriesSpending2012_1.csv> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.greek-lod.gr/DiavgeiaTreeMap/dapanes/General.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2013-02-08T164424/PolicePerRegion_1.csv> ] ;
+        foaf:homepage         <http://opendata.diavgeia.gov.gr/?lang=en> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-el> , <http://lod-cloud.net/dataset/diavgeia> ;
+  void:triples  676
+] .

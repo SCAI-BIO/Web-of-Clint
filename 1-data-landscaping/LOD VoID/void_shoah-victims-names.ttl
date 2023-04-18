@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/shoah-victims-names> ;
+  void:triples  537
+] .
+
+<http://lod-cloud.net/dataset/shoah-victims-names>
+        a                     void:Dataset ;
+        dcterms:description   "The Dataset describing the Shoah domain aims to formally describe concepts and relationships that characterize the process of persecution and deportation of Jews from Italy between 1943 and 1945."@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "publications" , "shoah" , "open_archives" , "lod" , "lodcloud-diagram-2014-08-30" , "lodlam" , "library" ;
+        dcterms:title         "Shoah victims? names"@en ;
+        void:exampleResource  <http://cdec.opendams.org/lod/page/shoah/person/4919> ;
+        void:sparqlEndpoint   <http://lod.xdams.org/sparql> ;
+        void:triples          "0"^^xsd:int ;
+        dcat:distribution     [ dcat:accessURL  <http://cdec.opendams.org/lodlive/?http://cdec.opendams.org/lod/shoah/person/4919> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://cdec.opendams.org/void.ttl> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/reload> , <http://lod-cloud.net/dataset/shoah-victims-names> ;
+  void:triples  125
+] .

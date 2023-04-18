@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/olia-discourse>
+        a                    void:Dataset ;
+        dcterms:description  "OLiA Discourse Extensions"@en ;
+        dcterms:publisher    [ rdfs:label  "Christian Chiarcos" ;
+                               foaf:mbox   "christian.chiarcos@web.de"
+                             ] ;
+        dcterms:subject      "discourse" , "OLiA" , "discourse relations" , "anaphora" , "information structure" , "coreference" , "coherence relations" , "linguistics" , "terminology" , "discourse structure" , "linguistic" , "llod" , "lrec-2014" , "information status" , "lod" ;
+        dcterms:title        "OLiA Discourse"@en ;
+        void:triples         4175 ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/olia/discourse> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/olia/discourse/olia_discourse.owl> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/olia-discourse> ;
+  void:triples  81
+] .

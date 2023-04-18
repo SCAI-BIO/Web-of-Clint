@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/core>
+        a                     void:Dataset ;
+        dcterms:description   "The CORE dataset contains information about similarities between scientific papers stored across Open Access repositories. The similarities are calculated using Natural Language Processing techniques based on the full-text.  The similarities are provided only for research articles with an accessible and machine readable full-text. More information about the data structure can be found at:http://core-project-local.kmi.open.ac.uk/data-description.\r\n\r\n#### RDF Statistics\r\n\r\nAt the moment we expose more than 92 million RDF triples describing similarities calculated on a set of more than 400k full-text articles harvested from over 230 Open Access repositories.\r\n\r\n#### Links\r\n\r\nThe data about the similarities are represented using the  MuSIM ontology (http://kakapo.dcs.qmul.ac.uk/ontology/musim/0.2/musim.html) BIBO ontologies (http://bibliontology.com/) with links to the OAI (RKBExplorer) repository available in the Linked Data cloud. "@en ;
+        dcterms:publisher     [ rdfs:label  "Petr Knoth" ;
+                                foaf:mbox   "p.knoth@open.ac.uk"
+                              ] ;
+        dcterms:subject       "publications" , "media" , "no-proprietary-vocab" , "similarity" , "license-metadata" , "published-by-producer" , "oai" , "lodcloud-diagram-2014-08-30" , "openuniversity" , "lod" , "bibliographic" , "llod" , "format-rdfs" , "no-provenance-metadata" ;
+        dcterms:title         "CORE - Semantic Similarity of Open Access publications"@en ;
+        void:exampleResource  <http://core-project.kmi.open.ac.uk/files/example-link.rdf> , <http://core-project.kmi.open.ac.uk/files/test.rdf> ;
+        void:sparqlEndpoint   <http://core.kmi.open.ac.uk/squery> ;
+        void:triples          101526714 ;
+        dcat:distribution     [ dcat:accessURL  <http://core-project.kmi.open.ac.uk/files/core-voiD.n3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://core-project.kmi.open.ac.uk/files/download_20120123.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://core-project.kmi.open.ac.uk/data-description> ] ;
+        foaf:homepage         <http://core-project.kmi.open.ac.uk/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/core> ;
+  void:triples  200000
+] .

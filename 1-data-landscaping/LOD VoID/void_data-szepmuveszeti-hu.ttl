@@ -1,0 +1,74 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/open-library> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  0
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lobid-organisations> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  0
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bluk-bnb> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  0
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/hungarian-national-library-catalog> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  704
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/europeana-lod-v1> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  627
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  848
+] .
+
+<http://lod-cloud.net/dataset/data-szepmuveszeti-hu>
+        a                     void:Dataset ;
+        dcterms:description   "Open linked data from the Museum of Fine Arts Budapest"@en ;
+        dcterms:publisher     [ rdfs:label  "Museum of Fine Arts Budapest" ;
+                                foaf:mbox   "aliada@szepmuveszeti.hu"
+                              ] ;
+        dcterms:subject       "published-by-producer" , "no-vocab-mappings" , "license-metadata" , "format-owltime" , "format-owl" , "format-foaf" , "format-frbroo" , "publications" , "format-skos" , "provenance-metadata" , "format-wgs84" , "lod" , "no-proprietary-vocab" ;
+        dcterms:title         "data-szepmuveszeti-hu"@en ;
+        void:dataDump         <http://data.szepmuveszeti.hu/datadumps/links_1446034465154_20151028000001.nt.gz> , <http://data.szepmuveszeti.hu/datadumps/museum_1446034453917_20151028000001.nt.gz> ;
+        void:exampleResource  <http://data.szepmuveszeti.hu/datadumps/MARCAUTHExample.rdf> , <http://data.szepmuveszeti.hu/datadumps/LIDOExample.rdf> , <http://data.szepmuveszeti.hu/datadumps/MARCBIBExample.rdf> , <http://data.szepmuveszeti.hu/datadumps/DCExample.rdf> ;
+        void:sparqlEndpoint   <http://data.szepmuveszeti.hu/sparql> ;
+        void:triples          334699 ;
+        dcat:distribution     [ dcat:accessURL  <http://aliada-project.eu/2014/aliada-ontology#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.szepmuveszeti.hu/datadumps/dataszepmuveszetihu.ttl> ] ;
+        foaf:homepage         <http://www.szepmuveszeti.hu> .
+
+[ void:target   <http://lod-cloud.net/dataset/marc-codes> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/datos-bne-es> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  48
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  0
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  0
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  329
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lobid-resources> , <http://lod-cloud.net/dataset/data-szepmuveszeti-hu> ;
+  void:triples  0
+] .

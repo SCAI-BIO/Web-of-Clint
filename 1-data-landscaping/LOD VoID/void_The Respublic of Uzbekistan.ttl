@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/The+Respublic+of+Uzbekistan>
+        a                    void:Dataset ;
+        dcterms:description  "Government"@en ;
+        dcterms:publisher    [ rdfs:label  "Akrom Sultanov" ;
+                               foaf:mbox   "akromsultanov82@gmail.com"
+                             ] ;
+        dcterms:subject      "government" ;
+        dcterms:title        "Open data of Uzbekistan"@en ;
+        void:dataDump        <https://data.gov.uz/en/datasets/10703> , <https://data.gov.uz/en/datasets/10666> , <https://data.gov.uz/en/datasets/10700> , <https://data.gov.uz/en/datasets/10667> ;
+        void:sparqlEndpoint  <https://data.gov.uz/en/docs/do> ;
+        void:triples         "0"^^xsd:int ;
+        foaf:homepage        <https://data.gov.uz/en> .

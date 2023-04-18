@@ -1,0 +1,30 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-programmes> , <http://lod-cloud.net/dataset/data-incubator-nasa> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/data-incubator-nasa>
+        a                    void:Dataset ;
+        dcterms:description  "### Description\r\n\r\nConversion of various NASA datasets into RDF, starting \r\nwith the spacecraft data from the NSSDC master catalog.\r\n\r\nThis dataset consists of a conversion of the NASA NSSDC Master Catalog and extracts of the Apollo By Numbers statistics.\r\n\r\nCurrently the data consists of all of the Spacecraft from the NSSDC database which is a comprehensive list of orbital, suborbital, and interplanetary spacecraft launches dataing from the 1950s to the present day. Entries are not limited to NASA missions, but include spacecraft launched by various agencies from around the globe.\r\n\r\n*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)"@en ;
+        dcterms:publisher    [ rdfs:label  "Leigh Dodds" ;
+                               foaf:mbox   "leigh@ldodds.com"
+                             ] ;
+        dcterms:subject      "format-owl" , "deref-vocab" , "space" , "nasa" , "format-foaf" , "format-dc" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "format-rdf" , "government" , "format-po" ;
+        dcterms:title        "NASA Space Flight & Astronaut data in RDF"@en ;
+        void:sparqlEndpoint  <http://api.kasabi.com/dataset/nasa/apis/sparql> ;
+        void:triples         97974 ;
+        dcat:distribution    [ dcat:accessURL  <http://kasabi.com/dataset/nasa/apis/augmentation> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://archive.org/download/kasabi/nasa.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://kasabi.com/dataset/nasa/apis/reconciliation> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://data.kasabi.com/dataset/nasa> ] ;
+        foaf:homepage        <http://kasabi.com/dataset/nasa> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-incubator-nasa> ;
+  void:triples  61
+] .

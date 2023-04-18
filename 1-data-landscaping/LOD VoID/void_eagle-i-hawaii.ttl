@@ -1,0 +1,65 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/eagle-i-hawaii> ;
+  void:triples  700
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/eagle-i-hawaii> ;
+  void:triples  185
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-iao> , <http://lod-cloud.net/dataset/eagle-i-hawaii> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ncbitaxon> , <http://lod-cloud.net/dataset/eagle-i-hawaii> ;
+  void:triples  12817
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-bro_x1> , <http://lod-cloud.net/dataset/eagle-i-hawaii> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/eagle-i-hawaii>
+        a                     void:Dataset ;
+        dcterms:description   "Groundbreaking biomedical research requires access to cutting edge scientific resources; however such resources are often invisible beyond the laboratories or universities where they were developed. eagle-i is a national research resource discovery platform to help biomedical scientists search for and find previously invisible, but highly valuable, resources. \r\nResource descriptions collected at each participating institution are freely available as linked open data.\r\nSee: https://www.eagle-i.net/"@en ;
+        dcterms:publisher     [ rdfs:label  "The eagle-i Network" ;
+                                foaf:mbox   "info@eagle-i.org"
+                              ] ;
+        dcterms:subject       "format-oboso" , "published-by-producer" , "lod" , "format-bibo" , "lifesciences" , "format-foaf" , "format-vivo" , "format-dc" , "format-ncbitaxon" , "format-ro" , "format-ero" , "format-pobo" , "vocab-mappings" , "life_sciences" , "provenance-metadata" , "deref-vocab" ;
+        dcterms:title         "eagle-i @ University of Hawai’i at Mānoa"@en ;
+        void:exampleResource  <http://hawaii.eagle-i.net/i/00000130-ba17-c839-eee5-4adc80000000?format=application/xml> ;
+        void:sparqlEndpoint   <http://hawaii.eagle-i.net/sparqler/sparql> ;
+        void:triples          344000 ;
+        dcat:distribution     [ dcat:accessURL  <http://hawaii.eagle-i.net/sparqler/sparql?view=published-resources&format=text/turtle&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E+PREFIX+%3A+%3Chttp%3A%2F%2Feagle-i.org%2Font%2Frepo%2F1.0%2F%3E+construct+%7B%3Fs+%3Fp+%3Fo+.+%3Fs+a+%3Ftype+.+%3Ftype+rdfs%3Alabel+%3Ftype_label+.+%3Fp+rdfs%3Alabel+%3Fp_label+.+%3Fo+rdfs%3Alabel+%3Fo_label%7D+where+%7Bgraph+%3ANG_Published%7B%3Fs+%3Fp+%3Fo%7D+.+optional%7B%3Fs+a+%3Ftype%7D+.+optional%7B%3Ftype+rdfs%3Alabel+%3Ftype_label%7D+.+optional%7B%3Fp+rdfs%3Alabel+%3Fp_label+%7D+.+optional%7B+%3Fo+rdfs%3Alabel+%3Fo_label%7D%7D+> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://hawaii.eagle-i.net/sparqler/sparql?view=published-resources&format=text/turtle&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E+PREFIX+%3A+%3Chttp%3A%2F%2Feagle-i.org%2Font%2Frepo%2F1.0%2F%3E+construct+%7B%3Fs+%3Fp+%3Fo+.+%3Fp+rdfs%3Alabel+%3Fp_label+.+%3Fo+rdfs%3Alabel+%3Fo_label%7D+where+%7Bgraph+%3ANG_Published%7B%3Fs+%3Fp+%3Fo%7D+.+optional%7B%3Fp+rdfs%3Alabel+%3Fp_label+%7D+.+optional%7B+%3Fo+rdfs%3Alabel+%3Fo_label%7D%7D+> ] ;
+        foaf:homepage         <http://hawaii.eagle-i.net> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ocre> , <http://lod-cloud.net/dataset/eagle-i-hawaii> ;
+  void:triples  160
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-vivo> , <http://lod-cloud.net/dataset/eagle-i-hawaii> ;
+  void:triples  375
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/eagle-i-hawaii> ;
+  void:triples  32
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-swo > , <http://lod-cloud.net/dataset/eagle-i-hawaii> ;
+  void:triples  19
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x2> , <http://lod-cloud.net/dataset/eagle-i-hawaii> ;
+  void:triples  9
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/eagle-i-hawaii> ;
+  void:triples  4668
+] .

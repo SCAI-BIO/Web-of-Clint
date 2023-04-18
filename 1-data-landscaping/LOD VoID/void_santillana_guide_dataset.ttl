@@ -1,0 +1,20 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/santillana_guide_dataset>
+        a                     void:Dataset ;
+        dcterms:description   "The Santillana Guide dataset represents the content of the Santillana guide (owned by Prisa Digital) as Linked Data. The guide contains information about more than 1500 Spanish restaurants and more than 1500 Spanish hotels. The ontology that has been used for publishing the dataset models the tourist domain represented in the project, and partially reuses the Infutur ontology.  The dataset has been published within the WEBN+1 project and it constitutes a complement to El Viajero's tourism dataset. Some restaurants from the Open Data Euskadi initiative have been integrated in the dataset. "@en ;
+        dcterms:publisher     [ rdfs:label  "Vicomtech-IK4" ;
+                                foaf:mbox   "info@vicomtech.org"
+                              ] ;
+        dcterms:subject       "tourism" , "travel" , "lodcloud.unconnected" , "media" , "lod" , "lodcloud.nolinks" , "format-infutur" , "restaurants" , "elviajero" , "format-vcard" , "hotels" , "santillana" ;
+        dcterms:title         "Santillana Guide Dataset"@en ;
+        void:exampleResource  <http://santillana.linkeddata.es/elviajero/resource/Restaurant/Restaurant1166> , <http://santillana.linkeddata.es/elviajero/resource/SpatialThing/SpatialThing1166> , <http://santillana.linkeddata.es/elviajero/resource/Accommodation/Accommodation303> , <http://santillana.linkeddata.es/elviajero/resource/Location/Location1166> ;
+        void:sparqlEndpoint   <http://212.81.220.68:2020/elviajero> ;
+        void:triples          64748 ;
+        dcat:distribution     [ dcat:accessURL  <http://212.81.220.68:8282/snorql> ] ;
+        foaf:homepage         <http://webenemasuno.linkeddata.es/> .

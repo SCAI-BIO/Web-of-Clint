@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbpedia-pt> ;
+  void:triples  365839
+] .
+
+<http://lod-cloud.net/dataset/dbpedia-pt>
+        a                     void:Dataset ;
+        dcterms:description   "DBpedia Portuguese is being constructed by a working group to internationalize DBpedia to the [Lusosphere](http://en.wikipedia.org/wiki/Lusosphere \"what is lusosphere?\").\r\n\r\nWe are actively collaborating with the [DBpedia Internationalization Team](http://wiki.dbpedia.org/Internationalization) to include knowledge from the [Portuguese Language Wikipedia](http://pt.wikipedia.org) into DBpedia. As a first step, we have performed a preliminary extraction (available at http://pt.dbpedia.org) and are editing several mappings and labels to the DBpedia Ontology. The activity is organized via the mailing list dbpedia-portuguese@lists.sourceforge.net\r\n\r\nhttp://pt.dbpedia.org"@en ;
+        dcterms:publisher     [ rdfs:label  "Pablo Mendes" ;
+                                foaf:mbox   "pablo.mendes@fu-berlin.de"
+                              ] ;
+        dcterms:subject       "deref-vocab" , "format-rdf" , "crossdomain" , "lod" , "published-by-producer" , "cross_domain" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" ;
+        dcterms:title         "DBpedia in Portuguese"@en ;
+        void:exampleResource  <http://pt.dbpedia.org/resource/Brazil> ;
+        void:sparqlEndpoint   <http://pt.dbpedia.org/sparql> ;
+        void:triples          24607332 ;
+        foaf:homepage         <http://pt.dbpedia.org> .

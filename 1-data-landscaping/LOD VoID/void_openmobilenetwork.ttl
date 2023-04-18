@@ -1,0 +1,32 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/openmobilenetwork> ;
+  void:triples  150
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedcrowdsourceddata> , <http://lod-cloud.net/dataset/openmobilenetwork> ;
+  void:triples  63642
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/openmobilenetwork> ;
+  void:triples  1442037
+] .
+
+<http://lod-cloud.net/dataset/openmobilenetwork>
+        a                     void:Dataset ;
+        dcterms:description   "The OpenMobileNetwork is a dataset for mobile networks and devices, which is semantically modeled using the Linked Data principles. It provides structured RDF data describing mobile networks, their topology and components (e.g., base stations, mobile devices or WiFi access points). Utilizing this dataset in combination with interlinked information that is present in the LOD Cloud, various applications can be realized that depend on mobile network and positioning data (e.g., Semantic Location-based Services or Power Management in Mobile Networks)."@en ;
+        dcterms:publisher     [ rdfs:label  "Abdulbaki Uzun, Service-centric Networking, TU Berlin" ;
+                                foaf:mbox   "abdulbaki.m.uzun@tu-berlin.de"
+                              ] ;
+        dcterms:subject       "license-metadata" , "geography" , "mobile-phone" , "base-station" , "format-rdf" , "provenance-metadata" , "cell" , "format-owl" , "format-geo" , "wireless-network" , "geographic" , "lod" , "mobile-network" , "published-by-producer" , "sparql" , "no-deref-vocab" ;
+        dcterms:title         "OpenMobileNetwork"@en ;
+        void:exampleResource  <http://www.openmobilenetwork.org/page/cell2159549_5275_262_1.rdf> ;
+        void:sparqlEndpoint   <http://sparql.openmobilenetwork.org> ;
+        void:triples          19048586 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.openmobilenetwork.org/resource/void> ] ;
+        foaf:homepage         <http://www.openmobilenetwork.org> .

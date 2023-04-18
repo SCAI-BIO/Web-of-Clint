@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/vivo-cornell-university>
+        a                    void:Dataset ;
+        dcterms:description  "Information about Cornell faculty and staff across all disciplines, departments and colleges. Available as RDF dump and Linked Data. This is a part of package:vivo."@en ;
+        dcterms:publisher    [ rdfs:label  "Cornell University" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "no-vocab-mappings" , "science" , "format-rdfs" , "published-by-producer" , "lodcloud-diagram-2011" , "social-networks" , "lod" , "format-vitro" , "publications" , "lodcloud-diagram-2011-09-19" , "vivo" , "deref-vocab" , "format-rdf" , "no-license-metadata" , "education" , "no-provenance-metadata" ;
+        dcterms:title        "VIVO Cornell"@en ;
+        void:triples         9796754 ;
+        dcat:distribution    [ dcat:accessURL  <http://vivo.cornell.edu/Cornell-VIVO.n3> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://vivoweb.org/ontology/core> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://vivo.cornell.edu/individual/PamelaGraham/PamelaGraham.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://vivo.cornell.edu/individual/DonnaStevens/DonnaStevens.rdf> ] ;
+        foaf:homepage        <http://vivo.cornell.edu/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/vivo-cornell-university> ;
+  void:triples  58
+] .

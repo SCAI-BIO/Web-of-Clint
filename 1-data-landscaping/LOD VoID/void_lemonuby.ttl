@@ -1,0 +1,39 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/vu-wordnet> , <http://lod-cloud.net/dataset/lemonuby> ;
+  void:triples  206773
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/isocat> , <http://lod-cloud.net/dataset/lemonuby> ;
+  void:triples  69
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/w3c-wordnet> , <http://lod-cloud.net/dataset/lemonuby> ;
+  void:triples  84416
+] .
+
+<http://lod-cloud.net/dataset/lemonuby>
+        a                     void:Dataset ;
+        dcterms:description   "Export of UBY to lemon format"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "llod" , "wiktionary" , "english" , "wordnet" , "linguistics" , "framenet" , "lodcloud-diagram-2014-08-30" , "german" , "omegawiki" , "lemon" , "lod" , "lexical-resource" ;
+        dcterms:title         "lemonUby"@en ;
+        void:exampleResource  <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_0.rdf> ;
+        void:triples          32916476 ;
+        dcat:distribution     [ dcat:accessURL  <http://lemon-model.net/lexica/uby> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_0.html> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/wiktionary-dbpedia-org> , <http://lod-cloud.net/dataset/lemonuby> ;
+  void:triples  76294
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/lemonuby> ;
+  void:triples  1470741
+] .

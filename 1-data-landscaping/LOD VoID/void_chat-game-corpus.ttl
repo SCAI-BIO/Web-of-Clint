@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/fiesta> , <http://lod-cloud.net/dataset/chat-game-corpus> ;
+  void:triples  4190
+] .
+
+<http://lod-cloud.net/dataset/chat-game-corpus>
+        a                    void:Dataset ;
+        dcterms:description  "A corpus resulting from an object arrangement game using a computer-mediated setting."@en ;
+        dcterms:publisher    [ rdfs:label  "SFB 673, Project B6" ;
+                               foaf:mbox   "pmenke@TechFak.Uni-Bielefeld.DE"
+                             ] ;
+        dcterms:subject      "format-rdf" , "rdf" , "published-by-producer" , "llod" , "conferences locations lod" , "lod" , "linguistics" ;
+        dcterms:title        "Chat Game corpus"@en ;
+        void:triples         15750 ;
+        dcat:distribution    [ dcat:accessURL  <http://data.sfb673.org/corpora/chat_game_corpus.ttl> ] .

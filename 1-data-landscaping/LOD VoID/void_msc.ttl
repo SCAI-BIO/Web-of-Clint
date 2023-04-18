@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/msc>
+        a                     void:Dataset ;
+        dcterms:description   "The Mathematics Subject Classification (MSC2010) as a Linked Open Dataset using SKOS - Simple Knowledge Organization System.\r\nThe Mathematics Subject Classi?cation (MSC) is a widely used scheme for classifying documents in mathematics by subject.  The Final MSC2010 revision was made public here in May 2009, and deployed in production in July 2009 by Zbl for ZMATH and MR for MathSciNet.\r\n\r\nThe license is CC-BY-NC-SA."@en ;
+        dcterms:publisher     [ rdfs:label  "http://sci-class.math.auth.gr/MSCLW/index.php/User_contributions" ;
+                                foaf:mbox   "project-msc-lod@jacobs-university.de"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "format-skos" , "publications" , "no-proprietary-vocab" , "no-license-metadata" , "lld" , "published-by-producer" , "topic.schemata" , "provenance-metadata" , "lod" , "bibliographic" ;
+        dcterms:title         "Mathematics Subject Classification"@en ;
+        void:exampleResource  <http://msc2010.org/resources/MSC/2010/54B30> ;
+        void:sparqlEndpoint   <http://sparql.msc2010.org> ;
+        void:triples          14359 ;
+        dcat:distribution     [ dcat:accessURL  <http://msc2010.org/mscwork/msc2010-nomath.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://sci-class.math.auth.gr/MSCLW/msc_void.ttl> ] ;
+        foaf:homepage         <http://msc2010.org/mscwork/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/msc> ;
+  void:triples  2691
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/msc> ;
+  void:triples  316
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dewey_decimal_classification> , <http://lod-cloud.net/dataset/msc> ;
+  void:triples  667
+] .

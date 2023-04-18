@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/dbtune-myspace> ;
+  void:triples  232
+] .
+
+<http://lod-cloud.net/dataset/dbtune-myspace>
+        a                    void:Dataset ;
+        dcterms:description  "This service provides a live RDF representation of [Myspace](http://myspace.com/) users. If the user is also an artist, then the corresponding tracks in the streaming audio cache are included in the RDF. Note that only the top friends of the target Myspace user are included in the RDF.\r\n\r\nThis representations is designed using the Music Ontology, FOAF, and a small Myspace Ontology.\r\n\r\n### Issues\r\n\r\nTriple count is a wild guess based on assumption of 10 triples for each of the 66M MySpace users.\r\n\r\nAll the links are down, marking for removal.\r\n\r\nAs of July 21, 2011:\r\nUnfortunately due to changes in the MySpace pages, the DBtune MySpace service will be down indefinitely. Sorry for inconvenience. If you have time to help fix the service you can join the MoTools project of SF or email kurtjx at gmail."@en ;
+        dcterms:publisher    [ rdfs:label  "Kurt Jacobson" ;
+                               foaf:mbox   "kurtjx@gmail.com"
+                             ] ;
+        dcterms:subject      "dbtune" , "lodcloud.needsfixing" , "social_networking" , "music" , "socialnetwork" , "no-license-metadata" , "published-by-third-party" , "lod" , "format-rdf" , "media" , "no-vocab-mappings" , "myspace" , "no-deref-vocab" , "no-provenance-metadata" ;
+        dcterms:title        "DBTune.org MySpace RDF Service"@en ;
+        void:sparqlEndpoint  <http://dbtune.org/myspace/sparql/> ;
+        void:triples         660000000 ;
+        foaf:homepage        <http://dbtune.org/myspace/> .

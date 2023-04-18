@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/uriburner>
+        a                     void:Dataset ;
+        dcterms:description   "A service that delivers RDF-based structured descriptions of Web addressable resources in a variety of formats through Generic HTTP URIs.\r\n\r\nThe underlying technology is Virtuoso's Sponger, which takes an existing Web-accessible resource (webpage, media) and generates an RDF graph of its metadata using existing well-known ontologies as well as site-specific knowledge. URIBurner then re-presents this data as either a new HTML webpage, or directly as RDF in a variety of serializations (RDF/XML, text/n3, turtle, JSON).\r\n\r\n### Issues\r\n\r\nThe linking information is incomplete and the numbers are guesswork."@en ;
+        dcterms:publisher     [ rdfs:label  "OpenLink Software" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "crossdomain" , "no-proprietary-vocab" , "lodcloud-diagram-2011-09-19" , "lod" , "no-vocab-mappings" , "format-rdf" , "cross_domain" , "no-provenance-metadata" , "published-by-third-party" , "no-license-metadata" , "format-xhtml" , "broken_link" ;
+        dcterms:title         "URIBurner"@en ;
+        void:exampleResource  <http://linkeddata.uriburner.com/about/html/http://www.crunchbase.com/financial-organization/andreessen-horowitz> , <http://linkeddata.uriburner.com/about/http://www.bbc.co.uk/music/artists/ed2ac1e9-d51d-4eff-a2c2-85e81abd6360%01artist> ;
+        void:sparqlEndpoint   <http://linkeddata.uriburner.com/sparql> ;
+        void:triples          486089121 ;
+        foaf:homepage         <http://uriburner.com/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/uriburner> ;
+  void:triples  1000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/uriburner> ;
+  void:triples  1000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/uriburner> ;
+  void:triples  1000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/chronicling-america> , <http://lod-cloud.net/dataset/uriburner> ;
+  void:triples  1000
+] .

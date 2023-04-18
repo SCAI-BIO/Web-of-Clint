@@ -1,0 +1,511 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/vivo-indiana-university> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-open-ac-uk> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/telegraphis> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ft> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lotico> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ieee> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/stw-thesaurus-for-economics> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/t4gm-info> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-curriculum> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/my-experiment> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/flickr-wrappr> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/esd-standards> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/2000-us-census-rdf> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-jisc> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/business-data-gov-uk> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-lite> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbtropes> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/enakting-population> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wordnet> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fishes-of-texas> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/talis-openlibrary> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/vivo-university-of-florida> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/uriburner> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/chronicling-america> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ulm> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/openlylocal> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/opencalais> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-incubator-discogs> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/cornetto> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/uk-postcodes> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eurostat-ontologycentral> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/university-plymouth-reading-lists> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gemeenschappelijke-thesaurus-audiovisuele-archieven> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/research-data-gov-uk> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-unlocode> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-irit> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-deploy> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linked-open-numbers> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rdfize-lastfm> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/austrian_ski_racers> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  3
+] .
+
+<http://lod-cloud.net/dataset/ckan>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-void" , "access-api" , "format-rdf" , "package-type.catalog" , "registry" , "life_sciences" , "format-opmv" , "resource-deref" , "format-dcat" , "bio2rdf" , "published-by-producer" , "lodcloud-diagram-2014-08-30" , "catalog" , "catalogue" ;
+        dcterms:title         "Comprehensive Knowledge Archive Network"@en ;
+        void:dataDump         <http://semantic.ckan.net/catalogue.nt> ;
+        void:exampleResource  <http://semantic.ckan.net/package/c/k/ckan.nt> , <http://semantic.ckan.net/package/c/k/ckan.rdf> , <http://semantic.ckan.net/package/c/k/ckan.n3> ;
+        void:sparqlEndpoint   <http://semantic.ckan.net/sparql/> ;
+        void:triples          50000 ;
+        dcat:distribution     [ dcat:accessURL  <http://semantic.ckan.net/catalogue.n3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.ckan.net/dump/ckan.net-daily.json.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://semantic.ckan.net/catalogue.rdf> ] ;
+        foaf:homepage         <http://www.ckan.net/> .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/environmental-applications-reference-thesaurus> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/enakting-co2emission> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/london-gazette> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/john-goodwins-family-tree> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/enakting-mortality> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/marc-codes> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/hungarian-national-library-catalog> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-nsf> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ecs> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/revyu> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/transport-data-gov-uk> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gesis-thesoz> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-darmstadt> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-programmes> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-incubator-moseley> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-roma> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geospecies> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-courseware> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-wildlife-finder> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-pisa> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/taxonconcept> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  6
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ibm> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eurostat-rdf> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/iserve> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/education-data-gov-uk> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eurecom> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/vivo-cornell-university> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/knoesis-linked-sensor-data> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/national-diet-library-subject-headings> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/uberblic> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semantic-xbrl> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/zbw-pressemappe20> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/uk-legislation-api> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-incubator-nasa> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ugent_biblio> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-incubator-musicbrainz> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-eurostat> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-era> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-gov-uk-time-intervals> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/the-view-from> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dcs-sheffield> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbtune-artists-last-fm> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-incubator-pokedex> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/surge-radio> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/openlibrary> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-risks> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/vu-wordnet> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/govtrack> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-deepblue> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rechtspraak> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/patents-data-gov-uk> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/environment-data-gov-uk> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/printed-book-auction-catalogues> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/zitgist-musicbrainz> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/event-media> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedlccn> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bibbase> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-resex> , <http://lod-cloud.net/dataset/ckan> ;
+  void:triples  1
+] .

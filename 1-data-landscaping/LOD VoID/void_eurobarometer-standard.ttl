@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/eurobarometer-standard> ;
+  void:triples  50000
+] .
+
+<http://lod-cloud.net/dataset/eurobarometer-standard>
+        a                     void:Dataset ;
+        dcterms:description   "The standard Eurobarometer was established in 1973. Each survey consists of approximately 1000 face-to-face interviews per country. Reports are published twice yearly. Reproduction is authorized, except for commercial purposes, provided the source is acknowledged. \r\n\r\nThis dataset represents the results of these questionnaires as Linked Data using the RDF Datacube Vocabulary. "@en ;
+        dcterms:publisher     [ rdfs:label  "Ian Davis" ;
+                                foaf:mbox   "ian.davis@kasabi.com"
+                              ] ;
+        dcterms:subject       "format-rdfs" , "latc" , "published-by-third-party" , "government" , "provenance-metadata" , "opinions" , "eu-institution" , "license-metadata" , "lodcloud" , "surveys" , "barometer" , "geographic" , "lod" , "polls" , "no-proprietary-vocab" , "format-qb" ;
+        dcterms:title         "Standard Eurobarometer"@en ;
+        void:exampleResource  <http://eurobarometer.publicdata.eu/data/question/1.rdf> , <http://eurobarometer.publicdata.eu/def/q1a2.rdf> , <http://eurobarometer.publicdata.eu/data/observation/3/1/2009/11.rdf> ;
+        void:sparqlEndpoint   <http://api.talis.com/stores/eurobarometer/services/sparql> ;
+        void:triples          1193494 ;
+        dcat:distribution     [ dcat:accessURL  <http://eurobarometer.publicdata.eu/void.ttl> ] ;
+        foaf:homepage         <http://eurobarometer.publicdata.eu> .
+
+[ void:target   <http://lod-cloud.net/dataset/eurostat-linked-data> , <http://lod-cloud.net/dataset/eurobarometer-standard> ;
+  void:triples  85510
+] .

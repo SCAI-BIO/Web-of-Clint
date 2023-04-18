@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/testee> ;
+  void:triples  222
+] .
+
+<http://lod-cloud.net/dataset/testee>
+        a                    void:Dataset ;
+        dcterms:description  "## Description\r\n\r\nssss sssssssssssssss ssssssssssssssssssssssssssssss"@en ;
+        dcterms:publisher    [ rdfs:label  "xxx" ;
+                               foaf:mbox   "xx"
+                             ] ;
+        dcterms:subject      "lod" , "no-vocab-mappings" , "published-by-producer" , "lodcloud-diagram-2014-08-30" , "format-rdf" , "no-provenance-metadata" , "lifesciences" , "deref-vocab" , "no-license-metadata" ;
+        dcterms:title        "xxxxx"@en ;
+        void:dataDump        <http://diwis.imis.athena-innovation.gr:8181/dump> ;
+        void:sparqlEndpoint  <http://diwis.imis.athena-innovation.gr:8181/sparql> ;
+        void:triples         33333 ;
+        dcat:distribution    [ dcat:accessURL  <http://diwis.imis.athena-innovation.gr:8181/scehma> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://diwis.imis.athena-innovation.gr/Dump> ] ;
+        foaf:homepage        <xxx> .

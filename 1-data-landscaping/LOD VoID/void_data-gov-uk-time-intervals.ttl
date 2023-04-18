@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/data-gov-uk-time-intervals>
+        a                     void:Dataset ;
+        dcterms:description   "Linked data for every time interval and instant into the past and future, from years down to seconds. This is an infinite set of linked data. It includes government years and properly handles the transition to the Gregorian calendar within the UK.\r\n\r\nPart of package:reference-data-gov-uk"@en ;
+        dcterms:publisher     [ rdfs:label  "Stuart Williams (Epimorphics Ltd)" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "weeks" , "lodcloud-diagram-2011-09-19" , "intervals" , "dates" , "format-foaf" , "no-provenance-metadata" , "format-skos" , "instants" , "format-time" , "days" , "quarters" , "ukgov" , "years" , "government" , "lod" , "deref-vocab" , "country-uk" , "uk" , "months" , "times" , "no-vocab-mappings" , "no-license-metadata" , "published-by-producer" , "lodcloud.nolinks" ;
+        dcterms:title         "data.gov.uk Time Intervals"@en ;
+        void:exampleResource  <http://reference.data.gov.uk/id/gregorian-interval/1977-11-01T12:22:45/P2Y1MT1H6S> , <http://reference.data.gov.uk/id/government-year/2010-2011> , <http://reference.data.gov.uk/id/year/2010> , <http://reference.data.gov.uk/id/day/2010-09-06> ;
+        void:triples          1000000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://reference.data.gov.uk/def/intervals> ] ;
+        foaf:homepage         <http://www.epimorphics.com/web/wiki/using-interval-set-uris-statistical-data> .

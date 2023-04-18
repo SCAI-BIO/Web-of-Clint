@@ -1,0 +1,82 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/fao-linked-data> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/world-wide-web-foundation> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/oecd-linked-data> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fao-geopolitical-ontology> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  27
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linked-eurostat> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ecb-linked-data> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/world-bank-linked-data> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/aspire-manchester> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/sors> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/transparency-linked-data> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/currency-designators> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/city-lichfield> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/planetdata-project-wiki>
+        a                     void:Dataset ;
+        dcterms:description   "Semantic Wiki of PlanetData Project"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-swivt" , "part-deref-vocab" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "format-owl" , "LinkedDataCrawl2014" , "crawledLinkedDataCloud2014" , "publications" , "format-rdfs" ;
+        dcterms:title         "PlanetData Project Wiki"@en ;
+        void:exampleResource  <http://wiki.planet-data.eu/?title=Special:ExportRDF/Party&xmlmime=rdf> ;
+        void:triples          "0"^^xsd:int ;
+        foaf:homepage         <http://planet-data.eu> .
+
+[ void:target   <http://lod-cloud.net/dataset/linked-edgar> , <http://lod-cloud.net/dataset/planetdata-project-wiki> ;
+  void:triples  4
+] .

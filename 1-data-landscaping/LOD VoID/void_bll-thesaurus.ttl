@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/bll-thesaurus> ;
+  void:triples  262
+] .
+
+<http://lod-cloud.net/dataset/bll-thesaurus>
+        a                    void:Dataset ;
+        dcterms:description  "The Thesaurus of the Bibliography of Linguistic Literature (BLL Thesaurus) represents a comprehensive bilingual vocabulary for indexing and documentation of linguistically relevant publications. Since 1971, it has been continuously developed and enhanced. The BLL Thesaurus covers the field in its entirety: language identifiers, levels of language description, sub-domains and sub-disciplines as well as theoretical frameworks.\r\nThe BLL Thesaurus is hosted and maintained by the University Library Johann Christian Senckenberg in Frankfurt, Germany. The dataset is published as RDF/XML, NT and Turtle and licensed under Creative Commons Attribution (CC-BY)."@en ;
+        dcterms:publisher    [ rdfs:label  "University Library Johann Christian Senckenberg" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "linguistic" , "language_description" , "ontology" , "thesaurus" , "terminology" , "linguistics" , "llod" ;
+        dcterms:title        "Bibliography of Linguistic Literature (BLL) Thesaurus"@en ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <http://data.linguistik.de/bll/bll-thesaurus> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://data.linguistik.de/bll/bll-ontology> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://data.linguistik.de/bll> ] ;
+        foaf:homepage        <http://data.linguistik.de/bll> .

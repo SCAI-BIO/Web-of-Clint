@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dblp> , <http://lod-cloud.net/dataset/metashare> ;
+  void:triples  161
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/metashare> ;
+  void:triples  227
+] .
+
+<http://lod-cloud.net/dataset/metashare>
+        a                    void:Dataset ;
+        dcterms:description  "Ontology\t\r\nMetadata as LOD\t\r\n\r\nAvailability: Freely Avalable\t\r\n\r\nUsage: \tStatus:Newly created-in progress\r\n\r\nDescription: \tLOD prelimnary version of the MetaShare metadata model.\r\n\r\n(http://www.resourcebook.eu/shareyourlr/index.php#)"@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "NLP" , "metadata" , "lod" , "linguistics" , "llod" , "lrec-2014" ;
+        dcterms:title        "MetaShare metadata model"@en ;
+        void:triples         8334 ;
+        dcat:distribution    [ dcat:accessURL  <http://gilmere.upf.edu/corpus_data/rdf/IULA-UPF-MetashareRecordsOntology.ttl> ] .

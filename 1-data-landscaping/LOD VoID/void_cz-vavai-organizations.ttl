@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/cz-vavai-organizations>
+        a                     void:Dataset ;
+        dcterms:description   "Overview of organizations active in R&D from http://www.isvav.cz/ ."@en ;
+        dcterms:publisher     [ rdfs:label  "Petr Škoda" ;
+                                foaf:mbox   "skoda@opendata.cz"
+                              ] ;
+        dcterms:subject       "no-vocab-mappings" , "published-by-third-party" , "format-skos" , "lod" , "license-metadata" , "deref-vocab" , "government" , "format-dcterms" , "provenance-metadata" ;
+        dcterms:title         "Organizations active in R&D"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/vavai/subjekt/orko%3A6F7O34D8_IHIL8C04_6IUWI43D_T5LHOLDN%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Forganizations&output=text%2Fturtle> , <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/vavai/subjekt/ico%3A00007064%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Forganizations&output=text%2Fturtle> , <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/vavai/subjekt/ico%3A00010669%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Forganizations&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          153370 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-organizations-vocabulary.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-organizations.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Forganizations%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/vavai/subjekt/ico%3A00007064> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/vavai/subjekt/orko%3A6F7O34D8_IHIL8C04_6IUWI43D_T5LHOLDN> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/vavai/subjekt/ico%3A00010669> ] ;
+        foaf:homepage         <http://linked.opendata.cz/resource/dataset/vavai/organizations> .

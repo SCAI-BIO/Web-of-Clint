@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/gwa-ili>
+        a                     void:Dataset ;
+        dcterms:description   "The collaborative interlingual index maintains the data for a single interlingual index of concept for wordnets. This respository contains all the data that is available in the Interlingual Index as well as mappings to other resources."@en ;
+        dcterms:publisher     [ rdfs:label  "John McCrae" ;
+                                foaf:mbox   "john@mccr.ae"
+                              ] ;
+        dcterms:subject       "lexicon" , "wordnet" , "linguistics" , "interlingual index" ;
+        dcterms:title         "Global WordNet Association Interlingual Index"@en ;
+        void:dataDump         <https://github.com/globalwordnet/ili/raw/master/ili.ttl> ;
+        void:exampleResource  <http://globalwordnet.org/ili/i84846> ;
+        void:triples          352995 ;
+        foaf:homepage         <https://github.com/globalwordnet/ili> .

@@ -1,0 +1,17 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/manish>
+        a                    void:Dataset ;
+        dcterms:description  "It is an ontology for engineering equipment"@en ;
+        dcterms:publisher    [ rdfs:label  "Manish Tomar" ;
+                               foaf:mbox   "mandytomar@gmail.com"
+                             ] ;
+        dcterms:subject      "cross_domain" ;
+        dcterms:title        "engineering equipment ontology"@en ;
+        void:triples         143 ;
+        foaf:homepage        <http://www.semanticweb.org/manycetomar/ontologies/2019/4/untitled-ontology-2#control_measuring_devices_and_automations> .

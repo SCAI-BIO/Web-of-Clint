@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/iserve> , <http://lod-cloud.net/dataset/smartlink> ;
+  void:triples  233
+] .
+
+<http://lod-cloud.net/dataset/smartlink>
+        a                     void:Dataset ;
+        dcterms:description   "SmartLink exposes Linked Data about publicly available Web services and Web APIs. In particular, the SmartLink data set extends existing service description schemas with a light-weight schema for non-functional properties. "@en ;
+        dcterms:publisher     [ rdfs:label  "SmartLink team " ;
+                                foaf:mbox   "stefan.dietze@gmx.de"
+                              ] ;
+        dcterms:subject       "published-by-producer" , "format-http" , "format-sawsdl" , "lod" , "sparql" , "lodcloud-diagram-2011-09-19" , "iserve" , "format-rdfs" , "cross_domain" , "sparql-endpoint" , "deref-vocab" , "format-api" , "format-rdf" , "format-geo" , "crossdomain" ;
+        dcterms:title         "SmartLink: Linked Services Non-Functional Properties"@en ;
+        void:exampleResource  <http://smartlink.open.ac.uk/smartlink/resource/services/3a76bf75-5cfc-411d-940d-bab8a4a407f1#LUPEDIA-Lookup-Service> ;
+        void:sparqlEndpoint   <http://smartlink.open.ac.uk/smartlink/sparql> ;
+        void:triples          2829 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/smartlink/service-nfp> ] ;
+        foaf:homepage         <http://purl.org/smartlink> .

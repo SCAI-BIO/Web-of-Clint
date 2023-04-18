@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/opendatacommunities-housing-market>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-rdf" , "format-rdfs" , "format-void" , "crawledLinkedDataCloud2014" , "format-dcat" , "LinkedDataCrawl2014" , "dataset-level-metadata" , "provenance-metadata" , "government" , "dump" , "sparql" , "lodcloud-diagram-2014-08-30" , "format-sdmxa" , "license-metadata" , "format-dcterm" , "format-cube" ;
+        dcterms:title         "opendatacommunities-housing-market"@en ;
+        void:exampleResource  <http://opendatacommunities.org/data/housing-market/ratio/housePricesRatio/2011/E07000225/med-house-price-to-earnings> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-housing-market> ;
+  void:triples  1
+] .

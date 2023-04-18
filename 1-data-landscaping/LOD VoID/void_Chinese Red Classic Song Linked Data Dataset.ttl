@@ -1,0 +1,20 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/Chinese+Red+Classic+Song+Linked+Data+Dataset>
+        a                     void:Dataset ;
+        dcterms:description   "Red songs are precious historical materials, reflecting the face of Chinese people in a specific historical period, praising the glorious achievements of the party and the motherland, praising the noble spirit of the people of all ethnic groups who are not afraid of hardships and hard struggle, and expressing their yearning for their hometown. At the same time, many songs reflect the historical events experienced by the party and the state in the development process, and praise a large number of proletarian revolutionaries and ordinary workers who have made great contributions to the prosperity of the country and the happiness of the people. At the same time, it attacked the oppression of imperialism and feudalism. These are still worth learning."@en ;
+        dcterms:publisher     [ rdfs:label  "baixue" ;
+                                foaf:mbox   "wawabaixue@sina.com"
+                              ] ;
+        dcterms:subject       "media" , "Red Classic Song Chinese History-event Figure Imagery" ;
+        dcterms:title         "Chinese Red Song Linked Data Dataset"@en ;
+        void:dataDump         <https://raw.githubusercontent.com/baixue1/linked-data/master/data/composer.ttl> , <https://raw.githubusercontent.com/baixue1/linked-data/master/data/figure.ttl> , <https://raw.githubusercontent.com/baixue1/linked-data/master/data/performer.ttl> , <https://raw.githubusercontent.com/baixue1/linked-data/master/data/song.ttl> , <https://raw.githubusercontent.com/baixue1/linked-data/master/data/original_performer.ttl> , <https://raw.githubusercontent.com/baixue1/linked-data/master/data/imagery.ttl> , <https://raw.githubusercontent.com/baixue1/linked-data/master/data/Lyricist.ttl> , <https://raw.githubusercontent.com/baixue1/linked-data/master/data/historyevent.ttl> ;
+        void:exampleResource  <http://47.97.223.173:8000> ;
+        void:sparqlEndpoint   <http://47.97.223.173:3030> ;
+        void:triples          5828 ;
+        foaf:homepage         <http://47.97.223.173:8000> .

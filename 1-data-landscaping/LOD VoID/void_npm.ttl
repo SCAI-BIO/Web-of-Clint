@@ -1,0 +1,20 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/npm>
+        a                    void:Dataset ;
+        dcterms:description  "Semantified version of the [NPM respository](https://www.npmjs.com/)"@en ;
+        dcterms:publisher    [ rdfs:label  "Linked Software Dependencies maintainers" ;
+                               foaf:mbox   "ruben.taelman@ugent.be"
+                             ] ;
+        dcterms:subject      "npm" , "javascript" , "lsd" , "lod" , "linked software dependencies" ;
+        dcterms:title        "NPM"@en ;
+        void:triples         185269412 ;
+        dcat:distribution    [ dcat:accessURL  <https://fragments.linkedsoftwaredependencies.org/npm> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://linkedsoftwaredependencies.org/raw/npm.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://linkedsoftwaredependencies.org/raw/npm.hdt> ] ;
+        foaf:homepage        <https://github.com/LinkedSoftwareDependencies/npm-extraction-server> .

@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-incubator-our-airports> ;
+  void:triples  9761
+] .
+
+<http://lod-cloud.net/dataset/data-incubator-our-airports>
+        a                     void:Dataset ;
+        dcterms:description   "### Description\r\n\r\nData exposed: Information about airports, originally from package:ourairports, here re-published as RDF.\r\n\r\nNotes: Dump available by contact\r\n\r\n### Issues\r\n\r\nThe dataset does not appear to be actively maintained. There are quality issues with the owl:sameAs links."@en ;
+        dcterms:publisher     [ rdfs:label  "Rob Styles" ;
+                                foaf:mbox   "rob.styles@dynamicorange.com"
+                              ] ;
+        dcterms:subject       "ckanupload.esw.200910" , "lodcloud-diagram-2011-09-19" , "no-deref-vocab" , "format-rdf" , "no-vocab-mappings" , "no-license-metadata" , "published-by-third-party" , "rdf" , "no-provenance-metadata" , "geographic" ;
+        dcterms:title         "Airport data from Our Airports published as RDF"@en ;
+        void:exampleResource  <http://airports.dataincubator.org/airports/AR-0281.rdf> ;
+        void:sparqlEndpoint   <http://api.talis.com/stores/airports/services/sparql> ;
+        void:triples          748363 ;
+        foaf:homepage         <http://airports.dataincubator.org/> .

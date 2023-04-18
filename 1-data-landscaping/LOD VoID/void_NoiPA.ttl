@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/NoiPA>
+        a                    void:Dataset ;
+        dcterms:description  "Open Data NoiPA is a project created to make available, transparent and fully usable the extensive information assets managed by the Information and Innovation Systems Department of the Ministry of Economy and Finance."@en ;
+        dcterms:publisher    [ rdfs:label  "NoiPA" ;
+                               foaf:mbox   "black@email.it"
+                             ] ;
+        dcterms:subject      "government" ;
+        dcterms:title        "NoiPA"@en ;
+        void:sparqlEndpoint  <https://sparql-noipa.mef.gov.it/sparql> ;
+        void:triples         340000000 ;
+        foaf:homepage        <https://noipa.mef.gov.it> .

@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/baixue+imagery1>
+        a                    void:Dataset ;
+        dcterms:description  "h"@en ;
+        dcterms:publisher    [ rdfs:label  "wageawgw" ;
+                               foaf:mbox   "ewagrehawg@qage.com"
+                             ] ;
+        dcterms:subject      "cross_domain" ;
+        dcterms:title        "红色经典歌曲"@en ;
+        void:dataDump        <https://dataverse.harvard.edu/api/access/datafile/3775310> ;
+        void:triples         "0"^^xsd:int ;
+        foaf:homepage        <http://agegahgrggh.com> .

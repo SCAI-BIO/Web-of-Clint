@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/http://productontology.org> , <http://lod-cloud.net/dataset/cpv-2003> ;
+  void:triples  21761
+] .
+
+<http://lod-cloud.net/dataset/cpv-2003>
+        a                     void:Dataset ;
+        dcterms:description   "The Common Procurement Vocabulary (CPV) establishes a single classification system for public procurement aimed at standardising the references used by contracting authorities and entities to describe the subject of procurement contracts.\r\n\r\nThe dataset created is comprised of CPV 2008 and CPV 2003 codes and the mappings between them. \r\n\r\nAuthors:\r\n\r\nAuthors:\r\n\r\nJose María Alvarez Rodríguez & Jose Emilio Labra Gayo \r\n\r\nWESO-University of Oviedo"@en ;
+        dcterms:publisher     [ rdfs:label  "Jose María Alvarez Rodríguez at WESO (University of Oviedo)" ;
+                                foaf:mbox   "josem.alvarez@weso.es"
+                              ] ;
+        dcterms:subject       "university-of-oviedo" , "weso" , "public_contracts" , "geodata" , "university" , "format-qb" , "format-dcterms" , "provenance-metadata" , "uniovi" , "linkeddata" , "oviedo" , "lod" , "format-skos" , "vocab-mappings" , "license-metadata" , "format-dc" , "euroalert" , "e-procurement" , "deref-vocab" , "government" , "procurement" , "published-by-third-party" , "10ders" , "format-skosxl" , "linkedopendata" ;
+        dcterms:title         "CPV  2003"@en ;
+        void:exampleResource  <http://purl.org/weso/pscs/data/cpv/2003/resource/13000000?output=xml> ;
+        void:sparqlEndpoint   <http://156.35.31.156/sparql> ;
+        void:triples          546135 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/cpv/cpv-ontology.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/cpv/2003/resource/ds> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/data/cpv/2003/resource/ds?output=ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/cpv/2003/cpv-2003.ttl> ] ;
+        foaf:homepage         <http://www.josemalvarez.es/web/2011/11/16/product-scheme-classifications/> .

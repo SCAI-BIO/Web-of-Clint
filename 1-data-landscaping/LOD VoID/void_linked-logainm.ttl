@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/linked-logainm> ;
+  void:triples  6059
+] .
+
+<http://lod-cloud.net/dataset/linked-logainm>
+        a                    void:Dataset ;
+        dcterms:description  "Linked Logainm is a collaborative project undertaken by the Digital Repository of Ireland (DRI), the Digital Enterprise Research Institute (DERI), Fiontar at Dublin City University, the National Library of Ireland and the Place names Branch of the Department of Arts, Heritage and the Gaeltacht. The Linked Logainm project has created a new open dataset, which allows Irish place names to be linked across the world by cutting edge technologies developed in Ireland. The new Linked Data version of the authoritative bilingual database of Irish place names logainm.ie, is an open resource to be widely used by web developers, computer scientists, researchers, the heritage community and librarians and archivists."@en ;
+        dcterms:publisher    [ rdfs:label  "Digital Repository of Ireland (DRI), the Digital Enterprise Research Institute (DERI), Fiontar at Dublin City University, the National Library of Ireland and the Place names Branch of the Department of Arts, Heritage and the Gaeltacht." ;
+                               foaf:mbox   "c.debruyne@ria.ie"
+                             ] ;
+        dcterms:subject      "geographic" , "geography" , "linked oped data" , "lod" ;
+        dcterms:title        "Linked Logainm"@en ;
+        void:sparqlEndpoint  <http://data.logainm.ie/sparql> ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <http://data.logainm.ie/place/1375542> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linked-logainm> ;
+  void:triples  8615
+] .

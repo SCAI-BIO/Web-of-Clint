@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/gold>
+        a                    void:Dataset ;
+        dcterms:description  "GOLD is an ontology for descriptive linguistics."@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lod" , "ontology" , "linguistics" , "llod" ;
+        dcterms:title        "General Ontology of Linguistic Description"@en ;
+        void:triples         3000 ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistics-ontology.org/gold-2010.owl> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-10-19T09:35:54.447Z/gold-2010.owl> ] .

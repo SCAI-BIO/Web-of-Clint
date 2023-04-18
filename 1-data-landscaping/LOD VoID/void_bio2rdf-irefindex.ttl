@@ -1,0 +1,114 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-cygd> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  4841
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-irefindex>
+        a                     void:Dataset ;
+        dcterms:description   "IrefIndex (Interaction Reference Index) provides an index of protein interactions available in a number of primary interaction databases including BIND, BioGRID, CORUM, DIP, HPRD, IntAct, MINT, MPact, MPPI and OPHID. This index includes multiple interaction types including physical and genetic (mapped to their corresponding protein products) as determined by a multitude of methods. "@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "vocab-mappings" , "life_sciences" , "bio2rdf" , "lodcloud-diagram-2014-08-30" , "lifesciences" , "license-metadata" , "published-by-third-party" , "lod" , "deref-vocab" , "provenance-metadata" , "format-rdfs" , "format-rdf" , "format-dc" ;
+        dcterms:title         "Bio2RDF::Irefindex"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/irefindex/irefindex-all.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/irefindex.irogid:1069566> ;
+        void:sparqlEndpoint   <http://irefindex.bio2rdf.org/sparql> ;
+        void:triples          48781511 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/irefindex/bio2rdf-irefindex.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/irefindex/irefindex.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/irefindex/bio2rdf_irefindex_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/irefindex/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/irefindex/irefindex.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/irefindex/sitemap.xml> ] ;
+        foaf:homepage         <http://irefindex.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-i2d> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-genbank> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  34072
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  66812
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  88312
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mi> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  277
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-intact> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  269147
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  71328
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxonomy> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  2030
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-refseq> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  56098
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-flybase> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  242
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-hprd> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-dip> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  74728
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-matrixdb> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  221
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-sgd> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  819
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pdb> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  5689
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  24
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mips> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  16309
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-biogrid> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  431705
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-innatedb> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  8059
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-bind> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  86152
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ipi> , <http://lod-cloud.net/dataset/bio2rdf-irefindex> ;
+  void:triples  17
+] .

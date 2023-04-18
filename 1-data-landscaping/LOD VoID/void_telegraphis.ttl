@@ -1,0 +1,36 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/telegraphis> ;
+  void:triples  486
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/world-factbook-fu-berlin> , <http://lod-cloud.net/dataset/telegraphis> ;
+  void:triples  233
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/telegraphis> ;
+  void:triples  651
+] .
+
+<http://lod-cloud.net/dataset/telegraphis>
+        a                     void:Dataset ;
+        dcterms:description   "Data exposed: Countries, continents, capitals, currencies collected from GeoNames and Wikipedia data.\r\n\r\nSize of dump and data set: <10k triples a piece\r\n\r\nNotes: Also has several SPARQL endpoints.\r\n\r\n### Openness\r\n\r\nSounds like the project is currently trying to resolve licensing issues:\r\n\r\n> We are looking into publishing data about country subdivisions, airports, and airlines, but it is dependent on resolving licensing issues (country subdivisions need to be scraped from Wikipedia, as ISO source data poses licensing issues; airports and airlines are licensed under AGPL, rather than a sensible data license)."@en ;
+        dcterms:publisher     [ rdfs:label  "Ian Jacobi <http://www.pipian.com/people/pipian/card#me>" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "deref-vocab" , "wikipedia" , "license-metadata" , "license-nonefordb" , "void-sparql-endpoint" , "published-by-producer" , "format-code" , "vocab-mappings" , "geography" , "format-geographis" , "lodcloud-diagram-2011-09-19" , "lod" , "format-rdf" , "geographic" , "format-owl" , "provenance-metadata" , "ckanupload.esw.200910" , "geo" ;
+        dcterms:title         "Telegraphis Linked Data"@en ;
+        void:exampleResource  <http://telegraphis.net/data/countries/GB> ;
+        void:sparqlEndpoint   <http://telegraphis.net/data/countries/sparql> ;
+        void:triples          15257 ;
+        dcat:distribution     [ dcat:accessURL  <http://telegraphis.net/data/currencies/currencies.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://telegraphis.net/data/countries/countries.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://telegraphis.net/data/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://telegraphis.net/data/capitals/capitals.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://telegraphis.net/data/continents/continents.rdf> ] ;
+        foaf:homepage         <http://telegraphis.net/data/> .

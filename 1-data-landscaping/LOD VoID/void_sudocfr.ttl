@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/sudocfr> ;
+  void:triples  9000000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dewey_decimal_classification> , <http://lod-cloud.net/dataset/sudocfr> ;
+  void:triples  2500000
+] .
+
+<http://lod-cloud.net/dataset/sudocfr>
+        a                     void:Dataset ;
+        dcterms:description   "Source : [Sudoc](http://www.sudoc.abes.fr)\r\n\r\nSudoc is the French academic union catalogue, maintained by ABES\r\n\r\nSize : 10 millions bibliographic records\r\n\r\n[Documentation](http://documentation.abes.fr/sudoc/manuels/administration/sudoc_rdf/index.html)\r\n\r\nVocabularies : Dublin Core, FOAF, BIBO, RDA, ISBD, etc.\r\n\r\nLicensing : Licence ouverte / Open licence (http://www.etalab.gouv.fr/pages/Licence_ouverte_Open_licence-5899923.html)\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "ABES" ;
+                                foaf:mbox   "apisudoc@abes.fr"
+                              ] ;
+        dcterms:subject       "unioncatalogue" , "lodcloud-diagram-2014-08-30" , "bibliographic" , "no-license-metadata" , "lodcloud-diagram-2011-09-19" , "format-rdf" , "format-skos" , "lod" , "france" , "published-by-producer" , "sudoc" , "provenance-metadata" , "publications" , "no-proprietary-vocab" , "lld" , "rdf" ;
+        dcterms:title         "Sudoc bibliographic data"@en ;
+        void:exampleResource  <http://www.sudoc.fr/012367206.rdf> ;
+        void:sparqlEndpoint   <http://sparql.sindice.com/sparql> ;
+        void:triples          350000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.sudoc.fr/012367206/id> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.sudoc.fr/noticesbiblio/sitemap.txt> ] ;
+        foaf:homepage         <http://punktokomo.abes.fr/2011/07/04/le-sudoc-sur-le-web-de-donnees/> .
+
+[ void:target   <http://lod-cloud.net/dataset/idreffr> , <http://lod-cloud.net/dataset/sudocfr> ;
+  void:triples  20000000
+] .

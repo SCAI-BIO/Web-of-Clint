@@ -1,0 +1,20 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/bioportal-hom>
+        a                    void:Dataset ;
+        dcterms:description  "This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology."@en ;
+        dcterms:publisher    [ rdfs:label  "Julien Roux" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "bioportal" , "format-rdf" , "published-by-third-party" , "biomedicine" , "lod" , "format-obo" , "ontology" ;
+        dcterms:title        "Ontology of homology and related concepts in biology"@en ;
+        void:triples         1314 ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/42117?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        foaf:homepage        <http://bioportal.bioontology.org/ontologies/1328> .

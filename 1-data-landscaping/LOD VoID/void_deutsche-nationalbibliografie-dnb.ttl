@@ -1,0 +1,35 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dewey_decimal_classification> , <http://lod-cloud.net/dataset/deutsche-nationalbibliografie-dnb> ;
+  void:triples  1550034
+] .
+
+<http://lod-cloud.net/dataset/deutsche-nationalbibliografie-dnb>
+        a                     void:Dataset ;
+        dcterms:description   "The Linked Data Service of the German National Library  (Deutsche Nationalbibliothek, DNB) includes bibliographic data since January 2012. As a first step, the bibliographic data of the DNB’s main collection (apart from the collection  of the Deutsches Exilarchiv) and the serials \n(magazines, newspapers and series of the German Union Catalogue of serials (ZDB)) have been converted. \nFor more information see https://www.dnb.de/lds\nFrom January 2014 on, the Linked Data Service of the German National Library (DNB) will issue scheduled releases and will be integrated in the export releases of the other formats. Changes to the conversion and to the data modelling will be made in January, May and September. Changes will be notified in advance via the Linked Data Service mailing list (http://lists.dnb.de/mailman/listinfo/lds). Please subscribe if you are interested in receiving information about future developments in DNB Linked Data Services. In a schedule corresponding to the export releases, updated dumps of the authority and bibliographic data in RDF/XML and Turtle will be available for download in February, June and October. \n\n**Documentation** of the data model and used vocabularies: [https://d-nb.info/1241844151/34](https://d-nb.info/1241844151/34)"@en ;
+        dcterms:publisher     [ rdfs:label  "Deutsche Nationalbibliothek (German National Library)" ;
+                                foaf:mbox   "metadatendienste@dnb.de"
+                              ] ;
+        dcterms:subject       "lld" , "rdf" , "publications" , "cc0" , "bibliographic" , "lod" , "germany" , "bibliographic data" ;
+        dcterms:title         "Deutsche Nationalbibliografie (DNB)"@en ;
+        void:dataDump         <https://data.dnb.de/opendata/dnb-all_lds.jsonld.gz> , <https://data.dnb.de/opendata/dnb-all_lds.hdt.gz> , <https://data.dnb.de/opendata/dnb-all_lds.ttl.gz> , <https://data.dnb.de/opendata/dnb-all_lds.rdf.gz> , <https://data.dnb.de/opendata/dnb-all_lds.nt.gz> ;
+        void:exampleResource  <https://d-nb.info/1022139770/about/lds> , <https://d-nb.info/1015411169/about/lds> , <https://d-nb.info/944912621/about/lds> , <https://d-nb.info/1014234816/about/lds> , <https://d-nb.info/011078677/about/lds> ;
+        void:triples          521028069 ;
+        foaf:homepage         <http://www.dnb.de/EN/lds> .
+
+[ void:target   <http://lod-cloud.net/dataset/doi> , <http://lod-cloud.net/dataset/deutsche-nationalbibliografie-dnb> ;
+  void:triples  2454367
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/deutsche-nationalbibliografie-dnb> ;
+  void:triples  31039088
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/deutsche-nationalbibliografie-dnb> ;
+  void:triples  24794541
+] .

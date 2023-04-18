@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/clld-ewave>
+        a                    void:Dataset ;
+        dcterms:description  "eWAVE published by the CLLD project"@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lod" , "linguistics" , "llod" ;
+        dcterms:title        "CLLD-EWAVE"@en ;
+        void:triples         320130 ;
+        dcat:distribution    [ dcat:accessURL  <http://ewave-atlas.org/static/download/ewave-dataset.n3.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://ewave-atlas.org/void.ttl> ] ;
+        foaf:homepage        <http://ewave-atlas.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/clld-ewave> ;
+  void:triples  0
+] .

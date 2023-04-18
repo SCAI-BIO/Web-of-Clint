@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/sors>
+        a                     void:Dataset ;
+        dcterms:description   "Statistical Office of the Republic of Serbia\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-rdfs" , "government" , "format-dcterm" , "format-cube" , "lodcloud-diagram-2014-08-30" , "LinkedDataCrawl2014" , "format-rdf" , "crawledLinkedDataCloud2014" , "format-sdmxa" , "non-deref-vocab" , "provenance-metadata" ;
+        dcterms:title         "SORS"@en ;
+        void:exampleResource  <http://elpo.stat.gov.rs/lod2/RS-DATA/National_accounts/GDP_usage_Collective_consumption_expenditure/data_2011_12_28> ;
+        void:triples          "0"^^xsd:int ;
+        foaf:homepage         <http://stat.gov.rs> .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/sors> ;
+  void:triples  1
+] .

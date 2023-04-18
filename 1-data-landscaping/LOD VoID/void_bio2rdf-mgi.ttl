@@ -1,0 +1,62 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/bio2rdf-mgi>
+        a                     void:Dataset ;
+        dcterms:description   "The Mouse Genome Database (MGD) project includes data on gene characterization, nomenclature, mapping, gene homologies among mammals, sequence links, phenotypes, allelic variants and mutants, and strain data."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "lod" , "format-rdf" , "license-metadata" , "deref-vocab" , "format-dc" , "lifesciences" , "vocab-mappings" , "life_sciences" , "published-by-third-party" , "provenance-metadata" , "bio2rdf" , "format-rdfs" , "lodcloud-diagram-2011-09-19" ;
+        dcterms:title         "Bio2RDF::Mgi"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/mgi/MGI_Strain.nq.gz> , <http://download.bio2rdf.org/current/mgi/MRK_Sequence.nq.gz> , <http://download.bio2rdf.org/current/mgi/MGI_PhenotypicAllele.nq.gz> , <http://download.bio2rdf.org/current/mgi/MGI_GenePheno.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/mgi:95484> ;
+        void:sparqlEndpoint   <http://mgi.bio2rdf.org/sparql> ;
+        void:triples          8206813 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/mgi/bio2rdf-mgi.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/mgi/bio2rdf_mgi_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/mgi/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/mgi/mgi.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/mgi/mgi.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/mgi/> ] ;
+        foaf:homepage         <http://mgi.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-vega> , <http://lod-cloud.net/dataset/bio2rdf-mgi> ;
+  void:triples  108930
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-trembl> , <http://lod-cloud.net/dataset/bio2rdf-mgi> ;
+  void:triples  50539
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-genbank> , <http://lod-cloud.net/dataset/bio2rdf-mgi> ;
+  void:triples  270087
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-refseq> , <http://lod-cloud.net/dataset/bio2rdf-mgi> ;
+  void:triples  173676
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-mgi> ;
+  void:triples  26159
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mp> , <http://lod-cloud.net/dataset/bio2rdf-mgi> ;
+  void:triples  7813
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mgi> ;
+  void:triples  135983
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ensembl> , <http://lod-cloud.net/dataset/bio2rdf-mgi> ;
+  void:triples  134875
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/bio2rdf-mgi> ;
+  void:triples  16171
+] .

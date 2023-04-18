@@ -1,0 +1,30 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/eventkg> ;
+  void:triples  39234796
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/eventkg> ;
+  void:triples  2358699
+] .
+
+<http://lod-cloud.net/dataset/eventkg>
+        a                    void:Dataset ;
+        dcterms:description  "The EventKG is a novel multilingual resource incorporating event-centric information extracted from several large-scale knowledge graphs such as Wikidata, DBpedia and YAGO, as well as less structured sources such as Wikipedia Current Events and Wikipedia event lists in five languages. The EventKG is an extensible event-centric resource modeled in RDF. It relies on Open Data and best practices to make event data spread across different sources available through a common representation and reusable for a variety of novel algorithms and real-world applications."@en ;
+        dcterms:publisher    [ rdfs:label  "Simon Gottschalk" ;
+                               foaf:mbox   "gottschalk@L3S.de"
+                             ] ;
+        dcterms:subject      "knowledge graph" , "events" ;
+        dcterms:title        "EventKG"@en ;
+        void:triples         200000000 ;
+        dcat:distribution    [ dcat:accessURL  <http://eventkg.l3s.uni-hannover.de/data/eventkg.tar.gz> ] ;
+        foaf:homepage        <http://eventkg.l3s.uni-hannover.de> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/eventkg> ;
+  void:triples  15235024
+] .

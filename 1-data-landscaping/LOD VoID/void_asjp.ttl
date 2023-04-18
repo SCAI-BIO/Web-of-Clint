@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/asjp> ;
+  void:triples  5000
+] .
+
+<http://lod-cloud.net/dataset/asjp>
+        a                     void:Dataset ;
+        dcterms:description   "ASJP collects 40 words from 5500 languages in a simplified phonetic representation. More background can be found at http://email.eva.mpg.de/~wichmann/ASJPHomePage.htm"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "deref-vocab" , "typology" , "format-dcterms" , "llod" , "format-glottolog" , "publications" , "linguistics" , "license-metadata" , "vocab-mappings" , "lod" , "linguistic" , "provenance-metadata" , "format-lexvo" , "published-by-producer" ;
+        dcterms:title         "Automated Similarity Judgment Program lexical data"@en ;
+        void:dataDump         <http://cldbstest.eva.mpg.de/asjp/downloads/renderings.ttl.zip> ;
+        void:exampleResource  <http://cldbstest.eva.mpg.de/asjp/resource/rendering/id/r1234.rdf> , <http://cldbstest.eva.mpg.de/asjp/resource/family/id/fROMANCE.rdf> , <http://cldbstest.eva.mpg.de/asjp/resource/distance/id/d13-468.rdf> , <http://cldbstest.eva.mpg.de/asjp/resource/language/id/l99.rdf> , <http://cldbstest.eva.mpg.de/asjp/resource/sense/id/s40.rdf> ;
+        void:triples          5000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://cldbstest.eva.mpg.de/asjp/downloads/families.rdf.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://cldbstest.eva.mpg.de/asjp/downloads/languoids.rdf.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://cldbstest.eva.mpg.de/asjp/downloads/senses.rdf.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://cldbstest.eva.mpg.de/asjp/ontologies/asjp.owl> ] ;
+        foaf:homepage         <cldbstest.eva.mpg.de/asjp> .

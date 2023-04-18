@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/sec-rdfabout> ;
+  void:triples  86
+] .
+
+<http://lod-cloud.net/dataset/sec-rdfabout>
+        a                     void:Dataset ;
+        dcterms:description   "Data exposed: corporate ownership\r\n\r\nSize of dump and data set: 1.8 million triples\r\n\r\nNotes: also found in the of SPARQL Endpoints"@en ;
+        dcterms:publisher     [ rdfs:label  "Joshua Tauberer <http://razor.occams.info/>" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-foaf" , "linkeddata" , "lod" , "government" , "no-vocab-mappings" , "no-deref-vocab" , "rdf" , "format-rdf" , "ckanupload.esw.200910" , "no-license-metadata" , "size-large" , "format-vcard" , "no-provenance-metadata" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" ;
+        dcterms:title         "U.S. Securities and Exchange Commission Corporate Ownership RDF Data (rdfabout)"@en ;
+        void:exampleResource  <http://www.rdfabout.com/rdf/usgov/sec/id/cik0001308161> ;
+        void:sparqlEndpoint   <http://rdfabout.com/sparql> ;
+        void:triples          1800000 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.govtrack.us/data/misc/sec.n3.gz> ] ;
+        foaf:homepage         <http://www.rdfabout.com/demo/sec/> .

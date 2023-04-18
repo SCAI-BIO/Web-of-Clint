@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/linked-taiwan-geo-names>
+        a                    void:Dataset ;
+        dcterms:description  "Taiwan geographic name (台灣地名) is obtained from Taiwanese Open Data Platform. The dataset links are http://data.gov.tw/node/40281, http://data.gov.tw/node/40456, http://data.gov.tw/node/40454. This service aims to provide unique IDs for referencing Taiwan place names"@en ;
+        dcterms:publisher    [ rdfs:label  "Dongpo Deng" ;
+                               foaf:mbox   "dongpo.deng@gmail.com"
+                             ] ;
+        dcterms:subject      "geographic name" , "place name" , "geography" , "Taiwan" , "format-geonames" ;
+        dcterms:title        "Linked Taiwan Geo-Names"@en ;
+        void:sparqlEndpoint  <http://geoname.linkedopendata.tw/sparql> ;
+        void:triples         1365654 ;
+        dcat:distribution    [ dcat:accessURL  <http://geoname.linkedopendata.tw> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linkedopendata.tw/geonames/tw-geo-names.nt> ] ;
+        foaf:homepage        <http://geoname.linkedopendata.tw> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web:> , <http://lod-cloud.net/dataset/linked-taiwan-geo-names> ;
+  void:triples  8905
+] .

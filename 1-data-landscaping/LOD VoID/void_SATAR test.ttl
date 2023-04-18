@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/SATAR+test>
+        a                    void:Dataset ;
+        dcterms:description  "this is a test dataset"@en ;
+        dcterms:publisher    [ rdfs:label  "Herun Wan" ;
+                               foaf:mbox   "1224740708@qq.com"
+                             ] ;
+        dcterms:subject      "cross_domain" ;
+        dcterms:title        "SATAR test "@en ;
+        void:dataDump        <https://drive.google.com/file/d/18X4yVgNs6p1SfLxV1wFZd25F_84qocz0/view?usp=sharing> ;
+        void:triples         "0"^^xsd:int ;
+        foaf:homepage        <https://lod-cloud.net/add-dataset> .

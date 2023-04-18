@@ -1,0 +1,50 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-ctd> ;
+  void:triples  297274
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-reactome> , <http://lod-cloud.net/dataset/bio2rdf-ctd> ;
+  void:triples  119
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxonomy> , <http://lod-cloud.net/dataset/bio2rdf-ctd> ;
+  void:triples  512
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/bio2rdf-ctd> ;
+  void:triples  3831
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mesh> , <http://lod-cloud.net/dataset/bio2rdf-ctd> ;
+  void:triples  164663
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-ctd>
+        a                     void:Dataset ;
+        dcterms:description   "CTD includes manually curated data describing cross-species chemical-gene/protein interactions and chemical- and gene-disease relationships to illuminate molecular mechanisms underlying variable susceptibility and environmentally influenced diseases."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "format-rdf" , "license-metadata" , "format-rdfs" , "lod" , "format-dc" , "vocab-mappings" , "life_sciences" , "deref-vocab" , "lifesciences" , "published-by-third-party" , "provenance-metadata" , "bio2rdf" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:title         "Bio2RDF::Ctd"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/ctd/ctd_chem_gene_ixns.nq.gz> , <http://download.bio2rdf.org/current/ctd/ctd_diseases.nq.gz> , <http://download.bio2rdf.org/current/ctd/ctd_diseases_pathways.nq.gz> , <http://download.bio2rdf.org/current/ctd/ctd_chemicals.nq.gz> , <http://download.bio2rdf.org/current/ctd/ctd_chemicals_diseases.nq.gz> , <http://download.bio2rdf.org/current/ctd/ctd_chem_pathways_enriched.nq.gz> , <http://download.bio2rdf.org/current/ctd/ctd_genes_diseases.nq.gz> , <http://download.bio2rdf.org/current/ctd/ctd_genes.nq.gz> , <http://download.bio2rdf.org/current/ctd/ctd_chem_gene_ixn_types.nq.gz> , <http://download.bio2rdf.org/current/ctd/ctd_chem_go_enriched.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/ctd_resource:D001151406949> ;
+        void:sparqlEndpoint   <http://ctd.bio2rdf.org/sparql> ;
+        void:triples          326720894 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/ctd/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/ctd/ctd.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/ctd/bio2rdf-ctd.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/ctd/ctd.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/ctd/bio2rdf_ctd_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/ctd/> ] ;
+        foaf:homepage         <http://ctd.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-ctd> ;
+  void:triples  75956
+] .

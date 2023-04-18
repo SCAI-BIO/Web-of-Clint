@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/nhs-jargon> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/nhs-jargon>
+        a                     void:Dataset ;
+        dcterms:description   "Extracted data from the 'NHS Jargon Buster? site (http://www.ic.nhs.uk/jargon-buster). Contains definitions for commonly used acronyms in NHS (British National Health Service) documents."@en ;
+        dcterms:publisher     [ rdfs:label  "NHS.uk" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "lod" , "format-skos" , "lodcloud.unconnected" , "format-wv" , "format-dc" , "government" , "format-rdf" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:title         "NHS Jargon RDF"@en ;
+        void:exampleResource  <http://kantenwerk.org/metadata/nhs_jargon.rdf#arg> ;
+        void:triples          500 ;
+        foaf:homepage         <http://kantenwerk.org/2011/05/16/nhs-jargon-rdf/> .

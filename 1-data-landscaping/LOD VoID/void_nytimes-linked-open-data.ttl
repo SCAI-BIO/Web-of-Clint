@@ -1,0 +1,34 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/nytimes-linked-open-data> ;
+  void:triples  10359
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/nytimes-linked-open-data> ;
+  void:triples  3039
+] .
+
+<http://lod-cloud.net/dataset/nytimes-linked-open-data>
+        a                     void:Dataset ;
+        dcterms:description   "### About\r\n\r\nFrom website:\r\n\r\n> For the last 150 years, The New York Times  has maintained  one of the most  authoritative news vocabularies  ever developed. In 2009, we began to publish this vocabulary as linked open data."@en ;
+        dcterms:publisher     [ rdfs:label  "Evan Sandhaus, Rob Larson" ;
+                                foaf:mbox   "evan@nytimes.com"
+                              ] ;
+        dcterms:subject       "format-skos" , "no-license-metadata" , "semanticweb" , "format-rdf" , "no-provenance-metadata" , "lod" , "semantic" , "media" , "publications" , "lodcloud-diagram-2011-09-19" , "linked-open-data" , "lodcloud-diagram-2014-08-30" , "published-by-producer" , "no-vocab-mappings" , "format-time" , "deref-vocab" ;
+        dcterms:title         "New York Times - Linked Open Data"@en ;
+        void:exampleResource  <http://data.nytimes.com/57525341647327480183> ;
+        void:triples          345889 ;
+        dcat:distribution     [ dcat:accessURL  <http://data.nytimes.com/organizations.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.nytimes.com/locations.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.nytimes.com/people.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.nytimes.com/descriptors.rdf> ] ;
+        foaf:homepage         <http://data.nytimes.com/> .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/nytimes-linked-open-data> ;
+  void:triples  10302
+] .

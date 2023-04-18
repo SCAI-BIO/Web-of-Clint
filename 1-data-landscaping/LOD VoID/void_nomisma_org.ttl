@@ -1,0 +1,20 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/nomisma_org>
+        a                     void:Dataset ;
+        dcterms:description   "Nomisma.org is an international collaborative project to define the intellectual concepts of numismatics following the principles of Linked Open Data"@en ;
+        dcterms:publisher     [ rdfs:label  "Ethan Gruber" ;
+                                foaf:mbox   "ewg4xuva@gmail.com"
+                              ] ;
+        dcterms:subject       "cross_domain" , "numismatics" ;
+        dcterms:title         "Nomisma.org "@en ;
+        void:dataDump         <http://nomisma.org/nomisma.org.rdf> , <http://nomisma.org/nomisma.org.jsonld> , <http://nomisma.org/nomisma.org.ttl> ;
+        void:exampleResource  <http://nomisma.org/id/denarius> , <http://nomisma.org/id/rome> ;
+        void:sparqlEndpoint   <http://nomisma.org/query> ;
+        void:triples          "0"^^xsd:int ;
+        foaf:homepage         <http://nomisma.org> .

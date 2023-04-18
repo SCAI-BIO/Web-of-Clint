@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bioportal-chebi> , <http://lod-cloud.net/dataset/PubChem+RDF> ;
+  void:triples  97853
+] .
+
+<http://lod-cloud.net/dataset/PubChem+RDF>
+        a                     void:Dataset ;
+        dcterms:description   "RDF version of the PubChem database."@en ;
+        dcterms:publisher     [ rdfs:label  "Evan Bolton" ;
+                                foaf:mbox   "bolton@ncbi.nlm.nih.gov"
+                              ] ;
+        dcterms:subject       "chemistry" , "life_sciences" ;
+        dcterms:title         "PubChem RDF"@en ;
+        void:dataDump         <https://ftp.ncbi.nlm.nih.gov/pubchem/RDF/> ;
+        void:exampleResource  <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID60823> ;
+        void:triples          80535498217 ;
+        foaf:homepage         <https://pubchem.ncbi.nlm.nih.gov/> .

@@ -1,0 +1,30 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/apertium-rdf-es-an> ;
+  void:triples  5840
+] .
+
+<http://lod-cloud.net/dataset/apertium-rdf-es-an>
+        a                    void:Dataset ;
+        dcterms:description  "RDF version of the Apertium bilingual dictionary ES-AN. The original dataset (in LMF) comes from http://hdl.handle.net/10230/22869 . The RDF version of the lexica is modelled using lemon (http://lemon-model.net/) and the translation module (http://purl.org/net/translation). More about the Apertium RDF dictionaries at http://linguistic.linkeddata.es/apertium/\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Jimmy O'Regan ; Universitat Pompeu Fabra. Institut Universitari de Lingüística Aplicada (IULA) ; Universitat d'Alacant. Grup Transducens ; Juan Pablo Martínez" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lexicon" , "Aragonese" , "Spanish" , "multilingual" , "linguistics" , "linguistic lod" , "rdf" , "translation" , "bilingual" , "llod" , "lemon" , "Apertium" , "dictionary" , "lod" ;
+        dcterms:title        "Apertium RDF ES-AN"@en ;
+        void:triples         71997 ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-02-26T16:15:12.162Z/apertium-es-an-rdf.zip> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/tranSetES-AN> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconES> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-03-06T10:22:57.487Z/apertium-es-an-dataset-metadata.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/sparql/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconAN> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/babelnet> , <http://lod-cloud.net/dataset/apertium-rdf-es-an> ;
+  void:triples  86
+] .

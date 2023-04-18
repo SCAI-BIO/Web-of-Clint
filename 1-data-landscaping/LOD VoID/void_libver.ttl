@@ -1,0 +1,30 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/libver>
+        a                     void:Dataset ;
+        dcterms:description   "Public Library of Veroia Linked Open Data Project. This is the first effort of a Greek Library to expose it's Bibliographic Data as Linked Open Data."@en ;
+        dcterms:publisher     [ rdfs:label  "Sotiris Karampatakis" ;
+                                foaf:mbox   "s.karampatakis@gmail.com"
+                              ] ;
+        dcterms:subject       "no-provenance-metadata" , "no-license-metadata" , "no-proprietary-vocab" , "published-by-third-party" , "media" , "publications" , "format-rdf" , "lld" , "format-rdfs" , "lod" , "bibliographic" ;
+        dcterms:title         "Public Library of Veroia"@en ;
+        void:exampleResource  <http://libver.math.auth.gr/data/agent3911.rdf> , <http://libver.math.auth.gr/page/agent3911> ;
+        void:sparqlEndpoint   <http://libver.math.auth.gr/sparql> ;
+        void:triples          1285417 ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-09-25T143058/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://libver.math.auth.gr/fct> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-09-06T043619/record1_10.rdf> ] ;
+        foaf:homepage         <http://libver.math.auth.gr> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-el> , <http://lod-cloud.net/dataset/libver> ;
+  void:triples  4197
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/libver> ;
+  void:triples  2915
+] .

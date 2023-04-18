@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-cuzk-cadastre-offices> , <http://lod-cloud.net/dataset/cz-cuzk-legal-relationships-documents> ;
+  void:triples  431
+] .
+
+<http://lod-cloud.net/dataset/cz-cuzk-legal-relationships-documents>
+        a                     void:Dataset ;
+        dcterms:description   "Code lists of the legal relationships and documents in the Land register information system"@en ;
+        dcterms:publisher     [ rdfs:label  "Jakub Klímek" ;
+                                foaf:mbox   "klimek@opendata.cz"
+                              ] ;
+        dcterms:subject       "provenance-metadata" , "format-skos" , "deref-vocab" , "czech-republic" , "czech" , "lod" , "published-by-third-party" , "license-metadata" , "no-vocab-mappings" , "government" ;
+        dcterms:title         "Code lists of the legal relationships and documents"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://ruian.linked.opendata.cz/resource/typ-predmetu-rizeni/3%3E&default-graph-uri=http%3A%2F%2Fruian.linked.opendata.cz%2Fresource%2Fdataset%2Fcuzk%2Fpravni-vztahy-listiny&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          11867 ;
+        dcat:distribution     [ dcat:accessURL  <http://ruian.linked.opendata.cz/resource/typ-predmetu-rizeni/3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/CUZK_55-pravni-vztahy-listiny.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/CUZK_55-vocabulary.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Fruian.linked.opendata.cz%2Fresource%2Fdataset%2Fcuzk%2Fpravni-vztahy-listiny%2Fdistribution%2Frdf%3E&output=text%2Fturtle> ] ;
+        foaf:homepage         <http://ruian.linked.opendata.cz/resource/dataset/cuzk/pravni-vztahy-listiny> .

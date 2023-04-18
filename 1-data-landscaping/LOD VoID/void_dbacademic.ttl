@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/dbacademic>
+        a                    void:Dataset ;
+        dcterms:description  "academic dataset of educational institution"@en ;
+        dcterms:publisher    [ rdfs:label  "Sérgio Souza Costa" ;
+                               foaf:mbox   "sergio.costa@ecp.ufma.br"
+                             ] ;
+        dcterms:subject      "course" , "academic" , "student" , "professor" , "university" , "user_generated" ;
+        dcterms:title        "dbacademic"@en ;
+        void:sparqlEndpoint  <http://sparql.dbacademic.tech/ds/sparql> ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.dbacademic.tech/ds> ] ;
+        foaf:homepage        <http://sparql.dbacademic.tech/> .

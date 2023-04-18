@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/culturalinkeddata>
+        a                     void:Dataset ;
+        dcterms:description   "The Spanish National Library (Biblioteca Nacional de España, BNE) and the Ontology Engineering Group of Universidad Politécnica de Madrid are working on the joint project “Preliminary Study of Linked Data”, whose aim is to enrich the Web of Data with the BNE authority and bibliographic records. To this end, they are transforming the BNE information to RDF following the Linked Data principles proposed by Tim Berners Lee."@en ;
+        dcterms:publisher     [ rdfs:label  "Ontology Engineering Group, Facultad de Informática, Universidad Politécnica de Madrid." ;
+                                foaf:mbox   "bvillazon@fi.upm.es"
+                              ] ;
+        dcterms:subject       "media" , "lodcloud.unconnected" , "lod" , "published-by-third-party" , "deref-vocab" , "spanish-national-library" , "lodcloud.nolinks" ;
+        dcterms:title         "CulturaLinkedData"@en ;
+        void:exampleResource  <http://cultura.linkeddata.es/BNE/resource/C1003/F3343969> ;
+        void:sparqlEndpoint   <http://cultura.linkeddata.es/sparql> ;
+        void:triples          344439 ;
+        foaf:homepage         <http://cultura.linkeddata.es/visualizer> .

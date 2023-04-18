@@ -1,0 +1,73 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/imf-linked-data> , <http://lod-cloud.net/dataset/world-bank-linked-data> ;
+  void:triples  26
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/the-eurostat-linked-data> , <http://lod-cloud.net/dataset/world-bank-linked-data> ;
+  void:triples  216
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/frb-linked-data> , <http://lod-cloud.net/dataset/world-bank-linked-data> ;
+  void:triples  280
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/transparency-linked-data> , <http://lod-cloud.net/dataset/world-bank-linked-data> ;
+  void:triples  182
+] .
+
+<http://lod-cloud.net/dataset/world-bank-linked-data>
+        a                     void:Dataset ;
+        dcterms:description   "The World Bank data published using the Linked Data design principles. Contains statistical observations and code lists from World Development Indicators, World Bank Finances, World Bank Projects and Operations, and World Bank Climate Change data."@en ;
+        dcterms:publisher     [ rdfs:label  "Sarven Capadisli" ;
+                                foaf:mbox   "info@csarven.ca"
+                              ] ;
+        dcterms:subject       "format-skos" , "energy" , "environment" , "license-metadata" , "format-qb" , "world" , "statistics" , "linked-data" , "insurance" , "deref-vocab" , "human-development" , "world-development" , "void-sparql-endpoint" , "social-development" , "format-wgs" , "health" , "finances" , "lodcloud" , "format-geo" , "lodcloud-diagram-2014-08-30" , "indicators" , "provenance-metadata" , "socioeconomics" , "published-by-third-party" , "information-communication-technologies" , "lodcloud.candidate" , "climate-change" , "education" , "country-codes" , "population" , "debt" , "format-sdmx" , "construction" , "currency" , "format-rdf" , "vocab-mappings" , "format-dcterms" , "lod" , "gdp" , "trade" , "international" , "government" , "projects" , "world-bank" ;
+        dcterms:title         "World Bank Linked Data"@en ;
+        void:exampleResource  <http://worldbank.270a.info/classification/indicator/AG.AGR.TRAC.NO> ;
+        void:sparqlEndpoint   <http://worldbank.270a.info/sparql> ;
+        void:triples          175000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://worldbank.270a.info/data/world-development-indicators.en.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://worldbank.270a.info/data/world-bank-finances.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://worldbank.270a.info/data/meta/meta.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://worldbank.270a.info/data/world-bank-climates.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://worldbank.270a.info/data/world-bank-projects-and-operations.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://worldbank.270a.info/.well-known/void> ] ;
+        foaf:homepage         <http://worldbank.270a.info/> .
+
+[ void:target   <http://lod-cloud.net/dataset/nasa> , <http://lod-cloud.net/dataset/world-bank-linked-data> ;
+  void:triples  170
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fao-linked-data> , <http://lod-cloud.net/dataset/world-bank-linked-data> ;
+  void:triples  178
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bfs-linked-data> , <http://lod-cloud.net/dataset/world-bank-linked-data> ;
+  void:triples  185
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/world-bank-linked-data> ;
+  void:triples  216
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ecb-linked-data> , <http://lod-cloud.net/dataset/world-bank-linked-data> ;
+  void:triples  190
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/uis-linked-data> , <http://lod-cloud.net/dataset/world-bank-linked-data> ;
+  void:triples  964
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/world-bank-linked-data> ;
+  void:triples  380
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/iati-as-linked-data> , <http://lod-cloud.net/dataset/world-bank-linked-data> ;
+  void:triples  212
+] .

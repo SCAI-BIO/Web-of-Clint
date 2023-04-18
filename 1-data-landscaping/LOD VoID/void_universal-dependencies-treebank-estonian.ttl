@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/universal-dependencies-treebank-estonian>
+        a                    void:Dataset ;
+        dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Estonian treebank.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Muischnek, Kadri; Müürisep, Kaili; Puolakainen, Tiina" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "corpus" , "lod" , "linguistics" ;
+        dcterms:title        "Universal Dependencies Treebank Estonian"@en ;
+        void:triples         234351 ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/74f858f4-c411-46bd-8676-eee91ada1c96/resource/4eabacdc-1139-425b-bd9d-35c4bd203f95/download/udestonian.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Estonian/archive/master.zip> ] ;
+        foaf:homepage        <https://github.com/UniversalDependencies/UD_Estonian> .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-estonian> ;
+  void:triples  72
+] .

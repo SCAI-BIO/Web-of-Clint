@@ -1,0 +1,31 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedmdb> , <http://lod-cloud.net/dataset/dbtropes> ;
+  void:triples  400
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/dbtropes> ;
+  void:triples  800
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbtropes> ;
+  void:triples  6000
+] .
+
+<http://lod-cloud.net/dataset/dbtropes>
+        a                     void:Dataset ;
+        dcterms:description   "DBTropes.org is a Linked Data wrapper for the TVTropes.org community wiki. It contains descriptions of numerous movies, books, and other items, and associates these with tropes (writing devices and conventions)."@en ;
+        dcterms:publisher     [ rdfs:label  "TVTropes.org community" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "published-by-third-party" , "license-metadata" , "media" , "format-rdf" , "deref-vocab" , "fiction" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "format-rdfs" , "movie" , "trope" , "provenance-metadata" , "book" , "lod" ;
+        dcterms:title         "DBTropes"@en ;
+        void:dataDump         <http://dbtropes.org/static/dbtropes.zip> ;
+        void:exampleResource  <http://dbtropes.org/resource/Main/TheMatrix> ;
+        void:triples          8000000 ;
+        foaf:homepage         <http://dbtropes.org/> .

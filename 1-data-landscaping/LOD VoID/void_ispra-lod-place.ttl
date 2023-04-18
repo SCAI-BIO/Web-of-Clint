@@ -1,0 +1,51 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/musicbrainz> , <http://lod-cloud.net/dataset/ispra-lod-place> ;
+  void:triples  6861
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-it> , <http://lod-cloud.net/dataset/ispra-lod-place> ;
+  void:triples  6898
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/ispra-lod-place> ;
+  void:triples  6941
+] .
+
+<http://lod-cloud.net/dataset/ispra-lod-place>
+        a                     void:Dataset ;
+        dcterms:description   "#### dati.isprambiente.it - ISPRA Linked Open Data - The administrative divisions of Italy (regions/provinces/municipalities) + shape of municipalities + link to istat + link to geoname/dbpedia"@en ;
+        dcterms:publisher     [ rdfs:label  "Italian National Institute for Environmental Protection and Research, ISPRA" ;
+                                foaf:mbox   "assistenza-lod@isprambiente.it"
+                              ] ;
+        dcterms:subject       "country-italy" , "rdf-format" , "luoghi" , "format-rdf" , "lod" , "administrative division" , "rdf" , "luogo" , "places" ;
+        dcterms:title         "ISPRA - The administrative divisions of Italy (regions/provinces/municipalities)"@en ;
+        void:exampleResource  <http://dati.isprambiente.it/id/place/58092/html> ;
+        void:sparqlEndpoint   <http://dati.isprambiente.it/sparql> ;
+        void:triples          "0"^^xsd:int ;
+        dcat:distribution     [ dcat:accessURL  <http://dati.isprambiente.it/downloads/luoghi.nt.gz> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/ispra-lod-place> ;
+  void:triples  6918
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gadm.geovocab> , <http://lod-cloud.net/dataset/ispra-lod-place> ;
+  void:triples  5909
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/ispra-lod-place> ;
+  void:triples  7879
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/ispra-lod-place> ;
+  void:triples  6397
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/istat> , <http://lod-cloud.net/dataset/ispra-lod-place> ;
+  void:triples  8222
+] .

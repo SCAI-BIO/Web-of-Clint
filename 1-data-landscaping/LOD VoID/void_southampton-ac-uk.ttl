@@ -1,0 +1,37 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/southampton-ac-uk> ;
+  void:triples  20
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/southampton-ac-uk> ;
+  void:triples  87
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/southampton-ac-uk> ;
+  void:triples  2
+] .
+
+<http://lod-cloud.net/dataset/southampton-ac-uk>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "publications" , "format-tsioc" , "deref-vocab" , "format-org" , "non-deref-vocab" , "lodcloud-diagram-2014-08-30" , "format-aiiso" , "format-time" , "format-sd" , "format-sioc" , "format-rdfs" , "format-xtypes" , "format-coun" , "format-timeline" , "dataset-level-metadata" , "format-lyou" , "format-rdf" , "format-c4dm" , "license-metadata" , "format-open" , "provenance-metadata" , "format-w3con" , "format-prog" , "format-airport" , "crawledLinkedDataCloud2014" , "sparql" , "format-doap" , "format-bibo" , "dump" , "format-api" , "format-prov" , "format-vcard2006" , "format-dcterm" , "format-foaf" , "format-oo" , "format-dcat" , "format-transit" , "LinkedDataCrawl2014" , "format-gr" , "format-pos" , "format-skos" , "format-void" , "format-owl" ;
+        dcterms:title         "southampton-ac-uk"@en ;
+        void:exampleResource  <http://data.southampton.ac.uk/person/mbox-aa70909dfce6e62395e47126a60698fd263991ac.rdf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/southampton-ecs-eprints> , <http://lod-cloud.net/dataset/southampton-ac-uk> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linked-railway-data-project> , <http://lod-cloud.net/dataset/southampton-ac-uk> ;
+  void:triples  4
+] .

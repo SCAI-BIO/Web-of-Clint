@@ -1,0 +1,133 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/stw-thesaurus-for-economics> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  7
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/pub-bielefeld> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-fr> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semanticweb-org> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  12
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/codehaus> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  796
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/productdb> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/prefix-cc> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gnu-licenses> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eunis> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/umbel> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eea-rod> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  8
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wordpress> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  32
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/southampton-ecs-eprints> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  9
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  7
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-bnf-fr> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linked-open-vocabularies-lov> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  4
+] .
+
+<http://lod-cloud.net/dataset/semanlink>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-rdf" , "user_generated" , "lodcloud-diagram-2014-08-30" , "crawledLinkedDataCloud2014" , "format-foaf" , "format-dcterm" , "usergeneratedcontent" , "LinkedDataCrawl2014" , "format-rdfs" , "format-skos" , "non-deref-vocab" ;
+        dcterms:title         "semanlink"@en ;
+        void:exampleResource  <http://www.semanlink.net/tag/mp3.rdf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/openlinksw-dataspaces> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  81
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-wildlife-finder> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  73
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/princeton-library-findingaids> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eea> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/typepad> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  13
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/productontology> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/datahub> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/apache> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  47
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/w3c> , <http://lod-cloud.net/dataset/semanlink> ;
+  void:triples  560
+] .

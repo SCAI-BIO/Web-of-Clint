@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/http://productontology.org> , <http://lod-cloud.net/dataset/combined-nomenclature-2012> ;
+  void:triples  5110
+] .
+
+<http://lod-cloud.net/dataset/combined-nomenclature-2012>
+        a                     void:Dataset ;
+        dcterms:description   "The Combined Nomenclature 2012 is a product scheme classification used to extract statistics.\r\n\r\nAuthors:\r\n\r\nJose María Alvarez Rodríguez & Jose Emilio Labra Gayo \r\n\r\nWESO-University of Oviedo"@en ;
+        dcterms:publisher     [ rdfs:label  "Jose María Alvarez Rodríguez at WESO (University of Oviedo)" ;
+                                foaf:mbox   "josem.alvarez@weso.es"
+                              ] ;
+        dcterms:subject       "weso" , "10ders" , "format-skos" , "oviedo" , "published-by-third-party" , "vocab-mappings" , "format-dc" , "university-of-oviedo" , "university" , "euroalert" , "uniovi" , "pscs" , "lod" , "procurement" , "deref-vocab" , "public_contracts" , "provenance-metadata" , "format-dcterms" , "e-procurement" , "linkedopendata" , "government" , "license-metadata" , "geodata" , "format-skosxl" , "linkeddata" , "format-gr" , "cn-2012" ;
+        dcterms:title         "CN  2012"@en ;
+        void:exampleResource  <http://purl.org/weso/pscs/cn/2012/resource/310290000080?output=xml> ;
+        void:sparqlEndpoint   <http://purl.org/weso/sparql> ;
+        void:triples          137484 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/cn/2012/resource/ds> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/psc-ontology.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/cn/2012/cn-2012.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/cn/2012/resource/ds> ] ;
+        foaf:homepage         <http://www.josemalvarez.es/web/2011/11/16/product-scheme-classifications/> .

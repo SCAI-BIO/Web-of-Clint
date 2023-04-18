@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/vu-wordnet> , <http://lod-cloud.net/dataset/cornetto> ;
+  void:triples  84473
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/w3c-wordnet> , <http://lod-cloud.net/dataset/cornetto> ;
+  void:triples  85116
+] .
+
+<http://lod-cloud.net/dataset/cornetto>
+        a                    void:Dataset ;
+        dcterms:description  "[Dutch lexical database](http://www2.let.vu.nl/oz/cltl/cornetto/), similar to WordNet but with more semantic relations.\r\nLinks to package:vu-wordnet and package:w3c-wordnet .\r\n\r\nWhen this dataset is used for research purposes, please cite:\r\n\r\nVossen, P., Maks, I., Segers, R., van der Vliet, H.: Integrating lexical units, synsets and ontology in the Cornetto database. In: (ELRA), E.L.R.A. (ed.) Proceedings of the Sixth International Language Resources and Evaluation (LREC?08) (2008)"@en ;
+        dcterms:publisher    [ rdfs:label  "RDF version by Jacco van Ossenbruggen" ;
+                               foaf:mbox   "jacco.van.ossenbruggen@cwi.nl"
+                             ] ;
+        dcterms:subject      "no-provenance-metadata" , "format-skos" , "language" , "crossdomain" , "no-license-metadata" , "vu" , "lodcloud-diagram-2014-08-30" , "lod" , "broken_link" , "deref-vocab" , "cornetto" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "wordnet" , "published-by-producer" , "dutch" , "linguistics" , "linkeddata" , "format-rdf" ;
+        dcterms:title        "Cornetto1.2"@en ;
+        void:triples         792747 ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/vocabularies/cornetto/synset-iets-2-noun.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.org/vocabularies/cornetto/synset-iets-2-noun> ] ;
+        foaf:homepage        <http://www2.let.vu.nl/oz/cltl/cornetto/> .

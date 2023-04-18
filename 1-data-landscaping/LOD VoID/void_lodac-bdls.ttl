@@ -1,0 +1,31 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/lodac-bdls> ;
+  void:triples  18545
+] .
+
+<http://lod-cloud.net/dataset/lodac-bdls>
+        a                     void:Dataset ;
+        dcterms:description   "LODAC BDLS (Building Dictionary for Life Sciense) provides two types of datasets. One is relationships between scientific names and common names of species. Another is relationships of Japanese and English scientific terms in Life Science. Datasets also include links to DBpedia, DBpedia Japanese and LODAC Species.\r\n\r\n\r\n\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Fumihiro Kato" ;
+                                foaf:mbox   "fumi@fumi.me"
+                              ] ;
+        dcterms:subject       "no-vocab-mappings" , "published-by-producer" , "deref-vocab" , "rdf" , "format-dcndl" , "format-skos" , "llod" , "lifesciences" , "format-rdfs" , "lod" , "license-metadata" , "format-dcterms" , "lodcloud-diagram-2014-08-30" , "biology" , "provenance-metadata" , "life_sciences" ;
+        dcterms:title         "LODAC BDLS"@en ;
+        void:exampleResource  <http://lod.ac/bdls/term/ET.ttl> , <http://lod.ac/bdls/species/Pygoscelis_adeliae.rdf> , <http://lod.ac/bdls/species/Pygoscelis_adeliae.ttl> , <http://lod.ac/bdls/term/ET.rdf> ;
+        void:sparqlEndpoint   <http://lod.ac/bdls/sparql> ;
+        void:triples          5764962 ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.ac/ns/species> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.ac/dumps/bdls/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.ac/bdls/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.ac/bdls/species/Pygoscelis_adeliae> ] ;
+        foaf:homepage         <http://lod.ac/wiki/LODAC_BDLS> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-ja> , <http://lod-cloud.net/dataset/lodac-bdls> ;
+  void:triples  7367
+] .

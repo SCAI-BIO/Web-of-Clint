@@ -1,0 +1,34 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-ncbigene> ;
+  void:triples  858399
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-ncbigene>
+        a                     void:Dataset ;
+        dcterms:description   "NCBI Gene provides information for genes from a wide range of species. A record may include nomenclature, Reference Sequences (RefSeqs), maps, pathways, variations, phenotypes, and links to genome-, phenotype-, and locus-specific resources worldwide."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "license-metadata" , "format-rdf" , "published-by-third-party" , "vocab-mappings" , "lifesciences" , "provenance-metadata" , "deref-vocab" , "bio2rdf" , "format-rdfs" , "format-dc" , "life_sciences" , "lodcloud-diagram-2014-08-30" , "lod" ;
+        dcterms:title         "Bio2RDF::Ncbigene"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/ncbigene/gene2ensembl.nq.gz> , <http://download.bio2rdf.org/current/ncbigene/gene2accession.nq.gz> , <http://download.bio2rdf.org/current/ncbigene/geneinfo.nq.gz> , <http://download.bio2rdf.org/current/ncbigene/gene2go.nq.gz> , <http://download.bio2rdf.org/current/ncbigene/gene2pubmed.nq.gz> , <http://download.bio2rdf.org/current/ncbigene/gene2unigene.nq.gz> , <http://download.bio2rdf.org/current/ncbigene/gene2vega.nq.gz> , <http://download.bio2rdf.org/current/ncbigene/gene2sts.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/ncbigene:1> ;
+        void:sparqlEndpoint   <http://ncbigene.bio2rdf.org/sparql> ;
+        void:triples          1164672432 ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/ncbigene/bio2rdf_ncbigene_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/ncbigene/bio2rdf-ncbigene.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/ncbigene/ncbigene.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/ncbigene/ncbigene.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/ncbigene/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/ncbigene/sitemap.xml> ] ;
+        foaf:homepage         <http://ncbigene.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxonomy> , <http://lod-cloud.net/dataset/bio2rdf-ncbigene> ;
+  void:triples  12374
+] .

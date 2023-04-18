@@ -1,0 +1,31 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/eurovoc> , <http://lod-cloud.net/dataset/language-authority-list> ;
+  void:triples  100
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/language-authority-list> ;
+  void:triples  153
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/language-authority-list> ;
+  void:triples  18
+] .
+
+<http://lod-cloud.net/dataset/language-authority-list>
+        a                    void:Dataset ;
+        dcterms:description  "The Languages name authority list (NAL) or Common Authority Table (CAT) is a controlled vocabulary listing languages with their authority code and label(s) in the 24 official languages of the EU (when available).\n\nThe language code table is based on ISO 639 standard which is issued in several parts:\n\n    ISO 639-1 contains strictly two alphabetic letters, called α-2,\n    ISO 639-2/B \"B\" = bibliographic – α-3 is used for bibliographic purpose,\n    ISO 639-2/T \"T\" = terminology – α-3 is used for technical purpose,\n    ISO 639-3 α-3 covers all the languages and macro-languages of the world; the values are compliant with ISO 639-2/T.\n\nThe Languages NAL is part of the Core Metadata (CM) used in the data exchange between the institutions involved in the legal decision making process and the Publications Office of the EU. The NAL is under governance of the Interinstitutional Metadata Maintenance Committee (IMMC) and maintained by the Publications Office of the EU in its Metadata Registry (MDR)."@en ;
+        dcterms:publisher    [ rdfs:label  "EU Vocabularies team" ;
+                               foaf:mbox   "op-eu-vocabularies@publications.europa.eu"
+                             ] ;
+        dcterms:subject      "controlled vocabulary" , "language" , "languages" , "linguistics" ;
+        dcterms:title        " Language Name Authority List "@en ;
+        void:dataDump        <http://publications.europa.eu/resource/cellar/16cdd72e-2b56-11e7-9412-01aa75ed71a1.0001.09/zip> ;
+        void:sparqlEndpoint  <http://publications.europa.eu/webapi/rdf/sparql> ;
+        void:triples         423313 ;
+        foaf:homepage        <https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language> .

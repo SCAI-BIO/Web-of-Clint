@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/cz-ares-rzp>
+        a                     void:Dataset ;
+        dcterms:description   "Data about Czech business entities from the ARES system - Trade Licensing Register"@en ;
+        dcterms:publisher     [ rdfs:label  "Jakub Klímek" ;
+                                foaf:mbox   "klimek@opendata.cz"
+                              ] ;
+        dcterms:subject       "czech" , "lod" , "format-skos" , "format-gr" , "government" , "published-by-third-party" , "license-metadata" , "format-dcterms" , "format-adms" , "czech-republic" , "format-rov" , "provenance-metadata" , "deref-vocab" , "no-vocab-mappings" ;
+        dcterms:title         "Data about Czech business entities from the ARES system - Trade Licensing Register"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/business-entity/CZ00084018%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fares%2Frzp&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          12047921 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fares%2Frzp%2Fdistribution%2Frdf%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/business-entity/CZ00084018> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/MFCR_3-ares-rzp.trig> ] ;
+        foaf:homepage         <http://linked.opendata.cz/resource/dataset/ares/rzp> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-ic> , <http://lod-cloud.net/dataset/cz-ares-rzp> ;
+  void:triples  180000
+] .

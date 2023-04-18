@@ -1,0 +1,38 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/farmbio-chembl> ;
+  void:triples  30039
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/farmbio-chembl> ;
+  void:triples  4356
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-chebi> , <http://lod-cloud.net/dataset/farmbio-chembl> ;
+  void:triples  517261
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-kegg-enzyme> , <http://lod-cloud.net/dataset/farmbio-chembl> ;
+  void:triples  661
+] .
+
+<http://lod-cloud.net/dataset/farmbio-chembl>
+        a                     void:Dataset ;
+        dcterms:description   "RDF version of the CC-SA-BY ChEMBL database by the team of John Overington at the EBI, Hinxton/UK (http://www.ebi.ac.uk/chembl/)."@en ;
+        dcterms:publisher     [ rdfs:label  "Egon Willighagen" ;
+                                foaf:mbox   "egon.willighagen@gmail.com"
+                              ] ;
+        dcterms:subject       "sparql-endpoint" , "life_sciences" , "published-by-third-party" , "no-deref-vocab" , "lodcloud-diagram-2011-09-19" , "backlink" , "lifesciences" , "format-rdf" , "lod" , "no-license-metadata" , "no-provenance-metadata" ;
+        dcterms:title         "ChEMBL-RDF (@ Uppsala University)"@en ;
+        void:exampleResource  <http://linkedchemistry.info/chembl/resource/r371> , <http://linkedchemistry.info/chembl/activity/a935292> , <http://data.kasabi.com/dataset/chembl-rdf/molecule/m100431.html> , <http://linkedchemistry.info/chembl/target/t158> , <http://linkedchemistry.info/chembl/assay/a93337> , <http://linkedchemistry.info/chembl/journal/j2d9cdf677b52f45100278f594cd7198a> , <http://linkedchemistry.info/chembl/molecule/m100431> ;
+        void:sparqlEndpoint   <http://rdf.farmbio.uu.se/chembl/sparql> ;
+        void:triples          25111377 ;
+        dcat:distribution     [ dcat:accessURL  <http://data.kasabi.com/dataset/chembl-rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://semantics.bigcat.unimaas.nl/chembl/v13_5/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45415?apikey=4ea81d74-8960-4525-810b-fa1baab576ff> ] ;
+        foaf:homepage         <https://github.com/egonw/chembl.rdf> .

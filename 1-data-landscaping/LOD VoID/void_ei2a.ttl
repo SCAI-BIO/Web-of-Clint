@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/aragodbpedia> , <http://lod-cloud.net/dataset/ei2a> ;
+  void:triples  768
+] .
+
+<http://lod-cloud.net/dataset/ei2a>
+        a                     void:Dataset ;
+        dcterms:description   "EI2A  emerges as the framework in which the open data and in general the information of the Aragon Government can begin to be automated in a much more profound way. The EI2A has to have a number of technical, organizational and legal elements that need to be developed.  EI2A  describes basic data from the Aragon Government domain, intended to support data interoperability with the aim of standardizing information and exploiting it in the future. "@en ;
+        dcterms:publisher     [ rdfs:label  "Aragon Open Data" ;
+                                foaf:mbox   "opendata@aragon.es"
+                              ] ;
+        dcterms:subject       "Aragon" , "Interoperability" , "Spain" , "Government" , "Ontology" , "LOD" , "government" , "Open Data" , "Regional Government" ;
+        dcterms:title         "Aragon Interoperable Information Structure EI2A - aragon open data"@en ;
+        void:exampleResource  <https://opendata.aragon.es/sparql?default-graph-uri=&query=SELECT+%3Fs+str%28%3Fnombre%29+as+%3Fnombre+WHERE+%0D%0A%7B%0D%0Aselect+%3Fs++%3Fnombre+where++%0D%0A%7B%3Fs+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23type%3E++%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FGovernmentalAdministrativeRegion%3E.+%0D%0A%3Fs+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label%3E+%3Fnombre%0D%0A++%7D%0D%0Aorder+by+%3Fs%0D%0A%7D%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on> , <https://opendata.aragon.es/sparql?default-graph-uri=&query=SELECT+DISTINCT+str%28%3Fg%29+as+%3FGrafos+%28count%28%3Fp%29+as+%3FTripletas%29+WHERE+%7B+GRAPH+%3Fg+%7B+%3Fs+%3Fp+%3Fo+%7D+%7D+GROUP+BY+%3Fg+ORDER+BY+DESC+%28%3FTripletas%29&format=text%2Fhtml&timeout=0&debug=on> , <https://opendata.aragon.es/sparql?default-graph-uri=&query=SELECT+%3Fs+%3Fnombre+WHERE+%0D%0A%0D%0A%7B%0D%0Aselect+%3Fs+%3Fnombre+from+%3Chttp%3A%2F%2Fopendata.aragon.es%2Fdef%2Fei2av2%3E+where++%0D%0A%7B%3Fs+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23type%3E++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Forg%23Organization%3E.+%0D%0A%3Fs+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Ftitle%3E+%3Fnombre++%7D%0D%0A%7D%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on> ;
+        void:sparqlEndpoint   <https://opendata.aragon.es/sparql> ;
+        void:triples          435391731 ;
+        dcat:distribution     [ dcat:accessURL  <https://opendata.aragon.es/def/ei2av2/> ] ;
+        foaf:homepage         <https://opendata.aragon.es> .

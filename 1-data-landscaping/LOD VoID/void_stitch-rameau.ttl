@@ -1,0 +1,34 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/stitch-rameau> ;
+  void:triples  20000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/stitch-rameau> ;
+  void:triples  60000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/agrovoc-skos> , <http://lod-cloud.net/dataset/stitch-rameau> ;
+  void:triples  700
+] .
+
+<http://lod-cloud.net/dataset/stitch-rameau>
+        a                     void:Dataset ;
+        dcterms:description   "Data exposed: SKOS representation of the RAMEAU book indexing vocabulary, maintained by the French National Library (BnF)\r\nSize of dump and data set: 130 MB uncompressed\r\nNotes: aligned to LCSH and SWD via SKOS mapping links\r\n\r\nPublished as SKOS/RDF by the STITCH project.\r\n\r\nAs of February 2012, URIs of the RAMEAU concepts redirect to equivalent descriptions at data.bnf.fr, see http://data.bnf.fr/semanticweb-en"@en ;
+        dcterms:publisher     [ rdfs:label  "Antoine Isaac <http://www.few.vu.nl/~aisaac>, Rameau committee <http://rameau.bnf.fr>" ;
+                                foaf:mbox   "aisaac@few.vu.nl"
+                              ] ;
+        dcterms:subject       "vu" , "published-by-third-party" , "authorities" , "format-skos" , "decommissioned" , "no-deref-vocab" , "rdf" , "linkeddata" , "library" , "publications" , "no-vocab-mappings" , "no-provenance-metadata" , "no-license-metadata" , "lod" , "lld" , "format-rdf" , "ckanupload.esw.200910" , "lodcloud-diagram-2011-09-19" ;
+        dcterms:title         "RAMEAU subject headings (STITCH)"@en ;
+        void:exampleResource  <http://stitch.cs.vu.nl/vocabularies/rameau/autorites_matieres> ;
+        void:triples          1619918 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.cs.vu.nl/STITCH/rameau/dump/MACSMappings-Rameau_SWD.rdf.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.cs.vu.nl/STITCH/rameau/dump/MACSMapping-Rameau_LCSH.skos.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.cs.vu.nl/STITCH/rameau/dump/Rameau.skos.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://echanges.bnf.fr/PIVOT/databnf_all_rdf_xml.tar.gz?user=databnf&password=databnf> ] ;
+        foaf:homepage         <http://stitch.cs.vu.nl/rameau/> .

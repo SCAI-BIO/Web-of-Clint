@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/nlr-dataset-mod>
+        a                     void:Dataset ;
+        dcterms:description   "Dataset includes initial set of interlinked authority records at work, subject heading and personal name level, which is supposed to be expanded in future to represent catalogue of the National Library of Russia."@en ;
+        dcterms:publisher     [ rdfs:label  "National RUSMARC Service" ;
+                                foaf:mbox   "vskv3@mail.ru"
+                              ] ;
+        dcterms:subject       "Authority Data" , "no-license-metadata" , "published-by-producer" , "Personal Names" , "Subject Headings" , "publications" , "Авторитетные данные" , "Library catalogue" , "provenance-metadata" , "Российская национальная библиотека" , "no-proprietary-vocab" , "lod" , "National Library of Russia" ;
+        dcterms:title         "National Library of Russia BibCore Dataset"@en ;
+        void:exampleResource  <http://www.rusmarc.ru/RDF/SubjHead/nlr66147783.rdf#concept> , <http://www.rusmarc.ru/RDF/PersName/nlr771515.rdf#person> , <http://www.rusmarc.ru/RDF/Work/title5.rdf#1> ;
+        void:triples          2372 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.rusmarc.ru/RDF/entirelist> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.rusmarc.ru/RDF/EntireList.txt> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.rusmarc.ru/RDF/nlr-bibcore.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.rusmarc.ru/RDF/DatasetVoID.rdf> ] .

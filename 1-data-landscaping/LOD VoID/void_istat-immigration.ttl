@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/istat-immigration> ;
+  void:triples  319
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/istat-immigration> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/istat-immigration> ;
+  void:triples  190
+] .
+
+<http://lod-cloud.net/dataset/istat-immigration>
+        a                     void:Dataset ;
+        dcterms:description   "Statistical data about immigration in Italy and related topics.\r\nOriginal data comes from the National Statistical Institute of Italy (ISTAT, dati.istat.it) and has been put in RDF Data Cube format by Linked Open Data Italia association."@en ;
+        dcterms:publisher     [ rdfs:label  "Linkedopendata.it" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "istat" , "format-org" , "linkedopendata.it" , "format-skos" , "deref-vocab" , "void-sparql-endpoint" , "linked-data" , "license-metadata" , "format-rdf" , "data-cube" , "italy" , "format-sdmx" , "lod" , "statistics" , "format-qb" , "format-foaf" , "published-by-third-party" , "government" , "provenance-metadata" , "country-italy" , "lodcloud-diagram-2011-09-19" , "immigration" ;
+        dcterms:title         "ISTAT Immigration (LinkedOpenData.it)"@en ;
+        void:exampleResource  <http://data.linkedopendata.it/istat/resource/Obs-DCIS_MATRIMONISTR-2586> ;
+        void:sparqlEndpoint   <http://sparql.linkedopendata.it/istat> ;
+        void:triples          3024396 ;
+        dcat:distribution     [ dcat:accessURL  <http://void.linkedopendata.it/istat> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://dump.linkedopendata.it/istat/immigrazione> ] ;
+        foaf:homepage         <http://www.linkedopendata.it/datasets/istat-immigration> .

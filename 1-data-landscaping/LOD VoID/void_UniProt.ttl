@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/uniprot>
+        a                    void:Dataset ;
+        dcterms:description  "### About\r\n\r\nData exposed: a large life sciences data set about proteins and their function.\r\n\r\n### Openness\r\n\r\nNot open. [Copyright page](ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/README) states:\r\n\r\nCopyright 2007-2012 UniProt Consortium. We have chosen to apply the Creative Commons Attribution-NoDerivs License (http://creativecommons.org/licenses/by-nd/3.0/) to all copyrightable parts (http://sciencecommons.org/) of our databases. This means that you are free to copy, distribute, display and make commercial use of these databases, provided you give us credit. However, if you intend to distribute a modified version of one of our databases, you must ask us for permission first. All databases and documents in the UniProt FTP directory may be copied and redistributed freely, without advance permission, provided that this copyright statement is reproduced with each copy."@en ;
+        dcterms:publisher    [ rdfs:label  "Swiss Institute of Bioinformatics" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lod" , "lodcloud-diagram-2014-08-30" , "lodcloud.nolinks" , "format-uniprot" , "lodcloud-diagram-2011-09-19" , "format-rdf" , "linkeddata" , "deref-vocab" , "life_sciences" , "lifesciences" , "published-by-producer" ;
+        dcterms:title        "UniProt"@en ;
+        void:sparqlEndpoint  <http://sparql.uniprot.org> ;
+        void:triples         " 13081788247"^^xsd:integer ;
+        dcat:distribution    [ dcat:accessURL  <http://ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/void.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.uniprot.org/uniprot/Q5VVX1> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.uniprot.org/citations/12116199> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://purl.uniprot.org/core/> ] ;
+        foaf:homepage        <http://www.uniprot.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/go> , <http://lod-cloud.net/dataset/uniprot> ;
+  void:triples  183549278
+] .

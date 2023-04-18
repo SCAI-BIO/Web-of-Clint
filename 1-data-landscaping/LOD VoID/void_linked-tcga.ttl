@@ -1,0 +1,38 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-hgnc> , <http://lod-cloud.net/dataset/linked-tcga> ;
+  void:triples  ">23181"^^xsd:integer
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-affymetrix> , <http://lod-cloud.net/dataset/linked-tcga> ;
+  void:triples  ">246000"^^xsd:integer
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-homologene> , <http://lod-cloud.net/dataset/linked-tcga> ;
+  void:triples  ">489,643"^^xsd:integer
+] .
+
+<http://lod-cloud.net/dataset/linked-tcga>
+        a                    void:Dataset ;
+        dcterms:description  "Linked TCGA is the RDF version of  the Cancer Genome Atlas, a pilot project\r\nstarted in 2005 by the National Cancer Institute (NCI) and the National Human Genome Research Institute (NHGRI). The goal of this project is to catalogue the genomic alternations found in all cancers. Currently, Linked TCGA contains a total of 20.4 billion triples from 27 different cancer types. New data coming frequently. "@en ;
+        dcterms:publisher    [ rdfs:label  "Muhammad Saleem" ;
+                               foaf:mbox   "saleem.muhammd@gmail.com"
+                             ] ;
+        dcterms:subject      "life_sciences" , "bioinformatics" , "lodcloud-diagram-2014-08-30" , "bio2rdf" , "lod" , "format-rdf" ;
+        dcterms:title        "Linked TCGA"@en ;
+        void:sparqlEndpoint  <http://tcga.deri.ie> ;
+        void:triples         20400000000 ;
+        dcat:distribution    [ dcat:accessURL  <http://tcga.deri.ie/> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linked-tcga> ;
+  void:triples  ">3000"^^xsd:integer
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/linked-tcga> ;
+  void:triples  ">16,039,535"^^xsd:integer
+] .

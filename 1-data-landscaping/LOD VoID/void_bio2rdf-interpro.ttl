@@ -1,0 +1,102 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-iuphar> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  173
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pandit> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  7242
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-metacyc> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  370
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-cath> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  2582
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-kegg> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  1754
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pdb> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  53625
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-interpro>
+        a                     void:Dataset ;
+        dcterms:description   "InterPro is an integrated database of predictive protein 'signatures' used for the classification and automatic annotation of proteins and genomes. InterPro classifies sequences at superfamily, family and subfamily levels, predicting the occurrence of functional domains, repeats and important sites."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "deref-vocab" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "provenance-metadata" , "license-metadata" , "vocab-mappings" , "bio2rdf" , "lifesciences" , "lod" , "format-rdf" , "life_sciences" , "format-rdfs" , "format-dc" ;
+        dcterms:title         "Bio2RDF::Interpro"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/interpro/interpro.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/interpro:IPR000100> ;
+        void:sparqlEndpoint   <http://interpro.bio2rdf.org/sparql> ;
+        void:triples          2323345 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/interpro/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/interpro/interpro.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/interpro/bio2rdf_interpro_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/interpro/interpro.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/interpro/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/interpro/bio2rdf-interpro.nq> ] ;
+        foaf:homepage         <http://interpro.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-prosite> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  1383
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-merops> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  161
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-msd> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  1241
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-swissprot> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  38706
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-trembl> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  3882
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-cazy> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  87
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  26957
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ec> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  1523
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-blocks> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  5787
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-scop> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  4045
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-priam> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  823
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  26010
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-come> , <http://lod-cloud.net/dataset/bio2rdf-interpro> ;
+  void:triples  194
+] .

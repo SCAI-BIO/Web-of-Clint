@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/LARK> ;
+  void:triples  22434
+] .
+
+<http://lod-cloud.net/dataset/LARK>
+        a                    void:Dataset ;
+        dcterms:description  "Lark is a Lexicon for Adjective Representations over Knowledge bases. It specifies how to transform adjectives in natural language questions to SPARQL query patterns over knowledge bases (currently we focus on DBpedia-202105). For example, the adjective “Chinese” in “Chinese artists” is represented as “?x dbo:nationality dbr:China”, taking the meaning that a Chinese artist should have a fact about his/her nationality with value dbr:China. The adjective “tall” in “tall people” is represented as “?x dbo:height ?y . filter (?y>V)”, taking the meaning that a tall person should have a large value of dbo:height. \nCurrently, Lark contains about 22.4K SPARQL query patterns for 2.7K adjectives over DBpedia, in Ontolex-lemon (https://www.w3.org/2016/05/ontolex/) format. All representations have been manually checked before publication. Besides, an online interface for searching adjective representations in Lark is available at http://ws.nju.edu.cn/lark/interface/ . We will enlarge Lark and consider other knowledge bases such as Freebase and Wikidata in future work."@en ;
+        dcterms:publisher    [ rdfs:label  "Jiwei Ding" ;
+                               foaf:mbox   "jwdingnju@outlook.com"
+                             ] ;
+        dcterms:subject      "linguistics" , "DBpedia" , "adjective" ;
+        dcterms:title        "Lark"@en ;
+        void:dataDump        <http://ws.nju.edu.cn/lark/ontology > , <http://ws.nju.edu.cn/adj2sp/data/lark.ttl> ;
+        void:sparqlEndpoint  <http://ws.nju.edu.cn/lark/sparql> ;
+        void:triples         145596 ;
+        dcat:distribution    [ dcat:accessURL  <http://ws.nju.edu.cn/lark/interface/> ] ;
+        foaf:homepage        <http://ws.nju.edu.cn/adj2sp/> .

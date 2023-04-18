@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/intervalue>
+        a                     void:Dataset ;
+        dcterms:description   "INTERVALUE data using LOD principle.\r\nINTERVALUE project (http://www.urenio.org/intervalue/) aims to bridge the gap between R&D creators, producers, financiers and marketers by creating a trans-national mechanism that facilitates the valorization of research results. In other words INTERVALUE aims to connect R&D Institutions and their projects with the business sector and the market. "@en ;
+        dcterms:publisher     [ rdfs:label  "Kavargiris Kostas and Bratsas Charalampos " ;
+                                foaf:mbox   "cbratsas@math.auth.gr"
+                              ] ;
+        dcterms:subject       "deref-vocab" , "void-sparql-endpoint" , "format-rdf" , "crossdomain" , "sparql-endpoint" , "published-by-producer" , "lod" ;
+        dcterms:title         "intervalue"@en ;
+        void:exampleResource  <http://greek-lod.math.auth.gr/intervalue/data/projects/170?output=rdfxml> ;
+        void:sparqlEndpoint   <http://greek-lod.math.auth.gr/intervalue/sparql> ;
+        void:triples          ""^^xsd:integer ;
+        dcat:distribution     [ dcat:accessURL  <http://www.greek-lod.gr/intervalue/> ] ;
+        foaf:homepage         <http://www.greek-lod.gr/intervalue/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/intervalue> ;
+  void:triples  ""^^xsd:integer
+] .

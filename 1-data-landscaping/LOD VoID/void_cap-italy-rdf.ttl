@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/cap-italy-rdf>
+        a                     void:Dataset ;
+        dcterms:description   "List of postal codes in Italy. Includes street names, city and administrative regions."@en ;
+        dcterms:publisher     [ rdfs:label  "Linkedopendata.it" ;
+                                foaf:mbox   "info@linkedopendata.it"
+                              ] ;
+        dcterms:subject       "lodcloud.unconnected" , "format-vcard" , "cap" , "published-by-producer" , "lod" , "license-metadata" , "void-sparql-endpoint" , "deref-vocab" , "provenance-metadata" , "format-rdf" , "postal-code" , "country.it" , "lodcloud.nolinks" , "linkeddata" , "italy" , "geographic" ;
+        dcterms:title         "Postal codes Italy (LinkedOpenData.it)"@en ;
+        void:exampleResource  <http://data.linkedopendata.it/cap/resource/ANCONA-VIA_ACHILLE_BARILATTI> ;
+        void:sparqlEndpoint   <http://sparql.linkedopendata.it/cap> ;
+        void:triples          436603 ;
+        dcat:distribution     [ dcat:accessURL  <http://void.linkedopendata.it/cap> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://dump.linkedopendata.it/cap> ] ;
+        foaf:homepage         <cap-italia-rdf> .

@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/esd-standards> , <http://lod-cloud.net/dataset/esd-toolkit> ;
+  void:triples  2806
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/esd-toolkit> ;
+  void:triples  10
+] .
+
+<http://lod-cloud.net/dataset/esd-toolkit>
+        a                     void:Dataset ;
+        dcterms:description   "Controlled lists for the public sector in Europe"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-owl" , "format-rdf" , "format-skos" , "lodcloud-diagram-2014-08-30" , "format-dcterm" , "government" , "crawledLinkedDataCloud2014" , "LinkedDataCrawl2014" ;
+        dcterms:title         "ESD-Toolkit"@en ;
+        void:exampleResource  <http://doc.esd-toolkit.eu/service/644.rdf> ;
+        void:triples          "0"^^xsd:int ;
+        foaf:homepage         <http://standards.esd-toolkit.eu/EuOverview.aspx> .

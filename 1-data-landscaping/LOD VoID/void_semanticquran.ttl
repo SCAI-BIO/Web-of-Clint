@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/DBpedia> , <http://lod-cloud.net/dataset/semanticquran> ;
+  void:triples  7718
+] .
+
+<http://lod-cloud.net/dataset/semanticquran>
+        a                    void:Dataset ;
+        dcterms:description  "The Semantic Quran dataset is a multilingual RDF representation of translations of the Quran. The dataset was created by integrating data from two different semi-structured sources. The dataset were aligned to an ontology designed to represent multilingual data from sources with a hierarchical structure. The resulting RDF data encompasses 43 different languages which belong to the most under represented languages in Linked Data, including Arabic, Amharic and Amazigh. We designed the dataset to be easily usable in natural-language processing applications with the goal of facilitating the development of knowledge extraction tools for these languages. In particular, the Semantic Quran is compatible with the Natural-Language Interchange Format and contains explicit morpho-syntactic information on the utilized terms."@en ;
+        dcterms:publisher    [ rdfs:label  "Mohamed Ahmed Sherif, Axel-Cyrille Ngonga Ngomo" ;
+                               foaf:mbox   "mohamed.sherif@upb.de"
+                             ] ;
+        dcterms:subject      "quran" , "Morpho-syntatic data" , "ontology" , "semantic" , "Linked Data" , "Multilingual dataset" , "Natural Language Processing" , "linguistics" ;
+        dcterms:title        "Semantic Quran"@en ;
+        void:dataDump        <http://mlode.nlp2rdf.org/datasets/semanticquran.nt.gz> ;
+        void:sparqlEndpoint  <http://semanticquran.aksw.org/sparql> ;
+        void:triples         "15741399"^^xsd:int ;
+        foaf:homepage        <http://aksw.org/Projects/SemanticQuran> .
+
+[ void:target   <http://lod-cloud.net/dataset/wiktionary> , <http://lod-cloud.net/dataset/semanticquran> ;
+  void:triples  18655
+] .

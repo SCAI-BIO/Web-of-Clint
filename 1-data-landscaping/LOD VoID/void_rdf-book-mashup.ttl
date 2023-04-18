@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/revyu> , <http://lod-cloud.net/dataset/rdf-book-mashup> ;
+  void:triples  100000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-dblp> , <http://lod-cloud.net/dataset/rdf-book-mashup> ;
+  void:triples  ""^^xsd:integer
+] .
+
+<http://lod-cloud.net/dataset/rdf-book-mashup>
+        a                     void:Dataset ;
+        dcterms:description   "The RDF book mashup demonstrates how Web 2.0 data sources like Amazon, \r\nGoogle or Yahoo can be integrated into the Semantic Web. \r\n\r\nThe RDF book mashup makes information about books, their authors, \r\nreviews, and online bookstores available on the Semantic Web. This \r\ninformation can be used by RDF tools and you can link to it from your \r\nown Semantic Web data.\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Chris Bizer" ;
+                                foaf:mbox   "chris@bizer.de"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2011-09-19" , "no-provenance-metadata" , "no-license-metadata" , "publications" , "lod" , "lodcloud-diagram-2007-05-01" , "format-rdf" , "published-by-third-party" , "deref-vocab" , "no-vocab-mappings" ;
+        dcterms:title         "RDF Book Mashup"@en ;
+        void:exampleResource  <http://www4.wiwiss.fu-berlin.de/bookmashup/books/006251587X> ;
+        void:triples          100000000 ;
+        foaf:homepage         <http://www4.wiwiss.fu-berlin.de/bizer/bookmashup/> .

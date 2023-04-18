@@ -1,0 +1,29 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/bio2rdf-pubmed>
+        a                     void:Dataset ;
+        dcterms:description   "PubMed is a service of the U.S. National Library of Medicine that includes citations from MEDLINE and other life science journals for biomedical articles back to the 1950s."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "life_sciences" , "lodcloud-diagram-2011-09-19" , "vocab-mappings" , "deref-vocab" , "format-rdfs" , "lod" , "lifesciences" , "published-by-third-party" , "format-dc" , "bio2rdf" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "format-rdf" , "provenance-metadata" ;
+        dcterms:title         "Bio2RDF::Pubmed"@en ;
+        void:exampleResource  <http://bio2rdf.org/pubmed:23735196> ;
+        void:sparqlEndpoint   <http://pubmed.bio2rdf.org/sparql> ;
+        void:triples          5005343905 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pubmed/pubmed.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pubmed/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pubmed/bio2rdf-pubmed.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/pubmed/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/pubmed/pubmed.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/pubmed/bio2rdf_pubmed_sio_mapping.owl> ] ;
+        foaf:homepage         <http://pubmed.bio2rdf.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> ;
+  void:triples  412593710
+] .

@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/GTS-ont>
+        a                    void:Dataset ;
+        dcterms:description  "OWL ontology for the RDF representation of the Geologic Timescale."@en ;
+        dcterms:publisher    [ rdfs:label  "Simon Cox" ;
+                               foaf:mbox   "simon.cox@csiro.au"
+                             ] ;
+        dcterms:subject      "ontology" , "geology" , "stratigraphy" , "timescale" , "owl-time" , "geography" ;
+        dcterms:title        "Geological Timescale Ontology"@en ;
+        void:dataDump        <https://raw.githack.com/CGI-IUGS/timescale-ont/master/rdf/gts.ttl> ;
+        void:triples         785 ;
+        foaf:homepage        <https://github.com/CGI-IUGS/timescale-ont> .

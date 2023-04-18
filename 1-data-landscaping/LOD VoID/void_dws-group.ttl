@@ -1,0 +1,42 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/semanticweb-org> , <http://lod-cloud.net/dataset/dws-group> ;
+  void:triples  20
+] .
+
+<http://lod-cloud.net/dataset/dws-group>
+        a                     void:Dataset ;
+        dcterms:description   "Information about people and publications from the Research Group Data and Web Science at University of Mannheim"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-dcterm" , "dataset-level-metadata" , "format-rdfs" , "format-prvt" , "crawledLinkedDataCloud2014" , "format-doap" , "social web" , "publications" , "non-deref-vocab" , "LinkedDataCrawl2014" , "format-owl" , "format-sd" , "format-org" , "lodcloud-diagram-2014-08-30" , "format-void" , "format-hartigprov" , "sparql" , "format-rdf" , "format-admin" , "format-foaf" ;
+        dcterms:title         "DWS-Group"@en ;
+        void:exampleResource  <http://wifo5-04.informatik.uni-mannheim.de/dws-group/data/events/WWW2005_-_14th_International_World_Wide_Web_Conference_2005> ;
+        void:triples          "0"^^xsd:int ;
+        foaf:homepage         <http://dws.informatik.uni-mannheim.de/> .
+
+[ void:target   <http://lod-cloud.net/dataset/w3c> , <http://lod-cloud.net/dataset/dws-group> ;
+  void:triples  7
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dws-group> ;
+  void:triples  8
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/dws-group> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/dws-group> ;
+  void:triples  14
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/dws-group> ;
+  void:triples  6
+] .

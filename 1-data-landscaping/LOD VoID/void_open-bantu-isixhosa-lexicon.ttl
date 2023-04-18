@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/wordnet-rdf> , <http://lod-cloud.net/dataset/open-bantu-isixhosa-lexicon> ;
+  void:triples  2818
+] .
+
+<http://lod-cloud.net/dataset/open-bantu-isixhosa-lexicon>
+        a                    void:Dataset ;
+        dcterms:description  "The isiXhosa Lexicon is an RDF dataset that consists of lexical and morphological data and English translations that are linked to WordNet RDF. The data is based on tabular noun and verb data, that was provided by Prof. Sonja Bosch (University of South Africa) and manually compiled by a linguist. The dataset is based on the Bantu Language Model, i.e. an ontology that is mainly based on the OntoLex-Lemon and MMoOn vocabularies.\r\n\r\nFor more information, please refer to the publication: Sonja Bosch, Thomas Eckart, Bettina Klimek, Dirk Goldhahn and Uwe Quasthoff (2018): Preparation and Usage of Xhosa Lexicographical Data for a Multilingual, Federated Environment at 11th Edition of the Language Resources and Evaluation Conference LREC 2018, Miyazaki (Japan)."@en ;
+        dcterms:publisher    [ rdfs:label  "Bettina Klimek" ;
+                               foaf:mbox   "klimek@informatik.uni-leipzig.de"
+                             ] ;
+        dcterms:subject      "llod" , "isiXhosa" , "lexicon" , "linguistics" , "lod" , "morphology" , "Bantu" ;
+        dcterms:title        "Open Bantu isiXhosa Lexicon"@en ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <https://raw.githubusercontent.com/MMoOn-Project/OpenBantu/master/xho/inventory/ob_xho.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rdf.corpora.uni-leipzig.de/sparql> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://mmoon.org/bnt/schema/bantulm/> ] ;
+        foaf:homepage        <https://github.com/MMoOn-Project/OpenBantu/tree/master/xho> .

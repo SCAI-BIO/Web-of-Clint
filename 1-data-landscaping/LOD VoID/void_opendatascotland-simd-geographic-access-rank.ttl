@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatascotland-simd-geographic-access-rank> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/opendatascotland-simd-geographic-access-rank>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-dcat" , "format-void" , "government" , "crawledLinkedDataCloud2014" , "sparql" , "lodcloud-diagram-2014-08-30" , "format-rdf" , "format-cube" , "format-dcterm" , "dump" , "LinkedDataCrawl2014" , "provenance-metadata" , "license-metadata" , "format-rdfs" , "dataset-level-metadata" ;
+        dcterms:title         "opendatascotland-simd-geographic-access-rank"@en ;
+        void:exampleResource  <http://data.opendatascotland.org/data/simd/geographic-access-rank/2012/S01000967> ;
+        void:triples          "0"^^xsd:int .

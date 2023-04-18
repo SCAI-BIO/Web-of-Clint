@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-cnr-it> ;
+  void:triples  34706
+] .
+
+<http://lod-cloud.net/dataset/data-cnr-it>
+        a                     void:Dataset ;
+        dcterms:description   "data.cnr.it is an initiative of the Italian National Research Council aimed to provide public access to the information of the CNR organization.\r\n\r\nKeywords are: transparency, interoperability, open data.\r\n\r\nThe technologies of the data.cnr.it are based on RDF and follows the paradygm of the Linked Data initiative.\r\n\r\n\r\nDocumentation of the ontology is in OWL-Doc format\r\n\r\nThe CNR ontology can be queried through the SPARQL Endpoint by selecting http://data.cnr.it/ as graph."@en ;
+        dcterms:publisher     [ rdfs:label  "Consiglio Nazionale delle Ricerche (CNR)" ;
+                                foaf:mbox   "data@cnr.it"
+                              ] ;
+        dcterms:subject       "government" , "format-skos" , "void-sparql-endpoint" , "published-by-producer" , "no-deref-vocab" , "format-owl" , "lod" ;
+        dcterms:title         "Open Data from the Italian National Research Council"@en ;
+        void:exampleResource  <http://www.cnr.it/ontology/cnr/individuo/CNR> , <http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleInterno/MATRICOLA11472> , <http://www.cnr.it/ontology/cnr/individuo/istituto/CDS078> ;
+        void:sparqlEndpoint   <http://data.cnr.it/sparql-proxy/> ;
+        void:triples          2762278 ;
+        dcat:distribution     [ dcat:accessURL  <http://data.cnr.it/dump/data-cnr-it-2011-08-29-00.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.cnr.it/ontology/cnr/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.cnr.it/dataset/> ] ;
+        foaf:homepage         <http://data.cnr.it/site/> .

@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/isocat> , <http://lod-cloud.net/dataset/swefn-rdf> ;
+  void:triples  69
+] .
+
+<http://lod-cloud.net/dataset/swefn-rdf>
+        a                    void:Dataset ;
+        dcterms:description  "Swedish FrameNet (SweFN), a lexical-semantic in RDF. "@en ;
+        dcterms:publisher    [ rdfs:label  "Dana Dannells" ;
+                               foaf:mbox   "dana.dannells@svenska.gu.se"
+                             ] ;
+        dcterms:subject      "linguistic" , "lod" , "linguistics" , "lexical-resource" , "llod" ;
+        dcterms:title        "SweFN-RDF"@en ;
+        void:sparqlEndpoint  <http://demo.spraakdata.gu.se/ltlod/test/> ;
+        void:triples         339385 ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-10-14T10:47:50.165Z/swefn-nt.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://spraakbanken.gu.se/rdf/swefn.rdf> ] .

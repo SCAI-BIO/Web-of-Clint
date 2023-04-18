@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/openlinksw-dataspaces> , <http://lod-cloud.net/dataset/datahub> ;
+  void:triples  14
+] .
+
+<http://lod-cloud.net/dataset/datahub>
+        a                     void:Dataset ;
+        dcterms:description   "Publish information about datasets"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-rdfs" , "format-owl" , "format-dcat" , "license-metadata" , "format-foaf" , "LinkedDataCrawl2014" , "crawledLinkedDataCloud2014" , "publications" , "format-rdf" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "format-dcterm" ;
+        dcterms:title         "datahub"@en ;
+        void:exampleResource  <http://datahub.io/dataset/hellenic-fire-brigade> ;
+        void:triples          "0"^^xsd:int ;
+        foaf:homepage         <http://datahub.io> .
+
+[ void:target   <http://lod-cloud.net/dataset/w3c> , <http://lod-cloud.net/dataset/datahub> ;
+  void:triples  8
+] .

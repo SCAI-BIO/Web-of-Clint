@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/Qualit%C3%A9+de+l%27air+dans+le+monde>
+        a                    void:Dataset ;
+        dcterms:description  "Mesures de certains polluants dans des villes à travers le monde"@en ;
+        dcterms:publisher    [ rdfs:label  "Julie Queiros" ;
+                               foaf:mbox   "julie.queiros7@gmail.com"
+                             ] ;
+        dcterms:subject      "Qualité air" , "user_generated" ;
+        dcterms:title        "Qualité de l'air dans le monde"@en ;
+        void:dataDump        <https://mmisw.org/ont/api/v0/ont?format=jsonld&iri=https://mmisw.org/ont/~jqueiros/air_quality> , <https://mmisw.org/ont/api/v0/ont?format=n3&iri=https://mmisw.org/ont/~jqueiros/air_quality> , <https://mmisw.org/ont/api/v0/ont?format=ttl&iri=https://mmisw.org/ont/~jqueiros/air_quality> , <https://mmisw.org/ont/api/v0/ont?format=nt&iri=https://mmisw.org/ont/~jqueiros/air_quality> , <https://mmisw.org/ont/api/v0/ont?format=rdf&iri=https://mmisw.org/ont/~jqueiros/air_quality> ;
+        void:triples         0 ;
+        foaf:homepage        <https://mmisw.org/ont/~jqueiros/air_quality> .

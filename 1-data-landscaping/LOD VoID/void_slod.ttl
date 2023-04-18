@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/slod> ;
+  void:triples  95
+] .
+
+<http://lod-cloud.net/dataset/slod>
+        a                    void:Dataset ;
+        dcterms:description  "Linked Stage Graph is a Knowledge Graph using a dataset by the Archive of Baden-Wuerttemberg, Germany. It contains black and white photographs and metadata about the Stuttgart State Theaters from the 1890s to the 1940s. The original EAD-XML files were converted to RDF and named entities were extracted and linked to Wikidata and the German Authority Files (GND)."@en ;
+        dcterms:publisher    [ rdfs:label  "Tabea Tietz" ;
+                               foaf:mbox   "tabea.tietz@fiz-karlsruhe.de"
+                             ] ;
+        dcterms:subject      "theater" , "glam" , "cultural heritage" , "archive" , "media" , "photographs" ;
+        dcterms:title        "Linked Stage Graph"@en ;
+        void:sparqlEndpoint  <http://slod.fiz-karlsruhe.de/sparql> ;
+        void:triples         143345 ;
+        foaf:homepage        <http://slod.fiz-karlsruhe.de/> .
+
+[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/slod> ;
+  void:triples  1839
+] .

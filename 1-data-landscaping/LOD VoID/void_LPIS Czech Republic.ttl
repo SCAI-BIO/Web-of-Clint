@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/LPIS+Czech+Republic>
+        a                    void:Dataset ;
+        dcterms:description  "This dataset contains land parcel and cadastral data collected from czech republic . the initial data source was in shapefiles which are transformed into linked data."@en ;
+        dcterms:publisher    [ rdfs:label  "Raul Palma, Soumya Brahma" ;
+                               foaf:mbox   "rpalma@man.poznan.pl"
+                             ] ;
+        dcterms:subject      "agriculture" , "land parcel" , "geography" , "land boundary" , "cadsatral" ;
+        dcterms:title        "Land parcel dataset (LPIS) from Czech Republic @PSNC"@en ;
+        void:sparqlEndpoint  <https://www.foodie-cloud.org/sparql> ;
+        void:triples         24491282 ;
+        foaf:homepage        <https://www.foodie-cloud.org/fct/> .

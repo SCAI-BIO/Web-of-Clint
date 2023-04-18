@@ -1,0 +1,29 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/GTS> ;
+  void:triples  342
+] .
+
+<http://lod-cloud.net/dataset/GTS>
+        a                     void:Dataset ;
+        dcterms:description   "RDF representation of the Geological Timescale, as described in the International Chronostratigraphic Chart from the International Commission on Stratigraphy."@en ;
+        dcterms:publisher     [ rdfs:label  "Simon Cox" ;
+                                foaf:mbox   "simon.cox@csiro.au"
+                              ] ;
+        dcterms:subject       "chronology" , "timescale" , "time" , "geography" , "geology" , "reference system" , "stratigraphy" ;
+        dcterms:title         "Geological Timescale"@en ;
+        void:dataDump         <https://vocabs.ardc.edu.au/registry/api/resource/downloads/1213/csiro_international-chronostratigraphic-chart_geologic-time-scale-2020.jsonld> , <https://vocabs.ardc.edu.au/registry/api/resource/downloads/1211/isc2020.ttl> ;
+        void:exampleResource  <https://vocabs.ardc.edu.au/repository/api/lda/csiro/international-chronostratigraphic-chart/geologic-time-scale-2020/resource.ttl?uri=http://resource.geosciml.org/classifier/ics/ischart/Jurassic> ;
+        void:sparqlEndpoint   <http://vocabs.ardc.edu.au/repository/api/sparql/csiro_international-chronostratigraphic-chart_geologic-time-scale-2020> ;
+        void:triples          15421 ;
+        dcat:distribution     [ dcat:accessURL  <http://raw.githack.com/CGI-IUGS/timescale-data/master/rdf/isc2020.ttl> ] ;
+        foaf:homepage         <https://github.com/CGI-IUGS/timescale-data> .
+
+[ void:target   <http://lod-cloud.net/dataset/GTS-ont> , <http://lod-cloud.net/dataset/GTS> ;
+  void:triples  1700
+] .

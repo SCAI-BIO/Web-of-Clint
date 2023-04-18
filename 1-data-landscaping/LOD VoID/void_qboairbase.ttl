@@ -1,0 +1,29 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/qboairbase>
+        a                    void:Dataset ;
+        dcterms:description  "QBAirbase is a multidimensional provenance-augmented version of the Airbase dataset. AirBase is the European air quality dataset maintained by the EEA (Environmental European Agency). The dataset is publicly available on the Web, and contains air quality monitoring data for 40 European countries. QBOAirbase represents air pollution information as an RDF data cube, which has been linked to the YAGO and DBpedia knowledge bases. QBOAirbase is based on the version 8 of the Airbase dataset."@en ;
+        dcterms:publisher    [ rdfs:label  "Luis Galárraga" ;
+                               foaf:mbox   "galarraga@luisgalarraga.de"
+                             ] ;
+        dcterms:subject      "data cubes" , "QB4OLAP" , "PROV-O" , "semantic web" , "multidimensional data" , "air pollution" , "europe" , "QB" , "provenance" , "RDF" ;
+        dcterms:title        "QBOAirbase"@en ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <http://qweb.cs.aau.dk/airbase/queries/queries.tgz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://qweb.cs.aau.dk/airbase/provenance-extended-large.png> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://qweb.cs.aau.dk/airbase/QBOAirbase.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://qweb.cs.aau.dk/airbase/qboairbase.tar.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://lod.cs.aau.dk:8891/sparql> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/qboairbase> ;
+  void:triples  3596
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/qboairbase> ;
+  void:triples  3596
+] .

@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/agrovoc-skos> , <http://lod-cloud.net/dataset/gemet> ;
+  void:triples  1199
+] .
+
+<http://lod-cloud.net/dataset/gemet>
+        a                     void:Dataset ;
+        dcterms:description   "### About\r\n\r\nA thesaurus in 20+ languages for terms related to the environment and environmental data. Published by the European Environment Agency.\r\n\r\nAvailable in RDF without reuse constraints. \r\n\r\n### Openness\r\n\r\n No explicit information found."@en ;
+        dcterms:publisher     [ rdfs:label  "European Environment Agency" ;
+                                foaf:mbox   "gemet@eea.europa.eu"
+                              ] ;
+        dcterms:subject       "published-by-third-party" , "schemata" , "format-skos" , "provenance-metadata" , "lod" , "government" , "deref-vocab" , "license-metadata" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "environment" , "lld" , "thesaurus" , "format-xhtml" , "lodcloud-diagram-2011-09-19" , "european" ;
+        dcterms:title         "GEneral Multilingual Environmental Thesaurus"@en ;
+        void:exampleResource  <http://rdfdata.eionet.europa.eu/eea/languages/fi> , <http://www.eionet.europa.eu/gemet/gemet-backbone.rdf> ;
+        void:sparqlEndpoint   <http://cr3.eionet.europa.eu/sparql> ;
+        void:triples          20229105 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.eionet.europa.eu/gemet/rdf?langcode=en> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.eionet.europa.eu/gemet/void.rdf> ] ;
+        foaf:homepage         <http://www.eionet.europa.eu/gemet/> .
+
+[ void:target   <http://lod-cloud.net/dataset/umthes> , <http://lod-cloud.net/dataset/gemet> ;
+  void:triples  3483
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/gemet> ;
+  void:triples  3005
+] .

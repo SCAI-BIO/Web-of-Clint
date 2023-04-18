@@ -1,0 +1,46 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-bio2rdf> , <http://lod-cloud.net/dataset/bio2rdf-lsr> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-lsr> ;
+  void:triples  236
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-biodbcore> , <http://lod-cloud.net/dataset/bio2rdf-lsr> ;
+  void:triples  97
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-lsr> ;
+  void:triples  2173
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-miriam> , <http://lod-cloud.net/dataset/bio2rdf-lsr> ;
+  void:triples  343
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-lsr>
+        a                     void:Dataset ;
+        dcterms:description   "The Resource Registry is a curated collection of datasets and terminologies used in the life sciences"@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "lifesciences" , "bio2rdf" , "format-dc" , "format-rdf" , "published-by-third-party" , "life_sciences" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "deref-vocab" , "format-rdfs" , "lod" , "provenance-metadata" , "vocab-mappings" ;
+        dcterms:title         "Bio2RDF::Lsr"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/lsr/lsr.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/lsr:uniprot> ;
+        void:sparqlEndpoint   <http://lsr.bio2rdf.org/sparql> ;
+        void:triples          55914 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/lsr/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/lsr/lsr.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/lsr/bio2rdf-lsr.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/lsr/lsr.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/lsr/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/lsr/bio2rdf_lsr_sio_mapping.owl> ] ;
+        foaf:homepage         <http://lsr.bio2rdf.org/> .

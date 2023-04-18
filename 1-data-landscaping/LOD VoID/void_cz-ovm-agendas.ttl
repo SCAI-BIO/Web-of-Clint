@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-ovm> , <http://lod-cloud.net/dataset/cz-ovm-agendas> ;
+  void:triples  2500
+] .
+
+<http://lod-cloud.net/dataset/cz-ovm-agendas>
+        a                     void:Dataset ;
+        dcterms:description   "Agendas of institutions of public power"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "license-metadata" , "lod" , "format-adms" , "published-by-third-party" , "government" , "czech-republic" , "provenance-metadata" , "format-skos" , "czech" , "no-vocab-mappings" , "deref-vocab" ;
+        dcterms:title         "Agendas of institutions of public power of the Czech Republic"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/seznam.gov.cz/agendy/A385/2011-12-21%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fseznam.gov.cz%2Fagendy&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          81695 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fseznam.gov.cz%2Fagendy%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/seznam.gov.cz/agendy/A385/2011-12-21> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/MICR_3-gov-cz-agendy.trig> ] ;
+        foaf:homepage         <http://linked.opendata.cz/resource/dataset/seznam.gov.cz/agendy> .

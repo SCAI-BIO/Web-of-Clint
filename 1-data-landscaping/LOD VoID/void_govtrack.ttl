@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/govtrack> ;
+  void:triples  470
+] .
+
+<http://lod-cloud.net/dataset/govtrack>
+        a                     void:Dataset ;
+        dcterms:description   "U.S. Congress data including all Members of Congress since the beginning of the United States, legislative data including bills, sponsorship, roll call votes since around 1990."@en ;
+        dcterms:publisher     [ rdfs:label  "Civic Impulse, LLC" ;
+                                foaf:mbox   "operations@govtrack.us"
+                              ] ;
+        dcterms:subject       "deref-vocab" , "format-dc" , "published-by-third-party" , "format-foaf" , "us" , "no-license-metadata" , "congress" , "lod" , "government" , "format-vcard" , "lodcloud-diagram-2011-09-19" , "no-provenance-metadata" , "lodcloud-diagram-2014-08-30" , "format-rdf" , "no-vocab-mappings" ;
+        dcterms:title         "GovTrack.us U.S Congress Legislative Data"@en ;
+        void:exampleResource  <http://www.rdfabout.com/rdf/usgov/congress/99/bills/h4> ;
+        void:sparqlEndpoint   <http://www.rdfabout.com/sparql> ;
+        void:triples          13000000 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.govtrack.us/developers/data.xpd> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.govtrack.us/data/rdf/> ] ;
+        foaf:homepage         <http://www.govtrack.us> .

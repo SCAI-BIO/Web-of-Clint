@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/opendatacommunities-households-projections-population>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "dump" , "license-metadata" , "format-dcat" , "format-rdf" , "format-rdfs" , "lodcloud-diagram-2014-08-30" , "LinkedDataCrawl2014" , "dataset-level-metadata" , "sparql" , "crawledLinkedDataCloud2014" , "government" , "format-dcterm" , "provenance-metadata" , "format-void" ;
+        dcterms:title         "opendatacommunities-households-projections-population"@en ;
+        void:exampleResource  <http://opendatacommunities.org/data/households/projections/population> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-households-projections-population> ;
+  void:triples  1
+] .

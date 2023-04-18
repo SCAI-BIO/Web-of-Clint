@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/Terrorist+attack>
+        a                    void:Dataset ;
+        dcterms:description  "Ontology of Terrorist attack"@en ;
+        dcterms:publisher    [ rdfs:label  "Roshani Sahu" ;
+                               foaf:mbox   "sahutwins1997@gmail.com"
+                             ] ;
+        dcterms:subject      "user_generated" ;
+        dcterms:title        "Ontology"@en ;
+        void:dataDump        <https://drive.google.com/open?id=13BxztYE_p5n3EZhyLpiU30J8EoRdvH10> ;
+        void:triples         "0"^^xsd:int ;
+        foaf:homepage        <https://www.iraj.in › journal_pdf> .

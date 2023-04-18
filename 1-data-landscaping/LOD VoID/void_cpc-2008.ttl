@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/http://productontology.org> , <http://lod-cloud.net/dataset/cpc-2008> ;
+  void:triples  26144
+] .
+
+<http://lod-cloud.net/dataset/cpc-2008>
+        a                     void:Dataset ;
+        dcterms:description   "The Central Product Classification (CPC)  is a product scheme classification used to extract statistics. It was a previous attempt to CPV.\r\n\r\nAuthors of the linked data version:\r\n\r\n-Jose María Alvarez Rodríguez & Jose Emilio Labra Gayo\r\n\r\nWESO-University of Oviedo"@en ;
+        dcterms:publisher     [ rdfs:label  "Jose María Alvarez Rodríguez at WESO (University of Oviedo)" ;
+                                foaf:mbox   "josem.alvarez@weso.es"
+                              ] ;
+        dcterms:subject       "e-procurement" , "oviedo" , "pscs" , "cpc" , "weso" , "lod" , "procurement" , "deref-vocab" , "cpc-2008" , "vocab-mappings" , "format-dc" , "university-of-oviedo" , "euroalert" , "published-by-third-party" , "public_contracts" , "linkedopendata" , "10ders" , "uniovi" , "government" , "format-dcterms" , "linkeddata" , "format-skos" , "format-gr" , "license-metadata" , "geodata" , "provenance-metadata" , "format-skosxl" ;
+        dcterms:title         "CPC 2008"@en ;
+        void:exampleResource  <http://purl.org/weso/pscs/data/cpc/2008/resource/01111?output=xml> ;
+        void:sparqlEndpoint   <http://purl.org/weso/sparql> ;
+        void:triples          100819 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/cpc/2008/resource/ds> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/cpc/2008/resource/ds> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/cpc/2008/cpc-2008.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/psc-ontology.ttl> ] ;
+        foaf:homepage         <http://www.josemalvarez.es/web/2011/11/16/product-scheme-classifications/> .

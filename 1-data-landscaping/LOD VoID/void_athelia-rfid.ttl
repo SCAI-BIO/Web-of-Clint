@@ -1,0 +1,40 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/gnoss> , <http://lod-cloud.net/dataset/athelia-rfid> ;
+  void:triples  133
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/athelia-rfid> ;
+  void:triples  154
+] .
+
+<http://lod-cloud.net/dataset/athelia-rfid>
+        a                     void:Dataset ;
+        dcterms:description   "<a href=\"http://athelia.com/\">Athelia Solutions</a>\r\n, a company specialized in tracking solutions based on RFID technology (Radio Frequency Identification) and Mobile Data Capture, renewed its digital identity with a global knowledge network designed to share content and opinion about RFID technology in Oil & Gas, Food & Beverage, Energy & Utilities and Healthcare. The online global network of Athelia includes a professional community, called\r\n<a href=\"http://community.athelia.com/en/community/atheliacommunity\">Athelia Community</a>\r\n, and a\r\n<a href=\"http://athelia.com/en/community/atheliasolutions\">portfolio of services and solutions</a>\r\nof the company.\r\n</p>\r\n<p>\r\n<p> It is focused on specialists in this field: users of technologies for traceability solutions, suppliers, technicians, engineers, researchers, consultants and journalists, among others, of those sectors in which Athelia is reference in identification and traceability.</p>"@en ;
+        dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
+                                foaf:mbox   "gnoss@gnoss.com"
+                              ] ;
+        dcterms:subject       "format-foaf" , "sioc" , "language-spa" , "user_generated" , "country-spain" , "glp" , "format-rdfg" , "asset tracking solutions" , "format-wot" , "rfid industry" , "license-metadata" , "no-proprietary-vocab" , "rfid tags" , "format-sioc" , "athelia solutions" , "provenance-metadata" , "format-skos" , "format-dcam" , "country.es" , "skos" , "air liquide" , "foaf" , "wrapper" , "lpg" , "usergeneratedcontent" , "oil and gas" , "published-by-third-party" , "no-vocab-mappings" , "schemata" , "energy and utilities" , "industrial mobility" , "spain" , "food and beverages" , "athelia" , "rfid" , "liquefied petroleum gas" , "dc" , "socialweb" , "sp" , "lod" , "radio frequency identification" , "format-dc" , "asset tracking" ;
+        dcterms:title         "Athelia RFID, a global knowledge network of RFID technology"@en ;
+        void:exampleResource  <http://athelia.com/en/community/atheliasolutions/advanced-search/tag/rfid?rdf> , <http://athelia.com/comunidad/atheliasolutions/recurso/Django-Maintenance--Inspection/1ea18bcd-ce29-4443-86b7-485df3ef4d0a?rdf> , <http://athelia.com/comunidad/atheliasolutions/recurso/Athelia-Services/2fad094b-4ff6-42ce-bf2c-02c72fb57eb9?rdf> ;
+        void:triples          253440 ;
+        dcat:distribution     [ dcat:accessURL  <http://gnoss.com/gnoss.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://athelia.com/voidAtheliaRFIDGNOSS.n3> ] ;
+        foaf:homepage         <http://athelia.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/athelia-rfid> ;
+  void:triples  153
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/athelia-rfid> ;
+  void:triples  102
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dblp-deusto-gnoss> , <http://lod-cloud.net/dataset/athelia-rfid> ;
+  void:triples  814
+] .

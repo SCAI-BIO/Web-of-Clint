@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/bbc-wildlife-finder>
+        a                     void:Dataset ;
+        dcterms:description   "Information about:\r\n\r\n- wildlife biota (kingdom > Species)\r\n- habitats\r\n- adaptations\r\n- ecozones\r\n\r\nData includes: \r\n\r\n- IUCN conservation status\r\n- background descriptions\r\n- photos\r\n- BBC news stories and \r\n- video clips from the BBC archive."@en ;
+        dcterms:publisher     [ rdfs:label  "Tom Scott" ;
+                                foaf:mbox   "http://derivadow.com"
+                              ] ;
+        dcterms:subject       "format-foaf" , "media" , "format-rdf" , "format-dc" , "no-provenance-metadata" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "deref-vocab" , "published-by-producer" , "format-rdfs" , "lod" , "no-vocab-mappings" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:title         "BBC Wildlife Finder"@en ;
+        void:exampleResource  <http://www.bbc.co.uk/nature/species/Springbok_(antelope)#species> ;
+        void:sparqlEndpoint   <http://api.talis.com/stores/bbc-wildlife/services/sparql> ;
+        void:triples          23861 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/ontology/wo> ] ;
+        foaf:homepage         <http://www.bbc.co.uk/wildlifefinder/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/bbc-wildlife-finder> ;
+  void:triples  415
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bbc-programmes> , <http://lod-cloud.net/dataset/bbc-wildlife-finder> ;
+  void:triples  1958
+] .

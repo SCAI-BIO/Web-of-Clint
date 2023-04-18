@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/cz-sidc-drugs> , <http://lod-cloud.net/dataset/cz-sidc-drug-ingredients> ;
+  void:triples  72578
+] .
+
+<http://lod-cloud.net/dataset/cz-sidc-drug-ingredients>
+        a                     void:Dataset ;
+        dcterms:description   "This dataset provides data about active ingredients contained in medicinal products available in Czech republic. The dataset was created on the base of information published on the web site of Czech State Institute for Drug Control."@en ;
+        dcterms:publisher     [ rdfs:label  "Martin Nečaský" ;
+                                foaf:mbox   "necasky@opendata.cz"
+                              ] ;
+        dcterms:subject       "lod" , "life_sciences" , "provenance-metadata" , "deref-vocab" , "format-skos" , "lifesciences" , "czech-republic" , "czech" , "format-dcterms" , "published-by-third-party" , "no-vocab-mappings" , "license-metadata" ;
+        dcterms:title         "Active ingredients of medicinal products available in Czech Republic"@en ;
+        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/sukl/medicinal-product-packaging/0000982%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fsukl%2Fdrug-ingredients&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
+        void:triples          210870 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/sukl/medicinal-product-packaging/0000982> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/sukl-drug-ingredients.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fsukl%2Fdrug-ingredients%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        foaf:homepage         <http://linked.opendata.cz/resource/dataset/sukl/drug-ingredients> .

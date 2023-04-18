@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/statistics-data-gov-uk> ;
+  void:triples  32284
+] .
+
+<http://lod-cloud.net/dataset/statistics-data-gov-uk>
+        a                     void:Dataset ;
+        dcterms:description   "Linked data about administrative areas used within UK government official statistics.\r\n\r\nThe various areas are typed using classes in the following namespaces:\r\n\r\n* http://data.ordnancesurvey.co.uk/ontology/admingeo/\r\n* http://statistics.data.gov.uk/def/administrative-geography/\r\n* http://statistics.data.gov.uk/def/geography/"@en ;
+        dcterms:publisher     [ rdfs:label  "Data.gov.uk Team" ;
+                                foaf:mbox   "team@data.gov.uk"
+                              ] ;
+        dcterms:subject       "lod" , "local-education-authorities" , "government" , "lodcloud-diagram-2011-09-19" , "format-dc" , "geography" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "constituencies" , "ukgov" , "regions" , "country-uk" , "no-provenance-metadata" , "no-vocab-mappings" , "local-authorities" , "countries" , "wards" , "no-license-metadata" , "published-by-producer" , "format-skos" , "deref-vocab" ;
+        dcterms:title         "statistics.data.gov.uk"@en ;
+        void:dataDump         <http://source.data.gov.uk/data/statistics/administrative-geography/2009-11-20/admin-geo.tar.gz> ;
+        void:exampleResource  <http://statistics.data.gov.uk/doc/local-authority-district/47UG.rdf> ;
+        void:sparqlEndpoint   <http://services.data.gov.uk/statistics/sparql> ;
+        void:triples          343733 ;
+        dcat:distribution     [ dcat:accessURL  <http://services.data.gov.uk/statistics/search> ] ;
+        foaf:homepage         <http://statistics.data.gov.uk/> .

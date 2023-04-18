@@ -1,0 +1,38 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/premon> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lime> , <http://lod-cloud.net/dataset/premon> ;
+  void:triples  48080
+] .
+
+<http://lod-cloud.net/dataset/premon>
+        a                     void:Dataset ;
+        dcterms:description   "Predicate Model For Ontologies (2018a version)"@en ;
+        dcterms:publisher     [ rdfs:label  "Marco Rospocher" ;
+                                foaf:mbox   "marco.rospocher@univr.it"
+                              ] ;
+        dcterms:subject       "predicate models" , "semlink" , "verbnet" , "framebase" , "framenet" , "nif" , "frames" , "predicate matrix" , "eso" , "nombank" , "propbank" , "premon" , "linked data" , "linguistics" ;
+        dcterms:title         "PreMOn"@en ;
+        void:dataDump         <https://premon.fbk.eu/download.html> ;
+        void:exampleResource  <https://premon.fbk.eu/resource/pb17-look.01.rdf> , <https://premon.fbk.eu/resource/pb17-look.01.n3> , <http://premon.fbk.eu/resource/pb17-look.01> , <https://premon.fbk.eu/browse.html> ;
+        void:sparqlEndpoint   <http://premon.fbk.eu/sparql> ;
+        void:triples          32611819 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.lrec-conf.org/proceedings/lrec2016/pdf/854_Paper.pdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://link.springer.com/article/10.1007/s10579-018-9437-8> ] ;
+        foaf:homepage         <http://premon.fbk.eu> .
+
+[ void:target   <http://lod-cloud.net/dataset/wordnet-rdf> , <http://lod-cloud.net/dataset/premon> ;
+  void:triples  123565
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/premon> ;
+  void:triples  62805
+] .

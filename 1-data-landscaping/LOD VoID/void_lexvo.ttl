@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/lexvo> ;
+  void:triples  2577
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lingvoj> , <http://lod-cloud.net/dataset/lexvo> ;
+  void:triples  448
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/lexvo> ;
+  void:triples  2577
+] .
+
+<http://lod-cloud.net/dataset/lexvo>
+        a                     void:Dataset ;
+        dcterms:description   "### About\r\n\r\nData exposed: Linguistic Data\r\nSize of dump and data set: ~40MB\r\n\r\n### Openness\r\n\r\nDownload dump: CC-BY-SA 3.0 license\r\n\r\nThe web service additionally provides some parts that are not fully open, e.g. English language names taken from the Ethnologue Language Codes database are subject to specific redistribution conditions. "@en ;
+        dcterms:publisher     [ rdfs:label  "Gerard de Melo" ;
+                                foaf:mbox   "demelo@mpi-inf.de"
+                              ] ;
+        dcterms:subject       "deref-vocab" , "provenance-metadata" , "format-rdf" , "published-by-third-party" , "linguistics" , "format-xsd" , "lodcloud-diagram-2014-08-30" , "rdf" , "no-vocab-mappings" , "linkeddata" , "crossdomain" , "lodcloud-diagram-2011-09-19" , "lod" , "ckanupload.esw.200910" , "void-sparql-endpoint" , "no-license-metadata" , "language" ;
+        dcterms:title         "Lexvo"@en ;
+        void:exampleResource  <http://lexvo.org/id/iso639-3/spa> ;
+        void:triples          353815 ;
+        dcat:distribution     [ dcat:accessURL  <http://lexvo.org/ontology> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.lexvo.org/linkeddata/void.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.lexvo.org/resources/lexvo_latest.rdf.gz> ] ;
+        foaf:homepage         <http://www.lexvo.org> .

@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/bbop-selected>
+        a                     void:Dataset ;
+        dcterms:description   "Data exposed: selected OBO ontologies, downloaded ~21 April 2007, augmented with inferred relations\r\nSize of dump and data set: 2.6 MB\r\nNotes: released without contract"@en ;
+        dcterms:publisher     [ rdfs:label  " <URI>" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "lod" , "format-rdfs" , "lodcloud.nolinks" , "lodcloud.unconnected" , "lifesciences" , "ontology" , "deref-vocab" , "rdf" , "linkeddata" , "format-rdf" , "published-by-third-party" , "ckanupload.esw.200910" ;
+        dcterms:title         "BBOP"@en ;
+        void:exampleResource  <http://purl.org/obo/owl/GO#GO_0000701> ;
+        void:triples          711552 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/hcls/2007/kb-sources/obo-in-owl.tgz> ] ;
+        foaf:homepage         <http://www.berkeleybop.org/> .

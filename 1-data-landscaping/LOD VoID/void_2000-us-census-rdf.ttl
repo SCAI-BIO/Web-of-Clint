@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/2000-us-census-rdf>
+        a                     void:Dataset ;
+        dcterms:description   "2000 U.S. Census converted into over a billion RDF triples.\r\n\r\nPopulation statistics at various geographic levels, from the U.S. as a whole, down through states, counties, sub-counties (roughly, cities and incorporated towns)\r\n\r\nNotes: also found in the of SPARQL Endpoints.\r\n\r\nFrom home page:\r\n\r\n> * For the detailed Census statistics, you'll have to download the raw Census data files from the Census Bureau, my Perl script and the patch file below and run it yourself because the files are too big for me to offer as a download!\r\n> \r\n> * The data and scripts can be reused under Creative Commons Attribution-NonCommercial-ShareAlike.\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Joshua Tauberer" ;
+                                foaf:mbox   "http://razor.occams.info/"
+                              ] ;
+        dcterms:subject       "no-provenance-metadata" , "format-politico" , "lodcloud-diagram-2007-05-01" , "geographic" , "deref-vocab" , "data" , "lodcloud.nolinks" , "statistics" , "census" , "rdf" , "lodcloud-diagram-2011-09-19" , "format-geonames" , "published-by-third-party" , "government" , "us" , "population" , "no-license-metadata" , "lod" , "format-rdf" , "format-dc" , "no-vocab-mappings" , "linkeddata" , "demographics" ;
+        dcterms:title         "2000 U.S. Census in RDF (rdfabout.com)"@en ;
+        void:exampleResource  <http://www.rdfabout.com/rdf/usgov/geo/us/ny> ;
+        void:sparqlEndpoint   <http://www.rdfabout.com/sparql> ;
+        void:triples          1002848918 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.rdfabout.com/demo/census/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.rdfabout.com/sitemap.xml> ] ;
+        foaf:homepage         <http://www.rdfabout.com/demo/census/> .

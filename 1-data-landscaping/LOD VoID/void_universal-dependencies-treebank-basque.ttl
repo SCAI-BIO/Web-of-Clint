@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/universal-dependencies-treebank-basque>
+        a                    void:Dataset ;
+        dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Basque treebank.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Aranzabe, Maria Jesus; Atutxa, Aitziber; Bengoetxea, Kepa; Diaz de Ilarraza, Arantza; Goenaga, Iakes; Gojenola, Koldo; Uria, Larraitz" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lod" , "linguistics" , "corpus" ;
+        dcterms:title        "Universal Dependencies Treebank Basque"@en ;
+        void:triples         121443 ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Basque/archive/master.zip> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/46f2d67c-f088-4609-8b84-680859214067/resource/71e7045b-4830-490f-be95-a9a23ed20eea/download/udbasque.rdf> ] ;
+        foaf:homepage        <https://github.com/UniversalDependencies/UD_Basque> .
+
+[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-basque> ;
+  void:triples  72
+] .

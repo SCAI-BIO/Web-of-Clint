@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/nvd>
+        a                     void:Dataset ;
+        dcterms:description   "Norwegian classification of scientific disciplines as linked data (2003 edition)."@en ;
+        dcterms:publisher     [ rdfs:label  "Rurik Thomas Greenall" ;
+                                foaf:mbox   "rurik.greenall@ub.ntnu.no"
+                              ] ;
+        dcterms:subject       "published-by-producer" , "lld" , "english" , "format-owl" , "no-proprietary-vocab" , "format-skos" , "format-rdfs" , "lodcloud-diagram-2011-09-19" , "format-dc" , "no-provenance-metadata" , "ontology" , "lod" , "format-rdf" , "duplicate-dmoz_rdf_dump" , "norwegian" , "library" , "linkedopendata" , "no-license-metadata" , "publications" ;
+        dcterms:title         "Norsk inndeling av vitenskapsdisipliner"@en ;
+        void:exampleResource  <http://api.talis.com/stores/nvd/meta?about=http://www.ntnu.no/ub/data/nvd/2003/012&output=rdf> ;
+        void:sparqlEndpoint   <http://api.talis.com/stores/nvd/services/sparql> ;
+        void:triples          2114 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.ntnu.no/ub/data/nvd/> ] ;
+        foaf:homepage         <http://www.ntnu.no/ub/data/nvd/about> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/nvd> ;
+  void:triples  502
+] .

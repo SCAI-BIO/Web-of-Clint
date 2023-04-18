@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/linkedcrowdsourceddata>
+        a                     void:Dataset ;
+        dcterms:description   "Linked Crowdsourced Data is - as the name implies - a crowdsourced dataset for real user location preferences. People using the CDCApp contribute to this dataset by checking into different locations. This information is accompanied by contextual information, such as the weather condition during the check-in, the WiFi access points that were measured in this area or whether the check-in occured during a regional holiday."@en ;
+        dcterms:publisher     [ rdfs:label  "Abdulbaki Uzun, Service-centric Networking, TU Berlin" ;
+                                foaf:mbox   "abdulbaki.m.uzun@tu-berlin.de"
+                              ] ;
+        dcterms:subject       "format-rdfs" , "geography" , "sparql" , "cdc" , "no-deref-vocab" , "ingredients" , "format-gr" , "format-geo" , "geographic" , "food and beverages" , "semantic services" , "food" , "format-rdf" , "licence-metadata" , "lod" , "cuisines" , "dishes" , "context data cloud" , "published-by-producer" ;
+        dcterms:title         "Linked Crowdsourced Data"@en ;
+        void:exampleResource  <http://www.contextdatacloud.org/resource/loc183> ;
+        void:sparqlEndpoint   <http://sparql.contextdatacloud.org> ;
+        void:triples          17043 .
+
+[ void:target   <http://lod-cloud.net/dataset/openmobilenetwork> , <http://lod-cloud.net/dataset/linkedcrowdsourceddata> ;
+  void:triples  2480
+] .

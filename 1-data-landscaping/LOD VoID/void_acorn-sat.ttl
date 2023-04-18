@@ -1,0 +1,29 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/acorn-sat>
+        a                     void:Dataset ;
+        dcterms:description   "ACORN-SAT, the Australian Climate Observations Reference Network - Surface Air Temperature data set, is a homogenized daily maximum and minimum temperature data set containing data from 112 locations across Australia extending from 1910 to the present."@en ;
+        dcterms:publisher     [ rdfs:label  "Armin Haller" ;
+                                foaf:mbox   "armin.haller@csiro.au"
+                              ] ;
+        dcterms:subject       "published-by-third-party" , "bureau-of-meteorology" , "format-skos" , "australia" , "format-qb" , "government" , "format-geo" , "deref-vocab" , "format-ssn" , "climate" , "format-time" , "format-dct" , "lod" , "temperature" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "format-foaf" ;
+        dcterms:title         "Australian Climate Observations Reference Network - Surface Air Temperature Dataset"@en ;
+        void:exampleResource  <http://lab.environment.data.gov.au/data/acorn/climate/slice/station/year/month.ttl> , <http://lab.environment.data.gov.au/data/acorn/climate/slice/station/year/month.rdf> , <http://lab.environment.data.gov.au/data/acorn/climate/slice/station/year.html> , <http://lab.environment.data.gov.au/data/acorn/climate/slice/station/year.ttl> , <http://lab.environment.data.gov.au/data/acorn/climate/slice/station/year/month.html> , <http://lab.environment.data.gov.au/data/acorn/climate/slice/station/year.rdf> ;
+        void:sparqlEndpoint   <http://lab.environment.data.gov.au/sparql> ;
+        void:triples          61406503 ;
+        dcat:distribution     [ dcat:accessURL  <http://lab.environment.data.gov.au/dumps/release/observations.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lab.environment.data.gov.au/def/acorn/sat.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lab.environment.data.gov.au/def/acorn/time-series.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lab.environment.data.gov.au/data/acorn/climate.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lab.environment.data.gov.au/data/acorn.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lab.environment.data.gov.au/dumps/release/all_slices.zip> ] ;
+        foaf:homepage         <http://lab.environment.data.gov.au> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/acorn-sat> ;
+  void:triples  583
+] .

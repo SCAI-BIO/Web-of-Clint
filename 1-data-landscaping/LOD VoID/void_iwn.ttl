@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/simple> , <http://lod-cloud.net/dataset/iwn> ;
+  void:triples  19896
+] .
+
+<http://lod-cloud.net/dataset/iwn>
+        a                    void:Dataset ;
+        dcterms:description  "This is the dataset corresponding to the ItalWordNet as created at the Institute of Computational Linguistic \"A. Zampolli\" in Pisa.\r\nThe resource contains single instances such as single synset and single word/wordsense and collective files to list all synsets and word(sense)s.\r\n\r\nThe resource has been created according to the WN2.0 specification, http://www.w3.org/2006/03/wn/wn20/"@en ;
+        dcterms:publisher    [ rdfs:label  "Roberto Bartolini" ;
+                               foaf:mbox   "roberto.bartolini@ilc.cnr.it"
+                             ] ;
+        dcterms:subject      "linguistic" , "lod" , "wordnet" , "Linguistic Dataset LOD RDF" , "llod" , "linguistics" , "rdf" ;
+        dcterms:title        "IWN"@en ;
+        void:triples         515816 ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/italWordNet15/schema/wordsenseandwords> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/italWordNet15/schema/synset> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/italWordNet15/download/italWordNet15.tar.gz> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/w3c-wordnet> , <http://lod-cloud.net/dataset/iwn> ;
+  void:triples  54716
+] .

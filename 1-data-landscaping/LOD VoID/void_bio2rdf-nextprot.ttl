@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/bio2rdf-nextprot>
+        a                    void:Dataset ;
+        dcterms:description  "This dataset contains the protein data offered by neXtProt."@en ;
+        dcterms:publisher    [ rdfs:label  "Bio2RDF" ;
+                               foaf:mbox   "bio2rdf@googlegroups.com"
+                             ] ;
+        dcterms:subject      "lifesciences" , "bio2rdf" , "lod" ;
+        dcterms:title        "Bio2RDF::neXtProt"@en ;
+        void:sparqlEndpoint  <http://nextprot.bio2rdf.org/sparql> ;
+        void:triples         276183203 ;
+        dcat:distribution    [ dcat:accessURL  <http://bio2rdf.org/nextprot/describe/rdf?uri=http://bio2rdf.org/nextprot:NX_P19367> ] .

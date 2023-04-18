@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/national-library-of-greece-authority-records>
+        a                    void:Dataset ;
+        dcterms:description  "This is the National Library of Greece Authority Records Dataset in Linked Data form. "@en ;
+        dcterms:publisher    [ rdfs:label  "Sotirios Karampatakis" ;
+                               foaf:mbox   "s.karampatakis@gmail.com"
+                             ] ;
+        dcterms:subject      "lld" , "lod" , "bibliographic" , "authority" , "no-proprietary-vocab" , "GLAM" , "library" , "linked data" ;
+        dcterms:title        "National Library of Greece Authority Records"@en ;
+        void:sparqlEndpoint  <http://nlg.okfn.gr/sparql> ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <http://nlg.okfn.gr/resource/authority/Dataset> ] ;
+        foaf:homepage        <http://nlg.okfn.gr> .
+
+[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/national-library-of-greece-authority-records> ;
+  void:triples  70000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/national-library-of-greece-authority-records> ;
+  void:triples  16223
+] .

@@ -1,0 +1,36 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/stw-thesaurus-for-economics> , <http://lod-cloud.net/dataset/gesis-thesoz> ;
+  void:triples  5294
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/gesis-thesoz> ;
+  void:triples  5024
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/agrovoc-skos> , <http://lod-cloud.net/dataset/gesis-thesoz> ;
+  void:triples  846
+] .
+
+<http://lod-cloud.net/dataset/gesis-thesoz>
+        a                     void:Dataset ;
+        dcterms:description   "The Thesaurus for the Social Sciences (Thesaurus Sozialwissenschaften) contains about 12,000 entries, of which more than 8,000 are descriptors (authorised keywords) and about 4,000 non-descriptors. Topics in all of the social science disciplines are included. This SKOS version of the thesaurus uses also SKOS-XL and additionally defined extensions.\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "GESIS - Leibniz Institute for the Social Sciences" ;
+                                foaf:mbox   "http://www.gesis.org/"
+                              ] ;
+        dcterms:subject       "format-dc" , "published-by-producer" , "format-rdf" , "provenance-metadata" , "lld" , "deref-vocab" , "lod" , "void-sparql-endpoint" , "vocab-mappings" , "format-skos" , "library" , "socialsciences" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "social" , "linkeddata" , "thesaurus" , "lodcloud-diagram-2011-09-19" , "germany" , "publications" , "format-skosxl" ;
+        dcterms:title         "TheSoz Thesaurus for the Social Sciences (GESIS)"@en ;
+        void:exampleResource  <http://lod.gesis.org/thesoz/concept/10041741> ;
+        void:sparqlEndpoint   <http://lod.gesis.org/thesoz/sparql> ;
+        void:triples          438901 ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.gesis.org/thesoz/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.gesis.org/thesoz/ext/thesoz_ext.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.gesis.org/en/services/research/thesauri-und-klassifikationen/social-science-thesaurus/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.gesis.org/thesoz/vocabulary-mappings.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.etracker.de/lnkcnt.php?et=qPKGYV&url=http://www.gesis.org/fileadmin/upload/dienstleistung/tools_standards/thesoz_skos_turtle.zip&lnkname=fileadmin/upload/dienstleistung/tools_standards/thesoz_skos_turtle.zip> ] ;
+        foaf:homepage         <http://lod.gesis.org/thesoz/> .

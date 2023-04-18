@@ -1,0 +1,39 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/telegraphis> , <http://lod-cloud.net/dataset/yahoo_geoplanet> ;
+  void:triples  248
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/yahoo_geoplanet> ;
+  void:triples  248
+] .
+
+<http://lod-cloud.net/dataset/yahoo_geoplanet>
+        a                     void:Dataset ;
+        dcterms:description   "This is a Linked Data version of the publically available data dumps from the Yahoo! GeoPlanet database. GeoPlanet helps bridge the gap between the real and virtual worlds by providing an open, permanent, and intelligent infrastructure for geo-referencing data on the Internet. By exposing it as Linked Data we enable additional cross-linking between more data sources.\r\n\r\n*Note* this RDF version of the dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "geography" , "published-by-third-party" , "geodata" , "geographic" , "lodcloud-diagram-2011-09-19" , "format-rdf" ;
+        dcterms:title         "Yahoo Geoplanet RDF"@en ;
+        void:exampleResource  <http://data.kasabi.com/dataset/yahoo-geoplanet/place/2359974> ;
+        void:sparqlEndpoint   <http://api.kasabi.com/dataset/yahoo-geoplanet/apis/sparql> ;
+        void:triples          49734022 ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/api/augmentation-api-yahoo-geoplanet> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/yahoo-geoplanet> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.kasabi.com/dataset/yahoo-geoplanet> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/api/reconciliation-api-yahoo-geoplanet> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/api/lookup-api-yahoo-geoplanet> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/api/sparql-endpoint-yahoo-geoplanet> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://archive.org/download/kasabi/yahoo-geoplanet.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/api/search-api-yahoo-geoplanet> ] ;
+        foaf:homepage         <http://kasabi.com/dataset/yahoo-geoplanet> .
+
+[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/yahoo_geoplanet> ;
+  void:triples  9591825
+] .

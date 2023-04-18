@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/university-plymouth-reading-lists>
+        a                     void:Dataset ;
+        dcterms:description   "Search for lists, modules & courses\r\n\r\n  \r\nBrowse hierarchy | Recent changes"@en ;
+        dcterms:publisher     [ rdfs:label  "Ian Davis" ;
+                                foaf:mbox   "ian.davis@talis.com"
+                              ] ;
+        dcterms:subject       "no-proprietary-vocab" , "no-vocab-mappings" , "talis" , "published-by-producer" , "publications" , "lodcloud-diagram-2011-09-19" , "higher-education" , "format-sioc" , "format-dc" , "education" , "lod" , "no-license-metadata" , "no-provenance-metadata" , "format-rdf" ;
+        dcterms:title         "University of Plymouth Reading Lists"@en ;
+        void:exampleResource  <http://lists.lib.plymouth.ac.uk/lists/eoe3217> , <http://lists.lib.plymouth.ac.uk/lists/marn304> ;
+        void:triples          441476 ;
+        foaf:homepage         <http://lists.lib.plymouth.ac.uk/> .
+
+[ void:target   <http://lod-cloud.net/dataset/openlibrary> , <http://lod-cloud.net/dataset/university-plymouth-reading-lists> ;
+  void:triples  5675
+] .

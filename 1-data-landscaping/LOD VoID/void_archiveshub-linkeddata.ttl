@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/uk-postcodes> , <http://lod-cloud.net/dataset/archiveshub-linkeddata> ;
+  void:triples  5000
+] .
+
+<http://lod-cloud.net/dataset/archiveshub-linkeddata>
+        a                     void:Dataset ;
+        dcterms:description   "A sample dataset of descriptions of archive collections held on the Archives Hub, a UK aggregator, and output as Linked Data. \r\n\r\nThe Hub Linked Data provides a perspective on the people, organisations, subjects and places connected with the archives that are described.  External links are provided to other datasets, such as the Virtual International Authority File and Library of Congress Subject Headings.\r\n\r\nA stylesheet is available to convert EAD data (XML for archives) into RDF XML. \r\n\r\nhttp://data.archiveshub.ac.uk/"@en ;
+        dcterms:publisher     [ rdfs:label  "LOCAH project" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2011-09-19" , "format-xhtml" , "publications" , "open_archives" , "archives" , "lodcloud-diagram-2014-08-30" , "published-by-third-party" , "deref-vocab" , "lod" ;
+        dcterms:title         "Archives Hub Linked Data"@en ;
+        void:exampleResource  <http://data.archiveshub.ac.uk/id/archivalresource/gb1086skinner> ;
+        void:sparqlEndpoint   <http://data.archiveshub.ac.uk/sparql> ;
+        void:triples          431088 ;
+        dcat:distribution     [ dcat:accessURL  <http://data.archiveshub.ac.uk/dump/linkedarchiveshub.zip> ] ;
+        foaf:homepage         <http://data.archiveshub.ac.uk> .

@@ -1,0 +1,45 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-planet-libre-org> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-spip-org> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
+  void:triples  23
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-gegeweb-org> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/statusnet-shnoulle-net>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://shnoulle.net"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "crawledLinkedDataCloud2014" , "format-foaf" , "lodcloud-diagram-2014-08-30" , "social_networking" , "format-rdf" , "format-bio" , "format-sioc" , "social web" , "LinkedDataCrawl2014" , "format-pos" ;
+        dcterms:title         "statusnet-shnoulle-net"@en ;
+        void:exampleResource  <http://ostatus.shnoulle.net/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-belfalas-org> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
+  void:triples  4
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
+  void:triples  4
+] .

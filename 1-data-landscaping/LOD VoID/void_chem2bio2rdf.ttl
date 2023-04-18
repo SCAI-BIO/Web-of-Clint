@@ -1,0 +1,44 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/chem2bio2rdf>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "David Wild, Ying Ding" ;
+                                foaf:mbox   "dingying@indiana.edu"
+                              ] ;
+        dcterms:subject       "no-license-metadata" , "format-rdf" , "published-by-third-party" , "lod" , "lodcloud-diagram-2011-09-19" , "format-rdfs" , "life_sciences" , "lifesciences" , "void-sparql-endpoint" , "no-provenance-metadata" , "no-vocab-mappings" , "deref-vocab" , "lodcloud-diagram-2014-08-30" , "chemogenomics" ;
+        dcterms:title         "Chem2Bio2RDF"@en ;
+        void:exampleResource  <http://chem2bio2rdf.org/bindingdb/resource/bindingdb_ligand/1> ;
+        void:triples          82925998 ;
+        dcat:distribution     [ dcat:accessURL  <http://chem2bio2rdf.org/download> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://cheminfov.informatics.indiana.edu:8080/sitemap.xml> ] ;
+        foaf:homepage         <http://chem2bio2rdf.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-cas> , <http://lod-cloud.net/dataset/chem2bio2rdf> ;
+  void:triples  408326
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/chem2bio2rdf> ;
+  void:triples  109876
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mesh> , <http://lod-cloud.net/dataset/chem2bio2rdf> ;
+  void:triples  609612
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-geneid> , <http://lod-cloud.net/dataset/chem2bio2rdf> ;
+  void:triples  25867
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxon> , <http://lod-cloud.net/dataset/chem2bio2rdf> ;
+  void:triples  111384
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/chem2bio2rdf> ;
+  void:triples  27658
+] .

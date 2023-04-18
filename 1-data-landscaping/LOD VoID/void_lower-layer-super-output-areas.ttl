@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/lower-layer-super-output-areas>
+        a                     void:Dataset ;
+        dcterms:description   "This dataset provides information on the Lower Layer Super Output Areas for England and Wales, derived from information from the Office of National Statistics.\r\n\r\nThe data is in the form of Linked Data.  Each area has a URI, name, centroid location as lat/long and easting/northing and a link to the corresponding local authority area.\r\n\r\nThese identifiers are used by the Index of Multiple Deprivation linked data datasets at http://opendatacommunities.org\r\n\r\n273128 triples"@en ;
+        dcterms:publisher     [ rdfs:label  "Bill Roberts" ;
+                                foaf:mbox   "bill@swirrl.com"
+                              ] ;
+        dcterms:subject       "output-areas" , "england" , "lodcloud.unconnected" , "geography" , "lod" , "lodcloud.nolinks" , "published-by-producer" , "format-rdf" , "deref-vocab" , "wales" , "linkeddata" , "geographic" ;
+        dcterms:title         "Lower Layer Super Output Areas"@en ;
+        void:exampleResource  <http://opendatacommunities.org/id/geography/lsoa/E01000001.ttl> , <http://opendatacommunities.org/id/geography/lsoa/E01000001.nt> , <http://opendatacommunities.org/id/geography/lsoa/E01000001.rdf> ;
+        void:sparqlEndpoint   <http://opendatacommunities.org/sparql> ;
+        void:triples          273128 ;
+        dcat:distribution     [ dcat:accessURL  <http://opendatacommunities.org/id/geography/lsoa/E01000001.json> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://opendatacommunities.org/datasets/geography.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://opendatacommunities-downloads.s3.amazonaws.com/lsoa.ttl.zip> ] ;
+        foaf:homepage         <http://opendatacommunities.org/datasets/geography> .

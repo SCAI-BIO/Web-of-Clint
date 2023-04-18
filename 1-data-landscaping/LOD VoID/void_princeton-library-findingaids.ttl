@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/princeton-library-findingaids> ;
+  void:triples  9
+] .
+
+<http://lod-cloud.net/dataset/princeton-library-findingaids>
+        a                     void:Dataset ;
+        dcterms:description   "Use this site to explore descriptions of our unique holdings at the Princeton University Libraries, which include manuscripts, archival collections, images, ephemera, and much more one-of-a-kind material."@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-dctypes" , "LinkedDataCrawl2014" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "non-deref-vocab" , "format-rdf" , "format-time" , "format-open" , "publications" , "format-vcard2006" , "format-foaf" , "crawledLinkedDataCloud2014" , "format-dcterm" ;
+        dcterms:title         "Princeton Library FindingAids"@en ;
+        void:exampleResource  <http://findingaids.princeton.edu/collections/C0108/c02283> ;
+        void:triples          "0"^^xsd:int ;
+        foaf:homepage         <http://findingaids.princeton.edu/> .

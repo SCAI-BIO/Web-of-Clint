@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/national-diet-library-subject-headings> ;
+  void:triples  588
+] .
+
+<http://lod-cloud.net/dataset/national-diet-library-subject-headings>
+        a                     void:Dataset ;
+        dcterms:description   "duplicate:national-diet-library-authorities"@en ;
+        dcterms:publisher     [ rdfs:label  "Kanzaki Masahide" ;
+                                foaf:mbox   "mkanzaki@gmail.com"
+                              ] ;
+        dcterms:subject       "duplicate" , "lodcloud-diagram-2011-09-19" , "meta.duplicate" , "government" ;
+        dcterms:title         "National Diet Library of Japan subject headings"@en ;
+        void:exampleResource  <http://id.ndl.go.jp/auth/ndlsh/01017771> ;
+        void:sparqlEndpoint   <http://id.ndl.go.jp/auth/ndlsh/> ;
+        void:triples          1294669 ;
+        dcat:distribution     [ dcat:accessURL  <http://id.ndl.go.jp/auth/docs/sparql> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://id.ndl.go.jp/auth/files/ndlsh-rdf.zip> ] ;
+        foaf:homepage         <http://id.ndl.go.jp/auth/ndlsh> .

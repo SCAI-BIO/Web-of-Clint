@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/zitgist-musicbrainz>
+        a                     void:Dataset ;
+        dcterms:description   "RDF for artists, records, performances etc., generated from package:musicbrainz."@en ;
+        dcterms:publisher     [ rdfs:label  "Frédérick Giasson" ;
+                                foaf:mbox   "fred@fgiasson.com"
+                              ] ;
+        dcterms:subject       "media" , "format-mo" , "no-proprietary-vocab" , "music" , "published-by-third-party" , "lod" , "format-rdf" , "format-rdfs" , "lodcloud.nolinks" , "no-license-metadata" , "no-vocab-mappings" , "no-provenance-metadata" ;
+        dcterms:title         "MusicBrainz (zitgist.com)"@en ;
+        void:exampleResource  <http://zitgist.com/music/artist/79239441-bfd5-4981-a70c-55c3f15c1287> ;
+        void:triples          60000000 ;
+        foaf:homepage         <http://fgiasson.com/blog/index.php/2007/05/22/browsing-musicbrainzs-dataset-via-uri-dereferencing/> .

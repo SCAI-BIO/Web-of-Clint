@@ -1,0 +1,51 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/stw-thesaurus-for-economics> ;
+  void:triples  10000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/agrovoc-skos> , <http://lod-cloud.net/dataset/stw-thesaurus-for-economics> ;
+  void:triples  1100
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/stw-thesaurus-for-economics> ;
+  void:triples  3000
+] .
+
+<http://lod-cloud.net/dataset/stw-thesaurus-for-economics>
+        a                     void:Dataset ;
+        dcterms:description   "The thesaurus provides vocabulary on any economic subject: about 6,000 standardized subject headings and about 18,000 entry terms to support individual keywords. You can also find technical terms used in law, sociology, or politics, and geographic names. A systematic part faclitates access to the descriptors. Links to the ZBW library holdings are provided, too.\r\n\r\nSize of dump and data set: 12 MB uncompressed,\r\npublished as RDFa pages, RDF/XML, NT and Turtle dataset, licensed under Creative Commons (by-nc-sa)"@en ;
+        dcterms:publisher     [ rdfs:label  "ZBW German National Library of Economics - Leibniz Centre for Economics" ;
+                                foaf:mbox   "http://zbw.eu"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "published-by-producer" , "license-metadata" , "format-xsd" , "vocab-mappings" , "germany" , "deref-vocab" , "format-rdf" , "publications" , "thesaurus" , "lodcloud-diagram-2011-09-19" , "library" , "economics" , "format-rdfs" , "format-owl" , "linkeddata" , "rdf" , "format-cc" , "lod" , "lld" , "format-dc" , "provenance-metadata" , "format-skos" ;
+        dcterms:title         "STW Thesaurus for Economics"@en ;
+        void:exampleResource  <http://zbw.eu/stw/thsys/71098> , <http://zbw.eu/stw/descriptor/19664-4> ;
+        void:sparqlEndpoint   <http://zbw.eu/beta/sparql/stw/query> ;
+        void:triples          112000 ;
+        dcat:distribution     [ dcat:accessURL  <http://zbw.eu/namespaces/zbw-extensions/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://zbw.eu/stw/descriptor/19664-4> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://zbw.eu/namespaces/zbw-extensions/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://zbw.eu/stw/versions/latest/download/about> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://zbw.eu/stw/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://zbw.eu/stw/thsys/71098> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://zbw.eu/stw/versions/latest/download/stw.rdf.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://zbw.eu/namespaces/zbw-extensions/> ] ;
+        foaf:homepage         <http://zbw.eu/stw> .
+
+[ void:target   <http://lod-cloud.net/dataset/german-labor-law-thesaurus> , <http://lod-cloud.net/dataset/stw-thesaurus-for-economics> ;
+  void:triples  270
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/gesis-thesoz> , <http://lod-cloud.net/dataset/stw-thesaurus-for-economics> ;
+  void:triples  4300
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ontobeef> , <http://lod-cloud.net/dataset/stw-thesaurus-for-economics> ;
+  void:triples  140
+] .

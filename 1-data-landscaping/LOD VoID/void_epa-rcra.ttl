@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/epa-rcra>
+        a                     void:Dataset ;
+        dcterms:description   "Hazardous waste information is contained in the Resource Conservation and Recovery Act Information (RCRAInfo), a national program management and inventory system about hazardous waste handlers."@en ;
+        dcterms:publisher     [ rdfs:label  "EPA Office of Environmental Information" ;
+                                foaf:mbox   "admin@3roundstones.com"
+                              ] ;
+        dcterms:subject       "environmental" , "government" , "lod" ;
+        dcterms:title         "EPA-RCRA"@en ;
+        void:exampleResource  <https://opendata.epa.gov/data/rcrareport/AL8640015410/AL/N/16.ttl> ;
+        void:triples          132010000 ;
+        dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov/meta/rcra/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov/meta/rcra/schema.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov> ] ;
+        foaf:homepage         <https://opendata.epa.gov> .
+
+[ void:target   <http://lod-cloud.net/dataset/epa-frs> , <http://lod-cloud.net/dataset/epa-rcra> ;
+  void:triples  855512
+] .

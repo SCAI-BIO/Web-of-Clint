@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/bag>
+        a                     void:Dataset ;
+        dcterms:description   "De gegevens bestaan uit BAG-panden en een deelselectie van BAG-gegevens van deze panden en de zich daarin bevindende verblijfsobjecten. Ook de ligplaatsen en standplaatsen zijn hierin opgenomen met een deelselectie van BAG-gegevens. De gegevens van de nummeraanduiding zijn in deze services onderdeel van de adresseerbare objecten, hierbij wordt slechts 1 adres opgenomen, dus objecten met meerdere adressen (hoofd- en nevenadressen) zijn niet compleet. In deze services zitten dus niet alle BAG adressen."@en ;
+        dcterms:publisher     [ rdfs:label  "Erwin Folmer" ;
+                                foaf:mbox   "erwin.folmer@kadaster.nl"
+                              ] ;
+        dcterms:subject       "eGovernment" , "geo" , "gis" , "netherlands" , "geography" , "base-registry" ;
+        dcterms:title         "Basisregistratie Adressen en Gebouwen"@en ;
+        void:dataDump         <https://demo.triply.cc/kadaster/bag/assets/5ac4b7e46d64e5027d47bc68> ;
+        void:exampleResource  <http://bag.basisregistraties.overheid.nl/bag/id/pand/0200100000085932> ;
+        void:sparqlEndpoint   <https://data.pdok.nl/sparql> ;
+        void:triples          1000000000 ;
+        foaf:homepage         <https://www.pdok.nl/introductie?articleid=1948911> .
+
+[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/bag> ;
+  void:triples  2505
+] .

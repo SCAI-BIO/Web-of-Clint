@@ -1,0 +1,38 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/gesis-thesoz> , <http://lod-cloud.net/dataset/german-labor-law-thesaurus> ;
+  void:triples  443
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/german-labor-law-thesaurus> ;
+  void:triples  776
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eurovoc> , <http://lod-cloud.net/dataset/german-labor-law-thesaurus> ;
+  void:triples  247
+] .
+
+<http://lod-cloud.net/dataset/german-labor-law-thesaurus>
+        a                     void:Dataset ;
+        dcterms:description   "Labor law thesaurus covers all main areas of labor law, like the roles of employee and employer; legal aspects around labor contracts and dismissal; also co-determination and industrial action. Therefore, this thesaurus is interesting and relevant for all parties, who are dealing with labor law – professionals like specialized lawyers as well as for employees looking for definitions of legal terms. Linking to thematically similar thesauri (Linked Open Data paradigm) has already taken place and is therefore available as well. Thesauri are linked with\r\n\r\n*   Standard Thesaurus für Wirtschaft, ZBW (zbw.eu/stw/)\r\n*   Wikipedia / DBpedia\r\n*   TheSoz from Leibniz Gesellschaft für Sozialwissenschaften (www.gesis.org)\r\n*    EuroVoc - Multilingual Thesaurus of the European Union\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Wolters Kluwer Deutschland GmbH" ;
+                                foaf:mbox   "cdirschl@wolterskluwer.de"
+                              ] ;
+        dcterms:subject       "no-proprietary-vocab" , "license-metadata" , "lod2" , "format-dcterms" , "lod" , "law" , "provenance-metadata" , "publications" , "media" , "germany" , "lodcloud" , "format-skos" , "published-by-producer" ;
+        dcterms:title         "German labor law thesaurus"@en ;
+        void:exampleResource  <http://vocabulary.wolterskluwer.de/arbeitsrecht/10924.rdf> ;
+        void:sparqlEndpoint   <http://vocabulary.wolterskluwer.de/PoolParty/sparql/arbeitsrecht> ;
+        void:triples          106891 ;
+        dcat:distribution     [ dcat:accessURL  <http://vocabulary.wolterskluwer.de/arbeitsrecht/export/arbeitsrecht.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vocabulary.wolterskluwer.de/arbeitsrecht.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vocabulary.wolterskluwer.de/arbeitsrecht/export/arbeitsrecht.trig> ] ;
+        foaf:homepage         <http://vocabulary.wolterskluwer.de/> .
+
+[ void:target   <http://lod-cloud.net/dataset/zbw.eu/stw> , <http://lod-cloud.net/dataset/german-labor-law-thesaurus> ;
+  void:triples  289
+] .

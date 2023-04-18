@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/Norway+Fishery+>
+        a                    void:Dataset ;
+        dcterms:description  "Stock data from Norway, transformed and published as Linked Data. Data source was the list of all stocks for all years retrieved in XML (transformed initially to JSON), collected from service: http://standardgraphs.ices.dk/StandardGraphsWebServices.asmx/getListStocks?year=0."@en ;
+        dcterms:publisher    [ rdfs:label  "Raul Palma, Soumya Brahma" ;
+                               foaf:mbox   "rpalma@man.poznan.pl"
+                             ] ;
+        dcterms:subject      "fishery" , "life_sciences" , "life science" , "stock" , "norway fishery" , " " ;
+        dcterms:title        "Norway fishery stocks dataset"@en ;
+        void:sparqlEndpoint  <https://www.foodie-cloud.org/sparql> ;
+        void:triples         1270280 ;
+        foaf:homepage        <https://www.foodie-cloud.org/fct/> .

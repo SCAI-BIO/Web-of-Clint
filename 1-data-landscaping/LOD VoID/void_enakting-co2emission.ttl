@@ -1,0 +1,23 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/enakting-co2emission>
+        a                     void:Dataset ;
+        dcterms:description   "UK CO2 Emission data extracted from the spreadsheet 'Local and Regional CO2 Emissions Estimates for 2005-2007', produced by the UK's Department of Energy and Climate Change."@en ;
+        dcterms:publisher     [ rdfs:label  "Tope Omitola" ;
+                                foaf:mbox   "t.omitola@ecs.soton.ac.uk"
+                              ] ;
+        dcterms:subject       "statistics" , "lodcloud-diagram-2011-09-19" , "lodcloud-diagram-2014-08-30" , "format-rdf" , "format-xhtml" , "deref-vocab" , "published-by-third-party" , "lod" , "government" ;
+        dcterms:title         "EnAKTing CO2 Emission Dataset"@en ;
+        void:exampleResource  <http://co2emission.psi.enakting.org/def/NUTS4Area> ;
+        void:triples          2316868 ;
+        dcat:distribution     [ dcat:accessURL  <http://co2emission.psi.enakting.org/id/void> ] ;
+        foaf:homepage         <http://co2emission.psi.enakting.org/> .
+
+[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/enakting-co2emission> ;
+  void:triples  377
+] .

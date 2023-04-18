@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/jamendo-dbtune>
+        a                     void:Dataset ;
+        dcterms:description   "### Description\r\n\r\nThe package holds data from package:jamendo converted to RDF, available under the same license than the raw Jamendo data itself.\r\n\r\nThe package also holds links towards Geonames and Musicbrainz. The links are available under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 License] (subject to change).\r\n\r\nThis is part of package:dbtune."@en ;
+        dcterms:publisher     [ rdfs:label  "Yves Raimond" ;
+                                foaf:mbox   "yves@dbtune.org"
+                              ] ;
+        dcterms:subject       "ckanupload.esw.200910" , "lodcloud-diagram-2014-08-30" , "no-license-metadata" , "media" , "no-provenance-metadata" , "no-vocab-mappings" , "format-rdf" , "lodcloud-diagram-2007-05-01" , "published-by-third-party" , "lod" , "lodcloud-diagram-2011-09-19" , "dbtune" , "format-mo" , "format-foaf" , "rdf" , "no-proprietary-vocab" , "music" , "linkeddata" ;
+        dcterms:title         "DBTune.org Jamendo RDF Server"@en ;
+        void:exampleResource  <http://dbtune.org/jamendo/artist/1005> ;
+        void:sparqlEndpoint   <http://dbtune.org/jamendo/sparql/> ;
+        void:triples          1100000 ;
+        dcat:distribution     [ dcat:accessURL  <http://moustaki.org/resources/jamendo-rdf.tar.gz> ] ;
+        foaf:homepage         <http://dbtune.org/jamendo/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/jamendo-dbtune> ;
+  void:triples  289
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/zitgist-musicbrainz> , <http://lod-cloud.net/dataset/jamendo-dbtune> ;
+  void:triples  119
+] .

@@ -1,0 +1,47 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/data-hnm-hu>
+        a                     void:Dataset ;
+        dcterms:description   "Open linked data from the Hungarian National Museum. \r\nThe following datasets and subsets are available:\r\n\r\n* Collections (dataset, short  name: colls)\r\n * Bibliographic Data of the Central Library (subset, short name: colls-lib-bib)\r\n\r\nThe Bibliographic Data of the Central Library contains the entire online catalogue of the library in BIBFRAME format and provides links to external sources including: [BNF](http://data.bnf.fr), [ISNI](http://isni.org), [LC NAF](http://id.loc.gov/authorities/names.html), [VIAF](http:viaf.org) and [Wikidata](http://wikidata.org).\r\n\r\nOne of the aims of this publication is to make Hungarian librarians more familiar with BIBFRAME. In order to achieve this the BIBFRAME and the MARC descriptions are cross linked. Knowing the BIBFRAME URI of an instance:\r\n\r\n[http://data.hnm.hu/id/colls/lib/bib/Instance/MNMKVT19563](http://data.hnm.hu/id/colls/lib/bib/Instance/MNMKVT19563)\r\n\r\none can get the MARC description by appending \".opac\" to the URI:\r\n\r\n[http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.opac](http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.opac).\r\n\r\nKnowing the permalink of an OPAC record \r\n\r\n[http://link.hnm.hu/lib/bib/MNMKVT19563](http://link.hnm.hu/lib/bib/MNMKVT19563)\r\n\r\none can get the BIBRAME description in HTML format by appending .rdf to it:\r\n\r\n[http://link.hnm.hu/lib/bib/MNMKVT19563.rdf](http://link.hnm.hu/lib/bib/MNMKVT19563.rdf).\r\n\r\nOther formats can also be invoked by appending the following extensions:\r\n.rdf-ttl, .rdf-nt, .rdf-json, .rdf-jsonld, and .rdf-rdf. The .rdf-rdf extentsion gives back the rdf-xml format.\r\n\r\nClicking the BIBFRAME icon in the OPAC also leads to the BIBFRAME description.\r\n\r\nThe OPAC pages also support the link rel discovery service in order for the crawlers and other programs to find the RDF descriptions in different formats automatically.\r\n\r\nThe project was carried out in partnership with @Cult srl., Italy (MARC BIBFRAME conversion) and Monguz Ltd., Hungary (OPAC modification). We also used some parts of the ALIADA open source tool.\r\n\r\nThe @Cult MARC21 BIBFRAME conversion have the following main features:\r\n\r\n- Work recognition\r\n- Entity recognition\r\n- Name entities are linked to external datasets.\r\n\r\nThe BIBFRAME dataset will be updated periodically as BIBFRAME and the conversion evolves. "@en ;
+        dcterms:publisher     [ rdfs:label  "Hungarian National Museum" ;
+                                foaf:mbox   "adam.horvath@hnm.hu"
+                              ] ;
+        dcterms:subject       "license-metadata" , "format-rdf" , "lod" , "format-rdfs" , "format-bibframe" , "format-owl" , "no-proprietary-vocab" , "published-by-producer" ;
+        dcterms:title         "data-hnm-hu - Hungarian National Museum Datasets"@en ;
+        void:exampleResource  <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.json> , <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.nt> , <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.rdf> , <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.ttl> , <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.jsonld> ;
+        void:sparqlEndpoint   <http://data.hnm.hu/sparql> ;
+        void:triples          1993963 ;
+        dcat:distribution     [ dcat:accessURL  <http://data.hnm.hu/set/colls/void-colls.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://bibframe.org/vocab/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.hnm.hu/datadumps/colls_lib_bib_20170412000001.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.hnm.hu/set/colls/uri.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://link.hnm.hu/lib/bib/MNMKVT19563> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.opac> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.hnm.hu/set/colls/void-colls.html> ] ;
+        foaf:homepage         <http://hnm.hu> .
+
+[ void:target   <http://lod-cloud.net/dataset/http://isni.org/isni/> , <http://lod-cloud.net/dataset/data-hnm-hu> ;
+  void:triples  18675
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/data-hnm-hu> ;
+  void:triples  9329
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/data-hnm-hu> ;
+  void:triples  21512
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-bnf-fr> , <http://lod-cloud.net/dataset/data-hnm-hu> ;
+  void:triples  10333
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/library-of-congress-name-authority-file> , <http://lod-cloud.net/dataset/data-hnm-hu> ;
+  void:triples  19396
+] .

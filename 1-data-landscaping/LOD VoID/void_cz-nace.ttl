@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/cz-nace>
+        a                     void:Dataset ;
+        dcterms:description   "Czech statistical classification of economic activities in the European Community (CZ-NACE)"@en ;
+        dcterms:publisher     [ rdfs:label  "Český statistický úřad" ;
+                                foaf:mbox   "klimek@opendata.cz"
+                              ] ;
+        dcterms:subject       "czech-republic" , "czech" , "published-by-producer" , "no-proprietary-vocab" , "government" , "no-license-metadata" , "no-vocab-mappings" , "no-provenance-metadata" , "lod" ;
+        dcterms:title         "Czech statistical classification of economic activities in the European Community (CZ-NACE)"@en ;
+        void:exampleResource  <https://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttps://linked.opendata.cz/zdroje/čsú/číselníky/cz-nace/01%3E&default-graph-uri=https%3A%2F%2Flinked.opendata.cz%2Fzdroje%2Fdatov%C3%A9-sady%2F%C4%8Ds%C3%BA%2F%C4%8D%C3%ADseln%C3%ADky%2Fcz-nace&output=text%2Fturtle> ;
+        void:sparqlEndpoint   <https://linked.opendata.cz/sparql> ;
+        void:triples          7991 ;
+        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttps%3A%2F%2Flinked.opendata.cz%2Fzdroje%2Fdatov%C3%A9-sady%2F%C4%8Ds%C3%BA%2F%C4%8D%C3%ADseln%C3%ADky%2Fcz-nace%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/zdroje/čsú/číselníky/cz-nace/01> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/dump/cz-nace.trig.gz> ] ;
+        foaf:homepage         <https://linked.opendata.cz/zdroje/datové-sady/čsú/číselníky/cz-nace> .

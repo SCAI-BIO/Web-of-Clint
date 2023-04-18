@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/billion_triples_challenge_dataset_2010>
+        a                     void:Dataset ;
+        dcterms:description   "Dataset that was used for the Billion Triples Challenge 2010:\r\n\r\nSee: http://challenge.semanticweb.org/\r\n\r\nThe major part of the dataset was crawled from the Web of Linked Data during March/April 2010 based on datasets provided by Falcon-S, Sindice, Swoogle, SWSE, and Watson using the MultiCrawler/SWSE framework. We also included partial data from data.gov and data.gov.uk. \r\n\r\nThe downloaded content was parsed using the Redland toolkit with the rdfxml parser. We rewrote blank node identifiers to include the data source in order to provide unique blank nodes for each data source, and appended the data source to the output file. The data is encoded in NQuads format and split into chunks of 10m statements each. \r\n\r\nThe datasets of the Billion Triples Challenges 2008 and 2009 are also still available."@en ;
+        dcterms:publisher     [ rdfs:label  "Andreas Harth" ;
+                                foaf:mbox   "chris@bizer.de"
+                              ] ;
+        dcterms:subject       "format-rdf" , "no-proprietary-vocab" , "lod" , "format-gr" , "published-by-third-party" , "lodcloud.unconnected" , "crossdomain" , "lodcloud.nolinks" , "linkeddata" ;
+        dcterms:title         "Billion Triples Challenge Dataset 2010"@en ;
+        void:dataDump         <http://km.aifb.kit.edu/projects/btc-2010/> ;
+        void:exampleResource  <http://products.semweb.bestbuy.com/company.rdf#BusinessEntity_BestBuy> ;
+        void:triples          3200000000 ;
+        foaf:homepage         <http://km.aifb.kit.edu/projects/btc-2010/> .

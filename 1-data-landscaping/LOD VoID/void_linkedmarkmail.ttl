@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/linkedmarkmail>
+        a                     void:Dataset ;
+        dcterms:description   "LinkedMarkMail is a simple Linked Data interface for accessing the MarkMail archives."@en ;
+        dcterms:publisher     [ rdfs:label  "Sergio Fernández" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "lodcloud.unconnected" , "usergeneratedcontent" , "lodcloud.nolinks" , "license-metadata" , "user_generated" , "lod" , "published-by-third-party" , "no-proprietary-vocab" ;
+        dcterms:title         "LinkedMarkMail"@en ;
+        void:exampleResource  <http://linkedmarkmail.wikier.org/message/5wfms7w5opja4a2y> , <http://linkedmarkmail.wikier.org/thread/dcue2bsyrsgbzsd5> ;
+        void:triples          416732232 ;
+        dcat:distribution     [ dcat:accessURL  <http://linkedmarkmail.wikier.org/linkedmarkmail.rdf> ] ;
+        foaf:homepage         <http://linkedmarkmail.wikier.org/> .

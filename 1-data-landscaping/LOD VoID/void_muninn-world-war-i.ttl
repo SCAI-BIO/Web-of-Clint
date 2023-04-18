@@ -1,0 +1,50 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/Orlando> , <http://lod-cloud.net/dataset/muninn-world-war-i> ;
+  void:triples  2
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/muninn-world-war-i> ;
+  void:triples  311
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ww1lod> , <http://lod-cloud.net/dataset/muninn-world-war-i> ;
+  void:triples  973
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/muninn-world-war-i> ;
+  void:triples  1895
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ GeoNames> , <http://lod-cloud.net/dataset/muninn-world-war-i> ;
+  void:triples  32306
+] .
+
+<http://lod-cloud.net/dataset/muninn-world-war-i>
+        a                     void:Dataset ;
+        dcterms:description   "The Muninn Project is a multi-disciplinary, multi-national, academic research project investigating millions of records pertaining to the First World War in archives around the world."@en ;
+        dcterms:publisher     [ rdfs:label  "Rob Warren" ;
+                                foaf:mbox   "warren@muninn-project.org"
+                              ] ;
+        dcterms:subject       "deref-vocab" , "format-rdf" , "format-cc" , "format-owl" , "void-sparql-endpoint" , "format-skos" , "access-bulk" , "format-foaf" , "format-dbpedia" , "access-api" , "format-time" , "format-dcterms" , "format-doap" , "format-prov" , "crossdomain" , "vocab-mappings" , "format-mil" , "format-dc" , "llod" , "search" , "format-naval" , "rdf" , "provenance-metadata" , "cross_domain" , "license-metadata" , "lod" , "access-www" , "format-void" , "published-by-producer" , "lodcloud-diagram-2014-08-30" , "format-rdfs" , "format-graves" ;
+        dcterms:title         "Muninn World War I"@en ;
+        void:dataDump         <http://rdf.muninn-project.org/Downloads/muninn-Dump-Latest.nq> ;
+        void:exampleResource  <http://rdf.muninn-project.org/modern/2011/11/11/Cenotaph/ca12581df8bc9fc3c1535de9daa1814a> ;
+        void:sparqlEndpoint   <http://rdf.muninn-project.org/sparql> ;
+        void:triples          38927740 ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Muninn.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Downloads/muninn-ontologies-latest.tar.bz2> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Downloads/muninn-Dump-Latest.n3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Downloads/muninn-ontologies-latest.tar.bz2> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Downloads> ] ;
+        foaf:homepage         <rdf.muninn-project.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/LCSH> , <http://lod-cloud.net/dataset/muninn-world-war-i> ;
+  void:triples  10
+] .

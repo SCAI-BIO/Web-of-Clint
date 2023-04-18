@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/greek-administrative-geography> ;
+  void:triples  120
+] .
+
+<http://lod-cloud.net/dataset/greek-administrative-geography>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "non-deref-vocab" , "geographic" , "format-owl" , "lodcloud-diagram-2014-08-30" , "format-rdf" , "format-foaf" , "crawledLinkedDataCloud2014" , "LinkedDataCrawl2014" , "format-rdfs" , "geography" ;
+        dcterms:title         "greek-administrative-geography"@en ;
+        void:exampleResource  <http://geo.linkedopendata.gr/gag/data/id/923604> ;
+        void:triples          "0"^^xsd:int .

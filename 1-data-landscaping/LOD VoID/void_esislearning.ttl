@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/esislearning>
+        a                    void:Dataset ;
+        dcterms:description  "Esis is an institute university of democratic republic of congo."@en ;
+        dcterms:publisher    [ rdfs:label  "Bradaus Jean-Luc" ;
+                               foaf:mbox   "jluc13112@gmail.com"
+                             ] ;
+        dcterms:subject      "user_generated" ;
+        dcterms:title        "Dataset Esis"@en ;
+        void:dataDump        <http://www.esisalama.org> ;
+        void:triples         "0"^^xsd:int ;
+        foaf:homepage        <http://www.esisalama.org> .

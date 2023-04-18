@@ -1,0 +1,20 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/ufo>
+        a                     void:Dataset ;
+        dcterms:description   "This dataset contains Unified Foundational Ontology (UFO), a top-level ontology biased towards conceptual modeling support.  The ontology is represented in OWL."@en ;
+        dcterms:publisher     [ rdfs:label  "Petr Křemen" ;
+                                foaf:mbox   "petr.kremen@fel.cvut.cz"
+                              ] ;
+        dcterms:subject       "OntoUML" , "UFO" , "Unified Foundational Ontology" , "cross_domain" ;
+        dcterms:title         "Unified Foundational Ontology"@en ;
+        void:dataDump         <http://onto.fel.cvut.cz/ontologies/ufo> ;
+        void:exampleResource  <http://onto.fel.cvut.cz/ontologies/ufo/kind> ;
+        void:sparqlEndpoint   <http://onto.fel.cvut.cz/rdf4j-server/repositories/ufo-current> ;
+        void:triples          1000 ;
+        foaf:homepage         <http://onto.fel.cvut.cz/ontologies/ufo/current/index-en.html> .

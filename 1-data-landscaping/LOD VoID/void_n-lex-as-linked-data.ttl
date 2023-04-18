@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/n-lex-as-linked-data> ;
+  void:triples  2
+] .
+
+<http://lod-cloud.net/dataset/n-lex-as-linked-data>
+        a                    void:Dataset ;
+        dcterms:description  "The original N-LEX is a portal developed by the EU publications office and EU governments. It offers a unified search form to national legislation databases, a multilingual dictionary (EUROVOC) as well as a context-sensitive help. The project started with 4 national databases and has grown to 23 databases today.\r\nBesides the unified search form (which is not very useful for extraction purposes), the website also contains links to the respective national websites of the databases. All national databases offer a non-standardized access to their data, which in all cases is HTML or worse (e.g. PDF documents). Given the fact, that there are also no dumps of raw data (e.g. CSV) available, there is no unified N-LEX dataset that can be converted and published as Linked Data. Rather each countries legislation database has to be treated as an autonomous dataset. Thus we have chosen one country, namely Germany and converted this database into Linked Data via scraping."@en ;
+        dcterms:publisher    [ rdfs:label  "Philipp Frischmuth" ;
+                               foaf:mbox   "frischmuth@informatik.uni-leipzig.de"
+                             ] ;
+        dcterms:subject      "latc" , "legal" , "government" , "lod" ;
+        dcterms:title        "N-Lex as Linked Data"@en ;
+        void:sparqlEndpoint  <http://n-lex.publicdata.eu/sparql> ;
+        void:triples         1792054 ;
+        dcat:distribution    [ dcat:accessURL  <http://n-lex.publicdata.eu/resource/export/f/rdfxml?r=http%3A%2F%2Fn-lex.publicdata.eu%2Fgermany%2Fid%2FBJNR036900005> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://n-lex.publicdata.eu/germany/id/BJNR036900005> ] ;
+        foaf:homepage        <http://n-lex.publicdata.eu/> .

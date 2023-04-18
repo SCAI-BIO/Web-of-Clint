@@ -1,0 +1,25 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/omwn-slv>
+        a                    void:Dataset ;
+        dcterms:description  "The sloWNet wordnet as published as part of the Open Multilingual WordNet. The goal of Open Multilingual WordNet is to make it easy to use wordnets in multiple languages. The individual wordnets have been made by many different projects and vary greatly in size and accuracy. We have (i) extracted and normalized the data, (ii) linked it to Princeton WordNet 3.0 and (iii) put it in one place. The Open Multilingual Wordnet and its components are open: they can be freely used, modified, and shared by anyone for any purpose. "@en ;
+        dcterms:publisher    [ rdfs:label  "Francis Bond" ;
+                               foaf:mbox   "bond@ieee.org"
+                             ] ;
+        dcterms:subject      "linguistics" , "wordnet" , "lemon" , "lexicon" ;
+        dcterms:title        "sloWNet WordNet (as part of Open Multilingual WordNet)"@en ;
+        void:dataDump        <http://compling.hss.ntu.edu.sg/omw/wns/slv+xml.zip> ;
+        void:sparqlEndpoint  <http://omwn.linguistic-lod.org/sparql/> ;
+        void:triples         414557 ;
+        dcat:distribution    [ dcat:accessURL  <http://compling.hss.ntu.edu.sg/omw/wns/slv/citation.bib> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://compling.hss.ntu.edu.sg/omw/wns/slv.zip> ] ;
+        foaf:homepage        <http://compling.hss.ntu.edu.sg/omw/> .
+
+[ void:target   <http://lod-cloud.net/dataset/wordnet-rdf> , <http://lod-cloud.net/dataset/omwn-slv> ;
+  void:triples  70947
+] .

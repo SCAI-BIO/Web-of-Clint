@@ -1,0 +1,21 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/opendatascotland-simd-education-rank>
+        a                     void:Dataset ;
+        dcterms:description   ""@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "crawledLinkedDataCloud2014" , "dump" , "lodcloud-diagram-2014-08-30" , "format-cube" , "sparql" , "license-metadata" , "format-rdf" , "government" , "format-dcterm" , "format-dcat" , "provenance-metadata" , "format-rdfs" , "dataset-level-metadata" , "LinkedDataCrawl2014" , "format-void" ;
+        dcterms:title         "opendatascotland-simd-education-rank"@en ;
+        void:exampleResource  <http://data.opendatascotland.org/data/simd/education-rank/2012/S01000957> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatascotland-simd-education-rank> ;
+  void:triples  1
+] .

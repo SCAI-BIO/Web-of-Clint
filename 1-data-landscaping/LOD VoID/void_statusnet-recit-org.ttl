@@ -1,0 +1,37 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/statusnet-recit-org>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://recit.org"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-sioc" , "format-rdfs" , "crawledLinkedDataCloud2014" , "social web" , "format-foaf" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "format-bio" , "LinkedDataCrawl2014" ;
+        dcterms:title         "statusnet-recit-org"@en ;
+        void:exampleResource  <http://recit.org/endirect/invite14ddl/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-recit-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-recit-org> ;
+  void:triples  3
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-recit-org> ;
+  void:triples  31
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-keuser-fr> , <http://lod-cloud.net/dataset/statusnet-recit-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-scoffoni-net> , <http://lod-cloud.net/dataset/statusnet-recit-org> ;
+  void:triples  4
+] .

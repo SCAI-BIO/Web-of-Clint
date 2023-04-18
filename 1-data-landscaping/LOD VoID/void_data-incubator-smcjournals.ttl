@@ -1,0 +1,36 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/data-incubator-smcjournals>
+        a                     void:Dataset ;
+        dcterms:description   " This is a Linked Data representation of a digital archive of 'Scottish Mountaineering Club Journal Issues 1 to 36, 1890-1901', which was created by Alan Dawson, Centre for Digital Library Research, University of Strathclyde, with funding from the Scottish Mountaineering Trust.\r\n  The Linked Data representation currently covers the relationships between places, people, journal issues and articles gathered from the Cumulative Indexes of Authors, Hills, People and Articles.\r\n  \r\n  TODO:\r\n    \r\n  (from the Cumulative Indexes)\r\n  Events\r\n  Illustrations\r\n  Reviews\r\n  Topics  \r\n\r\n  And:\r\n\r\n  \"The SMC in 1894: Rules, officers, members\" (http://gdl.cdlr.strath.ac.uk/smcj/smc1894.htm)\r\n\r\n"@en ;
+        dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
+                                foaf:mbox   "keithalexander@keithalexander.co.uk"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2011-09-19" , "geographic" , "climbing" , "sport" , "format-geovocab" , "format-bib" , "mountaineering" , "provenance-metadata" , "no-proprietary-vocab" , "format-foaf" , "lld" , "format-rdf" , "19thcentury" , "lod" , "published-by-third-party" , "license-metadata" , "club" , "journals" ;
+        dcterms:title         "Scottish Mountaineering Council Journals Issues 1-36"@en ;
+        void:exampleResource  <http://smcjournals.dataincubator.org/hills/A'cailliach> , <http://smcjournals.dataincubator.org/hills/A'cailliach.rdf> ;
+        void:sparqlEndpoint   <http://api.talis.com/stores/smcjournals/services/sparql> ;
+        void:triples          15801 ;
+        dcat:distribution     [ dcat:accessURL  <http://smcjournals.dataincubator.org/> ] ;
+        foaf:homepage         <http://smcjournals.dataincubator.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-incubator-smcjournals> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/data-incubator-smcjournals> ;
+  void:triples  10
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/data-incubator-smcjournals> ;
+  void:triples  11
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/data-incubator-climb> , <http://lod-cloud.net/dataset/data-incubator-smcjournals> ;
+  void:triples  123
+] .

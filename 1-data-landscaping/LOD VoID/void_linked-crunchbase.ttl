@@ -1,0 +1,22 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linked-crunchbase> ;
+  void:triples  16706
+] .
+
+<http://lod-cloud.net/dataset/linked-crunchbase>
+        a                     void:Dataset ;
+        dcterms:description   "A CrunchBase wrapper to Linked Data"@en ;
+        dcterms:publisher     [ rdfs:label  "Andreas Harth" ;
+                                foaf:mbox   "andreas@harth.org"
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "lod" , "format-rdf" , "lodcloud-diagram-2011-09-19" , "usergeneratedcontent" , "crunchbase" , "wrapper" , "no-proprietary-vocab" , "published-by-third-party" ;
+        dcterms:title         "Linked Crunchbase"@en ;
+        void:exampleResource  <http://km.aifb.kit.edu/services/crunchbase/api/company/facebook#id> , <http://km.aifb.kit.edu/services/crunchbase/api/company/ibm#id> , <lhttp://km.aifb.kit.edu/services/crunchbase/api/person/sheryl-sandberg#id> ;
+        void:triples          5000000 ;
+        foaf:homepage         <http://km.aifb.kit.edu/services/crunchbase/api/> .

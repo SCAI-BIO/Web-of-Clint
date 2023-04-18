@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/lemonuby> , <http://lod-cloud.net/dataset/germlex> ;
+  void:triples  773
+] .
+
+<http://lod-cloud.net/dataset/germlex>
+        a                    void:Dataset ;
+        dcterms:description  "Lexical resources (word lists, etymological dictionaries) for Germanic languages in different historical stages:\r\n\r\npre 1100 (incl. Gothic, Old High German, Old English), \r\n1100-1600 (incl. Middle English, Middle Dutch, Early Modern High German), post 1600 (Modern English, Modern High German).\r\n\r\nIncludes links to Wiktionary and lexvo.\r\n\r\nWe are currently negotiating with the original author to publish our RDF version of the Old Germanic Etymological Dictionaries from http://www.koeblergerhard.de/wikiling/.\r\n\r\nThe full data set comprises the following components:\r\n\r\na) RDF version of Gerhard Köbler's Old Germanic dictionaries, incl. links to lemonUby (Wiktionary) and lexvo [not included yet]\r\n\r\nb) bilingual word lists generated from historical Germanic bible translations using the GIZA++ translation tables, 349021 triples, incl. links to lemonUby (Wiktionary, 773) and lexvo (34824)\r\n\r\nc) bilingual word lists generated from historical Germanic bible translations using diagnostic context pairs (i.e., verses overlapping in exactly one word), inkl. links to lexvo"@en ;
+        dcterms:publisher    [ rdfs:label  "Christian Chiarcos" ;
+                               foaf:mbox   "christian.chiarcos@web.de"
+                             ] ;
+        dcterms:subject      "ldl-2014" , "English" , "lod" , "lexical-resources" , "German" , "Dutch" , "germanic" , "Gothic" , "lexicon" , "etymology" , "llod" , "linguistics" ;
+        dcterms:title        "Linked Old Germanic Dictionaries"@en ;
+        void:triples         349021 ;
+        dcat:distribution    [ dcat:accessURL  <http://www.acoli.informatik.uni-frankfurt.de/resources/germlex/all-2014-04-01.zip> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.acoli.informatik.uni-frankfurt.de/resources/germlex/> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/germlex> ;
+  void:triples  34824
+] .

@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/openlinksw-dataspaces>
+        a                     void:Dataset ;
+        dcterms:description   "Open Dataspaces hosted at openlinksw.com"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "format-sd" , "format-rdf" , "format-gr" , "format-sioc" , "user_generated" , "format-tsioc" , "format-rdfs" , "LinkedDataCrawl2014" , "dataset-level-metadata" , "sparql" , "crawledLinkedDataCloud2014" , "format-dcterm" , "format-void" , "format-owl" , "non-deref-vocab" , "format-foaf" , "usergeneratedcontent" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:title         "openlinksw dataspaces"@en ;
+        void:exampleResource  <http://www.openlinksw.com/dataspace/person/kidehen@openlinksw.com#this> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/datahub> , <http://lod-cloud.net/dataset/openlinksw-dataspaces> ;
+  void:triples  16
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/openlinksw-dataspaces> ;
+  void:triples  79
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/w3c> , <http://lod-cloud.net/dataset/openlinksw-dataspaces> ;
+  void:triples  765
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/openlinksw-dataspaces> ;
+  void:triples  4
+] .

@@ -1,0 +1,33 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-20100-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-20100-org> ;
+  void:triples  1
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-belfalas-org> , <http://lod-cloud.net/dataset/statusnet-20100-org> ;
+  void:triples  4
+] .
+
+<http://lod-cloud.net/dataset/statusnet-20100-org>
+        a                     void:Dataset ;
+        dcterms:description   "StatusNet instance hosted at http://20100.org"@en ;
+        dcterms:publisher     [ rdfs:label  "" ;
+                                foaf:mbox   ""
+                              ] ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "format-foaf" , "LinkedDataCrawl2014" , "format-sioc" , "social web" , "format-rdf" , "format-bio" , "format-pos" , "crawledLinkedDataCloud2014" ;
+        dcterms:title         "statusnet-20100-org"@en ;
+        void:exampleResource  <http://statusnet.20100.org/masaru20100/foaf> ;
+        void:triples          "0"^^xsd:int .
+
+[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-20100-org> ;
+  void:triples  4
+] .

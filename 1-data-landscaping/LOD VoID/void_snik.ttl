@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/snik>
+        a                     void:Dataset ;
+        dcterms:description   "SNIK, the Semantic Network of Information Management in Hospitals, describes hospital information system management from a functional point of view: Who performs which function and which information is needed or updated by this function?\n\nLicensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International."@en ;
+        dcterms:publisher     [ rdfs:label  "Konrad Höffner" ;
+                                foaf:mbox   "konrad.hoeffner@uni-leipzig.de"
+                              ] ;
+        dcterms:subject       "Health Information Management" , "life_sciences" , "Hospital Information System" ;
+        dcterms:title         "SNIK"@en ;
+        void:dataDump         <https://github.com/snikproject/ontology/archive/refs/heads/master.zip> ;
+        void:exampleResource  <https://www.snik.eu/ontology/bb/ChiefExecutiveOfficer> ;
+        void:sparqlEndpoint   <https://www.snik.eu/sparql> ;
+        void:triples          81499 ;
+        foaf:homepage         <https://www.snik.eu> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/snik> ;
+  void:triples  579
+] .

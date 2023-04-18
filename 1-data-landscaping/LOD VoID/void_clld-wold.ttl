@@ -1,0 +1,31 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/clld-wold> ;
+  void:triples  229
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/clld-glottolog> , <http://lod-cloud.net/dataset/clld-wold> ;
+  void:triples  223
+] .
+
+<http://lod-cloud.net/dataset/clld-wold>
+        a                    void:Dataset ;
+        dcterms:description  "WOLD published by the CLLD project"@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "llod" , "lod" , "linguistics" ;
+        dcterms:title        "CLLD-WOLD"@en ;
+        void:triples         1764648 ;
+        dcat:distribution    [ dcat:accessURL  <http://wold.clld.org/void.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://wold.clld.org/static/download/wold-dataset.n3.gz> ] ;
+        foaf:homepage        <http://wold.clld.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/clld-wold> ;
+  void:triples  229
+] .

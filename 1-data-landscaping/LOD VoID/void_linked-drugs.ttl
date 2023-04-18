@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/fu-berlin-drugbank> , <http://lod-cloud.net/dataset/linked-drugs> ;
+  void:triples  146724
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linked-drugs> ;
+  void:triples  131818
+] .
+
+<http://lod-cloud.net/dataset/linked-drugs>
+        a                    void:Dataset ;
+        dcterms:description  "The **LinkedDrugs** dataset with drug product data from different countries. \r\n\r\nThe current version of the dataset (version 2.1) holds data from twenty-three countries: Austria, Azerbaijan, Costa Rica, Cyprus, Egypt, Estonia, Ireland, Macedonia, Malta, Netherlands, New Zealand, Nigeria, Norway, Romania, Russia, Serbia, Slovakia, Slovenia, South African Republic, Spain, Uganda, Ukraine and USA.\r\n\r\nThe dataset is available via the SPARQL endpoint at http://linkeddata.finki.ukim.mk/sparql, in a named RDF graph: \"http://linkeddata.finki.ukim.mk/lod/data/drugs#\".\r\n\r\nThe current version of the dataset (version 2.1) contains 99,235,032 RDF triples for 248,746 drug products and is available for download as a dump in Turtle format.\r\n\r\n### Usage Scenarios (examples)\r\n\r\n#### User-centered Scenarios\r\n* [Get all available details for a specific drug product](http://seminant.com/queries/5816681573656d19eb929700)\r\n* [Get details for all related drug products from the dataset for a specific drug product](http://seminant.com/queries/58166adf73656d19eb989700)\r\n* [Get details for all related drugs from LOD for a specific drug product](http://seminant.com/queries/58166c8273656d19eb019900)\r\n#### Analytical Scenarios\r\n* [Get number of drug products per ATC category (level 3), per country](http://seminant.com/queries/58166d1f73656d19eb059900)\r\n* [Get average drug product price per ATC category (level 3), per country](http://seminant.com/queries/58166e4473656d19eb0ca900)\r\n\r\n### More Details\r\n* Project page: http://drugs.linkeddata.finki.ukim.mk/\r\n* Journal paper: https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0111-z\r\n* Example project using the LinkedDrugs dataset: http://godd.finki.ukim.mk/"@en ;
+        dcterms:publisher    [ rdfs:label  "Milos Jovanovik" ;
+                               foaf:mbox   "milos.jovanovik@gmail.com"
+                             ] ;
+        dcterms:subject      "drugs" , "no-proprietary-vocab" , "Serbia" , "loddw" , "Azerbaijan" , "healthcare" , "Slovenia" , "Ukraine" , "New Zealand" , "lifesciences" , "Nigeria" , "Slovakia" , "Russia" , "Romania" , "Macedonia" , "Cyprus" , "Malta" , "South African Republic" , "Egypt" , "Costa Rica" , "linkeddrugs" , "Norway" , "Uganda" , "lod" , "USA" , "Ireland" , "Spain" , "Netherlands" , "Estonia" ;
+        dcterms:title        "LinkedDrugs: Linked Drug Product Data on a Global Scale"@en ;
+        void:sparqlEndpoint  <http://linkeddata.finki.ukim.mk/sparql> ;
+        void:triples         99235032 ;
+        dcat:distribution    [ dcat:accessURL  <https://1drv.ms/u/s!Am4lzx3beiYMp0F9VdJ7yAnOXwVb> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://1drv.ms/u/s!Am4lzx3beiYMp0DMiO0LVOCo2FTC> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://1drv.ms/u/s!Am4lzx3beiYMpz_JWQtqjfGFm3kE> ] .

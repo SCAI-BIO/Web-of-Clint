@@ -1,0 +1,39 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/fao-geopolitical-ontology> , <http://lod-cloud.net/dataset/eea-vocabularies> ;
+  void:triples  50
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/eea-vocabularies> ;
+  void:triples  54
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/eea-vocabularies> ;
+  void:triples  114
+] .
+
+<http://lod-cloud.net/dataset/eea-vocabularies>
+        a                    void:Dataset ;
+        dcterms:description  "Superseded by dataset:eionet-rdf\r\n\r\nVocabularies used by EEA Linked Data: countries, biogeographical regions, DPSIR codes, languages.\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "Søren Roug" ;
+                               foaf:mbox   "soren.roug@eea.europa.eu"
+                             ] ;
+        dcterms:subject      "lod" , "published-by-producer" , "geography" , "eu" , "countries" ;
+        dcterms:title        "EEA Vocabularies"@en ;
+        void:sparqlEndpoint  <http://cr.eionet.europa.eu/sparql> ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <http://rdfdata.eionet.europa.eu/eea/data_dump.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rdfdata.eionet.europa.eu/eea/countries/AT> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/eea-rod> , <http://lod-cloud.net/dataset/eea-vocabularies> ;
+  void:triples  54
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eurostat-rdf> , <http://lod-cloud.net/dataset/eea-vocabularies> ;
+  void:triples  92
+] .

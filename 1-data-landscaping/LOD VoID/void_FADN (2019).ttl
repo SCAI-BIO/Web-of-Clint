@@ -1,0 +1,26 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/data-gov-uk-time-intervals> , <http://lod-cloud.net/dataset/FADN+%282019%29> ;
+  void:triples  4592
+] .
+
+<http://lod-cloud.net/dataset/FADN+%282019%29>
+        a                    void:Dataset ;
+        dcterms:description  "FADN is an instrument for evaluating the income of agricultural holdings and the impacts of the Common Agricultural Policy. FADN consists of an annual survey carried out by the Member States of the European Union. The services responsible in the Union for the operation of the FADN collect every year accountancy data from a sample of the agricultural holdings in the European Union. Derived from national surveys, the FADN is the only source of microeconomic data that is harmonised, i.e. the bookkeeping principles are the same in all countries. Input data for this dataset was in the form of CSV files, which were first modeled and aligned by using ontologies like Data Cube Vocabulary and its SDMX ISO extensions. The source files can be downloaded from https://ec.europa.eu/agriculture/rica/database/consult_std_reports_en.cfm"@en ;
+        dcterms:publisher    [ rdfs:label  "Raul Palma, Soumya Brahma" ;
+                               foaf:mbox   "rpalma@man.poznan.pl"
+                             ] ;
+        dcterms:subject      "statistics" , "government" , "Farm Accountancy" , "Farm Management" ;
+        dcterms:title        "Farm Accountancy Data Network (FADN) linked dataset from 2019 @PSNC"@en ;
+        void:sparqlEndpoint  <https://www.foodie-cloud.org/sparql> ;
+        void:triples         25640703 ;
+        foaf:homepage        <https://www.foodie-cloud.org/fct/> .
+
+[ void:target   <http://lod-cloud.net/dataset/nuts-geovocab> , <http://lod-cloud.net/dataset/FADN+%282019%29> ;
+  void:triples  202835
+] .

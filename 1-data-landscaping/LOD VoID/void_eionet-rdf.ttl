@@ -1,0 +1,59 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/eionet-rdf> ;
+  void:triples  432
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/fao-geopolitical-ontology> , <http://lod-cloud.net/dataset/eionet-rdf> ;
+  void:triples  52
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/telegraphis> , <http://lod-cloud.net/dataset/eionet-rdf> ;
+  void:triples  67
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/eionet-rdf> ;
+  void:triples  96
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/eionet-rdf> ;
+  void:triples  44
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eea-rod> , <http://lod-cloud.net/dataset/eionet-rdf> ;
+  void:triples  92
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eunis> , <http://lod-cloud.net/dataset/eionet-rdf> ;
+  void:triples  2751
+] .
+
+<http://lod-cloud.net/dataset/eionet-rdf>
+        a                    void:Dataset ;
+        dcterms:description  "Various data sets in RDF format collected by the [European Environment Agency](http://www.eea.europa.eu/) as part of the [European Environment Information and Observation Network](http://eionet.europa.eu/) (EIONET).\r\n\r\nAn overview of available datasets can be obtained from the [VoID file](http://rdfdata.eionet.europa.eu/void.rdf)."@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "europe" , "eea" , "lodcloud-diagram-2014-08-30" , "eionet" , "lod" , "environment" , "format-rdf" , "government" , "published-by-producer" ;
+        dcterms:title        "EIONET RDF Data"@en ;
+        void:triples         26729925 ;
+        dcat:distribution    [ dcat:accessURL  <http://rdfdata.eionet.europa.eu/void.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://semantic.eea.europa.eu/sparql> ] ;
+        foaf:homepage        <http://rdfdata.eionet.europa.eu/> .
+
+[ void:target   <http://lod-cloud.net/dataset/eurostat-rdf> , <http://lod-cloud.net/dataset/eionet-rdf> ;
+  void:triples  76
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/eurostat-linked-data> , <http://lod-cloud.net/dataset/eionet-rdf> ;
+  void:triples  2792
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/iso-639-oasis> , <http://lod-cloud.net/dataset/eionet-rdf> ;
+  void:triples  44
+] .

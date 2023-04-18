@@ -1,0 +1,27 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia-de> , <http://lod-cloud.net/dataset/isil-dbpedia> ;
+  void:triples  1305
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/isil-dbpedia> ;
+  void:triples  4018
+] .
+
+<http://lod-cloud.net/dataset/isil-dbpedia>
+        a                    void:Dataset ;
+        dcterms:description  "This package contains BEACON files linking [http://lobid.org/organisation] (ISIL-URIs) to  international DBpedia and German DBpedia. An ISIL is an \"International Standard Identifier for Libraries and Related Organisations\".\r\nThe BEACON was constructed using the [file which automatically extracts the ISIL in the wikipdia infobox](http://ws.gbv.de/wpextract/dewiki-isil.beacon) and some more relations computated through simple pattern matching of the name of the institution and some further heuristics, see https://gist.github.com/2910449 . \r\n\r\n"@en ;
+        dcterms:publisher    [ rdfs:label  "pascal christoph" ;
+                               foaf:mbox   "christoph by hbz-nrw.de"
+                             ] ;
+        dcterms:subject      "organizations" , "library" , "wikipedia" , "organisations" , "dbpedia" , "publications" ;
+        dcterms:title        "ISIL->DBpedia"@en ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <http://lobid.org/download/dumps/DE-605/enrich/isil-dbpedia.beacon> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://lobid.org/download/dumps/DE-605/enrich/isil-de.dbpedia.beacon> ] ;
+        foaf:homepage        <http://lobid.org/organisation> .

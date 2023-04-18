@@ -1,0 +1,30 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/babelnet> , <http://lod-cloud.net/dataset/apertium-rdf-es-ca> ;
+  void:triples  35152
+] .
+
+<http://lod-cloud.net/dataset/apertium-rdf-es-ca>
+        a                    void:Dataset ;
+        dcterms:description  "RDF version of the Apertium bilingual dictionary ES-CA. The original dataset (in LMF) comes from http://hdl.handle.net/10230/17127 . The RDF version of the lexica is modelled using lemon (http://lemon-model.net/) and the translation module (http://purl.org/net/translation). More about the Apertium RDF dictionaries at http://linguistic.linkeddata.es/apertium/"@en ;
+        dcterms:publisher    [ rdfs:label  " Universitat d'Alacant. Grup Transducens ; Universitat Pompeu Fabra. Institut Universitari de Lingüística Aplicada (IULA)" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "Catalán" , "Español" , "lod" , "lemon" , "Catalan" , "dictionary" , "es-ca" , "llod" , "Spanish" , "multilingual" , "bilingual" , "apertium" , "rdf" , "lexicon" , "translation" , "linguistic LOD" , "linguistics" ;
+        dcterms:title        "Apertium RDF ES-CA"@en ;
+        void:triples         730501 ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/144f420d-7d7a-436a-8522-86c3a2f9d7d1/resource/0e312c8d-4cb8-4027-8da7-b2922ce85563/download/apertium-es-ca-rdf.zip> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconCA> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/sparql/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/tranSetES-CA> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/144f420d-7d7a-436a-8522-86c3a2f9d7d1/resource/6e82a312-e3fe-45cf-bb66-49eabea14cf0/download/apertium-es-ca_dataset_metadata.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconES> ] .
+
+[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/apertium-rdf-es-ca> ;
+  void:triples  59655
+] .

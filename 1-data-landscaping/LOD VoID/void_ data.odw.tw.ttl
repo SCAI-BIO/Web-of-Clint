@@ -1,0 +1,18 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/+data.odw.tw>
+        a                    void:Dataset ;
+        dcterms:description  "A Taiwan Linked Data Platform build by the Institute of Information Science, Academia Sinica. The LOD site using CKAN (The Comprehensive Knowledge Archive Network) to curate more than 840,000 semantically enriched catalogue records (CC0 licensed) across multiple subject areas. Two types of linked data resources are generated: one type is simply described by Dublin Core’s 15 elements (DC Version), and the other type is enriched by W3C recommendations (csvw, dcat, org, prov, skos, time), general upper vocabularies (cc, dc, dct, event, foaf, r4r, and schema.org) as well as domain vocabularies (aat, dwc, geo, gn and txn). Datasets are further linked to external knowledge bases including Wikidata, GeoNames, and Encyclopedia of Life(EOL)."@en ;
+        dcterms:publisher    [ rdfs:label  "Andrea Wei-Ching Huang" ;
+                               foaf:mbox   "andreahg@iis.sinica.edu.tw"
+                             ] ;
+        dcterms:subject      "LODLAM" , "LOD" , "CKAN" , "Cultural Heritage" , "social_networking" , "Linked Open Data" , "Provenance" , "Taiwan" , "Semantic Representation" , "Semantic Web" , "Data Quality" , "Knowledge Base" , "Data Reuse" , "Ontology" ;
+        dcterms:title        "Open Data Web"@en ;
+        void:sparqlEndpoint  <http://data.odw.tw/sparql> , <http://sparql.odw.tw/> ;
+        void:triples         70719704 ;
+        foaf:homepage        <http://data.odw.tw/> .

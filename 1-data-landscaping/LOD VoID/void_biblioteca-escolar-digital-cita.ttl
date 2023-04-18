@@ -1,0 +1,40 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/didactalia> , <http://lod-cloud.net/dataset/biblioteca-escolar-digital-cita> ;
+  void:triples  30000
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/biblioteca-escolar-digital-cita> ;
+  void:triples  12355
+] .
+
+<http://lod-cloud.net/dataset/biblioteca-escolar-digital-cita>
+        a                     void:Dataset ;
+        dcterms:description   "<p>\r\n<a href=\"http://bibliotecaescolardigital.es\">Biblioteca Escolar Digital</a> is an educational tool for teachers, students, parents, educators and researchers in the world of education created by the <a href=\"http://cita.fundaciongsr.com/\">Centro Internacional de Tecnologías Avanzadas (CITA)</a> of the foundation in Peñaranda de Bracamonte (Salamanca, España).\r\n</p>\r\n<p>\r\nThe Biblioteca Escolar Digital’s repository works with <a href=\"http://products.gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. The project includes a faceted-based search engine and enriched contexts. Both are developments by GNOSS.\r\n</p>\r\n\r\n<p>\r\nLa <a href=\"http://bibliotecaescolardigital.es\">Biblioteca Escolar Digital</a> es una herramienta didáctica para profesores, alumnos, padres, pedagogos e investigadores del mundo de la educación creada por el <a href=\"http://cita.fundaciongsr.com/\">Centro Internacional de Tecnologías Avanzadas (CITA)</a> de la Fundación en Peñaranda de Bracamonte (Salamanca, España).\r\n</p>\r\n<p>\r\nEl repositorio trabaja con <a href=\"http://products.gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. El proyecto incluye un buscador facetado y contextos enriquecidos.\r\n</p>"@en ;
+        dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
+                                foaf:mbox   "gnoss@gnoss.com"
+                              ] ;
+        dcterms:subject       "sioc" , "language-spa" , "spain" , "padres" , "format-dcam" , "provenance-metadata" , "lod" , "format-wot" , "no-proprietary-vocab" , "format-skos" , "alumnos" , "corporate excellence" , "country.es" , "dc" , "wrapper" , "format-foaf" , "gnoss" , "socialweb" , "user_generated" , "foaf" , "no-vocab-mappings" , "pedagogos" , "schemata" , "CITA" , "profesores" , "usergeneratedcontent" , "format-sioc" , "published-by-third-party" , "Centro Internacional de Tecnologías Avanzadas" , "recursos educativos" , "Biblioteca Escolar Digital" , "laboratorio de ideas" , "format-dc" , "skos" , "format-rdfg" , "license-metadata" , "country-spain" ;
+        dcterms:title         "Biblioteca Escolar Digital CITA"@en ;
+        void:exampleResource  <http://bibliotecaescolardigital.es/comunidad/BibliotecaEscolarDigital/recurso/las-funciones-cerebrales-superiores/f37772c7-cdcb-400a-aba4-53f5091152bf?rdf> , <http://bibliotecaescolardigital.es/comunidad/BibliotecaEscolarDigital/busqueda?search=caracol%20serafin> , <http://red.gnoss.com/en/community/Biblioteca-Escolar-Digital/advanced-search/tag/clase?rdf> ;
+        void:triples          930765 ;
+        dcat:distribution     [ dcat:accessURL  <http://red.gnoss.com/voidCITA.n3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://gnoss.com/gnoss.owl> ] ;
+        foaf:homepage         <http://red.gnoss.com/comunidad/Biblioteca-Escolar-Digital> .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/biblioteca-escolar-digital-cita> ;
+  void:triples  96
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/biblioteca-escolar-digital-cita> ;
+  void:triples  4367
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/biblioteca-escolar-digital-cita> ;
+  void:triples  4148
+] .

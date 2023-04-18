@@ -1,0 +1,94 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mgi> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  12869
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-hprd> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  12915
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-hp> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  4835
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  121566
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ordr> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  2954
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-dbsnp> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  8501
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-img> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  45
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-icd9> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  820
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  15738
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-do> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  902
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-icd10> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  1022
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-umls> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  29602
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-orphanet> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  7026
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-snomedct> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  4833
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-gi> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  576766
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  95397
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/bio2rdf-eom> , <http://lod-cloud.net/dataset/bio2rdf-omim> ;
+  void:triples  45
+] .
+
+<http://lod-cloud.net/dataset/bio2rdf-omim>
+        a                     void:Dataset ;
+        dcterms:description   "OMIM is a comprehensive, authoritative, and timely compendium of human genes and genetic phenotypes. The full-text, referenced overviews in OMIM contain information on all known mendelian disorders and over 12,000 genes. OMIM focuses on the relationship between phenotype and genotype."@en ;
+        dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
+                                foaf:mbox   "bio2rdf@googlegroups.com"
+                              ] ;
+        dcterms:subject       "bio2rdf" , "life_sciences" , "format-dc" , "license-metadata" , "lodcloud-diagram-2011-09-19" , "vocab-mappings" , "format-rdf" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "format-rdfs" , "lifesciences" , "lod" , "deref-vocab" , "published-by-third-party" ;
+        dcterms:title         "Bio2RDF::Omim"@en ;
+        void:dataDump         <http://download.bio2rdf.org/current/omim/omim.nq.gz> ;
+        void:exampleResource  <http://bio2rdf.org/omim:603903> ;
+        void:sparqlEndpoint   <http://omim.bio2rdf.org/sparql> ;
+        void:triples          7980621 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/omim/omim.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/omim/bio2rdf_omim_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/omim/omim.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/omim/bio2rdf-omim.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/omim/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/omim/> ] ;
+        foaf:homepage         <http://omim.bio2rdf.org/> .

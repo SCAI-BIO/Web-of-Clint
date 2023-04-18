@@ -1,0 +1,31 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/clld-glottolog> , <http://lod-cloud.net/dataset/clld-sails> ;
+  void:triples  164
+] .
+
+<http://lod-cloud.net/dataset/clld-sails>
+        a                    void:Dataset ;
+        dcterms:description  "SAILS Online published by the CLLD project"@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lod" , "linguistics" , "llod" ;
+        dcterms:title        "CLLD-SAILS"@en ;
+        void:triples         564738 ;
+        dcat:distribution    [ dcat:accessURL  <http://sails.clld.org/static/download/SAILS-dataset.n3.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sails.clld.org/void.ttl> ] ;
+        foaf:homepage        <http://sails.clld.org> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/clld-sails> ;
+  void:triples  164
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/clld-sails> ;
+  void:triples  164
+] .

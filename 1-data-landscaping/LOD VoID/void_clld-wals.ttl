@@ -1,0 +1,31 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/clld-wals> ;
+  void:triples  2621
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/clld-wals> ;
+  void:triples  3044
+] .
+
+<http://lod-cloud.net/dataset/clld-wals>
+        a                    void:Dataset ;
+        dcterms:description  "WALS Online published by the CLLD project"@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "llod" , "linguistics" , "lod" ;
+        dcterms:title        "CLLD-WALS"@en ;
+        void:triples         1478985 ;
+        dcat:distribution    [ dcat:accessURL  <http://wals.info/void.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://wals.info/static/download/wals-dataset.n3.gz> ] ;
+        foaf:homepage        <http://wals.info> .
+
+[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/clld-wals> ;
+  void:triples  2621
+] .

@@ -1,0 +1,28 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/getty-tgn>
+        a                     void:Dataset ;
+        dcterms:description   "Getty Thesaurus of Geographic Names® (TGN) is a structured vocabulary of geographic names intended to provide terminology and other information important to various diciplines that specialize in art, architecture and material culture. The TGN includes names and associated information about places. Places in TGN include administrative political entities (e.g., cities, nations) and physical features (e.g., mountains, rivers). Current and historical places are included. Like all of the Getty Vocabularies, the TGN is compliant with international standards and grows through contribution. \r\n\r\n** Openness **\r\nTGN data is released under Open Data Commons Attribution License. Adherence to ODC Attribution instructions for the correct assertion of attribution is encouraged. The preferred form of attribution for TGN is:\r\n\r\n\"*This [title or report or article or dataset] contains information from the Getty Thesaurus of Geographic Names® (TGN) which is made available under the ODC Attribution License.*\"\r\n\r\nSpecial Case: In circumstances where providing the full attribution statement above is not technically feasible, the use of canonical TGN URIs is adequate to satisfy Section 4.3 of the ODC Attribution License."@en ;
+        dcterms:publisher     [ rdfs:label  "\"The Getty Research Institute\"" ;
+                                foaf:mbox   "VocabLod@getty.edu"
+                              ] ;
+        dcterms:subject       "cultural heritage" , "skos" , "getty" , "format-skosxl" , "geography" , "thesaurus" , "format-skos" , "size-xlarge" , "geographic" ;
+        dcterms:title         "The Getty Thesaurus of Geographic Names"@en ;
+        void:exampleResource  <http://vocab.getty.edu/tgn/7011179> , <http://vocab.getty.edu/tgn/7015574> , <http://vocab.getty.edu/tgn/7002252> , <http://vocab.getty.edu/tgn/3000034-geometry> ;
+        void:sparqlEndpoint   <http://vocab.getty.edu/sparql> ;
+        void:triples          "0"^^xsd:int ;
+        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/doc> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/dataset/aat/explicit.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/dataset/tgn/full.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/ontology> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu> ] ;
+        foaf:homepage         <http://www.getty.edu/research/tools/vocabularies/tgn/> .
+
+[ void:target   <http://lod-cloud.net/dataset/schema-org> , <http://lod-cloud.net/dataset/getty-tgn> ;
+  void:triples  1409085
+] .

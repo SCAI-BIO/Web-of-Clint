@@ -1,0 +1,19 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://lod-cloud.net/dataset/iso-639-oasis>
+        a                    void:Dataset ;
+        dcterms:description  "Published Subject Identifiers (URIs) for languages defined in ISO 639. This list is published by OASIS.\r\n\r\nIt is available in HTML, RDF/XML, and XTM.\r\n\r\nThe list was last updated in 2005 and was considered experimental at that time."@en ;
+        dcterms:publisher    [ rdfs:label  "OASIS" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "lodcloud-diagram-2014-08-30" , "oasis" , "format-rdf" , "iso639" , "schemata" , "format-xtm" , "iso" , "languages" , "lodcloud.unresolvable" , "crossdomain" , "linguistics" ;
+        dcterms:title        "Published subjects for languages in ISO 639"@en ;
+        void:triples         2546 ;
+        dcat:distribution    [ dcat:accessURL  <http://psi.oasis-open.org/iso/639/639-core.xtm> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://psi.oasis-open.org/iso/639/639-core.rdf> ] ;
+        foaf:homepage        <http://psi.oasis-open.org/iso/639/> .

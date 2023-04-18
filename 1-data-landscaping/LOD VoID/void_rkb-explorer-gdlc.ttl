@@ -1,0 +1,24 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-gdlc> ;
+  void:triples  3
+] .
+
+<http://lod-cloud.net/dataset/rkb-explorer-gdlc>
+        a                    void:Dataset ;
+        dcterms:description  ""@en ;
+        dcterms:publisher    [ rdfs:label  "Hugh Glaser" ;
+                               foaf:mbox   "hg@ecs.soton.ac.uk"
+                             ] ;
+        dcterms:subject      "broken_link" , "lod" , "publications" , "format-rdf" , "lodcloud.unconnected" ;
+        dcterms:title        "gdlc"@en ;
+        void:sparqlEndpoint  <http://gdlc.rkbexplorer.com/sparql> ;
+        void:triples         "0"^^xsd:int ;
+        dcat:distribution    [ dcat:accessURL  <http://gdlc.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://gdlc.rkbexplorer.com/models/void.ttl> ] ;
+        foaf:homepage        <http://gdlc.rkbexplorer.com> .

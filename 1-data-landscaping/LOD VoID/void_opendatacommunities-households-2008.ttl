@@ -1,0 +1,20 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-households-2008> ;
+  void:triples  1
+] .
+
+<http://lod-cloud.net/dataset/opendatacommunities-households-2008>
+        a                    void:Dataset ;
+        dcterms:description  ""@en ;
+        dcterms:publisher    [ rdfs:label  "" ;
+                               foaf:mbox   ""
+                             ] ;
+        dcterms:subject      "format-void" , "crawledLinkedDataCloud2014" , "format-dcterm" , "lodcloud-diagram-2014-08-30" , "format-rdf" , "license-metadata" , "LinkedDataCrawl2014" , "provenance-metadata" , "dataset-level-metadata" , "government" , "sparql" , "format-dcat" , "dump" , "format-rdfs" ;
+        dcterms:title        "opendatacommunities-households-2008"@en ;
+        void:triples         "0"^^xsd:int .
