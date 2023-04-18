@@ -131,3 +131,8 @@ dmypy.json
 # JetBrains
 .idea/
 /3-data-RDF-conversion/EIOS-tooling/eiostooling.iml
+
+# added by SCAI team
+
+*.bkp
+2023-semantics-paper/imgs
