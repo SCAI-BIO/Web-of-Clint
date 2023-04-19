@@ -38,7 +38,7 @@ Every value of void:vocabulary must be a URI that identifies a vocabulary or ont
 SPARQL query:
 
 '''
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "); 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 SELECT ?type (SAMPLE(?s) AS ?example) ");
 WHERE { 
   SERVICE <endpoint> {
