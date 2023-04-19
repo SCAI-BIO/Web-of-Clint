@@ -52,6 +52,7 @@ This will create 2 Docker images, one with version "0.0.1" and one with version 
 After building the images you have to push them onto a dedicated docker registry:
 
 ```
+docker login docker.example.com
 docker push "docker.example.com/secoresearch-fuseki:0.0.1"
 docker push "docker.example.com/secoresearch-fuseki:latest"
 ```
