@@ -27,7 +27,7 @@ SELECT (COUNT(DISTINCT ?p) as ?count) WHERE { ?s ?p ?o }
 SELECT (COUNT(DISTINCT ?o) as ?count) WHERE { ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o }
 ```
 
-## Listing all used vocabularies
+## Listing all used vocabularies http://rdfs.org/ns/void#vocabulary
 
 Every value of void:vocabulary must be a URI that identifies a vocabulary or ontology that is used in the dataset. These URIs can be found as follows:
 
@@ -35,7 +35,7 @@ Every value of void:vocabulary must be a URI that identifies a vocabulary or ont
 * Strip the local name, that is, remove everything after the last “/” or “#”.
 * If the URI now ends in a “#”, then also remove this trailing hash. (If it ends in a slash, the slash is kept.)
 
-SPARQL query:
+SPARQL query classes:
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
@@ -48,3 +48,11 @@ WHERE {
 GROUP BY ?type
 ```
 
+SPARQL query properties:
+
+```
+SELECT DISTINCT ?p 
+WHERE { 
+  ?s ?p ?o.
+} 
+```
