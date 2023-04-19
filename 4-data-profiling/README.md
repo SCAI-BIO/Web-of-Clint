@@ -4,26 +4,26 @@ A simple way to profile an RDF dataset is to use SPARQL to query it. You can eit
 
 ## count all triples http://rdfs.org/ns/void#triples 
 
-```
+```sparql
 SELECT (COUNT(*) as ?count) WHERE { ?s ?p ?o }
 ```
 
 
 ## count all subjects http://rdfs.org/ns/void#distinctSubjects
 
-```
+```sparql
 SELECT (COUNT(DISTINCT ?s) as ?count) WHERE { ?s ?p ?o }
 ```
 
 ## count all properties http://rdfs.org/ns/void#properties
 
-```
+```sparql
 SELECT (COUNT(DISTINCT ?p) as ?count) WHERE { ?s ?p ?o }
 ```
 
 ## count all classes http://rdfs.org/ns/void#classes
 
-```
+```sparql
 SELECT (COUNT(DISTINCT ?o) as ?count) WHERE { ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o }
 ```
 
@@ -37,7 +37,7 @@ Every value of void:vocabulary must be a URI that identifies a vocabulary or ont
 
 SPARQL query classes:
 
-```
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 SELECT ?type (SAMPLE(?s) AS ?example) ");
 WHERE { 
@@ -50,7 +50,7 @@ GROUP BY ?type
 
 SPARQL query properties:
 
-```
+```sparql
 SELECT DISTINCT ?p 
 WHERE { 
   ?s ?p ?o.
@@ -60,7 +60,7 @@ WHERE {
 ## providing example resources http://rdfs.org/ns/void#exampleResource
 take the 10 nodes with the highest out degree as example
 
-```
+```sparql
 SELECT ?s (COUNT(?o) as ?deg)
 WHERE { 
   SERVICE <endpoint> { 
