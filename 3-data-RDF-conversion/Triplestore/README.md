@@ -47,7 +47,7 @@ cd path/to/secoresearch-fuseki
 build -t "docker.example.com/secoresearch-fuseki:0.0.1" -t "docker.example.com/secoresearch-fuseki:latest" -f Dockerfile
 ```
 
-This will create 2 Docker images, one with version "0.0.1" and on with version tag "latest".
+This will create 2 Docker images, one with version "0.0.1" and one with version tag "latest".
 
 After building the images you have to push them onto a dedicated docker registry:
 
