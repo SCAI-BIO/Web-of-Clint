@@ -7,7 +7,7 @@ There are lots of freely available and also commercial triplestore applications 
 For a oversight (partly including benchmarks) visit [Wikipedia: LargeTripleStores](https://en.wikipedia.org/wiki/Triplestore), for example.
 
 ### Apache Jena Fuseki
-[Apache Jena fuseki](https://jena.apache.org/documentation/fuseki2/) is a SPARQL server integrated with [TDB](https://jena.apache.org/documentation/tdb/index.html) 
+[Apache Jena fuseki](https://jena.apache.org/documentation/fuseki2/) is a [SPARQL](https://www.w3.org/TR/rdf-sparql-query/) server integrated with [Apache TDB](https://jena.apache.org/documentation/tdb/index.html) 
 to provide a transactional persistent storage layer.
 
 ### Semantic Computing Research Group
@@ -24,7 +24,7 @@ A triple is a data entity in the form
 subject - predicate - object
 ```
 
-### Example:
+### SPARQL Query Example:
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -33,7 +33,7 @@ SELECT * WHERE {
 } LIMIT 1000
 ```
 
-In this example we are looking for all **flights with destination** (<http://flights.scai.fraunhofer.de/ontology#destination>) **Paris, Charles de Gaulle Airport** which is defined by the geonames identifier (<https://sws.geonames.org/3099426/>).
+In this example we are looking for all **flights with destination** (<http://<area>flights.scai.fraunhofer.de/ontology#destination>) **Paris, Charles de Gaulle Airport** which is defined by the geonames identifier (<https://sws.geonames.org/3099426/>).
 
 The flight data is available in the [SCAI Triplestore](https://triplestore.scaiview.com) in dataset **flightaware**.
 
