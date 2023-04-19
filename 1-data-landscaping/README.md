@@ -1,4 +1,40 @@
-# Selection of relevant data sources
+# The State of the Art
 
-## The Linked Open Data Cloud
+Semantic technologies have proven their value a long time ago when Gene Ontology enabled the comparison of functional repertoires encoded in different genomes across several species. Controlling name spaces and their meaning was and is essential not only for data integration, but also for information retrieval and information extraction. More recently, the necessity of independent validation of findings based on machine learning (“AI-based modeling and mining”) has underpinned the need for the semantic harmonization of entire data- and knowledge-landscapes. The advent of AI in public health now puts an even greater pressure on the ability to establish shared semantics and to use them for the semantic harmonization of heterogeneous, distributed data sets. 
+
+Knowledge graphs are representations of findings in a form that makes them amenable to AI-based modeling and mining approaches. Knowledge graphs are also rather convenient representations to improve the interoperability between data and knowledge, as algorithms integrating a priori knowledge in the form of graphs (“embeddings”) gain more and more momentum in AI-powered data analytics. 
+
+A good starting point for any “wide” approach to a public health / pandemic intelligence topic is the creation of an overview of the entities and concepts used to communicate knowledge about that specific topic. Despite its undisputed importance, the public health area has no shared semantics yet. The reasons for this may be diverse, but the strong influence of statistics in epidemiology may have played a role in the underrepresentation of semantics in public health. After all, statistical interoperability is quite different from semantic interoperability, and we should not forget about that in the following discussion. 
+
+The process of generating an overview on relevant data often results in the generation of “data catalogues” that list data sets, their (DataCite) unique identifiers, their source and ownership plus additional, useful information (e.g., access procedures; formats; rules for privacy protection, etc.). Generation of these data catalogues requires a comprehensive overview on available / published data and the thematic focus (“scope”) of the data catalogue. A searchable version of a data catalogue requires shared semantics annotations (unified metadata annotations) based on controlled vocabularies (ontologies / terminologies / thesauri). 
+
+Shared semantics and harmonized annotations are essential for FAIR data as shared semantics represent the lowest level of the entire “interoperability” aspect. Of course, for modeling and mining, statistical equivalence is even more important, but before we can establish statistical equivalence, we need to clarify the equivalence at the semantics level. 
+
+
+## Selection of relevant data sources
+
+### Preliminary assembly of semantic resources potentially relevant for pandemic intelligence and global public health
+
+The following overview is a preliminary assembly of semantic resources potentially relevant for pandemic intelligence and global public health:
+
+| Context	| Ontology name	| Description	| Publication or URL |
+|---------|---------------|-------------|--------------------|
+|COVID-19 	| CODO	| Ontology for Collection and Analysis of COviD-19 Data	| https://bioportal.bioontology.org/ontologies/CODO |
+|	| COVID-19 Surveillance	| COVID-19 Surveillance Ontology is an application ontology used to support SARS-CoV-2 surveillance in primary care.	| https://bioportal.bioontology.org/ontologies/COVID19/?p=summary |
+|	| COVIDCRFRAPID	| WHO COVID-19 Rapid Version CRF semantic data model 	| https://bioportal.bioontology.org/ontologies/COVIDCRFRAPID |
+|	| ZONMW-CONTENT	| Collections of terms for the ZonMW COVID19 programme, Netherlands.	| https://bioportal.bioontology.org/ontologies/ZONMW-CONTENT |
+|	| COVID-19 Ontology	| COVID-19 ontology covers the role of molecular and cellular entities in virus-host-interactions, in the virus life cycle, as well as a wide spectrum of medical and epidemiological concepts linked to COVID-19.	https://bioportal.bioontology.org/ontologies/COVID-19
+|	| IDO-COVID-19	COVID-19 Infectious Disease Ontology (IDO-COVID-19) is an extension of the Infectious Disease Ontology (IDO) and the Virus Infectious Disease Ontology (VIDO)	| https://bioportal.bioontology.org/ontologies/IDO-COVID-19 |
+|	| LONGCOVID	| Oxford-RCGP RSC Long COVID-19 (LC) Phenotype Ontology	|https://bioportal.bioontology.org/ontologies/LONGCOVID |
+|	| CIDO	| Coronavirus Infectious Disease (CIDO) represents various coronavirus infectious diseases, including their etiology, transmission, pathogenesis, diagnosis, prevention, and treatment.	| https://bioportal.bioontology.org/ontologies/CIDO |
+| COVID-19 Data model	| COVID 19 Data Model	|	|
+| Infectious Diseases	| INFECTION_TRANS	| Infection Transmission Ontology is developed in order to make transmission data reusable and interoperable. 	| https://bioportal.bioontology.org/ontologies/INFECTION_TRANS |
+|	| IDO	| The IDO ontologies are designed as a set of interoperable ontologies that will together provide coverage of the infectious disease domain.	| https://bioportal.bioontology.org/ontologies/IDO |
+|	| ID-AMR	| Infectious Diseases and Antimicrobial Resistance 
+Collections of terms for the ZonMW ID & AMR program. 	| https://bioportal.bioontology.org/ontologies/ID-AMR |
+|	| VIDO	| covers epidemiology, classification, pathogenesis, and treatment of terms used by Virologists (i.e. virus, prion, satellite, viroid)	| https://bioportal.bioontology.org/ontologies/VIDO |
+| Epidemiology	| Epidemiology Ontology	| Not maintained and outdated in OBO Foundry – requires updating and re-scoping	 Pesquita, C., Ferreira, J.D., Couto, F.M. et al. The epidemiology ontology: an ontology f or the semantic annotation of epidemiological resources. J Biomed Sem 5, 4 (2014). https://doi.org/10.1186/2041-1480-5-4 |
+|	| HSO: | Health Surveillance Ontology	ontology to support (one) health surveillance, focused on "surveillance system level data", that is, data outputs from surveillance activities, such as number of samples collected, cases observed, etc.	| https://bioportal.bioontology.org/ontologies/HSO |
+
+### The Linked Open Data Cloud
 can be found ad http://cas.lod-cloud.net/ - it provides VoID descriptors for the about 1500 datasets and contains information on how these sets are interconnected. Geoname.org is one of the relevant datasources. These descriptors have been downloaded scraping the provided JSON and fetching the files via HTTPS.  
