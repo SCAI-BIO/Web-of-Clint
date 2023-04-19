@@ -1,0 +1,284 @@
+"@context":
+ontologies:
+
+  - id: owltime
+    preferredPrefix: owl-time
+    title: OWL Time ontology
+    uri: https://www.w3.org/TR/owl-time/#time
+    description: "OWL-Time is an OWL-2 DL ontology of temporal concepts, for describing the temporal properties of resources in the world or described in Web pages."
+    homepage: https://www.w3.org/TR/owl-time/
+    base_uri:
+      - https://www.w3.org/TR/owl-time/#time
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/bqn4tGqBafDSFmD/download/time.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/WbTTQzqLLjoFRD2/download/time.ttl.gz
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  # This ontology is accessible over https://www.ebi.ac.uk/ols/ontologies/symp
+  - id: symp
+    ontology_purl: http://purl.obolibrary.org/obo/symp.owl
+    preferredPrefix: SYMP
+    title: Symptom Ontology
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/imPGPdQKw47RG54/download/symp.ttl.gz
+    ttl_link: https://owncloud.scai.fraunhofer.de/index.php/s/rgXq3KgeQRJ3HoP/download/symp.ttl
+    uri: http://purl.obolibrary.org/obo/symp.owl
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: MESH
+    preferredPrefix: MeSH
+    title: Medical Subject Headings
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/7P5q3erFBrffeq8/download/mesh.owl
+    description: "MeSH (Medical Subject Headings) is the National Library of Medicine's controlled vocabulary thesaurus, used for indexing articles for the MEDLINE®/PubMED® database. Each article citation is associated with a set of MeSH terms that describe the content of the citation."
+    base_uri:
+      - http://id.nlm.nih.gov/mesh
+    reasoner: NONE
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: zoonosis
+    preferredPrefix: zoonosis
+    title: Zoonosis ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/zoonosis
+    description: "Ontology comprising of entities related to animals and their role in transmission of infectious diseases."
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/sk5bifYHzAN6D7w/download/zoonosis.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/3KZXnxcMx94LCrc/download/zoonosis.zip
+    github_issue: 221
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: PreventiveMeasures
+    preferredPrefix: PreventiveMeasures
+    title: Preventive Intervention ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/preventivemeasures
+    description: "The WHO preventive intervention Ontology is custom made ontology that provides a standardized vocabulary of Therapeutic, nutritional, environmental, social and/or behavioral interventions at the societal, community, organizational or individual levels to reduce, modify or stop the course of a disease."
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/wBdG35EFgaoMAff/download/PreventiveMeasures.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/mArBksKBH3xAk6p/download/preventiveintervention.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: Massgathering
+    preferredPrefix: Massgathering
+    title: Mass Gathering ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/massgathering
+    description: "Ontology comprising of entities related to mass gathering events."
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/emmi7g226akC6mN/download/massgathering.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/9ZCSEyep5sPLXcR/download/massgathering.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: Immunity
+    preferredPrefix: Immunity
+    title: Immunity ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/immunity
+    description: "Ontology comprising of entities related to immunity such as types of immunity, components of immune system. "
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/dm9kJAXfq2qfNY3/download/immunity.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/Ho8idf368wCT55R/download/immunity.owl
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: Healthsystem
+    preferredPrefix: Healthsystem
+    title: Health System ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/healthsystem
+    description: "Ontology comprising of entities related to components of a health system such as healthcare service, healthcare workers, planning."
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/6SyJjYpMof6agJx/download/health_system.owl
+    ttl_gzipped_link:  https://owncloud.scai.fraunhofer.de/index.php/s/2xoWEQ6PwmtnYgj/download/health_system.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: FoodborneIllness
+    preferredPrefix: FoodborneIllness
+    title: Foodborne Illness ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/foodborneillness
+    description: "Ontology comprising of entities related to food, food safety and foodborne illness."
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/YzjTPgQJZ2fiHRQ/download/foodborne_illness.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/QYBTwg7rmdsASrR/download/foodborne_illness.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: Disease
+    preferredPrefix: Disease
+    title: Disease ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/disease
+    description: "Ontology comprising of entities related to human and animal diseases"
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/gBNsT4tm9R94Pex/download/disease.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/w9JLkZoAwid9tpa/download/disease.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: Disaster
+    preferredPrefix: Disaster
+    title: Disaster ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/disaster
+    description: "Ontology comprising of entities related to natural and man-made disasters."
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/Nwb3nzb26WCZe88/download/disaster.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/G9JtziomeF4HcEy/download/disaster.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: Chemical
+    preferredPrefix: Chemical
+    title: Chemical ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/chemical
+    description: "Ontology comprising of entities related to chemicals/molecules that can cause emergency health event/related to hazardous events."
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/RD8k8oJDLYqmeJE/download/chemical.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/G8KpYHn84sbaHyT/download/chemical.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+
+  - id: Surveillance
+    preferredPrefix: Surveillance
+    title: Surveillance ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/surveillance
+    description: "Ontology comprising of entities related to the systematic collection, analysis, and interpretation of health-related data. "
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/iCHnSteSHeHbJZq/download/surveillance.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/c4mPLYK5FdtJqiJ/download/surveillance.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: Societal
+    preferredPrefix: Societal
+    title: Societal ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/societal
+    description: "Ontology comprising of entities related to the societal impact of a disease or an outbreak."
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/PajHYtcMwozJ6EZ/download/societal.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/EqLgJtkW93oxKLd/download/societal.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: ProductSafety
+    preferredPrefix: ProductSafety
+    title: Product Safety ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/productsafety
+    description: "Ontology comprising of entities related to medical products, devices and their safe use"
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/kecFTpwSNQtqXeA/download/product_safety.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/CcozeBpj8wNzcgK/download/product_safety.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: Population
+    preferredPrefix: Population
+    title: Population ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/population
+    description: "Ontology comprising of entities related to population and its characteristics. "
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/R5NggcwMAdBTKMi/download/population.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/X4wF4ki37PMimdL/download/population.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: Outcomes
+    preferredPrefix: Outcomes
+    title: Outcomes ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/outcomes
+    description: "Ontology comprising of entities related to the outcomes of a disease or an outbreak."
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/EjsHRBxzqGC2eMg/download/outcomes.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/M8m9SaQyf6Brkna/download/outcomes.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: Organism
+    preferredPrefix: Organism
+    title: Organism ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/organism
+    description: "Ontology comprising of entities related to organism such as bacteria, virus and others which play key role in case of disease or outbreak. "
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/bQYNKB3MteZJ2te/download/organism.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/P25Jrygi5ki6gHY/download/organism.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: general
+    preferredPrefix: general
+    title: General ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/general
+    description: "Ontology comprising of general entities related to infectious disease and outbreaks"
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/LwqQgny4XPg2E3t/download/general.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/FQgwwNTG4iSmpSK/download/general.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: travel
+    preferredPrefix: travel
+    title: Travel ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/travel
+    description: "Ontology comprising of entities related to travel entities or events."
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/yKNwwHrFy56QHxj/download/travel.owl
+    ttl_gzipped_link: https://owncloud.scai.fraunhofer.de/index.php/s/GcBNLofM8SRJqoy/download/travel.zip
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+  - id: reference
+    preferredPrefix: reference
+    title: Open Reference ontology
+    uri: https://bio.scai.fraunhofer.de/ontology/reference
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/MB9AdWeCgBXdYS5/download/reference.owl
+    description: "Reference ontology of common universals (concepts and terms) between designed domain ontologies."
+    label_property: http://www.w3.org/2000/01/rdf-schema#label
+    definition_property:
+      - http://www.w3.org/2004/02/skos/core#definition
+    synonym_property:
+      - http://www.w3.org/2004/02/skos/core#altLabel
+
+
+

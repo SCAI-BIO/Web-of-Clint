@@ -1,0 +1,3 @@
+# used so the correct broker occurs within the monitoring scope!
+scaiview:
+  deploymentid: academia-scaiview

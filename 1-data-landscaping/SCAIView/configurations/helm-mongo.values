@@ -1,0 +1,3 @@
+persistence:
+  storageClass: rook-ceph-block-hdd
+  size: 50Gi

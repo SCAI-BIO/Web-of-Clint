@@ -1,0 +1,17 @@
+domain: ols.ewaa.scaiview.com
+PROJECT: early-warning-and-alert
+config:
+  obo: config/early-warning-and-alert.scaiview.com/obo-config.yaml
+  ols: config/early-warning-and-alert.scaiview.com/ols-config.yaml
+debranding:
+  - name: ols.customisation.debrand
+    value: "true"
+  - name: ols.customisation.org
+    value: Fraunhofer SCAI BIO
+  - name: ols.customisation.short-title
+    value: SCAIView EWAA Lookup Service
+  - name: ols.customisation.title
+    value: SCAIView early-warning-and-alert Lookup Service
+label:
+  - name: topic
+    value: EIOS documents

@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    deployment-id:  {{ .Release.Name }}
+    project: {{ .Values.PROJECT }}
+    component: web-service
+  name: {{ .Release.Name }}-web-service
+spec:
+  ports:
+  - name: "80"
+    port: 80
+    targetPort: 8080
+  selector:
+    product: ols
+    component: web-service
+    project: {{ .Values.PROJECT }}
+    deployment-id:  {{ .Release.Name }}

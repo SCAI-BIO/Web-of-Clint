@@ -1,0 +1,15 @@
+domain: ols.test.k8s.bio.scai.fraunhofer.de
+olsImage: ebispot/ols-web:stable
+PROJECT: Test project
+config:
+  obo: "config/obo-config.yaml"
+  ols: "config/ols-config.yaml"
+debranding:
+  - name: ols.customisation.debrand
+    value: "true"
+  - name: ols.customisation.org
+    value: Fraunhofer SCAI BIO
+  - name: ols.customisation.short-title
+    value: ontologies
+  - name: ols.customisation.title
+    value: Test Ontology Lookup Service
