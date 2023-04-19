@@ -20,6 +20,10 @@ spec:
   ports:
   - name: api
     port: 8000
+  - name: http
+    port: 7474
+  - name: bolt
+    port: 7687
   selector:
     component: who-etl-api-service
     version: {{ .Chart.AppVersion }}

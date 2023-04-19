@@ -27,7 +27,7 @@ spec:
         deployment-id:  {{ .Release.Name }}
     spec:
       containers:
-        - name: container
+        - name: api
           image: docker.arty.scai.fraunhofer.de/who-etl-api:latest
           imagePullPolicy: Always
           ports:
@@ -36,32 +36,21 @@ spec:
             - name: K8S
               value: "true"
             - name: TS_USER
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Release.Name }}-who-etl-api-secret
-                  key: ts_user
+              value: {{ .Values.neo4j.username }}
             - name: TS_PWD
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Release.Name }}-who-etl-api-secret
-                  key: ts_pwd
-            - name: NEO4J_DB_USER
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Release.Name }}-who-etl-api-secret
-                  key: neo4j_db_user
-            - name: NEO4J_DB_PWD
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Release.Name }}-who-etl-api-secret
-                  key: neo4j_db_pwd
-            - name: NEO4J_UPLOADER_USER
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Release.Name }}-who-etl-api-secret
-                  key: neo4j_uploader_user
-            - name: NEO4J_UPLOADER_PWD
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Release.Name }}-who-etl-api-secret
-                  key: neo4j_uploader_pwd
+              value: {{ .Values.neo4j.password }}
+        - name: neo4j
+          image: neo4j:5.6.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+              name: api
+            - containerPort: 7474
+              name: http
+            - containerPort: 7687
+              name: bolt
+          env:
+            - name: NEO4JLABS_PLUGINS
+              value: '["apoc", "n10s"]'
+            - name: NEO4J_AUTH
+              value: {{ .Values.neo4j.username }}/{{ .Values.neo4j.password }}
