@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    project: {{ .Values.PROJECT }}
+    product: ols
+    component: mongo-service
+    deployment-id:  {{ .Release.Name }}
+  name: {{ .Release.Name }}-mongo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      product: ols
+      project: {{ .Values.PROJECT }}
+      component: mongo-service
+      deployment-id:  {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        product: ols
+        project: {{ .Values.PROJECT }}
+        component: mongo-service
+        deployment-id:  {{ .Release.Name }}
+    spec:
+      containers:
+      - args:
+        - mongod
+        image: mongo:3.2.9
+        imagePullPolicy: ""
+        name: ols-mongo
+        ports:
+        - containerPort: 27017
+        volumeMounts:
+        - mountPath: /data/db
+          name: ols-mongo-data
+      volumes:
+      - name: ols-mongo-data
+        persistentVolumeClaim:
+          claimName: {{ .Release.Name }}-mongo-data

@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    product: ols
+    component: mongo-service
+    project: {{ .Values.PROJECT }}
+    deployment-id:  {{ .Release.Name }}
+  name: {{ .Release.Name }}-mongo-service
+spec:
+  ports:
+  - name: "27017"
+    port: 27017
+    targetPort: 27017
+  selector:
+    product: ols
+    component: mongo-service
+    project: {{ .Values.PROJECT }}
+    deployment-id:  {{ .Release.Name }}

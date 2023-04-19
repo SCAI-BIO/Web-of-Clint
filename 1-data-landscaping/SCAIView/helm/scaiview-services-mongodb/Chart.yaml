@@ -1,0 +1,5 @@
+apiVersion: v2
+type: application
+description: A Helm chart for scaiview in k8s with mongoDb as backend service
+name: scaiview-services
+version: 0.4.2
