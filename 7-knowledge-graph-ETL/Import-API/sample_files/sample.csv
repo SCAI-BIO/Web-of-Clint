@@ -1,0 +1,7 @@
+country_code,country_area_territory,mmwr_date,mmwr_week,agegroup_code,adverse_event,number_of_cases,outpatient_visits,country_uri
+CAN,Canada,2017-12-1T,36,All,ILI,29,6066,canada_geo
+CAN,Canada,2017-12-29T,41,All,ILI,109,6368,canada_geo
+CAN,Canada,2017-02-09T,46,All,ILI,137,7889,canada_geo
+CAN,Canada,2017-11-04T,51,All,ILI,232,9086,canada_geo
+CAN,Canada,2018-10-5T,40,All,ILI,54,6763,canada_geo
+CAN,Canada,2018-10-5T,40,All,ILI,54,6763,canada_new

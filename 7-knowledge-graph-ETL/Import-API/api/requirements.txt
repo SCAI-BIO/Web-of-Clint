@@ -1,0 +1,12 @@
+fastapi
+fastapi-login
+requests
+uvicorn
+requests_toolbelt
+sparqlwrapper
+python-multipart
+rdflib
+neo4j
+numpy
+python-jose[cryptography]
+passlib[bcrypt]

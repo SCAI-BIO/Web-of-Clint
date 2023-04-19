@@ -1,4 +1,4 @@
-# Loading converted RDF (TTL) into a Triplestore
+# Loading Converted RDF (TTL) into a Triplestore Using the GUI
 For pre-selection purposes the converted and also free available datasets of interest were loaded into a triplestore database.
 
 ## TDB
