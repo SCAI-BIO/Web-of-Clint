@@ -39,10 +39,10 @@ SPARQL query classes:
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-SELECT ?type (SAMPLE(?s) AS ?example) ");
+SELECT ?type (SAMPLE(?s) AS ?example) 
 WHERE { 
   SERVICE <endpoint> {
-    ?s a ?type.");
+    ?s a ?type.
   }
 }
 GROUP BY ?type
