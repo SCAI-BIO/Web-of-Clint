@@ -56,3 +56,19 @@ WHERE {
   ?s ?p ?o.
 } 
 ```
+
+## providing example resources http://rdfs.org/ns/void#exampleResource
+take the 10 nodes with the highest out degree as example
+
+```
+SELECT ?s (COUNT(?o) as ?deg)
+WHERE { 
+  SERVICE <endpoint> { 
+    ?s ?p ?o.
+    FILTER (!isBlank(?s))
+  }
+} 
+GROUP BY ?s
+ORDER BY DESC(?deg) 
+LIMIT 10
+```
