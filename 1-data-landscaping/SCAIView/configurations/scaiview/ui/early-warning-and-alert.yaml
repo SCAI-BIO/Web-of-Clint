@@ -1,0 +1,13 @@
+project: early-warning-and-alert
+ui:
+  version: 0.4.11-SNAPSHOT
+  domain:
+    - ewaa.scaiview.com
+  api:
+    url: https://api.ewaa.scaiview.com
+  sam:
+    url: https://sam.ewaa.scaiview.com
+  ols:
+    url: https://ols.ewaa.scaiview.com
+  brand:
+    name: early-warning-and-alert

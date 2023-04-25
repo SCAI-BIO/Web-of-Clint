@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    product: ols
+    project: {{ .Values.PROJECT }}
+    deployment-id:  {{ .Release.Name }}
+  name: {{ .Release.Name }}-solr-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      product: ols
+      project: {{ .Values.PROJECT }}
+      component: solr-service
+      deployment-id:  {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        product: ols
+        project: {{ .Values.PROJECT }}
+        component: solr-service
+        deployment-id:  {{ .Release.Name }}
+    spec:
+      containers:
+      - args:
+        - -m 16g
+        - -Dsolr.solr.home=/mnt/solr-config
+        - -Dsolr.data.dir=/var/solr
+        - -f
+        env:
+        - name: SOLR_HOME
+          value: /mnt/solr-config
+        - name: SOLR_JAVA_MEM
+          value: "-Xms4g -Xmx40g"
+        - name: JAVA_OPTS
+          value: "-Xms4g -Ddbms.pagecache.memory.default.override=12884901888 -Xmx40g -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
+        image: ebispot/ols-solr:latest
+        name: ols-solr
+        ports:
+        - containerPort: 8983
+        volumeMounts:
+        - mountPath: /var/solr
+          name: ols-solr-data
+      volumes:
+      - name: ols-solr-data
+        persistentVolumeClaim:
+          claimName: {{ .Release.Name }}-solr-data

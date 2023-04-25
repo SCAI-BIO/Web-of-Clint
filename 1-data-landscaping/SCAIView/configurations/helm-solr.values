@@ -1,0 +1,5 @@
+# Configuration for the solr PVC
+volumeClaimTemplates:
+  storageSize: "50Gi"
+  accessModes:
+    - "ReadWriteOnce"

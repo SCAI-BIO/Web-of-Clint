@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    io.kompose.service: ols-ontology-data
+  name: {{ .Release.Name }}-ontology-data
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 250Gi
+  storageClassName: rook-ceph-block-hdd

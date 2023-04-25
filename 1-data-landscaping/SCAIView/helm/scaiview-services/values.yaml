@@ -1,0 +1,75 @@
+# Default values for scaiview-services.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+scaiview:
+  api:
+    version: latest # first 7 digits of commit hash are used as docker ID, charts trim automatically to that
+    domain: api.covid.scaiview.com.k8s.bio.scai.fraunhofer.de
+  infra:
+    bikmi:
+      - name: GRAPHSTORE_TABLEID
+        value: "covid"
+    broker:
+      - name: SPRING_ARTEMIS_HOST
+        value: "scaiview-covid-broker-broker-service-service.bio"
+      - name: SPRING_ARTEMIS_PORT
+        value: "61616"
+      - name: SPRING_ARTEMIS_PASSWORD
+        valueFrom:
+          secretKeyRef:
+            name: scaiview-covid-broker-broker-service-secret
+            key:  artemis-password
+      - name: SPRING_ARTEMIS_USER
+        value: "artemis"
+      - name: SPRING_ARTEMIS_MODE
+        value: "NATIVE"
+      - name: SPRING_ARTEMIS_EMBEDDED_ENABLED
+        value: "false"
+    orient:
+      - name: ORIENTDB_URL
+        value: "remote:graphstore-orientdb-svc"
+      - name: ORIENTDB_USERNAME
+        value: "academia-scaiview"
+      - name: ORIENTDB_PASSWORD
+        value: "academia"
+      - name: ORIENTDB_DATABASE
+        value: "pharmacome"
+    mongo:
+      - name: SPRING_DATA_MONGODB_HOST
+        value: "covid-monogo-mongodb.bio"
+      - name: SPRING_DATA_MONGODB_PORT
+        value: "27017"
+      - name: SPRING_DATA_MONGODB_USERNAME
+        value: "root"
+      - name: SPRING_DATA_MONGODB_AUTHENTICATION-DATABASE
+        value: "admin"
+      - name: SPRING_DATA_MONGODB_DATABASE
+        value: "scaiview"
+      - name: SPRING_DATA_MONGODB_PASSWORD
+        valueFrom:
+          secretKeyRef:
+            name: covid-monogo-mongodb
+            key: mongodb-root-password
+    solr:
+      - name: SOLR_ZKHOSTS
+        value: "covid-scaiview-solr-v7-zookeeper-headless.bio:2181"
+    oidc:
+      - name: KEYCLOAK_AUTH-SERVER-URL
+        #value: "http://keycloak.scaiview.k8s.bio.scai.fraunhofer.de/auth"
+        value: "https://keycloak.scai.fraunhofer.de/auth"
+      - name: KEYCLOAK_SSL-REQUIRED
+        value: "none"
+      - name: KEYCLOAK_REALM
+        #value: "test"
+        value: "SCAI-Bio"
+      - name: KEYCLOAK_BEARER-ONLY
+        value: "true"
+      - name: KEYCLOAK_RESOURCE
+        # value: "scaiview-happysearching-development"
+        value: "scaiview-happysearching-development"
+      - name: KEYCLOAK_PRINCIPAL-ATTRIBUTE
+        value: "sub"
+      - name: KEYCLOAK_CREDENTIALS_SECRET
+        #value: "3ce40a35-e613-471e-947d-48ca4ed6a980"
+        value: "d2b4d8d1-3d1e-42b2-a7bb-e67a2b325be3"

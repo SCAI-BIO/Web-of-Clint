@@ -1,0 +1,90 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-web-deployment
+  labels:
+    project: {{ .Values.PROJECT }}
+    product: ols
+    component: web-service
+    deployment-id:  {{ .Release.Name }}
+spec:
+  strategy:
+    type: Recreate
+  replicas: 1
+  selector:
+    matchLabels:
+      product: ols
+      project: {{ .Values.PROJECT }}
+      component: web-service
+      deployment-id:  {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        product: ols
+        project: {{ .Values.PROJECT }}
+        component: web-service
+        deployment-id:  {{ .Release.Name }}
+    spec:
+      containers:
+      - env:
+{{ toYaml .Values.debranding | indent 8}}
+        - name: OLS_HOME
+          value: /mnt/
+        - name: SPRING_DATA_MONGODB_HOST
+          value: {{ .Release.Name }}-mongo-service
+        - name: SPRING_DATA_SOLR_HOST
+          value: http://{{ .Release.Name }}-solr-service:8983/solr
+        - name: JAVA_OPTS
+          value: "-Xmx16g -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
+        image: {{ .Values.olsImage }}
+        name: ols-web
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - mountPath: /mnt/neo4j
+          name: ols-neo4j-data
+        - mountPath: /mnt/downloads
+          name: ols-ontology-data
+      volumes:
+      - name: ols-neo4j-data
+        persistentVolumeClaim:
+          claimName: {{ .Release.Name }}-neo4j-data
+      - name: ols-ontology-data
+        persistentVolumeClaim:
+          claimName: {{ .Release.Name }}-ontology-data
+      - name: ols-config-volume
+        configMap:
+          name: {{ .Release.Name }}-ols-config
+      - name: obo-config-volume
+        configMap:
+          name: {{ .Release.Name }}-obo-config
+      initContainers:
+        - name: load-config
+          image: ebispot/ols-config-importer:stable
+          volumeMounts:
+            - name: ols-config-volume
+              mountPath: /config/ols-config.yaml
+              subPath: ols-config.yaml
+            - name: obo-config-volume
+              mountPath: /config/obo-config.yaml
+              subPath: obo-config.yaml
+          env:
+          - name: SPRING_DATA_MONGODB_HOST
+            value: {{ .Release.Name }}-mongo-service
+          - name: SPRING_DATA_SOLR_HOST
+            value: {{ .Release.Name }}-solr-service:8983/solr
+        - name: start-indexer
+          image: ebispot/ols-indexer:stable
+          volumeMounts:
+            - mountPath: /mnt/downloads
+              name: ols-ontology-data
+            - mountPath: /mnt/neo4j
+              name: ols-neo4j-data
+          env:
+            - name: SPRING_DATA_MONGODB_HOST
+              value: {{ .Release.Name }}-mongo-service
+            - name: SPRING_DATA_SOLR_HOST
+              value: http://{{ .Release.Name }}-solr-service:8983/solr
+            - name: JAVA_OPTS
+              value: "-Xmx32g -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"

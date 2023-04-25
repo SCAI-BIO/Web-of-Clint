@@ -1,0 +1,165 @@
+"@context":
+  "@base": http://purl.obolibrary.org/obo/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  owl: http://www.w3.org/2002/07/owl#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  dc: http://purl.org/dc/terms/
+  dce: http://purl.org/dc/elements/1.1/
+  dcterms: http://purl.org/dc/terms/1.1/
+  faldo: http://biohackathon.org/resource/faldo#
+  foaf: http://xmlns.com/foaf/0.1/
+  oa: http://www.w3.org/ns/oa#
+  idot: http://identifiers.org/
+  void: http://rdfs.org/ns/void#
+  doap: http://usefulinc.com/ns/doap#
+  pav: http://purl.org/pav/
+
+  id: "@id"
+  label: rdfs:label
+  comment: rdfs:comment
+  description: dce:description
+  source: dce:source
+  publisher: dce:publisher
+  mailing_list: doap:mailing-list
+  createdWith: pav:createdWith
+  wasDerivedFrom: pav:wasDerivedFrom
+  preferredPrefix: idot:preferredPrefix
+  alternatePrefix: idot:alternatePrefix
+  identifierPattern: idot:identifierPattern
+  exampleIdentifier: idot:exampleIdentifier
+
+  Class: owl:Class
+
+  products: void:subset
+
+  type:
+    "@id": rdf:type
+    "@type": "@id"
+  created:
+    "@id": dcterms:created
+    "@type": xsd:dateTime
+  creator:
+    "@id": dcterms:creator
+    "@type": "@id"
+  depiction:
+    "@id": foaf:depiction
+    "@type": "@id"
+  publications: dcterms:publication
+  source: dce:source
+  subClassOf: owl:subClassOf
+  title: dce:title
+  homepage:
+    "@id": foaf:homepage
+    "@type": "@id"
+  page:
+    "@id": foaf:page
+    "@type": "@id"
+  ontologies: dcterms:hasPart
+## ----------------------------------------
+## BUSINESS STARTS HERE
+## ----------------------------------------
+
+id: http://obolibrary.org
+title: OBO Library VERY EXPERIMENTAL BROWSER
+description: "A set of ontology libraries for doing useful stuff. This is a demo, DO NOT TRUST ANY INFO YOU SEE HERE"
+
+ontologies:
+  #CHEBI
+  - activity_status: active
+    alternatePrefix: ChEBI
+    browsers:
+      - {label: CHEBI, title: EBI CHEBI Browser, url: 'http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView'}
+    build: {infallible: 1, method: obo2owl, source_url: 'ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo'}
+    contact: {email: gowen@ebi.ac.uk, github: G-Owen, label: Gareth Owen}
+    description: A structured classification of molecular entities of biological interest
+      focusing on 'small' chemical compounds.
+    domain: biochemistry
+    homepage: http://www.ebi.ac.uk/chebi
+    id: chebi
+    in_foundry_order: 1
+    layout: ontology_detail
+    license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+              url: 'https://creativecommons.org/licenses/by/4.0/'}
+    ontology_purl: http://purl.obolibrary.org/obo/chebi.owl
+    page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
+    products:
+      - {id: chebi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/chebi.owl'}
+      - {id: chebi.obo, ontology_purl: 'http://purl.obolibrary.org/obo/chebi.obo'}
+      - {id: chebi.owl.gz, ontology_purl: 'http://purl.obolibrary.org/obo/chebi.owl.gz',
+         title: 'chebi, compressed owl'}
+      - {id: chebi/chebi_lite.obo, ontology_purl: 'http://purl.obolibrary.org/obo/chebi/chebi_lite.obo',
+         title: 'chebi_lite, no syns or xrefs'}
+      - {id: chebi/chebi_core.obo, ontology_purl: 'http://purl.obolibrary.org/obo/chebi/chebi_core.obo',
+         title: 'chebi_core, no xrefs'}
+    title: Chemical Entities of Biological Interest
+    tracker: https://github.com/ebi-chebi/ChEBI/issues
+    twitter: chebit
+
+  #  #  # Human Disease Ontology
+  - id: doid
+    DO wiki: http://diseaseontology.sourceforge.net/
+    browsers:
+      - {label: DO, title: DO Browser, url: 'http://www.disease-ontology.org/'}
+    build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.obo'}
+    contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
+    description: An ontology for describing the classification of human diseases organized
+      by etiology.
+    domain: disease
+    facebook: https://www.facebook.com/diseaseontology
+    homepage: http://www.disease-ontology.org
+    in_foundry_order: 1
+    layout: ontology_detail
+    license: {label: CC0 1.0 Universal, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+              url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
+    ontology_purl: http://purl.obolibrary.org/obo/doid.owl
+    products:
+      - {id: doid.owl, ontology_purl: 'http://purl.obolibrary.org/obo/doid.owl', title: 'Disease
+        Ontology inferred hierarchy that includes anatomy, cell of origin, infectious
+        agent and phenotype axioms'}
+      - {id: doid.obo, ontology_purl: 'http://purl.obolibrary.org/obo/doid.obo', title: Disease
+        Ontology asserted is_a hierarchy (this file is equivalent to DO's previous HumanDO.obo
+        file)}
+    publications:
+      - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409', title: 'Disease Ontology
+        2015 update: an expanded and updated database of human diseases for linking
+        biomedical knowledge through disease data'}
+    taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+    title: Human Disease Ontology
+    tracker: https://github.com/DiseaseOntology/HumanDiseaseOntology/issues
+    twitter: diseaseontology
+
+
+      
+#  #NCBI
+  - activity_status: active
+    browsers:
+      - {label: NCBI, title: NCBI Taxonomy Browser, url: 'http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi'}
+    build: {infallible: 1, method: archive, path: archive, source_url: 'http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
+    contact: {email: obo-taxonomy@lists.sourceforge.net, label: obo-taxonomy-list}
+    createdWith: https://github.com/owlcollab/owltools/
+    description: An ontology representation of the NCBI organismal taxonomy
+    domain: taxonomy
+    homepage: https://github.com/obophenotype/ncbitaxon
+    id: ncbitaxon
+    jobs:
+      - {id: 'http://build.berkeleybop.org/job/build-ncbitaxon/', type: ReleaseBuild}
+    layout: ontology_detail
+    ontology_purl: https://owncloud.scai.fraunhofer.de/index.php/s/g4yXMCtzYfdMRYe/download/ncbitaxon.owl
+    page: http://www.ncbi.nlm.nih.gov/taxonomy
+    preferredPrefix: NCBITaxon
+    products:
+      - {id: ncbitaxon.owl, ontology_purl: 'https://owncloud.scai.fraunhofer.de/index.php/s/g4yXMCtzYfdMRYe/download/ncbitaxon.owl',
+         title: Main release}
+      - {id: ncbitaxon.obo, ontology_purl: 'https://owncloud.scai.fraunhofer.de/index.php/s/Zrk8Ab4rp6EWo4e/download/ncbitaxon.obo',
+         title: OBO Format version of Main release}
+      - {id: ncbitaxon/subsets/taxslim.owl, ontology_purl: 'https://owncloud.scai.fraunhofer.de/index.php/s/THMwQPZwQajtofy/download/taxslim.owl',
+         page: 'https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md',
+         title: taxslim}
+      - {id: ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl, ontology_purl: 'https://owncloud.scai.fraunhofer.de/index.php/s/eQdrH3gbPrJKiTF/download/taxslim-disjoint-over-in-taxon.owl',
+         page: 'https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md',
+         title: taxslim disjointness axioms}
+    source: http://www.ncbi.nlm.nih.gov/taxonomy
+    title: NCBI organismal classification
+    tracker: https://github.com/obophenotype/ncbitaxon/issues
+    wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat

@@ -1,0 +1,20 @@
+ui:
+  version: 0.3.10-SNAPSHOT
+  domain:
+  - academia.scaiview.demo.k8s.bio.scai.fraunhofer.de
+  api:
+    url: https://api.academia.scaiview.com
+  sam:
+    url: https://sam.academia.scaiview.com
+  ols:
+    url: https://ols.academia.scaiview.com
+  oidc:
+    - name: REACT_APP_KEYCLOAK_URL
+      value: "https://keycloak.scai.fraunhofer.de/auth"
+    - name: REACT_APP_KEYCLOAK_REALM
+      value: "SCAI-Bio"
+    - name: REACT_APP_KEYCLOAK_CLIENTID
+      value: "scaiview-frontend-production"
+  warning:
+    status: "doNotShow" # "show" is the only working value here
+    text: "Update in progress, please visit us later"

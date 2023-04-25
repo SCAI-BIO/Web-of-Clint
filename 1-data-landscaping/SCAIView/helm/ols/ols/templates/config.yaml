@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-obo-config
+data:
+{{ (.Files.Glob .Values.config.obo ).AsConfig | indent 2 }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-ols-config
+data:
+{{ (.Files.Glob .Values.config.ols ).AsConfig | indent 2 }}
