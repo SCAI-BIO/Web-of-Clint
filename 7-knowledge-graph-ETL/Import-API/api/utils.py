@@ -13,7 +13,7 @@ from models import InvalidQueryTypeException, MissingDatasetException
 def create_sparql_wrapper_for_triplestore(dataset: str):
     """Create a sparqlwrapper object for querying a specific dataset in the triplestore."""
     api_url = TS_HOST + dataset + "/query"
-
+    print(api_url)
     sparql_wrapper = SPARQLWrapper(api_url)
     sparql_wrapper.setCredentials(user=TS_USER, passwd=TS_PWD)
     return sparql_wrapper
@@ -82,7 +82,3 @@ def file_iterator(file_path: str, chunk_size: int = 4096):
 
 def delete_file(file_path: str):
     os.remove(file_path)
-
-
-if __name__ == "__main__":
-    data = generate_results(dataset="fluid", count=6000000, chunk_size=800000)

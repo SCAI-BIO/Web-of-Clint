@@ -46,7 +46,7 @@ class Neo4jConnection:
 
     def init_graph_config(self):
         """Initialize the graph configuration."""
-        self.query("CALL n10s.graphconfig.init()")
+        self.query('CALL n10s.graphconfig.init({handleRDFTypes:"LABELS", handleVocabUris:"IGNORE"})')
         self.query(query="CREATE CONSTRAINT n10s_unique_uri IF NOT EXISTS FOR (r:Resource) REQUIRE r.uri IS UNIQUE")
 
     def get_graph_config(self) -> dict:
@@ -121,7 +121,7 @@ class Neo4jConnection:
         api_url = TS_HOST + dataset + "/query"
 
         config = self.set_graph_config(config=config)
-        header_query_cypher = f'{{headerParams: {{ Accept: "application/turtle", Authorization: "Basic whouser:wKXN0ccRf4z7lLM"}}, payload: "query={query}"}}'
+        header_query_cypher = f'{{headerParams: {{ Accept: "application/turtle", Authorization: "Basic {TS_USER}:{TS_PWD}"}}, payload: "query={query}"}}'
         cypher_import = f'CALL n10s.rdf.import.fetch("{api_url}", "Turtle", {header_query_cypher})'
         resp = self.query(cypher_import)
         return resp

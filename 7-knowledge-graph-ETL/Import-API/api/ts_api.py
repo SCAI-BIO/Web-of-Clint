@@ -7,6 +7,7 @@ import requests
 from typing import Tuple, Union, Optional, Annotated
 from datetime import timedelta
 
+from jose import jwt, JWTError
 from requests_toolbelt.multipart.encoder import MultipartEncoder
 from rdflib import Graph
 
@@ -20,14 +21,14 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from neo4jconn import Neo4jConnection
 from constants import TS_HOST, TS_PWD, TS_USER, NEO4J_HOST, NEO4J_DB_USER, NEO4J_UPLOAD_USER, NEO4J_UPLOAD_PWD, \
-    NEO4J_URI, NEO4J_DB_PWD, ROOT_PATH
+    NEO4J_URI, NEO4J_DB_PWD, ROOT_PATH, SECRET_KEY
 from models import ReturnFormat, MissingDatasetException, InvalidQueryTypeException, SparqlQuery, TripleCount, \
     ConfigOption
 from utils import create_sparql_wrapper_for_triplestore, count_triples_in_dataset, get_datasets_in_triplestore, \
     query_and_convert, delete_file, generate_results
 from csv_2_rdf import csv_to_ttl
 from auth import Token, User, ACCESS_TOKEN_EXPIRE_MINUTES, authenticate_user, create_access_token, \
-    get_current_active_user, get_password_hash
+    get_password_hash, ALGORITHM, oauth2_scheme, TokenData, get_user
 
 tags_metadata = [
     {
@@ -101,6 +102,33 @@ async def login_for_access_token(
         data={"sub": user.username}, expires_delta=access_token_expires
     )
     return {"access_token": access_token, "token_type": "bearer"}
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(DB, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail="Inactive user")
+    return current_user
 
 
 # Exceptions
@@ -397,7 +425,7 @@ def import_data_from_triplestore_to_neo4j(
         ),
         database: str = Path(
             description="The name of the Neo4J graph database to import data into.",
-            example="testbruce",
+            example="mydataset",
         ),
 ):
     """Here the user can specify the dataset to query in the triplestore and have the results automatically uploaded
@@ -420,5 +448,3 @@ def import_data_from_triplestore_to_neo4j(
 
 if __name__ == "__main__":
     uvicorn.run('ts_api:app', reload=True, port=8000, host="0.0.0.0", timeout_keep_alive=600)
-    # db = Neo4jConnection(uri=NEO4J_URI, user=NEO4J_DB_USER, pwd=NEO4J_DB_PWD, database="testbruce")
-    # db.import_ttl_data(dataset="fluid")
