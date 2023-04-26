@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/lexinfo>
-        a                    void:Dataset ;
+lod:lexinfo  a               void:Dataset ;
         dcterms:description  "Ontology of lexical categories"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
@@ -17,6 +17,6 @@
         dcat:distribution    [ dcat:accessURL  <http://www.lexinfo.net/ontology/2.0/lexinfo.rdf> ] ;
         foaf:homepage        <http://lexinfo.net/> .
 
-[ void:target   <http://lod-cloud.net/dataset/isocat> , <http://lod-cloud.net/dataset/lexinfo> ;
+[ void:target   lod:lexinfo , lod:isocat ;
   void:triples  359
 ] .

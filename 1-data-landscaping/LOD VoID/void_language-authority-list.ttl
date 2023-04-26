@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/eurovoc> , <http://lod-cloud.net/dataset/language-authority-list> ;
+[ void:target   lod:language-authority-list , lod:eurovoc ;
   void:triples  100
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/language-authority-list> ;
+[ void:target   lod:language-authority-list , lod:wikidata ;
   void:triples  153
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/language-authority-list> ;
+[ void:target   lod:language-authority-list , lod:dbpedia ;
   void:triples  18
 ] .
 
-<http://lod-cloud.net/dataset/language-authority-list>
+lod:language-authority-list
         a                    void:Dataset ;
         dcterms:description  "The Languages name authority list (NAL) or Common Authority Table (CAT) is a controlled vocabulary listing languages with their authority code and label(s) in the 24 official languages of the EU (when available).\n\nThe language code table is based on ISO 639 standard which is issued in several parts:\n\n    ISO 639-1 contains strictly two alphabetic letters, called α-2,\n    ISO 639-2/B \"B\" = bibliographic – α-3 is used for bibliographic purpose,\n    ISO 639-2/T \"T\" = terminology – α-3 is used for technical purpose,\n    ISO 639-3 α-3 covers all the languages and macro-languages of the world; the values are compliant with ISO 639-2/T.\n\nThe Languages NAL is part of the Core Metadata (CM) used in the data exchange between the institutions involved in the legal decision making process and the Publications Office of the EU. The NAL is under governance of the Interinstitutional Metadata Maintenance Committee (IMMC) and maintained by the Publications Office of the EU in its Metadata Registry (MDR)."@en ;
         dcterms:publisher    [ rdfs:label  "EU Vocabularies team" ;

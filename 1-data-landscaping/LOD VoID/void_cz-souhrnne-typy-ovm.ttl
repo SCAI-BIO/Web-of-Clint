@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-ovm> , <http://lod-cloud.net/dataset/cz-souhrnne-typy-ovm> ;
-  void:triples  7551
-] .
-
-<http://lod-cloud.net/dataset/cz-souhrnne-typy-ovm>
+lod:cz-souhrnne-typy-ovm
         a                     void:Dataset ;
         dcterms:description   "This dataset contains summary types of Czech institutions of public power"@en ;
         dcterms:publisher     [ rdfs:label  "Ministerstvo vnitra České republiky" ;
                                 foaf:mbox   "klimek@opendata.cz"
                               ] ;
-        dcterms:subject       "format-skos" , "published-by-third-party" , "lod" , "format-owl" , "no-proprietary-vocab" , "government" , "czech" , "no-provenance-metadata" , "license-metadata" , "no-vocab-mappings" , "format-dcterms" , "czech republic" ;
+        dcterms:subject       "format-skos" , "lod" , "published-by-third-party" , "format-owl" , "no-proprietary-vocab" , "government" , "czech" , "no-provenance-metadata" , "license-metadata" , "no-vocab-mappings" , "format-dcterms" , "czech republic" ;
         dcterms:title         "Summary types of Czech institutions of public power"@en ;
-        void:exampleResource  <https://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttps://linked.opendata.cz/zdroj/ovm/00006947%3E&default-graph-uri=https%3A%2F%2Flinked.opendata.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fsouhrnn%C3%A9-typy-ovm&output=text%2Fturtle> , <https://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttps://linked.opendata.cz/zdroj/číselník/přehled-souhrnných-typů-ovm/1000%3E&default-graph-uri=https%3A%2F%2Flinked.opendata.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fsouhrnn%C3%A9-typy-ovm&output=text%2Fturtle> ;
+        void:exampleResource  <https://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <https://linked.opendata.cz/sparql> ;
         void:triples          127559 ;
-        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttps%3A%2F%2Flinked.opendata.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fsouhrnn%C3%A9-typy-ovm%2Fdistribuce%3E&output=text%2Fturtle> ] ;
         dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/zdroj/číselník/přehled-souhrnných-typů-ovm/1000> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/soubory/souhrnné-typy-ovm/souhrnné-typy-ovm.trig.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <https://linked.opendata.cz/zdroj/ovm/00006947> ] ;
         foaf:homepage         <https://linked.opendata.cz/zdroj/datová-sada/souhrnné-typy-ovm> .
+
+[ void:target   lod:cz-souhrnne-typy-ovm , lod:cz-ovm ;
+  void:triples  7551
+] .

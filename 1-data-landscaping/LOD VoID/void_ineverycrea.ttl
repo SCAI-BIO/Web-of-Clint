@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,32 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/ineverycrea-argentina> , <http://lod-cloud.net/dataset/ineverycrea> ;
+[ void:target   lod:ineverycrea , lod:dbpedia ;
+  void:triples  1279
+] .
+
+[ void:target   lod:ineverycrea , lod:gnoss ;
+  void:triples  1327
+] .
+
+[ void:target   lod:ineverycrea , lod:didactalia ;
+  void:triples  18245
+] .
+
+[ void:target   lod:ineverycrea , lod:geonames-semantic-web ;
+  void:triples  143
+] .
+
+[ void:target   lod:ineverycrea , lod:ineverycrea-argentina ;
   void:triples  12140
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/ineverycrea> ;
-  void:triples  1115
-] .
-
-<http://lod-cloud.net/dataset/ineverycrea>
-        a                     void:Dataset ;
-        dcterms:description   "<p>\r\n<a href=\"http://ineverycrea.net/\">IneveryCREA (Santillana)</a> is the community of educational creativity for teachers and education professionals to create, develop and share original educational resources in Spain.\r\n</p>\r\n<p>\r\nSantillana is the leading textbook and general-interest publishing group in Spain and Latin America, and the most prestigious publisher of literary works in Spanish. With more than 108 million books sold in 2010, the company has been synonymous with quality, innovation and service to teaching staff since its inception in 1960.\r\n</p>\r\n<p>\r\nIneveryCREA (Santillana) works with <a href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. IneveryCREA offers a selection of 2,554 resources (November 2012). It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.\r\n</p>\r\n\r\n<p>\r\n<a href=\"http://ineverycrea.net/\">IneveryCREA (Santillana)</a> es la comunidad de la creatividad educativa para profesores y profesionales de la educación que crean, desarrollan y comparten recursos educativos originales.\r\n</p>\r\n<p> Santillana es el grupo editorial líder en texto escolar y ediciones generales en España y América Latina, y la referencia en el campo de la creación literaria en lengua española. Con más de 108 millones de libros vendidos en el año 2010, es sinónimo de calidad, innovación y servicio al profesorado desde su creación en 1960.</p>\r\n<p>\r\nIneveryCREA (Santillana) trabaja con <a href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. IneveryCREA ofrece en este caso una selección de 2.554 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.\r\n</p>"@en ;
+lod:ineverycrea  a            void:Dataset ;
+        dcterms:description   "<p>\r\n<a+href=\"http://ineverycrea.net/\">IneveryCREA (Santillana)</a> is the community of educational creativity for teachers and education professionals to create, develop and share original educational resources in Spain.\r\n</p>\r\n<p>\r\nSantillana is the leading textbook and general-interest publishing group in Spain and Latin America, and the most prestigious publisher of literary works in Spanish. With more than 108 million books sold in 2010, the company has been synonymous with quality, innovation and service to teaching staff since its inception in 1960.\r\n</p>\r\n<p>\r\nIneveryCREA (Santillana) works with <a+href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. IneveryCREA offers a selection of 2,554 resources (November 2012). It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.\r\n</p>\r\n\r\n<p>\r\n<a+href=\"http://ineverycrea.net/\">IneveryCREA (Santillana)</a> es la comunidad de la creatividad educativa para profesores y profesionales de la educación que crean, desarrollan y comparten recursos educativos originales.\r\n</p>\r\n<p> Santillana es el grupo editorial líder en texto escolar y ediciones generales en España y América Latina, y la referencia en el campo de la creación literaria en lengua española. Con más de 108 millones de libros vendidos en el año 2010, es sinónimo de calidad, innovación y servicio al profesorado desde su creación en 1960.</p>\r\n<p>\r\nIneveryCREA (Santillana) trabaja con <a+href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. IneveryCREA ofrece en este caso una selección de 2.554 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.\r\n</p>"@en ;
         dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
                                 foaf:mbox   "gnoss@gnoss.com"
                               ] ;
-        dcterms:subject       "format-dcam" , "no-proprietary-vocab" , "bachillerato" , "format-wot" , "usergeneratedcontent" , "country.es" , "proyecto colaborativo" , "format-skos" , "no-vocab-mappings" , "creatividad educativa" , "dc" , "material educativo" , "sp" , "country-spain" , "educación" , "wrapper" , "escuela 2.0" , "skos" , "actividades interactivas" , "red educativa" , "sioc" , "educación infantil" , "user_generated" , "published-by-third-party" , "plataforma educativa" , "recursos educativos originales" , "unidades didácticas" , "pedagogía" , "lod" , "language-spa" , "license-metadata" , "format-sioc" , "provenance-metadata" , "herramientas 2.0" , "format-dc" , "innovación educativa" , "schemata" , "spain" , "foaf" , "educación primaria" , "ESO" , "educación 2.0" , "profesores" , "pizarra digital" , "socialweb" , "format-foaf" , "videos educativos" , "format-rdfg" ;
+        dcterms:subject       "format-dcam" , "no-proprietary-vocab" , "bachillerato" , "format-wot" , "usergeneratedcontent" , "country.es" , "proyecto colaborativo" , "format-skos" , "no-vocab-mappings" , "creatividad educativa" , "dc" , "material educativo" , "sp" , "country-spain" , "educación" , "wrapper" , "escuela 2.0" , "skos" , "actividades interactivas" , "red educativa" , "sioc" , "educación infantil" , "user_generated" , "published-by-third-party" , "plataforma educativa" , "recursos educativos originales" , "unidades didácticas" , "pedagogía" , "lod" , "language-spa" , "license-metadata" , "format-sioc" , "provenance-metadata" , "herramientas 2.0" , "format-dc" , "innovación educativa" , "schemata" , "foaf" , "spain" , "educación primaria" , "ESO" , "educación 2.0" , "profesores" , "pizarra digital" , "socialweb" , "format-foaf" , "videos educativos" , "format-rdfg" ;
         dcterms:title         "IneveryCREA, la comunidad de la creatividad educativa"@en ;
         void:exampleResource  <http://ineverycrea.net/comunidad/ineverycrea/recurso/Trabajas-en-tu-aula-con-herramientas-del-entorno-/a56fcf5f-86c9-44fd-8a34-27cfc8936cd8?rdf> , <http://ineverycrea.net/comunidad/ineverycrea/recurso/Tecnicas-de-desarrollo-de-la-Creatividad-Mapas-Me/4a196d2c-a32a-4cef-9d07-dced34ef05e6?rdf> , <http://ineverycrea.net/en/community/ineverycrea/advanced-search/tag/TIC?rdf> ;
         void:triples          3494839 ;
@@ -27,22 +39,10 @@
         dcat:distribution     [ dcat:accessURL  <http://gnoss.com/gnoss.owl> ] ;
         foaf:homepage         <http://ineverycrea.net/> .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/ineverycrea> ;
+[ void:target   lod:ineverycrea , lod:nytimes-linked-open-data ;
+  void:triples  1115
+] .
+
+[ void:target   lod:ineverycrea , lod:freebase ;
   void:triples  3709
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/gnoss> , <http://lod-cloud.net/dataset/ineverycrea> ;
-  void:triples  1327
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/didactalia> , <http://lod-cloud.net/dataset/ineverycrea> ;
-  void:triples  18245
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/ineverycrea> ;
-  void:triples  143
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/ineverycrea> ;
-  void:triples  1279
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,26 +6,26 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/data-incubator-metoffice> ;
-  void:triples  348
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/data-incubator-metoffice> ;
+[ void:target   lod:data-incubator-metoffice , lod:ordnance-survey-linked-data ;
   void:triples  413
 ] .
 
-<http://lod-cloud.net/dataset/data-incubator-metoffice>
+lod:data-incubator-metoffice
         a                     void:Dataset ;
         dcterms:description   "Weather forecast data screenscraped from pages like http://www.metoffice.gov.uk/weather/uk/os/kirkwall_forecast_weather.html  and converted to Linked Data\r\n\r\nNew forecasts for every area in the UK are scraped every hour (the metoffice update the forecasts hourly). This means the triple count is continually rising by circa 2,000,000 (240 triples * 413 areas) an hour. "@en ;
         dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
                                 foaf:mbox   "ka@talis.com"
                               ] ;
-        dcterms:subject       "format-rdf" , "geographic" , "format-spatial" , "format-skos" , "format-geo" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "linkeddata" , "provenance-metadata" , "geography" , "format-compass" , "country-uk" , "topic.government" , "published-by-third-party" , "format-meteo" , "weather" , "no-vocab-mappings" , "lod" , "government" , "resource-deref" , "topic.geographic" , "license-" , "license-metadata" ;
+        dcterms:subject       "format-rdf" , "format-skos" , "geographic" , "format-spatial" , "format-geo" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "linkeddata" , "provenance-metadata" , "geography" , "format-compass" , "country-uk" , "topic.government" , "published-by-third-party" , "format-meteo" , "weather" , "no-vocab-mappings" , "government" , "lod" , "resource-deref" , "topic.geographic" , "license-" , "license-metadata" ;
         dcterms:title         "Metoffice Weather Forecasts"@en ;
         void:exampleResource  <http://metoffice.dataincubator.org/areas/ta/falkirk/forecast/from/2011-08-01T07:39:00+00:00/for/2011-08-05/Day.rdf> , <http://metoffice.dataincubator.org/areas/ta/falkirk/forecast/from/2011-08-01T07:39:00+00:00/for/2011-08-05/Day> , <http://metoffice.dataincubator.org/areas/ta/falkirk> ;
         void:sparqlEndpoint   <http://api.talis.com/stores/metoffice/services/sparql> ;
         void:triples          26000000 ;
         dcat:distribution     [ dcat:accessURL  <http://metoffice.dataincubator.org> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://metoffice.dataincubator.org/vocabs/metoffice/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://purl.org/ns/meteo#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://metoffice.dataincubator.org/vocabs/metoffice/> ] ;
         foaf:homepage         <http://metoffice.dataincubator.org> .
+
+[ void:target   lod:data-incubator-metoffice , lod:geonames-semantic-web ;
+  void:triples  348
+] .

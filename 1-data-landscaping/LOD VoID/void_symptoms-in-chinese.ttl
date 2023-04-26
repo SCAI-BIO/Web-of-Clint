@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,18 +6,18 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/symptoms-in-chinese>
+lod:symptoms-in-chinese
         a                    void:Dataset ;
         dcterms:description  "This is a dataset containing entities of symptoms and symptom-related facts. It  is extracted from eight mainstream healthcare websites, three Chinese encyclopedia sites as well as Electronic Medical Records (EMRs). It also includes the link results between symptoms in our dataset and concepts in UMLS. We provide lookup interface and SPARQL endpoint for our dataset (http://dsc.nlp-bigdatalab.org:8081/search.html)."@en ;
         dcterms:publisher    [ rdfs:label  "East China University of Science and Technology" ;
                                foaf:mbox   "ruantong@ecust.edu.cn"
                              ] ;
-        dcterms:subject      "symptoms in Chinese" , "life science" , "Linked Data" ;
+        dcterms:subject      "life science" , "symptoms in Chinese" , "Linked Data" ;
         dcterms:title        "Symptoms in Chinese"@en ;
         void:triples         "1,008,772"^^xsd:integer ;
-        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/c68762ff-fa0b-443b-882a-f090faab052d/download/example.ttl> ] ;
         dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/8d8bf867-23f6-475a-b023-91ec6093b7bf/download/dsc.nlp-bigdatalab.org.rar> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/9c38197a-c7e0-4d9c-ab27-5005dc8a41ac/download/dsc-schema.txt> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/e902e889-25a5-4320-acf7-dd96a240d61a/download/evaluation-results-of-the-dataset.rar> ] ;
         dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/600164ff-fdf5-40cf-9d03-3efbb7ef4d95/download/dataset-description-in-dcat.txt> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/c68762ff-fa0b-443b-882a-f090faab052d/download/example.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/e902e889-25a5-4320-acf7-dd96a240d61a/download/evaluation-results-of-the-dataset.rar> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/9c38197a-c7e0-4d9c-ab27-5005dc8a41ac/download/dsc-schema.txt> ] ;
         foaf:homepage        <http://dsc.nlp-bigdatalab.org:8081/search.html> .

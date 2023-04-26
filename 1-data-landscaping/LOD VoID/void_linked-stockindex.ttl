@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,15 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/linked-edgar> , <http://lod-cloud.net/dataset/linked-stockindex> ;
+[ void:target   lod:linked-stockindex , lod:linked-edgar ;
   void:triples  501
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linked-stockindex> ;
+[ void:target   lod:linked-stockindex , lod:personal-homepages ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/linked-stockindex>
+lod:linked-stockindex
         a                     void:Dataset ;
         dcterms:description   "Providing information on market indices as Linked Data. "@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -24,6 +25,6 @@
         void:exampleResource  <http://indexwrap.ontologycentral.com/sp500> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/linked-stockindex> ;
+[ void:target   lod:linked-stockindex , lod:dbpedia ;
   void:triples  1
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/morelab> ;
-  void:triples  35
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/l3s-dblp> , <http://lod-cloud.net/dataset/morelab> ;
+[ void:target   lod:morelab , lod:l3s-dblp ;
   void:triples  128
 ] .
 
-<http://lod-cloud.net/dataset/morelab>
-        a                     void:Dataset ;
+lod:morelab  a                void:Dataset ;
         dcterms:description   "A dataset that describes staff, publications and proyects of MoreLab, an ICT research group within the Deusto Institute of Technology (DeustoTech) at University of Deusto.\r\n\r\nData is available in RDF format through resolvable URIs and a SPARQL endpoint."@en ;
         dcterms:publisher     [ rdfs:label  "Morelab" ;
                                 foaf:mbox   "m.emaldi@deusto.es"
@@ -27,14 +23,18 @@
         dcat:distribution     [ dcat:accessURL  <http://www.morelab.deusto.es/sitemap.xml> ] ;
         foaf:homepage         <http://www.morelab.deusto.es> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/morelab> ;
-  void:triples  38
+[ void:target   lod:morelab , lod:data-incubator-our-airports ;
+  void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/morelab> ;
+[ void:target   lod:morelab , lod:geonames ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/data-incubator-our-airports> , <http://lod-cloud.net/dataset/morelab> ;
-  void:triples  2
+[ void:target   lod:morelab , lod:dbpedia ;
+  void:triples  38
+] .
+
+[ void:target   lod:morelab , lod:rkb-explorer-dblp ;
+  void:triples  35
 ] .

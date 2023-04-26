@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/eventseer>
-        a                    void:Dataset ;
+lod:eventseer  a             void:Dataset ;
         dcterms:description  "This server generates Linked Data versions of the data present on Eventseer.net"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
@@ -18,6 +18,6 @@
         dcat:distribution    [ dcat:accessURL  <http://linkeddata.few.vu.nl/eventseer/resource/event_16594> ] ;
         foaf:homepage        <http://redux.eventseer.net/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/eventseer> ;
+[ void:target   lod:eventseer , lod:geonames-semantic-web ;
   void:triples  9568
 ] .

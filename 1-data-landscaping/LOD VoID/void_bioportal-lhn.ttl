@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,72 +6,71 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
+[ void:target   lod:bioportal-lhn , lod:bioportal-rcd ;
   void:triples  19
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
-  void:triples  58
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
+[ void:target   lod:bioportal-lhn , lod:bioportal-lnc ;
   void:triples  30
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
-  void:triples  43
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
+[ void:target   lod:bioportal-lhn , lod:bioportal-canco ;
   void:triples  12
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-lhn>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-lhn , lod:bioportal-rid ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-lhn , lod:bioportal-nif_cell ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-lhn , lod:bioportal-nif ;
+  void:triples  19
+] .
+
+[ void:target   lod:bioportal-lhn , lod:bioportal-hl7 ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-lhn , lod:bioportal-pato ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-lhn , lod:bioportal-snomedct ;
+  void:triples  43
+] .
+
+[ void:target   lod:bioportal-lhn , lod:bioportal-mesh-owl ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-lhn , lod:bioportal-ehda ;
+  void:triples  20
+] .
+
+[ void:target   lod:bioportal-lhn , lod:bioportal-nif_dysfunction ;
+  void:triples  12
+] .
+
+lod:bioportal-lhn  a         void:Dataset ;
         dcterms:description  "A demonstration of ontology construction as a general technique for coding ethograms and other descriptions of behavior into machine understandable forms. An ontology for Loggerhead sea turtle (<i>Caretta caretta</i>) nesting behavior, based on the published ethogram of Hailman and Elowson."@en ;
         dcterms:publisher    [ rdfs:label  "Peter Midford" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "lod" , "published-by-third-party" , "ontology" , "life_sciences" , "bioportal" , "format-rdf" , "format-obo" , "biomedicine" ;
+        dcterms:subject      "lod" , "published-by-third-party" , "ontology" , "bioportal" , "life_sciences" , "format-rdf" , "format-obo" , "biomedicine" ;
         dcterms:title        "Loggerhead nesting"@en ;
         void:triples         2623 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/44831?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/44831?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1024> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
-  void:triples  12
+[ void:target   lod:bioportal-lhn , lod:bioportal-galen ;
+  void:triples  14
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pato> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-lhn> ;
-  void:triples  20
+[ void:target   lod:bioportal-lhn , lod:bioportal-ncit ;
+  void:triples  58
 ] .

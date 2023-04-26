@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,28 +6,27 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/geowordnet>
-        a                     void:Dataset ;
+lod:geowordnet  a             void:Dataset ;
         dcterms:description   "GeoWordNet is a semantic resource built from the full integration of WordNet, GeoNames and the Italian part of MultiWordNet.\r\n\r\nGeoWordNet Public Dataset contains 3,698,238 entities, 3,698,237 part-of relations between entities, 334 concepts, 182 relations between concepts, 3,698,238 relations between instances and concepts, and 13,562 (English and Italian) alternative entity names.\r\n\r\nCC-BY licence, please refer to \r\nGiunchiglia, Fausto and Maltese, Vincenzo and Farazi, Feroz and Dutta, Biswanath. GeoWordNet: A Resource for Geo-spatial Applications. Technical Report DIT-09-071, Department of Information Engineering and Computer Science, University of Trento. In Proc. of 7th Extended Semantic Web Conference, ESWC 2010, Heraklion, Crete, Greece, pp. 121-136."@en ;
         dcterms:publisher     [ rdfs:label  "Fausto Giunchiglia" ;
                                 foaf:mbox   "http://disi.unitn.it/~fausto/"
                               ] ;
-        dcterms:subject       "linguistics" , "published-by-producer" , "italian" , "geography" , "license-metadata" , "geographic" , "format-rdfs" , "english" , "format-dc" , "format-wordnet" , "lodcloud-diagram-2011-09-19" , "no-deref-vocab" , "lodcloud-diagram-2014-08-30" , "format-w3c-wordnet" , "nlp" , "format-vu-wordnet" , "format-skos" , "provenance-metadata" , "wordnet" , "format-wn20schema" , "geonames" , "lod" , "linguistic" , "format-rdf" ;
+        dcterms:subject       "linguistics" , "italian" , "published-by-producer" , "geography" , "license-metadata" , "english" , "format-rdfs" , "geographic" , "format-dc" , "format-wordnet" , "lodcloud-diagram-2011-09-19" , "no-deref-vocab" , "lodcloud-diagram-2014-08-30" , "format-w3c-wordnet" , "nlp" , "format-vu-wordnet" , "format-skos" , "provenance-metadata" , "wordnet" , "format-wn20schema" , "geonames" , "lod" , "linguistic" , "format-rdf" ;
         dcterms:title         "GeoWordNet"@en ;
         void:exampleResource  <http://geowordnet.semanticmatching.org/synset-dependent_political_entity-noun-1.rdf> ;
         void:triples          53390969 ;
-        dcat:distribution     [ dcat:accessURL  <http://sourceforge.net/projects/s-match/files/datasets/geowordnet-dict-full-20110330.zip/download> ] ;
         dcat:distribution     [ dcat:accessURL  <http://geowordnet.semanticmatching.org/void.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://sourceforge.net/projects/s-match/files/datasets/geowordnet-rdf-20110330.zip/download> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://sourceforge.net/projects/s-match/files/datasets/geowordnet-public-20101123.zip/download> ] ;
         dcat:distribution     [ dcat:accessURL  <http://geowordnet.semanticmatching.org/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://sourceforge.net/projects/s-match/files/datasets/geowordnet-dict-full-20110330.zip/download> ] ;
         dcat:distribution     [ dcat:accessURL  <http://geowordnet.semanticmatching.org/synset-dependent_political_entity-noun-1.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://sourceforge.net/projects/s-match/files/datasets/geowordnet-public-20101123.zip/download> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://sourceforge.net/projects/s-match/files/datasets/geowordnet-rdf-20110330.zip/download> ] ;
         foaf:homepage         <http://geowordnet.semanticmatching.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/vu-wordnet> , <http://lod-cloud.net/dataset/geowordnet> ;
-  void:triples  2054873
+[ void:target   lod:geowordnet , lod:geonames-semantic-web ;
+  void:triples  7396476
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/geowordnet> ;
-  void:triples  7396476
+[ void:target   lod:geowordnet , lod:vu-wordnet ;
+  void:triples  2054873
 ] .

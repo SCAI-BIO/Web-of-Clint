@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,40 +6,99 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
+[ void:target   lod:bioportal-zfa , lod:bioportal-biomodels ;
+  void:triples  434
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-icnp ;
+  void:triples  36
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-idomal ;
+  void:triples  40
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-tao ;
+  void:triples  5182
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-basic-vertebrate-gross-anatomy ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aao> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  368
+[ void:target   lod:bioportal-zfa , lod:bioportal-wbbt ;
+  void:triples  53
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-po> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  11
+[ void:target   lod:bioportal-zfa , lod:bioportal-mccl_x1 ;
+  void:triples  1224
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  404
+[ void:target   lod:bioportal-zfa , lod:bioportal-cst ;
+  void:triples  34
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bodysystem> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  11
+[ void:target   lod:bioportal-zfa , lod:bioportal-canco ;
+  void:triples  746
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  88
+[ void:target   lod:bioportal-zfa , lod:bioportal-go_x2 ;
+  void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bto> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
+[ void:target   lod:bioportal-zfa , lod:bioportal-fma ;
+  void:triples  240
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-po_x2 ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-vao ;
+  void:triples  150
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-hao ;
+  void:triples  64
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-tads ;
+  void:triples  30
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-bto ;
   void:triples  342
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-dc_cl> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  19
+[ void:target   lod:bioportal-zfa , lod:bioportal-mat ;
+  void:triples  128
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-zfa>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-zfa , lod:bioportal-rcd ;
+  void:triples  237
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-aeo ;
+  void:triples  161
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-po ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-hl7 ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-ncit ;
+  void:triples  754
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-opl ;
+  void:triples  10
+] .
+
+lod:bioportal-zfa  a         void:Dataset ;
         dcterms:description  "A structured controlled vocabulary of the anatomy and development of the Zebrafish (<i>Danio rerio</i>)."@en ;
         dcterms:publisher    [ rdfs:label  "ZFIN administrators" ;
                                foaf:mbox   ""
@@ -46,263 +106,203 @@
         dcterms:subject      "bioportal" , "ontology" , "lod" , "published-by-third-party" , "format-rdf" , "life_sciences" , "format-obo" , "biomedicine" ;
         dcterms:title        "Zebrafish anatomy and development"@en ;
         void:triples         71952 ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47182?apikey=BP_API_KEY> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47182?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1051> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  47
+[ void:target   lod:bioportal-zfa , lod:bioportal-birnlex ;
+  void:triples  88
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  360
+[ void:target   lod:bioportal-zfa , lod:bioportal-syn ;
+  void:triples  404
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-po_x2> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mfo> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  98
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  434
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aeo> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  161
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aba> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  612
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-opl> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  271
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa2> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  223
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tgma> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  35
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  237
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bila> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  57
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  1224
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vao> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  150
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  272
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-idobru> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bao> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tads> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  30
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  36
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  203
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe-sbc> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gro_x1> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  34
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  29
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  505
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x1> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  37
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-caro> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  57
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nemo_x1> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  179
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-fma> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  240
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncbitaxon> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-xao> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  479
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  42
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sao> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  36
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-fbbt> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  105
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  54
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ma> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  383
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  286
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tao> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  5182
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vhog> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
+[ void:target   lod:bioportal-zfa , lod:bioportal-vhog ;
   void:triples  318
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-spd> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  10
+[ void:target   lod:bioportal-zfa , lod:bioportal-lnc ;
+  void:triples  203
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pma> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  25
+[ void:target   lod:bioportal-zfa , lod:bioportal-omim ;
+  void:triples  17
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cl> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
+[ void:target   lod:bioportal-zfa , lod:bioportal-cl ;
   void:triples  783
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  612
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  48
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  2577
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  698
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x2> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bho> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
+[ void:target   lod:bioportal-zfa , lod:bioportal-bho ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hao> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  64
+[ void:target   lod:bioportal-zfa , lod:bioportal-mccl ;
+  void:triples  47
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  746
+[ void:target   lod:bioportal-zfa , lod:bioportal-pma ;
+  void:triples  25
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  754
+[ void:target   lod:bioportal-zfa , lod:bioportal-aba ;
+  void:triples  19
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  702
+[ void:target   lod:bioportal-zfa , lod:bioportal-spd ;
+  void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  40
+[ void:target   lod:bioportal-zfa , lod:bioportal-ncbitaxon ;
+  void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-wbbt> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  53
+[ void:target   lod:bioportal-zfa , lod:bioportal-bao ;
+  void:triples  15
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  1125
+[ void:target   lod:bioportal-zfa , lod:bioportal-go_x1 ;
+  void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icf_x1> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
+[ void:target   lod:bioportal-zfa , lod:bioportal-aao ;
+  void:triples  368
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-galen ;
+  void:triples  271
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-ehdaa2 ;
+  void:triples  223
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-nif_cell ;
+  void:triples  54
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-ma ;
+  void:triples  383
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-msh ;
+  void:triples  360
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-mesh-owl ;
+  void:triples  612
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-xao ;
+  void:triples  479
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-efo ;
+  void:triples  698
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-nif ;
+  void:triples  179
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-bodysystem ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-bila ;
+  void:triples  57
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-ev ;
+  void:triples  505
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-mdr ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-zfa> ;
-  void:triples  128
+[ void:target   lod:bioportal-zfa , lod:bioportal-sao ;
+  void:triples  36
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-tgma ;
+  void:triples  35
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-snomedct ;
+  void:triples  612
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-acgt ;
+  void:triples  48
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-rid ;
+  void:triples  286
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-ehdaa ;
+  void:triples  702
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-fbbt ;
+  void:triples  105
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-icd10 ;
+  void:triples  37
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-caro ;
+  void:triples  57
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-sdo ;
+  void:triples  42
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-ehda ;
+  void:triples  2577
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-idobru ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-oboe-sbc ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-gro_x1 ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-mfo ;
+  void:triples  98
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-csp ;
+  void:triples  272
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-icf_x1 ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-obi ;
+  void:triples  29
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-uberon ;
+  void:triples  1125
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-nemo_x1 ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-zfa , lod:bioportal-dc_cl ;
+  void:triples  19
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/acadonto>
-        a                    void:Dataset ;
+lod:acadonto  a              void:Dataset ;
         dcterms:description  "An academic domain ontology populated using IIT Bombay organization corpus, web and the linked open data. \r\n\r\nUsage: Information Extraction, Information Retrieval\t\r\n\r\nAvailability: Freely Avalable\t"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""

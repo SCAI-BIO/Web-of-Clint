@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/salzburgerland-com-it> ;
-  void:triples  192
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/salzburgerland-com-it> ;
-  void:triples  184
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/salzburgerland-com-it> ;
-  void:triples  41
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/salzburgerland-com-it> ;
+[ void:target   lod:salzburgerland-com-it , lod:wikidata ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/salzburgerland-com-it> ;
-  void:triples  80
+[ void:target   lod:salzburgerland-com-it , lod:freebase ;
+  void:triples  184
 ] .
 
-<http://lod-cloud.net/dataset/salzburgerland-com-it>
+lod:salzburgerland-com-it
         a                     void:Dataset ;
         dcterms:description   "Salzburgerland dataset for Italian resources, built with WordLift from the website https://www.salzburgerland.com/it/"@en ;
         dcterms:publisher     [ rdfs:label  "WordLift Team" ;
@@ -37,3 +26,15 @@
         void:exampleResource  <http://open.salzburgerland.com/it/entity/austria> ;
         void:triples          4352 ;
         foaf:homepage         <https://www.salzburgerland.com/it/> .
+
+[ void:target   lod:salzburgerland-com-it , lod:geonames-semantic-web ;
+  void:triples  41
+] .
+
+[ void:target   lod:salzburgerland-com-it , lod:yago ;
+  void:triples  80
+] .
+
+[ void:target   lod:salzburgerland-com-it , lod:dbpedia ;
+  void:triples  192
+] .

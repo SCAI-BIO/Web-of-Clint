@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/gemeenschappelijke-thesaurus-audiovisuele-archieven> ;
+[ void:target   lod:gemeenschappelijke-thesaurus-audiovisuele-archieven , lod:dbpedia ;
   void:triples  25844
 ] .
 
-<http://lod-cloud.net/dataset/gemeenschappelijke-thesaurus-audiovisuele-archieven>
+lod:gemeenschappelijke-thesaurus-audiovisuele-archieven
         a                     void:Dataset ;
         dcterms:description   "The Netherlands Institute for Sound and Vision\r\n<http://portal.beeldengeluid.nl/> is the Dutch archive for public broadcast television. They employ the GTAA, which is a Dutch acronym for Common Thesaurus [for] Audiovisual Archives, to index and disclose their\r\naudiovisaul documents.\r\n\r\nThe GTAA closely follows the ISO-2788 standard for\r\nthesaurus structures. The thesaurus consists of several facets for describing TV programs: subjects; people mentioned; named entities (Corporation names, music bands etc); locations; genres; makers and presentators.\r\n\r\nThe GTAA contains approximately 160.000 terms: ~3800 Subjects, ~97.000 Persons, ~27.000 Names, ~14.000 Locations, 113 Genres and ~18.000 Makers, and is continually updated as new concepts emerge on TV.\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "Johan Oomen" ;
                                 foaf:mbox   "joomen@beeldengeluid.nl"
                               ] ;
-        dcterms:subject       "no-license-metadata" , "lodcloud-diagram-2011-09-19" , "gtaa" , "media" , "lod" , "published-by-producer" , "digital-humanities" , "deref-vocab" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "thesaurus" , "no-provenance-metadata" , "format-skos" , "no-vocab-mappings" , "schemata" ;
+        dcterms:subject       "no-license-metadata" , "lodcloud-diagram-2011-09-19" , "gtaa" , "media" , "lod" , "published-by-producer" , "digital-humanities" , "deref-vocab" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "thesaurus" , "format-skos" , "no-provenance-metadata" , "no-vocab-mappings" , "schemata" ;
         dcterms:title         "Gemeenschappelijke Thesaurus Audiovisuele Archieven ? Common Thesaurus Audiovisual Archives"@en ;
         void:exampleResource  <http://data.beeldengeluid.nl/gtaa/GTAA> , <http://data.beeldengeluid.nl/gtaa/173390.rdf> , <http://data.beeldengeluid.nl/gtaa/173390> ;
         void:triples          992797 ;
         dcat:distribution     [ dcat:accessURL  <http://semanticweb.cs.vu.nl/lod/beeldengeluid/GTAA-25aug2010.ttl.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.beeldengeluid.nl/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_dc> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.beeldengeluid.nl/> ] ;
         foaf:homepage         <http://data.beeldengeluid.nl/gtaa/GTAA> .

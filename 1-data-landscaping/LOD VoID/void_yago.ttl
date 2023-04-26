@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,22 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/yago> ;
+[ void:target   lod:yago , lod:dbpedia ;
   void:triples  2625671
 ] .
 
-<http://lod-cloud.net/dataset/yago>
-        a                    void:Dataset ;
+lod:yago  a                  void:Dataset ;
         dcterms:description  "YAGO3 is a huge semantic knowledge base, derived from Wikipedia WordNet and GeoNames. Currently, YAGO3 has knowledge of more than 10 million entities (like persons, organizations, cities, etc.) and contains more than 120 million facts about these entities."@en ;
         dcterms:publisher    [ rdfs:label  "YAGO Team" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "linkeddata" , "crossdomain" , "cross_domain" , "ontology" , "lod" , "no-provenance-metadata" , "ckanupload.esw.200910" , "lodcloud-diagram-2014-08-30" , "published-by-producer" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "no-deref-vocab" , "format-rdf" ;
+        dcterms:subject      "linkeddata" , "crossdomain" , "no-provenance-metadata" , "ontology" , "lod" , "cross_domain" , "ckanupload.esw.200910" , "lodcloud-diagram-2014-08-30" , "published-by-producer" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "no-deref-vocab" , "format-rdf" ;
         dcterms:title        "YAGO"@en ;
         void:triples         120000000 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/yago/downloads/> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://resources.mpi-inf.mpg.de/yago-naga/yago3.1/yago3.1_entire_tsv.7z> ] ;
         dcat:distribution    [ dcat:accessURL  <http://resources.mpi-inf.mpg.de/yago-naga/yago3.1/yagoTypes.ttl.7z> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://resources.mpi-inf.mpg.de/yago-naga/yago3.1/yago3.1_entire_tsv.7z> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/yago/downloads/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://resources.mpi-inf.mpg.de/yago-naga/yago3.1/yagoSchema.ttl.7z> ] ;
         dcat:distribution    [ dcat:accessURL  <http://resources.mpi-inf.mpg.de/yago-naga/yago3.1/yago3.1_entire_ttl.7z> ] ;
         dcat:distribution    [ dcat:accessURL  <http://resources.mpi-inf.mpg.de/yago-naga/yago3.1/yagoTaxonomy.ttl.7z> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://resources.mpi-inf.mpg.de/yago-naga/yago3.1/yagoSchema.ttl.7z> ] ;
         foaf:homepage        <http://yago-knowledge.org> .

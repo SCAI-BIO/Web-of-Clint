@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,56 +6,27 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-icps> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-icps> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-icps> ;
-  void:triples  72
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-icps> ;
-  void:triples  40
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-icps> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-icps> ;
-  void:triples  49
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cpr> , <http://lod-cloud.net/dataset/bioportal-icps> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-icps> ;
-  void:triples  112
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-icps> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-icps> ;
-  void:triples  34
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gaz> , <http://lod-cloud.net/dataset/bioportal-icps> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-icps> ;
+[ void:target   lod:bioportal-icps , lod:bioportal-efo ;
   void:triples  10
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-icps>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-icps , lod:bioportal-icnp ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-icps , lod:bioportal-ncit ;
+  void:triples  72
+] .
+
+[ void:target   lod:bioportal-icps , lod:bioportal-sopharm ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-icps , lod:bioportal-canco ;
+  void:triples  21
+] .
+
+lod:bioportal-icps  a        void:Dataset ;
         dcterms:description  "Ontology network about Patient Safety Incident. This work has been carried out by the Ontological Engineering Group, using sources from the University of Saint Etienne and the Australian Patient Safety Foundation, and supported by the World Health Organisation under the International Classification for Patient Safety programme."@en ;
         dcterms:publisher    [ rdfs:label  "Oscar Corcho" ;
                                foaf:mbox   ""
@@ -62,23 +34,51 @@
         dcterms:subject      "ontology" , "bioportal" , "lod" , "published-by-third-party" , "format-rdf" , "biomedicine" , "life_sciences" , "format-owl" ;
         dcterms:title        "ICPS Network"@en ;
         void:triples         9468 ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/46855?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/46855?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1509> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-icps> ;
+[ void:target   lod:bioportal-icps , lod:bioportal-mesh-owl ;
+  void:triples  34
+] .
+
+[ void:target   lod:bioportal-icps , lod:bioportal-galen ;
   void:triples  26
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-icps> ;
+[ void:target   lod:bioportal-icps , lod:bioportal-csp ;
   void:triples  23
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-icps> ;
+[ void:target   lod:bioportal-icps , lod:bioportal-cpr ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-icps , lod:bioportal-rid ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-icps , lod:bioportal-hl7 ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-icps , lod:bioportal-lnc ;
+  void:triples  49
+] .
+
+[ void:target   lod:bioportal-icps , lod:bioportal-gaz ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-icps , lod:bioportal-snomedct ;
+  void:triples  112
+] .
+
+[ void:target   lod:bioportal-icps , lod:bioportal-msh ;
   void:triples  39
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-icps> ;
-  void:triples  14
+[ void:target   lod:bioportal-icps , lod:bioportal-rcd ;
+  void:triples  40
 ] .

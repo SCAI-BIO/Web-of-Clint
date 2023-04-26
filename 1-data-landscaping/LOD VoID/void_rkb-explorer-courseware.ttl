@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,98 +6,98 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wordnet> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  38
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-budapest ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  1
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-oai ;
+  void:triples  17
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lingvoj> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
+[ void:target   lod:rkb-explorer-courseware , lod:lingvoj ;
   void:triples  42
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-irit ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  5
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-dotac ;
+  void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/rkb-explorer-courseware>
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-newcastle ;
+  void:triples  16
+] .
+
+lod:rkb-explorer-courseware
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
                                 foaf:mbox   "hg@ecs.soton.ac.uk"
                               ] ;
-        dcterms:subject       "lod" , "deref-vocab" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "no-license-metadata" , "format-dc" , "format-rdf" , "published-by-third-party" , "publications" , "lodcloud-diagram-2011-09-19" , "void-sparql-endpoint" , "no-vocab-mappings" ;
+        dcterms:subject       "lod" , "deref-vocab" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "no-license-metadata" , "format-dc" , "format-rdf" , "published-by-third-party" , "lodcloud-diagram-2011-09-19" , "publications" , "no-vocab-mappings" , "void-sparql-endpoint" ;
         dcterms:title         "Resilient Computing Courseware (RKBExplorer)"@en ;
         void:exampleResource  <http://courseware.rkbexplorer.com/id/assessment-method/Oral-Examination> ;
         void:sparqlEndpoint   <http://courseware.rkbexplorer.com/sparql/> ;
         void:triples          45780 ;
+        dcat:distribution     [ dcat:accessURL  <http://courseware.rkbexplorer.com/models/void.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://courseware.rkbexplorer.com/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://courseware.rkbexplorer.com/models/dump.tgz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://courseware.rkbexplorer.com/models/void.ttl> ] ;
         foaf:homepage         <http://courseware.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-irit> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  53
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-curriculum> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-curriculum ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/southampton-ecs-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  41
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/w3c-wordnet> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-wordnet ;
   void:triples  38
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/opencyc> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  39
+[ void:target   lod:rkb-explorer-courseware , lod:southampton-ecs-eprints ;
+  void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-courseware> ;
-  void:triples  16
+[ void:target   lod:rkb-explorer-courseware , lod:dbpedia ;
+  void:triples  41
+] .
+
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-eprints ;
+  void:triples  13
+] .
+
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-rae2001 ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-cordis ;
+  void:triples  11
+] .
+
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-acm ;
+  void:triples  19
+] .
+
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-southampton ;
+  void:triples  2
+] .
+
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-dblp ;
+  void:triples  53
+] .
+
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-citeseer ;
+  void:triples  5
+] .
+
+[ void:target   lod:rkb-explorer-courseware , lod:w3c-wordnet ;
+  void:triples  38
+] .
+
+[ void:target   lod:rkb-explorer-courseware , lod:rkb-explorer-laas ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-courseware , lod:opencyc ;
+  void:triples  39
 ] .

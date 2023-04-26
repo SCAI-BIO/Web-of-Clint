@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,18 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/productontology>
-        a                     void:Dataset ;
+[ void:target   lod:productontology , lod:dbpedia ;
+  void:triples  300000
+] .
+
+lod:productontology  a        void:Dataset ;
         dcterms:description   "The Product Types Ontology provides GoodRelations-compatible OWL DL class definitions for ca. 300,000 types of product or services that have an entry in the English Wikipedia"@en ;
         dcterms:publisher     [ rdfs:label  "Martin Hepp" ;
                                 foaf:mbox   "mhepp@computer.org"
                               ] ;
-        dcterms:subject       "format-foaf" , "cross_domain" , "lodcloud-diagram-2011-09-19" , "crossdomain" , "published-by-producer" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "format-rdf" , "deref-vocab" , "lod" , "ontology" , "products" , "format-wdrs" , "ecommerce" , "license-metadata" ;
+        dcterms:subject       "format-foaf" , "lodcloud-diagram-2011-09-19" , "cross_domain" , "crossdomain" , "format-rdf" , "provenance-metadata" , "published-by-producer" , "lodcloud-diagram-2014-08-30" , "deref-vocab" , "lod" , "ontology" , "products" , "format-wdrs" , "ecommerce" , "license-metadata" ;
         dcterms:title         "Product Types Ontology"@en ;
         void:exampleResource  <http://www.productontology.org/doc/Laser_printer.ttl> ;
         void:triples          18000000 ;
         dcat:distribution     [ dcat:accessURL  <http://www.productontology.org/dump.rdf> ] ;
         foaf:homepage         <http://www.productontology.org> .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/productontology> ;
-  void:triples  300000
-] .

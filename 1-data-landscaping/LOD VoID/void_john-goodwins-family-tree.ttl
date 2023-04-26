@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/john-goodwins-family-tree>
+[ void:target   lod:john-goodwins-family-tree , lod:dbpedia ;
+  void:triples  500
+] .
+
+lod:john-goodwins-family-tree
         a                     void:Dataset ;
         dcterms:description   "Data about John Goodwin's family tree."@en ;
         dcterms:publisher     [ rdfs:label  "John Goodwin" ;
                                 foaf:mbox   "John.Goodwin@ordnancesurvey.co.uk"
                               ] ;
-        dcterms:subject       "usergeneratedcontent" , "format-rdf" , "format-event" , "format-bio" , "no-vocab-mappings" , "lodcloud-diagram-2011-09-19" , "no-proprietary-vocab" , "genealogy" , "user_generated" , "format-foaf" , "format-rel" , "lod" , "provenance-metadata" , "no-license-metadata" , "published-by-producer" , "format-owl" ;
+        dcterms:subject       "usergeneratedcontent" , "format-rdf" , "format-event" , "format-bio" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "no-proprietary-vocab" , "genealogy" , "user_generated" , "format-foaf" , "format-rel" , "lod" , "no-license-metadata" , "provenance-metadata" , "published-by-producer" , "format-owl" ;
         dcterms:title         "John Goodwin's Family Tree"@en ;
         void:exampleResource  <http://www.johngoodwin.me.uk/family/I0243> ;
         void:sparqlEndpoint   <http://api.talis.com/stores/jgoodwin-genealogy/services/sparql> ;
         void:triples          177867 ;
         dcat:distribution     [ dcat:accessURL  <http://www.johngoodwin.me.uk/family/?&_output=turtle> ] ;
         foaf:homepage         <http://www.johngoodwin.me.uk/family/> .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/john-goodwins-family-tree> ;
-  void:triples  500
-] .

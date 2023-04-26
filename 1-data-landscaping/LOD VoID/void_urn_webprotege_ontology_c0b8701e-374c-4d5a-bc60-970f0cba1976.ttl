@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/urn_webprotege_ontology_c0b8701e-374c-4d5a-bc60-970f0cba1976>
+lod:urn_webprotege_ontology_c0b8701e-374c-4d5a-bc60-970f0cba1976
         a                    void:Dataset ;
         dcterms:description  "Vocabularios de los Códigos de Derecho de la Ciberseguridad en España"@en ;
         dcterms:publisher    [ rdfs:label  "Yixian Chen" ;

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-households-in-temporary-accommodation> ;
+[ void:target   lod:opendatacommunities-transparency-impact-indicators-households-in-temporary-accommodation , lod:statistics-data-gov-uk ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-households-in-temporary-accommodation>
+[ void:target   lod:opendatacommunities-transparency-impact-indicators-households-in-temporary-accommodation , lod:reference-data-gov-uk ;
+  void:triples  1
+] .
+
+lod:opendatacommunities-transparency-impact-indicators-households-in-temporary-accommodation
         a                    void:Dataset ;
         dcterms:description  ""@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "format-sdmxa" , "format-rdfs" , "format-dcterm" , "LinkedDataCrawl2014" , "format-cube" , "government" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "format-sdmxd" , "format-dcat" , "dataset-level-metadata" , "sparql" , "format-void" , "license-metadata" , "crawledLinkedDataCloud2014" , "dump" , "format-rdf" ;
+        dcterms:subject      "format-sdmxa" , "format-rdfs" , "format-dcterm" , "LinkedDataCrawl2014" , "format-cube" , "government" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "format-sdmxd" , "format-dcat" , "dataset-level-metadata" , "format-void" , "sparql" , "crawledLinkedDataCloud2014" , "license-metadata" , "dump" , "format-rdf" ;
         dcterms:title        "opendatacommunities-transparency-impact-indicators-households-in-temporary-accommodation"@en ;
         void:triples         "0"^^xsd:int .
-
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-households-in-temporary-accommodation> ;
-  void:triples  1
-] .

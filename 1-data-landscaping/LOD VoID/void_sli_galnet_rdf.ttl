@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lemonuby> , <http://lod-cloud.net/dataset/sli_galnet_rdf> ;
-  void:triples  665226
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/wordnet-rdf> , <http://lod-cloud.net/dataset/sli_galnet_rdf> ;
+[ void:target   lod:sli_galnet_rdf , lod:wordnet-rdf ;
   void:triples  665190
 ] .
 
-<http://lod-cloud.net/dataset/sli_galnet_rdf>
-        a                    void:Dataset ;
+[ void:target   lod:sli_galnet_rdf , lod:lemonuby ;
+  void:triples  665226
+] .
+
+lod:sli_galnet_rdf  a        void:Dataset ;
         dcterms:description  "SLI Galnet, the Galician wordnet, at version 3.0.26 (http://sli.uvigo.gal/galnet) in RDF (Resource Description Framework) format. This distribution includes linked multilingual lexical data for Galician, Catalan, Basque, Spanish, Portuguese and English, and integrates ontological knowledge from WordNet Domains, Adimen-SUMO, Top Ontology and Galnet Epinonyms"@en ;
         dcterms:publisher    [ rdfs:label  "Miguel Anxo Solla Portela" ;
                                foaf:mbox   "miguelsolla@uvigo.es"

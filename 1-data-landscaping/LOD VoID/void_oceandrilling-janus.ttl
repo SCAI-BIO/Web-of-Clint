@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/coreref> , <http://lod-cloud.net/dataset/oceandrilling-janus> ;
-  void:triples  100000
-] .
-
-<http://lod-cloud.net/dataset/oceandrilling-janus>
+lod:oceandrilling-janus
         a                     void:Dataset ;
         dcterms:description   "Janus LOD is a test of exposing Janus data using a linked data application.\r\n\r\nhttp://data.oceandrilling.org/januslod/\r\n\r\nData in Janus comes from the Deep Sea Drilling Program and Ocean Drilling Program.  Authority for this data is at Texas A&M implementing organization  (ref: http://www-odp.tamu.edu/database/)"@en ;
         dcterms:publisher     [ rdfs:label  "Douglas Fils" ;
@@ -21,3 +18,7 @@
         void:sparqlEndpoint   <http://data.oceandrilling.org/sparql> ;
         void:triples          11800000 ;
         foaf:homepage         <http://data.oceandrilling.org/linkeddata.html> .
+
+[ void:target   lod:oceandrilling-janus , lod:coreref ;
+  void:triples  100000
+] .

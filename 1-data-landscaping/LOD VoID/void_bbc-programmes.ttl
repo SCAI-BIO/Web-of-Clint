@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,16 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/bbc-programmes> ;
+[ void:target   lod:bbc-programmes , lod:dbpedia ;
   void:triples  23237
 ] .
 
-<http://lod-cloud.net/dataset/bbc-programmes>
-        a                     void:Dataset ;
+lod:bbc-programmes  a         void:Dataset ;
         dcterms:description   "TV & Radio programme broadcasted by the BBC"@en ;
         dcterms:publisher     [ rdfs:label  "Tom Scott" ;
                                 foaf:mbox   "http://derivadow.com"
                               ] ;
-        dcterms:subject       "deref-vocab" , "vocab-mappings" , "lod" , "lodcloud-diagram-2014-08-30" , "format-dc" , "no-license-metadata" , "published-by-producer" , "format-foaf" , "media" , "lodcloud-diagram-2011-09-19" , "no-provenance-metadata" , "format-rdf" ;
+        dcterms:subject       "deref-vocab" , "vocab-mappings" , "lod" , "lodcloud-diagram-2014-08-30" , "format-dc" , "no-license-metadata" , "format-foaf" , "published-by-producer" , "media" , "lodcloud-diagram-2011-09-19" , "no-provenance-metadata" , "format-rdf" ;
         dcterms:title         "BBC Programmes"@en ;
         void:exampleResource  <http://www.bbc.co.uk/programmes/b0074fmn#programme> ;
         void:sparqlEndpoint   <http://api.talis.com/stores/bbc-backstage/services/sparql> ;
@@ -24,6 +24,6 @@
         dcat:distribution     [ dcat:accessURL  <http://www.bbc.co.uk/ontologies/programmes/2009-09-07.n3> ] ;
         foaf:homepage         <http://www.bbc.co.uk/programmes> .
 
-[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/bbc-programmes> ;
+[ void:target   lod:bbc-programmes , lod:bbc-music ;
   void:triples  10000
 ] .

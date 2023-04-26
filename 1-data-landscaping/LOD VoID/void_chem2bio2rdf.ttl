@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/chem2bio2rdf>
-        a                     void:Dataset ;
+[ void:target   lod:chem2bio2rdf , lod:bio2rdf-mesh ;
+  void:triples  609612
+] .
+
+lod:chem2bio2rdf  a           void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "David Wild, Ying Ding" ;
                                 foaf:mbox   "dingying@indiana.edu"
@@ -19,26 +23,22 @@
         dcat:distribution     [ dcat:accessURL  <http://cheminfov.informatics.indiana.edu:8080/sitemap.xml> ] ;
         foaf:homepage         <http://chem2bio2rdf.org> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-cas> , <http://lod-cloud.net/dataset/chem2bio2rdf> ;
-  void:triples  408326
+[ void:target   lod:chem2bio2rdf , lod:bio2rdf-omim ;
+  void:triples  27658
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/chem2bio2rdf> ;
-  void:triples  109876
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mesh> , <http://lod-cloud.net/dataset/chem2bio2rdf> ;
-  void:triples  609612
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-geneid> , <http://lod-cloud.net/dataset/chem2bio2rdf> ;
+[ void:target   lod:chem2bio2rdf , lod:bio2rdf-geneid ;
   void:triples  25867
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxon> , <http://lod-cloud.net/dataset/chem2bio2rdf> ;
+[ void:target   lod:chem2bio2rdf , lod:bio2rdf-taxon ;
   void:triples  111384
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/chem2bio2rdf> ;
-  void:triples  27658
+[ void:target   lod:chem2bio2rdf , lod:bio2rdf-pubmed ;
+  void:triples  109876
+] .
+
+[ void:target   lod:chem2bio2rdf , lod:bio2rdf-cas ;
+  void:triples  408326
 ] .

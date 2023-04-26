@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,59 +6,51 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rxnorm> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
-  void:triples  137
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
-  void:triples  62
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-chebi> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-chebi ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nddf> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-nddf ;
   void:triples  22
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
-  void:triples  193
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-mesh-owl ;
+  void:triples  137
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-rcd ;
   void:triples  42
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vandf> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
-  void:triples  26
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-snomedct ;
+  void:triples  193
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
-  void:triples  54
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-sopharm ;
   void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
-  void:triples  37
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-msh ;
   void:triples  148
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-fda-meddevice>
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-rxnorm ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-hl7 ;
+  void:triples  25
+] .
+
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-csp ;
+  void:triples  37
+] .
+
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-nif ;
+  void:triples  12
+] .
+
+lod:bioportal-fda-meddevice
         a                    void:Dataset ;
         dcterms:description  "Medical Devices as downloaded from the FDA site in Jan. 2011"@en ;
         dcterms:publisher    [ rdfs:label  "Ketty Mobed" ;
@@ -66,23 +59,31 @@
         dcterms:subject      "bioportal" , "ontology" , "biomedicine" , "format-rdf" , "published-by-third-party" , "lod" , "life_sciences" , "format-owl" ;
         dcterms:title        "FDA Medical Devices (2010)"@en ;
         void:triples         61147 ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45231?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45231?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1576> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-galen ;
   void:triples  36
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
-  void:triples  25
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-vandf ;
+  void:triples  26
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
-  void:triples  87
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-ndfrt ;
+  void:triples  62
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/bioportal-fda-meddevice> ;
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-ero ;
   void:triples  15
+] .
+
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-lnc ;
+  void:triples  54
+] .
+
+[ void:target   lod:bioportal-fda-meddevice , lod:bioportal-ncit ;
+  void:triples  87
 ] .

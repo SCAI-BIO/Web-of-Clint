@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/national-diet-library-subject-headings> ;
+[ void:target   lod:national-diet-library-subject-headings , lod:lcsh ;
   void:triples  588
 ] .
 
-<http://lod-cloud.net/dataset/national-diet-library-subject-headings>
+lod:national-diet-library-subject-headings
         a                     void:Dataset ;
         dcterms:description   "duplicate:national-diet-library-authorities"@en ;
         dcterms:publisher     [ rdfs:label  "Kanzaki Masahide" ;

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/epa-cdr>
-        a                     void:Dataset ;
+lod:epa-cdr  a                void:Dataset ;
         dcterms:description   "The Chemical Data Reporting (CDR) Rule, issued under the Toxic Substances Control Act (TSCA), requires manufacturers (including importers) to give EPA information on the chemicals they manufacture domestically or import into the United States. EPA uses the data to help assess the potential human health and environmental effects of these chemicals and makes the non-confidential business information it receives available to the public."@en ;
         dcterms:publisher     [ rdfs:label  "EPA Office of Environmental Information" ;
                                 foaf:mbox   "admin@3roundstones.com"
@@ -20,10 +20,10 @@
         dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov/meta/cdr/void.ttl> ] ;
         foaf:homepage         <https://opendata.epa.gov> .
 
-[ void:target   <http://lod-cloud.net/dataset/epa-frs> , <http://lod-cloud.net/dataset/epa-cdr> ;
-  void:triples  58652
+[ void:target   lod:epa-cdr , lod:epa-srs ;
+  void:triples  28649
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/epa-srs> , <http://lod-cloud.net/dataset/epa-cdr> ;
-  void:triples  28649
+[ void:target   lod:epa-cdr , lod:epa-frs ;
+  void:triples  58652
 ] .

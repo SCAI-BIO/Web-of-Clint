@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/dcs-sheffield>
-        a                     void:Dataset ;
+[ void:target   lod:dcs-sheffield , lod:fu-berlin-dblp ;
+  void:triples  210
+] .
+
+lod:dcs-sheffield  a          void:Dataset ;
         dcterms:description   "Describes people, research groups and publications within the Department of Computer Science based at the University of Sheffield.\r\n\r\nPublishes Linked Data in RDF."@en ;
         dcterms:publisher     [ rdfs:label  "Matthew Rowe" ;
                                 foaf:mbox   "m.rowe@dcs.shef.ac.uk"
@@ -18,7 +22,3 @@
         dcat:distribution     [ dcat:accessURL  <http://data.dcs.shef.ac.uk/dump/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.dcs.shef.ac.uk/dump/datadcs-withdblpV1-28Feb2010.rdf> ] ;
         foaf:homepage         <http://data.dcs.shef.ac.uk/> .
-
-[ void:target   <http://lod-cloud.net/dataset/fu-berlin-dblp> , <http://lod-cloud.net/dataset/dcs-sheffield> ;
-  void:triples  210
-] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/epa-frs>
-        a                     void:Dataset ;
+lod:epa-frs  a                void:Dataset ;
         dcterms:description   "The Facility Registry Service (FRS) provides quality facility data to support EPA's mission of protecting human health and the environment."@en ;
         dcterms:publisher     [ rdfs:label  "EPA Office of Environmental Information" ;
                                 foaf:mbox   "admin@3roundstones.com"
@@ -15,15 +15,15 @@
         dcterms:title         "EPA-FRS"@en ;
         void:exampleResource  <https://opendata.epa.gov/data/facility/110000589355.ttl> ;
         void:triples          229361000 ;
-        dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov/meta/frs/schema.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov/meta/frs/void.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov/meta/frs/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov/meta/frs/schema.ttl> ] ;
         foaf:homepage         <https://opendata.epa.gov> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/epa-frs> ;
-  void:triples  66
+[ void:target   lod:epa-frs , lod:epa-rcra ;
+  void:triples  1711036
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/epa-rcra> , <http://lod-cloud.net/dataset/epa-frs> ;
-  void:triples  1711036
+[ void:target   lod:epa-frs , lod:dbpedia ;
+  void:triples  66
 ] .

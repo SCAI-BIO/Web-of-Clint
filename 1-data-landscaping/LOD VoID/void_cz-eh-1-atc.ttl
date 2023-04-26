@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,22 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/cz-eh-1-atc>
-        a                     void:Dataset ;
+lod:cz-eh-1-atc  a            void:Dataset ;
         dcterms:description   "Anatomical Therapeutic Chemical Classification System"@en ;
         dcterms:publisher     [ rdfs:label  "Martin Nečaský" ;
                                 foaf:mbox   "necasky@opendata.cz"
                               ] ;
         dcterms:subject       "czech" , "lifesciences" , "life_sciences" , "no-deref-vocab" , "format-skos" , "no-vocab-mappings" , "provenance-metadata" , "lod" , "license-metadata" , "published-by-third-party" , "czech-republic" ;
         dcterms:title         "ATC groups"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/atc/A01AB03%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fatc&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          47540 ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/atc/A01AB03> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/eh-1-atc.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fatc%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/atc/A01AB03> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         foaf:homepage         <http://linked.opendata.cz/resource/dataset/atc> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/cz-eh-1-atc> ;
+[ void:target   lod:cz-eh-1-atc , lod:dbpedia ;
   void:triples  5955
 ] .

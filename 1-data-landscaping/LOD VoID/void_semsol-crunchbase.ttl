@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/semsol-crunchbase>
+[ void:target   lod:semsol-crunchbase , lod:dbpedia ;
+  void:triples  250
+] .
+
+lod:semsol-crunchbase
         a                    void:Dataset ;
         dcterms:description  "This datasource seems to be permanently down. A potential pointer might be this tweet from the maintainer: https://twitter.com/#!/bengee/status/90414011685941248:\r\n\r\n\"another dependency (before #job search) removed: semsol.com now redirects to bnowack.de\""@en ;
         dcterms:publisher    [ rdfs:label  "Benjamin Nowack" ;
@@ -15,9 +20,5 @@
         dcterms:title        "Semantic CrunchBase"@en ;
         void:sparqlEndpoint  <http://cb.semsol.org/sparql> ;
         void:triples         955676 ;
-        dcat:distribution    [ dcat:accessURL  <http://cb.semsol.org/sparql?query=dump> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://cb.semsol.org/sparql> ] ;
         foaf:homepage        <http://cb.semsol.org> .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/semsol-crunchbase> ;
-  void:triples  250
-] .

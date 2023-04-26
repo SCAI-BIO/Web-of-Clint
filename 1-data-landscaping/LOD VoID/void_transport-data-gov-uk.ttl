@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,29 +6,29 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/transport-data-gov-uk> ;
-  void:triples  109708
-] .
-
-<http://lod-cloud.net/dataset/transport-data-gov-uk>
+lod:transport-data-gov-uk
         a                     void:Dataset ;
         dcterms:description   "Transport-related linked data from data.gov.uk.\r\n\r\n* Namespace for roads\r\n* Namespace for stations\r\n* Namespace for airports\r\n* Road traffic statistics (SCOVO)"@en ;
         dcterms:publisher     [ rdfs:label  "data.gov.uk" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "format-foaf" , "format-geo" , "format-skos" , "format-dc" , "motorways" , "transport" , "ports" , "airports" , "bus-stops" , "roads" , "country-uk" , "traffic" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "deref-vocab" , "no-vocab-mappings" , "lod" , "no-provenance-metadata" , "ukgov" , "no-license-metadata" , "government" , "uk" , "broken_link" , "naptan" , "stations" , "published-by-producer" ;
+        dcterms:subject       "format-foaf" , "format-geo" , "format-dc" , "format-skos" , "motorways" , "transport" , "ports" , "airports" , "bus-stops" , "roads" , "country-uk" , "traffic" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "deref-vocab" , "no-vocab-mappings" , "lod" , "no-provenance-metadata" , "government" , "no-license-metadata" , "ukgov" , "uk" , "broken_link" , "naptan" , "stations" , "published-by-producer" ;
         dcterms:title         "transport.data.gov.uk"@en ;
         void:exampleResource  <http://transport.data.gov.uk/id/station/VIC> , <http://transport.data.gov.uk/id/road/A1> , <http://transport.data.gov.uk/id/airport/LHR> ;
         void:sparqlEndpoint   <http://services.data.gov.uk/transport/sparql> ;
         void:triples          329527661 ;
-        dcat:distribution     [ dcat:accessURL  <http://services.data.gov.uk/transport/search> ] ;
         dcat:distribution     [ dcat:accessURL  <http://source.data.gov.uk/data/transport/road-traffic-counts/2009-09/transport.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://services.data.gov.uk/transport/search> ] ;
         foaf:homepage         <http://transport.data.gov.uk/> .
 
-[ void:target   <http://lod-cloud.net/dataset/data-gov-uk-time-intervals> , <http://lod-cloud.net/dataset/transport-data-gov-uk> ;
+[ void:target   lod:transport-data-gov-uk , lod:data-gov-uk-time-intervals ;
   void:triples  795669
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/transport-data-gov-uk> ;
+[ void:target   lod:transport-data-gov-uk , lod:statistics-data-gov-uk ;
+  void:triples  109708
+] .
+
+[ void:target   lod:transport-data-gov-uk , lod:dbpedia ;
   void:triples  3768
 ] .

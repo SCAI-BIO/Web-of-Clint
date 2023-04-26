@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,80 +6,55 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-odgi> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nemo_x1> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sio> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  77
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  35
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
+[ void:target   lod:bioportal-bcgo , lod:bioportal-nif_cell ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  49
+[ void:target   lod:bioportal-bcgo , lod:bioportal-rcd ;
+  void:triples  14
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-bcgo>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-bcgo , lod:bioportal-ep ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-sio ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-nif_dysfunction ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-odgi ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-msh ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-canco ;
+  void:triples  34
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-sopharm ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-lnc ;
+  void:triples  22
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-mccl_x1 ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-nemo_x1 ;
+  void:triples  10
+] .
+
+lod:bioportal-bcgo  a        void:Dataset ;
         dcterms:description  "assigns a grade to a tumor starting from the 3 criteria of the NGS"@en ;
         dcterms:publisher    [ rdfs:label  "Alexandra Bulzan" ;
                                foaf:mbox   ""
@@ -86,35 +62,59 @@
         dcterms:subject      "ontology" , "format-rdf" , "format-owl" , "lod" , "biomedicine" , "published-by-third-party" , "life_sciences" , "bioportal" ;
         dcterms:title        "Breast Cancer Grading Ontology"@en ;
         void:triples         3780 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45776?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1304> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  34
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ogi> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sitbac> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
+[ void:target   lod:bioportal-bcgo , lod:bioportal-sitbac ;
   void:triples  14
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ep> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
+[ void:target   lod:bioportal-bcgo , lod:bioportal-galen ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-ogi ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-bcgo> ;
+[ void:target   lod:bioportal-bcgo , lod:bioportal-hl7 ;
+  void:triples  20
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-rid ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-bdo ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-snomedct ;
+  void:triples  35
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-nif ;
+  void:triples  32
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-ncit ;
+  void:triples  77
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-syn ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-efo ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-ehda ;
+  void:triples  49
+] .
+
+[ void:target   lod:bioportal-bcgo , lod:bioportal-acgt ;
   void:triples  12
 ] .

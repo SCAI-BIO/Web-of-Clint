@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-sweetiebelle-net> ;
-  void:triples  5
-] .
-
-<http://lod-cloud.net/dataset/statusnet-sweetiebelle-net>
+lod:statusnet-sweetiebelle-net
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://sweetiebelle.net"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -20,10 +17,14 @@
         void:exampleResource  <http://micro.sweetiebelle.net/awlderpy/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> , <http://lod-cloud.net/dataset/statusnet-sweetiebelle-net> ;
+[ void:target   lod:statusnet-sweetiebelle-net , lod:statusnet-rainbowdash-net ;
   void:triples  120
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-sweetiebelle-net> ;
+[ void:target   lod:statusnet-sweetiebelle-net , lod:statusnet-status-net ;
   void:triples  2
+] .
+
+[ void:target   lod:statusnet-sweetiebelle-net , lod:personal-homepages ;
+  void:triples  5
 ] .

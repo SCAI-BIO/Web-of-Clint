@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,26 +6,25 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-genbank> , <http://lod-cloud.net/dataset/kupkb> ;
-  void:triples  789483
-] .
-
-<http://lod-cloud.net/dataset/kupkb>
-        a                    void:Dataset ;
+lod:kupkb  a                 void:Dataset ;
         dcterms:description  "The KUPKB is a collection of omics datasets that have been extracted from scientific publications and other related renal databases. The iKUP browser provides a single point of entry for you to query and browse these datasets. http://www.kupkb.org. SPARQL endpoint http://sparql.kupkb.org/sparql"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "lifesciences" , "kidney" , "gene expression" , "biological database" , "lodcloud-diagram-2014-08-30" , "lod" , "life_sciences" , "urinary pathway" , "format-efo" ;
+        dcterms:subject      "lifesciences" , "kidney" , "gene expression" , "biological database" , "lodcloud-diagram-2014-08-30" , "lod" , "life_sciences" , "format-efo" , "urinary pathway" ;
         dcterms:title        "Kidney and Urinary Pathway Knowledge Base"@en ;
         void:sparqlEndpoint  <http://sparql.kupkb.org/sparql> ;
         void:triples         7000000 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.kupkb.org/public/kupo/kupo.owl> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.kupkb.org/data/kupkb/dataset/010913> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.kupkb.org/public/kupo/kupo.owl> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.kupkb.org/data/kupkb/experiment/gse17138_adult_assay> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.kupkb.org/data/kupkb/dataset/010913> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.kupkb.org/public/kupkb/kupkb.owl> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/uniprotkb> , <http://lod-cloud.net/dataset/kupkb> ;
+[ void:target   lod:kupkb , lod:bio2rdf-genbank ;
+  void:triples  789483
+] .
+
+[ void:target   lod:kupkb , lod:uniprotkb ;
   void:triples  1339019
 ] .

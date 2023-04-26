@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,31 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> ;
-  void:triples  4
+[ void:target   lod:statusnet-davidhaberthuer-ch , lod:statusnet-morphtown-de ;
+  void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> ;
-  void:triples  9
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> ;
+[ void:target   lod:statusnet-davidhaberthuer-ch , lod:statusnet-postblue-info ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> ;
+[ void:target   lod:statusnet-davidhaberthuer-ch , lod:statusnet-fragdev-com ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> , <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> ;
-  void:triples  1
+[ void:target   lod:statusnet-davidhaberthuer-ch , lod:statusnet-quitter-se ;
+  void:triples  2
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch>
+[ void:target   lod:statusnet-davidhaberthuer-ch , lod:statusnet-macno-org ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-davidhaberthuer-ch , lod:statusnet-status-net ;
+  void:triples  9
+] .
+
+lod:statusnet-davidhaberthuer-ch
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://davidhaberthuer.ch"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -36,26 +41,22 @@
         void:exampleResource  <http://status.davidhaberthuer.ch/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> ;
+[ void:target   lod:statusnet-davidhaberthuer-ch , lod:geonames-semantic-web ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> ;
+[ void:target   lod:statusnet-davidhaberthuer-ch , lod:statusnet-skilledtests-com ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> ;
+[ void:target   lod:statusnet-davidhaberthuer-ch , lod:personal-homepages ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> ;
+[ void:target   lod:statusnet-davidhaberthuer-ch , lod:statusnet-rainbowdash-net ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-davidhaberthuer-ch , lod:statusnet-russwurm-org ;
   void:triples  2
 ] .

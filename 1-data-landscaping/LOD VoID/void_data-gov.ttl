@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/data-gov>
-        a                    void:Dataset ;
+lod:data-gov  a              void:Dataset ;
         dcterms:description  "National raw and geodata catalog of the United States.\r\n\r\nSee also package:twc-logd for an RDF version that features dereferenceable URIs and is more interlinked."@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
@@ -15,8 +15,8 @@
         dcterms:title        "Data.gov"@en ;
         void:sparqlEndpoint  <http://services.data.gov/sparql> ;
         void:triples         6400000000 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.data.gov/catalog/geodata> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.data.gov/catalog/raw> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.data.gov/catalog/tools> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.data.gov/catalog/geodata> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.data.gov/semantic/data/alpha> ] ;
         foaf:homepage        <http://data.gov/> .

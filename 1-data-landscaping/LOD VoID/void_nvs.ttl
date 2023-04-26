@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,36 +6,35 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/nvs> ;
-  void:triples  470
-] .
-
-<http://lod-cloud.net/dataset/nvs>
-        a                     void:Dataset ;
+lod:nvs  a                    void:Dataset ;
         dcterms:description   "The NERC Vocabulary Server provides access to lists of standardised terms that cover a broad spectrum of disciplines of relevance to the oceanographic and wider community.\r\n\r\nUsing standardised sets of terms (otherwise known as \"controlled vocabularies\") in metadata and to label data solves the problem of ambiguities associated with data markup and also enables records to be interpreted by computers. This opens up data sets to a whole world of possibilities for computer aided manipulation, distribution and long term reuse.\r\n\r\nAll of the vocabularies are fully versioned and a permanent record is kept of all changes made."@en ;
         dcterms:publisher     [ rdfs:label  "British Oceanographic Data Centre, Natural Environment Research Council, UK" ;
                                 foaf:mbox   "enquiries@bodc.ac.uk"
                               ] ;
-        dcterms:subject       "ocean" , "life_sciences" , "format-dc" , "schemata" , "format-rdfs" , "vocabulary" , "published-by-producer" , "earth-science" , "controlled-vocabulary" , "no-proprietary-vocab" , "lod" , "environment" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "format-skos" , "format-rdf" , "no-license-metadata" , "format-owl" , "oceans" , "oceanography" ;
+        dcterms:subject       "ocean" , "life_sciences" , "format-dc" , "schemata" , "format-rdfs" , "vocabulary" , "published-by-producer" , "controlled-vocabulary" , "earth-science" , "no-proprietary-vocab" , "lod" , "environment" , "provenance-metadata" , "format-skos" , "lodcloud-diagram-2014-08-30" , "format-rdf" , "no-license-metadata" , "format-owl" , "oceanography" , "oceans" ;
         dcterms:title         "NERC Vocabulary Server 2.0"@en ;
         void:exampleResource  <http://vocab.nerc.ac.uk/collection/P01/current/SPMIMEXX/> , <http://vocab.nerc.ac.uk/scheme/INSPIRE_THEMES/> , <http://vocab.nerc.ac.uk/collection/P08/current/> ;
         void:sparqlEndpoint   <http://vocab.nerc.ac.uk/sparql/> ;
         void:triples          1122000 ;
-        dcat:distribution     [ dcat:accessURL  <http://vocab.nerc.ac.uk/collection/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.bodc.ac.uk/products/web_services/vocab/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://vocab.nerc.ac.uk/.well-known/void> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.bodc.ac.uk/products/web_services/vocab/documents/nvs2.0_documentation.pdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vocab.nerc.ac.uk/collection/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://vocab.nerc.ac.uk/scheme/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.bodc.ac.uk/products/web_services/vocab/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.bodc.ac.uk/products/web_services/vocab/documents/nvs2.0_documentation.pdf> ] ;
         foaf:homepage         <http://vocab.nerc.ac.uk/> .
 
-[ void:target   <http://lod-cloud.net/dataset/gemet> , <http://lod-cloud.net/dataset/nvs> ;
-  void:triples  36
+[ void:target   lod:nvs , lod:eionet-rdf ;
+  void:triples  71
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/nvs> ;
+[ void:target   lod:nvs , lod:geonames ;
   void:triples  126
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/eionet-rdf> , <http://lod-cloud.net/dataset/nvs> ;
-  void:triples  71
+[ void:target   lod:nvs , lod:dbpedia ;
+  void:triples  470
+] .
+
+[ void:target   lod:nvs , lod:gemet ;
+  void:triples  36
 ] .

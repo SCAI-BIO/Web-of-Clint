@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,26 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/cz-ruian> ;
-  void:triples  14000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/nuts-geovocab> , <http://lod-cloud.net/dataset/cz-ruian> ;
+[ void:target   lod:cz-ruian , lod:nuts-geovocab ;
   void:triples  23
 ] .
 
-<http://lod-cloud.net/dataset/cz-ruian>
-        a                     void:Dataset ;
+lod:cz-ruian  a               void:Dataset ;
         dcterms:description   "Dataset contains linked data version of the registry of territorial identification, addresses and real estate of the Czech Republic"@en ;
         dcterms:publisher     [ rdfs:label  "Opendata.cz" ;
                                 foaf:mbox   "klimek@opendata.cz"
                               ] ;
         dcterms:subject       "government" , "deref-vocab" , "czech" , "license-metadata" , "czech-republic" , "no-vocab-mappings" , "published-by-third-party" , "format-skos" , "format-schema" , "lod" , "no-provenance-metadata" ;
         dcterms:title         "Registry of territorial identification, addresses and real estate of the Czech Republic"@en ;
-        void:exampleResource  <https://ruian.linked.opendata.cz/sparql?query=DESCRIBE+%3Chttps://ruian.linked.opendata.cz/zdroj/státy/1%3E&default-graph-uri=https%3A%2F%2Fruian.linked.opendata.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fr%C3%BAian&output=text%2Fturtle> , <https://ruian.linked.opendata.cz/sparql?query=DESCRIBE+%3Chttps://ruian.linked.opendata.cz/zdroj/obce/573906%3E&default-graph-uri=https%3A%2F%2Fruian.linked.opendata.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fr%C3%BAian&output=text%2Fturtle> ;
+        void:exampleResource  <https://ruian.linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <https://ruian.linked.opendata.cz/sparql> ;
         void:triples          869506642 ;
-        dcat:distribution     [ dcat:accessURL  <https://ruian.linked.opendata.cz/zdroj/státy/1> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://ruian.linked.opendata.cz/sparql?query=DESCRIBE+%3Chttps%3A%2F%2Fruian.linked.opendata.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fr%C3%BAian%2Fdistribuce%2Frdf%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://ruian.linked.opendata.cz/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <https://ruian.linked.opendata.cz/soubor/ruian.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://ruian.linked.opendata.cz/zdroj/státy/1> ] ;
         dcat:distribution     [ dcat:accessURL  <https://ruian.linked.opendata.cz/zdroj/obce/573906> ] ;
         foaf:homepage         <https://ruian.linked.opendata.cz/zdroj/datová-sada/rúian> .
+
+[ void:target   lod:cz-ruian , lod:geonames-semantic-web ;
+  void:triples  14000
+] .

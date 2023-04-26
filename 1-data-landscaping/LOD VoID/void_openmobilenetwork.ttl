@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/openmobilenetwork> ;
+[ void:target   lod:openmobilenetwork , lod:dbpedia ;
   void:triples  150
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/linkedcrowdsourceddata> , <http://lod-cloud.net/dataset/openmobilenetwork> ;
-  void:triples  63642
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/openmobilenetwork> ;
-  void:triples  1442037
-] .
-
-<http://lod-cloud.net/dataset/openmobilenetwork>
+lod:openmobilenetwork
         a                     void:Dataset ;
         dcterms:description   "The OpenMobileNetwork is a dataset for mobile networks and devices, which is semantically modeled using the Linked Data principles. It provides structured RDF data describing mobile networks, their topology and components (e.g., base stations, mobile devices or WiFi access points). Utilizing this dataset in combination with interlinked information that is present in the LOD Cloud, various applications can be realized that depend on mobile network and positioning data (e.g., Semantic Location-based Services or Power Management in Mobile Networks)."@en ;
         dcterms:publisher     [ rdfs:label  "Abdulbaki Uzun, Service-centric Networking, TU Berlin" ;
@@ -30,3 +23,11 @@
         void:triples          19048586 ;
         dcat:distribution     [ dcat:accessURL  <http://www.openmobilenetwork.org/resource/void> ] ;
         foaf:homepage         <http://www.openmobilenetwork.org> .
+
+[ void:target   lod:openmobilenetwork , lod:linkedcrowdsourceddata ;
+  void:triples  63642
+] .
+
+[ void:target   lod:openmobilenetwork , lod:linkedgeodata ;
+  void:triples  1442037
+] .

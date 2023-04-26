@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -11,7 +12,7 @@
         dcterms:publisher    [ rdfs:label  "julie queiros" ;
                                foaf:mbox   "julie.queiros7@gmail.com"
                              ] ;
-        dcterms:subject      "user_generated" , "Air Quality" ;
+        dcterms:subject      "Air Quality" , "user_generated" ;
         dcterms:title        "Qualité de l'air"@en ;
         void:dataDump        <https://emilienbarbaud-etudiant.ovh/res.ttl> ;
         void:triples         "0"^^xsd:int ;

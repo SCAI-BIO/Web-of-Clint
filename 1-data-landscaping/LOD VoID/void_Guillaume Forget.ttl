@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -11,7 +12,7 @@
         dcterms:publisher    [ rdfs:label  "Guillaume Forget" ;
                                foaf:mbox   "guillaumeforget19@gmail.com"
                              ] ;
-        dcterms:subject      "social_networking" , "ÉCONOMIE CIRCULAIRE" ;
+        dcterms:subject      "ÉCONOMIE CIRCULAIRE" , "social_networking" ;
         dcterms:title        "GUTSTOK "@en ;
         void:triples         "0"^^xsd:int ;
         foaf:homepage        <https://gutstokc.mywhc.ca/wp21/> .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,100 +6,100 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  49
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-biomodels ;
+  void:triples  18
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  13
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-mccl_x1 ;
+  void:triples  18
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-npo> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  30
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rxnorm> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  41
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cdao> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-mesh-owl ;
   void:triples  59
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snpo> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  65
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-csp ;
+  void:triples  22
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-ndfrt ;
   void:triples  36
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-so_x1> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  19
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-nif ;
+  void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-ncit ;
+  void:triples  41
+] .
+
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-lnc ;
+  void:triples  52
+] .
+
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-snomedct ;
+  void:triples  49
+] .
+
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-sopharm ;
   void:triples  84
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  18
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-chebi ;
+  void:triples  22
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  18
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vandf> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nddf> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-rcd ;
   void:triples  27
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-so_x1 ;
+  void:triples  19
+] .
+
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-cdao ;
+  void:triples  45
+] .
+
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-galen ;
   void:triples  20
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-amino-acid>
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-rxnorm ;
+  void:triples  20
+] .
+
+lod:bioportal-amino-acid
         a                    void:Dataset ;
         dcterms:description  "An ontology of amino acids and their properties. Inferred version."@en ;
         dcterms:publisher    [ rdfs:label  "Nick Drummond, Georgina Moulton, Robert Stevens, Phil Lord" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "lod" , "life_sciences" , "format-owl" , "biomedicine" , "ontology" , "bioportal" , "published-by-third-party" , "format-rdf" ;
+        dcterms:subject      "lod" , "life_sciences" , "format-owl" , "biomedicine" , "ontology" , "bioportal" , "format-rdf" , "published-by-third-party" ;
         dcterms:title        "Amino Acid"@en ;
         void:triples         1562 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/44016?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/44016?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1054> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  22
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-snpo ;
+  void:triples  65
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  52
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-nddf ;
+  void:triples  20
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-chebi> , <http://lod-cloud.net/dataset/bioportal-amino-acid> ;
-  void:triples  22
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-msh ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-vandf ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-amino-acid , lod:bioportal-npo ;
+  void:triples  30
 ] .

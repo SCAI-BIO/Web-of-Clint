@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,69 +6,68 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/musicbrainz> , <http://lod-cloud.net/dataset/data-bnf-fr> ;
-  void:triples  42381
+[ void:target   lod:data-bnf-fr , lod:geonames-semantic-web ;
+  void:triples  105055
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/data-bnf-fr> ;
+[ void:target   lod:data-bnf-fr , lod:dnb-gemeinsame-normdatei ;
   void:triples  25976
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-bnf-fr> ;
+[ void:target   lod:data-bnf-fr , lod:dbpedia ;
   void:triples  185149
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/data-bnf-fr> ;
-  void:triples  2352029
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/data-bnf-fr> ;
-  void:triples  356614
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/datos-bne-es> , <http://lod-cloud.net/dataset/data-bnf-fr> ;
-  void:triples  15588
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/isni> , <http://lod-cloud.net/dataset/data-bnf-fr> ;
-  void:triples  1516663
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/thesaurus-w> , <http://lod-cloud.net/dataset/data-bnf-fr> ;
-  void:triples  1039
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/agrovoc-skos> , <http://lod-cloud.net/dataset/data-bnf-fr> ;
+[ void:target   lod:data-bnf-fr , lod:agrovoc-skos ;
   void:triples  682
 ] .
 
-<http://lod-cloud.net/dataset/data-bnf-fr>
-        a                     void:Dataset ;
+[ void:target   lod:data-bnf-fr , lod:idreffr ;
+  void:triples  1059765
+] .
+
+[ void:target   lod:data-bnf-fr , lod:isni ;
+  void:triples  1516663
+] .
+
+[ void:target   lod:data-bnf-fr , lod:viaf ;
+  void:triples  2352029
+] .
+
+[ void:target   lod:data-bnf-fr , lod:wikidata ;
+  void:triples  356614
+] .
+
+[ void:target   lod:data-bnf-fr , lod:lcsh ;
+  void:triples  114024
+] .
+
+[ void:target   lod:data-bnf-fr , lod:thesaurus-w ;
+  void:triples  1039
+] .
+
+lod:data-bnf-fr  a            void:Dataset ;
         dcterms:description   "data.bnf.fr gathers data from the different databases of the Bibliothèque nationale de France, so as to create Web pages about Works, Authors, Subjects and Places together with a RDF view on the extracted data. \r\n\r\nThere are links to id.loc.gov for languages and nationalities, to dewey.info  for subjects, and to DCMI type for types.\r\n\r\nThe authors and subjects are matched to Agrovoc,Geonames, DBpedia, Wikipedia, VIAF, Stitch, Dewey, ISNI, the library of Congress, and the German national library.\r\n\r\nWe use SKOS, FOAF, DC and RDA vocabularies, in a FRBR model."@en ;
         dcterms:publisher     [ rdfs:label  "data.bnf.fr project team - French national Library" ;
                                 foaf:mbox   "data@bnf.fr"
                               ] ;
-        dcterms:subject       "published-by-producer" , "no-vocab-mappings" , "no-provenance-metadata" , "format-dc" , "no-license-metadata" , "lod" , "library" , "lld" , "format-skos" , "format-foaf" , "deref-vocab" , "publications" ;
+        dcterms:subject       "published-by-producer" , "no-vocab-mappings" , "format-dc" , "no-license-metadata" , "no-provenance-metadata" , "library" , "format-skos" , "lld" , "lod" , "format-foaf" , "deref-vocab" , "publications" ;
         dcterms:title         "data.bnf.fr - Bibliothèque nationale de France"@en ;
         void:exampleResource  <http://data.bnf.fr/12417486/alexandre_dumas_la_reine_margot/rdf.nt> , <http://data.bnf.fr/12417486/alexandre_dumas_la_reine_margot/rdf.xml> ;
         void:sparqlEndpoint   <http://data.bnf.fr/sparql> ;
         void:triples          409712948 ;
-        dcat:distribution     [ dcat:accessURL  <http://data.bnf.fr/vocabulary/countrycodes/rdf.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.bnf.fr/vocabulary/scheme/rdf.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <ftp://databnf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.bnf.fr/vocabulary/musical-genre/rdf.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.bnf.fr/vocabulary/roles/rdf.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.bnf.fr/vocabulary/geo-scheme/rdf.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.bnf.fr/vocabulary/musical-genre/rdf.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <ftp://databnf:databnf@pef.bnf.fr/DATA/databnf_all_rdf_xml.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.bnf.fr/vocabulary/scheme/rdf.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.bnf.fr/vocabulary/countrycodes/rdf.xml> ] ;
         foaf:homepage         <http://data.bnf.fr> .
 
-[ void:target   <http://lod-cloud.net/dataset/idreffr> , <http://lod-cloud.net/dataset/data-bnf-fr> ;
-  void:triples  1059765
+[ void:target   lod:data-bnf-fr , lod:musicbrainz ;
+  void:triples  42381
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/data-bnf-fr> ;
-  void:triples  114024
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/data-bnf-fr> ;
-  void:triples  105055
+[ void:target   lod:data-bnf-fr , lod:datos-bne-es ;
+  void:triples  15588
 ] .

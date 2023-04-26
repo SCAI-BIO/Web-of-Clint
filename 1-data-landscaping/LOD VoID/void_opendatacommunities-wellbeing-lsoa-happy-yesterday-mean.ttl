@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-wellbeing-lsoa-happy-yesterday-mean> ;
+[ void:target   lod:opendatacommunities-wellbeing-lsoa-happy-yesterday-mean , lod:reference-data-gov-uk ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/opendatacommunities-wellbeing-lsoa-happy-yesterday-mean>
+lod:opendatacommunities-wellbeing-lsoa-happy-yesterday-mean
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "sparql" , "dataset-level-metadata" , "crawledLinkedDataCloud2014" , "lodcloud-diagram-2014-08-30" , "LinkedDataCrawl2014" , "format-dcat" , "dump" , "license-metadata" , "format-dcterm" , "format-rdf" , "format-void" , "provenance-metadata" , "format-rdfs" , "government" ;
+        dcterms:subject       "dataset-level-metadata" , "sparql" , "crawledLinkedDataCloud2014" , "lodcloud-diagram-2014-08-30" , "LinkedDataCrawl2014" , "format-dcat" , "dump" , "format-rdf" , "format-dcterm" , "license-metadata" , "format-void" , "provenance-metadata" , "format-rdfs" , "government" ;
         dcterms:title         "opendatacommunities-wellbeing-lsoa-happy-yesterday-mean"@en ;
         void:exampleResource  <http://opendatacommunities.org/data/wellbeing-lsoa-happy-yesterday-mean> ;
         void:triples          "0"^^xsd:int .

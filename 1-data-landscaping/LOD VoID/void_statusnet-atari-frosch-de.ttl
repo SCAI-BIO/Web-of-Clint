@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> ;
-  void:triples  1
+[ void:target   lod:statusnet-atari-frosch-de , lod:statusnet-kaimi-cc ;
+  void:triples  5
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-atari-frosch-de>
+lod:statusnet-atari-frosch-de
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://atari-frosch.de"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -20,34 +21,34 @@
         void:exampleResource  <http://statusnet.atari-frosch.de/atarifrosch/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> ;
+[ void:target   lod:statusnet-atari-frosch-de , lod:statusnet-postblue-info ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-atari-frosch-de , lod:statusnet-morphtown-de ;
+  void:triples  2
+] .
+
+[ void:target   lod:statusnet-atari-frosch-de , lod:statusnet-quitter-se ;
   void:triples  48
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-bka-li> , <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-kaimi-cc> , <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> ;
+[ void:target   lod:statusnet-atari-frosch-de , lod:statusnet-skilledtests-com ;
   void:triples  7
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> , <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> ;
+[ void:target   lod:statusnet-atari-frosch-de , lod:statusnet-bka-li ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-atari-frosch-de , lod:statusnet-schiessle-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-atari-frosch-de , lod:statusnet-opensim-chat-eu ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> ;
+[ void:target   lod:statusnet-atari-frosch-de , lod:geonames-semantic-web ;
   void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-schiessle-org> , <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> ;
-  void:triples  1
 ] .

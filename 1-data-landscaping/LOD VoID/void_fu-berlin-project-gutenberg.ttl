@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/fu-berlin-project-gutenberg>
+lod:fu-berlin-project-gutenberg
         a                     void:Dataset ;
         dcterms:description   "Metadata about public domain works available at Project Gutenberg.\r\n\r\nData last updated in 2007."@en ;
         dcterms:publisher     [ rdfs:label  "Christian Bizer" ;

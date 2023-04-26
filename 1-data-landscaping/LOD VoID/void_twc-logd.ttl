@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,28 +6,27 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/twc-logd> ;
-  void:triples  2039
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/govtrack> , <http://lod-cloud.net/dataset/twc-logd> ;
+[ void:target   lod:twc-logd , lod:govtrack ;
   void:triples  1909
 ] .
 
-<http://lod-cloud.net/dataset/twc-logd>
-        a                     void:Dataset ;
+lod:twc-logd  a               void:Dataset ;
         dcterms:description   "The Tetherless World Constellation (TWC) at Rensselaer Polytechnic Institute (RPI) maintains Linked Open Government Data (LOGD), an RDF version of the datasets published by package:data-gov and other government-related sources.\r\n\r\nLOGD replaces the old TWC Data-gov Corpus published in May 2010."@en ;
         dcterms:publisher     [ rdfs:label  "Tetherless World Constellation, Rensselaer Polytechnic Institute" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "deref-vocab" , "no-vocab-mappings" , "country-us" , "no-license-metadata" , "lod" , "no-provenance-metadata" , "published-by-third-party" , "format-rdf" , "government" , "lodcloud-diagram-2011-09-19" ;
+        dcterms:subject       "deref-vocab" , "country-us" , "no-vocab-mappings" , "no-license-metadata" , "lod" , "no-provenance-metadata" , "published-by-third-party" , "format-rdf" , "government" , "lodcloud-diagram-2011-09-19" ;
         dcterms:title         "TWC: Linking Open Government Data"@en ;
         void:exampleResource  <http://logd.tw.rpi.edu/source/dfid-gov-uk/dataset/statistics-on-international-development-2009/version/2009-Nov-10/foreignAid_158_6> ;
         void:triples          9803142573 ;
-        dcat:distribution     [ dcat:accessURL  <http://logd.tw.rpi.edu/twc-logd> ] ;
         dcat:distribution     [ dcat:accessURL  <http://logd.tw.rpi.edu/sparql> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://logd.tw.rpi.edu/twc-logd> ] ;
         foaf:homepage         <http://logd.tw.rpi.edu> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/twc-logd> ;
+[ void:target   lod:twc-logd , lod:dbpedia ;
+  void:triples  2039
+] .
+
+[ void:target   lod:twc-logd , lod:geonames-semantic-web ;
   void:triples  1839
 ] .

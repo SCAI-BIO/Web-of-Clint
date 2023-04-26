@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/w3c> , <http://lod-cloud.net/dataset/oceandrilling-borehole> ;
+[ void:target   lod:oceandrilling-borehole , lod:w3c ;
   void:triples  5
 ] .
 
-<http://lod-cloud.net/dataset/oceandrilling-borehole>
+lod:oceandrilling-borehole
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "geographic" , "LinkedDataCrawl2014" , "format-sd" , "format-rdfs" , "lodcloud-diagram-2014-08-30" , "format-dcterm" , "format-prvt" , "format-doap" , "format-rdf" , "format-hartigprov" , "format-void" , "crawledLinkedDataCloud2014" , "provenance-metadata" , "format-foaf" , "dataset-level-metadata" , "deref-vocab" , "geography" , "sparql" ;
+        dcterms:subject       "geographic" , "LinkedDataCrawl2014" , "format-sd" , "format-rdfs" , "lodcloud-diagram-2014-08-30" , "format-dcterm" , "format-prvt" , "format-doap" , "format-hartigprov" , "format-rdf" , "format-void" , "crawledLinkedDataCloud2014" , "provenance-metadata" , "format-foaf" , "dataset-level-metadata" , "deref-vocab" , "geography" , "sparql" ;
         dcterms:title         "oceandrilling-borehole"@en ;
         void:exampleResource  <http://logs.oceandrilling.org/data/file/716017> ;
         void:triples          "0"^^xsd:int .

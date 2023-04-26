@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-danish> ;
+[ void:target   lod:universal-dependencies-treebank-danish , lod:olia ;
   void:triples  72
 ] .
 
-<http://lod-cloud.net/dataset/universal-dependencies-treebank-danish>
+lod:universal-dependencies-treebank-danish
         a                    void:Dataset ;
         dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Danish treebank.\r\n"@en ;
         dcterms:publisher    [ rdfs:label  "Johannsen, Anders; Martínez Alonso, Héctor; Plank, Barbara" ;
@@ -18,6 +19,6 @@
         dcterms:subject      "linguistics" , "corpus" , "lod" ;
         dcterms:title        "Universal Dependencies Treebank Danish"@en ;
         void:triples         100733 ;
-        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Danish/archive/master.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <https://datahub.io/dataset/ea0af81c-76d1-42c3-ac97-543f1059f84e/resource/bef35005-128f-4aa3-8566-9ef0a68fe7ef/download/uddanish.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Danish/archive/master.zip> ] ;
         foaf:homepage        <https://github.com/UniversalDependencies/UD_Danish> .

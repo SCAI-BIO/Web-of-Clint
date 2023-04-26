@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,28 +6,28 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/data-gov-uk-time-intervals> , <http://lod-cloud.net/dataset/cz-czso-demography-in-regions-czech-republic-age-categories> ;
+[ void:target   lod:cz-czso-demography-in-regions-czech-republic-age-categories , lod:data-gov-uk-time-intervals ;
   void:triples  22638
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-ruian> , <http://lod-cloud.net/dataset/cz-czso-demography-in-regions-czech-republic-age-categories> ;
+[ void:target   lod:cz-czso-demography-in-regions-czech-republic-age-categories , lod:cz-ruian ;
   void:triples  22638
 ] .
 
-<http://lod-cloud.net/dataset/cz-czso-demography-in-regions-czech-republic-age-categories>
+lod:cz-czso-demography-in-regions-czech-republic-age-categories
         a                     void:Dataset ;
         dcterms:description   "This dataset contains numbers of inhabitants in districts of Czech Republic in age categories splited in 5year intervals with a distinguished category 0 years. The last age category is 90-94 years. All older categories are aggregated to 95 years and more. The dataset distinguishes males and females."@en ;
         dcterms:publisher     [ rdfs:label  "Martin Nečaský" ;
                                 foaf:mbox   "necasky@opendata.cz"
                               ] ;
-        dcterms:subject       "format-qb" , "czech" , "license-metadata" , "published-by-third-party" , "government" , "format-skos" , "no-deref-vocab" , "vocab-mappings" , "format-dcterms" , "czech-republic" , "lod" , "format-sdmx" , "provenance-metadata" ;
+        dcterms:subject       "format-qb" , "czech" , "license-metadata" , "published-by-third-party" , "government" , "format-skos" , "no-deref-vocab" , "format-dcterms" , "czech-republic" , "vocab-mappings" , "lod" , "format-sdmx" , "provenance-metadata" ;
         dcterms:title         "Number of inhabitants in districts of Czech Republic in 5year age categories"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://data.czso.cz/resource/observation/demography-in-regions-czech-republic-age-categories/CZ0100/2007-12-31/F/35%3E&default-graph-uri=http%3A%2F%2Fdata.czso.cz%2Fresource%2Fdataset%2Fdemography-in-regions-czech-republic-age-categories&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          158464 ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/czso-demography-in-regions-czech-republic-age-categories.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Fdata.czso.cz%2Fresource%2Fdataset%2Fdemography-in-regions-czech-republic-age-categories%2Fdistribution%3E&output=text%2Fturtle> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://internal.opendata.cz/dumps/czso-demography-in-regions-czech-republic-age-categories-vocabulary.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.czso.cz/resource/observation/demography-in-regions-czech-republic-age-categories/CZ0100/2007-12-31/F/35> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/czso-demography-in-regions-czech-republic-age-categories-vocabulary.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.czso.cz/resource/observation/demography-in-regions-czech-republic-age-categories/CZ0100/2007-12-31/F/35> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://internal.opendata.cz/dumps/czso-demography-in-regions-czech-republic-age-categories-vocabulary.trig> ] ;
         foaf:homepage         <http://data.czso.cz/resource/dataset/demography-in-regions-czech-republic-age-categories> .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/Swift>
-        a                    void:Dataset ;
+lod:Swift  a                 void:Dataset ;
         dcterms:description  "The Swift Vocabulary is an SKOS-based vocabulary about the Swift programming language."@en ;
         dcterms:publisher    [ rdfs:label  "Christian Grévisse" ;
                                foaf:mbox   "christian.grevisse@uni.lu"
@@ -19,6 +19,6 @@
         dcat:distribution    [ dcat:accessURL  <https://github.com/cgrevisse/swift-vocabulary> ] ;
         foaf:homepage        <http://purl.org/lu/uni/alma/swift> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/Swift> ;
+[ void:target   lod:Swift , lod:dbpedia ;
   void:triples  98
 ] .

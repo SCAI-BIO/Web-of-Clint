@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-transparency-input-indicators-local-authorities-working-with-troubled-families> ;
+[ void:target   lod:opendatacommunities-transparency-input-indicators-local-authorities-working-with-troubled-families , lod:reference-data-gov-uk ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/opendatacommunities-transparency-input-indicators-local-authorities-working-with-troubled-families>
+[ void:target   lod:opendatacommunities-transparency-input-indicators-local-authorities-working-with-troubled-families , lod:statistics-data-gov-uk ;
+  void:triples  1
+] .
+
+lod:opendatacommunities-transparency-input-indicators-local-authorities-working-with-troubled-families
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "dump" , "format-rdfs" , "format-sdmxd" , "crawledLinkedDataCloud2014" , "dataset-level-metadata" , "format-cube" , "format-dcat" , "license-metadata" , "format-rdf" , "format-void" , "format-sdmxa" , "sparql" , "LinkedDataCrawl2014" , "lodcloud-diagram-2014-08-30" , "government" , "provenance-metadata" , "format-dcterm" ;
+        dcterms:subject       "dump" , "format-rdfs" , "dataset-level-metadata" , "crawledLinkedDataCloud2014" , "format-cube" , "format-sdmxd" , "format-dcat" , "license-metadata" , "format-rdf" , "format-void" , "format-sdmxa" , "sparql" , "LinkedDataCrawl2014" , "lodcloud-diagram-2014-08-30" , "government" , "provenance-metadata" , "format-dcterm" ;
         dcterms:title         "opendatacommunities-transparency-input-indicators-local-authorities-working-with-troubled-families"@en ;
         void:exampleResource  <http://opendatacommunities.org/data/transparency/input-indicators/local-authorities-working-with-troubled-families/2012-2013> ;
         void:triples          "0"^^xsd:int .
-
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-transparency-input-indicators-local-authorities-working-with-troubled-families> ;
-  void:triples  1
-] .

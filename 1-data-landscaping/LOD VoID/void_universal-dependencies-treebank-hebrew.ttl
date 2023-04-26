@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/universal-dependencies-treebank-hebrew>
+lod:universal-dependencies-treebank-hebrew
         a                    void:Dataset ;
         dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Hebrew treebank.\r\n"@en ;
         dcterms:publisher    [ rdfs:label  "Goldberg, Yoav; Tsarfaty, Reut" ;
@@ -14,10 +15,10 @@
         dcterms:subject      "lod" , "corpus" , "linguistics" ;
         dcterms:title        "Universal Dependencies Treebank Hebrew"@en ;
         void:triples         115535 ;
-        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Hebrew/archive/master.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/6519afd2-0293-42c0-8324-10ffad9f5be2/resource/89db5d95-dad5-44d6-8f2e-9f4f3fb81339/download/udhebrew.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Hebrew/archive/master.zip> ] ;
         foaf:homepage        <https://github.com/UniversalDependencies/UD_Hebrew> .
 
-[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-hebrew> ;
+[ void:target   lod:universal-dependencies-treebank-hebrew , lod:olia ;
   void:triples  72
 ] .

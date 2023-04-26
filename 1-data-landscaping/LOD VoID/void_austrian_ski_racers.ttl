@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/austrian_ski_racers> ;
-  void:triples  102
+[ void:target   lod:austrian_ski_racers , lod:dbpedia ;
+  void:triples  921
 ] .
 
-<http://lod-cloud.net/dataset/austrian_ski_racers>
+lod:austrian_ski_racers
         a                     void:Dataset ;
         dcterms:description   "Austrian top-skiers active in world cup. "@en ;
         dcterms:publisher     [ rdfs:label  "Andreas Blumauer" ;
                                 foaf:mbox   "a.blumauer@semantic-web.at"
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2014-08-30" , "alpinism" , "tourism" , "lod" , "skiing" , "lodcloud-diagram-2011-09-19" , "cross_domain" , "sports" , "crossdomain" , "deref-vocab" , "country-austria" ;
+        dcterms:subject       "alpinism" , "lodcloud-diagram-2014-08-30" , "tourism" , "lod" , "skiing" , "lodcloud-diagram-2011-09-19" , "cross_domain" , "sports" , "crossdomain" , "deref-vocab" , "country-austria" ;
         dcterms:title         "Alpine Ski Racers of Austria"@en ;
         void:exampleResource  <http://vocabulary.semantic-web.at/AustrianSkiTeam/54> ;
         void:sparqlEndpoint   <http://vocabulary.semantic-web.at/PoolParty/sparql/AustrianSkiTeam> ;
         void:triples          4183 ;
         foaf:homepage         <http://vocabulary.semantic-web.at/AustrianSkiTeam> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/austrian_ski_racers> ;
-  void:triples  921
+[ void:target   lod:austrian_ski_racers , lod:freebase ;
+  void:triples  102
 ] .

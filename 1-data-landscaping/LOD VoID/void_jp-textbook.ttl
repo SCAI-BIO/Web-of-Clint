@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/jp-textbook>
-        a                     void:Dataset ;
+lod:jp-textbook  a            void:Dataset ;
         dcterms:description   "Japanese Textbook LOD project provides a LOD dataset for textbooks published in Japan up to now since the 7th curriculum guideline enforced in 1992, as well as the related information such as the subject areas, the subjects, and the curriculum guidelines. As of March 2018, the dataset contains bibliographic information for 7,257 textbook titles."@en ;
         dcterms:publisher     [ rdfs:label  "Masao Takaku" ;
                                 foaf:mbox   "masao@slis.tsukuba.ac.jp"
@@ -18,10 +18,10 @@
         void:triples          177410 ;
         foaf:homepage         <https://w3id.org/jp-textbook/> .
 
-[ void:target   <http://lod-cloud.net/dataset/national-diet-library-authorities> , <http://lod-cloud.net/dataset/jp-textbook> ;
-  void:triples  739
+[ void:target   lod:jp-textbook , lod:dbpedia-ja ;
+  void:triples  634
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-ja> , <http://lod-cloud.net/dataset/jp-textbook> ;
-  void:triples  634
+[ void:target   lod:jp-textbook , lod:national-diet-library-authorities ;
+  void:triples  739
 ] .

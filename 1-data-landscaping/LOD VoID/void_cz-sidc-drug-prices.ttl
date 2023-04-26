@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/cz-sidc-drug-prices>
+[ void:target   lod:cz-sidc-drug-prices , lod:cz-sidc-drugs ;
+  void:triples  12201
+] .
+
+lod:cz-sidc-drug-prices
         a                     void:Dataset ;
         dcterms:description   "The dataset provides maximal prices of reimbursed medicinal products marketed in Czech republic. The dataset was created on the base of information published by Czech State Institute for Drug Control"@en ;
         dcterms:publisher     [ rdfs:label  "Martin Nečaský" ;
@@ -13,14 +18,10 @@
                               ] ;
         dcterms:subject       "government" , "published-by-third-party" , "czech-republic" , "czech" , "deref-vocab" , "license-metadata" , "provenance-metadata" , "lod" , "no-vocab-mappings" , "format-skos" , "format-dcterms" , "format-gr" ;
         dcterms:title         "List of prices of reimbursed medicinal products marketed in Czech republic"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/sukl/medicinal-product-packaging/0094155%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fsukl%2Fdrug-prices&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          10192022 ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/sukl-drug-prices.trig> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/sukl/medicinal-product-packaging/0094155> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fsukl%2Fdrug-prices%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/sukl-drug-prices.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         foaf:homepage         <http://linked.opendata.cz/resource/dataset/sukl/drug-prices> .
-
-[ void:target   <http://lod-cloud.net/dataset/cz-sidc-drugs> , <http://lod-cloud.net/dataset/cz-sidc-drug-prices> ;
-  void:triples  12201
-] .

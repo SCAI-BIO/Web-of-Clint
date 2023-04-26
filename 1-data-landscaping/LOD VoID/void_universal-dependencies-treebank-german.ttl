@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/universal-dependencies-treebank-german>
+[ void:target   lod:universal-dependencies-treebank-german , lod:olia ;
+  void:triples  72
+] .
+
+lod:universal-dependencies-treebank-german
         a                    void:Dataset ;
         dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's German treebank.\r\n"@en ;
         dcterms:publisher    [ rdfs:label  "Petrov, Slav; Seeker, Wolfgang; McDonald, Ryan; Nivre, Joakim; Zeman, Daniel" ;
@@ -17,7 +22,3 @@
         dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_German/archive/master.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <https://datahub.io/dataset/eaa53a37-5897-4686-aaaf-7dcf9702b6ca/resource/20e1fca4-a8c3-4dbd-8fa3-725f9d522934/download/udgerman.rdf> ] ;
         foaf:homepage        <https://github.com/UniversalDependencies/UD_German> .
-
-[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-german> ;
-  void:triples  72
-] .

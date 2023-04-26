@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,33 +6,32 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dppedia> , <http://lod-cloud.net/dataset/biolod-pdb> ;
+[ void:target   lod:biolod-pdb , lod:geonames ;
   void:triples  0
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/biolod-pdb> ;
+[ void:target   lod:biolod-pdb , lod:dppedia ;
   void:triples  0
 ] .
 
-<http://lod-cloud.net/dataset/biolod-pdb>
-        a                    void:Dataset ;
-        dcterms:description  "Data source of this content; PDBj (Protein Data Bank Japan)<br>\r\nGo to <a href=\"http://www.pdbj.org/index.html\">source site</a>.\r\n"@en ;
+lod:biolod-pdb  a            void:Dataset ;
+        dcterms:description  "Data source of this content; PDBj (Protein Data Bank Japan)<br>\r\nGo to <a+href=\"http://www.pdbj.org/index.html\">source site</a>.\r\n"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
                              ] ;
         dcterms:subject      "lifesciences" , "life_sciences" ;
         dcterms:title        "BioLOD for Protein Data Bank Japan"@en ;
         void:triples         "362,823"^^xsd:integer ;
-        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u1i~archives~table~label_table.tsv.en.UTF8.1.txt> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u2i~archives~table~link_table.tsv.en.UTF8.txt> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://biolod.org/class/cria1u1i/PDB_Protein_Data_Bank> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u1i~archives~table~link_table.tsv.en.UTF8.2.txt> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u1i~archives~table~link_table.tsv.en.UTF8.1.txt> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://biolod.org/class/cria1u2i/CCI_chemical_component_identifier> ] ;
         dcat:distribution    [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-21T121133/PDB_test.xls> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-21T121038/PDB_test-sample.xls> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u1i~archives~table~label_table.tsv.en.UTF8.2.txt> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u2i~archives~table~label_table.tsv.en.UTF8.txt> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u1i~archives~table~link_table.tsv.en.UTF8.3.txt> ] ;
         dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u1i~archives~table~label_table.tsv.en.UTF8.3.txt> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://biolod.org/class/cria1u1i/PDB_Protein_Data_Bank> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u1i~archives~table~label_table.tsv.en.UTF8.2.txt> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u1i~archives~table~link_table.tsv.en.UTF8.2.txt> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u2i~archives~table~link_table.tsv.en.UTF8.txt> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://biolod.org/class/cria1u2i/CCI_chemical_component_identifier> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u2i~archives~table~label_table.tsv.en.UTF8.txt> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u1i~archives~table~link_table.tsv.en.UTF8.1.txt> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-21T121038/PDB_test-sample.xls> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u1i~archives~table~link_table.tsv.en.UTF8.3.txt> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://database.riken.jp/sw/download/cria1u1i~archives~table~label_table.tsv.en.UTF8.1.txt> ] ;
         foaf:homepage        <http://biolod.org/database/ria1i/Protein_Data_Bank> .

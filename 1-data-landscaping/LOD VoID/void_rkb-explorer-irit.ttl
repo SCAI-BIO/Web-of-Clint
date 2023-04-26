@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,102 +6,102 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-curriculum> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  5
-] .
-
-<http://lod-cloud.net/dataset/rkb-explorer-irit>
+lod:rkb-explorer-irit
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
                                 foaf:mbox   "hg@ecs.soton.ac.uk"
                               ] ;
-        dcterms:subject       "published-by-third-party" , "no-license-metadata" , "format-rdf" , "void-sparql-endpoint" , "format-akt" , "publications" , "lod" , "deref-vocab" , "no-vocab-mappings" , "provenance-metadata" , "format-dc" ;
+        dcterms:subject       "published-by-third-party" , "no-license-metadata" , "format-rdf" , "void-sparql-endpoint" , "format-akt" , "publications" , "deref-vocab" , "lod" , "no-vocab-mappings" , "provenance-metadata" , "format-dc" ;
         dcterms:title         "Université Paul Sabatier - Toulouse 3 (RKB Explorer)"@en ;
         void:exampleResource  <http://irit.rkbexplorer.com/id/person-585de894e4e4fd038791313df83045a8> ;
         void:sparqlEndpoint   <http://irit.rkbexplorer.com/sparql/> ;
         void:triples          176542 ;
-        dcat:distribution     [ dcat:accessURL  <http://irit.rkbexplorer.com/models/dump.tgz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://irit.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://irit.rkbexplorer.com/models/dump.tgz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://irit.rkbexplorer.com/models/void.ttl> ] ;
         foaf:homepage         <http://irit.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  156
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-dblp ;
   void:triples  4344
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-roma> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  31
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  1087
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ft> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ibm> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
+[ void:target   lod:rkb-explorer-irit , lod:semantic-web-dog-food ;
   void:triples  3
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  6
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-oai ;
   void:triples  1005
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-courseware> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-ft ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-budapest ;
+  void:triples  6
+] .
+
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-courseware ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  8
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-eprints ;
+  void:triples  1087
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  649
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  996
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-newcastle ;
   void:triples  31
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  108
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-curriculum ;
+  void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
-  void:triples  275
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-laas ;
+  void:triples  31
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-nsf> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-roma ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-irit> ;
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-southampton ;
+  void:triples  108
+] .
+
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-dotac ;
+  void:triples  275
+] .
+
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-cordis ;
+  void:triples  8
+] .
+
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-acm ;
+  void:triples  996
+] .
+
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-ibm ;
+  void:triples  3
+] .
+
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-kisti ;
+  void:triples  156
+] .
+
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-nsf ;
+  void:triples  2
+] .
+
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-citeseer ;
   void:triples  690
+] .
+
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-rae2001 ;
+  void:triples  649
+] .
+
+[ void:target   lod:rkb-explorer-irit , lod:rkb-explorer-wiki ;
+  void:triples  20
 ] .

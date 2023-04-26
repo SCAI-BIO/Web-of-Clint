@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/xlid-lexica>
-        a                    void:Dataset ;
+lod:xlid-lexica  a           void:Dataset ;
         dcterms:description  "Our xLiD-Lexica dataset in RDF (http://km.aifb.kit.edu/resources/xLiD-lexica.nt) contains about 300 million triples of cross-lingual groundings. It is extracted from Wikipedia dumps of July 2013 in English, German, Spanish, Catalan, Slovenian and Chinese, and based on the canonicalized datasets of DBpedia 3.8 containing triples extracted from the respective Wikipedia whose subject and object resource have an equivalent English article. Based on our xLiD-Lexica dataset, we provide a SPARQL endpoint (http://km.aifb.kit.edu/services/xlike-lexicon/) using OpenLink Virtuoso6 as the back-end database engine."@en ;
         dcterms:publisher    [ rdfs:label  "Lei Zhang" ;
                                foaf:mbox   "http://www.aifb.kit.edu/web/Lei_Zhang"
@@ -18,6 +18,6 @@
         void:triples         300000000 ;
         dcat:distribution    [ dcat:accessURL  <http://www.aifb.kit.edu/web/Inproceedings3406> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/xlid-lexica> ;
+[ void:target   lod:xlid-lexica , lod:dbpedia ;
   void:triples  "unknown"^^xsd:integer
 ] .

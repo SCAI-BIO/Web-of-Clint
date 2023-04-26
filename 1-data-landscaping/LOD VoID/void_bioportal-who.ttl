@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,212 +6,199 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  860
+[ void:target   lod:bioportal-who , lod:bioportal-ev ;
+  void:triples  51
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  1407
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mpath> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  77
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ctcae> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  225
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  211
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  2136
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sso> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  68
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ontoorpha> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  155
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  546
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ctx> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  31
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  11128
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  88
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  49
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  1935
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  3318
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pedterm> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  58
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-fhho> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-natpro> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  402
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd9cm> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  1216
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sio> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  38
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncbitaxon> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  18
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-medlineplus> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  753
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  227
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  477
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  438
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  52
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-who> ;
+[ void:target   lod:bioportal-who , lod:bioportal-sopharm ;
   void:triples  423
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-air> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  148
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10cm> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  1838
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aero> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mp> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  289
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hp_x1> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  486
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nbo> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  40
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pma> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  4591
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hlth_indics> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  1667
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bho> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> , <http://lod-cloud.net/dataset/bioportal-who> ;
+[ void:target   lod:bioportal-who , lod:bioportal-tm-signs-and-sympts ;
   void:triples  44
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pdq> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  132
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  226
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-doid> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  468
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  2203
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  470
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  581
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-who> ;
+[ void:target   lod:bioportal-who , lod:bioportal-icd10 ;
   void:triples  1210
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  178
+[ void:target   lod:bioportal-who , lod:bioportal-hlth_indics ;
+  void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-who> ;
+[ void:target   lod:bioportal-who , lod:bioportal-acgt ;
+  void:triples  49
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-doid ;
+  void:triples  468
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-mdr ;
   void:triples  14462
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc2p> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  2460
+[ void:target   lod:bioportal-who , lod:bioportal-pdq ;
+  void:triples  132
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-who> ;
+[ void:target   lod:bioportal-who , lod:bioportal-pedterm ;
+  void:triples  58
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-vo ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-sso ;
+  void:triples  68
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-icnp ;
+  void:triples  88
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-snomedct ;
+  void:triples  11128
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-medlineplus ;
+  void:triples  753
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-omim ;
+  void:triples  2136
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-canco ;
+  void:triples  227
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-cst ;
+  void:triples  3318
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-fhho ;
+  void:triples  19
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-idomal ;
   void:triples  21
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-who>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-who , lod:bioportal-galen ;
+  void:triples  546
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-aero ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-rid ;
+  void:triples  211
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-bho ;
+  void:triples  20
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-ncit ;
+  void:triples  860
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-efo ;
+  void:triples  178
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-mp ;
+  void:triples  289
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-birnlex ;
+  void:triples  38
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-icpc ;
+  void:triples  226
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-csp ;
+  void:triples  1407
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-rcd ;
+  void:triples  4591
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-lnc ;
+  void:triples  477
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-ctcae ;
+  void:triples  225
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-hl7 ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-icd10cm ;
+  void:triples  1838
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-pma ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-sio ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-ctx ;
+  void:triples  31
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-mccl_x1 ;
+  void:triples  581
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-air ;
+  void:triples  148
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-ncbitaxon ;
+  void:triples  18
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-bdo ;
+  void:triples  438
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-natpro ;
+  void:triples  402
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-icd9cm ;
+  void:triples  1216
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-nif_dysfunction ;
+  void:triples  52
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-nbo ;
+  void:triples  40
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-nif ;
+  void:triples  470
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-msh ;
+  void:triples  2203
+] .
+
+lod:bioportal-who  a         void:Dataset ;
         dcterms:description  "WHO Adverse Reaction Terminology, 1997"@en ;
         dcterms:publisher    [ rdfs:label  "WHO Collaborating Centre for International Drug Monitoring" ;
                                foaf:mbox   ""
@@ -218,23 +206,35 @@
         dcterms:subject      "ontology" , "lod" , "published-by-third-party" , "bioportal" , "life_sciences" , "format-rrf" , "biomedicine" , "format-rdf" ;
         dcterms:title        "WHO Adverse Reaction Terminology"@en ;
         void:triples         247707 ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/40404?apikey=BP_API_KEY> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1354> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vo> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  14
+[ void:target   lod:bioportal-who , lod:bioportal-ontoorpha ;
+  void:triples  155
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  10
+[ void:target   lod:bioportal-who , lod:bioportal-hp_x1 ;
+  void:triples  486
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-who> ;
-  void:triples  51
+[ void:target   lod:bioportal-who , lod:bioportal-icpc2p ;
+  void:triples  2460
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-shr> , <http://lod-cloud.net/dataset/bioportal-who> ;
+[ void:target   lod:bioportal-who , lod:bioportal-mpath ;
+  void:triples  77
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-mesh-owl ;
+  void:triples  1935
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-ndfrt ;
+  void:triples  1667
+] .
+
+[ void:target   lod:bioportal-who , lod:bioportal-shr ;
   void:triples  25
 ] .

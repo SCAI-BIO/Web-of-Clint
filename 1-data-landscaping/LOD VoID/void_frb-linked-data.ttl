@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/oecd-linked-data> , <http://lod-cloud.net/dataset/frb-linked-data> ;
-  void:triples  34
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/nasa> , <http://lod-cloud.net/dataset/frb-linked-data> ;
-  void:triples  276
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/ecb-linked-data> , <http://lod-cloud.net/dataset/frb-linked-data> ;
-  void:triples  276
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/world-bank-linked-data> , <http://lod-cloud.net/dataset/frb-linked-data> ;
+[ void:target   lod:frb-linked-data , lod:world-bank-linked-data ;
   void:triples  280
 ] .
 
-<http://lod-cloud.net/dataset/frb-linked-data>
-        a                     void:Dataset ;
+[ void:target   lod:frb-linked-data , lod:nasa ;
+  void:triples  276
+] .
+
+lod:frb-linked-data  a        void:Dataset ;
         dcterms:description   "FRB data and metadata"@en ;
         dcterms:publisher     [ rdfs:label  "Sarven Capadisli" ;
                                 foaf:mbox   "info@csarven.ca"
@@ -32,14 +24,22 @@
         void:exampleResource  <http://frb.270a.info/dataset/Z1> ;
         void:sparqlEndpoint   <http://frb.270a.info/sparql> ;
         void:triples          185300000 ;
-        dcat:distribution     [ dcat:accessURL  <http://frb.270a.info/data/meta.tar.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://frb.270a.info/data/data.tar.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://frb.270a.info/.well-known/void> ] .
+        dcat:distribution     [ dcat:accessURL  <http://frb.270a.info/.well-known/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://frb.270a.info/data/meta.tar.gz> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/frb-linked-data> ;
+[ void:target   lod:frb-linked-data , lod:ecb-linked-data ;
+  void:triples  276
+] .
+
+[ void:target   lod:frb-linked-data , lod:dbpedia ;
   void:triples  280
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/uis-linked-data> , <http://lod-cloud.net/dataset/frb-linked-data> ;
+[ void:target   lod:frb-linked-data , lod:oecd-linked-data ;
+  void:triples  34
+] .
+
+[ void:target   lod:frb-linked-data , lod:uis-linked-data ;
   void:triples  280
 ] .

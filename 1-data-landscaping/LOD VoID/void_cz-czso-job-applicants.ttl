@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,28 +6,28 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/data-gov-uk-time-intervals> , <http://lod-cloud.net/dataset/cz-czso-job-applicants> ;
+[ void:target   lod:cz-czso-job-applicants , lod:cz-ruian ;
   void:triples  1638
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-ruian> , <http://lod-cloud.net/dataset/cz-czso-job-applicants> ;
-  void:triples  1638
-] .
-
-<http://lod-cloud.net/dataset/cz-czso-job-applicants>
+lod:cz-czso-job-applicants
         a                     void:Dataset ;
         dcterms:description   "Data cube containing statistical data about job applicants in regions of Czech republic according to Czech Statistical Office."@en ;
         dcterms:publisher     [ rdfs:label  "Martin Nečaský" ;
                                 foaf:mbox   "necasky@opendata.cz"
                               ] ;
-        dcterms:subject       "format-skos" , "czech" , "published-by-third-party" , "czech-republic" , "vocab-mappings" , "format-sdmx" , "government" , "provenance-metadata" , "lod" , "format-qb" , "format-dcterms" , "no-deref-vocab" , "license-metadata" ;
+        dcterms:subject       "format-skos" , "czech" , "published-by-third-party" , "czech-republic" , "vocab-mappings" , "format-sdmx" , "government" , "lod" , "provenance-metadata" , "format-qb" , "format-dcterms" , "no-deref-vocab" , "license-metadata" ;
         dcterms:title         "Job applicants in regions of Czech Republic"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://data.czso.cz/resource/observation/job-applicants/CZ063/2013-12-31/T%3E&default-graph-uri=http%3A%2F%2Fdata.czso.cz%2Fresource%2Fdataset%2Fjob-applicants&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          12978 ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Fdata.czso.cz%2Fresource%2Fdataset%2Fjob-applicants%2Fdistribution%3E&output=text%2Fturtle> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/czso-job-applicants-vocabulary.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://internal.opendata.cz/dumps/czso-job-applicants-vocabulary.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/czso-job-applicants.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://internal.opendata.cz/dumps/czso-job-applicants-vocabulary.trig> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.czso.cz/resource/observation/job-applicants/CZ063/2013-12-31/T> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/czso-job-applicants-vocabulary.trig> ] ;
         foaf:homepage         <http://data.czso.cz/resource/dataset/job-applicants> .
+
+[ void:target   lod:cz-czso-job-applicants , lod:data-gov-uk-time-intervals ;
+  void:triples  1638
+] .

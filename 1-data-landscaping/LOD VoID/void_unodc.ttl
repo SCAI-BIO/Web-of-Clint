@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/unodc>
-        a                    void:Dataset ;
+[ void:target   lod:unodc , lod:dbpedia ;
+  void:triples  111
+] .
+
+lod:unodc  a                 void:Dataset ;
         dcterms:description  "The United Nations office on Drugs and Crime (UNODC) provides statistical data on criminal justice on a regular basis. The data is provided as Excel sheets, which can be downloaded from the website.\r\nIf you want to browse the data, please use the links in the \"navigation box\" on the left side. Furthermore, it is possible to create your own SPARQL queries for obtaining lists of combined information.\r\nThis dataset (http://unodc.publicdata.eu/) was triplified and published by the research group AKSW (Agile Knowledge Engineering and Semantic Web). For further information about AKSW please visit our website."@en ;
         dcterms:publisher    [ rdfs:label  "Philipp Frischmuth" ;
                                foaf:mbox   "frischmuth@informatik.uni-leipzig.de"
@@ -15,15 +19,11 @@
         dcterms:title        "UNODC - Statistics on criminal justice"@en ;
         void:sparqlEndpoint  <http://unodc.publicdata.eu/sparql> ;
         void:triples         230000 ;
+        dcat:distribution    [ dcat:accessURL  <http://unodc.publicdata.eu/resource/export/f/rdfxml?r=http%3A%2F%2Funodc.publicdata.eu%2Fr%2Fobservation%2Fdata%2Fcts12_criminal_justice_resourcesCts12%2Btotal%2Bpolice%2BpersonnelCountKenya2009> ] ;
         dcat:distribution    [ dcat:accessURL  <ihttp://unodc.publicdata.eu/r/observation/data/cts12_criminal_justice_resourcesCts12+total+police+personnelCountKenya2009> ] ;
         dcat:distribution    [ dcat:accessURL  <http://unodc.publicdata.eu/model/export/?m=http%3A%2F%2Funodc.publicdata.eu%2F&f=rdfxml> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://unodc.publicdata.eu/resource/export/f/rdfxml?r=http%3A%2F%2Funodc.publicdata.eu%2Fr%2Fobservation%2Fdata%2Fcts12_criminal_justice_resourcesCts12%2Btotal%2Bpolice%2BpersonnelCountKenya2009> ] ;
         foaf:homepage        <http://unodc.publicdata.eu/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/unodc> ;
-  void:triples  111
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/eurostat-linked-data> , <http://lod-cloud.net/dataset/unodc> ;
+[ void:target   lod:unodc , lod:eurostat-linked-data ;
   void:triples  168
 ] .

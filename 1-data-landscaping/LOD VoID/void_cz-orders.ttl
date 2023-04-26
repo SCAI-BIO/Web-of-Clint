@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,22 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/cz-orders>
-        a                     void:Dataset ;
+lod:cz-orders  a              void:Dataset ;
         dcterms:description   "This dataset contains data from the registry of contracts of the Czech Republic - orders"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "license-metadata" , "czech" , "published-by-third-party" , "provenance-metadata" , "deref-vocab" , "no-vocab-mappings" , "government" , "lod" , "format-schema" , "format-dcterms" , "format-gr" , "format-skos" , "czech-republic" , "format-adms" ;
+        dcterms:subject       "license-metadata" , "czech" , "published-by-third-party" , "provenance-metadata" , "deref-vocab" , "no-vocab-mappings" , "government" , "lod" , "format-dcterms" , "format-schema" , "format-gr" , "czech-republic" , "format-skos" , "format-adms" ;
         dcterms:title         "Registry of contracts of the Czech Republic - Orders"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdomain%2Fseznam.gov.cz%2Fobjednavky%2F122565601%3E&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          86128 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/seznam.gov.cz/objednavky/122565601> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fseznam.gov.cz%2Frejstriky%2Fobjednavky%2Fdistribution%3E&output=text%2Fturtle> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/gov-cz-objednavky.trig> ] ;
         foaf:homepage         <http://linked.opendata.cz/resource/dataset/seznam.gov.cz/rejstriky/objednavky> .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-ic> , <http://lod-cloud.net/dataset/cz-orders> ;
+[ void:target   lod:cz-orders , lod:cz-ic ;
   void:triples  832
 ] .

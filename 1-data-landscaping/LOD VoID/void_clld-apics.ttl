@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/clld-apics> ;
+[ void:target   lod:clld-apics , lod:dbpedia ;
   void:triples  54
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/clld-apics> ;
-  void:triples  54
+[ void:target   lod:clld-apics , lod:clld-glottolog ;
+  void:triples  75
 ] .
 
-<http://lod-cloud.net/dataset/clld-apics>
-        a                    void:Dataset ;
+lod:clld-apics  a            void:Dataset ;
         dcterms:description  "APiCS Online published by the CLLD project"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
@@ -22,10 +22,10 @@
         dcterms:subject      "llod" , "linguistics" , "lod" ;
         dcterms:title        "CLLD-APICS"@en ;
         void:triples         463009 ;
-        dcat:distribution    [ dcat:accessURL  <http://apics-online.info/static/download/apics-dataset.n3.gz> ] ;
         dcat:distribution    [ dcat:accessURL  <http://apics-online.info/void.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://apics-online.info/static/download/apics-dataset.n3.gz> ] ;
         foaf:homepage        <http://apics-online.info> .
 
-[ void:target   <http://lod-cloud.net/dataset/clld-glottolog> , <http://lod-cloud.net/dataset/clld-apics> ;
-  void:triples  75
+[ void:target   lod:clld-apics , lod:lexvo ;
+  void:triples  54
 ] .

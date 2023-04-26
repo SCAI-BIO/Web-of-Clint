@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,75 +6,71 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
-  void:triples  26
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-jisc> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
-  void:triples  387
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-citeseer ;
   void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-wiki ;
   void:triples  61
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-irit> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
-  void:triples  6
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-courseware> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-kisti ;
   void:triples  8
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-lisbon ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-acm ;
   void:triples  56
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-budapest ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-cordis , lod:dbpedia ;
+  void:triples  16
+] .
+
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-newcastle ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-irit ;
+  void:triples  6
+] .
+
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-laas ;
+  void:triples  2
+] .
+
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-dblp ;
+  void:triples  26
+] .
+
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-southampton ;
   void:triples  30
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-nsf> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
-  void:triples  193
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-eprints ;
   void:triples  89
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-lisbon> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-nsf ;
+  void:triples  193
+] .
+
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-deepblue ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-deepblue> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
-  void:triples  1
+[ void:target   lod:rkb-explorer-cordis , lod:semantic-web-dog-food ;
+  void:triples  3
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-curriculum> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
-  void:triples  5
-] .
-
-<http://lod-cloud.net/dataset/rkb-explorer-cordis>
+lod:rkb-explorer-cordis
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
@@ -84,19 +81,23 @@
         void:exampleResource  <http://cordis.rkbexplorer.com/data/project-8376495> ;
         void:sparqlEndpoint   <http://cordis.rkbexplorer.com/sparql/> ;
         void:triples          3519823 ;
-        dcat:distribution     [ dcat:accessURL  <http://cordis.rkbexplorer.com/models/void.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://cordis.rkbexplorer.com/models/dump.tgz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://cordis.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://cordis.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://cordis.rkbexplorer.com/models/void.ttl> ] ;
         foaf:homepage         <http://cordis.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-curriculum ;
+  void:triples  5
+] .
+
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-courseware ;
   void:triples  8
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
-  void:triples  3
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-jisc ;
+  void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-cordis> ;
-  void:triples  1
+[ void:target   lod:rkb-explorer-cordis , lod:rkb-explorer-rae2001 ;
+  void:triples  387
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -15,4 +16,4 @@
         dcterms:title        "Ontology"@en ;
         void:dataDump        <https://drive.google.com/open?id=13BxztYE_p5n3EZhyLpiU30J8EoRdvH10> ;
         void:triples         "0"^^xsd:int ;
-        foaf:homepage        <https://www.iraj.in › journal_pdf> .
+        foaf:homepage        <https://www.iraj.in> .

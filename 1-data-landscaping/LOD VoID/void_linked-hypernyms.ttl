@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linked-hypernyms> ;
+[ void:target   lod:linked-hypernyms , lod:yago ;
   void:triples  "unknown"^^xsd:integer
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/linked-hypernyms> ;
+[ void:target   lod:linked-hypernyms , lod:dbpedia ;
   void:triples  "unknown"^^xsd:integer
 ] .
 
-<http://lod-cloud.net/dataset/linked-hypernyms>
-        a                    void:Dataset ;
+lod:linked-hypernyms  a      void:Dataset ;
         dcterms:description  "This Linked Hypernym dataset attaches entity articles in English, German and Dutch Wikipedia with a DBpedia resource or a DBpedia ontology concept as their type. The types are hypernyms mined from articles' free text using hand-crafted lexicosyntactic patterns.\r\n\r\nThe dataset contains 2.8 million entity-type assignments, out of which nearly 2.5 million are novel with respect to DBpedia and 2 million w.r.t. Yago 2s and DBpedia."@en ;
         dcterms:publisher    [ rdfs:label  "Tomas Kliegr, Milan Dojchinovski" ;
                                foaf:mbox   "http://ner.vse.cz/datasets/linkedhypernyms/contact/"

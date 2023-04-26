@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,29 +6,28 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/opendataec> ;
+[ void:target   lod:opendataec , lod:es.dbpedia ;
+  void:triples  262
+] .
+
+[ void:target   lod:opendataec , lod:wikidata ;
   void:triples  166
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/opendataec> ;
-  void:triples  165
-] .
-
-<http://lod-cloud.net/dataset/opendataec>
-        a                    void:Dataset ;
+lod:opendataec  a            void:Dataset ;
         dcterms:description  "Open Data Ecuador Linked Open Data includes data about intellectual production of Ecuador. The data was published in RDF format according to the design issues of Linked Open Data. Data can be accessed from a SPARQL endpoint. \r\n## Data: ##\r\n* Academic Articles: 6468\r\n* Affiliations: 3121\r\n* Authors: 22030 \r\n##Creator:##\r\nNelson Piedra @nopiedra\r\n##Collaborators:##\r\n* Elizabeth Cadme\r\n* Janneth Chicaiza\r\n* Eduardo Encalada\r\n* Richard Guaya\r\n* Jorge Lopez-Vargas\r\n* Diana Torres"@en ;
         dcterms:publisher    [ rdfs:label  "Nelson Piedra" ;
                                foaf:mbox   "nopiedra@utpl.edu.ec"
                              ] ;
-        dcterms:subject      "publications" , "format-org" , "Latin American Linked Data Association" , "format-skos" , "Papers" , "format-vivo" , "no-proprietary-vocab" , "lod" , "format-schema" , "RDF" , "format-foaf" , "Linked Open Data" , "university" , "sparql-endpoint" , "Ecuador" , "library" , "format-dc" ;
+        dcterms:subject      "publications" , "format-org" , "Latin American Linked Data Association" , "format-skos" , "Papers" , "format-vivo" , "lod" , "no-proprietary-vocab" , "format-schema" , "RDF" , "format-foaf" , "Linked Open Data" , "university" , "sparql-endpoint" , "Ecuador" , "library" , "format-dc" ;
         dcterms:title        "Open Data of Ecuador"@en ;
         void:sparqlEndpoint  <http://data.utpl.edu.ec/ecuadorresearch/lod/sparql> ;
         void:triples         1276020 .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/opendataec> ;
+[ void:target   lod:opendataec , lod:dbpedia ;
   void:triples  2019
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/es.dbpedia> , <http://lod-cloud.net/dataset/opendataec> ;
-  void:triples  262
+[ void:target   lod:opendataec , lod:yago ;
+  void:triples  165
 ] .

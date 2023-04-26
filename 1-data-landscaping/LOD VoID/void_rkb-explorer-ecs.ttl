@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-ecs> ;
-  void:triples  1
-] .
-
-<http://lod-cloud.net/dataset/rkb-explorer-ecs>
-        a                     void:Dataset ;
+lod:rkb-explorer-ecs  a       void:Dataset ;
         dcterms:description   "Semantic repository that contains and publishes co-reference information, forming the underlying distributed storage model behind the RKB Explorer initiative."@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
                                 foaf:mbox   "hg@ecs.soton.ac.uk"
@@ -25,6 +21,10 @@
         dcat:distribution     [ dcat:accessURL  <http://ecs.rkbexplorer.com/models/void.ttl> ] ;
         foaf:homepage         <http://ecs.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-ecs> ;
+[ void:target   lod:rkb-explorer-ecs , lod:rkb-explorer-dblp ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-ecs , lod:rkb-explorer-southampton ;
   void:triples  552
 ] .

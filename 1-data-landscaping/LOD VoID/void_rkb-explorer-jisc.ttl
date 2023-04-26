@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,42 +6,42 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-jisc> ;
+[ void:target   lod:rkb-explorer-jisc , lod:rkb-explorer-kisti ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-jisc> ;
+[ void:target   lod:rkb-explorer-jisc , lod:rkb-explorer-southampton ;
+  void:triples  10
+] .
+
+[ void:target   lod:rkb-explorer-jisc , lod:rkb-explorer-risks ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/rkb-explorer-jisc>
+[ void:target   lod:rkb-explorer-jisc , lod:rkb-explorer-dotac ;
+  void:triples  1231
+] .
+
+lod:rkb-explorer-jisc
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
                                 foaf:mbox   "hg@ecs.soton.ac.uk"
                               ] ;
-        dcterms:subject       "deref-vocab" , "lodcloud-diagram-2011-09-19" , "format-dc" , "no-vocab-mappings" , "provenance-metadata" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "published-by-third-party" , "void-sparql-endpoint" , "no-license-metadata" , "lod" , "publications" ;
+        dcterms:subject       "publications" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "format-dc" , "no-vocab-mappings" , "provenance-metadata" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "published-by-third-party" , "void-sparql-endpoint" , "no-license-metadata" , "lod" ;
         dcterms:title         "UK JISC (RKBExplorer)"@en ;
         void:exampleResource  <http://jisc.rkbexplorer.com/id/project-1355> ;
         void:sparqlEndpoint   <http://jisc.rkbexplorer.com/sparql/> ;
         void:triples          64672 ;
-        dcat:distribution     [ dcat:accessURL  <http://jisc.rkbexplorer.com/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://jisc.rkbexplorer.com/models/void.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://jisc.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://jisc.rkbexplorer.com/sitemap.xml> ] ;
         foaf:homepage         <http://jisc.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-jisc> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-risks> , <http://lod-cloud.net/dataset/rkb-explorer-jisc> ;
+[ void:target   lod:rkb-explorer-jisc , lod:rkb-explorer-eprints ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-jisc> ;
+[ void:target   lod:rkb-explorer-jisc , lod:rkb-explorer-cordis ;
   void:triples  82
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-jisc> ;
-  void:triples  1231
 ] .

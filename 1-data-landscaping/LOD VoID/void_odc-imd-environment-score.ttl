@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/odc-imd-environment-score>
+lod:odc-imd-environment-score
         a                     void:Dataset ;
         dcterms:description   "This dataset contains the scores for the Living Environment Deprivation Domain of the Index of Multiple Deprivation, 2010. This indicator measures the quality of individuals’ immediate surroundings both within and outside the home. A high number indicates a high level of deprivation. \r\n\r\n\r\nExample:\r\nhttp://opendatacommunities.org/id/IMD/2010/IMD-environment-score/LSOA/E01000001\r\n\r\nDownload:\r\nhttp://opendatacommunities-downloads.s3.amazonaws.com/imd-2010-environment-score.ttl.zip"@en ;
         dcterms:publisher     [ rdfs:label  "http://reference.data.gov.uk/id/department/dclg" ;
@@ -15,6 +16,6 @@
         dcterms:title         "Index of Multiple Deprivation, Living Environment Deprivation Domain, Scores 2010"@en ;
         void:exampleResource  <http://opendatacommunities.org/id/IMD/2010/IMD-environment-score/LSOA/E01000001> ;
         void:triples          194892 ;
-        dcat:distribution     [ dcat:accessURL  <http://opendatacommunities-downloads.s3.amazonaws.com/imd-2010-environment-score.ttl.zip> ] ;
         dcat:distribution     [ dcat:accessURL  <http://opendatacommunities.org/datasets/imd-environment-score-2010.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://opendatacommunities-downloads.s3.amazonaws.com/imd-2010-environment-score.ttl.zip> ] ;
         foaf:homepage         <http://opendatacommunities.org/datasets/imd-environment-score-2010> .

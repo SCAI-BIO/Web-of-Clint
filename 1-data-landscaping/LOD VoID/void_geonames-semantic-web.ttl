@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,13 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/geonames-semantic-web>
+lod:geonames-semantic-web
         a                     void:Dataset ;
         dcterms:description   "The GeoNames Ontology makes it possible to add geospatial semantic information to the Word Wide Web. All over 6.2 million geonames toponyms now have a unique URL with a corresponding RDF web service. Other services describe the relation between toponyms.\r\n\r\nSPARQL endpoints for this data are made available by third parties. [Geonames at Kasabi](http://kasabi.com/dataset/geonames/), and [FactForge](http://factforge.net/sparql) has it loaded as well."@en ;
         dcterms:publisher     [ rdfs:label  "Bernard Vatant" ;
                                 foaf:mbox   "bernard.vatant@mondeca.com"
                               ] ;
-        dcterms:subject       "provenance-metadata" , "lodcloud-diagram-2007-05-01" , "published-by-producer" , "lodcloud-diagram-2011-09-19" , "no-deref-vocab" , "geography" , "format-geo" , "format-rdf" , "no-vocab-mappings" , "lodcloud-diagram-2014-08-30" , "format-cc" , "lod" , "no-license-metadata" , "geographic" , "no-provenance-metadata" , "lodcloud.nolinks" ;
+        dcterms:subject       "provenance-metadata" , "lodcloud-diagram-2007-05-01" , "lodcloud-diagram-2011-09-19" , "published-by-producer" , "no-deref-vocab" , "format-geo" , "geography" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "no-vocab-mappings" , "format-cc" , "lod" , "no-license-metadata" , "geographic" , "no-provenance-metadata" , "lodcloud.nolinks" ;
         dcterms:title         "GeoNames Semantic Web"@en ;
         void:exampleResource  <http://sws.geonames.org/3020251/about.rdf> , <http://sws.geonames.org/6295630/> ;
         void:triples          93896732 ;

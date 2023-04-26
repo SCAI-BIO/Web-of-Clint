@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,27 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lingvoj> , <http://lod-cloud.net/dataset/dbtune-musicbrainz> ;
+[ void:target   lod:dbtune-musicbrainz , lod:lingvoj ;
   void:triples  185
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbtune-musicbrainz> ;
-  void:triples  64000
-] .
-
-<http://lod-cloud.net/dataset/dbtune-musicbrainz>
+lod:dbtune-musicbrainz
         a                     void:Dataset ;
         dcterms:description   "Data from package:musicbrainz re-published as RDF."@en ;
         dcterms:publisher     [ rdfs:label  "Yves Raimond" ;
                                 foaf:mbox   "yves@dbtune.org"
                               ] ;
-        dcterms:subject       "published-by-third-party" , "no-license-metadata" , "music" , "lod" , "media" , "no-vocab-mappings" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "no-provenance-metadata" , "format-rdf" , "dbtune" , "no-deref-vocab" ;
+        dcterms:subject       "no-license-metadata" , "published-by-third-party" , "music" , "lod" , "media" , "lodcloud-diagram-2011-09-19" , "lodcloud-diagram-2014-08-30" , "no-vocab-mappings" , "no-provenance-metadata" , "format-rdf" , "dbtune" , "no-deref-vocab" ;
         dcterms:title         "DBTune.org Musicbrainz D2R Server"@en ;
         void:exampleResource  <http://dbtune.org/musicbrainz/all> ;
         void:sparqlEndpoint   <http://dbtune.org/musicbrainz/sparql> ;
         void:triples          36000000 ;
         foaf:homepage         <http://dbtune.org/musicbrainz/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbtune-myspace> , <http://lod-cloud.net/dataset/dbtune-musicbrainz> ;
+[ void:target   lod:dbtune-musicbrainz , lod:dbpedia ;
+  void:triples  64000
+] .
+
+[ void:target   lod:dbtune-musicbrainz , lod:dbtune-myspace ;
   void:triples  15000
 ] .

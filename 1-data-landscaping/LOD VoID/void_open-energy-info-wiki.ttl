@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/open-energy-info-wiki>
+[ void:target   lod:open-energy-info-wiki , lod:geonames-semantic-web ;
+  void:triples  497
+] .
+
+lod:open-energy-info-wiki
         a                     void:Dataset ;
         dcterms:description   "### About\r\n\r\nFrom website:\r\n\r\n> Open Energy Info is a platform to connect the world?s energy data. It is a linked open data platform bringing together energy information to provide improved analyses, unique visualizations, and real-time access to data. OpenEI follows guidelines set by the White House?s Open Government Initiative , which is focused on transparency, collaboration, and participation. OpenEI strives to provide open access to this energy information, which will spur creativity and drive innovation in the energy sector.\r\n\r\n### Openness\r\n\r\nProject representatives confirmed [via email](http://lists.w3.org/Archives/Public/public-egov-ig/2010Mar/0008.html):\r\n\r\n> The default license for all information in OpenEI I Creative Commons Zero (http://wiki.creativecommons.org/CC0_FAQ).  You can see this documented in a notice shown in the site's editing interface for any page (e.g. http://en.openei.org/w/index.php?title=Colorado&action=edit).\r\n\r\n### Access\r\n\r\nProject representatives confirmed [via email](http://lists.w3.org/Archives/Public/public-egov-ig/2010Mar/0008.html):\r\n\r\n> As for bulk downloads of data...  We currently offer the following:\r\n\r\n>> * \"Download CSV\" links are present on certain pages (e.g. http://en.openei.org/wiki/Map_of_Clean_Energy_Companies)\r\n>> * A SPARQL endpoint for querying data (http://en.openei.org/sparql), plus a few examples of its use (http://en.openei.org/resources/)\r\n>> * RDF Exports of any given page via the \"browse properties\" link (e.g. http://en.openei.org/wiki/Special:ExportRDF/Colorado)\r\n\r\n> We realize that we could be doing more in this area, though.  A few things we're planning to do:\r\n\r\n>> * Provide a bulk download of our complete RDF (similar to how one can get complete dbpedia exports)\r\n>> * Provide a better way to find various datasets (and download them in various formats, such as RDF and CSV)\r\n>> * Provide a mechanism for submitting bulk datasets which is separate from, but complementary to, our Wiki)"@en ;
         dcterms:publisher     [ rdfs:label  "OpenEI.org" ;
                                 foaf:mbox   "openei.webmaster@nrel.gov"
                               ] ;
-        dcterms:subject       "energy" , "wiki" , "no-provenance-metadata" , "lod" , "government" , "no-vocab-mappings" , "deref-vocab" , "lodcloud-diagram-2014-08-30" , "smw" , "country-usa" , "no-license-metadata" , "lodcloud-diagram-2011-09-19" , "published-by-producer" , "format-rdf" ;
+        dcterms:subject       "energy" , "wiki" , "no-provenance-metadata" , "lod" , "government" , "no-vocab-mappings" , "deref-vocab" , "lodcloud-diagram-2014-08-30" , "smw" , "country-usa" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "published-by-producer" , "format-rdf" ;
         dcterms:title         "OpenEI - Open Energy Info"@en ;
         void:exampleResource  <http://en.openei.org/wiki/Special:ExportRDF/National_Renewable_Energy_Laboratory> ;
         void:sparqlEndpoint   <http://en.openei.org/sparql> ;
         void:triples          16384698 ;
         foaf:homepage         <http://en.openei.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/open-energy-info-wiki> ;
-  void:triples  497
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/open-energy-info-wiki> ;
+[ void:target   lod:open-energy-info-wiki , lod:dbpedia ;
   void:triples  52546
 ] .

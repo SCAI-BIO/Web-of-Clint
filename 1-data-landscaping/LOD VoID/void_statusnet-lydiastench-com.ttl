@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-jonkman-ca> , <http://lod-cloud.net/dataset/statusnet-lydiastench-com> ;
+[ void:target   lod:statusnet-lydiastench-com , lod:personal-homepages ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-lydiastench-com> ;
+[ void:target   lod:statusnet-lydiastench-com , lod:statusnet-fragdev-com ;
   void:triples  7
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-lydiastench-com> ;
+[ void:target   lod:statusnet-lydiastench-com , lod:statusnet-quitter-se ;
   void:triples  7
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-lydiastench-com>
+lod:statusnet-lydiastench-com
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://lydiastench.com"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -28,18 +29,18 @@
         void:exampleResource  <http://micro.lydiastench.com/lstench/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-lydiastench-com> ;
-  void:triples  4
+[ void:target   lod:statusnet-lydiastench-com , lod:geonames-semantic-web ;
+  void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-lydiastench-com> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-lydiastench-com> ;
+[ void:target   lod:statusnet-lydiastench-com , lod:statusnet-skilledtests-com ;
   void:triples  6
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-lydiastench-com> ;
-  void:triples  1
+[ void:target   lod:statusnet-lydiastench-com , lod:statusnet-jonkman-ca ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-lydiastench-com , lod:statusnet-russwurm-org ;
+  void:triples  4
 ] .

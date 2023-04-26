@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/clld-afbo> ;
+[ void:target   lod:clld-afbo , lod:dbpedia ;
   void:triples  147
 ] .
 
-<http://lod-cloud.net/dataset/clld-afbo>
-        a                    void:Dataset ;
+lod:clld-afbo  a             void:Dataset ;
         dcterms:description  "AfBo: A world-wide survey of affix borrowing published by the CLLD project"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
@@ -22,10 +22,10 @@
         dcat:distribution    [ dcat:accessURL  <http://afbo.info/static/download/afbo-dataset.n3.gz> ] ;
         foaf:homepage        <http://afbo.info> .
 
-[ void:target   <http://lod-cloud.net/dataset/clld-glottolog> , <http://lod-cloud.net/dataset/clld-afbo> ;
-  void:triples  157
+[ void:target   lod:clld-afbo , lod:lexvo ;
+  void:triples  147
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/clld-afbo> ;
-  void:triples  147
+[ void:target   lod:clld-afbo , lod:clld-glottolog ;
+  void:triples  157
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-service-expenditure> ;
+[ void:target   lod:opendatacommunities-service-expenditure , lod:reference-data-gov-uk ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/opendatacommunities-service-expenditure>
+lod:opendatacommunities-service-expenditure
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "provenance-metadata" , "dump" , "format-rdfs" , "format-dcat" , "dataset-level-metadata" , "crawledLinkedDataCloud2014" , "format-void" , "format-rdf" , "sparql" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "format-dcterm" , "government" , "LinkedDataCrawl2014" ;
+        dcterms:subject       "provenance-metadata" , "dump" , "format-rdfs" , "format-dcat" , "dataset-level-metadata" , "crawledLinkedDataCloud2014" , "format-void" , "format-rdf" , "sparql" , "license-metadata" , "lodcloud-diagram-2014-08-30" , "format-dcterm" , "government" , "LinkedDataCrawl2014" ;
         dcterms:title         "opendatacommunities-service-expenditure"@en ;
         void:exampleResource  <http://opendatacommunities.org/data/service-expenditure> ;
         void:triples          "0"^^xsd:int .

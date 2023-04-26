@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,29 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  337
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-birnlex ;
+  void:triples  71
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pdq> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  110
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-mp ;
+  void:triples  217
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x2> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  12
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-cco ;
+  void:triples  108
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  587
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ctcae> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  58
-] .
-
-<http://lod-cloud.net/dataset/bioportal-ontoorpha>
+lod:bioportal-ontoorpha
         a                    void:Dataset ;
-        dcterms:description  "OntoOrpha is an ontology of Rare Diseases that includes clinical signs (phenotypes) and genes. The full Orphanet nomenclature (labels, synonyms) is provided in six languages with external references annotations (ICD, OMIM, HGNC, Genatlas, Swissprot). This version now includes epidemiology data related to rare diseases in Europe (class of prevalence, average age of onset, average age at death) extracted from the literature.\r\n<br />\r\nPart of an ongoing research project, this ontology is developed to support editorial procedures of <a href=\"http://www.orpha.net\">Orphanet knowledge bases and services</a>. Current alpha version is under active development. The version provided on bioportal contains only the main english labels. A version on the ontology with the full nomenclature of rare diseases (labels and synonyms in 6 languages based on skos annotations) is available on demand.\r\n<br /><br />\r\n<img src=\"http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png\" alt=\"Creative Commons : Attribution - Non Commercial - No Derivs \" />\r\n<br />\r\n<a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0/\">OntoOrpha is available under Creative Commons license ''Attribution-Non-Commercial-No Derivative Works 3.0''</a>"@en ;
+        dcterms:description  "OntoOrpha is an ontology of Rare Diseases that includes clinical signs (phenotypes) and genes. The full Orphanet nomenclature (labels, synonyms) is provided in six languages with external references annotations (ICD, OMIM, HGNC, Genatlas, Swissprot). This version now includes epidemiology data related to rare diseases in Europe (class of prevalence, average age of onset, average age at death) extracted from the literature.\r\n<br+/>\r\nPart of an ongoing research project, this ontology is developed to support editorial procedures of <a+href=\"http://www.orpha.net\">Orphanet knowledge bases and services</a>. Current alpha version is under active development. The version provided on bioportal contains only the main english labels. A version on the ontology with the full nomenclature of rare diseases (labels and synonyms in 6 languages based on skos annotations) is available on demand.\r\n<br+/><br+/>\r\n<img+src=\"http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png\"+alt=\"Creative+Commons+:+Attribution+-+Non+Commercial+-+No+Derivs+\"+/>\r\n<br+/>\r\n<a+href=\"http://creativecommons.org/licenses/by-nc-nd/3.0/\">OntoOrpha is available under Creative Commons license ''Attribution-Non-Commercial-No Derivative Works 3.0''</a>"@en ;
         dcterms:publisher    [ rdfs:label  "Ferdinand Dhombres" ;
                                foaf:mbox   ""
                              ] ;
@@ -39,206 +32,214 @@
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1586> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  1124
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-sopharm ;
+  void:triples  337
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  2684
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-natpro> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  744
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hp_x1> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  666
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omit> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  314
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-icd10 ;
   void:triples  287
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  1371
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ogmd> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nbo> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  346
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-air> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  41
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-doid> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  1056
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-nif ;
   void:triples  1456
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  190
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-icpc ;
+  void:triples  20
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-imr> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  49
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  253
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc2p> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-icpc2p ;
   void:triples  262
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mp> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  217
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  728
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  199
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-who> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  155
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  3477
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ctx> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  3207
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mpath> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  88
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  329
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  71
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-medlineplus> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  227
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  75
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  1054
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  3893
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vo> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd9cm> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  296
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sso> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x1> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  1599
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10cm> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-icd10cm ;
   void:triples  629
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  109
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-biomodels ;
+  void:triples  21
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  824
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-cst ;
+  void:triples  190
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pr> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-mesh-owl ;
+  void:triples  3893
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-ogmd ;
+  void:triples  19
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-rid ;
+  void:triples  346
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-galen ;
+  void:triples  253
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-ehda ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-msh ;
+  void:triples  2684
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-ncit ;
+  void:triples  1599
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-canco ;
+  void:triples  329
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-doid ;
+  void:triples  1056
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-pr ;
   void:triples  616
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cco> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
-  void:triples  108
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-ctx ;
+  void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pedterm> , <http://lod-cloud.net/dataset/bioportal-ontoorpha> ;
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-pedterm ;
   void:triples  41
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-ndfrt ;
+  void:triples  1124
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-hp_x1 ;
+  void:triples  666
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-efo ;
+  void:triples  314
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-who ;
+  void:triples  155
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-icnp ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-mdr ;
+  void:triples  1054
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-ev ;
+  void:triples  75
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-icd9cm ;
+  void:triples  296
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-mccl ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-snomedct ;
+  void:triples  3477
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-imr ;
+  void:triples  49
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-go_x2 ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-sso ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-hl7 ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-omim ;
+  void:triples  3207
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-mpath ;
+  void:triples  88
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-natpro ;
+  void:triples  744
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-lnc ;
+  void:triples  199
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-medlineplus ;
+  void:triples  227
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-mccl_x1 ;
+  void:triples  728
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-vo ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-omit ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-go_x1 ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-acgt ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-nif_dysfunction ;
+  void:triples  109
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-ctcae ;
+  void:triples  58
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-csp ;
+  void:triples  587
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-bdo ;
+  void:triples  824
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-air ;
+  void:triples  41
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-pdq ;
+  void:triples  110
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-rcd ;
+  void:triples  1371
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-nbo ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-ontoorpha , lod:bioportal-idomal ;
+  void:triples  12
 ] .

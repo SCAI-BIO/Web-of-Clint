@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/uniprotkb>
-        a                    void:Dataset ;
+lod:uniprotkb  a             void:Dataset ;
         dcterms:description  "UniProtKB is the central hub for the collection of functional information on proteins, with accurate, consistent and rich annotation. In addition to capturing the core data mandatory for each UniProtKB entry (mainly, the amino acid sequence, protein name or description, taxonomic data and citation information), as much annotation information as possible is added. This includes widely accepted biological ontologies, classifications and cross-references, and clear indications of the quality of annotation in the form of evidence attribution of experimental and computational data.\r\n\r\n"@en ;
         dcterms:publisher    [ rdfs:label  "UniProt consortium" ;
                                foaf:mbox   "help@uniprot.org"
                              ] ;
-        dcterms:subject      "lodcloud-diagram-2014-08-30" , "no-proprietary-vocab" , "uniprot" , "no-vocab-mappings" , "lifesciences" , "lod" , "life_sciences" , "format-rdf" , "no-provenance-metadata" , "no-license-metadata" ;
+        dcterms:subject      "lodcloud-diagram-2014-08-30" , "no-proprietary-vocab" , "uniprot" , "no-vocab-mappings" , "lifesciences" , "lod" , "format-rdf" , "life_sciences" , "no-provenance-metadata" , "no-license-metadata" ;
         dcterms:title        "UniProtKB"@en ;
         void:sparqlEndpoint  <https://sparql.uniprot.org/sparql> ;
         void:triples         55343596553 ;

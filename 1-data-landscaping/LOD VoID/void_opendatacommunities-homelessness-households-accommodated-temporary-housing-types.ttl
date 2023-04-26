@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/opendatacommunities-homelessness-households-accommodated-temporary-housing-types>
+lod:opendatacommunities-homelessness-households-accommodated-temporary-housing-types
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "license-metadata" , "format-rdf" , "dump" , "format-dcat" , "format-rdfs" , "crawledLinkedDataCloud2014" , "LinkedDataCrawl2014" , "lodcloud-diagram-2014-08-30" , "format-dcterm" , "provenance-metadata" , "dataset-level-metadata" , "government" , "format-void" , "sparql" ;
+        dcterms:subject       "license-metadata" , "format-rdf" , "dump" , "format-dcat" , "format-rdfs" , "crawledLinkedDataCloud2014" , "LinkedDataCrawl2014" , "format-dcterm" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "dataset-level-metadata" , "government" , "format-void" , "sparql" ;
         dcterms:title         "opendatacommunities-homelessness-households-accommodated-temporary-housing-types"@en ;
         void:exampleResource  <http://opendatacommunities.org/data/homelessness/households-accommodated/temporary-housing-types> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-homelessness-households-accommodated-temporary-housing-types> ;
+[ void:target   lod:opendatacommunities-homelessness-households-accommodated-temporary-housing-types , lod:reference-data-gov-uk ;
   void:triples  1
 ] .

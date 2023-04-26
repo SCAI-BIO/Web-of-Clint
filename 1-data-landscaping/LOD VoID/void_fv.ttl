@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,14 +6,13 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/fv>
-        a                    void:Dataset ;
+lod:fv  a                    void:Dataset ;
         dcterms:description  "sbregrsg"@en ;
         dcterms:publisher    [ rdfs:label  "wageawgw" ;
                                foaf:mbox   "ewagrehawg@qage.com"
                              ] ;
         dcterms:subject      "media" ;
         dcterms:title        "fvdb"@en ;
-        void:dataDump        <http://rsgehrthsh.com> , <http://sdbsbrs> ;
+        void:dataDump        <http://sdbsbrs> , <http://rsgehrthsh.com> ;
         void:triples         "0"^^xsd:int ;
         foaf:homepage        <http://agegahgrggh.com> .

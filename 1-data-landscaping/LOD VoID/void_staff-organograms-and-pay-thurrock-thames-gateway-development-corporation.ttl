@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/staff-organograms-and-pay-thurrock-thames-gateway-development-corporation>
+lod:staff-organograms-and-pay-thurrock-thames-gateway-development-corporation
         a                     void:Dataset ;
         dcterms:description   "A list of most Senior Civil Service posts in the Thurrock Thames Gateway Development Corporation including title, contact details, their line manager, and where disclosed, the name of the officer. Vacant posts are listed as \"Vacant\", and posts where the jobholder is not disclosed are listed as \"N/D\". Note that a number of officers are not listed for security reasons.\r\n\r\nAuthorization required:\r\nhttp://organogram.data.gov.uk/data/thurrocktgdc/2011-03-31/government-staff-and-salary-data---March-2011---ThurrockTGDC#totalPay4\r\n\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "Thurrock Thames Gateway Development Corporation" ;
@@ -19,6 +20,6 @@
         dcat:distribution     [ dcat:accessURL  <http://www.thurrocktgdc.org.uk/data/Transparency/government-staff-and-salary-data---March-2011---ThurrockTGDC.xml> ] ;
         foaf:homepage         <http://data.gov.uk/dataset/staff-organograms-and-pay-thurrock-thames-gateway-development-corporation> .
 
-[ void:target   <http://lod-cloud.net/dataset/uk-organogram> , <http://lod-cloud.net/dataset/staff-organograms-and-pay-thurrock-thames-gateway-development-corporation> ;
+[ void:target   lod:staff-organograms-and-pay-thurrock-thames-gateway-development-corporation , lod:uk-organogram ;
   void:triples  45
 ] .

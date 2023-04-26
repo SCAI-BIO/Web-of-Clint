@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bioportal-sbro>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-sbro , lod:bioportal-ncit ;
+  void:triples  18
+] .
+
+[ void:target   lod:bioportal-sbro , lod:bioportal-nif ;
+  void:triples  14
+] .
+
+lod:bioportal-sbro  a        void:Dataset ;
         dcterms:description  "An ontology representing a causal model of smoking behavior risk, including genetic and environmental components.  It also includes concepts for describing smoking-related phenotypes."@en ;
         dcterms:publisher    [ rdfs:label  "Paul Thomas" ;
                                foaf:mbox   ""
@@ -14,27 +22,19 @@
         dcterms:subject      "biomedicine" , "format-rdf" , "format-owl" , "published-by-third-party" , "lod" , "bioportal" , "ontology" , "life_sciences" ;
         dcterms:title        "Smoking Behavior Risk Ontology"@en ;
         void:triples         738 ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/44448?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/44448?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1249> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-sbro> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-sbro> ;
+[ void:target   lod:bioportal-sbro , lod:bioportal-snomedct ;
   void:triples  24
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-sbro> ;
+[ void:target   lod:bioportal-sbro , lod:bioportal-lnc ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-sbro , lod:bioportal-mesh-owl ;
   void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-sbro> ;
-  void:triples  18
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-sbro> ;
-  void:triples  14
 ] .

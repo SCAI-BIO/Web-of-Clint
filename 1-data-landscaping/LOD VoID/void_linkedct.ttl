@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,16 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/linkedct>
-        a                     void:Dataset ;
+[ void:target   lod:linkedct , lod:dbpedia ;
+  void:triples  25476
+] .
+
+lod:linkedct  a               void:Dataset ;
         dcterms:description   "Data exposed: Linked Clinical Trials\r\n\r\nSize of dump and data set: ~25 million triples as of April 2011. 4.8GB NTriples dump\r\n\r\n###CC by-nc-sa license\r\n\r\nYou are free to copy, distribute, transmit, and adapt the work for non-commercial purposes. However, you need to follow the terms and conditions available at http://www.clinicaltrials.gov/ct2/info/terms\r\n\r\nAccording to OKD (http://www.opendefinition.org/okd/) the data is not considered open."@en ;
         dcterms:publisher     [ rdfs:label  "Oktie Hassanzadeh" ;
                                 foaf:mbox   "oktie@cs.toronto.edu"
                               ] ;
-        dcterms:subject       "rdf" , "life_sciences" , "linkeddata" , "published-by-third-party" , "format-rdf" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "health" , "lod" , "size-gb" , "no-license-metadata" , "lodcloud-diagram-2014-08-30" , "ckanupload.esw.200910" , "no-provenance-metadata" , "lifesciences" ;
+        dcterms:subject       "lifesciences" , "rdf" , "life_sciences" , "linkeddata" , "published-by-third-party" , "format-rdf" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "health" , "lod" , "size-gb" , "no-license-metadata" , "ckanupload.esw.200910" , "lodcloud-diagram-2014-08-30" , "no-provenance-metadata" ;
         dcterms:title         "LinkedCT"@en ;
         void:dataDump         <http://www.cs.toronto.edu/%7Eoktie/linkedct/linkedct-live-dump-latest.nt.bz2> ;
         void:exampleResource  <http://linkedct.org/resource/condition/chronic-myeloproliferative-disorders/> ;
@@ -20,26 +24,22 @@
         dcat:distribution     [ dcat:accessURL  <http://data.linkedct.org/> ] ;
         foaf:homepage         <http://linkedct.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linkedct> ;
-  void:triples  25476
+[ void:target   lod:linkedct , lod:bio2rdf-pubmed ;
+  void:triples  76483
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/fu-berlin-dailymed> , <http://lod-cloud.net/dataset/linkedct> ;
-  void:triples  37600
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/fu-berlin-drugbank> , <http://lod-cloud.net/dataset/linkedct> ;
-  void:triples  26047
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/tcmgenedit_dataset> , <http://lod-cloud.net/dataset/linkedct> ;
+[ void:target   lod:linkedct , lod:tcmgenedit_dataset ;
   void:triples  141
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/fu-berlin-diseasome> , <http://lod-cloud.net/dataset/linkedct> ;
+[ void:target   lod:linkedct , lod:fu-berlin-drugbank ;
+  void:triples  26047
+] .
+
+[ void:target   lod:linkedct , lod:fu-berlin-diseasome ;
   void:triples  1325
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/linkedct> ;
-  void:triples  76483
+[ void:target   lod:linkedct , lod:fu-berlin-dailymed ;
+  void:triples  37600
 ] .

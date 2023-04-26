@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/sadi-semantic-web-services-framework-registry>
+lod:sadi-semantic-web-services-framework-registry
         a                    void:Dataset ;
         dcterms:description  "Collection of RDF metadata about SADI services. Services registered at http://sadiframework.org/registry/register/ are dereferenced and the RDF returned is available in the SPARQL endpoint http://biordf.net/sparql in named graph http://sadiframework.org/registry/.\r\n\r\nThis CKAN entry was not created by the SADI development group, but by an interested third party."@en ;
         dcterms:publisher    [ rdfs:label  "SADI development group" ;

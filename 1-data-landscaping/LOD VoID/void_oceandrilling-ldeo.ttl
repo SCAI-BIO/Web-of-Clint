@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/oceandrilling-ldeo>
+lod:oceandrilling-ldeo
         a                     void:Dataset ;
         dcterms:description   "LDEO log files as data (TEST leg 218 only)\r\n\r\n\r\nWe are still in a development mode and working in particular and the namespace URI's and their hosting. So some elements here will change as we tweak responsibility for maintaining namespaces and curating them. You are welcome (encouraged) to explore our sparql endpoint (http://data.oceandrilling.org/sparql) and engage us, comment and criticize. (Doug)\r\n\r\nThis site is guided by the linked data pattern (http://linkeddata.org/). Information on this effort and the steps being taken to expose data in this approach are described here.\r\n\r\nThis data represents only a small percentage of the data available but is sufficient for testing at this time. Additional data related to log files from LDEO, timescales from CHRONOS and data from TAMU are yet to be loaded. "@en ;
         dcterms:publisher     [ rdfs:label  "Consortium for Ocean Leadership" ;

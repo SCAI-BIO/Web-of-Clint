@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,88 +6,67 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  146
+[ void:target   lod:bioportal-bila , lod:bioportal-mccl_x1 ;
+  void:triples  42
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa2> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  45
+[ void:target   lod:bioportal-bila , lod:bioportal-caro ;
+  void:triples  87
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  28
+[ void:target   lod:bioportal-bila , lod:bioportal-canco ;
+  void:triples  57
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tgma> , <http://lod-cloud.net/dataset/bioportal-bila> ;
+[ void:target   lod:bioportal-bila , lod:bioportal-zfa ;
+  void:triples  57
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-tgma ;
   void:triples  30
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-fbbt> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  43
+[ void:target   lod:bioportal-bila , lod:bioportal-tao ;
+  void:triples  63
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  47
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-zfa> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  57
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vao> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  95
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vhog> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  39
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hao> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  53
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-bila> ;
+[ void:target   lod:bioportal-bila , lod:bioportal-mesh-owl ;
   void:triples  36
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  17
+[ void:target   lod:bioportal-bila , lod:bioportal-biomodels ;
+  void:triples  45
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-bila> ;
+[ void:target   lod:bioportal-bila , lod:bioportal-ev ;
+  void:triples  54
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-ehdaa ;
+  void:triples  146
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-cst ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-rcd ;
   void:triples  18
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  26
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe-sbc> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  24
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bto> , <http://lod-cloud.net/dataset/bioportal-bila> ;
+[ void:target   lod:bioportal-bila , lod:bioportal-mat ;
   void:triples  28
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  14
+[ void:target   lod:bioportal-bila , lod:bioportal-oboe-sbc ;
+  void:triples  24
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  57
+[ void:target   lod:bioportal-bila , lod:bioportal-fbbt ;
+  void:triples  43
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-wbbt> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  595
-] .
-
-<http://lod-cloud.net/dataset/bioportal-bila>
-        a                    void:Dataset ;
+lod:bioportal-bila  a        void:Dataset ;
         dcterms:description  "Anatomy of Bilateria."@en ;
         dcterms:publisher    [ rdfs:label  "Thorsten Heinrich" ;
                                foaf:mbox   ""
@@ -95,94 +75,114 @@
         dcterms:title        "Bilateria anatomy"@en ;
         void:triples         1136 ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/42455?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/42455?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1114> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-caro> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  87
+[ void:target   lod:bioportal-bila , lod:bioportal-syn ;
+  void:triples  32
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  117
+[ void:target   lod:bioportal-bila , lod:bioportal-wbbt ;
+  void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  73
+[ void:target   lod:bioportal-bila , lod:bioportal-xao ;
+  void:triples  56
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  28
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tao> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  63
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ma> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aao> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  74
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tads> , <http://lod-cloud.net/dataset/bioportal-bila> ;
+[ void:target   lod:bioportal-bila , lod:bioportal-tads ;
   void:triples  46
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  54
+[ void:target   lod:bioportal-bila , lod:bioportal-hao ;
+  void:triples  53
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  24
+[ void:target   lod:bioportal-bila , lod:bioportal-bto ;
+  void:triples  28
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mfo> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  32
+[ void:target   lod:bioportal-bila , lod:bioportal-uberon ;
+  void:triples  117
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aeo> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  92
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-bila> ;
+[ void:target   lod:bioportal-bila , lod:bioportal-galen ;
   void:triples  26
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  32
+[ void:target   lod:bioportal-bila , lod:bioportal-nif ;
+  void:triples  17
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  10
+[ void:target   lod:bioportal-bila , lod:bioportal-lnc ;
+  void:triples  26
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  54
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  42
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-bila> ;
+[ void:target   lod:bioportal-bila , lod:bioportal-rid ;
   void:triples  35
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-bila> ;
+[ void:target   lod:bioportal-bila , lod:bioportal-csp ;
+  void:triples  24
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-aao ;
+  void:triples  74
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-efo ;
+  void:triples  47
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-ehdaa2 ;
   void:triples  45
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-xao> , <http://lod-cloud.net/dataset/bioportal-bila> ;
-  void:triples  56
+[ void:target   lod:bioportal-bila , lod:bioportal-mfo ;
+  void:triples  32
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-ehda ;
+  void:triples  595
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-sdo ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-mccl ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-acgt ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-snomedct ;
+  void:triples  54
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-msh ;
+  void:triples  28
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-ma ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-aeo ;
+  void:triples  92
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-ncit ;
+  void:triples  73
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-vhog ;
+  void:triples  39
+] .
+
+[ void:target   lod:bioportal-bila , lod:bioportal-vao ;
+  void:triples  95
 ] .

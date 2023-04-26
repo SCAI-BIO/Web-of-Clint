@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vivo> , <http://lod-cloud.net/dataset/eagle-i-msm> ;
-  void:triples  76
-] .
-
-<http://lod-cloud.net/dataset/eagle-i-msm>
-        a                     void:Dataset ;
+lod:eagle-i-msm  a            void:Dataset ;
         dcterms:description   "Groundbreaking biomedical research requires access to cutting edge scientific resources; however such resources are often invisible beyond the laboratories or universities where they were developed. eagle-i is a national research resource discovery platform to help biomedical scientists search for and find previously invisible, but highly valuable, resources. \r\nResource descriptions collected at each participating institution are freely available as linked open data.\r\nSee: http://www.eagle-i.net/"@en ;
         dcterms:publisher     [ rdfs:label  "The eagle-i Network" ;
                                 foaf:mbox   "info@eagle-i.org"
@@ -20,34 +16,38 @@
         void:exampleResource  <http://msm.eagle-i.net/i/00000130-4e48-17ae-92f1-503b80000000?format=application/xml> ;
         void:sparqlEndpoint   <http://msm.eagle-i.net/sparqler/sparql> ;
         void:triples          8800 ;
-        dcat:distribution     [ dcat:accessURL  <http://msm.eagle-i.net/sparqler/sparql?view=published-resources&format=text/turtle&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E+PREFIX+%3A+%3Chttp%3A%2F%2Feagle-i.org%2Font%2Frepo%2F1.0%2F%3E+construct+%7B%3Fs+%3Fp+%3Fo+.+%3Fp+rdfs%3Alabel+%3Fp_label+.+%3Fo+rdfs%3Alabel+%3Fo_label%7D+where+%7Bgraph+%3ANG_Published%7B%3Fs+%3Fp+%3Fo%7D+.+optional%7B%3Fp+rdfs%3Alabel+%3Fp_label+%7D+.+optional%7B+%3Fo+rdfs%3Alabel+%3Fo_label%7D%7D+> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://msm.eagle-i.net/sparqler/sparql?view=published-resources&format=text/turtle&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E+PREFIX+%3A+%3Chttp%3A%2F%2Feagle-i.org%2Font%2Frepo%2F1.0%2F%3E+construct+%7B%3Fs+%3Fp+%3Fo+.+%3Fs+a+%3Ftype+.+%3Ftype+rdfs%3Alabel+%3Ftype_label+.+%3Fp+rdfs%3Alabel+%3Fp_label+.+%3Fo+rdfs%3Alabel+%3Fo_label%7D+where+%7Bgraph+%3ANG_Published%7B%3Fs+%3Fp+%3Fo%7D+.+optional%7B%3Fs+a+%3Ftype%7D+.+optional%7B%3Ftype+rdfs%3Alabel+%3Ftype_label%7D+.+optional%7B%3Fp+rdfs%3Alabel+%3Fp_label+%7D+.+optional%7B+%3Fo+rdfs%3Alabel+%3Fo_label%7D%7D+> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://msm.eagle-i.net/sparqler/sparql> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://msm.eagle-i.net/sparqler/sparql> ] ;
         foaf:homepage         <http://msm.eagle-i.net> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncbitaxon> , <http://lod-cloud.net/dataset/eagle-i-msm> ;
-  void:triples  17
+[ void:target   lod:eagle-i-msm , lod:bioportal-swo ;
+  void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-obi > , <http://lod-cloud.net/dataset/eagle-i-msm> ;
-  void:triples  173
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/eagle-i-msm> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-so_x1> , <http://lod-cloud.net/dataset/eagle-i-msm> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/eagle-i-msm> ;
+[ void:target   lod:eagle-i-msm , lod:bioportal-ero ;
   void:triples  377
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-swo> , <http://lod-cloud.net/dataset/eagle-i-msm> ;
+[ void:target   lod:eagle-i-msm , lod:bioportal-vivo ;
+  void:triples  76
+] .
+
+[ void:target   lod:eagle-i-msm , lod:bioportal-msh ;
+  void:triples  1
+] .
+
+[ void:target   lod:eagle-i-msm , lod:bioportal-so_x1 ;
+  void:triples  11
+] .
+
+[ void:target   lod:eagle-i-msm , lod:bioportal-iao ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-iao> , <http://lod-cloud.net/dataset/eagle-i-msm> ;
-  void:triples  2
+[ void:target   lod:eagle-i-msm , <http://lod-cloud.net/dataset/bioportal-obi+> ;
+  void:triples  173
+] .
+
+[ void:target   lod:eagle-i-msm , lod:bioportal-ncbitaxon ;
+  void:triples  17
 ] .

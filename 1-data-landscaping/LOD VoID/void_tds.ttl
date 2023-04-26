@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/tds>
-        a                    void:Dataset ;
+lod:tds  a                   void:Dataset ;
         dcterms:description  "Typological Database System ontology"@en ;
         dcterms:publisher    [ rdfs:label  "Dimitriadis, Alexis, Menzo Windhouwer, Adam Saulwick, Rob Goedemans, and Tamás Bíró" ;
                                foaf:mbox   "tds.gw@uu.nl"
@@ -14,6 +14,6 @@
         dcterms:subject      "linguistics" , "llod" , "ontology" , "language_description" , "typological-database" ;
         dcterms:title        "TDS"@en ;
         void:triples         3135 ;
-        dcat:distribution    [ dcat:accessURL  <http://languagelink.let.uu.nl/tds/index.html> ] ;
         dcat:distribution    [ dcat:accessURL  <http://languagelink.let.uu.nl/tds/ontology/LinguisticOntology.owl> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://languagelink.let.uu.nl/tds/main.html> ] .
+        dcat:distribution    [ dcat:accessURL  <http://languagelink.let.uu.nl/tds/main.html> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://languagelink.let.uu.nl/tds/index.html> ] .

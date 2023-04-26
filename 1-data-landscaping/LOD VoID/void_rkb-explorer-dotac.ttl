@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/southampton-ecs-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-dotac> ;
+[ void:target   lod:rkb-explorer-dotac , lod:southampton-ecs-eprints ;
   void:triples  31
 ] .
 
-<http://lod-cloud.net/dataset/rkb-explorer-dotac>
+lod:rkb-explorer-dotac
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
                                 foaf:mbox   "hg@ecs.soton.ac.uk"
                               ] ;
-        dcterms:subject       "format-rdf" , "publications" , "no-vocab-mappings" , "void-sparql-endpoint" , "lod" , "format-foaf" , "published-by-third-party" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "no-license-metadata" , "format-dc" ;
+        dcterms:subject       "format-rdf" , "publications" , "no-vocab-mappings" , "void-sparql-endpoint" , "lod" , "format-foaf" , "published-by-third-party" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "lodcloud-diagram-2014-08-30" , "no-license-metadata" , "provenance-metadata" , "format-dc" ;
         dcterms:title         "dotAC (RKBExplorer)"@en ;
         void:exampleResource  <http://dotac.rkbexplorer.com/id/oro.open.ac.uk/person-0d27a9455a26cc6a0aa8743d45f99af4-1bda34e510320ac2ee08e4c81bd58e6a> ;
         void:sparqlEndpoint   <http://dotac.rkbexplorer.com/sparql/> ;

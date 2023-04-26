@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/twarql> ;
-  void:triples  981415
-] .
-
-<http://lod-cloud.net/dataset/twarql>
-        a                     void:Dataset ;
+lod:twarql  a                 void:Dataset ;
         dcterms:description   "Twarql encodes information from microblog posts as Linked Open Data in order to enable flexibility for those interested in collectively analyzing microblog data for sensemaking. Our approach can be summarized as follows:\r\n\r\n* extract content (e.g. entity mentions, hashtags and URLs) from microposts streamed from Twitter;\r\n* encode content in RDF using shared and well-known vocabularies (FOAF, SIOC, MOAT, etc.);\r\n* enable structured querying of microposts with SPARQL;\r\nenable subscription to a stream of microposts that match a given query; and\r\n* enable scalable real-time delivery of streamed but annotated data using sparqlPuSH.\r\n\r\nThis dataset is an example created for a brand tracking scenario involving the Apple IPad."@en ;
         dcterms:publisher     [ rdfs:label  "Pablo Mendes, Alexandre Passant, Pavan Kapanipathi" ;
                                 foaf:mbox   ""
@@ -22,3 +18,7 @@
         void:sparqlEndpoint   <http://twarql.org:8890/sparql> ;
         void:triples          4990776 ;
         foaf:homepage         <http://wiki.knoesis.org/index.php/Twarql> .
+
+[ void:target   lod:twarql , lod:dbpedia ;
+  void:triples  981415
+] .

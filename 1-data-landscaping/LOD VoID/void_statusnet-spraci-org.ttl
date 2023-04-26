@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,15 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-spraci-org> ;
+[ void:target   lod:statusnet-spraci-org , lod:statusnet-quitter-se ;
+  void:triples  8
+] .
+
+[ void:target   lod:statusnet-spraci-org , lod:statusnet-status-net ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-spraci-org> ;
+[ void:target   lod:statusnet-spraci-org , lod:geonames-semantic-web ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-spraci-org>
+lod:statusnet-spraci-org
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://spraci.org"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -24,10 +29,6 @@
         void:exampleResource  <http://spraci.org/michaelmd/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-spraci-org> ;
-  void:triples  8
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-spraci-org> ;
+[ void:target   lod:statusnet-spraci-org , lod:statusnet-macno-org ;
   void:triples  1
 ] .

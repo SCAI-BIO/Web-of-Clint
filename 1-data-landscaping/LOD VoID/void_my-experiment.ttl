@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,29 +6,28 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/southampton-ecs-eprints> , <http://lod-cloud.net/dataset/my-experiment> ;
-  void:triples  48
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/my-experiment> ;
-  void:triples  2586
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/l3s-dblp> , <http://lod-cloud.net/dataset/my-experiment> ;
-  void:triples  168
-] .
-
-<http://lod-cloud.net/dataset/my-experiment>
-        a                     void:Dataset ;
+lod:my-experiment  a          void:Dataset ;
         dcterms:description   "[myExperiment](http://www.myexperiment.org) is a social web site for researchers sharing scientific workflows and \"packs\" (aggregations of resources).\r\n\r\nAs of September 2010 it has several thousand members and a collection of around 1300 workflows, 350 files and 130 packs. It is the largest public collection of scientific workflows.\r\n\r\nmyExperiment contains user-generated content, The RDF description of the public content is available under PDDL, while the actual user-generated content has separate licenses on a per-item basis.\r\n\r\nThe site was the subject of the keynote \"[Repositories and Linked Open Data: the view from myExperiment](http://www.myexperiment.org/packs/131)\" by David De Roure at Open Repositories 2010 in Madrid, Spain.\r\n\r\nmyExperiment has three sister projects:\r\n\r\n* The [BioCatalogue](http://www.biocatalogue.org/) - see package:biocatalogue\r\n* [SysmoDB](http://www.sysmo-db.org/) - see package:sysmo-db\r\n* [MethodBox](http://www.methodbox.org/)"@en ;
         dcterms:publisher     [ rdfs:label  "David De Roure" ;
                                 foaf:mbox   "david.deroure@oerc.ox.ac.uk"
                               ] ;
-        dcterms:subject       "usergeneratedcontent" , "format-foaf" , "openscience" , "reproducible" , "format-rdf" , "license-metadata" , "format-dc" , "lod" , "deref-vocab" , "bioinformatics" , "science" , "user_generated" , "format-ore" , "provenance-metadata" , "format-dbo" , "format-sioc" , "published-by-third-party" , "lodcloud-diagram-2011-09-19" , "void-sparql-endpoint" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:subject       "usergeneratedcontent" , "format-foaf" , "openscience" , "reproducible" , "format-rdf" , "format-dc" , "license-metadata" , "deref-vocab" , "lod" , "bioinformatics" , "science" , "user_generated" , "format-ore" , "provenance-metadata" , "format-dbo" , "format-sioc" , "published-by-third-party" , "lodcloud-diagram-2011-09-19" , "void-sparql-endpoint" , "lodcloud-diagram-2014-08-30" ;
         dcterms:title         "myExperiment"@en ;
         void:exampleResource  <http://www.myexperiment.org/users/26> , <http://www.myexperiment.org/workflows/12> ;
         void:sparqlEndpoint   <http://rdf.myexperiment.org/sparql/> ;
         void:triples          660342 ;
-        dcat:distribution     [ dcat:accessURL  <http://rdf.myexperiment.org/void.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://rdf.myexperiment.org/myexperiment.rdf.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.myexperiment.org/void.rdf> ] ;
         foaf:homepage         <http://www.myexperiment.org> .
+
+[ void:target   lod:my-experiment , lod:l3s-dblp ;
+  void:triples  168
+] .
+
+[ void:target   lod:my-experiment , lod:dbpedia ;
+  void:triples  2586
+] .
+
+[ void:target   lod:my-experiment , lod:southampton-ecs-eprints ;
+  void:triples  48
+] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbtune-magnatune> ;
-  void:triples  233
-] .
-
-<http://lod-cloud.net/dataset/dbtune-magnatune>
-        a                     void:Dataset ;
+lod:dbtune-magnatune  a       void:Dataset ;
         dcterms:description   "[Magnatune](http://magnatune.com) is an independent music label, allowing people to buy records for as much as they want. This package contains the Magnatune catalog in RDF format.\r\n\r\nThe converted RDF data is available under the same license as the Magnatune data. The links to DBpedia are available as CC-BY-NC-SA.\r\n\r\nThis is a part of package:dbtune."@en ;
         dcterms:publisher     [ rdfs:label  "Yves Raimond" ;
                                 foaf:mbox   "yves@dbtune.org"
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2014-08-30" , "format-dc" , "dbtune" , "published-by-third-party" , "ckanupload.esw.200910" , "no-provenance-metadata" , "lod" , "linkeddata" , "format-mo" , "no-license-metadata" , "no-vocab-mappings" , "format-bio" , "no-proprietary-vocab" , "music" , "media" , "lodcloud-diagram-2011-09-19" , "format-rdf" ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "format-dc" , "dbtune" , "published-by-third-party" , "ckanupload.esw.200910" , "lod" , "no-provenance-metadata" , "linkeddata" , "format-mo" , "no-license-metadata" , "no-vocab-mappings" , "format-bio" , "no-proprietary-vocab" , "music" , "media" , "format-rdf" , "lodcloud-diagram-2011-09-19" ;
         dcterms:title         "DBTune.org Magnatune RDF server"@en ;
         void:exampleResource  <http://dbtune.org/magnatune/artist/american_baroque> ;
         void:sparqlEndpoint   <http://dbtune.org/magnatune/sparql/> ;
         void:triples          322000 ;
         dcat:distribution     [ dcat:accessURL  <http://moustaki.org/resources/magnatune_main.rdf> ] ;
         foaf:homepage         <http://dbtune.org/magnatune/> .
+
+[ void:target   lod:dbtune-magnatune , lod:dbpedia ;
+  void:triples  233
+] .

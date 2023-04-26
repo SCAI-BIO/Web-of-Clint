@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/cablegate>
-        a                    void:Dataset ;
+lod:cablegate  a             void:Dataset ;
         dcterms:description  "US Embassy cables from Wikileaks"@en ;
         dcterms:publisher    [ rdfs:label  "US Department of State" ;
                                foaf:mbox   ""
@@ -15,11 +15,11 @@
         dcterms:title        "cablegate"@en ;
         void:sparqlEndpoint  <http://river.styx.org/sparql> ;
         void:triples         9162 ;
+        dcat:distribution    [ dcat:accessURL  <http://river.styx.org/ww/2010/12/cablegraph.svg> ] ;
         dcat:distribution    [ dcat:accessURL  <http://88.80.16.63/torrent/cablegate/cablegate-201012031501.7z.torrent> ] ;
         dcat:distribution    [ dcat:accessURL  <http://river.styx.org/ww/2010/12/cablegraph.rdf> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://river.styx.org/ww/2010/12/cablegraph.svg> ] ;
         foaf:homepage        <http://www.wikileaks.ch/cablegate.html> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/cablegate> ;
+[ void:target   lod:cablegate , lod:dbpedia ;
   void:triples  150
 ] .

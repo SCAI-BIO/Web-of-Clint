@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,31 +6,31 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-lebsanft-org> ;
-  void:triples  18
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-lebsanft-org> ;
+[ void:target   lod:statusnet-lebsanft-org , lod:statusnet-postblue-info ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-lebsanft-org> ;
+[ void:target   lod:statusnet-lebsanft-org , lod:statusnet-skilledtests-com ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-kaimi-cc> , <http://lod-cloud.net/dataset/statusnet-lebsanft-org> ;
+[ void:target   lod:statusnet-lebsanft-org , lod:statusnet-kaimi-cc ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-lebsanft-org> ;
+[ void:target   lod:statusnet-lebsanft-org , lod:statusnet-soucy-cc ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-bka-li> , <http://lod-cloud.net/dataset/statusnet-lebsanft-org> ;
+[ void:target   lod:statusnet-lebsanft-org , lod:statusnet-bka-li ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-lebsanft-org>
+[ void:target   lod:statusnet-lebsanft-org , lod:statusnet-quitter-se ;
+  void:triples  18
+] .
+
+lod:statusnet-lebsanft-org
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://lebsanft.org"@en ;
         dcterms:publisher     [ rdfs:label  "" ;

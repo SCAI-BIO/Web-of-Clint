@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,15 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  5
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-italy ;
+  void:triples  3
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-irit> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  6
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-eprints ;
+  void:triples  38
 ] .
 
-<http://lod-cloud.net/dataset/rkb-explorer-budapest>
+lod:rkb-explorer-budapest
         a                     void:Dataset ;
         dcterms:description   "Linked Data version of the data supplied from Budapest University of Technology and Economics."@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
@@ -29,78 +30,78 @@
         dcat:distribution     [ dcat:accessURL  <http://budapest.rkbexplorer.com/sitemap.xml> ] ;
         foaf:homepage         <http://budapest.rkbexplorer.com/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-pisa> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  24
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-courseware> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  38
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  9
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  100
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  38
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-resex> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-deploy> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  86
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  7
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  172
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-italy> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-oai ;
   void:triples  42
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
-  void:triples  1
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-citeseer ;
+  void:triples  100
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-roma> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-deploy ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-lisbon> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-newcastle ;
+  void:triples  9
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-cordis ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eurecom> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-rae2001 ;
+  void:triples  19
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-ft ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ft> , <http://lod-cloud.net/dataset/rkb-explorer-budapest> ;
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-dblp ;
+  void:triples  172
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-irit ;
+  void:triples  6
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-roma ;
+  void:triples  2
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-resex ;
+  void:triples  3
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-lisbon ;
   void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-courseware ;
+  void:triples  2
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-pisa ;
+  void:triples  24
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-acm ;
+  void:triples  86
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-wiki ;
+  void:triples  5
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-eurecom ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-kisti ;
+  void:triples  38
+] .
+
+[ void:target   lod:rkb-explorer-budapest , lod:rkb-explorer-southampton ;
+  void:triples  7
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-fun> ;
+[ void:target   lod:rkb-explorer-fun , lod:semantic_web_dog_food ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-fun , lod:dbpedia ;
   void:triples  33
 ] .
 
-<http://lod-cloud.net/dataset/rkb-explorer-fun>
-        a                    void:Dataset ;
+lod:rkb-explorer-fun  a      void:Dataset ;
         dcterms:description  ""@en ;
         dcterms:publisher    [ rdfs:label  "Hugh Glaser" ;
                                foaf:mbox   "hg@ecs.soton.ac.uk"
@@ -23,10 +27,6 @@
         dcat:distribution    [ dcat:accessURL  <http://fun.rkbexplorer.com/models/void.ttl> ] ;
         foaf:homepage        <http://fun.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/semantic_web_dog_food> , <http://lod-cloud.net/dataset/rkb-explorer-fun> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/rkb-explorer-fun> ;
+[ void:target   lod:rkb-explorer-fun , lod:semantic-web-dog-food ;
   void:triples  1
 ] .

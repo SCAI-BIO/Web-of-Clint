@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bioportal-diagnosticont>
+[ void:target   lod:bioportal-diagnosticont , lod:bioportal-snomedct ;
+  void:triples  10
+] .
+
+lod:bioportal-diagnosticont
         a                    void:Dataset ;
         dcterms:description  "We built a computational diagnostic ontology containing 91 elements, including classes and sub-classes, which are required to conduct SR-MA (Systematic Review - Meta Analysis) for diagnostic studies, that will assist in standardized reporting of diagnostic articles. We also report high percentage of agreement among five observers as a result of the inter-observer agreement that we conducted among them to tag 13 articles using the diagnostic ontology. Moreover, we extend our existing repository CERR-N (Center of Excellence in Research Reporting in Neurosurgery) to include diagnostic studies."@en ;
         dcterms:publisher    [ rdfs:label  "Amrapali Zaveri" ;
@@ -14,27 +19,23 @@
         dcterms:subject      "format-rdf" , "lod" , "biomedicine" , "life_sciences" , "format-owl" , "published-by-third-party" , "ontology" , "bioportal" ;
         dcterms:title        "Diagnostic Ontology"@en ;
         void:triples         729 ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/46968?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/46968?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/3013> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-diagnosticont> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nonrctontology> , <http://lod-cloud.net/dataset/bioportal-diagnosticont> ;
-  void:triples  79
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-diagnosticont> ;
+[ void:target   lod:bioportal-diagnosticont , lod:bioportal-ncit ;
   void:triples  30
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-diagnosticont> ;
-  void:triples  14
+[ void:target   lod:bioportal-diagnosticont , lod:bioportal-rctontology ;
+  void:triples  77
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rctontology> , <http://lod-cloud.net/dataset/bioportal-diagnosticont> ;
-  void:triples  77
+[ void:target   lod:bioportal-diagnosticont , lod:bioportal-nonrctontology ;
+  void:triples  79
+] .
+
+[ void:target   lod:bioportal-diagnosticont , lod:bioportal-lnc ;
+  void:triples  14
 ] .

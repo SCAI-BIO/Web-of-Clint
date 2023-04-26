@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,32 +6,31 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-it> , <http://lod-cloud.net/dataset/ocd> ;
+[ void:target   lod:ocd , lod:linkedgeodata ;
+  void:triples  507
+] .
+
+[ void:target   lod:ocd , lod:dbpedia-it ;
   void:triples  236
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/ocd> ;
+[ void:target   lod:ocd , lod:freebase ;
   void:triples  135
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/ocd> ;
+[ void:target   lod:ocd , lod:dbpedia ;
   void:triples  791
 ] .
 
-<http://lod-cloud.net/dataset/ocd>
-        a                     void:Dataset ;
+lod:ocd  a                    void:Dataset ;
         dcterms:description   "**dati.camera.it - Linked Open Data della Camera dei deputati**  \r\n A complete catalogue of digital data and documents of all legislatures, from I legislature of the Kingdom of Sardinia (1848) to the current legislature of the Republic.\r\n\r\n* Biographical data of persons\r\n* Deputies\r\n* Parliamentary Mandates\r\n* Parliamentary Bodies of the Chamber\r\n* Parliamentary Groups\r\n* Draft Bills\r\n* Acts of direction and control\r\n* Verbatim reports\r\n* Reports of the Councils and Committees\r\n* Votes"@en ;
         dcterms:publisher     [ rdfs:label  "Italian Chamber of Deputies" ;
                                 foaf:mbox   "assistenza-dati@camera.it"
                               ] ;
-        dcterms:subject       "country-italy" , "votes" , "bills" , "rdf" , "lodcloud-diagram-2014-08-30" , "deputies" , "government" , "format-rdf" , "parliament" , "acts" , "reports" , "lod" ;
+        dcterms:subject       "country-italy" , "votes" , "bills" , "lodcloud-diagram-2014-08-30" , "rdf" , "deputies" , "government" , "format-rdf" , "parliament" , "acts" , "reports" , "lod" ;
         dcterms:title         "Italian Chamber of Deputies - official dataset"@en ;
         void:exampleResource  <http://dati.camera.it/ocd/persona.rdf/p305757> ;
         void:sparqlEndpoint   <http://dati.camera.it/sparql> ;
         void:triples          490000000 ;
         dcat:distribution     [ dcat:accessURL  <http://dati.camera.it/it/download> ] ;
         dcat:distribution     [ dcat:accessURL  <http://dati.camera.it/void.ttl> ] .
-
-[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/ocd> ;
-  void:triples  507
-] .

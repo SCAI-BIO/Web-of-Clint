@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/thesaurus-datenwissen>
+lod:thesaurus-datenwissen
         a                     void:Dataset ;
         dcterms:description   "This service exposes the data from openthesaurus.de as Linked Data."@en ;
         dcterms:publisher     [ rdfs:label  "Angelo Veltens" ;

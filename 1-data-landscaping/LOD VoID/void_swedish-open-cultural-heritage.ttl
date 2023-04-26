@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/swedish-open-cultural-heritage> ;
-  void:triples  5000
+[ void:target   lod:swedish-open-cultural-heritage , lod:europeana-lod-v1 ;
+  void:triples  1000000
 ] .
 
-<http://lod-cloud.net/dataset/swedish-open-cultural-heritage>
+lod:swedish-open-cultural-heritage
         a                    void:Dataset ;
         dcterms:description  "SOCH is a set of 10 million cultural heritage objects harvested from a large number of museums and other local, regional and national cultural heritage organizations.\n\nDifferent Creative Commons licenses are used for different datasets in SOCH. The main goal is to provide as open licenses as possible."@en ;
         dcterms:publisher    [ rdfs:label  "-" ;
@@ -18,23 +19,23 @@
         dcterms:subject      "cultural" , "cultural-institutions" , "format-dc" , "no-deref-vocab" , "lod" , "culturalheritage" , "linked-open-data" , "openaccess" , "lodcloud.nolinks" , "publications" , "published-by-producer" ;
         dcterms:title        "Swedish Open Cultural Heritage"@en ;
         void:triples         1000000000 ;
+        dcat:distribution    [ dcat:accessURL  <http://kringla.nu> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.ksamsok.se/in-english/api/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://kulturarvsdata.se/nomu/object/rdf/NM0200898> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://kringla.nu> ] ;
         foaf:homepage        <http://www.ksamsok.se/in-english/> .
 
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/swedish-open-cultural-heritage> ;
+[ void:target   lod:swedish-open-cultural-heritage , lod:libris ;
   void:triples  10000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/swedish-open-cultural-heritage> ;
+[ void:target   lod:swedish-open-cultural-heritage , lod:viaf ;
   void:triples  10000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/europeana-lod-v1> , <http://lod-cloud.net/dataset/swedish-open-cultural-heritage> ;
-  void:triples  1000000
+[ void:target   lod:swedish-open-cultural-heritage , lod:wikidata ;
+  void:triples  5000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/libris> , <http://lod-cloud.net/dataset/swedish-open-cultural-heritage> ;
+[ void:target   lod:swedish-open-cultural-heritage , lod:geonames-semantic-web ;
   void:triples  10000
 ] .

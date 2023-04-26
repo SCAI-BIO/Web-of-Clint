@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/surge-radio> ;
-  void:triples  1000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/surge-radio> ;
+[ void:target   lod:surge-radio , lod:bbc-music ;
   void:triples  100000
 ] .
 
-<http://lod-cloud.net/dataset/surge-radio>
-        a                     void:Dataset ;
+lod:surge-radio  a            void:Dataset ;
         dcterms:description   "Has RDF descriptions of featured artists and tracks, derived from package:musicbrainz"@en ;
         dcterms:publisher     [ rdfs:label  "Nicholas J Humfrey" ;
                                 foaf:mbox   "njh@aelius.com"
@@ -24,3 +20,7 @@
         void:exampleResource  <http://www.surgeradio.co.uk/music/artists/302bd7b9-d012-4360-897a-93b00c855680.rdf> ;
         void:triples          218000 ;
         foaf:homepage         <http://www.surgeradio.co.uk/> .
+
+[ void:target   lod:surge-radio , lod:dbpedia ;
+  void:triples  1000
+] .

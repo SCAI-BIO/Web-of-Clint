@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/testee> ;
+[ void:target   lod:testee , lod:freebase ;
   void:triples  222
 ] .
 
-<http://lod-cloud.net/dataset/testee>
-        a                    void:Dataset ;
+lod:testee  a                void:Dataset ;
         dcterms:description  "## Description\r\n\r\nssss sssssssssssssss ssssssssssssssssssssssssssssss"@en ;
         dcterms:publisher    [ rdfs:label  "xxx" ;
                                foaf:mbox   "xx"
@@ -20,6 +20,6 @@
         void:dataDump        <http://diwis.imis.athena-innovation.gr:8181/dump> ;
         void:sparqlEndpoint  <http://diwis.imis.athena-innovation.gr:8181/sparql> ;
         void:triples         33333 ;
-        dcat:distribution    [ dcat:accessURL  <http://diwis.imis.athena-innovation.gr:8181/scehma> ] ;
         dcat:distribution    [ dcat:accessURL  <http://diwis.imis.athena-innovation.gr/Dump> ] ;
-        foaf:homepage        <xxx> .
+        dcat:distribution    [ dcat:accessURL  <http://diwis.imis.athena-innovation.gr:8181/scehma> ] ;
+        foaf:homepage        <file:///C:/Users/Marc%20Jacobs/git/Web-of-Clint/3-data-RDF-conversion/EIOS-tooling/xxx> .

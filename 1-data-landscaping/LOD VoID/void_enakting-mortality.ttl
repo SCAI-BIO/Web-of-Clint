@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkbexplorer> , <http://lod-cloud.net/dataset/enakting-mortality> ;
+[ void:target   lod:enakting-mortality , lod:data.openpsi.org ;
+  void:triples  2
+] .
+
+[ void:target   lod:enakting-mortality , lod:ordnance-survey-linked-data ;
+  void:triples  399
+] .
+
+[ void:target   lod:enakting-mortality , lod:rkbexplorer ;
   void:triples  28
 ] .
 
-<http://lod-cloud.net/dataset/enakting-mortality>
+lod:enakting-mortality
         a                     void:Dataset ;
         dcterms:description   "UK's Mortality data per region for the year 2008/09, delivered by the UK Home Office.\r\n\r\nProvenance of this dataset:\r\nhttp://www.statistics.gov.uk/downloads/theme_population/Table_3_Deaths_Area_Local_Authority.xls"@en ;
         dcterms:publisher     [ rdfs:label  "Tope Omitola" ;
@@ -22,18 +31,10 @@
         dcat:distribution     [ dcat:accessURL  <http://mortality.psi.enakting.org/id/void> ] ;
         foaf:homepage         <http://mortality.psi.enakting.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/data.openpsi.org> , <http://lod-cloud.net/dataset/enakting-mortality> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/enakting-mortality> ;
-  void:triples  399
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/enakting-mortality> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/data.gov.uk> , <http://lod-cloud.net/dataset/enakting-mortality> ;
+[ void:target   lod:enakting-mortality , lod:data.gov.uk ;
   void:triples  42
+] .
+
+[ void:target   lod:enakting-mortality , lod:dbpedia ;
+  void:triples  5
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/lotico> ;
+[ void:target   lod:lotico , lod:dbpedia ;
   void:triples  65
 ] .
 
-<http://lod-cloud.net/dataset/lotico>
-        a                    void:Dataset ;
+lod:lotico  a                void:Dataset ;
         dcterms:description  "A social network of active Lotico Semantic Web community members, provided as RDF via resolvable URIs and a SPARQL endpoint."@en ;
         dcterms:publisher    [ rdfs:label  "Marco Neumann" ;
                                foaf:mbox   "marco.neumann@gmail.com"
                              ] ;
-        dcterms:subject      "lodcloud-diagram-2011-09-19" , "published-by-producer" , "lod" , "sparql" , "lodcloud-diagram-2014-08-30" , "no-license-metadata" , "no-provenance-metadata" , "no-vocab-mappings" , "usergeneratedcontent" , "format-foaf" , "social-networks" , "format-rdf" , "user_generated" , "deref-vocab" ;
+        dcterms:subject      "lodcloud-diagram-2011-09-19" , "published-by-producer" , "lod" , "sparql" , "lodcloud-diagram-2014-08-30" , "no-license-metadata" , "no-provenance-metadata" , "no-vocab-mappings" , "usergeneratedcontent" , "format-foaf" , "format-rdf" , "social-networks" , "user_generated" , "deref-vocab" ;
         dcterms:title        "Lotico"@en ;
         void:sparqlEndpoint  <http://www.lotico.com:3030/lotico/sparql> ;
         void:triples         4248758 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.geosparql.org> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.lotico.com/resource/member_2316446> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.lotico.com/resource/member_9711222> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.geosparql.org> ] ;
         foaf:homepage        <http://www.lotico.com/> .

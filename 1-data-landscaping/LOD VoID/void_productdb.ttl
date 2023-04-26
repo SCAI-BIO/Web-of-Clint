@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,16 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/productdb> ;
+[ void:target   lod:productdb , lod:dbpedia ;
   void:triples  193
 ] .
 
-<http://lod-cloud.net/dataset/productdb>
-        a                     void:Dataset ;
+lod:productdb  a              void:Dataset ;
         dcterms:description   "ProductDB is the Linked Data view of ProductWiki a resource for free, unbiased product reports written by a dedicated community. ProductDB extracts structured information from ProductWiki and makes this information freely available on the Web."@en ;
         dcterms:publisher     [ rdfs:label  "Talis" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "no-vocab-mappings" , "no-provenance-metadata" , "crossdomain" , "lod" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "format-gr" , "published-by-third-party" , "no-proprietary-vocab" , "format-rdf" , "format-foaf" ;
+        dcterms:subject       "no-vocab-mappings" , "no-provenance-metadata" , "crossdomain" , "lod" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "format-gr" , "published-by-third-party" , "format-foaf" , "format-rdf" , "no-proprietary-vocab" ;
         dcterms:title         "ProductDB"@en ;
         void:exampleResource  <http://productdb.org/gtin/09780136098676> ;
         void:sparqlEndpoint   <http://api.talis.com/stores/productdb/services/sparql> ;

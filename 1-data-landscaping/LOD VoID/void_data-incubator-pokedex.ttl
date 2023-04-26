@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/data-incubator-pokedex> ;
+[ void:target   lod:data-incubator-pokedex , lod:dbpedia ;
+  void:triples  493
+] .
+
+[ void:target   lod:data-incubator-pokedex , lod:freebase ;
   void:triples  425
 ] .
 
-<http://lod-cloud.net/dataset/data-incubator-pokedex>
+lod:data-incubator-pokedex
         a                     void:Dataset ;
         dcterms:description   "### Description\r\n\r\nLinked data on all Pokemon in the [Pokedex](http://www.upokecenter.com/dex/)\r\n\r\n*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)"@en ;
         dcterms:publisher     [ rdfs:label  "Kier Davis" ;
@@ -20,10 +25,6 @@
         void:exampleResource  <http://pokedex.dataincubator.org/pokemon/garchomp> ;
         void:sparqlEndpoint   <http://api.talis.com/stores/pokedex/services/sparql> ;
         void:triples          26134 ;
-        dcat:distribution     [ dcat:accessURL  <http://archive.org/download/kasabi/pokedex-data-rdf.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://pokedex.dataincubator.org/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://archive.org/download/kasabi/pokedex-data-rdf.gz> ] ;
         foaf:homepage         <http://pokedex.dataincubator.org/> .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-incubator-pokedex> ;
-  void:triples  493
-] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/dbtune-classical>
-        a                     void:Dataset ;
+[ void:target   lod:dbtune-classical , lod:dbtune-musicbrainz ;
+  void:triples  3000
+] .
+
+[ void:target   lod:dbtune-classical , lod:dbpedia ;
+  void:triples  3000
+] .
+
+lod:dbtune-classical  a       void:Dataset ;
         dcterms:description   "RDF data about the canon of Western Classical Music, aggregated and to some extent hand curated by Chris Cannam of the Centre for Digital Music at Queen Mary University of London. Includes information about composers, compositions, performers, relationships of influence, and more.\r\n\r\nCurrently the composer data is reasonably reliable, but the other data is highly provisional, unreliable, and subject to change.\r\n\r\nThis resource provides inter-linking via owl:sameAs to appropriate resources in package:dbpedia, package:dbtune-musicbrainz, and package:bbc-music."@en ;
         dcterms:publisher     [ rdfs:label  "Kurt Jacobson" ;
                                 foaf:mbox   "kurtjx@gmail.com"
@@ -18,14 +26,6 @@
         void:triples          390845 ;
         foaf:homepage         <http://dbtune.org/classical/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbtune-classical> ;
-  void:triples  3000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/dbtune-classical> ;
-  void:triples  3000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbtune-musicbrainz> , <http://lod-cloud.net/dataset/dbtune-classical> ;
+[ void:target   lod:dbtune-classical , lod:bbc-music ;
   void:triples  3000
 ] .

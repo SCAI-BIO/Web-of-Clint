@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/schemapedia>
-        a                     void:Dataset ;
+lod:schemapedia  a            void:Dataset ;
         dcterms:description   "A compendium of RDF schemas and vocabularies, including various metadata and examples."@en ;
         dcterms:publisher     [ rdfs:label  "Ian Davis" ;
                                 foaf:mbox   "nospam@iandavis.com"
                               ] ;
-        dcterms:subject       "talis" , "format-dcterms" , "no-provenance-metadata" , "format-rdfs" , "format-foaf" , "format-rdf" , "format-ctag" , "published-by-producer" , "usergeneratedcontent" , "no-license-metadata" , "schemas" , "no-proprietary-vocab" ;
+        dcterms:subject       "talis" , "format-dcterms" , "no-provenance-metadata" , "format-rdfs" , "format-foaf" , "format-rdf" , "format-ctag" , "published-by-producer" , "usergeneratedcontent" , "no-license-metadata" , "no-proprietary-vocab" , "schemas" ;
         dcterms:title         "Schemapedia: RDF schema compendium"@en ;
         void:exampleResource  <http://schemapedia.com/schemas/qb.ttl> ;
         void:sparqlEndpoint   <http://api.talis.com/stores/schemapedia/services/sparql> ;

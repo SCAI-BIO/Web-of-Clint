@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,178 +6,178 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-so> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  2
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-icd9 ;
+  void:triples  7
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-bto> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  60
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-cco ;
+  void:triples  9
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-intact> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-intact ;
   void:triples  17
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pato> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  11
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-sgd ;
+  void:triples  425
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-reactome> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  249
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-do ;
+  void:triples  6
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ec> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  402
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-hsa> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-fma> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  25
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-3dmet> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  8
-] .
-
-<http://lod-cloud.net/dataset/bio2rdf-biomodels>
+lod:bio2rdf-biomodels
         a                     void:Dataset ;
         dcterms:description   "BioModels Database is a data resource that allows biologists to store, search and retrieve published mathematical models of biological interests."@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
                               ] ;
-        dcterms:subject       "license-metadata" , "published-by-third-party" , "lod" , "life_sciences" , "vocab-mappings" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "format-dc" , "deref-vocab" , "format-rdfs" , "format-rdf" , "bio2rdf" , "lifesciences" ;
+        dcterms:subject       "license-metadata" , "published-by-third-party" , "lod" , "life_sciences" , "vocab-mappings" , "lodcloud-diagram-2014-08-30" , "format-dc" , "provenance-metadata" , "deref-vocab" , "format-rdfs" , "bio2rdf" , "format-rdf" , "lifesciences" ;
         dcterms:title         "Bio2RDF::Biomodels"@en ;
         void:dataDump         <http://download.bio2rdf.org/current/biomodels/biomodels.nq.gz> ;
         void:exampleResource  <http://bio2rdf.org/biomodels:BIOMD0000000048> ;
         void:sparqlEndpoint   <http://biomodels.bio2rdf.org/sparql> ;
         void:triples          2380009 ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/biomodels/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/biomodels/bio2rdf_biomodels_sio_mapping.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/biomodels/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/biomodels/biomodels.html> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/biomodels/bio2rdf-biomodels.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/biomodels/biomodels.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/biomodels/bio2rdf_biomodels_sio_mapping.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/biomodels/biomodels.schema.owl> ] ;
         foaf:homepage         <http://biomodels.bio2rdf.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-insdc> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-chebi> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  902
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-tcdb> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-sbo> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  18
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-isbn> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-interpro> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  99
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-bind> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-cco> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  9
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-doi> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pw> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-narcis> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-cas> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-cl> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-cl ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pr> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  2
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-cas ;
+  void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  504
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-eco> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  364
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  180169
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxonomy> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  61
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-go> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-go ;
   void:triples  1100
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ensembl> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  34
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-doi ;
+  void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-sgd> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  425
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-do> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  6
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mi> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-sce> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  424
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-icd9> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  7
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-omim ;
   void:triples  24
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mirbase> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-reactome ;
+  void:triples  249
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-sce ;
+  void:triples  424
+] .
+
+[ void:target   lod:bio2rdf-biomodels ;
+  void:triples  180169
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-bind ;
+  void:triples  3
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-ensembl ;
+  void:triples  34
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-narcis ;
+  void:triples  1
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-pirsf ;
+  void:triples  7
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-insdc ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-eco ;
+  void:triples  364
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-3dmet ;
+  void:triples  8
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-so ;
+  void:triples  2
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-hsa ;
+  void:triples  1
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-pr ;
+  void:triples  2
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-ncbigene ;
+  void:triples  1
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-bto ;
+  void:triples  60
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-interpro ;
+  void:triples  99
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-sbo ;
+  void:triples  18
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-chebi ;
+  void:triples  902
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-mi ;
+  void:triples  1
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-isbn ;
+  void:triples  1
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-fma ;
+  void:triples  25
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-pato ;
+  void:triples  11
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-uniprot ;
   void:triples  1670
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pirsf> , <http://lod-cloud.net/dataset/bio2rdf-biomodels> ;
-  void:triples  7
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-taxonomy ;
+  void:triples  61
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-ec ;
+  void:triples  402
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-pubmed ;
+  void:triples  504
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-tcdb ;
+  void:triples  2
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-pw ;
+  void:triples  1
+] .
+
+[ void:target   lod:bio2rdf-biomodels , lod:bio2rdf-mirbase ;
+  void:triples  2
 ] .

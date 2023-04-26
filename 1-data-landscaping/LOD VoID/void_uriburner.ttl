@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/uriburner>
-        a                     void:Dataset ;
+lod:uriburner  a              void:Dataset ;
         dcterms:description   "A service that delivers RDF-based structured descriptions of Web addressable resources in a variety of formats through Generic HTTP URIs.\r\n\r\nThe underlying technology is Virtuoso's Sponger, which takes an existing Web-accessible resource (webpage, media) and generates an RDF graph of its metadata using existing well-known ontologies as well as site-specific knowledge. URIBurner then re-presents this data as either a new HTML webpage, or directly as RDF in a variety of serializations (RDF/XML, text/n3, turtle, JSON).\r\n\r\n### Issues\r\n\r\nThe linking information is incomplete and the numbers are guesswork."@en ;
         dcterms:publisher     [ rdfs:label  "OpenLink Software" ;
                                 foaf:mbox   ""
@@ -18,18 +18,18 @@
         void:triples          486089121 ;
         foaf:homepage         <http://uriburner.com/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/uriburner> ;
+[ void:target   lod:uriburner , lod:bbc-music ;
   void:triples  1000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/uriburner> ;
+[ void:target   lod:uriburner , lod:chronicling-america ;
   void:triples  1000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/uriburner> ;
+[ void:target   lod:uriburner , lod:nytimes-linked-open-data ;
   void:triples  1000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/chronicling-america> , <http://lod-cloud.net/dataset/uriburner> ;
+[ void:target   lod:uriburner , lod:dbpedia ;
   void:triples  1000
 ] .

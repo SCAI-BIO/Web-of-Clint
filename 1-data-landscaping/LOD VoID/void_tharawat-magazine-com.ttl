@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,15 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/tharawat-magazine-com> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/tharawat-magazine-com> ;
-  void:triples  291
-] .
-
-<http://lod-cloud.net/dataset/tharawat-magazine-com>
+lod:tharawat-magazine-com
         a                     void:Dataset ;
         dcterms:description   "Tharawat dataset, Knowledge Graph built using WordLift from the website https://www.tharawat-magazine.com/"@en ;
         dcterms:publisher     [ rdfs:label  "WordLift Team" ;
@@ -26,14 +19,22 @@
         void:triples          "35852"^^xsd:int ;
         foaf:homepage         <https://www.tharawat-magazine.com/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/tharawat-magazine-com> ;
+[ void:target   lod:tharawat-magazine-com , lod:dbpedia ;
+  void:triples  291
+] .
+
+[ void:target   lod:tharawat-magazine-com , lod:wikidata ;
+  void:triples  17
+] .
+
+[ void:target   lod:tharawat-magazine-com , lod:yago ;
+  void:triples  197
+] .
+
+[ void:target   lod:tharawat-magazine-com , lod:geonames-semantic-web ;
   void:triples  59
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/tharawat-magazine-com> ;
+[ void:target   lod:tharawat-magazine-com , lod:freebase ;
   void:triples  272
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/tharawat-magazine-com> ;
-  void:triples  197
 ] .

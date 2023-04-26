@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/twc-healthdata>
-        a                     void:Dataset ;
+lod:twc-healthdata  a         void:Dataset ;
         dcterms:description   "Linked Data version of the metadata and data listed at http://hub.healthdata.gov."@en ;
         dcterms:publisher     [ rdfs:label  "James McCusker" ;
                                 foaf:mbox   "mccusj@rpi.edu"
@@ -16,16 +16,16 @@
         void:exampleResource  <http://purl.org/twc/health/source/hub-healthdata-gov/dataset/hospital-compare/version/2012-Jul-17/provider/010054> ;
         void:sparqlEndpoint   <http://healthdata.tw.rpi.edu/sparql> ;
         void:triples          1934046908 ;
-        dcat:distribution     [ dcat:accessURL  <http://healthdata.tw.rpi.edu/void> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2000/10/swap/pim/contact#> ] ;
-        dcat:distribution     [ dcat:accessURL  rdfs: ] ;
-        dcat:distribution     [ dcat:accessURL  <http://purl.org/linked-data/cube#> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2006/vcard/ns#> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2002/07/owl#> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/health/source/hub-healthdata-gov/file/2008-basic-stand-alone-skilled/version/2012-Mar-15/conversion/hub-healthdata-gov-2008-basic-stand-alone-skilled-2012-Mar-15.void.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/prov#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2000/10/swap/pim/contact#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://usefulinc.com/ns/doap#> ] ;
+        dcat:distribution     [ dcat:accessURL  foaf: ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2006/vcard/ns#> ] ;
+        dcat:distribution     [ dcat:accessURL  rdfs: ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ] ;
         dcat:distribution     [ dcat:accessURL  <http://purl.org/vocab/vann/> ] ;
-        dcat:distribution     [ dcat:accessURL  foaf: ] ;
-        dcat:distribution     [ dcat:accessURL  <http://usefulinc.com/ns/doap#> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/ns/prov#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://healthdata.tw.rpi.edu/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/linked-data/cube#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/twc/health/source/hub-healthdata-gov/file/2008-basic-stand-alone-skilled/version/2012-Mar-15/conversion/hub-healthdata-gov-2008-basic-stand-alone-skilled-2012-Mar-15.void.ttl.gz> ] ;
         foaf:homepage         <http://healthdata.tw.rpi.edu/index.html> .

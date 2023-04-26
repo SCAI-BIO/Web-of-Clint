@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,34 +6,34 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/zbw-pressemappe20> ;
-  void:triples  3800
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/chronicling-america> , <http://lod-cloud.net/dataset/zbw-pressemappe20> ;
+[ void:target   lod:zbw-pressemappe20 , lod:chronicling-america ;
   void:triples  600
 ] .
 
-<http://lod-cloud.net/dataset/zbw-pressemappe20>
+[ void:target   lod:zbw-pressemappe20 , lod:dbpedia ;
+  void:triples  2500
+] .
+
+lod:zbw-pressemappe20
         a                     void:Dataset ;
         dcterms:description   "During the entire 20th century, the press archives now held at the German National Library of Economics (ZBW) - Leibniz Information Centre for Economics  have compiled more than 30 million documents, mostly press clippings about individual persons, companies and other corporate bodies, products and a wide variety of economics-related topics. The first articles go back to the 19th century; the last were selected and indexed in 2005. These holdings provide a unique basis from which to study German and international (economic) history of the 20th century from a German perspective.\r\n\r\nThe historic press archives of the Hamburgisches Welt-Wirtschafts-Archiv (Institute of International Economics) and the Wirtschaftsarchiv des Instituts für Weltwirtschaft in Kiel (Economic Archives of the Kiel Institute for the World Economy) for the years until the currency reform of 1948 or rather the founding of the Federal Republic in 1949 were digitised during a project funded by the German Research Foundation (DFG). The digitised material, sourced mostly from roll film, is being gradually prepared for publication.\r\n\r\nAt present, we can provide online access to 250,000 documents relating to persons and companies. \r\n\r\nLicensing information can be found at http://webopac0.hwwa.de/digiview/digi_eigenesache.html (currently only in German - sorry)."@en ;
         dcterms:publisher     [ rdfs:label  "ZBW German National Library of Economics - Leibniz Centre for Economics" ;
                                 foaf:mbox   "http://zbw.eu"
                               ] ;
-        dcterms:subject       "vocab-mappings" , "format-skos" , "publications" , "deref-vocab" , "provenance-metadata" , "economics" , "published-by-producer" , "no-license-metadata" , "history" , "format-ore" , "germany" , "format-dc" , "biographical" , "lld" , "persons" , "companies" , "lod" ;
+        dcterms:subject       "vocab-mappings" , "format-skos" , "publications" , "deref-vocab" , "provenance-metadata" , "economics" , "history" , "no-license-metadata" , "published-by-producer" , "format-ore" , "biographical" , "format-dc" , "germany" , "lld" , "persons" , "companies" , "lod" ;
         dcterms:title         "20th Century Press Archives"@en ;
         void:exampleResource  <http://zbw.eu/beta/p20/person/12> , <http://zbw.eu/beta/p20/person/13476/0147> , <http://zbw.eu/beta/p20/company/11461> ;
         void:triples          12000000 ;
-        dcat:distribution     [ dcat:accessURL  <http://zbw.eu/beta/p20/vocab/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://zbw.eu/beta/p20/vocab/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://zbw.eu/beta/p20/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://zbw.eu/beta/p20/vocab/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://zbw.eu/beta/p20/vocab/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://zbw.eu/beta/p20/beacon/p20_pnd.txt> ] ;
         foaf:homepage         <http://zbw.eu/beta/p20> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/zbw-pressemappe20> ;
+[ void:target   lod:zbw-pressemappe20 , lod:geonames-semantic-web ;
   void:triples  1200
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/zbw-pressemappe20> ;
-  void:triples  2500
+[ void:target   lod:zbw-pressemappe20 , lod:dnb-gemeinsame-normdatei ;
+  void:triples  3800
 ] .

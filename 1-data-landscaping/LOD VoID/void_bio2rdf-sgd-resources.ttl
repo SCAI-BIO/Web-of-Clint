@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bio2rdf-sgd-resources>
+lod:bio2rdf-sgd-resources
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -16,6 +17,6 @@
         void:exampleResource  <http://bio2rdf.org/sgd_resource:a1b0df4bdb5ff6f190829dbbc63e8a66> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf> , <http://lod-cloud.net/dataset/bio2rdf-sgd-resources> ;
+[ void:target   lod:bio2rdf-sgd-resources , lod:bio2rdf ;
   void:triples  55
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,36 +6,36 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/deustoentrepreneurship>
-        a                     void:Dataset ;
-        dcterms:description   "<p>\r\n<a href=\"http://deusto.gnoss.com/comunidad/deustoentrepreneurship\">Deusto Entrepreneurship: sharing business knowledge</a>, promoted by the Deusto Entrepreneurship Center at the University of Deusto, aims to update and connect knowledge of entrepreneurs, researchers and professionals on entrepreneurship and business. \r\n</p>\r\n<p>\r\nDeusto Entrepreneurship works with <a href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. Deusto Entrepreneurship is a source of information and opinion especially recommended for people who visualize an opportunity and need inspiration, approach and support to launch a business. It offers a selection of 257 resources on entrepreneurship (September 2012).\r\n</p>"@en ;
-        dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
-                                foaf:mbox   "gnoss@gnoss.com"
-                              ] ;
-        dcterms:subject       "license-metadata" , "socialweb" , "spain" , "sharing business knowledge" , "sp" , "foaf" , "business angels" , "no-vocab-mappings" , "sioc" , "format-skos" , "emprendimiento" , "lod" , "dc" , "deusto" , "format-rdfg" , "universidad de deusto" , "entrepreneurship" , "usergeneratedcontent" , "business knowledge" , "format-dcam" , "format-sioc" , "language-spa" , "format-wot" , "country.es" , "user_generated" , "provenance-metadata" , "schemata" , "no-proprietary-vocab" , "skos" , "format-foaf" , "country-spain" , "wrapper" , "published-by-third-party" , "format-dc" , "deusto entrepreneurship" , "business models" ;
-        dcterms:title         "Deusto Entrepreneurship: sharing business knowledge"@en ;
-        void:exampleResource  <http://deusto.gnoss.com/en/community/deustoentrepreneurship/advanced-search/tag/innovation?rdf> , <http://deusto.gnoss.com/en/community/deustoentrepreneurship/resource/Manual-basico-para-emprender-SPRI/eb1254c3-04ce-448b-b9f4-3193e757d328?rdf> , <http://deusto.gnoss.com/en/community/deustoentrepreneurship/resource/Entrepreneurship-and-Technology-The-adventure-of-/521bd532-8791-4930-8889-812dfbaff580?rdf> ;
-        void:triples          20873 ;
-        dcat:distribution     [ dcat:accessURL  <http://deusto.gnoss.com/voidDeustoEntrepreneurship.n3> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://gnoss.com/gnoss.owl> ] ;
-        foaf:homepage         <http://deusto.gnoss.com/en/community/deustoEntrepreneurship> .
-
-[ void:target   <http://lod-cloud.net/dataset/gnoss> , <http://lod-cloud.net/dataset/deustoentrepreneurship> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/deustoentrepreneurship> ;
-  void:triples  912
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/deustoentrepreneurship> ;
-  void:triples  656
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/deustoentrepreneurship> ;
+[ void:target   lod:deustoentrepreneurship , lod:geonames-semantic-web ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/deustoentrepreneurship> ;
+[ void:target   lod:deustoentrepreneurship , lod:dbpedia ;
   void:triples  986
+] .
+
+lod:deustoentrepreneurship
+        a                     void:Dataset ;
+        dcterms:description   "<p>\r\n<a+href=\"http://deusto.gnoss.com/comunidad/deustoentrepreneurship\">Deusto Entrepreneurship: sharing business knowledge</a>, promoted by the Deusto Entrepreneurship Center at the University of Deusto, aims to update and connect knowledge of entrepreneurs, researchers and professionals on entrepreneurship and business. \r\n</p>\r\n<p>\r\nDeusto Entrepreneurship works with <a+href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. Deusto Entrepreneurship is a source of information and opinion especially recommended for people who visualize an opportunity and need inspiration, approach and support to launch a business. It offers a selection of 257 resources on entrepreneurship (September 2012).\r\n</p>"@en ;
+        dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
+                                foaf:mbox   "gnoss@gnoss.com"
+                              ] ;
+        dcterms:subject       "license-metadata" , "socialweb" , "spain" , "sharing business knowledge" , "sp" , "foaf" , "business angels" , "no-vocab-mappings" , "sioc" , "format-skos" , "emprendimiento" , "lod" , "dc" , "deusto" , "format-rdfg" , "universidad de deusto" , "entrepreneurship" , "business knowledge" , "usergeneratedcontent" , "format-dcam" , "format-sioc" , "language-spa" , "format-wot" , "country.es" , "user_generated" , "provenance-metadata" , "schemata" , "no-proprietary-vocab" , "skos" , "format-foaf" , "country-spain" , "wrapper" , "published-by-third-party" , "format-dc" , "deusto entrepreneurship" , "business models" ;
+        dcterms:title         "Deusto Entrepreneurship: sharing business knowledge"@en ;
+        void:exampleResource  <http://deusto.gnoss.com/en/community/deustoentrepreneurship/advanced-search/tag/innovation?rdf> , <http://deusto.gnoss.com/en/community/deustoentrepreneurship/resource/Manual-basico-para-emprender-SPRI/eb1254c3-04ce-448b-b9f4-3193e757d328?rdf> , <http://deusto.gnoss.com/en/community/deustoentrepreneurship/resource/Entrepreneurship-and-Technology-The-adventure-of-/521bd532-8791-4930-8889-812dfbaff580?rdf> ;
+        void:triples          20873 ;
+        dcat:distribution     [ dcat:accessURL  <http://gnoss.com/gnoss.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://deusto.gnoss.com/voidDeustoEntrepreneurship.n3> ] ;
+        foaf:homepage         <http://deusto.gnoss.com/en/community/deustoEntrepreneurship> .
+
+[ void:target   lod:deustoentrepreneurship , lod:freebase ;
+  void:triples  656
+] .
+
+[ void:target   lod:deustoentrepreneurship , lod:nytimes-linked-open-data ;
+  void:triples  912
+] .
+
+[ void:target   lod:deustoentrepreneurship , lod:gnoss ;
+  void:triples  13
 ] .

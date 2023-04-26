@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/courts-thesaurus>
-        a                     void:Dataset ;
+lod:courts-thesaurus  a       void:Dataset ;
         dcterms:description   "Courts thesaurus is structuring German and European courts in a hierarchical fashion and includes e.g. address information. This thesaurus is not only dedicated to parties interested in legal matters, but also to developers developing geo data applications. Information concerning courts and their roles and responsibilities can become an interesting aspect of many applications in the future."@en ;
         dcterms:publisher     [ rdfs:label  "Wolters Kluwer Deutschland GmbH" ;
                                 foaf:mbox   "cdirschl@wolterskluwer.de"
                               ] ;
-        dcterms:subject       "published-by-producer" , "courts" , "no-proprietary-vocab" , "format-vcard" , "eu" , "lod" , "license-metadata" , "government" , "lodcloud-diagram-2014-08-30" , "germany" , "media" , "provenance-metadata" , "format-dcterms" , "format-skos" , "united nations" ;
+        dcterms:subject       "published-by-producer" , "courts" , "no-proprietary-vocab" , "eu" , "format-vcard" , "license-metadata" , "lod" , "government" , "lodcloud-diagram-2014-08-30" , "germany" , "media" , "provenance-metadata" , "format-dcterms" , "format-skos" , "united nations" ;
         dcterms:title         "Courts thesaurus"@en ;
         void:exampleResource  <http://vocabulary.wolterskluwer.de/court/10017.rdf> ;
         void:sparqlEndpoint   <http://vocabulary.wolterskluwer.de/PoolParty/sparql/court> ;
@@ -20,6 +20,6 @@
         dcat:distribution     [ dcat:accessURL  <http://vocabulary.wolterskluwer.de/court.html> ] ;
         foaf:homepage         <http://vocabulary.wolterskluwer.de/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/courts-thesaurus> ;
+[ void:target   lod:courts-thesaurus , lod:dbpedia ;
   void:triples  997
 ] .

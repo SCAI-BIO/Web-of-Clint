@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  260
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-resex ;
+  void:triples  3
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  498
-] .
-
-<http://lod-cloud.net/dataset/rkb-explorer-ibm>
-        a                     void:Dataset ;
+lod:rkb-explorer-ibm  a       void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
                                 foaf:mbox   "hg@ecs.soton.ac.uk"
@@ -28,59 +20,67 @@
         void:exampleResource  <http://ibm.rkbexplorer.com/id/person-acd10592dc6fcfcce6b7327ce2321bd0> ;
         void:sparqlEndpoint   <http://ibm.rkbexplorer.com/sparql/> ;
         void:triples          44721 ;
-        dcat:distribution     [ dcat:accessURL  <http://ibm.rkbexplorer.com/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://ibm.rkbexplorer.com/models/void.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://ibm.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ibm.rkbexplorer.com/sitemap.xml> ] ;
         foaf:homepage         <http://ibm.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  131
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  6
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-pisa> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-irit> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-resex> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ieee> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  30
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  25
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  269
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-laas ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
-  void:triples  102
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-southampton ;
+  void:triples  6
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-newcastle ;
+  void:triples  14
+] .
+
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-acm ;
   void:triples  262
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-ibm> ;
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-dblp ;
+  void:triples  498
+] .
+
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-ieee ;
+  void:triples  30
+] .
+
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-eprints ;
+  void:triples  269
+] .
+
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-kisti ;
+  void:triples  102
+] .
+
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-pisa ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-citeseer ;
+  void:triples  260
+] .
+
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-irit ;
+  void:triples  3
+] .
+
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-wiki ;
   void:triples  11
+] .
+
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-rae2001 ;
+  void:triples  25
+] .
+
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-oai ;
+  void:triples  131
+] .
+
+[ void:target   lod:rkb-explorer-ibm , lod:rkb-explorer-dotac ;
+  void:triples  1
 ] .

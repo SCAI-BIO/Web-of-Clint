@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,37 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-wormbase> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  14768
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-lncrna ;
+  void:triples  107
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-rgd> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  1
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-tair ;
+  void:triples  22216
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ec> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  1860
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pseudocap> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  5529
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-tigr> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  42311
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-rgap> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  45570
-] .
-
-<http://lod-cloud.net/dataset/bio2rdf-affymetrix>
+lod:bio2rdf-affymetrix
         a                     void:Dataset ;
         dcterms:description   "This dataset contains the probesets used in the Affymetrix microarrays."@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2014-08-30" , "life_sciences" , "vocab-mappings" , "published-by-third-party" , "format-rdf" , "provenance-metadata" , "bio2rdf" , "format-dc" , "license-metadata" , "lod" , "lifesciences" , "lodcloud-diagram-2011-09-19" , "deref-vocab" , "format-rdfs" ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "vocab-mappings" , "life_sciences" , "published-by-third-party" , "format-rdf" , "provenance-metadata" , "bio2rdf" , "format-dc" , "license-metadata" , "lod" , "lifesciences" , "lodcloud-diagram-2011-09-19" , "deref-vocab" , "format-rdfs" ;
         dcterms:title         "Bio2RDF::Affymetrix"@en ;
         void:dataDump         <http://download.bio2rdf.org/current/affymetrix/affymetrix.nq.gz> ;
         void:exampleResource  <http://bio2rdf.org/affymetrix:185061_at> ;
@@ -44,91 +29,107 @@
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/affymetrix/affymetrix.schema.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/affymetrix/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/affymetrix/bio2rdf-affymetrix.nq> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/affymetrix/bio2rdf_affymetrix_sio_mapping.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/affymetrix/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/affymetrix/bio2rdf_affymetrix_sio_mapping.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/affymetrix/affymetrix.html> ] ;
         foaf:homepage         <http://affymetrix.bio2rdf.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-flybase> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  40886
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-sgd> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  6122
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-unigene> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  587164
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mgi> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  18818
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-refseq> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  910251
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mirbase> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-mirbase ;
   void:triples  235
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  1398264
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-ec ;
+  void:triples  1860
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  650640
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  17078
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-interpro> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  5999
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-rapdb> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-rapdb ;
   void:triples  12037
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  400798
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-pseudocap ;
+  void:triples  5529
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-genbank> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  1202769
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-mgi ;
+  void:triples  18818
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-gi> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-gi ;
   void:triples  10107
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-tair> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  22216
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pmrna> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  3238
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-lncrna> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  107
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-go> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  22806
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pseudomonas> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
-  void:triples  72
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ensembl> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-ensembl ;
   void:triples  889620
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-gb> , <http://lod-cloud.net/dataset/bio2rdf-affymetrix> ;
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-pmrna ;
+  void:triples  3238
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-refseq ;
+  void:triples  910251
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-uniprot ;
+  void:triples  650640
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-pseudomonas ;
+  void:triples  72
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-interpro ;
+  void:triples  5999
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-omim ;
+  void:triples  17078
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-genbank ;
+  void:triples  1202769
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-rgd ;
+  void:triples  1
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-sgd ;
+  void:triples  6122
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-rgap ;
+  void:triples  45570
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-unigene ;
+  void:triples  587164
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-flybase ;
+  void:triples  40886
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-tigr ;
+  void:triples  42311
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-ncbigene ;
+  void:triples  400798
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-wormbase ;
+  void:triples  14768
+] .
+
+[ void:target   lod:bio2rdf-affymetrix ;
+  void:triples  1398264
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-gb ;
   void:triples  34181
+] .
+
+[ void:target   lod:bio2rdf-affymetrix , lod:bio2rdf-go ;
+  void:triples  22806
 ] .

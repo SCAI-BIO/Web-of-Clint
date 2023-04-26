@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,32 +6,32 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-ares-or> , <http://lod-cloud.net/dataset/cz-sao-audited-subjects> ;
-  void:triples  5531
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/cz-ruian> , <http://lod-cloud.net/dataset/cz-sao-audited-subjects> ;
+[ void:target   lod:cz-sao-audited-subjects , lod:cz-ruian ;
   void:triples  6654
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/cz-sao-audited-subjects> ;
+[ void:target   lod:cz-sao-audited-subjects , lod:dbpedia ;
   void:triples  3
 ] .
 
-<http://lod-cloud.net/dataset/cz-sao-audited-subjects>
+lod:cz-sao-audited-subjects
         a                     void:Dataset ;
         dcterms:description   "Individuals and legal entities audited by Supreme Audit Office of the Czech Republic"@en ;
         dcterms:publisher     [ rdfs:label  "Martin Nečaský" ;
                                 foaf:mbox   "necasky@opendata.cz"
                               ] ;
-        dcterms:subject       "lod" , "license-metadata" , "czech" , "no-deref-vocab" , "format-schema" , "czech-republic" , "government" , "published-by-third-party" , "vocab-mappings" , "provenance-metadata" ;
+        dcterms:subject       "license-metadata" , "lod" , "czech" , "no-deref-vocab" , "format-schema" , "czech-republic" , "government" , "published-by-third-party" , "vocab-mappings" , "provenance-metadata" ;
         dcterms:title         "Audited subjects of Supreme Audit Office of the Czech Republic"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://data.nku.cz/resource/business-entity/CZ47216964%3E&default-graph-uri=http%3A%2F%2Fdata.nku.cz%2Fresource%2Fdataset%2Faudited-subjects&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          42588 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/sao-ontology.trig> ] ;
         dcat:distribution     [ dcat:accessURL  <http://internal.opendata.cz/dumps/sao-ontology.trig> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/sao-audited-subjects.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/sao-ontology.trig> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.nku.cz/resource/business-entity/CZ47216964> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Fdata.nku.cz%2Fresource%2Fdataset%2Faudited-subjects%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         foaf:homepage         <http://data.nku.cz/resource/dataset/audited-subjects> .
+
+[ void:target   lod:cz-sao-audited-subjects , lod:cz-ares-or ;
+  void:triples  5531
+] .

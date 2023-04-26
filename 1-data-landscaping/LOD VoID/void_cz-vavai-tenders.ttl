@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,26 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-vavai-programmes> , <http://lod-cloud.net/dataset/cz-vavai-tenders> ;
-  void:triples  500
-] .
-
-<http://lod-cloud.net/dataset/cz-vavai-tenders>
-        a                     void:Dataset ;
+lod:cz-vavai-tenders  a       void:Dataset ;
         dcterms:description   "Tenders in R&D from http://www.isvav.cz/ ."@en ;
         dcterms:publisher     [ rdfs:label  "Petr Škoda" ;
                                 foaf:mbox   "skoda@opendata.cz"
                               ] ;
         dcterms:subject       "government" , "no-vocab-mappings" , "format-dcterms" , "published-by-third-party" , "lod" , "format-skos" , "deref-vocab" , "license-metadata" , "provenance-metadata" ;
         dcterms:title         "Tenders in R&D"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/vavai/soutez/SAV0-AB2000%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Ftenders&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          39122 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-tenders-vocabulary.trig> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/vavai/soutez/SAV0-AB2000> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-tenders.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-tenders-vocabulary.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Ftenders%2Fdistribution%3E&output=text%2Fturtle> ] ;
         foaf:homepage         <http://linked.opendata.cz/resource/dataset/vavai/tenders> .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-vavai-funding-providers> , <http://lod-cloud.net/dataset/cz-vavai-tenders> ;
+[ void:target   lod:cz-vavai-tenders , lod:cz-vavai-programmes ;
+  void:triples  500
+] .
+
+[ void:target   lod:cz-vavai-tenders , lod:cz-vavai-funding-providers ;
   void:triples  500
 ] .

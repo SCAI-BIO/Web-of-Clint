@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/whisky-circle-info> ;
-  void:triples  62
+[ void:target   lod:whisky-circle-info , lod:dbpedia ;
+  void:triples  180
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/whisky-circle-info> ;
-  void:triples  80
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/whisky-circle-info> ;
-  void:triples  135
-] .
-
-<http://lod-cloud.net/dataset/whisky-circle-info>
+lod:whisky-circle-info
         a                     void:Dataset ;
         dcterms:description   "Whisky Circle dataset, built with WordLift for the https://www.whisky-circle.info/ website"@en ;
         dcterms:publisher     [ rdfs:label  "WordLift Team" ;
@@ -30,10 +23,18 @@
         void:triples          "6690"^^xsd:int ;
         foaf:homepage         <https://www.whisky-circle.info/> .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/whisky-circle-info> ;
+[ void:target   lod:whisky-circle-info , lod:freebase ;
   void:triples  174
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/whisky-circle-info> ;
-  void:triples  180
+[ void:target   lod:whisky-circle-info , lod:yago ;
+  void:triples  135
+] .
+
+[ void:target   lod:whisky-circle-info , lod:wikidata ;
+  void:triples  80
+] .
+
+[ void:target   lod:whisky-circle-info , lod:geonames-semantic-web ;
+  void:triples  62
 ] .

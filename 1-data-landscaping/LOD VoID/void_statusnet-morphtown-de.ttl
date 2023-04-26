@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,63 +6,59 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gomertronic-com> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
-  void:triples  1
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-macno-org ;
+  void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-skilledtests-com ;
   void:triples  9
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-timttmy-co-uk> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-atari-frosch-de ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-somsants-net ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-thelovebug-org ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
+[ void:target   lod:statusnet-morphtown-de , lod:personal-homepages ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-chromic-org> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-timttmy-co-uk ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-kaimi-cc ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-fragdev-com ;
+  void:triples  35
+] .
+
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-tekk-com-ar ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-kaimi-cc> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-thelovebug-org> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-jonkman-ca> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-tekk-com-ar> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-bka-li> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-quitter-se ;
   void:triples  74
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-morphtown-de>
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-linuxwrangling-com ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-jonkman-ca ;
+  void:triples  4
+] .
+
+lod:statusnet-morphtown-de
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://morphtown.de"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -72,18 +69,22 @@
         void:exampleResource  <http://micro.morphtown.de/tagesschau/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
-  void:triples  35
+[ void:target   lod:statusnet-morphtown-de , lod:geonames-semantic-web ;
+  void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-somsants-net> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-gomertronic-com ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
-  void:triples  2
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-postblue-info ;
+  void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> , <http://lod-cloud.net/dataset/statusnet-morphtown-de> ;
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-bka-li ;
   void:triples  1
+] .
+
+[ void:target   lod:statusnet-morphtown-de , lod:statusnet-chromic-org ;
+  void:triples  4
 ] .

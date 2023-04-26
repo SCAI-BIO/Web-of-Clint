@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-score-2010>
+lod:opendatacommunities-societal-wellbeing-deprivation-imd-score-2010
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "format-void" , "format-cube" , "dump" , "format-dcterm" , "sparql" , "format-rdf" , "format-dcat" , "lodcloud-diagram-2014-08-30" , "LinkedDataCrawl2014" , "format-rdfs" , "provenance-metadata" , "crawledLinkedDataCloud2014" , "license-metadata" , "government" , "dataset-level-metadata" ;
+        dcterms:subject       "format-void" , "format-cube" , "dump" , "format-dcterm" , "sparql" , "format-rdf" , "format-dcat" , "LinkedDataCrawl2014" , "lodcloud-diagram-2014-08-30" , "format-rdfs" , "crawledLinkedDataCloud2014" , "provenance-metadata" , "dataset-level-metadata" , "government" , "license-metadata" ;
         dcterms:title         "opendatacommunities-societal-wellbeing-deprivation-imd-score-2010"@en ;
         void:exampleResource  <http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-score-2010/E01015834> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-score-2010> ;
+[ void:target   lod:opendatacommunities-societal-wellbeing-deprivation-imd-score-2010 , lod:reference-data-gov-uk ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-score-2010> ;
+[ void:target   lod:opendatacommunities-societal-wellbeing-deprivation-imd-score-2010 , lod:statistics-data-gov-uk ;
   void:triples  1
 ] .

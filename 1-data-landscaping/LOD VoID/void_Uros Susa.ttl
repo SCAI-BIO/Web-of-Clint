@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -11,7 +12,7 @@
         dcterms:publisher    [ rdfs:label  "Uros Susa" ;
                                foaf:mbox   "susauros56@yahoo.com"
                              ] ;
-        dcterms:subject      "publications" , "Numbers" ;
+        dcterms:subject      "Numbers" , "publications" ;
         dcterms:title        "Legija"@en ;
         void:triples         10 ;
         foaf:homepage        <http://www.facebook.com> .

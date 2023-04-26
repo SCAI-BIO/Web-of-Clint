@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,18 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/cz-nkod>
-        a                     void:Dataset ;
+lod:cz-nkod  a                void:Dataset ;
         dcterms:description   "The catalog can be browsed at https://data.gov.cz"@en ;
         dcterms:publisher     [ rdfs:label  "Ministerstvo vnitra" ;
                                 foaf:mbox   "klimek@opendata.cz"
                               ] ;
-        dcterms:subject       "published-by-third-party" , "format-dcterms" , "no-provenance-metadata" , "format-dcat" , "format-foaf" , "lod" , "format-spdx" , "no-vocab-mappings" , "lodcloud.unconnected" , "no-proprietary-vocab" , "government" , "license-metadata" , "format-skos" , "lodcloud.nolinks" , "Czech Republic" , "czech" , "format-vcard" ;
+        dcterms:subject       "published-by-third-party" , "format-dcterms" , "no-provenance-metadata" , "format-dcat" , "format-foaf" , "lod" , "format-spdx" , "no-vocab-mappings" , "lodcloud.unconnected" , "license-metadata" , "government" , "no-proprietary-vocab" , "format-skos" , "lodcloud.nolinks" , "Czech Republic" , "czech" , "format-vcard" ;
         dcterms:title         "Czech National Open Data Catalog in DCAT-AP v1.1"@en ;
-        void:exampleResource  <https://data.gov.cz/sparql?query=DESCRIBE+%3Chttps://data.gov.cz/zdroje/datové-sady/65186030%3E&default-graph-uri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A1-sada%2FNKOD&output=text%2Fturtle> , <https://data.gov.cz/sparql?query=DESCRIBE+%3Chttps://data.gov.cz/zdroje/datové-sady/165531101%3E&default-graph-uri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A1-sada%2FNKOD&output=text%2Fturtle> ;
+        void:exampleResource  <https://data.gov.cz/sparql> ;
         void:sparqlEndpoint   <https://data.gov.cz/sparql> ;
         void:triples          6597069 ;
         dcat:distribution     [ dcat:accessURL  <https://data.gov.cz/zdroje/datové-sady/165531101> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://data.gov.cz/zdroje/datové-sady/65186030> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://data.gov.cz/sparql?query=DESCRIBE+%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A1-sada%2FNKOD%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://data.gov.cz/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <https://data.gov.cz/soubor/nkod.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://data.gov.cz/zdroje/datové-sady/65186030> ] ;
         foaf:homepage         <https://data.gov.cz/zdroj/datová-sada/NKOD> .

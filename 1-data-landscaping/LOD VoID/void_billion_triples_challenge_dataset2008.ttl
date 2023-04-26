@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,13 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/billion_triples_challenge_dataset2008>
+lod:billion_triples_challenge_dataset2008
         a                     void:Dataset ;
         dcterms:description   "Data exposed: various dumps\r\nSize of dump and data set: 1 billion triples"@en ;
         dcterms:publisher     [ rdfs:label  "Peter Mika, James Hendler" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "lod" , "linkeddata" , "published-by-third-party" , "crossdomain" , "format-rdf" , "rdf" , "no-proprietary-vocab" , "ckanupload.esw.200910" , "lodcloud.nolinks" , "lodcloud.unconnected" ;
+        dcterms:subject       "lodcloud.unconnected" , "lod" , "linkeddata" , "published-by-third-party" , "crossdomain" , "format-rdf" , "ckanupload.esw.200910" , "rdf" , "no-proprietary-vocab" , "lodcloud.nolinks" ;
         dcterms:title         "Billion Triples Challenge Dataset 2008"@en ;
         void:dataDump         <http://www.cs.vu.nl/~pmika/swc/btc.html> ;
         void:exampleResource  <http://dbpedia.org/resource/Engineering_and_Physical_Sciences_Research_Council> ;

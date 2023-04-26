@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,66 +6,65 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-curriculum> , <http://lod-cloud.net/dataset/rkb-explorer-nsf> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-nsf> ;
+[ void:target   lod:rkb-explorer-nsf , lod:rkb-explorer-rae2001 ;
   void:triples  3
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-nsf> ;
+[ void:target   lod:rkb-explorer-nsf , lod:rkb-explorer-eprints ;
+  void:triples  21
+] .
+
+[ void:target   lod:rkb-explorer-nsf , lod:rkb-explorer-wiki ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-nsf , lod:rkb-explorer-curriculum ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-nsf , lod:rkb-explorer-cordis ;
+  void:triples  175
+] .
+
+[ void:target   lod:rkb-explorer-nsf , lod:rkb-explorer-acm ;
   void:triples  14
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-nsf> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-nsf> ;
-  void:triples  1
-] .
-
-<http://lod-cloud.net/dataset/rkb-explorer-nsf>
-        a                     void:Dataset ;
+lod:rkb-explorer-nsf  a       void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
                                 foaf:mbox   "hg@ecs.soton.ac.uk"
                               ] ;
-        dcterms:subject       "void-sparql-endpoint" , "no-license-metadata" , "publications" , "lod" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "published-by-third-party" , "format-rdf" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:subject       "void-sparql-endpoint" , "no-license-metadata" , "lod" , "publications" , "deref-vocab" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "published-by-third-party" , "format-rdf" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" ;
         dcterms:title         "National Science Foundation (RKBExplorer)"@en ;
         void:exampleResource  <http://nsf.rkbexplorer.com/id/person-6092a2a72319fc9437583fb2d04733ea> ;
         void:sparqlEndpoint   <http://nsf.rkbexplorer.com/sparql/> ;
         void:triples          11822283 ;
-        dcat:distribution     [ dcat:accessURL  <http://nsf.rkbexplorer.com/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://nsf.rkbexplorer.com/models/void.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://nsf.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://nsf.rkbexplorer.com/sitemap.xml> ] ;
         foaf:homepage         <http://nsf.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-nsf> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-irit> , <http://lod-cloud.net/dataset/rkb-explorer-nsf> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-nsf> ;
-  void:triples  175
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-nsf> ;
+[ void:target   lod:rkb-explorer-nsf , lod:rkb-explorer-southampton ;
   void:triples  14
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-nsf> ;
+[ void:target   lod:rkb-explorer-nsf , lod:dbpedia ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-nsf , lod:rkb-explorer-irit ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-nsf> ;
+[ void:target   lod:rkb-explorer-nsf , lod:rkb-explorer-dblp ;
   void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-nsf> ;
+[ void:target   lod:rkb-explorer-nsf , lod:rkb-explorer-newcastle ;
   void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-nsf , lod:rkb-explorer-citeseer ;
+  void:triples  2
 ] .

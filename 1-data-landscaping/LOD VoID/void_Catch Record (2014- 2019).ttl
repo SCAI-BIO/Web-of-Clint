@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/Water Areas Classification> , <http://lod-cloud.net/dataset/Catch+Record+%282014-+2019%29> ;
-  void:triples  4858158
+[ void:target   <http://lod-cloud.net/dataset/Catch+Record+%282014-+2019%29> , <http://lod-cloud.net/dataset/FAO+species> ;
+  void:triples  4858160
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/FAO species> , <http://lod-cloud.net/dataset/Catch+Record+%282014-+2019%29> ;
-  void:triples  4858160
+[ void:target   <http://lod-cloud.net/dataset/Catch+Record+%282014-+2019%29> , <http://lod-cloud.net/dataset/Water+Areas+Classification> ;
+  void:triples  4858158
 ] .
 
 <http://lod-cloud.net/dataset/Catch+Record+%282014-+2019%29>

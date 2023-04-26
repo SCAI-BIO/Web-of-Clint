@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/southampton-ecs-eprints>
+[ void:target   lod:southampton-ecs-eprints , lod:ecs ;
+  void:triples  24000
+] .
+
+lod:southampton-ecs-eprints
         a                     void:Dataset ;
         dcterms:description   "This is live data produced by the EPrints server since its upgrade to EPrints v3.2.1 and is distinct from the service provided by RKB Explorer."@en ;
         dcterms:publisher     [ rdfs:label  "ECS /  Southampton University" ;
                                 foaf:mbox   "webmaster@ecs.soton.ac.uk"
                               ] ;
-        dcterms:subject       "format-xsd" , "lodcloud-diagram-2014-08-30" , "format-foaf" , "format-owl" , "format-cc" , "deref-vocab" , "published-by-producer" , "license-metadata" , "format-geo" , "electronics" , "format-event" , "format-dc" , "format-ecs" , "lod" , "southampton" , "provenance-metadata" , "eprints" , "lodcloud-diagram-2011-09-19" , "lld" , "format-void" , "format-bibo" , "publications" , "computer-science" , "format-skos" , "no-vocab-mappings" , "format-rdf" , "format-rdfs" ;
+        dcterms:subject       "format-xsd" , "lodcloud-diagram-2014-08-30" , "format-foaf" , "format-cc" , "format-owl" , "deref-vocab" , "format-ecs" , "format-dc" , "format-event" , "electronics" , "published-by-producer" , "license-metadata" , "format-geo" , "lod" , "southampton" , "eprints" , "provenance-metadata" , "lodcloud-diagram-2011-09-19" , "lld" , "format-void" , "format-bibo" , "computer-science" , "publications" , "format-skos" , "no-vocab-mappings" , "format-rdf" , "format-rdfs" ;
         dcterms:title         "ECS Southampton EPrints"@en ;
         void:exampleResource  <http://eprints.ecs.soton.ac.uk/id/eprint/22587> ;
         void:triples          1000000 ;
         dcat:distribution     [ dcat:accessURL  <http://eprints.ecs.soton.ac.uk/id/repository> ] ;
         dcat:distribution     [ dcat:accessURL  <http://eprints.ecs.soton.ac.uk/id/dump> ] ;
         foaf:homepage         <http://eprints.ecs.soton.ac.uk/> .
-
-[ void:target   <http://lod-cloud.net/dataset/ecs> , <http://lod-cloud.net/dataset/southampton-ecs-eprints> ;
-  void:triples  24000
-] .

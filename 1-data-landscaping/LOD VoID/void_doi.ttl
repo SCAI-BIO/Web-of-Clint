@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/doi>
-        a                     void:Dataset ;
+lod:doi  a                    void:Dataset ;
         dcterms:description   "Digital Object Idenfiers (DOI) are a persistent identifier strategy used by around 3,000 publishers to identify their documents: mostly scholarly publications. An example of a DOI is\r\n\r\n> doi:10.1038/171737a0\r\n\r\nwhich identifies:\r\n\r\n> Watson JD, Crick FH (April 1953). \"Molecular structure of nucleic acids; a structure for deoxyribose nucleic acid\" (PDF). Nature 171 (4356): 737?738. \r\n\r\n[CrossRef](http://crossref.org) maintains one of the largest DOI registries, and has minted URLs for every DOI they manage. For example the DOI above can also be expressed as the URL:\r\n\r\n> http://dx.doi.org/10.1038/171737a0\r\n\r\nWhen resolved this URL will redirect to the publisher's page for the document that is identified. The dx.doi.org service will content negotiate to make available alternate representations of the citation metadata:\r\n\r\n* application/rdf+xml\r\n* text/turtle\r\n* application/atom+xml\r\n* application/unixref+xml (CrossRef's homegrown XML format)\r\n\r\nFor example:\r\n\r\n> curl --location --header \"Accept: application/rdf+xml\" http://dx.doi.org/10.1038/171737a0\r\n\r\nDetailed information about journals, pages, authors can be found in the data, as well as links to journals in the [Linked Periodicals](http://periodicals.dataincubator.org/.html) dataset. More about the service can be found on a CrossRef \r\n[blog post](http://www.crossref.org/CrossTech/2011/04/content_negotiation_for_crossr.html)."@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
@@ -21,6 +21,6 @@
         dcat:distribution     [ dcat:accessURL  <http://dx.doi.org/10.1038/171737a0> ] ;
         foaf:homepage         <http://dx.doi.org> .
 
-[ void:target   <http://lod-cloud.net/dataset/linked-periodicals> , <http://lod-cloud.net/dataset/doi> ;
+[ void:target   lod:doi , lod:linked-periodicals ;
   void:triples  100000000
 ] .

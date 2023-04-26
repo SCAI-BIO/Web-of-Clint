@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,18 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/biosamples-rdf>
-        a                    void:Dataset ;
+lod:biosamples-rdf  a        void:Dataset ;
         dcterms:description  "The BioSamples database aggregates sample information for reference samples (e.g. Coriell Cell lines) and samples for which data exist in one of the EBI's assay databases such as ArrayExpress, the European Nucleotide Archive or PRoteomics Identificates DatabasE. It provides links to assays an specific samples, and accepts direct submissions of sample information."@en ;
         dcterms:publisher    [ rdfs:label  "Samples, Phenotypes & Ontologies team" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "lod" , "provenance-metadata" , "biology" , "life_sciences" , "vocab-mappings" , "lifesciences" , "bioinformatics" , "rdf" , "lodcloud-diagram-2014-08-30" , "published-by-producer" , "linked data" ;
+        dcterms:subject      "lod" , "provenance-metadata" , "biology" , "life_sciences" , "vocab-mappings" , "lifesciences" , "bioinformatics" , "lodcloud-diagram-2014-08-30" , "rdf" , "published-by-producer" , "linked data" ;
         dcterms:title        "BioSamples RDF"@en ;
         void:sparqlEndpoint  <https://www.ebi.ac.uk/rdf/services/biosamples/sparql> ;
         void:triples         136323595 ;
         dcat:distribution    [ dcat:accessURL  <ftp://ftp.ebi.ac.uk/pub/databases/RDF/biosamples/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rdf.ebi.ac.uk/dataset/biosamples/v20140506/dataset-void.ttl> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/gene-expression-atlas-rdf> , <http://lod-cloud.net/dataset/biosamples-rdf> ;
+[ void:target   lod:biosamples-rdf , lod:gene-expression-atlas-rdf ;
   void:triples  39370
 ] .

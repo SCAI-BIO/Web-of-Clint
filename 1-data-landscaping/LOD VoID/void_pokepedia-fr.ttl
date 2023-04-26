@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,22 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/data-incubator-pokedex> , <http://lod-cloud.net/dataset/pokepedia-fr> ;
-  void:triples  510
-] .
-
-<http://lod-cloud.net/dataset/pokepedia-fr>
-        a                    void:Dataset ;
+lod:pokepedia-fr  a          void:Dataset ;
         dcterms:description  "Linked data on all Pokemon franchise"@en ;
         dcterms:publisher    [ rdfs:label  "Poképédia" ;
                                foaf:mbox   "misdre@pokepedia.misdre.info"
                              ] ;
-        dcterms:subject      "no-provenance-metadata" , "smw" , "lod" , "format-rdf" , "published-by-producer" , "pokémon" , "wiki" , "pokemon" , "no-license-metadata" , "no-vocab-mappings" , "media" , "deref-vocab" ;
+        dcterms:subject      "no-provenance-metadata" , "lod" , "smw" , "format-rdf" , "published-by-producer" , "pokémon" , "wiki" , "pokemon" , "no-license-metadata" , "no-vocab-mappings" , "media" , "deref-vocab" ;
         dcterms:title        "Poképédia"@en ;
         void:triples         115150 ;
         dcat:distribution    [ dcat:accessURL  <http://www.pokepedia.fr/Spécial:ExportRDF/Bulbizarre> ] ;
         dcat:distribution    [ dcat:accessURL  <http://data.pokepedia.fr/dumps/pokepedia-fr_rdfdump.tar.gz> ] ;
         foaf:homepage        <http://www.pokepedia.fr> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/pokepedia-fr> ;
+[ void:target   lod:pokepedia-fr , lod:data-incubator-pokedex ;
+  void:triples  510
+] .
+
+[ void:target   lod:pokepedia-fr , lod:dbpedia ;
   void:triples  493
 ] .

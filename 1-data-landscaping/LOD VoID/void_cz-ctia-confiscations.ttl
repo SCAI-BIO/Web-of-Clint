@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-ctia-inspections> , <http://lod-cloud.net/dataset/cz-ctia-confiscations> ;
+[ void:target   lod:cz-ctia-confiscations , lod:cz-ctia-inspections ;
   void:triples  12000
 ] .
 
-<http://lod-cloud.net/dataset/cz-ctia-confiscations>
+lod:cz-ctia-confiscations
         a                     void:Dataset ;
         dcterms:description   "Basic information about confiscations performed by the Czech Trade Inspection Authority"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -17,10 +18,10 @@
                               ] ;
         dcterms:subject       "lod" , "provenance-metadata" , "no-proprietary-vocab" , "license-metadata" , "format-gr" , "government" , "no-vocab-mappings" , "published-by-third-party" , "format-skos" ;
         dcterms:title         "Confiscations of the Czech Trade Inspection Authority"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdomain%2Fcoi.cz%2Fconfiscation%2F17117%3E&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          268617 ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/coi-zajisteni.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fcoi.cz%2Fzajisteni%2Fdistribution%3E&output=text%2Fturtle> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/coi.cz/confiscation/17117> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/coi-zajisteni.trig> ] ;
         foaf:homepage         <http://linked.opendata.cz/resource/dataset/coi.cz/zajisteni> .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/japan-radioactivity-stat>
+lod:japan-radioactivity-stat
         a                    void:Dataset ;
         dcterms:description  "?????????????????????????????????????????????atmc.jp????????????1???2011-03-16?2012-03-15??RDF????????????????3??????????????\r\n\r\nThis is an experimantal RDF data of radioactivity statistics, observed at 47 prefectures hourly, from 2011-03-16 to 2012-03-15. Source data is text data at atmc.jp converted from the daily announcements by the Ministry of Education, which have been compiled based on reports from each prefecture. Some data from Fukushima and Miyagi in March missing"@en ;
         dcterms:publisher    [ rdfs:label  "KANZAKI Masahide" ;
                                foaf:mbox   "mkanzaki@gmail.com"
                              ] ;
-        dcterms:subject      "format-time" , "format-vcard" , "format-event" , "country-japan" , "geographic" , "format-rdf" , "format-scovo" , "lodcloud-diagram-2011-09-19" , "radioactivity" , "no-proprietary-vocab" , "lod" , "format-rdfs" , "statistics" , "published-by-third-party" , "format-geo" , "government" ;
+        dcterms:subject      "format-time" , "format-vcard" , "format-event" , "country-japan" , "geographic" , "format-rdf" , "format-scovo" , "lodcloud-diagram-2011-09-19" , "radioactivity" , "no-proprietary-vocab" , "lod" , "format-rdfs" , "format-geo" , "published-by-third-party" , "statistics" , "government" ;
         dcterms:title        "National Radioactivity Stat as Linked Data"@en ;
         void:triples         "1,648,890"^^xsd:integer ;
         dcat:distribution    [ dcat:accessURL  <http://www.kanzaki.com/works/2012/pub/radiostat-20110316-20120315.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.kanzaki.com/works/2011/stat/ra-void.ttl> ] ;
         foaf:homepage        <http://www.kanzaki.com/works/2011/stat/ra/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/japan-radioactivity-stat> ;
+[ void:target   lod:japan-radioactivity-stat , lod:geonames-semantic-web ;
   void:triples  36696
 ] .

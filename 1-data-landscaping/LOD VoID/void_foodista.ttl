@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/foodista>
-        a                     void:Dataset ;
+lod:foodista  a               void:Dataset ;
         dcterms:description   "Foodista is a community edited recipe wiki, published under a Creative Common Attribution license. The wiki contains information on foods, tools, techniques, and recipes.\r\n\r\nThis dataset was based on a crawl of the Foodista website, extracting the metadata from the service. Since the crawl was completed the Foodista site has significantly changed, so refreshing the data is more difficult. \r\n\r\n*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)"@en ;
         dcterms:publisher     [ rdfs:label  "Leigh Dodds" ;
                                 foaf:mbox   "leigh@ldodds.com"
@@ -16,10 +16,10 @@
         void:exampleResource  <http://data.kasabi.com/dataset/foodista/recipe/FSZG4354.rdf> ;
         void:sparqlEndpoint   <http://kasabi.com/api/sparql-endpoint-foodista> , <http://api.kasabi.com/dataset/foodista/apis/sparql> ;
         void:triples          8129900 ;
-        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/api/reconciliation-api-foodista> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/api/augmentation-api-foodista> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://api.kasabi.com/dataset/api-foodista/apis/search> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.kasabi.com/dataset/foodista> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://archive.org/download/kasabi/foodista.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://kasabi.com/api/lookup-api-foodista> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/api/reconciliation-api-foodista> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.kasabi.com/dataset/foodista> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://api.kasabi.com/dataset/api-foodista/apis/search> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/api/augmentation-api-foodista> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://archive.org/download/kasabi/foodista.gz> ] ;
         foaf:homepage         <http://kasabi.com/dataset/foodista> .

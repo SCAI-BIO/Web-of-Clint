@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lingvoj> , <http://lod-cloud.net/dataset/linkedmdb> ;
-  void:triples  28253
-] .
-
-<http://lod-cloud.net/dataset/linkedmdb>
-        a                     void:Dataset ;
+lod:linkedmdb  a              void:Dataset ;
         dcterms:description   "Data exposed: Linked Data about Movies\r\nSize of data set: 6,148,121 triples.\r\n\r\n### Openness: Open\r\n\r\nMixture of material from Wikipedia, Freebase and Geonames and states on http://wiki.linkedmdb.org/Main/Licensing:\r\n\r\n> Content created by (or contributed to) LinkedMDB (interlinking data, in particular) is licensed under the Creative Commons Attributions License(CC-BY). You are free to use CC-BY content as long as you provide proper attribution back to the source (LinkedMDB). Attribution should be given with a link or a reference to LinkedMDB. "@en ;
         dcterms:publisher     [ rdfs:label  "Oktie Hassanzadeh, Mariano P. Consens" ;
                                 foaf:mbox   "admin@linkedmdb.org "
                               ] ;
-        dcterms:subject       "no-license-metadata" , "linked-data" , "media" , "lodcloud-diagram-2011-09-19" , "no-provenance-metadata" , "no-vocab-mappings" , "lod" , "linkeddata" , "rdf" , "license-" , "lodcloud-diagram-2014-08-30" , "deref-vocab" , "format-rdf" , "published-by-third-party" , "films" , "ckanupload.esw.200910" , "format-dbp" ;
+        dcterms:subject       "format-dbp" , "no-license-metadata" , "linked-data" , "lodcloud-diagram-2011-09-19" , "media" , "no-provenance-metadata" , "linkeddata" , "no-vocab-mappings" , "lod" , "rdf" , "license-" , "lodcloud-diagram-2014-08-30" , "deref-vocab" , "format-rdf" , "published-by-third-party" , "films" , "ckanupload.esw.200910" ;
         dcterms:title         "Linked Movie DataBase"@en ;
         void:exampleResource  <http://data.linkedmdb.org/resource/film_character/1001> ;
         void:sparqlEndpoint   <http://data.linkedmdb.org/sparql> ;
@@ -23,26 +19,30 @@
         dcat:distribution     [ dcat:accessURL  <http://queens.db.toronto.edu/~oktie/linkedmdb> ] ;
         foaf:homepage         <http://linkedmdb.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/linkedmdb> ;
+[ void:target   lod:linkedmdb , lod:dbpedia ;
+  void:triples  30354
+] .
+
+[ void:target   lod:linkedmdb , lod:geonames-semantic-web ;
   void:triples  27544
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/flickr-wrappr> , <http://lod-cloud.net/dataset/linkedmdb> ;
-  void:triples  30354
+[ void:target   lod:linkedmdb , lod:lingvoj ;
+  void:triples  28253
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rdf-book-mashup> , <http://lod-cloud.net/dataset/linkedmdb> ;
-  void:triples  13690
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbtune-musicbrainz> , <http://lod-cloud.net/dataset/linkedmdb> ;
+[ void:target   lod:linkedmdb , lod:dbtune-musicbrainz ;
   void:triples  2207
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linkedmdb> ;
+[ void:target   lod:linkedmdb , lod:rdf-book-mashup ;
+  void:triples  13690
+] .
+
+[ void:target   lod:linkedmdb , lod:flickr-wrappr ;
   void:triples  30354
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/linkedmdb> ;
+[ void:target   lod:linkedmdb , lod:yago ;
   void:triples  30354
 ] .

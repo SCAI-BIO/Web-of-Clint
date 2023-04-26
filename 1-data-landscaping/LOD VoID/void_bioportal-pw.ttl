@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,32 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-pw> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-iev> , <http://lod-cloud.net/dataset/bioportal-pw> ;
+[ void:target   lod:bioportal-pw , lod:bioportal-iev ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rs> , <http://lod-cloud.net/dataset/bioportal-pw> ;
-  void:triples  39
+[ void:target   lod:bioportal-pw , lod:bioportal-go_x2 ;
+  void:triples  22
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-pw> ;
-  void:triples  11
+[ void:target   lod:bioportal-pw , lod:bioportal-ncit ;
+  void:triples  66
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cco> , <http://lod-cloud.net/dataset/bioportal-pw> ;
-  void:triples  12
+[ void:target   lod:bioportal-pw , lod:bioportal-go_x1 ;
+  void:triples  19
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-pw> ;
-  void:triples  27
-] .
-
-<http://lod-cloud.net/dataset/bioportal-pw>
-        a                    void:Dataset ;
+lod:bioportal-pw  a          void:Dataset ;
         dcterms:description  "The goal of the Pathway Ontology is to capture the various kinds of biological networks, the relationships between them and the alterations or malfunctioning of such networks within a hierarchical structure. The five nodes are: classic metabolic pathways, regulatory pathways, signaling pathways, drug pathways and disease pathways for complex human conditions. KEGG and Reactome databases, as well as extensive literature searches have been used to choose terms and their position within the tree. A complex human disease pathway is viewed in the context of genetic and environmental attributes that can affect or impair the functioning of various molecular and cellular pathways; their combined, accumulated effect is manifested in the diseased phenotype. In many cases the identity of the malfunctioning dynamic entity is speculated rather than known. Metabolic, regulatory or signaling pathway terms have associated terms for the altered version of the pathway and the level at which the alteration(s) may occur. Proteins with mutations known to affect a particular pathway can be annotated to the normal and altered version(s) of the pathway and to a disease pathway, if known. The ontology provides a unified way to annotate gene products to any type of pathway as well as to deviant pathways. Its hierarchical structure offers the researcher a 'view' of the connections, if not the dependencies between individual pathways, of the possible link between alterations within these complex biological circuitries and diseases."@en ;
         dcterms:publisher    [ rdfs:label  "Victoria Petri" ;
                                foaf:mbox   ""
@@ -39,18 +31,26 @@
         dcterms:title        "Pathway ontology"@en ;
         void:triples         16830 ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47202?apikey=BP_API_KEY> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1035> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-pw> ;
-  void:triples  66
+[ void:target   lod:bioportal-pw , lod:bioportal-rs ;
+  void:triples  39
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x2> , <http://lod-cloud.net/dataset/bioportal-pw> ;
-  void:triples  22
+[ void:target   lod:bioportal-pw , lod:bioportal-nif ;
+  void:triples  27
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x1> , <http://lod-cloud.net/dataset/bioportal-pw> ;
-  void:triples  19
+[ void:target   lod:bioportal-pw , lod:bioportal-mesh-owl ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-pw , lod:bioportal-cco ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-pw , lod:bioportal-msh ;
+  void:triples  11
 ] .

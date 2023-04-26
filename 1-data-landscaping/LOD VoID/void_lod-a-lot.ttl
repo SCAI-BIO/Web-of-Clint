@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/lod-a-lot>
-        a                    void:Dataset ;
+lod:lod-a-lot  a             void:Dataset ;
         dcterms:description  "# A Queryable Dump of the LOD Cloud \r\n\r\nLOD-a-lot democratizes the access to the Linked Open Data (LOD) Cloud by serving more than 28 billion unique triples from 650K datasets over a single self-indexed file. This corpus can be queried online with a sustainable Linked Data Fragments interface, or downloaded and consumed locally: LOD-a-lot is easy to deploy and demands affordable resources (524 GB of disk space and 15.7 GB of RAM), enabling Webscale repeatable experimentation and research even by standard laptops."@en ;
         dcterms:publisher    [ rdfs:label  "Javier D. Fernández, Wouter Beek, Miguel A. Martínez-Prieto,  Mario Arias" ;
                                foaf:mbox   "javier.fernandez@wu.ac.at"
@@ -15,7 +15,7 @@
         dcterms:title        "LOD-a-lot"@en ;
         void:sparqlEndpoint  <https://hdt.lod.labs.vu.nl/?g=LOD-a-lot> ;
         void:triples         28362198927 ;
-        dcat:distribution    [ dcat:accessURL  <http://lod-a-lot.lod.labs.vu.nl/data/LOD_a_lot_v1.hdt.index.v1-1> ] ;
         dcat:distribution    [ dcat:accessURL  <http://lod-a-lot.lod.labs.vu.nl/data/LOD_a_lot_v1.hdt> ] ;
         dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/6c9ea600-1c75-4f81-b245-45563c5190e8/resource/9d3820b2-f6ae-445d-a546-81dd54b90986/download/void.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://lod-a-lot.lod.labs.vu.nl/data/LOD_a_lot_v1.hdt.index.v1-1> ] ;
         foaf:homepage        <http://lod-a-lot.lod.labs.vu.nl/about/> .

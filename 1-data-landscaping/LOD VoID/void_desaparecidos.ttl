@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/desaparecidos>
-        a                    void:Dataset ;
+[ void:target   lod:desaparecidos , lod:dbpedia-pt ;
+  void:triples  2450
+] .
+
+lod:desaparecidos  a         void:Dataset ;
         dcterms:description  "This project shows the use of linked data to provide a way to represent and consume information about unmissing people retrieved from non-governamental organization's sites. A tool was created to mark as spam messages about unmissing people on Facebook, using a database that implements the linked data principles."@en ;
         dcterms:publisher    [ rdfs:label  "Adriano Delvoux; Jairo Francisco de Souza" ;
                                foaf:mbox   "jairo.souza@ice.ufjf.br"
@@ -14,10 +18,6 @@
         dcterms:subject      "cross_domain" ;
         dcterms:title        "Projeto Desaparecidos"@en ;
         void:triples         "0"^^xsd:int ;
-        dcat:distribution    [ dcat:accessURL  <http://desaparecidos.ice.ufjf.br/index.php/aplicacao> ] ;
         dcat:distribution    [ dcat:accessURL  <http://desaparecidos.ice.ufjf.br/index.php/sparql> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://desaparecidos.ice.ufjf.br/index.php/aplicacao> ] ;
         foaf:homepage        <http://desaparecidos.ice.ufjf.br/> .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-pt> , <http://lod-cloud.net/dataset/desaparecidos> ;
-  void:triples  2450
-] .

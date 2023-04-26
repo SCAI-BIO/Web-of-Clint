@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/uniprot-metadata> ;
+[ void:target   lod:uniprot-metadata , lod:lexvo ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/uniprot-metadata>
-        a                     void:Dataset ;
+lod:uniprot-metadata  a       void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
@@ -20,18 +20,18 @@
         void:exampleResource  <http://www.uniprot.org/database/CTD.rdf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/aspire-ucl> , <http://lod-cloud.net/dataset/uniprot-metadata> ;
+[ void:target   lod:uniprot-metadata , lod:w3c ;
+  void:triples  2
+] .
+
+[ void:target   lod:uniprot-metadata , lod:aspire-ucl ;
   void:triples  15
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/w3c> , <http://lod-cloud.net/dataset/uniprot-metadata> ;
+[ void:target   lod:uniprot-metadata , lod:bbc-wildlife-finder ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/uniprot-metadata> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bbc-wildlife-finder> , <http://lod-cloud.net/dataset/uniprot-metadata> ;
+[ void:target   lod:uniprot-metadata , lod:personal-homepages ;
   void:triples  2
 ] .

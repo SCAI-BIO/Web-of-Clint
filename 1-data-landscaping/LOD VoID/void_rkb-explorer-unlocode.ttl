@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,31 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/opencyc> , <http://lod-cloud.net/dataset/rkb-explorer-unlocode> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-unlocode> ;
-  void:triples  240
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbtune-musicbrainz> , <http://lod-cloud.net/dataset/rkb-explorer-unlocode> ;
+[ void:target   lod:rkb-explorer-unlocode , lod:data-incubator-our-airports ;
   void:triples  237
 ] .
 
-<http://lod-cloud.net/dataset/rkb-explorer-unlocode>
+[ void:target   lod:rkb-explorer-unlocode , lod:linkedmdb ;
+  void:triples  237
+] .
+
+[ void:target   lod:rkb-explorer-unlocode , lod:opencalais ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-unlocode , lod:dbtune-musicbrainz ;
+  void:triples  237
+] .
+
+[ void:target   lod:rkb-explorer-unlocode , lod:telegraphis ;
+  void:triples  237
+] .
+
+[ void:target   lod:rkb-explorer-unlocode , lod:dbpedia ;
+  void:triples  240
+] .
+
+lod:rkb-explorer-unlocode
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
@@ -28,23 +41,11 @@
         void:exampleResource  <http://unlocode.rkbexplorer.com/id/GB-HAM> ;
         void:sparqlEndpoint   <http://unlocode.rkbexplorer.com/sparql/> ;
         void:triples          371549 ;
+        dcat:distribution     [ dcat:accessURL  <http://unlocode.rkbexplorer.com/models/dump.tgz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://unlocode.rkbexplorer.com/models/void.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://unlocode.rkbexplorer.com/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://unlocode.rkbexplorer.com/models/dump.tgz> ] ;
         foaf:homepage         <http://unlocode.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/opencalais> , <http://lod-cloud.net/dataset/rkb-explorer-unlocode> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/data-incubator-our-airports> , <http://lod-cloud.net/dataset/rkb-explorer-unlocode> ;
-  void:triples  237
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/telegraphis> , <http://lod-cloud.net/dataset/rkb-explorer-unlocode> ;
-  void:triples  237
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linkedmdb> , <http://lod-cloud.net/dataset/rkb-explorer-unlocode> ;
-  void:triples  237
+[ void:target   lod:rkb-explorer-unlocode , lod:opencyc ;
+  void:triples  3
 ] .

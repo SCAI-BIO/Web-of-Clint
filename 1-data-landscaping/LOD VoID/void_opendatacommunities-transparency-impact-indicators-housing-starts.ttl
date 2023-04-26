@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-housing-starts> ;
+[ void:target   lod:opendatacommunities-transparency-impact-indicators-housing-starts , lod:statistics-data-gov-uk ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-housing-starts> ;
+[ void:target   lod:opendatacommunities-transparency-impact-indicators-housing-starts , lod:reference-data-gov-uk ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-housing-starts>
+lod:opendatacommunities-transparency-impact-indicators-housing-starts
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "government" , "crawledLinkedDataCloud2014" , "LinkedDataCrawl2014" , "format-sdmxd" , "license-metadata" , "format-void" , "format-dcterm" , "dump" , "format-cube" , "lodcloud-diagram-2014-08-30" , "dataset-level-metadata" , "format-rdf" , "format-rdfs" , "provenance-metadata" , "format-dcat" , "sparql" ;
+        dcterms:subject       "government" , "crawledLinkedDataCloud2014" , "LinkedDataCrawl2014" , "format-sdmxd" , "license-metadata" , "format-cube" , "dump" , "format-void" , "format-dcterm" , "format-rdf" , "dataset-level-metadata" , "lodcloud-diagram-2014-08-30" , "format-rdfs" , "provenance-metadata" , "format-dcat" , "sparql" ;
         dcterms:title         "opendatacommunities-transparency-impact-indicators-housing-starts"@en ;
         void:exampleResource  <http://opendatacommunities.org/data/transparency/impact-indicators/housing-starts/2012-Q4> ;
         void:triples          "0"^^xsd:int .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,26 +6,25 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/congresspeople>
-        a                    void:Dataset ;
+lod:congresspeople  a        void:Dataset ;
         dcterms:description  "The 2011 US congress people data, with ntriples format. Could benefit from connections to http://thedatahub.org/dataset/congresspedia"@en ;
         dcterms:publisher    [ rdfs:label  "Yanning Chen" ;
                                foaf:mbox   "cheny18@rpi.edu"
                              ] ;
-        dcterms:subject      "format-conv" , "format-rdfs" , "format-dc" , "format-scovo" , "format-vann" , "format-void" , "government" , "format-ov" , "format-pmlp" , "format-owl" , "format-pmlj" , "format-doap" , "format-dbp" , "format-dbo" , "format-con" , "format-rdf" , "format-foaf" ;
+        dcterms:subject      "format-conv" , "format-rdfs" , "format-dc" , "format-scovo" , "format-vann" , "format-void" , "government" , "format-ov" , "format-pmlp" , "format-owl" , "format-pmlj" , "format-dbp" , "format-doap" , "format-dbo" , "format-foaf" , "format-con" , "format-rdf" ;
         dcterms:title        "2011 US Congress People"@en ;
         void:triples         "0"^^xsd:int ;
         dcat:distribution    [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2011-11-01T195324/triples.nt> ] ;
         foaf:homepage        <http://www.contactingthecongress.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/congresspeople> ;
-  void:triples  50
+[ void:target   lod:congresspeople , lod:govtrack ;
+  void:triples  56
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/congresspeople> ;
+[ void:target   lod:congresspeople , lod:dbpedia ;
   void:triples  67
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/govtrack> , <http://lod-cloud.net/dataset/congresspeople> ;
-  void:triples  56
+[ void:target   lod:congresspeople , lod:geonames-semantic-web ;
+  void:triples  50
 ] .

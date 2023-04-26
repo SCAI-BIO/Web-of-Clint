@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bioportal-sitbac>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-sitbac , lod:bioportal-bcgo ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-sitbac , lod:bioportal-lnc ;
+  void:triples  34
+] .
+
+lod:bioportal-sitbac  a      void:Dataset ;
         dcterms:description  "Context-based healthcare access-control policies"@en ;
         dcterms:publisher    [ rdfs:label  "Mor Peleg" ;
                                foaf:mbox   ""
@@ -14,67 +22,59 @@
         dcterms:subject      "format-owl" , "bioportal" , "published-by-third-party" , "life_sciences" , "biomedicine" , "format-rdf" , "lod" , "ontology" ;
         dcterms:title        "Situation-Based Access Control"@en ;
         void:triples         4971 ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45298?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45298?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1237> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
-  void:triples  18
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
-  void:triples  29
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
-  void:triples  43
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cpr> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sio> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
-  void:triples  34
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ogi> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-odgi> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
+[ void:target   lod:bioportal-sitbac , lod:bioportal-odgi ;
   void:triples  21
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bcgo> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
-  void:triples  14
+[ void:target   lod:bioportal-sitbac , lod:bioportal-csp ;
+  void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
+[ void:target   lod:bioportal-sitbac , lod:bioportal-rcd ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-sitbac , lod:bioportal-icnp ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-sitbac> ;
+[ void:target   lod:bioportal-sitbac , lod:bioportal-sio ;
   void:triples  10
+] .
+
+[ void:target   lod:bioportal-sitbac , lod:bioportal-cpr ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-sitbac , lod:bioportal-ogi ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-sitbac , lod:bioportal-msh ;
+  void:triples  18
+] .
+
+[ void:target   lod:bioportal-sitbac , lod:bioportal-acgt ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-sitbac , lod:bioportal-canco ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-sitbac , lod:bioportal-hl7 ;
+  void:triples  19
+] .
+
+[ void:target   lod:bioportal-sitbac , lod:bioportal-ncit ;
+  void:triples  43
+] .
+
+[ void:target   lod:bioportal-sitbac , lod:bioportal-snomedct ;
+  void:triples  29
 ] .

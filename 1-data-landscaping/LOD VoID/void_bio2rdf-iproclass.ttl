@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,90 +6,90 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  56555610
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-refseq> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  20380489
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  74181457
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pfam> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  14839
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-unigene> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  506685
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ipi> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  257120
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-genbank> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  68498274
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-go> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  22789
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-gi> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  95540862
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniparc> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  31486979
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  13878455
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ensembl> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  1195975
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxonomy> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  484101
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  974573
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-omim ;
   void:triples  17916
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pirsf> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-uniprot ;
+  void:triples  56555610
+] .
+
+[ void:target   lod:bio2rdf-iproclass ;
+  void:triples  74181457
+] .
+
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-refseq ;
+  void:triples  20380489
+] .
+
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-taxonomy ;
+  void:triples  484101
+] .
+
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-pirsf ;
   void:triples  11766
 ] .
 
-<http://lod-cloud.net/dataset/bio2rdf-iproclass>
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-gi ;
+  void:triples  95540862
+] .
+
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-uniparc ;
+  void:triples  31486979
+] .
+
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-genbank ;
+  void:triples  68498274
+] .
+
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-ipi ;
+  void:triples  257120
+] .
+
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-pubmed ;
+  void:triples  974573
+] .
+
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-go ;
+  void:triples  22789
+] .
+
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-ncbigene ;
+  void:triples  13878455
+] .
+
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-pdb ;
+  void:triples  247349
+] .
+
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-unigene ;
+  void:triples  506685
+] .
+
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-pfam ;
+  void:triples  14839
+] .
+
+lod:bio2rdf-iproclass
         a                     void:Dataset ;
         dcterms:description   "The iProClass database provides value-added information reports for UniProtKB and unique UniParc proteins, with links to over 90 biological databases, including databases for protein families, functions and pathways, interactions, structures and structural classifications, genes and genomes, ontologies, literature, and taxonomy."@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
                               ] ;
-        dcterms:subject       "bio2rdf" , "lod" , "life_sciences" , "lifesciences" , "format-dc" , "format-rdfs" , "published-by-third-party" , "lodcloud-diagram-2014-08-30" , "deref-vocab" , "format-rdf" , "vocab-mappings" , "license-metadata" , "provenance-metadata" ;
+        dcterms:subject       "bio2rdf" , "lod" , "life_sciences" , "lifesciences" , "format-dc" , "format-rdfs" , "published-by-third-party" , "deref-vocab" , "lodcloud-diagram-2014-08-30" , "format-rdf" , "license-metadata" , "vocab-mappings" , "provenance-metadata" ;
         dcterms:title         "Bio2RDF::Iproclass"@en ;
         void:dataDump         <http://download.bio2rdf.org/current/iproclass/iproclass.6.nq.gz> , <http://download.bio2rdf.org/current/iproclass/iproclass.3.nq.gz> , <http://download.bio2rdf.org/current/iproclass/iproclass.10.nq.gz> , <http://download.bio2rdf.org/current/iproclass/iproclass.5.nq.gz> , <http://download.bio2rdf.org/current/iproclass/iproclass.7.nq.gz> , <http://download.bio2rdf.org/current/iproclass/iproclass.9.nq.gz> , <http://download.bio2rdf.org/current/iproclass/iproclass.8.nq.gz> , <http://download.bio2rdf.org/current/iproclass/iproclass.4.nq.gz> , <http://download.bio2rdf.org/current/iproclass/iproclass.1.nq.gz> , <http://download.bio2rdf.org/current/iproclass/iproclass.2.nq.gz> ;
         void:exampleResource  <http://bio2rdf.org/iproclass:P69380> ;
         void:sparqlEndpoint   <http://iproclass.bio2rdf.org/sparql> ;
         void:triples          3306107223 ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/iproclass/iproclass.html> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/iproclass/bio2rdf-iproclass.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/iproclass/iproclass.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/iproclass/iproclass.html> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/iproclass/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/iproclass/bio2rdf_iproclass_sio_mapping.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/iproclass/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/iproclass/iproclass.schema.owl> ] ;
         foaf:homepage         <http://iproclass.bio2rdf.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pdb> , <http://lod-cloud.net/dataset/bio2rdf-iproclass> ;
-  void:triples  247349
+[ void:target   lod:bio2rdf-iproclass , lod:bio2rdf-ensembl ;
+  void:triples  1195975
 ] .

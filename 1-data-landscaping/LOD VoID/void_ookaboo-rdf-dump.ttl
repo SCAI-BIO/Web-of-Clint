@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/ookaboo-rdf-dump>
-        a                    void:Dataset ;
+lod:ookaboo-rdf-dump  a      void:Dataset ;
         dcterms:description  "The Ookaboo RDF dump contains metadata for nearly 1,000,000 public domain and Creative Commons images of more than 500,000 precise topics such as places, people and organism classifications linked to DBpedia and Freebase.\r\n\r\nExpressed in industry standard RDF, the Ookaboo dump is available with a CC-BY-SA/3.0 license that is friendly for both academic and commercial use. Precision is in excess of 0.98, enabling a new range of applications for image search and classification. See the latest release for downloads and documentation."@en ;
         dcterms:publisher    [ rdfs:label  "Paul Houle" ;
                                foaf:mbox   "paul@ontology2.com"
@@ -14,14 +14,14 @@
         dcterms:subject      "freebase" , "dbpedia" , "multimedia" , "images" , "rdf" ;
         dcterms:title        "Ookaboo RDF dump"@en ;
         void:triples         49000000 ;
-        dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-dbpedia.nt.gz> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-topic-labels.nt.gz> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-core.nt.gz> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-size-m.nt.gz> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-freebase.nt.gz> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-size-l.nt.gz> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-size-s.nt.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-dbpedia.nt.gz> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-schema.ttl.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-core.nt.gz> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-size-t.nt.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-size-l.nt.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-topic-labels.nt.gz> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-size-sq.nt.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-size-s.nt.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rdf.ookaboo.com/data/latest/ookaboo-freebase.nt.gz> ] ;
         foaf:homepage        <http://rdf.ookaboo.com/> .

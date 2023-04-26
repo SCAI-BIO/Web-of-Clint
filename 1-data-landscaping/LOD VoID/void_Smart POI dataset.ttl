@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,16 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/Smart+POI+dataset> ;
+[ void:target   <http://lod-cloud.net/dataset/Smart+POI+dataset> , lod:geonames-semantic-web ;
   void:triples  30842076
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/Smart+POI+dataset> ;
-  void:triples  12516983
+[ void:target   <http://lod-cloud.net/dataset/Smart+POI+dataset> , lod:dbpedia ;
+  void:triples  30823653
+] .
+
+[ void:target   <http://lod-cloud.net/dataset/Smart+POI+dataset> , lod:linkedgeodata ;
+  void:triples  26942671
 ] .
 
 <http://lod-cloud.net/dataset/Smart+POI+dataset>
@@ -19,16 +24,12 @@
         dcterms:publisher    [ rdfs:label  "Raul Palma, Soumya Brahma" ;
                                foaf:mbox   "rpalma@man.poznan.pl"
                              ] ;
-        dcterms:subject      "geography" , "dbpedia" , "openstreet map" , "smart point of interest" , "geonames" ;
+        dcterms:subject      "geography" , "dbpedia" , "smart point of interest" , "openstreet map" , "geonames" ;
         dcterms:title        "Smart Points Of Interest @PSNC"@en ;
         void:sparqlEndpoint  <https://www.foodie-cloud.org/sparql> ;
         void:triples         407628622 ;
         foaf:homepage        <https://www.foodie-cloud.org/fct/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/Smart+POI+dataset> ;
-  void:triples  30823653
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/Smart+POI+dataset> ;
-  void:triples  26942671
+[ void:target   <http://lod-cloud.net/dataset/Smart+POI+dataset> , lod:wikidata ;
+  void:triples  12516983
 ] .

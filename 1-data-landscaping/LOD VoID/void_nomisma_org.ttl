@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/nomisma_org>
-        a                     void:Dataset ;
+lod:nomisma_org  a            void:Dataset ;
         dcterms:description   "Nomisma.org is an international collaborative project to define the intellectual concepts of numismatics following the principles of Linked Open Data"@en ;
         dcterms:publisher     [ rdfs:label  "Ethan Gruber" ;
                                 foaf:mbox   "ewg4xuva@gmail.com"

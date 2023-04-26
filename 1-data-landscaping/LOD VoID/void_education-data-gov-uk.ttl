@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,32 +6,32 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/education-data-gov-uk>
+[ void:target   lod:education-data-gov-uk , lod:statistics-data-gov-uk ;
+  void:triples  400000
+] .
+
+lod:education-data-gov-uk
         a                     void:Dataset ;
         dcterms:description   "Linked data about schools, nurseries and universities within the UK:\r\n\r\n* [Namespace for research institutionhttp://education.data.gov.uk/doc/institutions](http://education.data.gov.uk/doc/institution); populated with institutions that recently received BIS research funding\r\n* Edubase data on schools, nurseries\r\n* 2009 school statistics on local authority level: number of teachers; vacancies; pupil-teacher ratios (SCOVO)\r\n\r\nPart of package:data-gov-uk.\r\n\r\n### REST API\r\n\r\nThe Edubase data is also available [through a REST API](http://education.data.gov.uk/doc/school). See also [Jeni Tennison's blog post](http://data.gov.uk/blog/guest-post-developers-guide-linked-data-apis-jeni-tennison)."@en ;
         dcterms:publisher     [ rdfs:label  "UK Government" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "nurseries" , "format-dc" , "lodcloud-diagram-2011-09-19" , "university" , "deref-vocab" , "format-foaf" , "no-provenance-metadata" , "linked-data-api" , "published-by-producer" , "format-vcard" , "no-license-metadata" , "format-geo" , "no-vocab-mappings" , "lodcloud-diagram-2014-08-30" , "edubase" , "broken_link" , "ukgov" , "schools" , "education" , "lod" , "government" ;
+        dcterms:subject       "nurseries" , "format-dc" , "lodcloud-diagram-2011-09-19" , "university" , "deref-vocab" , "format-foaf" , "no-provenance-metadata" , "linked-data-api" , "published-by-producer" , "format-vcard" , "no-license-metadata" , "format-geo" , "lodcloud-diagram-2014-08-30" , "no-vocab-mappings" , "edubase" , "broken_link" , "schools" , "ukgov" , "education" , "lod" , "government" ;
         dcterms:title         "education.data.gov.uk"@en ;
         void:exampleResource  <http://education.data.gov.uk/id/school/520965> ;
         void:sparqlEndpoint   <http://services.data.gov.uk/education/sparql> ;
         void:triples          6619847 ;
-        dcat:distribution     [ dcat:accessURL  <http://education.data.gov.uk/doc/school> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://source.data.gov.uk/data/education/edubase/2009-08-14/edubase-rdf-r2rc3.tgz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://source.data.gov.uk/data/education/pupil-teacher/2009-09-30/education-statistics.zip> ] ;
         dcat:distribution     [ dcat:accessURL  <http://services.data.gov.uk/education/search> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://source.data.gov.uk/data/education/pupil-teacher/2009-09-30/education-statistics.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://source.data.gov.uk/data/education/edubase/2009-08-14/edubase-rdf-r2rc3.tgz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://education.data.gov.uk/doc/institution> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://education.data.gov.uk/doc/school> ] ;
         foaf:homepage         <http://education.data.gov.uk/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/education-data-gov-uk> ;
-  void:triples  400000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/education-data-gov-uk> ;
+[ void:target   lod:education-data-gov-uk , lod:dbpedia ;
   void:triples  1697
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/research-data-gov-uk> , <http://lod-cloud.net/dataset/education-data-gov-uk> ;
+[ void:target   lod:education-data-gov-uk , lod:research-data-gov-uk ;
   void:triples  379
 ] .

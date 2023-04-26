@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bio2rdf-wikipathways>
+lod:bio2rdf-wikipathways
         a                     void:Dataset ;
         dcterms:description   "WikiPathways is a resource providing an open and public collection of  pathway maps created and curated by the community in a Wiki like style. All content is under the Creative Commons Attribution 3.0 Unported license."@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
@@ -16,20 +17,20 @@
         void:exampleResource  <http://bio2rdf.org/wikipathways:WP100> ;
         void:sparqlEndpoint   <http://wikipathways.bio2rdf.org/sparql> ;
         void:triples          514397 ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Arabidopsis+thaliana.xml.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Anopheles+gambiae.xml.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/wikipathways/bio2rdf_wikipathways_sio_mapping.owl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Danio+rerio.xml.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Caenorhabditis+elegans.xml.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Canis+familiaris.xml.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/wikipathways.html> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Anopheles+gambiae.xml.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Escherichia+coli.xml.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Danio+rerio.xml.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/wikipathways/wikipathways.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Bacillus+subtilis.xml.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Equus+caballus.xml.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Drosophila+melanogaster.xml.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/bio2rdf-wikipathways.nq> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Bacillus+subtilis.xml.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/wikipathways/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Escherichia+coli.xml.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/wikipathways.html> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/wikipathways/wikipathways.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Arabidopsis+thaliana.xml.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Bos+taurus.xml.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wikipathways/Equus+caballus.xml.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/wikipathways/sitemap.xml> ] ;
         foaf:homepage         <http://wikipathways.bio2rdf.org/> .

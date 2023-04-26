@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,55 +6,43 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
+[ void:target   lod:statusnet-piana-eu , lod:statusnet-fragdev-com ;
+  void:triples  2
+] .
+
+[ void:target   lod:statusnet-piana-eu , lod:statusnet-macno-org ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
+[ void:target   lod:statusnet-piana-eu , lod:statusnet-status-cat ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gomertronic-com> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
-  void:triples  4
+[ void:target   lod:statusnet-piana-eu , lod:statusnet-skilledtests-com ;
+  void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
+[ void:target   lod:statusnet-piana-eu , lod:statusnet-status-net ;
+  void:triples  5
+] .
+
+[ void:target   lod:statusnet-piana-eu , lod:statusnet-quitter-se ;
+  void:triples  23
+] .
+
+[ void:target   lod:statusnet-piana-eu , lod:statusnet-russwurm-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-piana-eu , lod:personal-homepages ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-freelish-us> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-schiessle-org> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
+[ void:target   lod:statusnet-piana-eu , lod:statusnet-schiessle-org ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-hackerposse-com> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-cat> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
-  void:triples  2
-] .
-
-<http://lod-cloud.net/dataset/statusnet-piana-eu>
+lod:statusnet-piana-eu
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://piana.eu"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -64,6 +53,18 @@
         void:exampleResource  <http://status.piana.eu/carlopiana/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-piana-eu> ;
-  void:triples  23
+[ void:target   lod:statusnet-piana-eu , lod:statusnet-gomertronic-com ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-piana-eu , lod:statusnet-hackerposse-com ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-piana-eu , lod:statusnet-freelish-us ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-piana-eu , lod:statusnet-postblue-info ;
+  void:triples  1
 ] .

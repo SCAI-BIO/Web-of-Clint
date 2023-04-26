@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,22 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/vulnerapedia> ;
-  void:triples  89
-] .
-
-<http://lod-cloud.net/dataset/vulnerapedia>
-        a                     void:Dataset ;
+lod:vulnerapedia  a           void:Dataset ;
         dcterms:description   "Many vulnerabilities, attacks and controls semantic data of knowledge collected from OWASP, CWE and CAPEC communities.\r\nOur main objective is to improve the security that is managed in organizations, encouraging people to use security knowledge in all the application lifecycle stages and in their daily work. The use of semantic in security data generates security knowledge that improves the security processes and strategies to follow.\r\nFirstly, we must collect the data from the three web-reputed security-specialized communities. Later, we extract the enclosed knowledge following an ontology. Finally, we integrate all resources in this knowledge base."@en ;
         dcterms:publisher     [ rdfs:label  "Francisco Blanco" ;
                                 foaf:mbox   "fcojavibr@dit.upm.es"
                               ] ;
-        dcterms:subject       "web-security" , "published-by-third-party" , "security" , "lod" , "crossdomain" , "no-provenance-metadata" , "no-license-metadata" , "format-dc" , "vocab-mappings" , "lodcloud-diagram-2014-08-30" , "format-owl" , "format-doap" , "cross_domain" , "no-proprietary-vocab" ;
+        dcterms:subject       "published-by-third-party" , "security" , "lod" , "web-security" , "crossdomain" , "no-provenance-metadata" , "no-license-metadata" , "format-dc" , "lodcloud-diagram-2014-08-30" , "vocab-mappings" , "format-owl" , "format-doap" , "no-proprietary-vocab" , "cross_domain" ;
         dcterms:title         "vulnerapedia"@en ;
         void:exampleResource  <http://minsky.gsi.dit.upm.es/semanticwiki/index.php/Special:ExportRDF/Cross-site_Scripting_%28XSS%29> ;
         void:sparqlEndpoint   <http://minsky.gsi.dit.upm.es/semanticwiki/index.php/Special:SPARQLEndpoint> ;
         void:triples          14000 ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2011-11-03T123441/VulneraPedia.full.v0.5.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://minsky.gsi.dit.upm.es/semanticwiki/images/4/41/OWLMapping.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://minsky.gsi.dit.upm.es/semanticwiki/images/0/0d/XMLSitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2011-11-03T123441/VulneraPedia.full.v0.5.rdf> ] ;
         foaf:homepage         <http://minsky.gsi.dit.upm.es/semanticwiki/index.php/Main_Page> .
+
+[ void:target   lod:vulnerapedia , lod:dbpedia ;
+  void:triples  89
+] .

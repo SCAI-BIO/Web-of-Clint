@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,67 +6,66 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-de> , <http://lod-cloud.net/dataset/dbpedia-ja> ;
+[ void:target   lod:dbpedia-ja , lod:dbpedia-de ;
   void:triples  245530
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-ko> , <http://lod-cloud.net/dataset/dbpedia-ja> ;
-  void:triples  148988
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-pl> , <http://lod-cloud.net/dataset/dbpedia-ja> ;
-  void:triples  192975
-] .
-
-<http://lod-cloud.net/dataset/dbpedia-ja>
-        a                     void:Dataset ;
+lod:dbpedia-ja  a             void:Dataset ;
         dcterms:description   "DBpedia Japanese is a part of the DBpedia internationzation effort. Datasets of DBpedia Japanese are generated from dump data of Wikipedia in Japanese and include links to other DBpedia chapters and Wordnet-ja."@en ;
         dcterms:publisher     [ rdfs:label  "Fumihiro Kato" ;
                                 foaf:mbox   "fumi@fumi.me"
                               ] ;
-        dcterms:subject       "format-geo" , "format-rdf" , "access-api" , "crossdomain" , "rdf" , "format-foaf" , "access-www" , "format-owl" , "japanese" , "format-rdfs" , "published-by-producer" , "cross_domain" , "lod" , "access-bulk" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "wikipedia" , "no-proprietary-vocab" , "provenance-metadata" ;
+        dcterms:subject       "format-geo" , "format-rdf" , "access-api" , "crossdomain" , "rdf" , "format-foaf" , "access-www" , "format-owl" , "japanese" , "format-rdfs" , "published-by-producer" , "cross_domain" , "access-bulk" , "lod" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "wikipedia" , "no-proprietary-vocab" , "provenance-metadata" ;
         dcterms:title         "DBpedia in Japanese"@en ;
         void:exampleResource  <http://ja.dbpedia.org/data/???.n3> , <http://ja.dbpedia.org/data/???.rdf> ;
         void:sparqlEndpoint   <http://ja.dbpedia.org/sparql> ;
         void:triples          70790371 ;
+        dcat:distribution     [ dcat:accessURL  <http://ja.dbpedia.org/page/???> ] ;
         dcat:distribution     [ dcat:accessURL  <http://ja.dbpedia.org/dumps/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://ja.dbpedia.org/resource/???> ] ;
         dcat:distribution     [ dcat:accessURL  <http://ja.dbpedia.org/void.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://ja.dbpedia.org/page/???> ] ;
         foaf:homepage         <http://ja.dbpedia.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-ru> , <http://lod-cloud.net/dataset/dbpedia-ja> ;
-  void:triples  210254
+[ void:target   lod:dbpedia-ja , lod:dbpedia-pl ;
+  void:triples  192975
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-it> , <http://lod-cloud.net/dataset/dbpedia-ja> ;
-  void:triples  218736
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-es> , <http://lod-cloud.net/dataset/dbpedia-ja> ;
-  void:triples  210754
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/wordnet-ja> , <http://lod-cloud.net/dataset/dbpedia-ja> ;
-  void:triples  34262
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-pt> , <http://lod-cloud.net/dataset/dbpedia-ja> ;
+[ void:target   lod:dbpedia-ja , lod:dbpedia-pt ;
   void:triples  190044
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-fr> , <http://lod-cloud.net/dataset/dbpedia-ja> ;
-  void:triples  267194
+[ void:target   lod:dbpedia-ja , lod:dbpedia-it ;
+  void:triples  218736
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbpedia-ja> ;
-  void:triples  421893
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-el> , <http://lod-cloud.net/dataset/dbpedia-ja> ;
+[ void:target   lod:dbpedia-ja , lod:dbpedia-el ;
   void:triples  38115
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-cs> , <http://lod-cloud.net/dataset/dbpedia-ja> ;
+[ void:target   lod:dbpedia-ja , lod:dbpedia-fr ;
+  void:triples  267194
+] .
+
+[ void:target   lod:dbpedia-ja , lod:dbpedia-es ;
+  void:triples  210754
+] .
+
+[ void:target   lod:dbpedia-ja , lod:dbpedia-ru ;
+  void:triples  210254
+] .
+
+[ void:target   lod:dbpedia-ja , lod:dbpedia ;
+  void:triples  421893
+] .
+
+[ void:target   lod:dbpedia-ja , lod:dbpedia-ko ;
+  void:triples  148988
+] .
+
+[ void:target   lod:dbpedia-ja , lod:dbpedia-cs ;
   void:triples  101868
+] .
+
+[ void:target   lod:dbpedia-ja , lod:wordnet-ja ;
+  void:triples  34262
 ] .

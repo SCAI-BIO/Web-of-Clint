@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/traffic-scotland>
-        a                     void:Dataset ;
+lod:traffic-scotland  a       void:Dataset ;
         dcterms:description   "Data from http://trafficscotland.org converted to RDF regularly. Currently the data is only the current incidents, but hopefully this should expand."@en ;
         dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
                                 foaf:mbox   "keithalexander@keithalexander.co.uk"
@@ -19,6 +19,6 @@
         dcat:distribution     [ dcat:accessURL  <http://trafficscotland.dataincubator.org/> ] ;
         foaf:homepage         <http://seobook.blog.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/transport-data-gov-uk> , <http://lod-cloud.net/dataset/traffic-scotland> ;
+[ void:target   lod:traffic-scotland , lod:transport-data-gov-uk ;
   void:triples  151
 ] .

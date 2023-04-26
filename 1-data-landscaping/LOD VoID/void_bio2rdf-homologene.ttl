@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,42 +6,42 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bio2rdf-homologene>
+lod:bio2rdf-homologene
         a                     void:Dataset ;
         dcterms:description   "HomoloGene is a system for automated detection of homologs among the annotated genes of several completely sequenced eukaryotic genomes."@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
                               ] ;
-        dcterms:subject       "license-metadata" , "deref-vocab" , "life_sciences" , "published-by-third-party" , "lodcloud-diagram-2014-08-30" , "lod" , "format-rdf" , "format-rdfs" , "vocab-mappings" , "lodcloud-diagram-2011-09-19" , "format-dc" , "bio2rdf" , "lifesciences" , "provenance-metadata" ;
+        dcterms:subject       "license-metadata" , "deref-vocab" , "life_sciences" , "published-by-third-party" , "lodcloud-diagram-2014-08-30" , "lod" , "format-rdf" , "format-rdfs" , "lodcloud-diagram-2011-09-19" , "vocab-mappings" , "format-dc" , "bio2rdf" , "lifesciences" , "provenance-metadata" ;
         dcterms:title         "Bio2RDF::Homologene"@en ;
         void:dataDump         <http://download.bio2rdf.org/current/homologene/homologene.nq.gz> ;
         void:exampleResource  <http://bio2rdf.org/homologene:1000> ;
         void:sparqlEndpoint   <http://homologene.bio2rdf.org/sparql> ;
         void:triples          7189769 ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/homologene/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/homologene/homologene.schema.owl> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/homologene/bio2rdf_homologene_sio_mapping.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/homologene/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/homologene/homologene.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/homologene/bio2rdf_homologene_sio_mapping.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/homologene/bio2rdf-homologene.nq> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/homologene/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/homologene/homologene.html> ] ;
         foaf:homepage         <http://homologene.bio2rdf.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxonomy> , <http://lod-cloud.net/dataset/bio2rdf-homologene> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-refseq> , <http://lod-cloud.net/dataset/bio2rdf-homologene> ;
-  void:triples  275237
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-homologene> ;
-  void:triples  275237
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-homologene> ;
+[ void:target   lod:bio2rdf-homologene ;
   void:triples  44239
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-gi> , <http://lod-cloud.net/dataset/bio2rdf-homologene> ;
+[ void:target   lod:bio2rdf-homologene , lod:bio2rdf-gi ;
+  void:triples  275237
+] .
+
+[ void:target   lod:bio2rdf-homologene , lod:bio2rdf-refseq ;
+  void:triples  275237
+] .
+
+[ void:target   lod:bio2rdf-homologene , lod:bio2rdf-taxonomy ;
+  void:triples  21
+] .
+
+[ void:target   lod:bio2rdf-homologene , lod:bio2rdf-ncbigene ;
   void:triples  275237
 ] .

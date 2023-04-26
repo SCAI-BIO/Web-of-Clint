@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/icane> ;
-  void:triples  45
+[ void:target   lod:icane , lod:lista-encabezamientos-materia ;
+  void:triples  168
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-es> , <http://lod-cloud.net/dataset/icane> ;
-  void:triples  47
-] .
-
-<http://lod-cloud.net/dataset/icane>
-        a                     void:Dataset ;
+lod:icane  a                  void:Dataset ;
         dcterms:description   "The Statistical Office of Cantabria (Instituto Cántabro de Estadística, ICANE) is the public agency in charge of production and diffusion of statistical data about all aspects of society and economy in Cantabria.\r\n\r\nThis publication contains all metadata (both structural and descriptive) and data that ICANE produces according to the Linked Open Data principles.\r\n\r\nTime series are classified into sections (parent SKOS Concept Schemes), subsections (child SKOS Concept Schemes), categories (a special type defined by ICANE) and subjects (SKOS concepts, which appear as folders on the website, and are organized hierarchically). \r\n\r\nA [custom ICANE vocabulary](http://www.icane.es/opendata/vocab) was created to aid in the task of navigating the publication, and is used along other well-known and widely used vocabularies (RDFS, DCTerms, SKOS, FOAF and VOiD).\r\n\r\nMetadata is presented, when possible, embedded into XHTML as RDFa, and links for live data dumps are provided for all series, which use the RDF Data Cube Vocabulary.\r\n\r\nA [publicly accessible SPARQL endpoint](http://www.icane.es/opendata/sparql) is also provided, with [a form for easily submitting queries](http://www.icane.es/semantic-web) present on the intro page (in Spanish)."@en ;
         dcterms:publisher     [ rdfs:label  "Instituto Cántabro de Estadística" ;
                                 foaf:mbox   "buzon@icane.es"
@@ -24,30 +20,34 @@
         void:exampleResource  <http://www.icane.es/economy#section> , <http://www.icane.es/population#section> , <http://www.icane.es/territory-environment#section> , <http://www.icane.es/society#section> , <http://www.icane.es/data/regional-data/economy/labour-market/active-population-economic-sector-nace09#timeseries> ;
         void:sparqlEndpoint   <http://www.icane.es/opendata/sparql> ;
         void:triples          52412 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.icane.es/metadata/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.icane.es/opendata/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.icane.es/data/api/regional-data/economy/labour-market/active-population-economic-sector-nace09.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.icane.es/semantic-web> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.icane.es/statistical-api> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.icane.es/opendata/vocab> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.icane.es/data/api/regional-data/economy/labour-market/active-population-economic-sector-nace09.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.icane.es/opendata/void> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.icane.es/metadata/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.icane.es/semantic-web> ] ;
         foaf:homepage         <http://www.icane.es/semantic-web> .
 
-[ void:target   <http://lod-cloud.net/dataset/ine> , <http://lod-cloud.net/dataset/icane> ;
+[ void:target   lod:icane , lod:eurostat ;
+  void:triples  22
+] .
+
+[ void:target   lod:icane , lod:ine ;
   void:triples  251
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lista-encabezamientos-materia> , <http://lod-cloud.net/dataset/icane> ;
-  void:triples  168
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/icane> ;
+[ void:target   lod:icane , lod:geonames ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/icane> ;
-  void:triples  151
+[ void:target   lod:icane , lod:dbpedia ;
+  void:triples  45
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/eurostat> , <http://lod-cloud.net/dataset/icane> ;
-  void:triples  22
+[ void:target   lod:icane , lod:dbpedia-es ;
+  void:triples  47
+] .
+
+[ void:target   lod:icane , lod:lcsh ;
+  void:triples  151
 ] .

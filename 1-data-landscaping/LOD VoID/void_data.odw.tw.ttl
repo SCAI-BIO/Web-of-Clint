@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/data.odw.tw>
-        a                    void:Dataset ;
+lod:data.odw.tw  a           void:Dataset ;
         dcterms:description  "A Taiwan Linked Data Platform (data.odw.tw) build by the Institute of Information Science, Academia Sinica. The LOD site using CKAN (The Comprehensive Knowledge Archive Network) to curate more than 840,000 semantically enriched catalogue records (CC0 licensed) across multiple subject areas. Two types of linked data resources are generated: one type is simply described by Dublin Core 15 elements (DC Version), and the other type is enriched by W3C recommendations (csvw, dcat, org, prov, skos, time), general upper vocabularies (cc, dc, dct, event, foaf, r4r, and schema.org) as well as domain vocabularies (aat, dwc, geo, gn and txn). Datasets are further linked to external knowledge bases including Wikidata, GeoNames, and Encyclopedia of Life(EOL)."@en ;
         dcterms:publisher    [ rdfs:label  "Andrea Wei-Ching Huang" ;
                                foaf:mbox   "andreahg@iis.sinica.edu.tw"
                              ] ;
-        dcterms:subject      "Linked Open Data" , "LODLAM" , "Data Reuse" , "Ontology" , "Semantic Representation" , "GLAM" , "Semantic Web" , "Knowledge Base" , "CKAN" , "Provenance" , "Cultural Heritage" , "Data Quality" , "cross_domain" , "LOD" , "Taiwan" , " " ;
+        dcterms:subject      "Linked Open Data" , "LODLAM" , "Data Reuse" , "Ontology" , "Semantic Representation" , "CKAN" , "Knowledge Base" , "GLAM" , "Semantic Web" , "Provenance" , "Cultural Heritage" , "Data Quality" , "LOD" , "cross_domain" , "Taiwan" , " " ;
         dcterms:title        "Open Data Web"@en ;
         void:sparqlEndpoint  <http://sparql.odw.tw/> , <http://data.odw.tw/sparql> ;
         void:triples         70719704 ;

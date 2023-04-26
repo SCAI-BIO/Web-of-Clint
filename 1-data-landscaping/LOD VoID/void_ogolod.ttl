@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,26 +6,25 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-chebi> , <http://lod-cloud.net/dataset/ogolod> ;
-  void:triples  3456570
-] .
-
-<http://lod-cloud.net/dataset/ogolod>
-        a                     void:Dataset ;
+lod:ogolod  a                 void:Dataset ;
         dcterms:description   "The OGOLOD system, an extension of the OGO Knowledge Base, publishes ortholog/diseases information using Linked Data. This gives the scientists the ability to query the structured information in connection with other Linked\r\nData and to discover new information in the cloud, related to orthologs and human diseases."@en ;
         dcterms:publisher     [ rdfs:label  "José Antonio Miñarro Gimenez and Mikel Egaña Aranguren" ;
                                 foaf:mbox   "megana@fi.upm.es"
                               ] ;
-        dcterms:subject       "deref-vocab" , "life_sciences" , "provenance-metadata" , "no-vocab-mappings" , "lifesciences" , "format-ogo" , "diseases-information-orthology" , "published-by-third-party" , "no-license-metadata" , "lod" ;
+        dcterms:subject       "deref-vocab" , "life_sciences" , "provenance-metadata" , "lifesciences" , "diseases-information-orthology" , "format-ogo" , "no-vocab-mappings" , "published-by-third-party" , "no-license-metadata" , "lod" ;
         dcterms:title         "Orthology and Diseases Information - OGO"@en ;
         void:exampleResource  <http://miuras.inf.um.es/dump/dump.rdf> ;
         void:sparqlEndpoint   <http://miuras.inf.um.es/sparql> ;
         void:triples          38035102 ;
-        dcat:distribution     [ dcat:accessURL  <http://miuras.inf.um.es/sitemap_index.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://miuras.inf.um.es/lod/ogolod2.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://miuras.inf.um.es/sitemap_index.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://miuras.inf.um.es/lod/voidogolod.ttl> ] ;
         foaf:homepage         <http://miuras.inf.um.es/~ogo/ogolod.html> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/ogolod> ;
+[ void:target   lod:ogolod , lod:bio2rdf-omim ;
   void:triples  18141
+] .
+
+[ void:target   lod:ogolod , lod:bio2rdf-chebi ;
+  void:triples  3456570
 ] .

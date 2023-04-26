@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-health-rank-la-2010> ;
+[ void:target   lod:opendatacommunities-societal-wellbeing-deprivation-imd-health-rank-la-2010 , lod:statistics-data-gov-uk ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-health-rank-la-2010> ;
-  void:triples  1
-] .
-
-<http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-health-rank-la-2010>
+lod:opendatacommunities-societal-wellbeing-deprivation-imd-health-rank-la-2010
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "LinkedDataCrawl2014" , "dataset-level-metadata" , "license-metadata" , "format-void" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "format-rdf" , "dump" , "government" , "sparql" , "format-dcterm" , "crawledLinkedDataCloud2014" , "format-cube" , "format-dcat" , "format-rdfs" ;
+        dcterms:subject       "LinkedDataCrawl2014" , "dataset-level-metadata" , "license-metadata" , "format-void" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "format-rdf" , "dump" , "government" , "format-dcterm" , "sparql" , "crawledLinkedDataCloud2014" , "format-cube" , "format-dcat" , "format-rdfs" ;
         dcterms:title         "opendatacommunities-societal-wellbeing-deprivation-imd-health-rank-la-2010"@en ;
         void:exampleResource  <http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-health-rank-la-2010/E07000187> ;
         void:triples          "0"^^xsd:int .
+
+[ void:target   lod:opendatacommunities-societal-wellbeing-deprivation-imd-health-rank-la-2010 , lod:reference-data-gov-uk ;
+  void:triples  1
+] .

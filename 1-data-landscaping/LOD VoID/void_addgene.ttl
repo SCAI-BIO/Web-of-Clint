@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/addgene>
-        a                    void:Dataset ;
+lod:addgene  a               void:Dataset ;
         dcterms:description  "Data exposed: Addgene catalog (tab delimited file)\r\n\r\nSize of dump and data set: 1.1 MB\r\n\r\nNotes: provided to Science Commons by Addgene\r\n\r\n### Openness: ?\r\n\r\nT&C here: http://www.addgene.org/pgvec1?f=a&cmd=showfile&file=terms\r\n\r\nHowever hard to work out what these mean ..."@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "license-unclear" , "lodcloud.unconnected" , "format-rdf" , "linkeddata" , "lodcloud.nolinks" , "genetics" , "size-small" , "lod" , "ckanupload.esw.200910" , "life_sciences" , "rdf" ;
+        dcterms:subject      "license-unclear" , "format-rdf" , "lodcloud.unconnected" , "linkeddata" , "lodcloud.nolinks" , "genetics" , "size-small" , "ckanupload.esw.200910" , "lod" , "life_sciences" , "rdf" ;
         dcterms:title        "Addgene"@en ;
         void:triples         16610 ;
         dcat:distribution    [ dcat:accessURL  <http://purl.org/hcls/2007/kb-sources/addgene.ttl> ] ;

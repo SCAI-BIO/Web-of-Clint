@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/CPC>
-        a                     void:Dataset ;
+lod:CPC  a                    void:Dataset ;
         dcterms:description   "This data set contains the Cooperative Patent Classification scheme. It is a hierarchical ontology with skos:narrower and skos:broader relations between its about 250 000 nodes (aka \"CPC symbols\") covering the complete technical domain. It is a refinement of the older International Patent Classification (IPC). CPC is used by major patent offices to classify patent documents.\nFor more details see https://www.cooperativepatentclassification.org/"@en ;
         dcterms:publisher     [ rdfs:label  "Martin Kracker / European Patent Office" ;
                                 foaf:mbox   "mkracker@epo.org"
@@ -19,6 +19,6 @@
         void:triples          3450000 ;
         foaf:homepage         <https://www.epo.org/linked-data/> .
 
-[ void:target   <http://lod-cloud.net/dataset/European Patent Information> , <http://lod-cloud.net/dataset/CPC> ;
+[ void:target   lod:CPC , <http://lod-cloud.net/dataset/European+Patent+Information> ;
   void:triples  177000
 ] .

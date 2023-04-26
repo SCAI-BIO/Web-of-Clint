@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bioportal-mhc>
-        a                    void:Dataset ;
+lod:bioportal-mhc  a         void:Dataset ;
         dcterms:description  "The MaHCO contains terms necessary for describing and categorizing concepts related to MHC, in general, and for a number of model species, and also for humans. "@en ;
         dcterms:publisher    [ rdfs:label  "David S. DeLuca" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "ontology" , "published-by-third-party" , "format-rdf" , "biomedicine" , "lod" , "life_sciences" , "format-owl" , "bioportal" ;
+        dcterms:subject      "ontology" , "published-by-third-party" , "format-rdf" , "biomedicine" , "lod" , "format-owl" , "life_sciences" , "bioportal" ;
         dcterms:title        "MaHCO - An MHC Ontology"@en ;
         void:triples         1025 ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
@@ -19,22 +19,22 @@
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/39804?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1088> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-mhc> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-mhc> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-mhc> ;
+[ void:target   lod:bioportal-mhc , lod:bioportal-snomedct ;
   void:triples  14
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-mhc> ;
+[ void:target   lod:bioportal-mhc , lod:bioportal-csp ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-mhc> ;
+[ void:target   lod:bioportal-mhc , lod:bioportal-nif ;
+  void:triples  19
+] .
+
+[ void:target   lod:bioportal-mhc , lod:bioportal-ncit ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-mhc , lod:bioportal-canco ;
   void:triples  10
 ] .

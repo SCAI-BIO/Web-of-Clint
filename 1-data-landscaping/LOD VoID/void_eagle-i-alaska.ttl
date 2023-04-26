@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,53 +6,52 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/eagle-i-alaska>
-        a                     void:Dataset ;
+lod:eagle-i-alaska  a         void:Dataset ;
         dcterms:description   "Groundbreaking biomedical research requires access to cutting edge scientific resources; however such resources are often invisible beyond the laboratories or universities where they were developed. eagle-i is a national research resource discovery platform to help biomedical scientists search for and find previously invisible, but highly valuable, resources. \r\nResource descriptions collected at each participating institution are freely available as linked open data.\r\nSee: http://www.eagle-i.net/"@en ;
         dcterms:publisher     [ rdfs:label  "The eagle-i Network" ;
                                 foaf:mbox   "info@eagle-i.org"
                               ] ;
-        dcterms:subject       "format-ro" , "format-vivo" , "format-foaf" , "format-dc" , "format-pobo" , "format-oboso" , "life_sciences" , "format-bibo" , "published-by-producer" , "provenance-metadata" , "format-ncbitaxon" , "format-ero" , "lifesciences" , "deref-vocab" , "vocab-mappings" , "lod" ;
+        dcterms:subject       "format-ro" , "format-vivo" , "format-dc" , "format-foaf" , "format-pobo" , "format-oboso" , "format-bibo" , "published-by-producer" , "life_sciences" , "format-ero" , "format-ncbitaxon" , "provenance-metadata" , "lifesciences" , "deref-vocab" , "vocab-mappings" , "lod" ;
         dcterms:title         "eagle-i @ University of Alaska Fairbanks"@en ;
         void:exampleResource  <http://alaska.eagle-i.net/i/0000012a-25c2-5d13-76e0-f22c80000005?format=application/xml> ;
         void:sparqlEndpoint   <http://alaska.eagle-i.net/sparqler/sparql> ;
         void:triples          15000 ;
-        dcat:distribution     [ dcat:accessURL  <http://alaska.eagle-i.net/sparqler/sparql?view=published-resources&format=text/turtle&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E+PREFIX+%3A+%3Chttp%3A%2F%2Feagle-i.org%2Font%2Frepo%2F1.0%2F%3E+construct+%7B%3Fs+%3Fp+%3Fo+.+%3Fp+rdfs%3Alabel+%3Fp_label+.+%3Fo+rdfs%3Alabel+%3Fo_label%7D+where+%7Bgraph+%3ANG_Published%7B%3Fs+%3Fp+%3Fo%7D+.+optional%7B%3Fp+rdfs%3Alabel+%3Fp_label+%7D+.+optional%7B+%3Fo+rdfs%3Alabel+%3Fo_label%7D%7D+> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://alaska.eagle-i.net/sparqler/sparql?view=published-resources&format=text/turtle&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E+PREFIX+%3A+%3Chttp%3A%2F%2Feagle-i.org%2Font%2Frepo%2F1.0%2F%3E+construct+%7B%3Fs+%3Fp+%3Fo+.+%3Fs+a+%3Ftype+.+%3Ftype+rdfs%3Alabel+%3Ftype_label+.+%3Fp+rdfs%3Alabel+%3Fp_label+.+%3Fo+rdfs%3Alabel+%3Fo_label%7D+where+%7Bgraph+%3ANG_Published%7B%3Fs+%3Fp+%3Fo%7D+.+optional%7B%3Fs+a+%3Ftype%7D+.+optional%7B%3Ftype+rdfs%3Alabel+%3Ftype_label%7D+.+optional%7B%3Fp+rdfs%3Alabel+%3Fp_label+%7D+.+optional%7B+%3Fo+rdfs%3Alabel+%3Fo_label%7D%7D+> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://alaska.eagle-i.net/sparqler/sparql> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://alaska.eagle-i.net/sparqler/sparql> ] ;
         foaf:homepage         <http://alaska.eagle-i.net> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-swo> , <http://lod-cloud.net/dataset/eagle-i-alaska> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/eagle-i-alaska> ;
-  void:triples  434
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-iao> , <http://lod-cloud.net/dataset/eagle-i-alaska> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ocre> , <http://lod-cloud.net/dataset/eagle-i-alaska> ;
+[ void:target   lod:eagle-i-alaska , lod:bioportal-ocre ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/eagle-i-alaska> ;
-  void:triples  272
+[ void:target   lod:eagle-i-alaska , lod:bioportal-swo ;
+  void:triples  32
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/eagle-i-alaska> ;
-  void:triples  24
+[ void:target   lod:eagle-i-alaska , lod:bioportal-ero ;
+  void:triples  434
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncbitaxon> , <http://lod-cloud.net/dataset/eagle-i-alaska> ;
-  void:triples  15
+[ void:target   lod:eagle-i-alaska , lod:bioportal-vivo ;
+  void:triples  181
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x2> , <http://lod-cloud.net/dataset/eagle-i-alaska> ;
+[ void:target   lod:eagle-i-alaska , lod:bioportal-go_x2 ;
   void:triples  26
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vivo> , <http://lod-cloud.net/dataset/eagle-i-alaska> ;
-  void:triples  181
+[ void:target   lod:eagle-i-alaska , lod:bioportal-msh ;
+  void:triples  24
+] .
+
+[ void:target   lod:eagle-i-alaska , lod:bioportal-ncbitaxon ;
+  void:triples  15
+] .
+
+[ void:target   lod:eagle-i-alaska , lod:bioportal-obi ;
+  void:triples  272
+] .
+
+[ void:target   lod:eagle-i-alaska , lod:bioportal-iao ;
+  void:triples  3
 ] .

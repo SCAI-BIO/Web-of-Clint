@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,18 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/betweenourworlds> ;
-  void:triples  3443
-] .
-
-<http://lod-cloud.net/dataset/betweenourworlds>
-        a                    void:Dataset ;
+lod:betweenourworlds  a      void:Dataset ;
         dcterms:description  "A dataset that provides metadata information about anime."@en ;
         dcterms:publisher    [ rdfs:label  "Pieter Heyvaert" ;
                                foaf:mbox   "pieterheyvaert@gmail.com"
                              ] ;
         dcterms:subject      "trailer" , "movie" , "media" , "article" , "stream" , "episode" , "character" , "anime" , "series" , "season" ;
         dcterms:title        "Between Our Worlds"@en ;
-        void:dataDump        <https://datadump.betweenourworlds.org/2020-09.hdt> , <https://datadump.betweenourworlds.org/2022-05.hdt> , <https://datadump.betweenourworlds.org/2021-12.hdt> , <https://datadump.betweenourworlds.org/2019-07.hdt> , <https://datadump.betweenourworlds.org/2020-11.hdt> , <https://datadump.betweenourworlds.org/2020-04.hdt> , <https://datadump.betweenourworlds.org/2021-09.hdt> , <https://datadump.betweenourworlds.org/2020-08.hdt> , <https://datadump.betweenourworlds.org/2021-02.hdt> , <https://datadump.betweenourworlds.org/2020-06.hdt> , <https://datadump.betweenourworlds.org/2019-11.hdt> , <https://datadump.betweenourworlds.org/2020-10.hdt> , <https://datadump.betweenourworlds.org/2021-08.hdt> , <https://datadump.betweenourworlds.org/2020-07.hdt> , <https://datadump.betweenourworlds.org/2019-06.hdt> , <https://datadump.betweenourworlds.org/2022-04.hdt> , <https://datadump.betweenourworlds.org/2020-03.hdt> , <https://datadump.betweenourworlds.org/2019-08.hdt> , <https://datadump.betweenourworlds.org/2019-12.hdt> , <https://datadump.betweenourworlds.org/2018-10.hdt> , <https://datadump.betweenourworlds.org/2021-05.hdt> , <https://datadump.betweenourworlds.org/2021-01.hdt> , <https://datadump.betweenourworlds.org/2021-10.hdt> , <https://datadump.betweenourworlds.org/2022-03.hdt> , <https://datadump.betweenourworlds.org/2020-12.hdt> , <https://datadump.betweenourworlds.org/2021-03.hdt> , <https://datadump.betweenourworlds.org/2018-09.hdt> , <https://datadump.betweenourworlds.org/2020-02.hdt> , <https://datadump.betweenourworlds.org/2021-07.hdt> , <https://datadump.betweenourworlds.org/2019-10.hdt> , <https://datadump.betweenourworlds.org/2021-04.hdt> , <https://datadump.betweenourworlds.org/2019-09.hdt> , <https://datadump.betweenourworlds.org/2020-05.hdt> , <https://datadump.betweenourworlds.org/2018-12.hdt> , <https://datadump.betweenourworlds.org/2022-01.hdt> , <https://datadump.betweenourworlds.org/2022-02.hdt> , <https://datadump.betweenourworlds.org/2021-06.hdt> , <https://datadump.betweenourworlds.org/2020-01.hdt> , <https://datadump.betweenourworlds.org/2019-01.hdt> , <https://datadump.betweenourworlds.org/2018-11.hdt> , <https://datadump.betweenourworlds.org/2021-11.hdt> ;
+        void:dataDump        <https://datadump.betweenourworlds.org/2020-09.hdt> , <https://datadump.betweenourworlds.org/2022-05.hdt> , <https://datadump.betweenourworlds.org/2021-12.hdt> , <https://datadump.betweenourworlds.org/2019-07.hdt> , <https://datadump.betweenourworlds.org/2020-11.hdt> , <https://datadump.betweenourworlds.org/2020-04.hdt> , <https://datadump.betweenourworlds.org/2021-09.hdt> , <https://datadump.betweenourworlds.org/2020-08.hdt> , <https://datadump.betweenourworlds.org/2021-02.hdt> , <https://datadump.betweenourworlds.org/2020-06.hdt> , <https://datadump.betweenourworlds.org/2019-11.hdt> , <https://datadump.betweenourworlds.org/2020-10.hdt> , <https://datadump.betweenourworlds.org/2021-08.hdt> , <https://datadump.betweenourworlds.org/2020-07.hdt> , <https://datadump.betweenourworlds.org/2019-06.hdt> , <https://datadump.betweenourworlds.org/2022-04.hdt> , <https://datadump.betweenourworlds.org/2020-03.hdt> , <https://datadump.betweenourworlds.org/2019-08.hdt> , <https://datadump.betweenourworlds.org/2019-12.hdt> , <https://datadump.betweenourworlds.org/2018-10.hdt> , <https://datadump.betweenourworlds.org/2021-05.hdt> , <https://datadump.betweenourworlds.org/2021-01.hdt> , <https://datadump.betweenourworlds.org/2021-10.hdt> , <https://datadump.betweenourworlds.org/2022-03.hdt> , <https://datadump.betweenourworlds.org/2020-12.hdt> , <https://datadump.betweenourworlds.org/2021-03.hdt> , <https://datadump.betweenourworlds.org/2018-09.hdt> , <https://datadump.betweenourworlds.org/2020-02.hdt> , <https://datadump.betweenourworlds.org/2021-07.hdt> , <https://datadump.betweenourworlds.org/2019-10.hdt> , <https://datadump.betweenourworlds.org/2021-04.hdt> , <https://datadump.betweenourworlds.org/2019-09.hdt> , <https://datadump.betweenourworlds.org/2020-05.hdt> , <https://datadump.betweenourworlds.org/2018-12.hdt> , <https://datadump.betweenourworlds.org/2022-01.hdt> , <https://datadump.betweenourworlds.org/2022-02.hdt> , <https://datadump.betweenourworlds.org/2021-06.hdt> , <https://datadump.betweenourworlds.org/2020-01.hdt> , <https://datadump.betweenourworlds.org/2019-01.hdt> , <https://datadump.betweenourworlds.org/2021-11.hdt> , <https://datadump.betweenourworlds.org/2018-11.hdt> ;
         void:triples         4338673 ;
         foaf:homepage        <https://betweenourworlds.org> .
+
+[ void:target   lod:betweenourworlds , lod:dbpedia ;
+  void:triples  3443
+] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,9 +6,9 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/museosespania-gnoss>
+lod:museosespania-gnoss
         a                     void:Dataset ;
-        dcterms:description   "<p>\r\n<a href=\"http://museos.gnoss.com/en/community/mismuseos\">Museos de España</a>\r\n is a directory that allows facet-based searches on a collection with more than 1,500 dynamic pages of public and private Spanish museums. Museos de España works with \r\n<a href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>\r\n</p>\r\n\r\n<p>\r\n<a href=\"http://museos.gnoss.com/comunidad/mismuseos\">Museos de España</a>\r\nes un directorio que permite realizar búsquedas facetadas sobre una colección que reúne las fichas de más de 1.500 museos públicos y privados españoles. Museos de España funciona sobre\r\n<a href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>\r\n</p>"@en ;
+        dcterms:description   "<p>\r\n<a+href=\"http://museos.gnoss.com/en/community/mismuseos\">Museos de España</a>\r\n is a directory that allows facet-based searches on a collection with more than 1,500 dynamic pages of public and private Spanish museums. Museos de España works with \r\n<a+href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>\r\n</p>\r\n\r\n<p>\r\n<a+href=\"http://museos.gnoss.com/comunidad/mismuseos\">Museos de España</a>\r\nes un directorio que permite realizar búsquedas facetadas sobre una colección que reúne las fichas de más de 1.500 museos públicos y privados españoles. Museos de España funciona sobre\r\n<a+href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>\r\n</p>"@en ;
         dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
                                 foaf:mbox   "gnoss@gnoss.com"
                               ] ;
@@ -15,30 +16,30 @@
         dcterms:title         "Museos de España, colección de museos públicos y privados españoles (GNOSS)"@en ;
         void:exampleResource  <http://museos.gnoss.com/en/community/mismuseos/resource/MUSEO-SOROLLA/67800771-4cc6-4acf-9089-dd6c931d1726?rdf> , <http://museos.gnoss.com/en/community/mismuseos/resource/MUSEO-NACIONAL-DEL-PRADO/c9b9b89c-0281-491b-8631-656ddd504be5?rdf> , <http://museos.gnoss.com/en/community/mismuseos/advanced-search/tag/arte?rdf> ;
         void:triples          79065 ;
-        dcat:distribution     [ dcat:accessURL  <http://museos.gnoss.com/voidMuseosdeEspañaGNOSS.n3> ] ;
         dcat:distribution     [ dcat:accessURL  <http://gnoss.com/gnoss.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://museos.gnoss.com/voidMuseosdeEspañaGNOSS.n3> ] ;
         foaf:homepage         <http://museos.gnoss.com/comunidad/mismuseos/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/museosespania-gnoss> ;
-  void:triples  6158
+[ void:target   lod:museosespania-gnoss , lod:nytimes-linked-open-data ;
+  void:triples  128835
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/gnoss> , <http://lod-cloud.net/dataset/museosespania-gnoss> ;
+[ void:target   lod:museosespania-gnoss , lod:gnoss ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/mismuseos-gnoss> , <http://lod-cloud.net/dataset/museosespania-gnoss> ;
+[ void:target   lod:museosespania-gnoss , lod:mismuseos-gnoss ;
   void:triples  7725
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/museosespania-gnoss> ;
-  void:triples  140275
+[ void:target   lod:museosespania-gnoss , lod:geonames-semantic-web ;
+  void:triples  6158
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/museosespania-gnoss> ;
+[ void:target   lod:museosespania-gnoss , lod:freebase ;
   void:triples  3309
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/museosespania-gnoss> ;
-  void:triples  128835
+[ void:target   lod:museosespania-gnoss , lod:dbpedia ;
+  void:triples  140275
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,67 +6,67 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-legadolibre-com-ar> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
-  void:triples  8
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-davidhaberthuer-ch ;
+  void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
-  void:triples  9
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-sweetiebelle-net> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-sweetiebelle-net ;
   void:triples  131
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
-  void:triples  69
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
-  void:triples  60
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-mamalibre-com-ar> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-freelish-us> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-legadolibre-com-ar ;
   void:triples  8
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
-  void:triples  43
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ourcoffs-org-au> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-ourcoffs-org-au ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-tekk-com-ar> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
-  void:triples  1
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-morphtown-de ;
+  void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-equestriarp-net> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-equestriarp-net ;
   void:triples  20
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-rainbowdash-net>
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-fragdev-com ;
+  void:triples  9
+] .
+
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-skilledtests-com ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-freelish-us ;
+  void:triples  8
+] .
+
+[ void:target   lod:statusnet-rainbowdash-net , lod:personal-homepages ;
+  void:triples  60
+] .
+
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-macno-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-status-net ;
+  void:triples  69
+] .
+
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-tekk-com-ar ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-mamalibre-com-ar ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-postblue-info ;
+  void:triples  10
+] .
+
+lod:statusnet-rainbowdash-net
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://rainbowdash.net"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -76,6 +77,6 @@
         void:exampleResource  <http://rainbowdash.net/beatsperpony/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> ;
-  void:triples  4
+[ void:target   lod:statusnet-rainbowdash-net , lod:statusnet-quitter-se ;
+  void:triples  43
 ] .

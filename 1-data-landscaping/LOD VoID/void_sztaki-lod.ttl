@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,32 +6,31 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/sztaki-lod> ;
-  void:triples  59356
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/sztaki-lod> ;
-  void:triples  13034
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/hungarian-national-library-catalog> , <http://lod-cloud.net/dataset/sztaki-lod> ;
-  void:triples  99709
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/sztaki-lod> ;
-  void:triples  388854
-] .
-
-<http://lod-cloud.net/dataset/sztaki-lod>
-        a                     void:Dataset ;
+lod:sztaki-lod  a             void:Dataset ;
         dcterms:description   "This dataset aims at publishing the contents of Hungarian archives as Linked Open Data based on the National Digital Data Archive of Hungary. The dataset contains information about books, movies, articles published in Hungary and some of its resources are linked to other datasets (e.g. DBpedia, VIAF, NSZL)."@en ;
         dcterms:publisher     [ rdfs:label  "SZTAKI DSD" ;
                                 foaf:mbox   "webmaster@dsd.sztaki.hu"
                               ] ;
-        dcterms:subject       "no-proprietary-vocab" , "rdf" , "lod" , "format-dbpedia" , "no-license-metadata" , "no-provenance-metadata" , "linkeddata" , "format-dc" , "catalog" , "publications" , "country-hungary" , "sparql" , "format-foaf" , "format-rdf" , "published-by-producer" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:subject       "no-proprietary-vocab" , "lod" , "rdf" , "format-dbpedia" , "no-license-metadata" , "no-provenance-metadata" , "linkeddata" , "format-dc" , "catalog" , "publications" , "country-hungary" , "format-foaf" , "sparql" , "format-rdf" , "published-by-producer" , "lodcloud-diagram-2014-08-30" ;
         dcterms:title         "National Digital Data Archive of Hungary (partial)"@en ;
         void:exampleResource  <http://lod.sztaki.hu/data/auth/287922.xml> ;
         void:sparqlEndpoint   <http://lod.sztaki.hu/sparql> ;
         void:triples          11000000 ;
         dcat:distribution     [ dcat:accessURL  <http://lod.sztaki.hu/data/item/146675.xml> ] ;
         foaf:homepage         <http://lod.sztaki.hu/> .
+
+[ void:target   lod:sztaki-lod , lod:hungarian-national-library-catalog ;
+  void:triples  99709
+] .
+
+[ void:target   lod:sztaki-lod , lod:lexvo ;
+  void:triples  388854
+] .
+
+[ void:target   lod:sztaki-lod , lod:dbpedia ;
+  void:triples  13034
+] .
+
+[ void:target   lod:sztaki-lod , lod:viaf ;
+  void:triples  59356
+] .

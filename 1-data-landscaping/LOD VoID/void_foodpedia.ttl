@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/foodpedia>
-        a                    void:Dataset ;
+lod:foodpedia  a             void:Dataset ;
         dcterms:description  "At this moment FOODpedia contains information about only Russian food products and ingredients that was crawled from [GoodsMatrix](http://goodsmatrix.ru/) web site. Also it has links to ingredients from [AGROVOC](http://datahub.io/dataset/agrovoc-skos)."@en ;
         dcterms:publisher    [ rdfs:label  "Maxim Kolchin" ;
                                foaf:mbox   "kolchinmax@gmail.com"
@@ -16,14 +16,14 @@
         void:sparqlEndpoint  <http://foodpedia.tk/sparql> ;
         void:triples         888223 ;
         dcat:distribution    [ dcat:accessURL  <http://foodpedia.tk/page/4601242311914> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://foodpedia.tk/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://foodpedia.tk/resource/4601242311914?output=ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://foodpedia.tk/> ] ;
         foaf:homepage        <http://foodpedia.tk> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/foodpedia> ;
+[ void:target   lod:foodpedia , lod:dbpedia ;
   void:triples  823
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/agrovoc> , <http://lod-cloud.net/dataset/foodpedia> ;
+[ void:target   lod:foodpedia , lod:agrovoc ;
   void:triples  426
 ] .

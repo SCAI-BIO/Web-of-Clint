@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/linked-periodicals>
+lod:linked-periodicals
         a                    void:Dataset ;
         dcterms:description  "The Linked Periodicals Database is a data set from the [Data Incubator](http://dataincubator.org/) which aggregates journal metadata provided by [CrossRef](http://crossref.org), [Highwire Press](http://highwire.stanford.edu/) and the [National Library of Medicine](http://www.nlm.nih.gov).\r\n\r\nIncluded in the data are resources for journals and publishers which are available as RDF and JSON. "@en ;
         dcterms:publisher    [ rdfs:label  "" ;
@@ -16,11 +17,11 @@
         void:triples         100000000 ;
         dcat:distribution    [ dcat:accessURL  <http://periodicals.dataincubator.org/organization/nature-publishing-group.rdf> ] ;
         dcat:distribution    [ dcat:accessURL  <http://periodicals.dataincubator.org/journal/nature.turtle> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://periodicals.dataincubator.org/organization/nature-publishing-group.turtle> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://periodicals.dataincubator.org/organization/nature-publishing-group.json> ] ;
         dcat:distribution    [ dcat:accessURL  <http://api.talis.com/stores/periodicals/services/sparql> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://periodicals.dataincubator.org/journal/nature.json> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://periodicals.dataincubator.org/journal/nature.rdf> ] ;
         dcat:distribution    [ dcat:accessURL  <http://periodicals.dataincubator.org/organization/nature-publishing-group> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://periodicals.dataincubator.org/journal/nature.json> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://periodicals.dataincubator.org/organization/nature-publishing-group.turtle> ] ;
         dcat:distribution    [ dcat:accessURL  <http://periodicals.dataincubator.org/journal/nature> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://periodicals.dataincubator.org/journal/nature.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://periodicals.dataincubator.org/organization/nature-publishing-group.json> ] ;
         foaf:homepage        <http://periodicals.dataincubator.org/> .

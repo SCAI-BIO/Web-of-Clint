@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cco> , <http://lod-cloud.net/dataset/bioportal-mego> ;
-  void:triples  25
+[ void:target   lod:bioportal-mego , lod:bioportal-snpo ;
+  void:triples  31
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x2> , <http://lod-cloud.net/dataset/bioportal-mego> ;
-  void:triples  128
+[ void:target   lod:bioportal-mego , lod:bioportal-csp ;
+  void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-mego> ;
-  void:triples  14
+[ void:target   lod:bioportal-mego , lod:bioportal-msh ;
+  void:triples  17
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-mego>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-mego , lod:bioportal-go_x1 ;
+  void:triples  121
+] .
+
+lod:bioportal-mego  a        void:Dataset ;
         dcterms:description  "bacteriophage and plasmid reproduction and maintenance processes"@en ;
         dcterms:publisher    [ rdfs:label  "Ariane Toussaint" ;
                                foaf:mbox   ""
@@ -27,38 +31,34 @@
         dcterms:title        "MeGO"@en ;
         void:triples         4696 ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/39976?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1257> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snpo> , <http://lod-cloud.net/dataset/bioportal-mego> ;
+[ void:target   lod:bioportal-mego , lod:bioportal-sopharm ;
   void:triples  31
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x1> , <http://lod-cloud.net/dataset/bioportal-mego> ;
-  void:triples  121
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-so_x1> , <http://lod-cloud.net/dataset/bioportal-mego> ;
+[ void:target   lod:bioportal-mego , lod:bioportal-so_x1 ;
   void:triples  32
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-mego> ;
-  void:triples  31
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-mego> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nigo> , <http://lod-cloud.net/dataset/bioportal-mego> ;
+[ void:target   lod:bioportal-mego , lod:bioportal-nigo ;
   void:triples  20
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-mego> ;
+[ void:target   lod:bioportal-mego , lod:bioportal-go_x2 ;
+  void:triples  128
+] .
+
+[ void:target   lod:bioportal-mego , lod:bioportal-nif ;
   void:triples  55
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-mego> ;
-  void:triples  10
+[ void:target   lod:bioportal-mego , lod:bioportal-cco ;
+  void:triples  25
+] .
+
+[ void:target   lod:bioportal-mego , lod:bioportal-ncit ;
+  void:triples  14
 ] .

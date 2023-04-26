@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/bbc-music> ;
-  void:triples  23000
-] .
-
-<http://lod-cloud.net/dataset/bbc-music>
-        a                     void:Dataset ;
+lod:bbc-music  a              void:Dataset ;
         dcterms:description   "BBC Music is a team working in the department of Audio and Music Interactive at the BBC. Responsible for the BBC Music website - the portal site to music content across the BBC website. It is also the location of the BBC's album reviews, covering all major releases in every genre on a monthly basis and written by a wide range of music experts. Contributors include Andrew Mueller, Nick Barraclough, David Quantick, Barney Hoskyns and Paul Lester. Music reviews are edited by former Drowned in Sound and Clash magazine online editor Mike Diver."@en ;
         dcterms:publisher     [ rdfs:label  "Tom Scott" ;
                                 foaf:mbox   "http://derivadow.com"
                               ] ;
-        dcterms:subject       "bbc" , "format-bio" , "lodcloud-diagram-2011-09-19" , "lodcloud-diagram-2014-08-30" , "format-foaf" , "no-provenance-metadata" , "format-rev" , "music" , "media" , "no-vocab-mappings" , "deref-vocab" , "format-mo" , "published-by-producer" , "no-license-metadata" , "format-rdf" , "lod" ;
+        dcterms:subject       "bbc" , "format-bio" , "lodcloud-diagram-2011-09-19" , "lodcloud-diagram-2014-08-30" , "format-foaf" , "no-provenance-metadata" , "format-rev" , "music" , "media" , "no-vocab-mappings" , "deref-vocab" , "format-mo" , "format-rdf" , "no-license-metadata" , "published-by-producer" , "lod" ;
         dcterms:title         "BBC Music"@en ;
         void:exampleResource  <http://www.bbc.co.uk/music/artists/79239441-bfd5-4981-a70c-55c3f15c1287.rdf> ;
         void:sparqlEndpoint   <http://api.talis.com/stores/bbc-backstage/services/sparql> ;
         void:triples          20000000 ;
         dcat:distribution     [ dcat:accessURL  <http://motools.sourceforge.net/doc/musicontology.rdfs> ] ;
         foaf:homepage         <http://www.bbc.co.uk/music> .
+
+[ void:target   lod:bbc-music , lod:dbpedia ;
+  void:triples  23000
+] .

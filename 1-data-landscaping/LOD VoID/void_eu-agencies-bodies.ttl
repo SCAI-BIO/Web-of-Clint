@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,25 +6,25 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/eurostat-linked-data> , <http://lod-cloud.net/dataset/eu-agencies-bodies> ;
+[ void:target   lod:eu-agencies-bodies , lod:dbpedia ;
+  void:triples  20
+] .
+
+[ void:target   lod:eu-agencies-bodies , lod:eurostat-linked-data ;
   void:triples  23
 ] .
 
-<http://lod-cloud.net/dataset/eu-agencies-bodies>
+lod:eu-agencies-bodies
         a                    void:Dataset ;
         dcterms:description  "The official website of the European Union contains a section about agencies and decentralized bodies in the EU. This data is provided as a set of lists, which provide the name of the institutions, as well as links to a detail page about each of them. Most of these pages are available in different languages. If you want to browse the data, please use the links in the \"navigation box\" on the left side. Furthermore, it is possible to create your own SPARQL queries for obtaining lists of combined information.\r\nThis dataset (http://agencies.publicdata.eu/) was triplified and published by the research group AKSW (Agile Knowledge Engineering and Semantic Web). For further information about AKSW please visit our website."@en ;
         dcterms:publisher    [ rdfs:label  "Philipp Frischmuth" ;
                                foaf:mbox   "frischmuth@informatik.uni-leipzig.de"
                              ] ;
-        dcterms:subject      "format-rdf" , "lodcloud" , "legal" , "latc" , "government" , "lod" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:subject      "format-rdf" , "lodcloud" , "legal" , "latc" , "lod" , "government" , "lodcloud-diagram-2014-08-30" ;
         dcterms:title        "EU Agencies and decentralized bodies (Agencies)"@en ;
         void:sparqlEndpoint  <http://agencies.publicdata.eu/sparql> ;
         void:triples         1075 ;
-        dcat:distribution    [ dcat:accessURL  <http://agencies.publicdata.eu/r/EEA> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://agencies.publicdata.eu/resource/export/f/rdfxml?r=http%3A%2F%2Fagencies.publicdata.eu%2Fr%2FEEA> ] ;
         dcat:distribution    [ dcat:accessURL  <http://agencies.publicdata.eu/model/export/?m=http%3A%2F%2Fagencies.publicdata.eu%2F&f=rdfxml> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://agencies.publicdata.eu/resource/export/f/rdfxml?r=http%3A%2F%2Fagencies.publicdata.eu%2Fr%2FEEA> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://agencies.publicdata.eu/r/EEA> ] ;
         foaf:homepage        <http://agencies.publicdata.eu/> .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/eu-agencies-bodies> ;
-  void:triples  20
-] .

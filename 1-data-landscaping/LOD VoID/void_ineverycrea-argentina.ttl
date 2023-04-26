@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,13 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/ineverycrea-argentina> ;
-  void:triples  2405
-] .
-
-<http://lod-cloud.net/dataset/ineverycrea-argentina>
+lod:ineverycrea-argentina
         a                     void:Dataset ;
-        dcterms:description   "<p>\r\n<a href=\"http://www.ineverycrea.com.ar/\">IneveryCREA Argentina (Santillana) </a>\r\nis the community of educational creativity for teachers and education professionals to create, develop and share original educational resources in Argentina.\r\n</p>\r\n<p>\r\nSantillana is the leading textbook and general-interest publishing group in Spain and Latin America, and the most prestigious publisher of literary works in Spanish. With more than 108 million books sold in 2010, the company has been synonymous with quality, innovation and service to teaching staff since its inception in 1960.\r\n</p>\r\n<p>\r\nIneveryCREA Argentina (Santillana) works with \r\n<a href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. IneveryCREA offers a selection of 592 resources (November 2012). It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.\r\n</p>\r\n\r\n<p>\r\n<a href=\"http://www.ineverycrea.com.ar/\">IneveryCREA Argentina (Santillana)</a> es la comunidad de la creatividad educativa para profesores y profesionales de la educación que crean, desarrollan y comparten recursos educativos originales en Argentina.\r\n</p>\r\n<p> Santillana es el grupo editorial líder en texto escolar y ediciones generales en España y América Latina, y la referencia en el campo de la creación literaria en lengua española. Con más de 108 millones de libros vendidos en el año 2010, es sinónimo de calidad, innovación y servicio al profesorado desde su creación en 1960.</p>\r\n<p>\r\nIneveryCREA Argentina (Santillana) trabaja con \r\n<a href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. IneveryCREA ofrece en este caso una selección de 592 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.\r\n</p>"@en ;
+        dcterms:description   "<p>\r\n<a+href=\"http://www.ineverycrea.com.ar/\">IneveryCREA Argentina (Santillana) </a>\r\nis the community of educational creativity for teachers and education professionals to create, develop and share original educational resources in Argentina.\r\n</p>\r\n<p>\r\nSantillana is the leading textbook and general-interest publishing group in Spain and Latin America, and the most prestigious publisher of literary works in Spanish. With more than 108 million books sold in 2010, the company has been synonymous with quality, innovation and service to teaching staff since its inception in 1960.\r\n</p>\r\n<p>\r\nIneveryCREA Argentina (Santillana) works with \r\n<a+href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. IneveryCREA offers a selection of 592 resources (November 2012). It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.\r\n</p>\r\n\r\n<p>\r\n<a+href=\"http://www.ineverycrea.com.ar/\">IneveryCREA Argentina (Santillana)</a> es la comunidad de la creatividad educativa para profesores y profesionales de la educación que crean, desarrollan y comparten recursos educativos originales en Argentina.\r\n</p>\r\n<p> Santillana es el grupo editorial líder en texto escolar y ediciones generales en España y América Latina, y la referencia en el campo de la creación literaria en lengua española. Con más de 108 millones de libros vendidos en el año 2010, es sinónimo de calidad, innovación y servicio al profesorado desde su creación en 1960.</p>\r\n<p>\r\nIneveryCREA Argentina (Santillana) trabaja con \r\n<a+href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. IneveryCREA ofrece en este caso una selección de 592 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.\r\n</p>"@en ;
         dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
                                 foaf:mbox   "gnoss@gnoss.com"
                               ] ;
-        dcterms:subject       "lod" , "license-metadata" , "language-spa" , "foaf" , "pizarra digital" , "bachillerato" , "red educativa" , "ineverycrea" , "country.es" , "schemata" , "educación 2.0" , "format-skos" , "américa" , "actividades interactivas" , "country-spain" , "pedagogía" , "format-dcam" , "videos educativos" , "format-sioc" , "usergeneratedcontent" , "no-proprietary-vocab" , "sioc" , "material educativo" , "escuela 2.0" , "unidades didácticas" , "educación primaria" , "user_generated" , "format-foaf" , "proyecto colaborativo" , "sp" , "dc" , "laboratorio de ideas" , "creatividad educativa" , "format-dc" , "wrapper" , "recursos educativos originales" , "corporate excellence" , "ESO" , "gnoss" , "format-wot" , "inevery crea" , "published-by-third-party" , "spain" , "argentina" , "no-vocab-mappings" , "socialweb" , "herramientas 2.0" , "innovación educativa" , "provenance-metadata" , "educación infantil" , "profesores" , "format-rdfg" , "educación" , "skos" , "plataforma educativa" ;
+        dcterms:subject       "lod" , "license-metadata" , "language-spa" , "foaf" , "pizarra digital" , "bachillerato" , "red educativa" , "ineverycrea" , "country.es" , "schemata" , "educación 2.0" , "format-skos" , "américa" , "actividades interactivas" , "country-spain" , "pedagogía" , "format-dcam" , "videos educativos" , "format-sioc" , "usergeneratedcontent" , "no-proprietary-vocab" , "sioc" , "material educativo" , "escuela 2.0" , "unidades didácticas" , "educación primaria" , "user_generated" , "format-foaf" , "proyecto colaborativo" , "sp" , "dc" , "laboratorio de ideas" , "creatividad educativa" , "format-dc" , "wrapper" , "corporate excellence" , "recursos educativos originales" , "ESO" , "gnoss" , "format-wot" , "inevery crea" , "published-by-third-party" , "spain" , "argentina" , "no-vocab-mappings" , "herramientas 2.0" , "socialweb" , "innovación educativa" , "profesores" , "educación infantil" , "provenance-metadata" , "format-rdfg" , "educación" , "skos" , "plataforma educativa" ;
         dcterms:title         "IneveryCREA Argentina, la comunidad de la creatividad educativa"@en ;
         void:exampleResource  <http://www.ineverycrea.com.ar/en/community/ineverycreaargentina/resource/Conferencia-IneveryCREA-Argentina-la-comunidad-d/88f804a0-f920-4849-b62a-7f1a551a27e9?rdf> , <http://www.ineverycrea.com.ar/en/community/ineverycreaargentina/resource/Una-forma-divertida-de-crear-historias/38b041a7-f68e-4629-877d-e508b098960d?rdf> , <http://ineverycrea.net/comunidad/ineverycreaargentina/busqueda-avanzada/tag/TIC?rdf> ;
         void:triples          15620 ;
@@ -23,22 +20,26 @@
         dcat:distribution     [ dcat:accessURL  <http://ineverycrea.net/voidIneveryCREAArg.n3> ] ;
         foaf:homepage         <http://ineverycrea.net/en/community/ineverycreaargentina> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/ineverycrea-argentina> ;
+[ void:target   lod:ineverycrea-argentina , lod:dbpedia ;
   void:triples  2644
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/ineverycrea> , <http://lod-cloud.net/dataset/ineverycrea-argentina> ;
-  void:triples  1595
+[ void:target   lod:ineverycrea-argentina , lod:nytimes-linked-open-data ;
+  void:triples  2405
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/didactalia> , <http://lod-cloud.net/dataset/ineverycrea-argentina> ;
-  void:triples  1440
+[ void:target   lod:ineverycrea-argentina , lod:gnoss ;
+  void:triples  122
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/ineverycrea-argentina> ;
+[ void:target   lod:ineverycrea-argentina , lod:freebase ;
   void:triples  433
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/gnoss> , <http://lod-cloud.net/dataset/ineverycrea-argentina> ;
-  void:triples  122
+[ void:target   lod:ineverycrea-argentina , lod:ineverycrea ;
+  void:triples  1595
+] .
+
+[ void:target   lod:ineverycrea-argentina , lod:didactalia ;
+  void:triples  1440
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,63 +6,62 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dewey_decimal_classification> , <http://lod-cloud.net/dataset/lobid-resources> ;
+[ void:target   lod:lobid-resources , lod:dewey_decimal_classification ;
   void:triples  4564094
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/zdb> , <http://lod-cloud.net/dataset/lobid-resources> ;
-  void:triples  1751215
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/gutenberg> , <http://lod-cloud.net/dataset/lobid-resources> ;
+[ void:target   lod:lobid-resources , lod:gutenberg ;
   void:triples  5467
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/open-library> , <http://lod-cloud.net/dataset/lobid-resources> ;
-  void:triples  1258070
+[ void:target   lod:lobid-resources , lod:lobid-organisations ;
+  void:triples  46173571
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/lobid-resources> ;
-  void:triples  5794
+[ void:target   lod:lobid-resources , lod:b3kat ;
+  void:triples  4772
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/iso-639-2> , <http://lod-cloud.net/dataset/lobid-resources> ;
-  void:triples  10887959
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/oclc> , <http://lod-cloud.net/dataset/lobid-resources> ;
-  void:triples  1094922
-] .
-
-<http://lod-cloud.net/dataset/lobid-resources>
-        a                     void:Dataset ;
+lod:lobid-resources  a        void:Dataset ;
         dcterms:description   "lobid-resources is a service which offers access to metadata in RDF about bibliographic resources (books, articles, pdfs etc.) with more than 19 million frbr:manifestations with more than 40 million frbr:items.\r\nWe also provide a raw data dump at http://thedatahub.org/dataset/hbz_unioncatalog .\r\n\r\nLinks to other datasets are provided in separate files, see below.\r\n\r\nYou can find additional information about this data [here](https://wiki1.hbz-nrw.de/display/SEM/2010/08/31/Linked-Open-hbz-Data).\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "North Rhine-Westphalian Library Service Center (hbz)" ;
                                 foaf:mbox   "semweb@hbz-nrw.de"
                               ] ;
-        dcterms:subject       "lld" , "format-owl" , "format-dc" , "no-proprietary-vocab" , "format-bibo" , "format-frbr" , "lod" , "format-skos-state" , "lodcloud-diagram-2014-08-30" , "publications" , "format-geo" , "license-metadata" , "void-sparql-endpoint" , "library" , "published-by-producer" , "provenance-metadata" , "germany" , "lodcloud-diagram-2011-09-19" , "format-foaf" , "bibliographic" , "no-vocab-mappings" ;
+        dcterms:subject       "lld" , "format-owl" , "format-dc" , "no-proprietary-vocab" , "format-bibo" , "format-frbr" , "lod" , "format-skos-state" , "lodcloud-diagram-2014-08-30" , "format-geo" , "publications" , "license-metadata" , "library" , "void-sparql-endpoint" , "published-by-producer" , "provenance-metadata" , "germany" , "format-foaf" , "lodcloud-diagram-2011-09-19" , "bibliographic" , "no-vocab-mappings" ;
         dcterms:title         "lobid-Bibliographic Resources"@en ;
         void:exampleResource  <http://lobid.org/resource/HT002948556> ;
         void:sparqlEndpoint   <http://lobid.org/sparql/> ;
         void:triples          702686189 ;
         dcat:distribution     [ dcat:accessURL  <http://lobid.org/download/dumps/DE-605/lod/resources-dump.nt.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lobid.org/download/dumps/DE-605/updates/lod/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://lobid.org/download/dumps/DE-605/enrich/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://lobid.org/dataset/resource/about.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lobid.org/download/dumps/DE-605/updates/lod/> ] ;
         foaf:homepage         <http://lobid.org/resource> .
 
-[ void:target   <http://lod-cloud.net/dataset/lobid-organisations> , <http://lod-cloud.net/dataset/lobid-resources> ;
-  void:triples  46173571
+[ void:target   lod:lobid-resources , lod:iso-639-2 ;
+  void:triples  10887959
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/b3kat> , <http://lod-cloud.net/dataset/lobid-resources> ;
-  void:triples  4772
+[ void:target   lod:lobid-resources , lod:dbpedia ;
+  void:triples  5794
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-de> , <http://lod-cloud.net/dataset/lobid-resources> ;
+[ void:target   lod:lobid-resources , lod:oclc ;
+  void:triples  1094922
+] .
+
+[ void:target   lod:lobid-resources , lod:open-library ;
+  void:triples  1258070
+] .
+
+[ void:target   lod:lobid-resources , lod:dbpedia-de ;
   void:triples  6179
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/lobid-resources> ;
+[ void:target   lod:lobid-resources , lod:dnb-gemeinsame-normdatei ;
   void:triples  37381139
+] .
+
+[ void:target   lod:lobid-resources , lod:zdb ;
+  void:triples  1751215
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,60 +6,60 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/hellenic-fire-brigade> ;
-  void:triples  316
+[ void:target   lod:hellenic-fire-brigade , lod:kallikratis-municipalities ;
+  void:triples  26
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/diavgeia> , <http://lod-cloud.net/dataset/hellenic-fire-brigade> ;
-  void:triples  258
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/hellenic-fire-brigade> ;
-  void:triples  104102
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/hellenic-fire-brigade> ;
+[ void:target   lod:hellenic-fire-brigade , lod:dbpedia ;
   void:triples  104117
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/umbel> , <http://lod-cloud.net/dataset/hellenic-fire-brigade> ;
-  void:triples  28
+[ void:target   lod:hellenic-fire-brigade , lod:diavgeia ;
+  void:triples  258
 ] .
 
-<http://lod-cloud.net/dataset/hellenic-fire-brigade>
+[ void:target   lod:hellenic-fire-brigade , lod:nuts-geovocab ;
+  void:triples  14
+] .
+
+lod:hellenic-fire-brigade
         a                     void:Dataset ;
         dcterms:description   "The Hellenic Fire Brigade project encompasses efforts to extract valuable information from Greek Open Data originating from the Ministry of Public Order & Citizen Protection and in particular from the Hellenic Fire Brigade Department. It involves mainly fire incident records that span over a ten year period, (2000-2010) and aims to exploit these in the best possible manner so as to form meaningful scenarios. The primary goal is to provide applications and services that would reveal potentials for the department to improve upon its management procedures, have economic benefits from cost reductions and improvements in its fire service efficiency.\r\nA secondary but equally important goal is to encourage additional contributions of Greek Open Data as well as of innovative applications and services based on the latter."@en ;
         dcterms:publisher     [ rdfs:label  "IOANNIS PARAPONTIS" ;
                                 foaf:mbox   "PARAPONTISJ@GMAIL.COM"
                               ] ;
-        dcterms:subject       "greece" , "format-dbp" , "format-tl" , "lodcloud-diagram-2011-09-19" , "format-dc" , "provenance-metadata" , "fire-brigade" , "published-by-producer" , "format-foaf" , "no-proprietary-vocab" , "hellenic" , "lodcloud-diagram-2014-08-30" , "hellenic-fire-brigade" , "lod" , "greek" , "format-skos" , "format-owl" , "fire" , "format-rdf" , "format-akt" , "format-geo" , "license-metadata" , "government" , "country-greece" , "format-rdfs" ;
+        dcterms:subject       "format-dbp" , "greece" , "format-tl" , "lodcloud-diagram-2011-09-19" , "format-dc" , "provenance-metadata" , "fire-brigade" , "format-foaf" , "published-by-producer" , "hellenic" , "no-proprietary-vocab" , "hellenic-fire-brigade" , "lodcloud-diagram-2014-08-30" , "greek" , "format-skos" , "lod" , "fire" , "format-owl" , "format-rdf" , "format-akt" , "format-geo" , "country-greece" , "government" , "license-metadata" , "format-rdfs" ;
         dcterms:title         "Hellenic Fire Brigade"@en ;
         void:dataDump         <http://greek-lod.auth.gr/Fire/fire.nt.gz> ;
         void:exampleResource  <http://greek-lod.auth.gr/fire-brigade/data/fbs/10?output=rdfxml> ;
         void:sparqlEndpoint   <http://greek-lod.auth.gr/fire-brigade/sparql> ;
         void:triples          4134837 ;
-        dcat:distribution     [ dcat:accessURL  <http://greek-lod.auth.gr/fire-brigade/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://greek-lod.auth.gr/Fire/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://greek-lod.auth.gr/fire-brigade/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://greek-lod.auth.gr/Fire/fire.rdf.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://greek-lod.auth.gr/sitemap.xml> ] ;
         foaf:homepage         <http://greek-lod.math.auth.gr/fire-brigade/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-el> , <http://lod-cloud.net/dataset/hellenic-fire-brigade> ;
+[ void:target   lod:hellenic-fire-brigade , lod:freebase ;
+  void:triples  104102
+] .
+
+[ void:target   lod:hellenic-fire-brigade , lod:geonames-semantic-web ;
+  void:triples  316
+] .
+
+[ void:target   lod:hellenic-fire-brigade , lod:dbpedia-el ;
   void:triples  277
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/nuts-geovocab> , <http://lod-cloud.net/dataset/hellenic-fire-brigade> ;
-  void:triples  14
+[ void:target   lod:hellenic-fire-brigade , lod:umbel ;
+  void:triples  28
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/linked-eurostat> , <http://lod-cloud.net/dataset/hellenic-fire-brigade> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/kallikratis-municipalities> , <http://lod-cloud.net/dataset/hellenic-fire-brigade> ;
-  void:triples  26
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/fu-berlin-eurostat> , <http://lod-cloud.net/dataset/hellenic-fire-brigade> ;
+[ void:target   lod:hellenic-fire-brigade , lod:fu-berlin-eurostat ;
   void:triples  15
+] .
+
+[ void:target   lod:hellenic-fire-brigade , lod:linked-eurostat ;
+  void:triples  14
 ] .

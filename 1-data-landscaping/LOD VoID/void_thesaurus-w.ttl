@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/thesaurus-w>
-        a                     void:Dataset ;
+[ void:target   lod:thesaurus-w , lod:dbpedia ;
+  void:triples  627
+] .
+
+lod:thesaurus-w  a            void:Dataset ;
         dcterms:description   "This dataset includes four authority lists (subject headings, historical contexts, actions and document types) used to describe material in French local archives."@en ;
         dcterms:publisher     [ rdfs:label  "Service interministériel des Archives de France" ;
                                 foaf:mbox   ""
@@ -23,10 +27,6 @@
         dcat:distribution     [ dcat:accessURL  <http://www.archivesdefrance.culture.gouv.fr/thesaurus/data/Typologie?includeSchemes=true> ] ;
         foaf:homepage         <http://www.archivesdefrance.culture.gouv.fr/thesaurus/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/thesaurus-w> ;
-  void:triples  627
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/stitch-rameau> , <http://lod-cloud.net/dataset/thesaurus-w> ;
+[ void:target   lod:thesaurus-w , lod:stitch-rameau ;
   void:triples  1048
 ] .

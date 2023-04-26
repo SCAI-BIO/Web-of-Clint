@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/geospecies> ;
-  void:triples  171
+[ void:target   lod:geospecies , lod:umbel ;
+  void:triples  2
 ] .
 
-<http://lod-cloud.net/dataset/geospecies>
-        a                     void:Dataset ;
+lod:geospecies  a             void:Dataset ;
         dcterms:description   "Data exposed: Information on Biological Orders, Families, Species as well as species occurrence records and related data\r\n\r\nThe data set currently contains information and linked data for: 19,230 Species, 1,671 Familes, 221 Orders. We have approximately 6,500 species observations, but are awaiting release on the majority of those.\r\n\r\nAlso see TaxonConcept, where species are modeled differently.\r\n\r\nSize of dump and data set: 6.7 MB gzip"@en ;
         dcterms:publisher     [ rdfs:label  "Peter J. DeVries, UW - Madison <http://people.geospecies.org/people/Peter_J_DeVries/>" ;
                                 foaf:mbox   "pdevries@wisc.edu"
@@ -20,33 +20,33 @@
         void:exampleResource  <http://lod.geospecies.org/ses/v6n7p.rdf> ;
         void:sparqlEndpoint   <http://lsd.taxonconcept.org/sparql> ;
         void:triples          2163922 ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.geospecies.org/ontology/geospecies.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://lod.geospecies.org/sitemap.xml.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.geospecies.org/geospecies.rdf.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://lod.geospecies.org/ontology/doc/index.html> ] ;
         dcat:distribution     [ dcat:accessURL  <http://lod.geospecies.org/ontology/void.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.geospecies.org/geospecies.rdf.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.geospecies.org/ontology/geospecies.owl> ] ;
         foaf:homepage         <http://lod.geospecies.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/geospecies> ;
-  void:triples  11805
+[ void:target   lod:geospecies , lod:geonames-semantic-web ;
+  void:triples  298476
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/opencyc> , <http://lod-cloud.net/dataset/geospecies> ;
+[ void:target   lod:geospecies , lod:opencyc ;
   void:triples  24
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot-taxonomy> , <http://lod-cloud.net/dataset/geospecies> ;
-  void:triples  37809
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/umbel> , <http://lod-cloud.net/dataset/geospecies> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/geospecies> ;
+[ void:target   lod:geospecies , lod:bio2rdf-uniprot ;
   void:triples  30404
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/geospecies> ;
-  void:triples  298476
+[ void:target   lod:geospecies , lod:dbpedia ;
+  void:triples  11805
+] .
+
+[ void:target   lod:geospecies , lod:bio2rdf-uniprot-taxonomy ;
+  void:triples  37809
+] .
+
+[ void:target   lod:geospecies , lod:freebase ;
+  void:triples  171
 ] .

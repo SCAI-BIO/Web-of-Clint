@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,26 +6,25 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/npm> , <http://lod-cloud.net/dataset/rubentaelman> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rubenverborgh> , <http://lod-cloud.net/dataset/rubentaelman> ;
+[ void:target   lod:rubentaelman , lod:rubenverborgh ;
   void:triples  4
 ] .
 
-<http://lod-cloud.net/dataset/rubentaelman>
-        a                    void:Dataset ;
+[ void:target   lod:rubentaelman , lod:dbpedia ;
+  void:triples  2
+] .
+
+lod:rubentaelman  a          void:Dataset ;
         dcterms:description  "Personal website of Ruben Taelman annotated with RDFa."@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   "ruben.taelman@ugent.be"
                              ] ;
-        dcterms:subject      "personal" , "lod" ;
+        dcterms:subject      "lod" , "personal" ;
         dcterms:title        "Ruben Taelman's Data"@en ;
         void:triples         45 ;
         dcat:distribution    [ dcat:accessURL  <http://www.rubensworks.net/> ] ;
         foaf:homepage        <https://github.com/rubensworks/rubensworks.net> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rubentaelman> ;
-  void:triples  2
+[ void:target   lod:rubentaelman , lod:npm ;
+  void:triples  1
 ] .

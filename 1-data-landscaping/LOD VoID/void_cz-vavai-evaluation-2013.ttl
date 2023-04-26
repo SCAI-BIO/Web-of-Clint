@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-vavai-results> , <http://lod-cloud.net/dataset/cz-vavai-evaluation-2013> ;
-  void:triples  280000
-] .
-
-<http://lod-cloud.net/dataset/cz-vavai-evaluation-2013>
+lod:cz-vavai-evaluation-2013
         a                     void:Dataset ;
         dcterms:description   "Data cube containing data about evaluation of results in VaVaI for 2013."@en ;
         dcterms:publisher     [ rdfs:label  "Petr Škoda" ;
@@ -17,11 +14,15 @@
                               ] ;
         dcterms:subject       "published-by-third-party" , "format-skos" , "deref-vocab" , "government" , "provenance-metadata" , "format-dcterms" , "no-vocab-mappings" , "lod" , "license-metadata" ;
         dcterms:title         "Evaluation of VaVaI results for 2013"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/vavai/vysledek/RIV%2F67985858%3A_____%2F12%3A00376340%21RIV13-GA0-67985858/hodnoceni/2013%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Fevaluation%2F2013&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          8150258 ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-evaluation-2013.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/vavai/vysledek/RIV%2F67985858%3A_____%2F12%3A00376340%21RIV13-GA0-67985858/hodnoceni/2013> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/vavai-evaluation-2013-vocabulary.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/vavai-evaluation-2013.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fvavai%2Fevaluation%2F2013%2Fdistribution%3E&output=text%2Fturtle> ] ;
         foaf:homepage         <http://linked.opendata.cz/resource/dataset/vavai/evaluation/2013> .
+
+[ void:target   lod:cz-vavai-evaluation-2013 , lod:cz-vavai-results ;
+  void:triples  280000
+] .

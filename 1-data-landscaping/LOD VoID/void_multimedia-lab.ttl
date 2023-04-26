@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dblp> , <http://lod-cloud.net/dataset/multimedia-lab> ;
-  void:triples  500
-] .
-
-<http://lod-cloud.net/dataset/multimedia-lab>
-        a                    void:Dataset ;
+lod:multimedia-lab  a        void:Dataset ;
         dcterms:description  "Linked Open Data from Multimedia Lab, a research group of Ghent University ? iMinds, Belgium."@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
@@ -21,3 +17,7 @@
         dcat:distribution    [ dcat:accessURL  <http://data.mmlab.be/mmlab> ] ;
         dcat:distribution    [ dcat:accessURL  <http://data.mmlab.be/mmlab> ] ;
         dcat:distribution    [ dcat:accessURL  <http://data.mmlab.be/mmlab> ] .
+
+[ void:target   lod:multimedia-lab , lod:dblp ;
+  void:triples  500
+] .

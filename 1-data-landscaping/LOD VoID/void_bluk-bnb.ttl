@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,72 +6,71 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/viaf (forthcoming books)> , <http://lod-cloud.net/dataset/bluk-bnb> ;
-  void:triples  359437
+[ void:target   lod:bluk-bnb , <http://lod-cloud.net/dataset/ddc+(serials)> ;
+  void:triples  29263
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/ddc (forthcoming books)> , <http://lod-cloud.net/dataset/bluk-bnb> ;
-  void:triples  100687
+[ void:target   lod:bluk-bnb , <http://lod-cloud.net/dataset/viaf+(serials)> ;
+  void:triples  22286
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh (books)> , <http://lod-cloud.net/dataset/bluk-bnb> ;
-  void:triples  142026
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/ddc (books)> , <http://lod-cloud.net/dataset/bluk-bnb> ;
+[ void:target   lod:bluk-bnb , <http://lod-cloud.net/dataset/ddc+(books)> ;
   void:triples  222110
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/isni (forthcoming books)> , <http://lod-cloud.net/dataset/bluk-bnb> ;
-  void:triples  273293
+[ void:target   lod:bluk-bnb , <http://lod-cloud.net/dataset/isni+(books)> ;
+  void:triples  775485
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh (forthcoming books)> , <http://lod-cloud.net/dataset/bluk-bnb> ;
-  void:triples  83189
-] .
-
-<http://lod-cloud.net/dataset/bluk-bnb>
-        a                     void:Dataset ;
+lod:bluk-bnb  a               void:Dataset ;
         dcterms:description   "British National Bibliography (BNB) published as Linked Data by the British Library, linked to external sources including: [VIAF](http://viaf.org/), [ISNI](http://isni.org), [LCSH](http://id.loc.gov/authorities/), [Lexvo](http://www.lexvo.org/), [GeoNames](http://www.geonames.org/ontology/documentation.html), MARC [country](http://id.loc.gov/vocabulary/countries.html), and [language](http://id.loc.gov/vocabulary/languages.html), [Dewey.info](http://dewey.info/).  Published to [this data model for books](https://www.bl.uk/bibliographic/pdfs/bldatamodelbook.pdf); [this data model for serials](https://www.bl.uk/bibliographic/pdfs/bldatamodelserial.pdf) and this data model for forthcoming books (http://www.bl.uk/bibliographic/pdfs/bldatamodelcip.pdf).\r\n\r\nCurrent release of approximately 3.9 million descriptions (146,901,135 triples) of books (including monographs published over time); forthcoming books and serials published in the UK over the last 60 years.The dataset, covering UK publications since 1950, is updated monthly."@en ;
         dcterms:publisher     [ rdfs:label  "The British Library Metadata Services" ;
                                 foaf:mbox   "metadata@bl.uk"
                               ] ;
-        dcterms:subject       "crossdomain" , "british-library" , "bibliographic" , "publications" , "published-by-producer" , "no-proprietary-vocab" , "lld" , "format-xml" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "library" , "format-xhtml" , "lod" , "cc0" ;
+        dcterms:subject       "cc0" , "crossdomain" , "bibliographic" , "british-library" , "publications" , "published-by-producer" , "no-proprietary-vocab" , "format-xml" , "lld" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "library" , "format-xhtml" , "lod" ;
         dcterms:title         "British National Bibliography (BNB) - Linked Open Data"@en ;
-        void:exampleResource  <http://bnb.data.bl.uk/doc/resource/006893251.ttl> , <http://bnb.data.bl.uk/doc/resource/006893251.rdf> , <http://bnb.data.bl.uk/doc/resource/006893251.html> , <http://bnb.data.bl.uk/doc/resource/006893251.json> ;
+        void:exampleResource  <http://bnb.data.bl.uk/doc/resource/006893251.rdf> , <http://bnb.data.bl.uk/doc/resource/006893251.html> , <http://bnb.data.bl.uk/doc/resource/006893251.json> , <http://bnb.data.bl.uk/doc/resource/006893251.ttl> ;
         void:sparqlEndpoint   <http://bnb.data.bl.uk/sparql> ;
         void:triples          146901135 ;
+        dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/bibliographic/pdfs/bldatamodelbook.pdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://bnb.data.bl.uk/search> ] ;
         dcat:distribution     [ dcat:accessURL  <http://bnb.data.bl.uk/flint> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/bibliographic/download.html#lodbnb> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/bibliographic/pdfs/bldatamodelcip.pdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/bibliographic/datafree.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/bibliographic/pdfs/bldatamodelserial.pdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/schemas/bibliographic/blterms> ] ;
         dcat:distribution     [ dcat:accessURL  <http://bnb.data.bl.uk/doc/resource/006893251> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://bnb.data.bl.uk/search> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/bibliographic/datafree.html> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/bibliographic/download.html#lodbnb> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/bibliographic/pdfs/bldatamodelbook.pdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/bibliographic/pdfs/bldatamodelserial.pdf> ] ;
         foaf:homepage         <http://bnb.data.bl.uk> .
 
-[ void:target   <http://lod-cloud.net/dataset/viaf (serials)> , <http://lod-cloud.net/dataset/bluk-bnb> ;
-  void:triples  22286
+[ void:target   lod:bluk-bnb , <http://lod-cloud.net/dataset/ddc+(forthcoming+books)> ;
+  void:triples  100687
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/isni (serials)> , <http://lod-cloud.net/dataset/bluk-bnb> ;
+[ void:target   lod:bluk-bnb , <http://lod-cloud.net/dataset/lcsh+(books)> ;
+  void:triples  142026
+] .
+
+[ void:target   lod:bluk-bnb , <http://lod-cloud.net/dataset/isni+(serials)> ;
   void:triples  7592
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/viaf (books)> , <http://lod-cloud.net/dataset/bluk-bnb> ;
+[ void:target   lod:bluk-bnb , <http://lod-cloud.net/dataset/viaf+(forthcoming+books)> ;
+  void:triples  359437
+] .
+
+[ void:target   lod:bluk-bnb , <http://lod-cloud.net/dataset/lcsh+(serials)> ;
+  void:triples  18642
+] .
+
+[ void:target   lod:bluk-bnb , <http://lod-cloud.net/dataset/isni+(forthcoming+books)> ;
+  void:triples  273293
+] .
+
+[ void:target   lod:bluk-bnb , <http://lod-cloud.net/dataset/viaf+(books)> ;
   void:triples  1127476
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/isni (books)> , <http://lod-cloud.net/dataset/bluk-bnb> ;
-  void:triples  775485
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/ddc (serials)> , <http://lod-cloud.net/dataset/bluk-bnb> ;
-  void:triples  29263
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/lcsh (serials)> , <http://lod-cloud.net/dataset/bluk-bnb> ;
-  void:triples  18642
+[ void:target   lod:bluk-bnb , <http://lod-cloud.net/dataset/lcsh+(forthcoming+books)> ;
+  void:triples  83189
 ] .

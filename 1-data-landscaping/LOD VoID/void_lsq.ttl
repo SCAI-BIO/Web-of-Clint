@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/lsq>
-        a                    void:Dataset ;
+lod:lsq  a                   void:Dataset ;
         dcterms:description  "Linked SQ: a Linked Dataset describing SPARQL queries extracted from the logs of a variety of prominent public SPARQL endpoints. We argue that this dataset has a variety of uses for the SPARQL research community, be it, for example, to generate benchmarks on-the-fly by selecting real-world queries with specific characteristics that we describe, or to conduct analysis of what SPARQL (1.1) query features are most often used to interrogate endpoints, or to characterise the behaviour of the different types of agents that are using these endpoints, or to find out what queries agents are asking about a given resource, etc."@en ;
         dcterms:publisher    [ rdfs:label  "Muhammad Saleem, Intizar Ali, Qaiser Mehmood, Aidan Hogan, Axel-Cyrille Ngonga Ngomo" ;
                                foaf:mbox   ""
@@ -14,5 +14,5 @@
         dcterms:subject      "lod" ;
         dcterms:title        "LSQ"@en ;
         void:triples         73201194 ;
-        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-05-04T11:04:52.323Z/sample-rdf.txt> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://aksw.github.io/LSQ/> ] .
+        dcat:distribution    [ dcat:accessURL  <http://aksw.github.io/LSQ/> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-05-04T11:04:52.323Z/sample-rdf.txt> ] .

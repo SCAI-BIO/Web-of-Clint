@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,35 +6,35 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/kallikratis-municipalities> ;
+[ void:target   lod:kallikratis-municipalities , lod:dbpedia ;
+  void:triples  137
+] .
+
+[ void:target   lod:kallikratis-municipalities , lod:geonames ;
   void:triples  54
 ] .
 
-<http://lod-cloud.net/dataset/kallikratis-municipalities>
+lod:kallikratis-municipalities
         a                     void:Dataset ;
         dcterms:description   "The Kalikratis municipalities project represents an attempt to retrieve useful information from Hellenic municipalities of Kalikratis program. Kalikratis program, is called the Greek law, which implements the administrative division of Greece into new municipalities. The main goal of this attempt is to gather all the related to these municipalities data to a united space, so as to be used by innovative applications and services. Another goal is to enrich Greek open data."@en ;
         dcterms:publisher     [ rdfs:label  "Nena Xanthopoulou" ;
                                 foaf:mbox   "neksanth@hotmail.com"
                               ] ;
-        dcterms:subject       "format-geonames" , "municipality" , "provenance-metadata" , "administrative-divisions" , "format-foaf" , "format-owl" , "format-rdf" , "published-by-producer" , "format-geo" , "license-metadata" , "format-skos" , "lod" , "Greece" , "hellenic" , "municipalities" , "lodcloud" , "no-proprietary-vocab" , "format-dcterms" , "greek" , "country-greece" , "government" ;
+        dcterms:subject       "format-geonames" , "municipality" , "format-foaf" , "administrative-divisions" , "provenance-metadata" , "format-owl" , "format-rdf" , "format-geo" , "published-by-producer" , "license-metadata" , "format-skos" , "lod" , "Greece" , "hellenic" , "municipalities" , "lodcloud" , "no-proprietary-vocab" , "format-dcterms" , "greek" , "country-greece" , "government" ;
         dcterms:title         "Kallikratis municipalities"@en ;
         void:exampleResource  <http://greek-lod.auth.gr/Kalikratis/kalikratis.rdf> ;
         void:sparqlEndpoint   <http://greek-lod.math.auth.gr/kalikratis/sparql> ;
         void:triples          31068 ;
         foaf:homepage         <http://greek-lod.math.auth.gr/kalikratis/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/kallikratis-municipalities> ;
-  void:triples  137
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-el > , <http://lod-cloud.net/dataset/kallikratis-municipalities> ;
+[ void:target   lod:kallikratis-municipalities , <http://lod-cloud.net/dataset/dbpedia-el+> ;
   void:triples  392
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/eurostat-rdf> , <http://lod-cloud.net/dataset/kallikratis-municipalities> ;
+[ void:target   lod:kallikratis-municipalities , lod:eurostat-rdf ;
   void:triples  67
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/kallikratis-municipalities> ;
+[ void:target   lod:kallikratis-municipalities , lod:freebase ;
   void:triples  336
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,60 +6,59 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncbitaxon> , <http://lod-cloud.net/dataset/bioportal-soy> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gro_x1> , <http://lod-cloud.net/dataset/bioportal-soy> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-soy> ;
+[ void:target   lod:bioportal-soy , lod:bioportal-nif ;
   void:triples  11
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-soy>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-soy , lod:bioportal-go_x2 ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-soy , lod:bioportal-gro_x1 ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-soy , lod:bioportal-mesh-owl ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-soy , lod:bioportal-go_x1 ;
+  void:triples  11
+] .
+
+lod:bioportal-soy  a         void:Dataset ;
         dcterms:description  "Growth, trait and development ontology for soybean"@en ;
         dcterms:publisher    [ rdfs:label  "Rex Nelson" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "ontology" , "format-rdf" , "format-obo" , "biomedicine" , "life_sciences" , "bioportal" , "lod" , "published-by-third-party" ;
+        dcterms:subject      "format-rdf" , "ontology" , "format-obo" , "biomedicine" , "life_sciences" , "bioportal" , "lod" , "published-by-third-party" ;
         dcterms:title        "SoyOntology"@en ;
         void:triples         33895 ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47150?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/3028> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-soy> ;
+[ void:target   lod:bioportal-soy , lod:bioportal-msh ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-po_x2> , <http://lod-cloud.net/dataset/bioportal-soy> ;
+[ void:target   lod:bioportal-soy , lod:bioportal-ncbitaxon ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-soy , lod:bioportal-po_x2 ;
   void:triples  18
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-po> , <http://lod-cloud.net/dataset/bioportal-soy> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-spto> , <http://lod-cloud.net/dataset/bioportal-soy> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-to> , <http://lod-cloud.net/dataset/bioportal-soy> ;
+[ void:target   lod:bioportal-soy , lod:bioportal-to ;
   void:triples  52
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x1> , <http://lod-cloud.net/dataset/bioportal-soy> ;
-  void:triples  11
+[ void:target   lod:bioportal-soy , lod:bioportal-spto ;
+  void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-soy> ;
+[ void:target   lod:bioportal-soy , lod:bioportal-po ;
   void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x2> , <http://lod-cloud.net/dataset/bioportal-soy> ;
-  void:triples  11
 ] .

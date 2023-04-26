@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,29 +6,28 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lemonuby> , <http://lod-cloud.net/dataset/wordnet-rdf> ;
-  void:triples  475503
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/wordnet-rdf> ;
+[ void:target   lod:wordnet-rdf , lod:lexvo ;
   void:triples  458907
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/verbnet> , <http://lod-cloud.net/dataset/wordnet-rdf> ;
-  void:triples  26353
-] .
-
-<http://lod-cloud.net/dataset/wordnet-rdf>
-        a                    void:Dataset ;
+lod:wordnet-rdf  a           void:Dataset ;
         dcterms:description  "RDF version of WordNet from Princeton"@en ;
         dcterms:publisher    [ rdfs:label  "Christiane Fellbaum" ;
                                foaf:mbox   "fellbaum@princeton.edu"
                              ] ;
-        dcterms:subject      "linguistics" , "lexicon" ;
+        dcterms:subject      "lexicon" , "linguistics" ;
         dcterms:title        "WordNet-RDF"@en ;
         void:triples         8903374 ;
         dcat:distribution    [ dcat:accessURL  <http://wordnet-rdf.princeton.edu/wn31.nt.gz> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/w3c-wordnet> , <http://lod-cloud.net/dataset/wordnet-rdf> ;
+[ void:target   lod:wordnet-rdf , lod:verbnet ;
+  void:triples  26353
+] .
+
+[ void:target   lod:wordnet-rdf , lod:w3c-wordnet ;
   void:triples  99927
+] .
+
+[ void:target   lod:wordnet-rdf , lod:lemonuby ;
+  void:triples  475503
 ] .

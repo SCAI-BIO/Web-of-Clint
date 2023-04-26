@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -16,6 +17,6 @@
         void:triples         "0"^^xsd:int ;
         foaf:homepage        <http://www.iraj.in/journal/journal_file/journal_pdf/14-407-151143893990-95.pdf> .
 
-[ void:target   <http://lod-cloud.net/dataset/Terrorist attack> , <http://lod-cloud.net/dataset/ROSHANI+SAHU> ;
+[ void:target   <http://lod-cloud.net/dataset/ROSHANI+SAHU> , <http://lod-cloud.net/dataset/Terrorist+attack> ;
   void:triples  1
 ] .

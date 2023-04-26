@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,36 +6,35 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
-  void:triples  36
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
-  void:triples  177
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
+[ void:target   lod:bioportal-roleo , lod:bioportal-lnc ;
   void:triples  24
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
+[ void:target   lod:bioportal-roleo , lod:bioportal-snomedct ;
   void:triples  425
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
-  void:triples  17
+[ void:target   lod:bioportal-roleo , lod:bioportal-nif ;
+  void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
+[ void:target   lod:bioportal-roleo , lod:bioportal-ncit ;
   void:triples  112
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
-  void:triples  14
+[ void:target   lod:bioportal-roleo , lod:bioportal-hl7 ;
+  void:triples  51
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-roleo>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-roleo , lod:bioportal-csp ;
+  void:triples  36
+] .
+
+[ void:target   lod:bioportal-roleo , lod:bioportal-msh ;
+  void:triples  44
+] .
+
+lod:bioportal-roleo  a       void:Dataset ;
         dcterms:description  "The Role Ontology (RoleO) is a ontology in the domain of role classification. RoleO aims to standardize role classification and support computer-assisted reasoning.  RoleO is a community-based ontology, and its development follows the OBO Foundry principles."@en ;
         dcterms:publisher    [ rdfs:label  "Oliver He" ;
                                foaf:mbox   ""
@@ -42,31 +42,31 @@
         dcterms:subject      "format-rdf" , "life_sciences" , "format-owl" , "lod" , "bioportal" , "biomedicine" , "published-by-third-party" , "ontology" ;
         dcterms:title        "Role Ontology"@en ;
         void:triples         4101 ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/44694?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1538> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
-  void:triples  51
+[ void:target   lod:bioportal-roleo , lod:bioportal-acgt ;
+  void:triples  17
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
-  void:triples  44
+[ void:target   lod:bioportal-roleo , lod:bioportal-rcd ;
+  void:triples  177
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
-  void:triples  10
+[ void:target   lod:bioportal-roleo , lod:bioportal-galen ;
+  void:triples  14
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
+[ void:target   lod:bioportal-roleo , lod:bioportal-icnp ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gaz> , <http://lod-cloud.net/dataset/bioportal-roleo> ;
+[ void:target   lod:bioportal-roleo , lod:bioportal-canco ;
+  void:triples  19
+] .
+
+[ void:target   lod:bioportal-roleo , lod:bioportal-gaz ;
   void:triples  22
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/heartfailure>
-        a                     void:Dataset ;
+lod:heartfailure  a           void:Dataset ;
         dcterms:description   "Multilingual (English and French) Heart Failure Terminology linked with SNOMED-CT and ICD-10. Contains also mappings with UMLS and ICPC2.\r\nEach Term Entry has several lexical representations, technical, lay-term and popular.\r\nThe terminology model is based on the Terminological Markup Framework (ISO 16642) and Data Categories from ISO 12620.\r\nThis is still a work-in-progress version of the resource\r\n\r\nThe license is Creative Commons Attribution Non-Commercial Share-Alike\r\nhttp://creativecommons.org/licenses/by-nc-sa/2.0/"@en ;
         dcterms:publisher     [ rdfs:label  "Joseph Roumier, Maxime Warnier, Marc Jamoulle, Robert Vander Stichele, Elena Cardillo, Laurent Romary" ;
                                 foaf:mbox   "joseph.roumier@cetic.be"
                               ] ;
-        dcterms:subject       "lod" , "llod" ;
+        dcterms:subject       "llod" , "lod" ;
         dcterms:title         "Meriterm Heart Failure Multilingual Terminology"@en ;
         void:exampleResource  <http://meriterm.org/heartfailure/heartfailure.rdf> ;
         void:triples          13704 .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/heartfailure> ;
+[ void:target   lod:heartfailure , lod:bioportal-icd10 ;
   void:triples  127
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/heartfailure> ;
+[ void:target   lod:heartfailure , lod:bioportal-snomedct ;
   void:triples  161
 ] .

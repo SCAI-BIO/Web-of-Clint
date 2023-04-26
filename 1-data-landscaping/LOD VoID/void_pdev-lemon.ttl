@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/pdev-lemon>
-        a                    void:Dataset ;
+[ void:target   lod:pdev-lemon , lod:lexinfo ;
+  void:triples  2078
+] .
+
+lod:pdev-lemon  a            void:Dataset ;
         dcterms:description  "PDEV is a dictionary which provides insight\r\ninto how verbs collocate with nouns and other words\r\nusing an empirically well-founded apparatus of syntactic\r\nand semantic categories. PDEV is a valuable resource for\r\nNLP because it specifies in detail the contextual conditions\r\nthat determine meaning of a word. Thus the main motivation\r\nfor building a Semantic-Web-compliant resource is to\r\nprovide the Semantic Web and the NLP communities with\r\nan easier access to PDEV."@en ;
         dcterms:publisher    [ rdfs:label  "Ismail El Maarouf, Jane Bradbury and Patrick Hanks " ;
                                foaf:mbox   "elmaarouf.ismail@yahoo.fr"
@@ -16,7 +20,3 @@
         void:dataDump        <http://pdev.org.uk/pdevlemonfiles/pdevlemon.nt.tar.gz> ;
         void:triples         233372 ;
         dcat:distribution    [ dcat:accessURL  <http://pdev.org.uk> ] .
-
-[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/pdev-lemon> ;
-  void:triples  2078
-] .

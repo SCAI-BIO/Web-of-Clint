@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,77 +6,77 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
-  void:triples  6
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
-  void:triples  38
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-imirhil-fr> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-soucy-cc ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-spip-org> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-kathryl-fr ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-shnoulle-net> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-planet-libre-org> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
-  void:triples  8
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-belfalas-org> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-keuser-fr> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-gegeweb-org ;
   void:triples  4
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-scoffoni-net>
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-postblue-info ;
+  void:triples  6
+] .
+
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-planet-libre-org ;
+  void:triples  8
+] .
+
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-belfalas-org ;
+  void:triples  5
+] .
+
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-spip-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-keuser-fr ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-quitter-se ;
+  void:triples  2
+] .
+
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-shnoulle-net ;
+  void:triples  2
+] .
+
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-recit-org ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-scoffoni-net , lod:personal-homepages ;
+  void:triples  1
+] .
+
+lod:statusnet-scoffoni-net
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://scoffoni.net"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "format-pos" , "crawledLinkedDataCloud2014" , "format-foaf" , "format-sioc" , "format-bio" , "social web" , "format-rdfs" , "lodcloud-diagram-2014-08-30" , "LinkedDataCrawl2014" , "social_networking" , "format-rdf" ;
+        dcterms:subject       "format-pos" , "crawledLinkedDataCloud2014" , "format-foaf" , "format-sioc" , "format-bio" , "social web" , "format-rdfs" , "lodcloud-diagram-2014-08-30" , "LinkedDataCrawl2014" , "format-rdf" , "social_networking" ;
         dcterms:title         "statusnet-scoffoni-net"@en ;
         void:exampleResource  <http://status.scoffoni.net/index.php/pscoffoni/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-recit-org> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
-  void:triples  4
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-status-net ;
+  void:triples  38
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-sebseb01-net ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-skilledtests-com ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-sebseb01-net> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gegeweb-org> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-kathryl-fr> , <http://lod-cloud.net/dataset/statusnet-scoffoni-net> ;
+[ void:target   lod:statusnet-scoffoni-net , lod:statusnet-imirhil-fr ;
   void:triples  1
 ] .

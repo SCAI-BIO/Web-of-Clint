@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/isocat> , <http://lod-cloud.net/dataset/fiesta> ;
-  void:triples  14
-] .
-
-<http://lod-cloud.net/dataset/fiesta>
-        a                    void:Dataset ;
+lod:fiesta  a                void:Dataset ;
         dcterms:description  "FiESTA (short for \"Format for extensive spatiotemporal annotations\") is a generic format for linguistic and behavioral annotations."@en ;
         dcterms:publisher    [ rdfs:label  "Peter Menke" ;
                                foaf:mbox   "pmenke@TechFak.Uni-Bielefeld.DE"
@@ -20,6 +16,10 @@
         void:triples         245 ;
         dcat:distribution    [ dcat:accessURL  <http://data.sfb673.org/fiesta/fiesta-1.0.ttl> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/provenanceweb> , <http://lod-cloud.net/dataset/fiesta> ;
+[ void:target   lod:fiesta , lod:provenanceweb ;
   void:triples  3
+] .
+
+[ void:target   lod:fiesta , lod:isocat ;
+  void:triples  14
 ] .

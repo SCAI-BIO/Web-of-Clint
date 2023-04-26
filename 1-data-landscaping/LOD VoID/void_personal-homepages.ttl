@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,436 +6,436 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rdfohloh> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  26
+[ void:target   lod:personal-homepages , lod:statusnet-sweetiebelle-net ;
+  void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-chickenkiller-com> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  10
+[ void:target   lod:personal-homepages , lod:nytimes-linked-open-data ;
+  void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/debian-package-tracking-system> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  7
+[ void:target   lod:personal-homepages , lod:dbpedia-el ;
+  void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:statusnet-bka-li ;
+  void:triples  5
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-ssweeny-net ;
+  void:triples  9
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-morphtown-de ;
+  void:triples  38
+] .
+
+[ void:target   lod:personal-homepages , lod:jamendo-dbtune ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-davidhaberthuer-ch ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-qdnx-org ;
+  void:triples  9
+] .
+
+[ void:target   lod:personal-homepages , lod:bbc-music ;
+  void:triples  3
+] .
+
+[ void:target   lod:personal-homepages , lod:linked-eurostat ;
+  void:triples  3
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-postblue-info ;
   void:triples  18
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/princeton-library-findingaids> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  3
+[ void:target   lod:personal-homepages , lod:statusnet-tekk-com-ar ;
+  void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/w3c> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  565
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linkedct> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/livejournal-com> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  35
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/jugem> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:statusnet-somsants-net ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/linked-railway-data-project> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-el> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/w3c-wordnet> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/b3kat> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  480
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-somsants-net> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/archiveshub-linkeddata> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dcs-sheffield> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/gnu-licenses> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  34
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-geneid> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linked-eurostat> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gomertronic-com> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:statusnet-gomertronic-com ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/linked-stockindex> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/clean-energy-data-reegle> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:linkedct ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/linkedmdb> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:semantic-web-dog-food ;
+  void:triples  88
+] .
+
+[ void:target   lod:personal-homepages , lod:semanticweb-org ;
+  void:triples  87
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-status-cat ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1111
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/tekord> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fcac-com> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gegeweb-org> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbtune-musicbrainz> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/berlios> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:my-experiment ;
   void:triples  3
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-1w6-org> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:statusnet-opensim-chat-eu ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-samnoble-org> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:vivo-university-of-florida ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-freelish-us> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:linked-railway-data-project ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  54
+[ void:target   lod:personal-homepages , lod:statusnet-chromic-org ;
+  void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/l3s-dblp> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  52
+[ void:target   lod:personal-homepages , lod:statusnet-status-net ;
+  void:triples  39
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/nhs-jargon> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:statusnet-gegeweb-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:hellenic-police ;
+  void:triples  6
+] .
+
+[ void:target   lod:personal-homepages , lod:southampton-ac-uk ;
+  void:triples  3
+] .
+
+[ void:target   lod:personal-homepages , lod:myopenlink-dataspaces ;
+  void:triples  28
+] .
+
+[ void:target   lod:personal-homepages , lod:dbpedia-lite ;
+  void:triples  25
+] .
+
+[ void:target   lod:personal-homepages , lod:lexvo ;
+  void:triples  13
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-russwurm-org ;
+  void:triples  25
+] .
+
+[ void:target   lod:personal-homepages , lod:tekord ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:statusnet-macno-org ;
+  void:triples  13
+] .
+
+[ void:target   lod:personal-homepages , lod:rdfize-lastfm ;
+  void:triples  3
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-jonkman-ca ;
+  void:triples  17
+] .
+
+[ void:target   lod:personal-homepages , lod:lod2-project-wiki ;
+  void:triples  3
+] .
+
+[ void:target   lod:personal-homepages , lod:bio2rdf-geneid ;
+  void:triples  3
+] .
+
+[ void:target   lod:personal-homepages , lod:indymedia ;
+  void:triples  2
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-lydiastench-com ;
+  void:triples  4
+] .
+
+[ void:target   lod:personal-homepages , lod:gutenberg ;
+  void:triples  2
+] .
+
+[ void:target   lod:personal-homepages , lod:enipedia ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-bka-li> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  5
+[ void:target   lod:personal-homepages , lod:lingvoj ;
+  void:triples  110
 ] .
 
-<http://lod-cloud.net/dataset/personal-homepages>
+[ void:target   lod:personal-homepages , lod:nalt ;
+  void:triples  56
+] .
+
+[ void:target   lod:personal-homepages , lod:archiveshub-linkeddata ;
+  void:triples  1
+] .
+
+lod:personal-homepages
         a                    void:Dataset ;
         dcterms:description  "Contains data from personal homepages, such as foaf profiles etc. \r\n\r\nA list of files can be found in the appended text file"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "format-foaf" , "crawledLinkedDataCloud2014" , "format-cc" , "format-tsioc" , "format-vann" , "format-org" , "format-xtypes" , "format-b2bo" , "format-rdf" , "format-dcat" , "format-hcard" , "format-open" , "format-visit" , "format-wdrs" , "format-log" , "format-re" , "format-coun" , "format-mo" , "format-doap" , "format-pos" , "format-rss" , "format-vs" , "format-gn" , "format-xhv" , "format-book" , "format-void" , "format-time" , "format-wordmap" , "format-prov" , "format-label" , "format-owl" , "format-ref" , "format-wn" , "format-sioc" , "LinkedDataCrawl2014" , "format-skos" , "format-cal" , "format-cs" , "format-psych" , "format-oo" , "format-rdfs" , "format-flow" , "format-link" , "format-ann" , "format-wot" , "format-voaf" , "format-content" , "format-vcard2006" , "format-bio" , "social web" , "lodcloud-diagram-2014-08-30" , "part-deref-vocab" , "format-daml" , "format-frbrcore" , "format-rsa" , "format-dcterm" , "format-swc" , "format-cert" , "dataset-level-metadata" , "provenance-metadata" , "format-bibo" , "format-dctypes" , "format-icaltzd" , "format-c4dm" , "format-airport" , "deref-vocab" , "format-gr" , "format-cv" , "dump" , "sparql" , "format-pingback" , "non-deref-vocab" , "format-wdr" , "format-w3con" , "format-doc" , "license-metadata" , "format-admin" ;
+        dcterms:subject      "format-foaf" , "crawledLinkedDataCloud2014" , "format-cc" , "format-tsioc" , "format-vann" , "format-org" , "format-xtypes" , "format-b2bo" , "format-rdf" , "format-dcat" , "format-hcard" , "format-open" , "format-visit" , "format-wdrs" , "format-log" , "format-re" , "format-coun" , "format-mo" , "format-doap" , "format-pos" , "format-rss" , "format-vs" , "format-gn" , "format-xhv" , "format-book" , "format-void" , "format-time" , "format-wordmap" , "format-prov" , "format-label" , "format-owl" , "format-ref" , "format-wn" , "format-sioc" , "LinkedDataCrawl2014" , "format-skos" , "format-cal" , "format-cs" , "format-oo" , "format-psych" , "format-rdfs" , "format-flow" , "format-ann" , "format-link" , "format-voaf" , "format-wot" , "format-content" , "format-vcard2006" , "format-bio" , "social web" , "lodcloud-diagram-2014-08-30" , "part-deref-vocab" , "format-daml" , "format-frbrcore" , "format-rsa" , "format-dcterm" , "format-cert" , "format-swc" , "dataset-level-metadata" , "provenance-metadata" , "format-bibo" , "format-icaltzd" , "format-dctypes" , "format-c4dm" , "deref-vocab" , "format-airport" , "format-gr" , "format-cv" , "dump" , "sparql" , "format-pingback" , "non-deref-vocab" , "format-wdr" , "format-w3con" , "format-doc" , "license-metadata" , "format-admin" ;
         dcterms:title        "Personal_Homepages"@en ;
         void:triples         "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/apache> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  89
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/nuts-geovocab> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:statusnet-samnoble-org ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/enipedia> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:dbtune-musicbrainz ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-timttmy-co-uk> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  25
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/vivo-university-of-florida> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-cat> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-it> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/oreilly> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/hellenic-fire-brigade> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  9
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  39
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/hellenic-police> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  6
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-lite> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  25
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  38
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/openlinksw-dataspaces> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  37
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/aspire-manchester> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/umbel> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  88
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/gutenberg> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-chromic-org> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/wordpress> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/myopenlink-dataspaces> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  28
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-sweetiebelle-net> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-tekk-com-ar> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  335
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linked-edgar> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/open-library> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bibsonomy> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-thelovebug-org> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:statusnet-thelovebug-org ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  376
+[ void:target   lod:personal-homepages , lod:open-library ;
+  void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:statusnet-chickenkiller-com ;
+  void:triples  10
+] .
+
+[ void:target   lod:personal-homepages , lod:openlinksw-dataspaces ;
+  void:triples  37
+] .
+
+[ void:target   lod:personal-homepages , lod:clean-energy-data-reegle ;
+  void:triples  4
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-timttmy-co-uk ;
   void:triples  25
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ssweeny-net> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  9
+[ void:target   lod:personal-homepages , lod:apache ;
+  void:triples  89
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:linkedgeodata ;
+  void:triples  2
+] .
+
+[ void:target   lod:personal-homepages , lod:nhs-jargon ;
+  void:triples  5
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-progval-net ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:b3kat ;
+  void:triples  480
+] .
+
+[ void:target   lod:personal-homepages , lod:dcs-sheffield ;
+  void:triples  4
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-freelish-us ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-rainbowdash-net ;
+  void:triples  54
+] .
+
+[ void:target   lod:personal-homepages , lod:geonames-semantic-web ;
+  void:triples  335
+] .
+
+[ void:target   lod:personal-homepages , lod:w3c ;
+  void:triples  565
+] .
+
+[ void:target   lod:personal-homepages , lod:w3c-wordnet ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:deutsche-nationalbibliografie-dnb ;
+  void:triples  2
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-scoffoni-net ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:berlios ;
+  void:triples  3
+] .
+
+[ void:target   lod:personal-homepages , lod:dbpedia-it ;
+  void:triples  2
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-mrblog-nl ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:nuts-geovocab ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:bootsnall ;
+  void:triples  2
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-linuxwrangling-com ;
+  void:triples  12
+] .
+
+[ void:target   lod:personal-homepages , lod:rdfohloh ;
+  void:triples  26
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-1w6-org ;
+  void:triples  4
+] .
+
+[ void:target   lod:personal-homepages , lod:jugem ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:lcsh ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-qdnx-org> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  9
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bootsnall> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-piana-eu> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  8
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  221
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/lingvoj> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  110
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ourcoffs-org-au> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-mrblog-nl> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/my-experiment> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-scoffoni-net> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/semanticweb-org> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  87
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/nalt> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  56
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/greek-administrative-geography> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/jamendo-dbtune> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-progval-net> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-lydiastench-com> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-de> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/codehaus> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/indymedia> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/southampton-ac-uk> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/planetdata-project-wiki> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linked-crunchbase> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/lod2-project-wiki> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:statusnet-skilledtests-com ;
   void:triples  61
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-jonkman-ca> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  17
+[ void:target   lod:personal-homepages , lod:oreilly ;
+  void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/fao-geopolitical-ontology> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  15
+[ void:target   lod:personal-homepages , lod:debian-package-tracking-system ;
+  void:triples  7
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rdfize-lastfm> , <http://lod-cloud.net/dataset/personal-homepages> ;
-  void:triples  3
+[ void:target   lod:personal-homepages , lod:codehaus ;
+  void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/deutsche-nationalbibliografie-dnb> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:planetdata-project-wiki ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:linkedmdb ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:linked-stockindex ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:dbpedia-de ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/revyu> , <http://lod-cloud.net/dataset/personal-homepages> ;
+[ void:target   lod:personal-homepages , lod:statusnet-ourcoffs-org-au ;
+  void:triples  4
+] .
+
+[ void:target   lod:personal-homepages , lod:umbel ;
+  void:triples  4
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-fcac-com ;
+  void:triples  4
+] .
+
+[ void:target   lod:personal-homepages , lod:revyu ;
   void:triples  8
+] .
+
+[ void:target   lod:personal-homepages , lod:gnu-licenses ;
+  void:triples  34
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-piana-eu ;
+  void:triples  8
+] .
+
+[ void:target   lod:personal-homepages , lod:aspire-manchester ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:l3s-dblp ;
+  void:triples  52
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-fragdev-com ;
+  void:triples  221
+] .
+
+[ void:target   lod:personal-homepages , lod:princeton-library-findingaids ;
+  void:triples  3
+] .
+
+[ void:target   lod:personal-homepages , lod:ordnance-survey-linked-data ;
+  void:triples  1
+] .
+
+[ void:target   lod:personal-homepages , lod:bibsonomy ;
+  void:triples  15
+] .
+
+[ void:target   lod:personal-homepages , lod:linked-edgar ;
+  void:triples  3
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-soucy-cc ;
+  void:triples  5
+] .
+
+[ void:target   lod:personal-homepages , lod:wordpress ;
+  void:triples  3
+] .
+
+[ void:target   lod:personal-homepages , lod:linked-crunchbase ;
+  void:triples  14
+] .
+
+[ void:target   lod:personal-homepages , lod:greek-administrative-geography ;
+  void:triples  2
+] .
+
+[ void:target   lod:personal-homepages , lod:livejournal-com ;
+  void:triples  35
+] .
+
+[ void:target   lod:personal-homepages , lod:dbpedia ;
+  void:triples  1111
+] .
+
+[ void:target   lod:personal-homepages , lod:fao-geopolitical-ontology ;
+  void:triples  15
+] .
+
+[ void:target   lod:personal-homepages , lod:hellenic-fire-brigade ;
+  void:triples  9
+] .
+
+[ void:target   lod:personal-homepages , lod:statusnet-quitter-se ;
+  void:triples  376
 ] .

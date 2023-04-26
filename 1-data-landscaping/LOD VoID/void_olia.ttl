@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/tds> , <http://lod-cloud.net/dataset/olia> ;
-  void:triples  83
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/isocat> , <http://lod-cloud.net/dataset/olia> ;
-  void:triples  361
-] .
-
-<http://lod-cloud.net/dataset/olia>
-        a                     void:Dataset ;
+lod:olia  a                   void:Dataset ;
         dcterms:description   "The Ontologies of Linguistic Annotations (OLiA) provide an OWL/DL taxonomy of data categories as a reference for linguistic annotation (OLiA Reference Model), plus OWL/DL models for a large number of annotation schemes (OLiA Annotation Models) and their relationship to reference data categories (OLiA Linking Models).\r\nThe OLiA Reference Model itself is linked to community-maintained repositories such as GOLD (http://linguistics-ontology.org/) and ISOcat (http://www.isocat.org)\r\n\r\nThe OLiA ontologies were originally developed as part of an infrastructure for the sustainable maintenance of linguistic resources (http://www.sfb441.uni-tuebingen.de/c2/index-engl.html), their fields of application include the formalization of annotation schemes, concept-based querying over heterogeneously annotated corpora, and the development of interoperable NLP pipelines."@en ;
         dcterms:publisher     [ rdfs:label  "Christian Chiarcos" ;
                                 foaf:mbox   "christian.chiarcos@web.de"
@@ -28,6 +20,14 @@
         dcat:distribution     [ dcat:accessURL  <http://purl.org/olia> ] ;
         foaf:homepage         <http://purl.org/olia> .
 
-[ void:target   <http://lod-cloud.net/dataset/gold> , <http://lod-cloud.net/dataset/olia> ;
+[ void:target   lod:olia , lod:isocat ;
+  void:triples  361
+] .
+
+[ void:target   lod:olia , lod:tds ;
+  void:triples  83
+] .
+
+[ void:target   lod:olia , lod:gold ;
   void:triples  264
 ] .

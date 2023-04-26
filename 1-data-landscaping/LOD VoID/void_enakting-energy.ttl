@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/purl> , <http://lod-cloud.net/dataset/enakting-energy> ;
+[ void:target   lod:enakting-energy , lod:purl ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/enakting-energy> ;
+[ void:target   lod:enakting-energy , lod:ordnance-survey-linked-data ;
   void:triples  368
 ] .
 
-<http://lod-cloud.net/dataset/enakting-energy>
-        a                     void:Dataset ;
+lod:enakting-energy  a        void:Dataset ;
         dcterms:description   "UK's Road Transportation consumption data provided by the UK Department for Business, Enterprise and Regulatory Reform ( BERR). This data covers the whole UK territory from 2002 to 2007.\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "Tope Omitola" ;
                                 foaf:mbox   "t.omitola@ecs.soton.ac.uk"

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,32 +6,32 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/environment-agency-bathing-water-quality> ;
-  void:triples  505
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/environment-agency-bathing-water-quality> ;
+[ void:target   lod:environment-agency-bathing-water-quality , lod:reference-data-gov-uk ;
   void:triples  400000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/environment-agency-bathing-water-quality> ;
-  void:triples  1010
-] .
-
-<http://lod-cloud.net/dataset/environment-agency-bathing-water-quality>
+lod:environment-agency-bathing-water-quality
         a                     void:Dataset ;
         dcterms:description   "Bathing water quality assessment data for England and Wales from the Environment Agency."@en ;
         dcterms:publisher     [ rdfs:label  "Environment Agency" ;
                                 foaf:mbox   "Alex.Coley@environment-agency.gov.uk"
                               ] ;
-        dcterms:subject       "format-admingeo" , "government" , "license-metadata" , "deref-vocab" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "no-vocab-mappings" , "lod" , "environment" , "format-skos" , "published-by-producer" , "format-foaf" ;
+        dcterms:subject       "format-admingeo" , "government" , "license-metadata" , "deref-vocab" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "environment" , "lod" , "no-vocab-mappings" , "format-skos" , "format-foaf" , "published-by-producer" ;
         dcterms:title         "Environment Agency Bathing Water Quality"@en ;
         void:exampleResource  <http://environment.data.gov.uk/doc/bathing-water-quality/in-season/sample.rdf> , <http://environment.data.gov.uk/doc/bathing-water-quality/in-season/sample.ttl> , <http://environment.data.gov.uk/doc/bathing-water-quality/in-season/sample.html> ;
         void:sparqlEndpoint   <http://environment.data.gov.uk/sparql/bwq/query> ;
         void:triples          8735962 ;
+        dcat:distribution     [ dcat:accessURL  <http://environment.data.gov.uk/sources/def/bathing-water-quality.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://environment.data.gov.uk/sources/bwq/output/annual-compliance_2011_BWQ_BASELINE.nt.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://environment.data.gov.uk/sources/bwq/output/in-season_2011_BWQ_BASELINE.nt.zip> ] ;
         dcat:distribution     [ dcat:accessURL  <http://environment.data.gov.uk/sources/def/bathing-water-quality.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://environment.data.gov.uk/data/bathing-water-quality.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://environment.data.gov.uk/sources/def/bathing-water-quality.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://environment.data.gov.uk/sources/bwq/output/in-season_2011_BWQ_BASELINE.nt.zip> ] ;
         foaf:homepage         <http://environment.data.gov.uk/lab> .
+
+[ void:target   lod:environment-agency-bathing-water-quality , lod:ordnance-survey-linked-data ;
+  void:triples  1010
+] .
+
+[ void:target   lod:environment-agency-bathing-water-quality , lod:statistics-data-gov-uk ;
+  void:triples  505
+] .

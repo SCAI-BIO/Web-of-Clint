@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/deutsche-biographie> ;
+[ void:target   lod:deutsche-biographie , lod:dnb-gemeinsame-normdatei ;
   void:triples  100
 ] .
 
-<http://lod-cloud.net/dataset/deutsche-biographie>
+lod:deutsche-biographie
         a                     void:Dataset ;
         dcterms:description   "Presents some of the results of the LOD2 PUBLINK activity in cooperation with the AKSW group and the group of the Neue Deutsche Biographie of the Historical Commission at the Bavarian Academy of Sciences and Humanities. Within this project meta-data about 46,000 biographies and related 42,000 additional people and 12,000 locations has been made available as Linked Data and RDF triple. We used the vocabulary of the German National Library for the GND and adapted it by a few additional classes and relations. In addition to the representation in RDF, we offer a OntoWiki instance to provide the ability for browsing an querying the dataset. With the help of the Relationshipfinder tool relations between two or more persons, may visualized using this SPARQL endpoint. "@en ;
         dcterms:publisher     [ rdfs:label  "deutsche-biographie.de" ;

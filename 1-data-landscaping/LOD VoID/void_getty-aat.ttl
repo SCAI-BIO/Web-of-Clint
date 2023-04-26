@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,25 +6,24 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/getty-aat> ;
-  void:triples  335
-] .
-
-<http://lod-cloud.net/dataset/getty-aat>
-        a                     void:Dataset ;
+lod:getty-aat  a              void:Dataset ;
         dcterms:description   "The Art & Architecture Thesaurus® (AAT) is a structured, multilingual vocabulary including terms, descriptions, and other information for generic concepts related to art, architecture, and other cultural heritage, and conservation. For decades now, the AAT as been used as a primary reference by museums, art libraries, archives, visual resource catalogers, conservation specialists, archaeological projects, bibliographic projects, researchers, and information specialists who are dealing with the needs of these users. Like all of the Getty Vocabularies, the AAT is compliant with international standards and grows through contribution. \r\n\r\n** Openness **\r\nAAT data is released under Open Data Commons Attribution License. Adherence to ODC Attribution instructions for the correct assertion of attribution is encouraged. The preferred form of attribution for AAT is:\r\n\r\n\"*This [title or report or article or dataset] contains information from the Art & Architecture Thesaurus® (AAT) which is made available under the ODC Attribution License.*\"\r\n\r\nSpecial Case: In circumstances where providing the full attribution statement above is not technically feasible, the use of canonical AAT URIs is adequate to satisfy Section 4.3 of the ODC Attribution License."@en ;
         dcterms:publisher     [ rdfs:label  "\"The Getty Research Institute\"" ;
                                 foaf:mbox   "abctawil@gmail.com"
                               ] ;
-        dcterms:subject       "skos" , "Thesauri" , "format-skosxl" , "topic.schemata" , "linguistics" , "conservation" , "cultural heritage" , "art" , "lod" , "architecture" , "format-skos" ;
+        dcterms:subject       "skos" , "Thesauri" , "format-skosxl" , "topic.schemata" , "linguistics" , "conservation" , "cultural heritage" , "art" , "architecture" , "lod" , "format-skos" ;
         dcterms:title         "Art & Architecture Thesaurus"@en ;
         void:exampleResource  <http://vocab.getty.edu/aat/300264551> , <http://vocab.getty.edu/aat/300264092> , <http://vocab.getty.edu/aat/300198841> , <http://vocab.getty.edu/aat/300197200> ;
         void:sparqlEndpoint   <http://vocab.getty.edu/sparql> ;
         void:triples          "0"^^xsd:int ;
-        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/dataset/aat/full.zip> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/dataset/aat/explicit.zip> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/.well-known/void> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/ontology> ] ;
         dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/doc> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/.well-known/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/dataset/aat/explicit.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/dataset/aat/full.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vocab.getty.edu/ontology> ] ;
         foaf:homepage         <https://altawil.my.opendatasoft.com> .
+
+[ void:target   lod:getty-aat , lod:lcsh ;
+  void:triples  335
+] .

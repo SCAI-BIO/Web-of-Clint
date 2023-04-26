@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/catalan-eurowordnet-lemon-lexicon-3-0> ;
-  void:triples  48090
+[ void:target   lod:catalan-eurowordnet-lemon-lexicon-3-0 , lod:sumo ;
+  void:triples  119078
 ] .
 
-<http://lod-cloud.net/dataset/catalan-eurowordnet-lemon-lexicon-3-0>
+lod:catalan-eurowordnet-lemon-lexicon-3-0
         a                    void:Dataset ;
         dcterms:description  "This is the Catalan EuroWordNet-Lemon lexicon. The lexicon was created from the Catalan Word-Net-LMF lexicon which is part of the Multilingual Central Repository (MCR http://adimen.si.ehu.es/web/MCR). The lexicon conforms to the 'lemon' specifications and it is linked to the Catalan Parole/Simple lemon lexicon (http://lod.iula.upf.edu/resources/metadata_SimpleParole-Catalanv2)."@en ;
         dcterms:publisher    [ rdfs:label  "" ;
@@ -20,6 +21,6 @@
         void:triples         1841180 ;
         dcat:distribution    [ dcat:accessURL  <https://github.com/martavillegas/EuroWordNetLemon/blob/master/cat-30-lmf.xml.ttl> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/sumo> , <http://lod-cloud.net/dataset/catalan-eurowordnet-lemon-lexicon-3-0> ;
-  void:triples  119078
+[ void:target   lod:catalan-eurowordnet-lemon-lexicon-3-0 , lod:lexinfo ;
+  void:triples  48090
 ] .

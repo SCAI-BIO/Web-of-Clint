@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/open-data-thesaurus> ;
-  void:triples  50
+[ void:target   lod:open-data-thesaurus , lod:freebase ;
+  void:triples  40
 ] .
 
-<http://lod-cloud.net/dataset/open-data-thesaurus>
+lod:open-data-thesaurus
         a                     void:Dataset ;
         dcterms:description   "The Open Data Thesaurus is a collection of key concepts and entities, their definitions and semantic links. Following the principle of ?eat your own dog food? this thesaurus is available in machine-readable form based on open W3C standards and under a Creative Commons license. The thesaurus can thus be integrated into other applications, such as for creating mashups, or for indexing of documents. The thesaurus is available in English and German."@en ;
         dcterms:publisher     [ rdfs:label  "OGD Austria" ;
                                 foaf:mbox   "office@semantic-web.at"
                               ] ;
-        dcterms:subject       "opendata" , "lod" , "thesaurus" , "published-by-producer" , "deref-vocab" , "crossdomain" , "lodcloud-diagram-2014-08-30" , "technology" , "format-owl" , "lodcloud-diagram-2011-09-19" , "ogd" , "llod" , "cross_domain" , "format-skos" ;
+        dcterms:subject       "opendata" , "lod" , "thesaurus" , "published-by-producer" , "deref-vocab" , "crossdomain" , "lodcloud-diagram-2014-08-30" , "format-owl" , "technology" , "lodcloud-diagram-2011-09-19" , "ogd" , "llod" , "format-skos" , "cross_domain" ;
         dcterms:title         "Open Data Thesaurus"@en ;
         void:dataDump         <http://ckan.net/storage/f/file/12be3509-4cd1-4fc5-8c95-d0d3a7121766> ;
         void:exampleResource  <http://vocabulary.semantic-web.at/OpenData/CKAN> ;
@@ -23,6 +24,6 @@
         void:triples          8000 ;
         foaf:homepage         <http://vocabulary.semantic-web.at/PoolParty/wiki/OpenData> .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/open-data-thesaurus> ;
-  void:triples  40
+[ void:target   lod:open-data-thesaurus , lod:dbpedia ;
+  void:triples  50
 ] .

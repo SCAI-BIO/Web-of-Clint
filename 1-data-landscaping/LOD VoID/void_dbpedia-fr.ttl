@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-nl> , <http://lod-cloud.net/dataset/dbpedia-fr> ;
+[ void:target   lod:dbpedia-fr , lod:dbpedia-nl ;
   void:triples  402443
 ] .
 
-<http://lod-cloud.net/dataset/dbpedia-fr>
-        a                     void:Dataset ;
+[ void:target   lod:dbpedia-fr , lod:dbpedia-it ;
+  void:triples  474524
+] .
+
+lod:dbpedia-fr  a             void:Dataset ;
         dcterms:description   "DBpedia in French dataset. Part of the DBpedia internationalisation effort. Data are extracted here from French speaking pages of wikipedia."@en ;
         dcterms:publisher     [ rdfs:label  "julien_cojan" ;
                                 foaf:mbox   "contact@dbpedia.fr"
@@ -21,18 +25,14 @@
         void:exampleResource  <http://fr.dbpedia.org/data/Paris.rdf> , <http://fr.dbpedia.org/page/Paris> , <http://fr.dbpedia.org/data/Paris.nt> , <http://fr.dbpedia.org/data/Paris.n3> ;
         void:sparqlEndpoint   <http://fr.dbpedia.org/sparql> ;
         void:triples          131000000 ;
-        dcat:distribution     [ dcat:accessURL  <http://fr.dbpedia.org/resource/Paris> ] ;
         dcat:distribution     [ dcat:accessURL  <http://downloads.dbpedia.org/3.6/dbpedia_3.6.owl.bz2> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://fr.dbpedia.org/resource/Paris> ] ;
         foaf:homepage         <http://fr.dbpedia.org> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbpedia-fr> ;
-  void:triples  854635
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-ja> , <http://lod-cloud.net/dataset/dbpedia-fr> ;
+[ void:target   lod:dbpedia-fr , lod:dbpedia-ja ;
   void:triples  224710
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-it> , <http://lod-cloud.net/dataset/dbpedia-fr> ;
-  void:triples  474524
+[ void:target   lod:dbpedia-fr , lod:dbpedia ;
+  void:triples  854635
 ] .

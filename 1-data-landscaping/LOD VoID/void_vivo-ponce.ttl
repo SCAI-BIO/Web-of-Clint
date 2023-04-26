@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,18 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/vivo-ponce>
-        a                    void:Dataset ;
+lod:vivo-ponce  a            void:Dataset ;
         dcterms:description  "Ponce School of Medicine is a private medical school located in the city of Ponce in Puerto Rico, U.S. The school is accredited by the Liaison Committee on Medical Education (LCME), and classified as a United States Medical School. It holds nationally accredited graduate programs in the disciplines of Medicine, Clinical Psychology, and Biomedical Sciences, and Public Health. Ponce School of Medicine is also distinguished by its strong support of graduate medical education through several consortia agreements in south eastern Puerto Rico."@en ;
         dcterms:publisher    [ rdfs:label  "VIVO" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "no-provenance-metadata" , "lod" , "education" , "format-rdfs" , "published-by-producer" , "no-vocab-mappings" , "no-license-metadata" , "format-vitro" , "publications" , "deref-vocab" , "social-networks" , "vivo" , "science" , "format-rdf" ;
+        dcterms:subject      "no-provenance-metadata" , "lod" , "education" , "format-rdfs" , "published-by-producer" , "no-vocab-mappings" , "no-license-metadata" , "format-vitro" , "publications" , "deref-vocab" , "social-networks" , "format-rdf" , "vivo" , "science" ;
         dcterms:title        "VIVO Ponce"@en ;
         void:triples         6490 ;
         dcat:distribution    [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-04-02T140643/vivopsmexport.rdf> ] ;
         foaf:homepage        <http://beta.vivosearch.org/institution/ponce-school-medicine> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia > , <http://lod-cloud.net/dataset/vivo-ponce> ;
+[ void:target   lod:vivo-ponce , <http://lod-cloud.net/dataset/dbpedia+> ;
   void:triples  58
 ] .

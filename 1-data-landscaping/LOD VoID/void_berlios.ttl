@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,33 +6,32 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/berlios> ;
-  void:triples  3
-] .
-
-<http://lod-cloud.net/dataset/berlios>
-        a                     void:Dataset ;
+lod:berlios  a                void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "crawledLinkedDataCloud2014" , "format-doap" , "LinkedDataCrawl2014" , "format-sioc" , "lodcloud-diagram-2014-08-30" , "format-admin" , "format-dcterm" , "usergeneratedcontent" , "format-rdf" , "format-foaf" , "provenance-metadata" , "format-rdfs" ;
+        dcterms:subject       "crawledLinkedDataCloud2014" , "format-doap" , "LinkedDataCrawl2014" , "format-sioc" , "lodcloud-diagram-2014-08-30" , "format-admin" , "format-dcterm" , "format-rdf" , "usergeneratedcontent" , "format-foaf" , "provenance-metadata" , "format-rdfs" ;
         dcterms:title         "berlios"@en ;
         void:exampleResource  <http://swaml.berlios.de/doap.rdf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/rdfohloh> , <http://lod-cloud.net/dataset/berlios> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/berlios> ;
+[ void:target   lod:berlios , lod:personal-homepages ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wordpress> , <http://lod-cloud.net/dataset/berlios> ;
+[ void:target   lod:berlios , lod:rdfohloh ;
+  void:triples  5
+] .
+
+[ void:target   lod:berlios , lod:wordpress ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/linkedmarkmail> , <http://lod-cloud.net/dataset/berlios> ;
+[ void:target   lod:berlios , lod:dbpedia ;
+  void:triples  3
+] .
+
+[ void:target   lod:berlios , lod:linkedmarkmail ;
   void:triples  3
 ] .

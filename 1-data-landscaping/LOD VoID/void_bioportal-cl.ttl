@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,160 +6,159 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vao> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  30
+[ void:target   lod:bioportal-cl , lod:bioportal-fbbt ;
+  void:triples  155
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  70
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  202
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  177
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  603
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-xao> , <http://lod-cloud.net/dataset/bioportal-cl> ;
+[ void:target   lod:bioportal-cl , lod:bioportal-xao ;
   void:triples  162
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  340
+[ void:target   lod:bioportal-cl , lod:bioportal-lnc ;
+  void:triples  15
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mp> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  88
+[ void:target   lod:bioportal-cl , lod:bioportal-msh ;
+  void:triples  177
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ddanat> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  31
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aao> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  41
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-zfa> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  783
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-wbbt> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  35
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sao> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  183
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vhog> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  103
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-cl> ;
+[ void:target   lod:bioportal-cl , lod:bioportal-ev ;
   void:triples  155
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aeo> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  69
+[ void:target   lod:bioportal-cl , lod:bioportal-bto ;
+  void:triples  473
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-po_x2> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  62
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-fbbt> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  155
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  2064
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-po> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  102
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-fao> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  43
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gro_x1> , <http://lod-cloud.net/dataset/bioportal-cl> ;
+[ void:target   lod:bioportal-cl , lod:bioportal-gro_x1 ;
   void:triples  59
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  52
+[ void:target   lod:bioportal-cl , lod:bioportal-ddanat ;
+  void:triples  31
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  60
+[ void:target   lod:bioportal-cl , lod:bioportal-biomodels ;
+  void:triples  603
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-cl> ;
+[ void:target   lod:bioportal-cl , lod:bioportal-mat ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-po ;
+  void:triples  102
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-po_x2 ;
+  void:triples  62
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-dc_cl ;
+  void:triples  44
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-nif ;
+  void:triples  70
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-galen ;
   void:triples  71
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-cl>
-        a                    void:Dataset ;
-        dcterms:description  "The Cell Ontology is designed as a structured controlled vocabulary for cell types. This ontology was constructed for use by the model organism and other bioinformatics databases, where there is a need for a controlled vocabulary of cell types. This ontology is not organism specific; indeed it includes cell types from prokaryotes to mammals, including plants and fungi. A full description of the Cell Ontology can be found in <a href=\"http://genomebiology.com/2005/6/2/R21\">Bard, Rhee and Ashburner. 2005. An Ontology for Cell Types</a>."@en ;
+[ void:target   lod:bioportal-cl , lod:bioportal-ncit ;
+  void:triples  340
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-aao ;
+  void:triples  41
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-vao ;
+  void:triples  30
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-snomedct ;
+  void:triples  183
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-sao ;
+  void:triples  45
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-efo ;
+  void:triples  52
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-fao ;
+  void:triples  43
+] .
+
+lod:bioportal-cl  a          void:Dataset ;
+        dcterms:description  "The Cell Ontology is designed as a structured controlled vocabulary for cell types. This ontology was constructed for use by the model organism and other bioinformatics databases, where there is a need for a controlled vocabulary of cell types. This ontology is not organism specific; indeed it includes cell types from prokaryotes to mammals, including plants and fungi. A full description of the Cell Ontology can be found in <a+href=\"http://genomebiology.com/2005/6/2/R21\">Bard, Rhee and Ashburner. 2005. An Ontology for Cell Types</a>."@en ;
         dcterms:publisher    [ rdfs:label  "Alex Diehl" ;
                                foaf:mbox   ""
                              ] ;
         dcterms:subject      "published-by-third-party" , "ontology" , "bioportal" , "lod" , "life_sciences" , "format-obo" , "format-rdf" , "biomedicine" ;
         dcterms:title        "Cell type"@en ;
         void:triples         29166 ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/46604?apikey=BP_API_KEY> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1006> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-dc_cl> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  44
+[ void:target   lod:bioportal-cl , lod:bioportal-mesh-owl ;
+  void:triples  17
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tao> , <http://lod-cloud.net/dataset/bioportal-cl> ;
+[ void:target   lod:bioportal-cl , lod:bioportal-syn ;
+  void:triples  202
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-zfa ;
+  void:triples  783
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-wbbt ;
+  void:triples  35
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-aeo ;
+  void:triples  69
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-mp ;
+  void:triples  88
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-canco ;
+  void:triples  59
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-mccl_x1 ;
+  void:triples  2064
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-tao ;
   void:triples  777
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-cl> ;
+[ void:target   lod:bioportal-cl , lod:bioportal-vhog ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-nif_cell ;
+  void:triples  60
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-rcd ;
+  void:triples  45
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-csp ;
+  void:triples  103
+] .
+
+[ void:target   lod:bioportal-cl , lod:bioportal-obi ;
   void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bto> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  473
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-cl> ;
-  void:triples  59
 ] .

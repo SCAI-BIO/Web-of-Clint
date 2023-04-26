@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,24 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/uk-legislation-api> ;
-  void:triples  33
-] .
-
-<http://lod-cloud.net/dataset/uk-legislation-api>
+lod:uk-legislation-api
         a                    void:Dataset ;
         dcterms:description  "API access to UK primary and secondary legislation. The API provides access to legislation from the UK Statute Law Database and the OPSI website in HTML, XML and RDF formats. The data is not available for download as an entire set. See the documentation in the developer zone for further details."@en ;
         dcterms:publisher    [ rdfs:label  "The National Archives" ;
                                foaf:mbox   "legislation@nationalarchives.gsi.gov.uk"
                              ] ;
-        dcterms:subject      "country-uk" , "format-rdf" , "lod" , "format-metalex" , "legislation" , "format-dc" , "statute-law-database" , "government" , "lodcloud-diagram-2011-09-19" , "format-rdfs" , "uk" , "lodcloud-diagram-2014-08-30" , "no-proprietary-vocab" , "format-frbr" , "no-license-metadata" , "no-vocab-mappings" , "no-provenance-metadata" , "published-by-producer" , "ukgov" ;
+        dcterms:subject      "country-uk" , "format-rdf" , "lod" , "format-metalex" , "legislation" , "format-dc" , "statute-law-database" , "government" , "lodcloud-diagram-2011-09-19" , "format-rdfs" , "uk" , "lodcloud-diagram-2014-08-30" , "no-proprietary-vocab" , "format-frbr" , "no-license-metadata" , "no-provenance-metadata" , "no-vocab-mappings" , "published-by-producer" , "ukgov" ;
         dcterms:title        "UK Legislation"@en ;
         void:triples         1900000000 ;
         dcat:distribution    [ dcat:accessURL  <http://www.legislation.gov.uk/new/data.feed> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.legislation.gov.uk/ukpga/1985/67/section/6/data.rdf> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.legislation.gov.uk/ukpga/1985/67/section/6/data.xml> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.legislation.gov.uk/ukpga/1985/67/section/6/data.rdf> ] ;
         foaf:homepage        <http://www.legislation.gov.uk/> .
 
-[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/uk-legislation-api> ;
+[ void:target   lod:uk-legislation-api , lod:dbpedia ;
+  void:triples  33
+] .
+
+[ void:target   lod:uk-legislation-api , lod:ordnance-survey-linked-data ;
   void:triples  16000000
 ] .

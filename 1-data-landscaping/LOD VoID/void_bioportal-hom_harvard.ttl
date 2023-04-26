@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bioportal-hom_harvard>
+lod:bioportal-hom_harvard
         a                    void:Dataset ;
         dcterms:description  "HOM-HARVARD demographics for i2b2"@en ;
         dcterms:publisher    [ rdfs:label  "Ketty Mobed" ;
@@ -14,7 +15,7 @@
         dcterms:subject      "format-rdf" , "biomedicine" , "lod" , "ontology" , "published-by-third-party" , "bioportal" , "format-owl" ;
         dcterms:title        "HOM-HARVARD"@en ;
         void:triples         1107 ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45879?apikey=BP_API_KEY> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1631> .

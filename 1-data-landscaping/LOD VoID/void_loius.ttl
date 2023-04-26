@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/loius>
-        a                     void:Dataset ;
+lod:loius  a                  void:Dataset ;
         dcterms:description   "The MIUR is the Italian Ministry of Education, University and Research and each year publishes a set of useful information about the University student data.\r\nThe LOIUS project represents an attempt towards the adoption of semantic standards in publishing statistical data coming from MIUR Government.  "@en ;
         dcterms:publisher     [ rdfs:label  "Giovanni Pirrotta" ;
                                 foaf:mbox   "giovanni.pirrotta@gmail.com"
                               ] ;
-        dcterms:subject       "format-owl" , "linkeddata" , "statistic" , "miur" , "lod" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "no-provenance-metadata" , "university" , "italy" , "format-rdf" , "no-license-metadata" , "university-students" , "government" , "deref-vocab" , "published-by-producer" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:subject       "format-owl" , "linkeddata" , "statistic" , "miur" , "lod" , "lodcloud-diagram-2011-09-19" , "no-provenance-metadata" , "no-vocab-mappings" , "university" , "italy" , "format-rdf" , "no-license-metadata" , "university-students" , "government" , "deref-vocab" , "lodcloud-diagram-2014-08-30" , "published-by-producer" ;
         dcterms:title         "Linking Italian University Statistics Project"@en ;
         void:exampleResource  <http://sw.unime.it/loius/dimension/faculty/143> , <http://sw.unime.it/loius/index.py?area=iscritti&year=2001_2002&model=modello12&university=05806> ;
         void:sparqlEndpoint   <http://sw.unime.it:8890/sparql> ;
@@ -20,6 +20,6 @@
         dcat:distribution     [ dcat:accessURL  <http://sw.unime.it/loius/download.html> ] ;
         foaf:homepage         <http://sw.unime.it/loius/info.html> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/loius> ;
+[ void:target   lod:loius , lod:geonames-semantic-web ;
   void:triples  311
 ] .

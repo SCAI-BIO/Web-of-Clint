@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pdq> , <http://lod-cloud.net/dataset/bioportal-rs> ;
-  void:triples  12
+[ void:target   lod:bioportal-rs , lod:bioportal-pw ;
+  void:triples  39
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-rs> ;
-  void:triples  28
+[ void:target   lod:bioportal-rs , lod:bioportal-galen ;
+  void:triples  20
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-atmo> , <http://lod-cloud.net/dataset/bioportal-rs> ;
-  void:triples  13
+[ void:target   lod:bioportal-rs , lod:bioportal-csp ;
+  void:triples  24
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-rs>
-        a                    void:Dataset ;
+lod:bioportal-rs  a          void:Dataset ;
         dcterms:description  "This ontology defines the hierarchical display of the different rat strains as derived from the parental strains"@en ;
         dcterms:publisher    [ rdfs:label  "Rajni Nigam" ;
                                foaf:mbox   ""
@@ -26,55 +26,55 @@
         dcterms:subject      "ontology" , "biomedicine" , "format-rdf" , "bioportal" , "life_sciences" , "published-by-third-party" , "format-obo" , "lod" ;
         dcterms:title        "Rat Strain Ontology"@en ;
         void:triples         23606 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47163?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1150> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-rs> ;
-  void:triples  23
+[ void:target   lod:bioportal-rs , lod:bioportal-nif ;
+  void:triples  28
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-rs> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-rs> ;
-  void:triples  24
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ogi> , <http://lod-cloud.net/dataset/bioportal-rs> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-rs> ;
-  void:triples  26
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-rs> ;
+[ void:target   lod:bioportal-rs , lod:bioportal-ncit ;
   void:triples  50
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-rs> ;
-  void:triples  22
+[ void:target   lod:bioportal-rs , lod:bioportal-birnlex ;
+  void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pw> , <http://lod-cloud.net/dataset/bioportal-rs> ;
-  void:triples  39
+[ void:target   lod:bioportal-rs , lod:bioportal-atmo ;
+  void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-rs> ;
-  void:triples  20
+[ void:target   lod:bioportal-rs , lod:bioportal-pdq ;
+  void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-phare> , <http://lod-cloud.net/dataset/bioportal-rs> ;
+[ void:target   lod:bioportal-rs , lod:bioportal-phare ;
   void:triples  21
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-doid> , <http://lod-cloud.net/dataset/bioportal-rs> ;
+[ void:target   lod:bioportal-rs , lod:bioportal-syn ;
+  void:triples  22
+] .
+
+[ void:target   lod:bioportal-rs , lod:bioportal-mat ;
   void:triples  26
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ep> , <http://lod-cloud.net/dataset/bioportal-rs> ;
+[ void:target   lod:bioportal-rs , lod:bioportal-ep ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-rs , lod:bioportal-doid ;
+  void:triples  26
+] .
+
+[ void:target   lod:bioportal-rs , lod:bioportal-msh ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-rs , lod:bioportal-ogi ;
   void:triples  21
 ] .

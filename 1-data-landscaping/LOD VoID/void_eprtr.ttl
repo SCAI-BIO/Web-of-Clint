@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,50 +6,49 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/telegraphis> , <http://lod-cloud.net/dataset/eprtr> ;
-  void:triples  69
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/eurostat-linked-data> , <http://lod-cloud.net/dataset/eprtr> ;
-  void:triples  2833
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/eea-rod> , <http://lod-cloud.net/dataset/eprtr> ;
-  void:triples  66
-] .
-
-<http://lod-cloud.net/dataset/eprtr>
-        a                     void:Dataset ;
+lod:eprtr  a                  void:Dataset ;
         dcterms:description   "The European Pollutant Release and Transfer Register (E-PRTR) is a Europe-wide register that provides easily accessible key environmental data from industrial facilities in European Union Member States and in Iceland, Liechtenstein, Norway, Serbia and Switzerland."@en ;
         dcterms:publisher     [ rdfs:label  "Søren Roug" ;
                                 foaf:mbox   "soren.roug@eea.europa.eu"
                               ] ;
-        dcterms:subject       "government" , "environment" , "waste" , "format-rdf" , "pollution" , "published-by-producer" ;
+        dcterms:subject       "environment" , "government" , "waste" , "format-rdf" , "pollution" , "published-by-producer" ;
         dcterms:title         "European Pollutant Release and Transfer Register (E-PRTR)"@en ;
         void:exampleResource  <http://prtr.ec.europa.eu/rdf/facility/11338> ;
         void:sparqlEndpoint   <http://cr.eionet.europa.eu/sparql> ;
         void:triples          14500000 ;
-        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/FacilityID_Changes.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/Activity.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/WasteTransfer.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/FacilityReport.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/PollutantRelease.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/PollutantTransferMethodUsed.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/void.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/Activity.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/ExternalLinks.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/PollutantTransfer.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/lookuptables.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/PollutantReleaseMethodUsed.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/FacilityReport.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/WasteTransferMethodUsed.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/CompetentAuthority.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/FacilityID_Changes.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/UploadedReports.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/lookuptables.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/PollutantTransferMethodUsed.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/CompetentAuthority.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/void.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/PollutantRelease.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/PollutantReleaseMethodUsed.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/Facility.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://prtr.ec.europa.eu/rdf/PollutantTransfer.rdf> ] ;
         foaf:homepage         <http://prtr.ec.europa.eu/> .
 
-[ void:target   <http://lod-cloud.net/dataset/eionet-rdf> , <http://lod-cloud.net/dataset/eprtr> ;
+[ void:target   lod:eprtr , lod:eurostat-linked-data ;
+  void:triples  2833
+] .
+
+[ void:target   lod:eprtr , lod:dbpedia ;
+  void:triples  317
+] .
+
+[ void:target   lod:eprtr , lod:eionet-rdf ;
   void:triples  3222
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/eprtr> ;
-  void:triples  317
+[ void:target   lod:eprtr , lod:eea-rod ;
+  void:triples  66
+] .
+
+[ void:target   lod:eprtr , lod:telegraphis ;
+  void:triples  69
 ] .

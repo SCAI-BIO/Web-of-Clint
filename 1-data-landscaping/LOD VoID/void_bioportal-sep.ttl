@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,84 +6,79 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  28
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-odgi> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  25
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ontodm> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-npo> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ddi> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cheminf> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ep> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  25
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  34
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-sep> ;
+[ void:target   lod:bioportal-sep , lod:bioportal-canco ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  14
+[ void:target   lod:bioportal-sep , lod:bioportal-snomedct ;
+  void:triples  34
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sio> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  19
+[ void:target   lod:bioportal-sep , lod:bioportal-obi ;
+  void:triples  28
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-sep> ;
+[ void:target   lod:bioportal-sep , lod:bioportal-nemo_x1 ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-nif_dysfunction ;
   void:triples  11
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-sep>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-sep , lod:bioportal-msh ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-birnlex ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-ddi ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-odgi ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-npo ;
+  void:triples  20
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-ero ;
+  void:triples  25
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-ncit ;
+  void:triples  114
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-nif ;
+  void:triples  25
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-sio ;
+  void:triples  19
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-hl7 ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-aero ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-cheminf ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-ontodm ;
+  void:triples  12
+] .
+
+lod:bioportal-sep  a         void:Dataset ;
         dcterms:description  "A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments, such as, and including, gel electrophoresis, column chromatography, capillary electrophoresis, centrifugation and so on. Developed jointly by the HUPO Proteomics Standards Initiative and The Metabolomics Standards Initiative."@en ;
         dcterms:publisher    [ rdfs:label  "SEP developers" ;
                                foaf:mbox   ""
@@ -90,39 +86,43 @@
         dcterms:subject      "format-obo" , "biomedicine" , "format-rdf" , "life_sciences" , "lod" , "bioportal" , "ontology" , "published-by-third-party" ;
         dcterms:title        "Sample processing and separation techniques"@en ;
         void:triples         2931 ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/39509?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/39509?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1044> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tmo> , <http://lod-cloud.net/dataset/bioportal-sep> ;
+[ void:target   lod:bioportal-sep , lod:bioportal-lnc ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-cpr ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-csp ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-nif_cell ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-ep ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-tmo ;
   void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  12
+[ void:target   lod:bioportal-sep , lod:bioportal-mesh-owl ;
+  void:triples  22
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  114
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nemo_x1> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aero> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-sep> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cpr> , <http://lod-cloud.net/dataset/bioportal-sep> ;
+[ void:target   lod:bioportal-sep , lod:bioportal-rcd ;
   void:triples  14
+] .
+
+[ void:target   lod:bioportal-sep , lod:bioportal-galen ;
+  void:triples  17
 ] .

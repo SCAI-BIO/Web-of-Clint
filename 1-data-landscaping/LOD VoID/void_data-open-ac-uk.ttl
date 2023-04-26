@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,26 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/data-open-ac-uk>
-        a                     void:Dataset ;
+[ void:target   lod:data-open-ac-uk , lod:data-gov-uk ;
+  void:triples  14500
+] .
+
+lod:data-open-ac-uk  a        void:Dataset ;
         dcterms:description   "The result of extracting and interlinking data from various institutional repositories of the [Open University](http://www.open.ac.uk/) and making it available for reuse.\r\n\r\n\r\n#### RDF statistics\r\n\r\n1.6 Million triples, updated daily. \r\n\r\n#### Links\r\n\r\nCourse descriptions link to geonames for availability and price validity. \r\n\r\nURI from the Open University linked to the corresponding URI in education.data.gov.uk\r\n\r\nBuildings are linked to their postcode in ordnancesurvey.co.uk\r\n\r\nSome links to DBPedia, with various levels of validity. \r\n"@en ;
         dcterms:publisher     [ rdfs:label  "[LUCERO Team](http://lucero-project.info)" ;
                                 foaf:mbox   "info@lucero-project.info"
                               ] ;
-        dcterms:subject       "published-by-producer" , "kmiou" , "lodcloud-diagram-2014-08-30" , "lod" , "publications" , "lld" , "format-skos" , "course" , "lodcloud-diagram-2011-09-19" , "openuniversity" , "format-bibo" , "format-rdf" , "education" , "no-proprietary-vocab" ;
+        dcterms:subject       "published-by-producer" , "kmiou" , "lodcloud-diagram-2014-08-30" , "lod" , "publications" , "lld" , "course" , "format-skos" , "lodcloud-diagram-2011-09-19" , "format-bibo" , "format-rdf" , "education" , "openuniversity" , "no-proprietary-vocab" ;
         dcterms:title         "data.open.ac.uk, Linked Data from the Open University"@en ;
-        void:exampleResource  <http://data.open.ac.uk/resource/course/m366> , <http://data.open.ac.uk/resource/podcast/218dce44a4ed17b36ada50d18b866b03> , <http://data.open.ac.uk/resource/oro/21166> , <http://data.open.ac.uk/resource/person/c9aa7f2e582d191ed728ad414c5ea711> ;
+        void:exampleResource  <http://data.open.ac.uk/resource/course/m366> , <http://data.open.ac.uk/resource/oro/21166> , <http://data.open.ac.uk/resource/podcast/218dce44a4ed17b36ada50d18b866b03> , <http://data.open.ac.uk/resource/person/c9aa7f2e582d191ed728ad414c5ea711> ;
         void:sparqlEndpoint   <http://data.open.ac.uk/query> ;
         void:triples          1600000 ;
         foaf:homepage         <http://data.open.ac.uk/> .
 
-[ void:target   <http://lod-cloud.net/dataset/data-gov-uk> , <http://lod-cloud.net/dataset/data-open-ac-uk> ;
-  void:triples  14500
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/data-open-ac-uk> ;
-  void:triples  170000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/data-open-ac-uk> ;
+[ void:target   lod:data-open-ac-uk , lod:ordnance-survey-linked-data ;
   void:triples  218
+] .
+
+[ void:target   lod:data-open-ac-uk , lod:geonames-semantic-web ;
+  void:triples  170000
 ] .

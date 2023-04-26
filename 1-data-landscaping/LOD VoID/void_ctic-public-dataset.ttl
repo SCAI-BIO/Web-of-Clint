@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/ctic-public-dataset> ;
+[ void:target   lod:ctic-public-dataset , lod:geonames-semantic-web ;
   void:triples  3000
 ] .
 
-<http://lod-cloud.net/dataset/ctic-public-dataset>
+lod:ctic-public-dataset
         a                     void:Dataset ;
         dcterms:description   "Overview of worldwide data catalogues."@en ;
         dcterms:publisher     [ rdfs:label  "Fundacion CTIC" ;
                                 foaf:mbox   "opendata@fundacionctic.org"
                               ] ;
-        dcterms:subject       "no-provenance-metadata" , "license-metadata" , "format-dcterms" , "lod" , "lodcloud-diagram-2014-08-30" , "format-rdf" , "published-by-producer" , "deref-vocab" , "government" , "geographic" , "format-foaf" , "no-vocab-mappings" ;
+        dcterms:subject       "no-provenance-metadata" , "format-dcterms" , "license-metadata" , "lod" , "lodcloud-diagram-2014-08-30" , "format-rdf" , "published-by-producer" , "deref-vocab" , "geographic" , "government" , "format-foaf" , "no-vocab-mappings" ;
         dcterms:title         "CTIC Public Dataset Catalogs"@en ;
-        void:exampleResource  <http://data.fundacionctic.org/sparql?default-graph-uri=http%3A%2F%2Fdata.fundacionctic.org%2Fdataset-catalog&query=DESCRIBE%20%3Chttp%3A%2F%2Fdata.fundacionctic.org%2Fdataset-catalog%2Ftoronto.ca%3E&output=rdf> , <http://data.fundacionctic.org/sparql?default-graph-uri=&query=describe+%3Fcatalog+%3Fspatial+%3FparentCountry%0D%0Awhere+%7B%0D%0A%3Fcatalog+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fidentifier%3E+%22zaragoza.es%22%3B%0D%0A%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fspatial%3E+%3Fspatial.%0D%0A%0D%0A%3Fspatial+%3Chttp%3A%2F%2Fsws.geonames.org%2Fontology%23parentCountry%3E+%3FparentCountry.%0D%0A%0D%0A%7D&format=rdf> ;
+        void:exampleResource  <http://data.fundacionctic.org/sparql> ;
         void:sparqlEndpoint   <http://data.fundacionctic.org/sparql> ;
         void:triples          535230 ;
-        dcat:distribution     [ dcat:accessURL  <http://data.fundacionctic.org/sparql?query=select+*+where+{%3Fs+a+%3Chttp://data.fundacionctic.org/vocab/catalog/datasets%23Catalog%3E;+%3Fp+%3Fo.}&format=rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.fundacionctic.org/sparql> ] ;
         foaf:homepage         <http://datos.fundacionctic.org/en/> .

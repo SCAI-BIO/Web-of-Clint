@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/steak>
-        a                    void:Dataset ;
+lod:steak  a                 void:Dataset ;
         dcterms:description  "### About\r\n\r\nFrom website:\r\n\r\n>STEAK (Super Terminology system for the Evaluation and Analysis of Knowledge) is an integrated management tool for multilingual lexical resources. To accomplish this goal, semantic text mining techniques and resource convergence techniques which extract meaningful data from big data resources are implemented as fundamental functions. Moreover, in order to give data readability, an intelligent interface including concept navigation and visualization is additionally provided. The main processes of the STEAK are collecting multilingual lexical resources, extracting patterns appropriate for the resources, explicitly constructing semantic relations, and expressing these outcomes based on SKOS (Simple Knowledge Organization System) type for information sharing and reusability."@en ;
         dcterms:publisher    [ rdfs:label  "Do-Heon Jeong" ;
                                foaf:mbox   "heon@kisti.re.kr"

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/pscs-catalogue>
-        a                     void:Dataset ;
+lod:pscs-catalogue  a         void:Dataset ;
         dcterms:description   "This dataset contains several product scheme classifications that have been transformed to linked data. This dataset is a “catalogue” dataset; the individual classifications are:\r\n\r\n* dataset:combined-nomenclature-2012\r\n* dataset:isic-v4\r\n* dataset:cpa-2008\r\n* dataset:cpc-2008\r\n* dataset:cpv-2003\r\n* dataset:cpv-2008\r\n* dataset:naics-2007\r\n* dataset:naics-2012\r\n* dataset:sitc-v4\r\n\r\nAuthors:\r\n\r\n-Jose María Alvarez Rodríguez & Jose Emilio Labra Gayo\r\n\r\nWESO-University of Oviedo"@en ;
         dcterms:publisher     [ rdfs:label  "Jose María Alvarez Rodríguez at WESO (University of Oviedo)" ;
                                 foaf:mbox   "josem.alvarez@weso.es"
@@ -16,12 +16,12 @@
         void:exampleResource  <http://purl.org/weso/pscs/data/naics/2007/resource/11111?output=xml> ;
         void:sparqlEndpoint   <http://purl.org/weso/sparql> ;
         void:triples          1842053 ;
-        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/psc-ontology.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/resource/ds> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/psc-ontology.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/data/resource/ds?output=ttl> ] ;
         foaf:homepage         <http://www.josemalvarez.es/web/2011/11/16/product-scheme-classifications/> .
 
-[ void:target   <http://lod-cloud.net/dataset/productontology> , <http://lod-cloud.net/dataset/pscs-catalogue> ;
+[ void:target   lod:pscs-catalogue , lod:productontology ;
   void:triples  149112
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/data-incubator-smcjournals> , <http://lod-cloud.net/dataset/data-incubator-climb> ;
-  void:triples  43
+[ void:target   lod:data-incubator-climb , lod:data-incubator-metoffice ;
+  void:triples  1047
 ] .
 
-<http://lod-cloud.net/dataset/data-incubator-climb>
+lod:data-incubator-climb
         a                     void:Dataset ;
         dcterms:description   "A collection of data about climbing routes, crags, and mountains, screen-scraped from UKClimbing.com"@en ;
         dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
                                 foaf:mbox   "k.j.w.alexander@gmail.com"
                               ] ;
-        dcterms:subject       "published-by-third-party" , "format-climb" , "climbing" , "lod" , "sport" , "lodcloud-diagram-2011-09-19" , "format-rdf" , "no-vocab-mappings" , "format-rdfs" , "format-foaf" , "format-geo" , "geographic" , "no-license-metadata" , "deref-vocab" , "mountaineering" , "provenance-metadata" , "format-dc" ;
+        dcterms:subject       "published-by-third-party" , "format-climb" , "climbing" , "lod" , "no-vocab-mappings" , "lodcloud-diagram-2011-09-19" , "format-rdf" , "sport" , "format-rdfs" , "format-foaf" , "format-geo" , "geographic" , "no-license-metadata" , "deref-vocab" , "mountaineering" , "provenance-metadata" , "format-dc" ;
         dcterms:title         "Climb Dataincubator"@en ;
         void:exampleResource  <http://climb.dataincubator.org/venues/Buachaille_etive_mor_rannoch_wall_(argyll_and_bute)/A_game_of_dice> , <http://climb.dataincubator.org/venues/Buachaille_etive_mor_rannoch_wall_(argyll_and_bute)> ;
         void:sparqlEndpoint   <http://api.talis.com/stores/climb/services/sparql> ;
@@ -24,10 +25,10 @@
         dcat:distribution     [ dcat:accessURL  <http://climb.dataincubator.org/vocabs/climb/> ] ;
         foaf:homepage         <http://climb.dataincubator.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/data-incubator-metoffice> , <http://lod-cloud.net/dataset/data-incubator-climb> ;
-  void:triples  1047
+[ void:target   lod:data-incubator-climb , lod:data-incubator-smcjournals ;
+  void:triples  43
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-incubator-climb> ;
+[ void:target   lod:data-incubator-climb , lod:dbpedia ;
   void:triples  300
 ] .

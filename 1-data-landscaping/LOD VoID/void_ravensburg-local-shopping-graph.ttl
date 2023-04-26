@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/ravensburg-local-shopping-graph>
+lod:ravensburg-local-shopping-graph
         a                     void:Dataset ;
         dcterms:description   "The complete (99% of all points of interest), quality-controlled (60% updated within the last 4 weeks) GoodRelations-based description of shopping and trade in a major German city, with a unique data density.\r\n\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "die-welfenburg.de, at data Software GmbH, Aulendorf, Hepp Research GmbH, Ravensburg" ;
@@ -16,6 +17,6 @@
         void:exampleResource  <http://www.wifo-rv.de/rdf/semanticweb12.rdf> ;
         void:sparqlEndpoint   <http://linkedopencommerce.com/sparql> ;
         void:triples          100000 ;
-        dcat:distribution     [ dcat:accessURL  <http://www.wifo-ravensburg.de/rdf/semanticweb.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.wifo-ravensburg.de/rdf/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.wifo-ravensburg.de/rdf/semanticweb.rdf> ] ;
         foaf:homepage         <http://www.lieber-ravensburg.de/developer/> .

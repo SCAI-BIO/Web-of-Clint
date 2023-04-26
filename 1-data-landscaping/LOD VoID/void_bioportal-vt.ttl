@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,48 +6,51 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-vt> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-vt> ;
-  void:triples  66
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cmo> , <http://lod-cloud.net/dataset/bioportal-vt> ;
-  void:triples  31
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-vt> ;
+[ void:target   lod:bioportal-vt , lod:bioportal-msh ;
   void:triples  25
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-vt> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nigo> , <http://lod-cloud.net/dataset/bioportal-vt> ;
+[ void:target   lod:bioportal-vt , lod:bioportal-nigo ;
   void:triples  65
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x1> , <http://lod-cloud.net/dataset/bioportal-vt> ;
-  void:triples  100
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-vt> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-vt> ;
+[ void:target   lod:bioportal-vt , lod:bioportal-mesh-owl ;
   void:triples  67
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mp> , <http://lod-cloud.net/dataset/bioportal-vt> ;
+[ void:target   lod:bioportal-vt , lod:bioportal-csp ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-vt , lod:bioportal-go_x2 ;
+  void:triples  107
+] .
+
+[ void:target   lod:bioportal-vt , lod:bioportal-snomedct ;
+  void:triples  66
+] .
+
+[ void:target   lod:bioportal-vt , lod:bioportal-bdo ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-vt , lod:bioportal-nif ;
+  void:triples  50
+] .
+
+[ void:target   lod:bioportal-vt , lod:bioportal-rcd ;
+  void:triples  32
+] .
+
+[ void:target   lod:bioportal-vt , lod:bioportal-ncit ;
+  void:triples  34
+] .
+
+[ void:target   lod:bioportal-vt , lod:bioportal-mp ;
   void:triples  25
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-vt>
-        a                    void:Dataset ;
+lod:bioportal-vt  a          void:Dataset ;
         dcterms:description  "The Vertebrate Trait Ontology is a controlled vocabulary for the description of traits (measurable or observable characteristics) pertaining to the morphology, physiology, or development of vertebrate organisms."@en ;
         dcterms:publisher    [ rdfs:label  "Jim Reecy" ;
                                foaf:mbox   ""
@@ -54,31 +58,27 @@
         dcterms:subject      "life_sciences" , "published-by-third-party" , "bioportal" , "ontology" , "biomedicine" , "format-obo" , "lod" , "format-rdf" ;
         dcterms:title        "Vertebrate Trait Ontology"@en ;
         void:triples         47649 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47319?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1659> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-vt> ;
-  void:triples  50
+[ void:target   lod:bioportal-vt , lod:bioportal-go_x1 ;
+  void:triples  100
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-vt> ;
+[ void:target   lod:bioportal-vt , lod:bioportal-mdr ;
   void:triples  27
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x2> , <http://lod-cloud.net/dataset/bioportal-vt> ;
-  void:triples  107
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-vt> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-vt> ;
+[ void:target   lod:bioportal-vt , lod:bioportal-lnc ;
   void:triples  18
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-vt> ;
-  void:triples  34
+[ void:target   lod:bioportal-vt , lod:bioportal-galen ;
+  void:triples  19
+] .
+
+[ void:target   lod:bioportal-vt , lod:bioportal-cmo ;
+  void:triples  31
 ] .

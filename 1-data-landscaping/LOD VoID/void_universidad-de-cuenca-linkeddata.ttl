@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/universidad-de-cuenca-linkeddata>
+[ void:target   lod:universidad-de-cuenca-linkeddata , lod:dbpedia ;
+  void:triples  3
+] .
+
+lod:universidad-de-cuenca-linkeddata
         a                    void:Dataset ;
         dcterms:description  "Linked Data from the \"Universidad de Cuenca, Cuenca, Ecuador\"  includes data about its academic structure and researchers. "@en ;
         dcterms:publisher    [ rdfs:label  "Universidad de Cuenca" ;
@@ -14,10 +19,6 @@
         dcterms:subject      "Ecuador" , "university" , "organizations" , "lod" , "user_generated" ;
         dcterms:title        "Universidad de Cuenca - LinkedData"@en ;
         void:triples         377 ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-08-11T22:46:37.901Z/ucuenca2014.ttl> ] ;
         dcat:distribution    [ dcat:accessURL  <http://bibliold.cedia.org.ec/download/data.zip> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://190.15.141.102:8890/sparql> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-08-11T22:46:37.901Z/ucuenca2014.ttl> ] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/universidad-de-cuenca-linkeddata> ;
-  void:triples  3
-] .
+        dcat:distribution    [ dcat:accessURL  <http://190.15.141.102:8890/sparql> ] .

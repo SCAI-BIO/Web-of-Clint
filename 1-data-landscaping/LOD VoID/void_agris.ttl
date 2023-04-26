@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/fao-geopolitical-ontology> , <http://lod-cloud.net/dataset/agris> ;
-  void:triples  500000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/agrovoc-skos> , <http://lod-cloud.net/dataset/agris> ;
-  void:triples  10000000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/agris> ;
+[ void:target   lod:agris , lod:dbpedia ;
   void:triples  3000000
 ] .
 
-<http://lod-cloud.net/dataset/agris>
-        a                     void:Dataset ;
+[ void:target   lod:agris , lod:agrovoc-skos ;
+  void:triples  10000000
+] .
+
+[ void:target   lod:agris , lod:fao-geopolitical-ontology ;
+  void:triples  500000
+] .
+
+lod:agris  a                  void:Dataset ;
         dcterms:description   "AGRIS is one of the most important world-wide information systems in the area of the agricultural sciences. AGRIS is an initiative that was set up by FAO of the United Nations in 1974 to make information on agriculture research globally available. The historical overall objective of AGRIS is to improve access and exchange of information serving “the information needs of developed and developing countries on a partnership basis”."@en ;
         dcterms:publisher     [ rdfs:label  "FAO OEKC" ;
                                 foaf:mbox   "agris@fao.org"

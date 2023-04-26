@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,22 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/http://productontology.org> , <http://lod-cloud.net/dataset/naics-2012> ;
-  void:triples  8037
-] .
-
-<http://lod-cloud.net/dataset/naics-2012>
-        a                     void:Dataset ;
+lod:naics-2012  a             void:Dataset ;
         dcterms:description   "The North American Industry Classification System (NAICS) is the standard used by Federal statistical agencies in classifying business establishments for the purpose of collecting, analyzing, and publishing statistical data related to the U.S. business economy.\r\n\r\nAuthors of the linked data version:\r\n\r\n-Jose María Alvarez Rodríguez & Jose Emilio Labra Gayo\r\n\r\nWESO-University of Oviedo"@en ;
         dcterms:publisher     [ rdfs:label  "Jose María Alvarez Rodríguez at WESO (University of Oviedo)" ;
                                 foaf:mbox   "josem.alvarez@weso.es"
                               ] ;
-        dcterms:subject       "linkedopendata" , "geodata" , "uniovi" , "deref-vocab" , "vocab-mappings" , "license-metadata" , "procurement" , "pscs" , "lod" , "weso" , "public_contracts" , "linkeddata" , "oviedo" , "government" , "euroalert" , "10ders" , "university-of-oviedo" , "format-gr" , "format-dcterms" , "format-skosxl" , "format-dc" , "published-by-third-party" , "format-skos" , "e-procurement" , "naics-2012" , "provenance-metadata" , "naics" ;
+        dcterms:subject       "linkedopendata" , "geodata" , "uniovi" , "deref-vocab" , "vocab-mappings" , "license-metadata" , "procurement" , "lod" , "pscs" , "public_contracts" , "weso" , "linkeddata" , "oviedo" , "government" , "euroalert" , "10ders" , "format-dcterms" , "format-gr" , "university-of-oviedo" , "format-dc" , "format-skosxl" , "provenance-metadata" , "naics-2012" , "e-procurement" , "format-skos" , "published-by-third-party" , "naics" ;
         dcterms:title         "NAICS 2012"@en ;
         void:exampleResource  <http://purl.org/weso/pscs/data/naics/2012/resource/111150?output=xml> ;
         void:sparqlEndpoint   <http://purl.org/weso/sparql> ;
         void:triples          35390 ;
         dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/naics/2012/resource/ds> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/psc-ontology.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/pscs/naics/2012/resource/ds> ] ;
         dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/naics/2012/naics-2012.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/weso/datasets/pscs/psc-ontology.ttl> ] ;
         foaf:homepage         <http://www.josemalvarez.es/web/2011/11/16/product-scheme-classifications/> .
+
+[ void:target   lod:naics-2012 , <http://lod-cloud.net/dataset/http://productontology.org> ;
+  void:triples  8037
+] .

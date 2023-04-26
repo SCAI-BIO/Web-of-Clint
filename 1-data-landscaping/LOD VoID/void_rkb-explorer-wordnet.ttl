@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,38 +6,38 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lingvoj> , <http://lod-cloud.net/dataset/rkb-explorer-wordnet> ;
+[ void:target   lod:rkb-explorer-wordnet , lod:rkb-explorer-courseware ;
   void:triples  38
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-courseware> , <http://lod-cloud.net/dataset/rkb-explorer-wordnet> ;
+[ void:target   lod:rkb-explorer-wordnet , lod:lingvoj ;
   void:triples  38
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-wordnet> ;
+[ void:target   lod:rkb-explorer-wordnet , lod:w3c-wordnet ;
   void:triples  38
 ] .
 
-<http://lod-cloud.net/dataset/rkb-explorer-wordnet>
+lod:rkb-explorer-wordnet
         a                     void:Dataset ;
         dcterms:description   "This is one of several semantic repositories that contains and publishes RDF linked data and co-reference information, forming the underlying distributed storage model behind the RKB Explorer initiative.\r\n\r\nThe data published here comes from the dataset of [Wordnet](http://wordnet.princeton.edu/) published as part of the Billion Triple Challenge.\r\n\r\nServices offered ?\r\n\r\nAll URIs on this domain are resolvable, and deliver html or RDF, depending on content negotiation\r\nBrowse interface for viewing and navigating RDF triples\r\nQuery interface providing access via the SPARQL query language for RDF\r\nCoreference Resolution Service, which identifies and manages duplicate URIs\r\nThe URL of the RDF file in which each URI can be found is also available, under the \"Source\" column when browsing.\r\nThe semantic sitemap is available.\r\nA voiD description is available.\r\nA typical URI you can try resolving is http://wordnet.rkbexplorer.com/id/synset-odd-toed_ungulate-noun-1.\r\n\r\nThe RDF is presented in accordance with the AKT Reference Ontology.\r\n\r\nCurrent statistics for this RDF repository (http://wordnet.rkbexplorer.com/sparql/) ?\r\n\r\nLast data assertion  2011-04-13 00:14:43\r\nNumber of triples    2727068\r\nNumber of symbols    1306694\r\nSize of RDF dataset  851M\r\n      \r\nCurrent statistics for this CRS (http://wordnet.rkbexplorer.com/crs/) ?\r\n\r\nLast data assertion   2009-11-14 17:25:07\r\nNumber of URIs        227\r\nNumber of bundles     416\r\nof which active       38\r\n\r\n      \r\nThe major funding for the RKB Explorer Initiative was provided by the ReSIST EU-funded Network of Excellence (contract number 026764).\r\n\r\nThese services are hosted by the School of Electronics and Computer Science at the University of Southampton (UK).\r\n\r\nIf you have any enquiries, please email the administrator of this repository."@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
                                 foaf:mbox   "hg@ecs.soton.ac.uk"
                               ] ;
-        dcterms:subject       "format-dc" , "published-by-third-party" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "llod" , "no-license-metadata" , "linguistics" , "no-vocab-mappings" , "provenance-metadata" , "lod" , "lodcloud-diagram-2011-09-19" , "crossdomain" , "deref-vocab" , "void-sparql-endpoint" ;
+        dcterms:subject       "format-dc" , "published-by-third-party" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "llod" , "no-license-metadata" , "no-vocab-mappings" , "linguistics" , "provenance-metadata" , "lod" , "lodcloud-diagram-2011-09-19" , "crossdomain" , "deref-vocab" , "void-sparql-endpoint" ;
         dcterms:title         "WordNet (RKBExplorer)"@en ;
         void:exampleResource  <http://wordnet.rkbexplorer.com/id/synset-odd-toed_ungulate-noun-1> ;
         void:sparqlEndpoint   <http://wordnet.rkbexplorer.com/sparql/> ;
         void:triples          2727001 ;
+        dcat:distribution     [ dcat:accessURL  <http://wordnet.rkbexplorer.com/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://wordnet.rkbexplorer.com/models/void.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://wordnet.rkbexplorer.com/models/dump.tgz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://wordnet.rkbexplorer.com/sitemap.xml> ] ;
         foaf:homepage         <http://wordnet.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/opencyc> , <http://lod-cloud.net/dataset/rkb-explorer-wordnet> ;
-  void:triples  37
+[ void:target   lod:rkb-explorer-wordnet , lod:dbpedia ;
+  void:triples  38
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/w3c-wordnet> , <http://lod-cloud.net/dataset/rkb-explorer-wordnet> ;
-  void:triples  38
+[ void:target   lod:rkb-explorer-wordnet , lod:opencyc ;
+  void:triples  37
 ] .

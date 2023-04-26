@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,80 +6,79 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf> , <http://lod-cloud.net/dataset/taxonconcept> ;
-  void:triples  43889
+[ void:target   lod:taxonconcept , lod:fishes-of-texas ;
+  void:triples  611
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/gni> , <http://lod-cloud.net/dataset/taxonconcept> ;
+[ void:target   lod:taxonconcept , lod:gni ;
   void:triples  100000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/taxonconcept> ;
-  void:triples  18743
+[ void:target   lod:taxonconcept , lod:bbc-wildlife-finder ;
+  void:triples  318
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/uniprot> , <http://lod-cloud.net/dataset/taxonconcept> ;
-  void:triples  43919
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/eol> , <http://lod-cloud.net/dataset/taxonconcept> ;
-  void:triples  108175
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/umbel> , <http://lod-cloud.net/dataset/taxonconcept> ;
+[ void:target   lod:taxonconcept , lod:umbel ;
   void:triples  9
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geospecies> , <http://lod-cloud.net/dataset/taxonconcept> ;
-  void:triples  17814
+[ void:target   lod:taxonconcept , lod:eol ;
+  void:triples  108175
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/taxonconcept> ;
-  void:triples  147877
-] .
-
-<http://lod-cloud.net/dataset/taxonconcept>
-        a                     void:Dataset ;
+lod:taxonconcept  a           void:Dataset ;
         dcterms:description   "Species are known by many different names. The TaxonConcept Knowledge Base provides informative Linked Open Data URI's for species concepts that improve the quality and stability of links between a species and data about that species. There are currently 108,175 species concepts and a and 1,000 records for species occurrences. There are also a few examples of references, and image galleries. I have added links below for an insect, mammal, bird and tree to serve as examples of the interlinking etc. The occurrence records are interlinked with GeoNames. \r\n\r\nA species can have several different classifications, for instance it's classification in NCBI and DBpedia, are different. To allow multiple classifications, the species model is separate from any specific classification. However many want these two aspects connected together. To make this easy, I have created an additional owl:sameAs RDF dump file which makes the #Taxonomy the same as the #Species. This is particularly useful for browsing SPARQL query results with Microsoft Pivot. In addition, it is also possible to create similar mapping files that can be used to \r\ntie the species to alternative classifications.\r\n\r\nThe data set and related vocabularies have been changed as of June 11, 2013. See the sitemap.xml or void file for the full list of RDF dumps"@en ;
         dcterms:publisher     [ rdfs:label  "Peter J. DeVries University of Wisconsin-Madison" ;
                                 foaf:mbox   "pdevries@wisc.edu"
                               ] ;
-        dcterms:subject       "format-txn" , "format-wdrs" , "format-geonames" , "format-geo" , "lifesciences" , "format-rdf" , "format-umbel" , "format-dbo" , "format-rdfs" , "lodcloud-diagram-2014-08-30" , "format-foaf" , "deref-vocab" , "void-sparql-endpoint" , "sparql-endpoint" , "lod" , "format-owl" , "biodiversity" , "license-metadata" , "format-wo" , "provenance-metadata" , "lodcloud-diagram-2011-09-19" , "published-by-producer" , "format-bibo" , "format-dbpedia" , "format-time" , "geographic" , "format-skos" , "format-geospecies" , "life_sciences" , "format-dc" , "format-cc" ;
+        dcterms:subject       "format-txn" , "format-wdrs" , "format-geonames" , "format-geo" , "format-rdf" , "format-umbel" , "lifesciences" , "format-dbo" , "format-rdfs" , "lodcloud-diagram-2014-08-30" , "format-foaf" , "deref-vocab" , "void-sparql-endpoint" , "sparql-endpoint" , "lod" , "format-owl" , "biodiversity" , "format-wo" , "license-metadata" , "provenance-metadata" , "lodcloud-diagram-2011-09-19" , "published-by-producer" , "format-bibo" , "format-dbpedia" , "format-time" , "geographic" , "format-skos" , "format-geospecies" , "life_sciences" , "format-dc" , "format-cc" ;
         dcterms:title         "TaxonConcept Knowledge Base"@en ;
         void:exampleResource  <http://lod.taxonconcept.org/ses/mCcSp.rdf> , <http://ocs.taxonconcept.org/ocs/f522444a-2dd9-400e-be59-47213ef38cb9.rdf> , <http://lod.taxonconcept.org/ses/iuCXz.rdf> , <http://lod.taxonconcept.org/ses/tnJr6.rdf> , <http://lod.taxonconcept.org/ses/EY8Z6.rdf> , <http://lod.taxonconcept.org/ses/v6n7p.rdf> ;
         void:sparqlEndpoint   <http://lsd.taxonconcept.org/sparql> ;
         void:triples          34394994 ;
+        dcat:distribution     [ dcat:accessURL  <http://ocs.taxonconcept.org/ocs/f522444a-2dd9-400e-be59-47213ef38cb9.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://eol.taxonconcept.org/data/eol/eol_000001.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.taxonconcept.org/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/ontology/doc/index.html> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/rdf/txn_distribution.ttl.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://eol.taxonconcept.org/dos/771311fa322891f987ed366d8000d42b.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/rdf/txn_images.ttl.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/ontology/void.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/rdf/usda_plants_000001.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/ontology/txn.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/rdf/txn_ocs.ttl.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/rdf/txn_ses_000002.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ocs.taxonconcept.org/ocs/index.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/ontology/txn.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/rdf/txn_ses_000001.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://eol.taxonconcept.org/data/anno/anno_000001.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://ocs.taxonconcept.org/ocs/index.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/ontology/doc/index.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/rdf/txn_distribution.ttl.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/rdf/txn_misc.ttl.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://eol.taxonconcept.org/data/eol/eol_000001.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/rdf/txn_ocs.ttl.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://ocs.taxonconcept.org/ocs/f522444a-2dd9-400e-be59-47213ef38cb9.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/ontology/void.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/rdf/usda_plants_000001.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.taxonconcept.org/rdf/txn_images.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://eol.taxonconcept.org/dos/771311fa322891f987ed366d8000d42b.ttl> ] ;
         foaf:homepage         <http://lod.taxonconcept.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/opencyc> , <http://lod-cloud.net/dataset/taxonconcept> ;
-  void:triples  26
+[ void:target   lod:taxonconcept , lod:geospecies ;
+  void:triples  17814
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bbc-wildlife-finder> , <http://lod-cloud.net/dataset/taxonconcept> ;
-  void:triples  318
+[ void:target   lod:taxonconcept , lod:bio2rdf ;
+  void:triples  43889
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/fishes-of-texas> , <http://lod-cloud.net/dataset/taxonconcept> ;
-  void:triples  611
+[ void:target   lod:taxonconcept , lod:freebase ;
+  void:triples  18743
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/eunis> , <http://lod-cloud.net/dataset/taxonconcept> ;
+[ void:target   lod:taxonconcept , lod:eunis ;
   void:triples  9489
+] .
+
+[ void:target   lod:taxonconcept , lod:dbpedia ;
+  void:triples  147877
+] .
+
+[ void:target   lod:taxonconcept , lod:uniprot ;
+  void:triples  43919
+] .
+
+[ void:target   lod:taxonconcept , lod:opencyc ;
+  void:triples  26
 ] .

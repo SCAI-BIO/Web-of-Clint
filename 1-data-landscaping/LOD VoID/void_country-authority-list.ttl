@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/country-authority-list>
+[ void:target   lod:country-authority-list , lod:eurovoc ;
+  void:triples  198
+] .
+
+lod:country-authority-list
         a                    void:Dataset ;
         dcterms:description  "This country codes authority table is intended to provide a code related to the names of the countries – in a short and in a long form – in the 24 official languages of the European Union.These codes are used for the documentary metadata and may present slight differences with those used for the production of documents at a stylistic level.\n\nThe \"Authority code\" relays on the ISO 3166-1/alpha-3 positions. If the ISO code doesn't exist, an alpha-numeric code is created. A traceability of this codes creation is ensured and historical relationships are also offered as from 1950 till now with the date(s) of event(s).\n\nA country code comparison is provided between ISO codes, IANA codes (Internet ccTLDS – Country-code Top-level Domains), and TIR (Transport International par la Route) Vehicle system codes.\n\nCodes marked in italic are obsolete and should not be used, excepted in the case of back-log work.\n\nISO 3166 is the International standard for country codes. The purpose of ISO 3166 is to establish codes for the representation of names of countries. This standard exists in three forms:\n\n    ISO 3166-1 (2006) contains a two-letter code which is recommended as the general purpose code, a three-letter code which has better mnenomic properties and a numeric-3 code which can be useful if script independence of the codes is important.\n    ISO 3166-2 (2007) gives codes for the names of the principal subdivisions (e.g provinces or states) of all countries coded in ISO 3166-1. This code is based on the two-letter code element from ISO 3166-1 followed by a separator and a further string of up to three alphanumeric characters.\n    ISO 3166-3 (1999) contains a four-letter code for those country names which have been deleted from ISO 3166-1 since its first publication in 1974. The code elements for formerly used country names have a length of four alphabetical characters (alpha-4 code elements).\n\nThe ISO 3166-1 is also used by the EU Geonomenclature of the Statistical Office, the UN/LOCODE, the World Intellectual Property Organisation (WIPO), the International Atomic Energy Agency (IAEA), the Internet Assigned Authority Numbers (IANA) and more other organisations."@en ;
         dcterms:publisher    [ rdfs:label  "EU Vocabularies team" ;
@@ -18,10 +23,6 @@
         void:triples         233369 ;
         foaf:homepage        <https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/country> .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/country-authority-list> ;
+[ void:target   lod:country-authority-list , lod:wikidata ;
   void:triples  152
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/eurovoc> , <http://lod-cloud.net/dataset/country-authority-list> ;
-  void:triples  198
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,15 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/dewey_decimal_classification>
+lod:dewey_decimal_classification
         a                     void:Dataset ;
         dcterms:description   "Dewey.info is an experimental space for linked DDC data. The intention of the dewey.info prototype is to be a platform for Dewey data on the Web.\r\n\r\nIncluded as linked data are the DDC Summaries (the top three levels of the DDC) of Edition 22 in 11 languages and all assignable numbers of Abridged Edition 14 in three languages. Classification semantics are encoded in RDF using SKOS and other element vocabularies. \r\n\r\nEvery class also has an HTML representation (XHTML+RDFa) and several RDF serializations (RDF/XML, Turtle, JSON).\r\n\r\nA SPARQL endpoint is available.\r\n\r\nThe data is reusable under the Creative Commons BY-NC-ND license.\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "OCLC Online Computer Library Center, Inc." ;
                                 foaf:mbox   "http://www.oclc.org/dewey/"
                               ] ;
-        dcterms:subject       "lodcloud.nolinks" , "no-proprietary-vocab" , "license-metadata" , "lodcloud-diagram-2014-08-30" , "linkeddata" , "format-rdf" , "schemata" , "lod" , "publication" , "publications" , "classification" , "lodcloud-diagram-2011-09-19" , "lld" , "published-by-producer" ;
+        dcterms:subject       "lodcloud.nolinks" , "no-proprietary-vocab" , "license-metadata" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "linkeddata" , "schemata" , "lod" , "publication" , "publications" , "classification" , "lodcloud-diagram-2011-09-19" , "lld" , "published-by-producer" ;
         dcterms:title         "Dewey Decimal Classification (DDC)"@en ;
-        void:exampleResource  <http://dewey.info/class/6/2009/03/about.de.html> , <http://dewey.info/class/641.5/a14/about.ttl> , <http://dewey.info/class/641/about.rdf> ;
+        void:exampleResource  <http://dewey.info/class/6/2009/03/about.de.html> , <http://dewey.info/class/641/about.rdf> , <http://dewey.info/class/641.5/a14/about.ttl> ;
         void:sparqlEndpoint   <http://dewey.info/sparql.php> ;
         void:triples          402288 ;
         foaf:homepage         <http://dewey.info> .

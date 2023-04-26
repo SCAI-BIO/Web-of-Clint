@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/epa-srs> ;
-  void:triples  197
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/chemidplus> , <http://lod-cloud.net/dataset/epa-srs> ;
+[ void:target   lod:epa-srs , lod:chemidplus ;
   void:triples  202991
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geospecies> , <http://lod-cloud.net/dataset/epa-srs> ;
+[ void:target   lod:epa-srs , lod:geospecies ;
   void:triples  21754
 ] .
 
-<http://lod-cloud.net/dataset/epa-srs>
-        a                     void:Dataset ;
+lod:epa-srs  a                void:Dataset ;
         dcterms:description   "Substance Registry Services (SRS) is the Environmental Protection Agency's (EPA) central system for information about substances that are tracked or regulated by EPA or other sources. It is the authoritative resource for basic information about chemicals, biological organisms, and other substances of interest to EPA and its state and tribal partners."@en ;
         dcterms:publisher     [ rdfs:label  "EPA Office of Environmental Information" ;
                                 foaf:mbox   "admin@3roundstones.com"
@@ -27,7 +23,11 @@
         dcterms:title         "EPA-SRS"@en ;
         void:exampleResource  <https://opendata.epa.gov/data/substance/48273.ttl> ;
         void:triples          10549000 ;
-        dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov/meta/srs/schema.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov/meta/srs/void.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://opendata.epa.gov/meta/srs/schema.ttl> ] ;
         foaf:homepage         <https://opendata.epa.gov> .
+
+[ void:target   lod:epa-srs , lod:dbpedia ;
+  void:triples  197
+] .

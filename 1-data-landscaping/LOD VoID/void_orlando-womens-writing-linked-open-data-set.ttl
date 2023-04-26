@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,15 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/ORCID> , <http://lod-cloud.net/dataset/orlando-womens-writing-linked-open-data-set> ;
+[ void:target   lod:orlando-womens-writing-linked-open-data-set , lod:ORCID ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/AAT> , <http://lod-cloud.net/dataset/orlando-womens-writing-linked-open-data-set> ;
-  void:triples  127
+[ void:target   lod:orlando-womens-writing-linked-open-data-set , lod:viaf ;
+  void:triples  15
 ] .
 
-<http://lod-cloud.net/dataset/orlando-womens-writing-linked-open-data-set>
+[ void:target   lod:orlando-womens-writing-linked-open-data-set , lod:Muninn-ww1 ;
+  void:triples  1
+] .
+
+lod:orlando-womens-writing-linked-open-data-set
         a                     void:Dataset ;
         dcterms:description   "A linked open data set created from the original entries of the Orlando Project, an ongoing collaborative experiment in the use of computers to engage in women's literary history."@en ;
         dcterms:publisher     [ rdfs:label  "The CWRC Project" ;
@@ -25,29 +30,25 @@
         void:exampleResource  <http://sparql.cwrc.ca/cwrcdata/VirginiaWoolf> ;
         void:sparqlEndpoint   <http://sparql.cwrc.ca/sparql> ;
         void:triples          5489 ;
+        dcat:distribution     [ dcat:accessURL  <http://sparql.cwrc.ca/Downloads/cwrc.owl.bz2> ] ;
         dcat:distribution     [ dcat:accessURL  <http://sparql.cwrc.ca/Downloads> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://sparql.cwrc.ca/.well-known/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://sparql.cwrc.ca/Downloads/cwrc.owl.bz2> ] ;
         dcat:distribution     [ dcat:accessURL  <http://sparql.cwrc.ca/Downloads/data.n3> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://sparql.cwrc.ca/Downloads/cwrc.owl.bz2> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://sparql.cwrc.ca/Downloads/cwrc.owl.bz2> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://sparql.cwrc.ca/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://sparql.cwrc.ca/.well-known/void> ] .
+        dcat:distribution     [ dcat:accessURL  <http://sparql.cwrc.ca/sitemap.xml> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/Muninn-ww1> , <http://lod-cloud.net/dataset/orlando-womens-writing-linked-open-data-set> ;
-  void:triples  1
+[ void:target   lod:orlando-womens-writing-linked-open-data-set , lod:AAT ;
+  void:triples  127
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/orlando-womens-writing-linked-open-data-set> ;
-  void:triples  67
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/orlando-womens-writing-linked-open-data-set> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/GeoNames> , <http://lod-cloud.net/dataset/orlando-womens-writing-linked-open-data-set> ;
+[ void:target   lod:orlando-womens-writing-linked-open-data-set , lod:GeoNames ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/LCSH> , <http://lod-cloud.net/dataset/orlando-womens-writing-linked-open-data-set> ;
+[ void:target   lod:orlando-womens-writing-linked-open-data-set , lod:dbpedia ;
+  void:triples  67
+] .
+
+[ void:target   lod:orlando-womens-writing-linked-open-data-set , lod:LCSH ;
   void:triples  11
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/iserve> , <http://lod-cloud.net/dataset/smartlink> ;
+[ void:target   lod:smartlink , lod:iserve ;
   void:triples  233
 ] .
 
-<http://lod-cloud.net/dataset/smartlink>
-        a                     void:Dataset ;
+lod:smartlink  a              void:Dataset ;
         dcterms:description   "SmartLink exposes Linked Data about publicly available Web services and Web APIs. In particular, the SmartLink data set extends existing service description schemas with a light-weight schema for non-functional properties. "@en ;
         dcterms:publisher     [ rdfs:label  "SmartLink team " ;
                                 foaf:mbox   "stefan.dietze@gmx.de"

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,27 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-wormbase> , <http://lod-cloud.net/dataset/bio2rdf-gendr> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxonomy> , <http://lod-cloud.net/dataset/bio2rdf-gendr> ;
+[ void:target   lod:bio2rdf-gendr , lod:bio2rdf-taxonomy ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-gendr> ;
-  void:triples  666
+[ void:target   lod:bio2rdf-gendr , lod:bio2rdf-wormbase ;
+  void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-gendr> ;
+[ void:target   lod:bio2rdf-gendr , lod:bio2rdf-pubmed ;
   void:triples  119
 ] .
 
-<http://lod-cloud.net/dataset/bio2rdf-gendr>
-        a                     void:Dataset ;
+[ void:target   lod:bio2rdf-gendr , lod:bio2rdf-ncbigene ;
+  void:triples  322
+] .
+
+[ void:target   lod:bio2rdf-gendr ;
+  void:triples  666
+] .
+
+lod:bio2rdf-gendr  a          void:Dataset ;
         dcterms:description   "GenDR is a database of genes associated with dietary restriction (DR). GenDR includes two datasets: 1) genes inferred from experiments in model organisms in which genetic manipulations cancel out or disrupt the life-extending effects of DR; 2) genes robustly altered due to DR, derived from a meta-analysis of microarray DR studies in mammals"@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
@@ -33,14 +37,10 @@
         void:exampleResource  <http://bio2rdf.org/gendr:2> ;
         void:sparqlEndpoint   <http://gendr.bio2rdf.org/sparql> ;
         void:triples          11663 ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/gendr/bio2rdf-gendr.nq> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/gendr/gendr.schema.owl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/gendr/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/gendr/bio2rdf_gendr_sio_mapping.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/gendr/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/gendr/gendr.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/gendr/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/gendr/gendr.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/gendr/bio2rdf_gendr_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/gendr/bio2rdf-gendr.nq> ] ;
         foaf:homepage         <http://gendr.bio2rdf.org/> .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-gendr> ;
-  void:triples  322
-] .

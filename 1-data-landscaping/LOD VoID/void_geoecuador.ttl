@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/geoecuador> ;
+[ void:target   lod:geoecuador , lod:dbpedia ;
   void:triples  4502
 ] .
 
-<http://lod-cloud.net/dataset/geoecuador>
-        a                    void:Dataset ;
+lod:geoecuador  a            void:Dataset ;
         dcterms:description  "Ecuadorian geospatial LD dataset"@en ;
         dcterms:publisher    [ rdfs:label  "Universidad de Cuenca" ;
                                foaf:mbox   "victor.saquicela@ucuenca.edu.ec"
@@ -18,7 +18,7 @@
         dcterms:subject      "lod" , "lodcloud-diagram-2014-08-30" , "geospatial" , "linked data" ;
         dcterms:title        "GeoEcuador"@en ;
         void:triples         1278288 ;
+        dcat:distribution    [ dcat:accessURL  <http://geo.linkeddata.ec/download/owlSameAs.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <http://geo.linkeddata.ec/download/data.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <http://190.15.132.241/marmotta/sparql/select> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://geo.linkeddata.ec/download/DBPedia_owlSameAs.zip> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://geo.linkeddata.ec/download/owlSameAs.zip> ] .
+        dcat:distribution    [ dcat:accessURL  <http://geo.linkeddata.ec/download/DBPedia_owlSameAs.zip> ] .

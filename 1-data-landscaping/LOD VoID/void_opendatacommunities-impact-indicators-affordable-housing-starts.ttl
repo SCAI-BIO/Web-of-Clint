@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/opendatacommunities-impact-indicators-affordable-housing-starts>
+lod:opendatacommunities-impact-indicators-affordable-housing-starts
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -16,10 +17,10 @@
         void:exampleResource  <http://opendatacommunities.org/data/impact-indicators-affordable-housing-starts> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-impact-indicators-affordable-housing-starts> ;
+[ void:target   lod:opendatacommunities-impact-indicators-affordable-housing-starts , lod:reference-data-gov-uk ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-affordable-housing-starts> , <http://lod-cloud.net/dataset/opendatacommunities-impact-indicators-affordable-housing-starts> ;
+[ void:target   lod:opendatacommunities-impact-indicators-affordable-housing-starts , lod:opendatacommunities-transparency-impact-indicators-affordable-housing-starts ;
   void:triples  1
 ] .

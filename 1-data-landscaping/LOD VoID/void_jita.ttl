@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,22 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/jita> ;
+[ void:target   lod:jita , lod:dbpedia ;
   void:triples  96
 ] .
 
-<http://lod-cloud.net/dataset/jita>
-        a                     void:Dataset ;
+lod:jita  a                   void:Dataset ;
         dcterms:description   "The JITA Classification Schema has been developed starting from a merger of NewsAgentTopic Classification Scheme (maintained by Mike Keen at Aberystwyth, UK, until 31st March 1998) and the RIS classification scheme of the (now defunct) Review of Information Science originally conceived by Dagobert Soergel (University of Maryland). JITA is an acronym of the authors' first names: \"J\"osé Manuel Barrueco Cruz, \"I\"mma Subirats Coll, \"T\"homas Krichel and \"A\"ntonella De Robbio. The authors thank Michael Keen, University of Wales Aberystwyth and Andy Powell, UKOLN for the permission of the using NewsAgentTopic Classification Scheme in the development of this schema. In addition, the authors are grateful for comments by Lorcan Dempsey (OCLC) and Sophie Rigny (Library of Congress)."@en ;
         dcterms:publisher     [ rdfs:label  "Imma Subirats" ;
                                 foaf:mbox   "Imma.Subirats@fao.org"
                               ] ;
-        dcterms:subject       "information-science" , "lld" , "library" , "publications" , "format-xhtml" , "lod" , "no-proprietary-vocab" , "format-skos" , "schemata" , "no-license-metadata" , "provenance-metadata" , "published-by-producer" , "classification" ;
+        dcterms:subject       "information-science" , "lld" , "library" , "publications" , "format-xhtml" , "lod" , "format-skos" , "no-proprietary-vocab" , "no-license-metadata" , "schemata" , "provenance-metadata" , "classification" , "published-by-producer" ;
         dcterms:title         "JITA Classification System of Library and Information Science"@en ;
         void:exampleResource  <http://aims.fao.org/aos/jita/P?output=xml> , <http://aims.fao.org/aos/jita/T?output=xml> , <http://aims.fao.org/aos/jita/O?output=xml> ;
         void:sparqlEndpoint   <http://202.73.13.50:55824/catalogs/performance/repositories/jita> ;
         void:triples          3500 ;
-        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2004/02/skos/core#> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.askosi.org/jita/void.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.destin-informatique.com/scheme/skos.jsp?about=jita> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.askosi.org/jita/void.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2004/02/skos/core#> ] ;
         foaf:homepage         <http://www.destin-informatique.com/ASKOSI/Wiki.jsp?page=JITA%20Maintenance> .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,13 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/british-museum-collection>
+lod:british-museum-collection
         a                     void:Dataset ;
         dcterms:description   "Welcome to this Linked Data and SPARQL service. It provides access to the same collection data available through the Museum?s web presented Collection Online, but in a computer readable format. The use of the W3C open data standard, RDF, allows the Museum?s collection data to join and relate to a growing body of linked data published by other organisations around the world interested in promoting accessibility and collaboration.\r\n\r\nThe data has also been organised using the CIDOC-CRM (Conceptual Reference Model) crucial for harmonising with other cultural heritage data. The current version is beta and development work continues to improve the service. We hope that the service will be used by the community to develop friendly web applications that are freely available to the community. \r\n\r\nLicence available at http://collection.britishmuseum.org/Licensing"@en ;
         dcterms:publisher     [ rdfs:label  "Dominic Oldman" ;
                                 foaf:mbox   "doldman@britishmuseum.org"
                               ] ;
-        dcterms:subject       "sparql" , "no-license-metadata" , "culturalheritage" , "format-rdf" , "format-skos" , "format-cidoc-crm" , "deref-vocab" , "format-foaf" , "publications" , "published-by-producer" , "lodcloud.candidate" , "no-provenance-metadata" , "no-vocab-mappings" , "lodcloud-diagram-2014-08-30" , "cultural" , "lod" ;
+        dcterms:subject       "sparql" , "no-license-metadata" , "culturalheritage" , "format-rdf" , "format-skos" , "format-cidoc-crm" , "deref-vocab" , "format-foaf" , "publications" , "lodcloud.candidate" , "published-by-producer" , "no-provenance-metadata" , "no-vocab-mappings" , "lodcloud-diagram-2014-08-30" , "cultural" , "lod" ;
         dcterms:title         "British Museum Collection"@en ;
         void:exampleResource  <http://collection.britishmuseum.org/description/object/EAF119791.rdf> ;
         void:sparqlEndpoint   <http://collection.britishmuseum.org/Sparql> ;

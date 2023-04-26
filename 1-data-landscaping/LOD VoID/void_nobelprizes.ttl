@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,43 +6,42 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/nobelprizes> ;
+[ void:target   lod:nobelprizes , lod:yago ;
   void:triples  549
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/nobelprizes> ;
+[ void:target   lod:nobelprizes , lod:dbpedia ;
+  void:triples  1889
+] .
+
+[ void:target   lod:nobelprizes , lod:viaf ;
   void:triples  163
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf> , <http://lod-cloud.net/dataset/nobelprizes> ;
-  void:triples  8
+[ void:target   lod:nobelprizes , lod:freebase ;
+  void:triples  557
 ] .
 
-<http://lod-cloud.net/dataset/nobelprizes>
-        a                     void:Dataset ;
+lod:nobelprizes  a            void:Dataset ;
         dcterms:description   "Linked Open Data about every Nobel Prize since 1901, including information about the Nobel Prizes, the Nobel Laureates and related documentation."@en ;
         dcterms:publisher     [ rdfs:label  "Hannes Ebner" ;
                                 foaf:mbox   "hannes@metasolutions.se"
                               ] ;
-        dcterms:subject       "sweden" , "crossdomain" , "provenance-metadata" , "nobelmedia" , "lodcloud-diagram-2014-08-30" , "no-license-metadata" , "rdf" , "nobel" , "laureate" , "lod" , "nobelprize" , "no-vocab-mappings" , "format-foaf" , "sparql" , "cross_domain" , "published-by-producer" , "format-dbpedia" , "deref-vocab" ;
+        dcterms:subject       "sweden" , "crossdomain" , "provenance-metadata" , "nobelmedia" , "lodcloud-diagram-2014-08-30" , "no-license-metadata" , "rdf" , "nobel" , "laureate" , "lod" , "nobelprize" , "no-vocab-mappings" , "format-foaf" , "sparql" , "published-by-producer" , "cross_domain" , "deref-vocab" , "format-dbpedia" ;
         dcterms:title         "Nobel Prizes"@en ;
         void:dataDump         <http://data.nobelprize.org/dump.nt> ;
         void:exampleResource  <http://data.nobelprize.org/resource/laureate/1> ;
         void:sparqlEndpoint   <http://data.nobelprize.org/sparql> ;
         void:triples          88792 ;
-        dcat:distribution     [ dcat:accessURL  <http://www.nobelprize.org/nobel_organizations/nobelmedia/nobelprize_org/developer/manual-linkeddata/terms.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.nobelprize.org> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.nobelprize.org/dataset> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.nobelprize.org> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.nobelprize.org/nobel_organizations/nobelmedia/nobelprize_org/developer/manual-linkeddata/terms.rdf> ] ;
         foaf:homepage         <http://www.nobelprize.org/nobel_organizations/nobelmedia/nobelprize_org/developer/manual-linkeddata/terms.html> .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/nobelprizes> ;
-  void:triples  557
+[ void:target   lod:nobelprizes , lod:bio2rdf ;
+  void:triples  8
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/nobelprizes> ;
-  void:triples  1889
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linked-life-data> , <http://lod-cloud.net/dataset/nobelprizes> ;
+[ void:target   lod:nobelprizes , lod:linked-life-data ;
   void:triples  309
 ] .

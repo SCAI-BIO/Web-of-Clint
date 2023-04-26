@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/eu-institutions> , <http://lod-cloud.net/dataset/eu-who-is-who> ;
+[ void:target   lod:eu-who-is-who , lod:eu-institutions ;
   void:triples  3260
 ] .
 
-<http://lod-cloud.net/dataset/eu-who-is-who>
-        a                     void:Dataset ;
+lod:eu-who-is-who  a          void:Dataset ;
         dcterms:description   "Data scraped from [EU Whoiswho](http://europa.eu/whoiswho/public/index.cfm?lang=en), the official directory of the European Union. The dataset contains people, organisations and organisational hierarchy."@en ;
         dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
                                 foaf:mbox   "keithalexander@keithalexander.co.uk"

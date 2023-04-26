@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,31 +6,31 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/renewable_energy_generators> ;
-  void:triples  5539
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/renewable_energy_generators> ;
+[ void:target   lod:renewable_energy_generators , lod:ordnance-survey-linked-data ;
   void:triples  991
 ] .
 
-<http://lod-cloud.net/dataset/renewable_energy_generators>
+[ void:target   lod:renewable_energy_generators , lod:statistics-data-gov-uk ;
+  void:triples  5539
+] .
+
+lod:renewable_energy_generators
         a                     void:Dataset ;
         dcterms:description   "The Renewable Energy Federation maintains an online database of renewable energy generators located in the United Kingdom. The dataset consists of over 5500 generators around the UK, including both on-shore and off-shore installations. The generators have all been categorized based on type and many of them include details of their address, geographic location, and details of the organizations that developed, operate, or own the site. Some wind turbine installations also include details on the number, size and type of turbines.\r\n\r\n*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)"@en ;
         dcterms:publisher     [ rdfs:label  "Leigh Dodds" ;
                                 foaf:mbox   "leigh@ldodds.com"
                               ] ;
-        dcterms:subject       "government" , "format-rdf" , "published-by-third-party" , "geodata" , "geographic" , "format-foaf" , "deref-vocab" , "lodcloud-diagram-2011-09-19" ;
+        dcterms:subject       "government" , "format-rdf" , "published-by-third-party" , "geodata" , "format-foaf" , "geographic" , "deref-vocab" , "lodcloud-diagram-2011-09-19" ;
         dcterms:title         "Renewable Energy Generators"@en ;
         void:exampleResource  <http://data.kasabi.com/dataset/renewable-energy-generators/generator/R00001NANI.rdf> ;
         void:sparqlEndpoint   <http://api.kasabi.com/dataset/renewable-energy-generators/apis/sparql> ;
         void:triples          99917 ;
         dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/renewable-energy-generators/apis/lookup> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/renewable-energy-generators/apis/search> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/renewable-energy-generators/apis/augmentation> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.kasabi.com/dataset/renewable-energy-generators> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/renewable-energy-generators/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/renewable-energy-generators/apis/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <http://archive.org/download/kasabi/renewable-energy-generators.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.kasabi.com/dataset/renewable-energy-generators> ] ;
         dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/renewable-energy-generators/apis/reconciliation> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/renewable-energy-generators/apis/sparql> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/renewable-energy-generators/apis/search> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/renewable-energy-generators/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kasabi.com/dataset/renewable-energy-generators/apis/augmentation> ] ;
         foaf:homepage         <http://kasabi.com/dataset/renewable-energy-generators> .

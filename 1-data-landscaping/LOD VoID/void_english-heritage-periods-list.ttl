@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/english-heritage-periods-list>
+lod:english-heritage-periods-list
         a                     void:Dataset ;
         dcterms:description   "English Heritage Periods List"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "archaeology" , "license-metadata" , "user_generated" , "no-proprietary-vocab" , "published-by-third-party" , "format-skos" , "no-vocab-mappings" , "schemata" , "lod" , "provenance-metadata" ;
+        dcterms:subject       "provenance-metadata" , "archaeology" , "license-metadata" , "user_generated" , "no-proprietary-vocab" , "published-by-third-party" , "format-skos" , "no-vocab-mappings" , "lod" , "schemata" ;
         dcterms:title         "English Heritage Periods List"@en ;
-        void:exampleResource  <http://%3Chttp://purl.org/heritagedata/schemes/eh_period/concepts/RO.rdf> ;
+        void:exampleResource  <http://purl.org/heritagedata/schemes/eh_period/concepts/RO.rdf> ;
         void:sparqlEndpoint   <http://heritagedata.org/live/sparql> ;
         void:triples          557 ;
-        dcat:distribution     [ dcat:accessURL  <http://%3Chttp://purl.org/heritagedata/schemes/eh_period/concepts/RO.html> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://heritagedata.org/live/seneschal_eh_period_20130717.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://%3Chttp://purl.org/heritagedata/schemes/eh_period/concepts/RO.n3> ] ;
         dcat:distribution     [ dcat:accessURL  <http://purl.org/heritagedata/void.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://%3Chttp://purl.org/heritagedata/schemes/eh_period/concepts/RO.json> ] ;
         dcat:distribution     [ dcat:accessURL  <http://purl.org/heritagedata/schemes/eh_period> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://%3Chttp://purl.org/heritagedata/schemes/eh_period/concepts/RO.ttl> ] .
+        dcat:distribution     [ dcat:accessURL  <http://heritagedata.org/live/seneschal_eh_period_20130717.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/heritagedata/schemes/eh_period/concepts/RO.json> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/heritagedata/schemes/eh_period/concepts/RO.n3> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/heritagedata/schemes/eh_period/concepts/RO.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/heritagedata/schemes/eh_period/concepts/RO.ttl> ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,46 +6,45 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-gi> , <http://lod-cloud.net/dataset/bio2rdf-dbsnp> ;
+[ void:target   lod:bio2rdf-dbsnp , lod:bio2rdf-taxonomy ;
+  void:triples  1
+] .
+
+[ void:target   lod:bio2rdf-dbsnp ;
+  void:triples  447298
+] .
+
+[ void:target   lod:bio2rdf-dbsnp , lod:bio2rdf-genbank ;
   void:triples  138
 ] .
 
-<http://lod-cloud.net/dataset/bio2rdf-dbsnp>
-        a                     void:Dataset ;
+lod:bio2rdf-dbsnp  a          void:Dataset ;
         dcterms:description   "The dbSNP database is a repository for both single base nucleotide subsitutions and short deletion and insertion polymorphisms."@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2014-08-30" , "lifesciences" , "vocab-mappings" , "bio2rdf" , "format-rdfs" , "published-by-third-party" , "format-rdf" , "license-metadata" , "format-dc" , "provenance-metadata" , "deref-vocab" , "life_sciences" , "lod" ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "lifesciences" , "vocab-mappings" , "bio2rdf" , "format-rdfs" , "license-metadata" , "format-rdf" , "published-by-third-party" , "format-dc" , "provenance-metadata" , "deref-vocab" , "lod" , "life_sciences" ;
         dcterms:title         "Bio2RDF::Dbsnp"@en ;
         void:dataDump         <http://download.bio2rdf.org/current/dbsnp/dbsnp.nq.gz> ;
         void:exampleResource  <http://bio2rdf.org/dbsnp:rs199422184> ;
         void:sparqlEndpoint   <http://dbsnp.bio2rdf.org/sparql> ;
         void:triples          8801487 ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/dbsnp/bio2rdf_dbsnp_sio_mapping.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/dbsnp/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/dbsnp/dbsnp.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/dbsnp/bio2rdf-dbsnp.nq> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/dbsnp/dbsnp.html> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/dbsnp/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/dbsnp/bio2rdf-dbsnp.nq> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/dbsnp/bio2rdf_dbsnp_sio_mapping.owl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/dbsnp/dbsnp.schema.owl> ] ;
         foaf:homepage         <http://dbsnp.bio2rdf.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-dbsnp> ;
-  void:triples  447298
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-refseq> , <http://lod-cloud.net/dataset/bio2rdf-dbsnp> ;
-  void:triples  71624
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxonomy> , <http://lod-cloud.net/dataset/bio2rdf-dbsnp> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-genbank> , <http://lod-cloud.net/dataset/bio2rdf-dbsnp> ;
+[ void:target   lod:bio2rdf-dbsnp , lod:bio2rdf-gi ;
   void:triples  138
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-dbsnp> ;
+[ void:target   lod:bio2rdf-dbsnp , lod:bio2rdf-refseq ;
+  void:triples  71624
+] .
+
+[ void:target   lod:bio2rdf-dbsnp , lod:bio2rdf-ncbigene ;
   void:triples  11324
 ] .

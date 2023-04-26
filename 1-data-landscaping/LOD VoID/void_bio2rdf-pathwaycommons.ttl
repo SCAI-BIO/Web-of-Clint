@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,22 +6,22 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bio2rdf-pathwaycommons>
+lod:bio2rdf-pathwaycommons
         a                     void:Dataset ;
         dcterms:description   "Pathway Commons is a convenient point of access to biological pathway information collected from public pathway databases"@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
                               ] ;
-        dcterms:subject       "lod" , "deref-vocab" , "bio2rdf" , "vocab-mappings" , "published-by-third-party" , "provenance-metadata" , "format-rdfs" , "license-metadata" , "lifesciences" , "format-dc" , "format-rdf" ;
+        dcterms:subject       "lod" , "deref-vocab" , "bio2rdf" , "vocab-mappings" , "published-by-third-party" , "provenance-metadata" , "format-rdfs" , "license-metadata" , "format-dc" , "lifesciences" , "format-rdf" ;
         dcterms:title         "Bio2RDF::Pathwaycommons"@en ;
         void:exampleResource  <http://bio2rdf.org/pathwaycommons:485991> ;
         void:sparqlEndpoint   <http://pathwaycommons.bio2rdf.org/sparql> ;
         void:triples          5700724 ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/pathwaycommons/pathwaycommons.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pathwaycommons/pathwaycommons.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pathwaycommons/pathwaycommons.xml.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/pathwaycommons/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pathwaycommons/> ] ;
         dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/pathwaycommons/bio2rdf_pathwaycommons_sio_mapping.owl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pathwaycommons/pathwaycommons.xml.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pathwaycommons/pathwaycommons.html> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pathwaycommons/bio2rdf-pathwaycommons.nq> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/pathwaycommons/sitemap.xml> ] ;
         foaf:homepage         <http://pathwaycommons.bio2rdf.org/> .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/nvd>
-        a                     void:Dataset ;
+lod:nvd  a                    void:Dataset ;
         dcterms:description   "Norwegian classification of scientific disciplines as linked data (2003 edition)."@en ;
         dcterms:publisher     [ rdfs:label  "Rurik Thomas Greenall" ;
                                 foaf:mbox   "rurik.greenall@ub.ntnu.no"
@@ -19,6 +19,6 @@
         dcat:distribution     [ dcat:accessURL  <http://www.ntnu.no/ub/data/nvd/> ] ;
         foaf:homepage         <http://www.ntnu.no/ub/data/nvd/about> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/nvd> ;
+[ void:target   lod:nvd , lod:dbpedia ;
   void:triples  502
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/a-collection-of-papers-for-lrec2014-and-related-workshops>
+lod:a-collection-of-papers-for-lrec2014-and-related-workshops
         a                    void:Dataset ;
         dcterms:description  "aA collection of accepted Papers at LREC2014 and related Workshops"@en ;
         dcterms:publisher    [ rdfs:label  "Riccardo Del Gratta" ;

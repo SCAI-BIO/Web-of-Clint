@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,15 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/data-gov-uk-time-intervals> , <http://lod-cloud.net/dataset/cz-czso-social-service-facilities> ;
+[ void:target   lod:cz-czso-social-service-facilities , lod:data-gov-uk-time-intervals ;
   void:triples  462
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-ruian> , <http://lod-cloud.net/dataset/cz-czso-social-service-facilities> ;
+[ void:target   lod:cz-czso-social-service-facilities , lod:cz-ruian ;
   void:triples  462
 ] .
 
-<http://lod-cloud.net/dataset/cz-czso-social-service-facilities>
+lod:cz-czso-social-service-facilities
         a                     void:Dataset ;
         dcterms:description   "Data cube containing statistical data about social service facilities and nursing in a given year and district of Czech republic according to Czech Statistical Office."@en ;
         dcterms:publisher     [ rdfs:label  "Martin Nečaský" ;
@@ -21,12 +22,12 @@
                               ] ;
         dcterms:subject       "czech" , "lod" , "government" , "format-dcterms" , "czech-republic" , "format-sdmx" , "format-qb" , "format-skos" , "provenance-metadata" , "no-deref-vocab" , "vocab-mappings" , "published-by-third-party" , "license-metadata" ;
         dcterms:title         "Social service facilities and nursing in districts of Czech republic"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://data.czso.cz/resource/observation/social-service-facilities/CZ0205/2013-12-31%3E&default-graph-uri=http%3A%2F%2Fdata.czso.cz%2Fresource%2Fdataset%2Fsocial-service-facilities&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          5794 ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/czso-social-service-facilities-vocabulary.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.czso.cz/resource/observation/social-service-facilities/CZ0205/2013-12-31> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Fdata.czso.cz%2Fresource%2Fdataset%2Fsocial-service-facilities%2Fdistribution%3E&output=text%2Fturtle> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/czso-social-service-facilities.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.czso.cz/resource/observation/social-service-facilities/CZ0205/2013-12-31> ] ;
         dcat:distribution     [ dcat:accessURL  <http://internal.opendata.cz/dumps/czso-social-service-facilities-vocabulary.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/czso-social-service-facilities-vocabulary.trig> ] ;
         foaf:homepage         <http://data.czso.cz/resource/dataset/social-service-facilities> .

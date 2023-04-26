@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,47 +6,46 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/idreffr> , <http://lod-cloud.net/dataset/data-persee-fr> ;
-  void:triples  114000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/data-persee-fr> ;
-  void:triples  111000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxon> , <http://lod-cloud.net/dataset/data-persee-fr> ;
-  void:triples  78000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-persee-fr> ;
-  void:triples  11000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/data-bnf-fr> , <http://lod-cloud.net/dataset/data-persee-fr> ;
+[ void:target   lod:data-persee-fr , lod:data-bnf-fr ;
   void:triples  65000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/taxonconcept> , <http://lod-cloud.net/dataset/data-persee-fr> ;
-  void:triples  700
+[ void:target   lod:data-persee-fr , lod:bio2rdf-taxon ;
+  void:triples  78000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/data-persee-fr> ;
+[ void:target   lod:data-persee-fr , lod:dbpedia ;
+  void:triples  11000
+] .
+
+[ void:target   lod:data-persee-fr , lod:wikidata ;
   void:triples  22000
 ] .
 
-<http://lod-cloud.net/dataset/data-persee-fr>
-        a                     void:Dataset ;
+[ void:target   lod:data-persee-fr , lod:taxonconcept ;
+  void:triples  700
+] .
+
+[ void:target   lod:data-persee-fr , lod:viaf ;
+  void:triples  111000
+] .
+
+[ void:target   lod:data-persee-fr , lod:idreffr ;
+  void:triples  114000
+] .
+
+lod:data-persee-fr  a         void:Dataset ;
         dcterms:description   "![data.persee.fr](http://data.persee.fr/cropped-Logo-data.persee_petit.png)\r\n\r\n[data.persee.fr](http://data.persee.fr) is a triplestore opened in 2017. It gathers all the metadata produced by Persée and makes it available in a structured way (RDF graph) according to the semantic web principles (DCMI, FRBR, FOAF, CITO, BIBO, SKOS). The mapping between Persée’s data and international information systems enables the researchers to explore Persée database and to link to data offered by the library community (IdRef, data.bnf.fr, etc.), the scientific community (the Cairo Gazetteer, the Global Biodiversity Information Facility - GBIF) and other crowded sources (DBpedia)"@en ;
         dcterms:publisher     [ rdfs:label  "UMS Persée" ;
                                 foaf:mbox   "viviane.bouletreau@persee.fr"
                               ] ;
-        dcterms:subject       "license-metadata" , "pedagogic-material" , "format-foaf" , "sparql-endpoint" , "lod" , "format-skos" , "format-schema" , "dataset-collection" , "deref-vocab" , "format-marcrel" , "format-bibo" , "provenance-metadata" , "format-dcterms" , "format-rda" , "publications" , "published-by-producer" , "format-rdf" , "format-biro" , "format-cito" , "vocab-mappings" ;
+        dcterms:subject       "license-metadata" , "pedagogic-material" , "format-foaf" , "sparql-endpoint" , "format-marcrel" , "deref-vocab" , "dataset-collection" , "format-schema" , "lod" , "format-bibo" , "format-skos" , "provenance-metadata" , "format-dcterms" , "format-rda" , "publications" , "format-rdf" , "format-biro" , "published-by-producer" , "format-cito" , "vocab-mappings" ;
         dcterms:title         "Persée in RDF"@en ;
-        void:exampleResource  <http://data.persee.fr/authority/196565#Person> , <http://data.persee.fr/doc/bulmo_0007-473x_2000_num_158_2_2373> , <http://data.persee.fr/collection/ahess_0395-2649> ;
+        void:exampleResource  <http://data.persee.fr/collection/ahess_0395-2649> , <http://data.persee.fr/doc/bulmo_0007-473x_2000_num_158_2_2373> , <http://data.persee.fr/authority/196565#Person> ;
         void:sparqlEndpoint   <http://data.persee.fr/sparql> ;
         void:triples          48000000 ;
-        dcat:distribution     [ dcat:accessURL  <http://data.persee.fr/explorer/demander-un-dump/dumps-collections/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.persee.fr/dumps/PERSEE_person_align_rdf.tar.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.persee.fr/ontology/persee-ontology.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.persee.fr/explorer/schemas-de-donnees/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.persee.fr/explorer/demander-un-dump/dumps-collections/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.persee.fr/dumps/PERSEE_person_align_rdf.tar.gz> ] ;
         foaf:homepage         <http://data.persee.fr/> .

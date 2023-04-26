@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/salzburgerland-com-de> ;
-  void:triples  679
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/salzburgerland-com-de> ;
+[ void:target   lod:salzburgerland-com-de , lod:yago ;
   void:triples  372
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/salzburgerland-com-de> ;
+[ void:target   lod:salzburgerland-com-de , lod:freebase ;
+  void:triples  679
+] .
+
+[ void:target   lod:salzburgerland-com-de , lod:wikidata ;
   void:triples  168
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/salzburgerland-com-de> ;
-  void:triples  191
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/salzburgerland-com-de> ;
-  void:triples  726
-] .
-
-<http://lod-cloud.net/dataset/salzburgerland-com-de>
+lod:salzburgerland-com-de
         a                     void:Dataset ;
         dcterms:description   "Salzburgerland dataset for German resources, built with WordLift from the website https://www.salzburgerland.com/de/"@en ;
         dcterms:publisher     [ rdfs:label  "WordLift Team" ;
@@ -37,3 +30,11 @@
         void:exampleResource  <http://open.salzburgerland.com/de/entity/bezirk_st-_johann_im_pongau> ;
         void:triples          28833 ;
         foaf:homepage         <https://www.salzburgerland.com/de/> .
+
+[ void:target   lod:salzburgerland-com-de , lod:dbpedia ;
+  void:triples  726
+] .
+
+[ void:target   lod:salzburgerland-com-de , lod:geonames-semantic-web ;
+  void:triples  191
+] .

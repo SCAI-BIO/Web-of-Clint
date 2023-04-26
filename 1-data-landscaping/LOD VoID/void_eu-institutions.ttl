@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/eu-agencies-bodies> , <http://lod-cloud.net/dataset/eu-institutions> ;
-  void:triples  38
-] .
-
-<http://lod-cloud.net/dataset/eu-institutions>
-        a                     void:Dataset ;
+lod:eu-institutions  a        void:Dataset ;
         dcterms:description   "This site defines Linked Data compatible URIs for major institutions and bodies of the European Union that can be used as identifiers in EU-related datasets. \r\n\r\nhttp://institutions.publicdata.eu/\r\n\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "Michael Hausenblas" ;
                                 foaf:mbox   "michael.hausenblas@deri.org"
@@ -19,11 +15,15 @@
         dcterms:title         "Institutions and Bodies of the European Union"@en ;
         void:exampleResource  <http://institutions.publicdata.eu/#ec> ;
         void:triples          643 ;
+        dcat:distribution     [ dcat:accessURL  <http://institutions.publicdata.eu/all.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://institutions.publicdata.eu/.well-known/void> ] ;
         dcat:distribution     [ dcat:accessURL  <http://institutions.publicdata.eu/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://institutions.publicdata.eu/all.ttl> ] ;
         foaf:homepage         <http://institutions.publicdata.eu/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/eu-institutions> ;
+[ void:target   lod:eu-institutions , lod:dbpedia ;
   void:triples  154
+] .
+
+[ void:target   lod:eu-institutions , lod:eu-agencies-bodies ;
+  void:triples  38
 ] .

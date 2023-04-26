@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -11,7 +12,7 @@
         dcterms:publisher    [ rdfs:label  "x" ;
                                foaf:mbox   "318770@uwr.edu.pl"
                              ] ;
-        dcterms:subject      "publications" , "" ;
+        dcterms:subject      "" , "publications" ;
         dcterms:title        "x"@en ;
         void:triples         "0"^^xsd:int ;
         foaf:homepage        <http://rocznikibiblioteczne.ibi.uni.wroc.pl/woluminy/tom-i-zeszyty-1-2-1957/> .

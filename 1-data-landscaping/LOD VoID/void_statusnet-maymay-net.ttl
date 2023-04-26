@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/statusnet-maymay-net>
+[ void:target   lod:statusnet-maymay-net , lod:statusnet-postblue-info ;
+  void:triples  1
+] .
+
+lod:statusnet-maymay-net
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://maymay.net"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -16,30 +21,26 @@
         void:exampleResource  <http://status.maymay.net/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-maymay-net> ;
+[ void:target   lod:statusnet-maymay-net , lod:statusnet-macno-org ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-maymay-net> ;
+[ void:target   lod:statusnet-maymay-net , lod:statusnet-skilledtests-com ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-maymay-net , lod:statusnet-status-net ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-maymay-net> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-maymay-net> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-maymay-net> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-maymay-net> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-maymay-net> ;
+[ void:target   lod:statusnet-maymay-net , lod:statusnet-quitter-se ;
   void:triples  5
+] .
+
+[ void:target   lod:statusnet-maymay-net , lod:statusnet-fragdev-com ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-maymay-net , lod:geonames-semantic-web ;
+  void:triples  1
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rdfs> , <http://lod-cloud.net/dataset/russian-universities-specialities> ;
+[ void:target   lod:russian-universities-specialities , lod:rdfs ;
   void:triples  10000
 ] .
 
-<http://lod-cloud.net/dataset/russian-universities-specialities>
+lod:russian-universities-specialities
         a                    void:Dataset ;
         dcterms:description  "This ontology describes a degree of higher education and the direction of bachelor's and master's degrees in the Russian Federation and their compliance with the various official lists. It is assumed that a given ontology can be used in various applications of the Semantic Web in Russian higher education."@en ;
         dcterms:publisher    [ rdfs:label  "Alexey Dmitriev" ;

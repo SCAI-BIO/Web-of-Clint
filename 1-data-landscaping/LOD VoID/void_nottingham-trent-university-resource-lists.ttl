@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,18 +6,18 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/openlibrary> , <http://lod-cloud.net/dataset/nottingham-trent-university-resource-lists> ;
-  void:triples  23422
-] .
-
-<http://lod-cloud.net/dataset/nottingham-trent-university-resource-lists>
+lod:nottingham-trent-university-resource-lists
         a                     void:Dataset ;
         dcterms:description   "lists, modules & courses of the trent university of nottinghame"@en ;
         dcterms:publisher     [ rdfs:label  "Ian Davis" ;
                                 foaf:mbox   "ian.davis@talis.com"
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2011-09-19" , "lodcloud-diagram-2014-08-30" , "education" , "lod" , "no-proprietary-vocab" , "published-by-producer" , "no-license-metadata" , "no-provenance-metadata" , "format-rdf" , "publications" , "talis" , "no-vocab-mappings" , "higher-education" ;
+        dcterms:subject       "lodcloud-diagram-2011-09-19" , "lodcloud-diagram-2014-08-30" , "education" , "lod" , "no-proprietary-vocab" , "published-by-producer" , "no-license-metadata" , "format-rdf" , "no-provenance-metadata" , "publications" , "talis" , "no-vocab-mappings" , "higher-education" ;
         dcterms:title         "Nottingham Trent University Resource Lists"@en ;
         void:exampleResource  <http://resourcelists.ntu.ac.uk/lists/AE0AA29A-3E56-9D53-5003-B72A6A21C2D5> ;
         void:triples          726933 ;
         foaf:homepage         <http://resourcelists.ntu.ac.uk/> .
+
+[ void:target   lod:nottingham-trent-university-resource-lists , lod:openlibrary ;
+  void:triples  23422
+] .

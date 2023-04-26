@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-zfa> , <http://lod-cloud.net/dataset/bioportal-fma> ;
+[ void:target   lod:bioportal-fma , lod:bioportal-zfa ;
   void:triples  240
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ma> , <http://lod-cloud.net/dataset/bioportal-fma> ;
-  void:triples  881
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-fma> ;
+[ void:target   lod:bioportal-fma , lod:bioportal-ncit ;
   void:triples  442
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-fma>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-fma , lod:bioportal-ma ;
+  void:triples  881
+] .
+
+lod:bioportal-fma  a         void:Dataset ;
         dcterms:description  "FMA is a domain ontology that represents a coherent body of explicit declarative knowledge about human anatomy. The description of how this OWL version was generated is in \"Pushing the Envelope: Challenges in a Frame-Based Representation of Human Anatomy\" by N. F. Noy, J. L. Mejino, C. Rosse, M. A. Musen: \nhttp://bmir.stanford.edu/publications/view.php/pushing_the_envelope_challenges_in_a_frame_based_representation_of_human_anatomy"@en ;
         dcterms:publisher    [ rdfs:label  "Onard Mejino" ;
                                foaf:mbox   ""
@@ -26,7 +26,7 @@
         dcterms:subject      "format-owl" , "biomedicine" , "format-rdf" , "lod" , "published-by-third-party" , "bioportal" , "ontology" , "life_sciences" ;
         dcterms:title        "Foundational Model of Anatomy"@en ;
         void:triples         1714653 ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/44507?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/44507?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1053> .

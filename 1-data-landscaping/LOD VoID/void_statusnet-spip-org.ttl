@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-scoffoni-net> , <http://lod-cloud.net/dataset/statusnet-spip-org> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-spip-org> ;
-  void:triples  80
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-shnoulle-net> , <http://lod-cloud.net/dataset/statusnet-spip-org> ;
+[ void:target   lod:statusnet-spip-org , lod:statusnet-shnoulle-net ;
   void:triples  23
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-spip-org>
+[ void:target   lod:statusnet-spip-org , lod:geonames-semantic-web ;
+  void:triples  80
+] .
+
+[ void:target   lod:statusnet-spip-org , lod:statusnet-status-net ;
+  void:triples  2
+] .
+
+[ void:target   lod:statusnet-spip-org , lod:statusnet-scoffoni-net ;
+  void:triples  1
+] .
+
+lod:statusnet-spip-org
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://spip.org"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -27,7 +32,3 @@
         dcterms:title         "statusnet-spip-org"@en ;
         void:exampleResource  <http://spip.org/spipmedias/foaf> ;
         void:triples          "0"^^xsd:int .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-spip-org> ;
-  void:triples  2
-] .

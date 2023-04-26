@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,16 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-households-social-lettings-general-needs-lettings-prp-household-composition> ;
-  void:triples  1
-] .
-
-<http://lod-cloud.net/dataset/opendatacommunities-households-social-lettings-general-needs-lettings-prp-household-composition>
+lod:opendatacommunities-households-social-lettings-general-needs-lettings-prp-household-composition
         a                    void:Dataset ;
         dcterms:description  ""@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "format-dcterm" , "crawledLinkedDataCloud2014" , "dataset-level-metadata" , "sparql" , "lodcloud-diagram-2014-08-30" , "government" , "format-void" , "format-dcat" , "provenance-metadata" , "dump" , "format-rdfs" , "format-rdf" , "LinkedDataCrawl2014" ;
+        dcterms:subject      "format-dcterm" , "crawledLinkedDataCloud2014" , "dataset-level-metadata" , "sparql" , "lodcloud-diagram-2014-08-30" , "government" , "format-void" , "format-dcat" , "dump" , "provenance-metadata" , "format-rdfs" , "format-rdf" , "LinkedDataCrawl2014" ;
         dcterms:title        "opendatacommunities-households-social-lettings-general-needs-lettings-prp-household-composition"@en ;
         void:triples         "0"^^xsd:int .
+
+[ void:target   lod:opendatacommunities-households-social-lettings-general-needs-lettings-prp-household-composition , lod:reference-data-gov-uk ;
+  void:triples  1
+] .

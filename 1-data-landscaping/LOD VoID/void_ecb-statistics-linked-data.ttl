@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/data-gov-uk-time-intervals> , <http://lod-cloud.net/dataset/ecb-statistics-linked-data> ;
-  void:triples  100000
-] .
-
-<http://lod-cloud.net/dataset/ecb-statistics-linked-data>
+lod:ecb-statistics-linked-data
         a                     void:Dataset ;
         dcterms:description   "This dataset is a Linked Data conversion of the European Central Bank  Statistical Warehouse. It consists of SPARQLable metadata, and URIs to the individual /series/ that dereference to on-the-fly conversion to RDFa."@en ;
         dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
                                 foaf:mbox   "keith.alexander@talis.com"
                               ] ;
-        dcterms:subject       "lod" , "format-qb" , "GDP" , "statistics" , "finance" , "government" , "bank" , "exchange rates" , "published-by-third-party" , "european union" , "latc" , "no-proprietary-vocab" , "linked data" , "eu-institution" , "eu" , "europe" ;
+        dcterms:subject       "lod" , "format-qb" , "GDP" , "statistics" , "finance" , "bank" , "exchange rates" , "government" , "published-by-third-party" , "european union" , "latc" , "eu" , "eu-institution" , "linked data" , "no-proprietary-vocab" , "europe" ;
         dcterms:title         "European Central Bank Statistics (PublicData.eu)"@en ;
         void:exampleResource  <http://ecb.publicdata.eu/series/127_RA_M_4F_N_4_Z20_N_A1_E.html> ;
         void:sparqlEndpoint   <http://ecb.publicdata.eu/sparql> ;
         void:triples          10000000 ;
         foaf:homepage         <http://ecb.publicdata.eu> .
+
+[ void:target   lod:ecb-statistics-linked-data , lod:data-gov-uk-time-intervals ;
+  void:triples  100000
+] .

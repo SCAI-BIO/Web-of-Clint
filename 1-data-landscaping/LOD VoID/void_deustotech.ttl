@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,37 +6,36 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/morelab> , <http://lod-cloud.net/dataset/deustotech> ;
-  void:triples  93
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/deustotech> ;
+[ void:target   lod:deustotech , lod:dbpedia ;
   void:triples  1248
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/deustotech> ;
-  void:triples  39
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dblp-deusto-gnoss> , <http://lod-cloud.net/dataset/deustotech> ;
-  void:triples  2050
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/deustotech> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/gnoss> , <http://lod-cloud.net/dataset/deustotech> ;
+[ void:target   lod:deustotech , lod:morelab ;
   void:triples  93
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/deustotech> ;
+[ void:target   lod:deustotech , lod:freebase ;
   void:triples  1186
 ] .
 
-<http://lod-cloud.net/dataset/deustotech>
-        a                     void:Dataset ;
-        dcterms:description   "<p>\r\n<p>\r\nDeusto Instituto de Tecnología, <a href=\"http://www.deustotech.deusto.es/\">DeustoTech</a>, anteriormente Tecnológico Fundación Deusto, es un instituto de investigación perteneciente a la Fundación Deusto y la Universidad de Deusto en la Facultad de Ingeniería. DeustoTech ha sido creado con la misión de realizar investigación básica y aplicada en tecnologías de la informática y la información, frente a la transferencia de tecnología y apoyo a las empresas, y fomentar la formación y la excelencia en la educación.\r\n</p>\r\n<p>\r\nDeustoTech trabaja con <a href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. Este dataset presenta información sobre publicaciones, autores y proyectos de investigación de dos grupos pertenecientes a DeustoTech: <a title=\"DeustoTech Computing,\" href=\"http://gescon.deusto.es:7877/servlet/Satellite/Page/1280393105788/_cast/#1284619588939%231280393105788/c0/UniversidadDeusto/Page/PaginaAsociacionDTTPL\">DeustoTech Computing</a> centrada en la inteligencia computacional aplicada a la seguridad y la optimización de procesos industriales, entre otros campos y\r\n<a title=\"DeustoTech Internet\" href=\"http://www.deustotech.deusto.es/servlet/Satellite/Page/1280393105780/_ingl/#1284619588939%231280393105780/c0/UniversidadDeusto/Page/PaginaAsociacionDTTPL\">DeustoTech Internet</a>, centrada en las soluciones móviles, la computación ubicua y la inteligencia ambiental. Esta información esta publicada en las comunidades gnoss\r\n<a title=\"DeustoTech Internet\" href=\"http://deusto.gnoss.com/comunidad/futureinternet\">DeustoTech Internet</a>\r\ny <a href=\"http://deusto.gnoss.com/comunidad/deustotechcomputing\">DeustoTech Computing</a>.\r\n</p>\r\n\r\n<p>\r\nDeusto Institute of Technology,\r\n<a href=\"http://www.deustotech.deusto.es/\">DeustoTech</a>, Tecnológico Fundación Deusto previously, is a research institute belonging to the Fundación Deusto and the University of Deusto in the Faculty of Engineering. Deustotech has been created to conduct basic and apply research in information technologies, to transfer technology and business support, and to promote training and excellence in education.\r\n</p>\r\n<p>\r\nDeustoTech works with\r\n<a href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. This dataset provides information about publications, authors and research projects of two groups belonging to Deustotech: DeustoTech Computing, that focus on computational intelligence applied to security and optimization of industrial processes, among other fields; and Deustotech Internet, that focus on mobile solutions, ubiquitous computing and ambient intelligence. This information is posted on the gnoss communities <a title=\"DeustoTech Internet\" href=\"http://deusto.gnoss.com/comunidad/futureinternet\">DeustoTech Internet</a> and <a href=\"http://deusto.gnoss.com/comunidad/deustotechcomputing\">DeustoTech Computing</a>.\r\n</p>"@en ;
+[ void:target   lod:deustotech , lod:geonames-semantic-web ;
+  void:triples  17
+] .
+
+[ void:target   lod:deustotech , lod:dblp-deusto-gnoss ;
+  void:triples  2050
+] .
+
+[ void:target   lod:deustotech , lod:nytimes-linked-open-data ;
+  void:triples  39
+] .
+
+[ void:target   lod:deustotech , lod:gnoss ;
+  void:triples  93
+] .
+
+lod:deustotech  a             void:Dataset ;
+        dcterms:description   "<p>\r\n<p>\r\nDeusto Instituto de Tecnología, <a+href=\"http://www.deustotech.deusto.es/\">DeustoTech</a>, anteriormente Tecnológico Fundación Deusto, es un instituto de investigación perteneciente a la Fundación Deusto y la Universidad de Deusto en la Facultad de Ingeniería. DeustoTech ha sido creado con la misión de realizar investigación básica y aplicada en tecnologías de la informática y la información, frente a la transferencia de tecnología y apoyo a las empresas, y fomentar la formación y la excelencia en la educación.\r\n</p>\r\n<p>\r\nDeustoTech trabaja con <a+href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. Este dataset presenta información sobre publicaciones, autores y proyectos de investigación de dos grupos pertenecientes a DeustoTech: <a+title=\"DeustoTech+Computing,\"+href=\"http://gescon.deusto.es:7877/servlet/Satellite/Page/1280393105788/_cast/#1284619588939%231280393105788/c0/UniversidadDeusto/Page/PaginaAsociacionDTTPL\">DeustoTech Computing</a> centrada en la inteligencia computacional aplicada a la seguridad y la optimización de procesos industriales, entre otros campos y\r\n<a+title=\"DeustoTech+Internet\"+href=\"http://www.deustotech.deusto.es/servlet/Satellite/Page/1280393105780/_ingl/#1284619588939%231280393105780/c0/UniversidadDeusto/Page/PaginaAsociacionDTTPL\">DeustoTech Internet</a>, centrada en las soluciones móviles, la computación ubicua y la inteligencia ambiental. Esta información esta publicada en las comunidades gnoss\r\n<a+title=\"DeustoTech+Internet\"+href=\"http://deusto.gnoss.com/comunidad/futureinternet\">DeustoTech Internet</a>\r\ny <a+href=\"http://deusto.gnoss.com/comunidad/deustotechcomputing\">DeustoTech Computing</a>.\r\n</p>\r\n\r\n<p>\r\nDeusto Institute of Technology,\r\n<a+href=\"http://www.deustotech.deusto.es/\">DeustoTech</a>, Tecnológico Fundación Deusto previously, is a research institute belonging to the Fundación Deusto and the University of Deusto in the Faculty of Engineering. Deustotech has been created to conduct basic and apply research in information technologies, to transfer technology and business support, and to promote training and excellence in education.\r\n</p>\r\n<p>\r\nDeustoTech works with\r\n<a+href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. This dataset provides information about publications, authors and research projects of two groups belonging to Deustotech: DeustoTech Computing, that focus on computational intelligence applied to security and optimization of industrial processes, among other fields; and Deustotech Internet, that focus on mobile solutions, ubiquitous computing and ambient intelligence. This information is posted on the gnoss communities <a+title=\"DeustoTech+Internet\"+href=\"http://deusto.gnoss.com/comunidad/futureinternet\">DeustoTech Internet</a> and <a+href=\"http://deusto.gnoss.com/comunidad/deustotechcomputing\">DeustoTech Computing</a>.\r\n</p>"@en ;
         dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
                                 foaf:mbox   "gnoss@gnoss.com"
                               ] ;

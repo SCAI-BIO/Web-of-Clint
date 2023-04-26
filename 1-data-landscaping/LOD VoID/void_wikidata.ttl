@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,132 +6,179 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/idreffr> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  528040
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linked-open-numbers> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  10327
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/uniprot> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  2537481
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/national-diet-library-authorities> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  124052
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  77714
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  4397020
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/libris> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  258242
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/data-persee-fr> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  34064
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  801
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/BVMC> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  16483
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/data-bnf-fr> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  895058
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/uniprotkb> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  2537481
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/iptc-newscodes> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  782
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/hungarian-national-library-catalog> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  6825
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/eurovoc> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  3068
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/zitgist-musicbrainz> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  490029
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/ocd> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  12881
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/clld-glottolog> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  10800
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/libris> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  258242
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/gutenberg> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  19945
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/gemeenschappelijke-thesaurus-audiovisuele-archieven> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  39556
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/wikidata> ;
+[ void:target   lod:wikidata , lod:viaf ;
   void:triples  6148897
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  3747452
+[ void:target   lod:wikidata , lod:bag ;
+  void:triples  61218
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/doi> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  27367486
+[ void:target   lod:wikidata , lod:glottolog ;
+  void:triples  10800
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/getty-tgn> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  29226
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/pleiades> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  5625
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/oclc-fast> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  502221
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bbc-programmes> , <http://lod-cloud.net/dataset/wikidata> ;
+[ void:target   lod:wikidata , lod:bbc-programmes ;
   void:triples  4202
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  8300
+[ void:target   lod:wikidata , lod:stw-thesaurus-for-economics ;
+  void:triples  2663
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/eunis> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  179098
+[ void:target   lod:wikidata , lod:babelnet ;
+  void:triples  65942
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/warsampo> , <http://lod-cloud.net/dataset/wikidata> ;
+[ void:target   lod:wikidata , lod:gemeenschappelijke-thesaurus-audiovisuele-archieven ;
+  void:triples  39556
+] .
+
+[ void:target   lod:wikidata , lod:rism ;
+  void:triples  27329
+] .
+
+[ void:target   lod:wikidata , lod:warsampo ;
   void:triples  17
 ] .
 
-<http://lod-cloud.net/dataset/wikidata>
-        a                     void:Dataset ;
+[ void:target   lod:wikidata , lod:bioportal-unitsontology ;
+  void:triples  610
+] .
+
+[ void:target   lod:wikidata , lod:swedish-open-cultural-heritage ;
+  void:triples  164146
+] .
+
+[ void:target   lod:wikidata , lod:national-diet-library-authorities ;
+  void:triples  124052
+] .
+
+[ void:target   lod:wikidata , lod:eurovoc ;
+  void:triples  3068
+] .
+
+[ void:target   lod:wikidata , lod:pleiades ;
+  void:triples  5625
+] .
+
+[ void:target   lod:wikidata , lod:eunis ;
+  void:triples  179098
+] .
+
+[ void:target   lod:wikidata , lod:thesesfr ;
+  void:triples  4370
+] .
+
+[ void:target   lod:wikidata , lod:libris ;
+  void:triples  258242
+] .
+
+[ void:target   lod:wikidata , lod:yso ;
+  void:triples  14180
+] .
+
+[ void:target   lod:wikidata , lod:bioportal-snomedct ;
+  void:triples  801
+] .
+
+[ void:target   lod:wikidata , lod:data-persee-fr ;
+  void:triples  34064
+] .
+
+[ void:target   lod:wikidata , lod:bioportal-msh ;
+  void:triples  77724
+] .
+
+[ void:target   lod:wikidata , lod:zitgist-musicbrainz ;
+  void:triples  490029
+] .
+
+[ void:target   lod:wikidata , lod:libris ;
+  void:triples  258242
+] .
+
+[ void:target   lod:wikidata , lod:dnb-gemeinsame-normdatei ;
+  void:triples  1918745
+] .
+
+[ void:target   lod:wikidata , lod:clld-glottolog ;
+  void:triples  10800
+] .
+
+[ void:target   lod:wikidata , lod:gutenberg ;
+  void:triples  19945
+] .
+
+[ void:target   lod:wikidata , lod:msc ;
+  void:triples  210
+] .
+
+[ void:target   lod:wikidata , lod:idreffr ;
+  void:triples  528040
+] .
+
+[ void:target   lod:wikidata , lod:sandrart-net ;
+  void:triples  5172
+] .
+
+[ void:target   lod:wikidata , lod:ocd ;
+  void:triples  12881
+] .
+
+[ void:target   lod:wikidata , lod:linked-open-numbers ;
+  void:triples  10327
+] .
+
+[ void:target   lod:wikidata , lod:lexvo ;
+  void:triples  8300
+] .
+
+[ void:target   lod:wikidata , lod:freebase ;
+  void:triples  4397020
+] .
+
+[ void:target   lod:wikidata , lod:uniprot ;
+  void:triples  2537481
+] .
+
+[ void:target   lod:wikidata , lod:oclc-fast ;
+  void:triples  502221
+] .
+
+[ void:target   lod:wikidata , lod:BVMC ;
+  void:triples  16483
+] .
+
+[ void:target   lod:wikidata , lod:getty-tgn ;
+  void:triples  29226
+] .
+
+[ void:target   lod:wikidata , lod:cpv-2008 ;
+  void:triples  422
+] .
+
+[ void:target   lod:wikidata , lod:naics-2012 ;
+  void:triples  45
+] .
+
+[ void:target   lod:wikidata , lod:chembl-rdf ;
+  void:triples  100223
+] .
+
+[ void:target   lod:wikidata , lod:bluk-bnb ;
+  void:triples  42519
+] .
+
+[ void:target   lod:wikidata , lod:datos-bne-es ;
+  void:triples  207362
+] .
+
+[ void:target   lod:wikidata , lod:bioportal-mesh-owl ;
+  void:triples  77714
+] .
+
+lod:wikidata  a               void:Dataset ;
         dcterms:description   "free knowledge database project hosted by Wikimedia and edited by volunteers"@en ;
         dcterms:publisher     [ rdfs:label  "Lucas Werkmeister" ;
                                 foaf:mbox   "wikidata@wikimedia.de"
@@ -138,100 +186,52 @@
         dcterms:subject       "user_generated" , "wikimedia" , "wikipedia" ;
         dcterms:title         "Wikidata"@en ;
         void:dataDump         <https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.ttl.gz> , <https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.ttl.bz2> , <https://dumps.wikimedia.org/wikidatawiki/entities/latest-truthy.nt.gz> , <https://dumps.wikimedia.org/wikidatawiki/entities/latest-truthy.nt.bz2> ;
-        void:exampleResource  <https://www.wikidata.org/wiki/Q8023> , <http://www.wikidata.org/entity/Q8023> , <https://www.wikidata.org/wiki/Special:EntityData/Q8023> , <https://www.wikidata.org/wiki/Special:EntityData/Q8023.nt> , <https://www.wikidata.org/wiki/Special:EntityData/Q8023.ttl> , <https://www.wikidata.org/wiki/Special:EntityData/Q8023.rdf> , <https://www.wikidata.org/wiki/Special:EntityData/Q8023.json> ;
+        void:exampleResource  <https://www.wikidata.org/wiki/Q8023> , <https://www.wikidata.org/wiki/Special:EntityData/Q8023> , <http://www.wikidata.org/entity/Q8023> , <https://www.wikidata.org/wiki/Special:EntityData/Q8023.nt> , <https://www.wikidata.org/wiki/Special:EntityData/Q8023.rdf> , <https://www.wikidata.org/wiki/Special:EntityData/Q8023.ttl> , <https://www.wikidata.org/wiki/Special:EntityData/Q8023.json> ;
         void:sparqlEndpoint   <https://query.wikidata.org/sparql> ;
         void:triples          12500000000 ;
         dcat:distribution     [ dcat:accessURL  <https://query.wikidata.org/> ] ;
         foaf:homepage         <https://www.wikidata.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/wikidata> ;
+[ void:target   lod:wikidata , lod:uniprotkb ;
+  void:triples  2537481
+] .
+
+[ void:target   lod:wikidata , lod:data-bnf-fr ;
+  void:triples  895058
+] .
+
+[ void:target   lod:wikidata , lod:lcsh ;
   void:triples  1338101
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  77724
+[ void:target   lod:wikidata , lod:iptc-newscodes ;
+  void:triples  782
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bluk-bnb> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  42519
+[ void:target   lod:wikidata , lod:doi ;
+  void:triples  27367486
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/chembl-rdf> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  100223
+[ void:target   lod:wikidata , lod:geonames-semantic-web ;
+  void:triples  3747452
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/open-library> , <http://lod-cloud.net/dataset/wikidata> ;
+[ void:target   lod:wikidata , lod:open-library ;
   void:triples  271983
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/getty-aat> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  25080
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-unitsontology> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  610
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/sandrart-net> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  5172
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/cpv-2008> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  422
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/datos-bne-es> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  207362
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/thesesfr> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  4370
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/europeana-sparql> , <http://lod-cloud.net/dataset/wikidata> ;
+[ void:target   lod:wikidata , lod:europeana-sparql ;
   void:triples  160460
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rism> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  27329
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/swedish-open-cultural-heritage> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  164146
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  1918745
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/msc> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  210
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/babelnet> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  65942
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/naics-2012> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/stw-thesaurus-for-economics> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  2663
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/glottolog> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  10800
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bag> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  61218
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/yso> , <http://lod-cloud.net/dataset/wikidata> ;
-  void:triples  14180
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/nomisma_org> , <http://lod-cloud.net/dataset/wikidata> ;
+[ void:target   lod:wikidata , lod:nomisma_org ;
   void:triples  1801
+] .
+
+[ void:target   lod:wikidata , lod:getty-aat ;
+  void:triples  25080
+] .
+
+[ void:target   lod:wikidata , lod:hungarian-national-library-catalog ;
+  void:triples  6825
 ] .

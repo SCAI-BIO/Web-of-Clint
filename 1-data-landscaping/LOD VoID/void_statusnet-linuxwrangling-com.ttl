@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,81 +6,81 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/statusnet-linuxwrangling-com>
+lod:statusnet-linuxwrangling-com
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://linuxwrangling.com"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "format-rdf" , "LinkedDataCrawl2014" , "format-sioc" , "crawledLinkedDataCloud2014" , "format-bio" , "lodcloud-diagram-2014-08-30" , "social web" , "format-foaf" ;
+        dcterms:subject       "format-rdf" , "format-sioc" , "LinkedDataCrawl2014" , "crawledLinkedDataCloud2014" , "format-bio" , "lodcloud-diagram-2014-08-30" , "social web" , "format-foaf" ;
         dcterms:title         "statusnet-linuxwrangling-com"@en ;
         void:exampleResource  <http://status.linuxwrangling.com/kevingranade/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-cat> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  59
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-thelovebug-org> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-jonkman-ca ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-lydiastench-com> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-lydiastench-com ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-tekk-com-ar> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-cooleysekula-net> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gomertronic-com> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  9
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-timttmy-co-uk> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  38
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-jonkman-ca> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-russwurm-org ;
   void:triples  8
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-chromic-org> , <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> ;
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-tekk-com-ar ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-thelovebug-org ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-quitter-se ;
+  void:triples  59
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-morphtown-de ;
+  void:triples  9
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-cooleysekula-net ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-postblue-info ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-gomertronic-com ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-status-cat ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-status-net ;
+  void:triples  5
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-fragdev-com ;
+  void:triples  38
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-timttmy-co-uk ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:personal-homepages ;
+  void:triples  16
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-macno-org ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-linuxwrangling-com , lod:statusnet-chromic-org ;
   void:triples  4
 ] .

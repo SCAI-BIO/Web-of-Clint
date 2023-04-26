@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,26 +6,25 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bio2rdf-ndc>
-        a                     void:Dataset ;
+lod:bio2rdf-ndc  a            void:Dataset ;
         dcterms:description   "The National Drug Code (NDC) is a unique product identifier used in the United States for drugs intended for human use."@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
                               ] ;
-        dcterms:subject       "published-by-third-party" , "vocab-mappings" , "format-rdfs" , "format-rdf" , "provenance-metadata" , "bio2rdf" , "lodcloud-diagram-2014-08-30" , "format-dc" , "life_sciences" , "lifesciences" , "deref-vocab" , "lod" , "license-metadata" ;
+        dcterms:subject       "published-by-third-party" , "vocab-mappings" , "format-rdfs" , "format-rdf" , "bio2rdf" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "format-dc" , "lifesciences" , "life_sciences" , "deref-vocab" , "lod" , "license-metadata" ;
         dcterms:title         "Bio2RDF::Ndc"@en ;
         void:dataDump         <http://download.bio2rdf.org/current/ndc/ndc.nq.gz> ;
         void:exampleResource  <http://bio2rdf.org/ndc:49288-0001_272c9910-2160-4d41-afbd-faab3055ba1d> ;
         void:sparqlEndpoint   <http://ndc.bio2rdf.org/sparql> ;
         void:triples          6199488 ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/ndc/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/ndc/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/ndc/ndc.html> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/ndc/ndc.schema.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/ndc/bio2rdf-ndc.nq> ] ;
         dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/ndc/bio2rdf_ndc_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/ndc/ndc.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/ndc/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/ndc/ndc.schema.owl> ] ;
         foaf:homepage         <http://ndc.bio2rdf.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ndc> ;
+[ void:target   lod:bio2rdf-ndc ;
   void:triples  488136
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/dbacademic>
-        a                    void:Dataset ;
+lod:dbacademic  a            void:Dataset ;
         dcterms:description  "academic dataset of educational institution"@en ;
         dcterms:publisher    [ rdfs:label  "Sérgio Souza Costa" ;
                                foaf:mbox   "sergio.costa@ecp.ufma.br"

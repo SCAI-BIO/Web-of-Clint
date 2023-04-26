@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/linked-structured-product-labels>
+lod:linked-structured-product-labels
         a                     void:Dataset ;
         dcterms:description   "Linked Structured Product Labels (LinkedSPLs) publishes all sections of FDA-approved prescription and over the counter drug package inserts from DailyMed for use by NLP and Semantic Web researchers. Currently, only data from the product labels of prescription drugs and a subset of over the counter medications is provided. A powerful feature of LinkedSPLs is that all active moieties and product labels are mapped to RxNORM PURLs provided by the NCBO Bioportal SPARQL endpoint. Also, this site's SPL data is updated weekly and all SPLs retain DailyMed versioning data so that researchers can record the provenance of the text and sections they work with. LinkedSPLs is provided as a service as part of the Drug Interaction Knowledge Base (DIKB) project.\r\n\r\nNOTE: This resource shows content present in the Structured Product Labels provided by the National Library of Medicine's (NLM) DailyMed resource. The NLM requests that all users of DailyMed content to provide attribution to the NLM and DailyMed as is requested on the following page http://www.nlm.nih.gov/copyright.html."@en ;
         dcterms:publisher     [ rdfs:label  "Richard D Boyce" ;
@@ -16,25 +17,25 @@
         void:exampleResource  <http://dbmi-icode-01.dbmi.pitt.edu/linkedSPLs/resource/structuredProductLabelMetadata/0005e2a8-3ab9-4173-a46f-9c53881379e2> ;
         void:sparqlEndpoint   <https://dbmi-icode-01.dbmi.pitt.edu/sparql> ;
         void:triples          ">1.3 million"^^xsd:integer ;
-        dcat:distribution     [ dcat:accessURL  <http://bio2rdf.org/linkedspls:4b9d7052-a54f-3ee1-ab0e-633b087f4802> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://dbmi-icode-01.dbmi.pitt.edu/dikb-evidence/linkedSPLs-dump.nt.bz2> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://purl.org/net/linkedSPLs> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://dbmi-icode-01.dbmi.pitt.edu/sparql?default-graph-uri=&query=describe+%3Chttp%3A%2F%2Fbio2rdf.org%2Flinkedspls%3A4b9d7052-a54f-3ee1-ab0e-633b087f4802%3E%0D%0A&format=text%2Fhtml&timeout=0&debug=on> ] ;
         dcat:distribution     [ dcat:accessURL  <https://dbmi-icode-01.dbmi.pitt.edu/linkedSPLs/> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://dbmi-icode-01.dbmi.pitt.edu/sparql> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://dbmi-icode-01.dbmi.pitt.edu/dikb-evidence/linkedSPLs-dump.nt.bz2> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://bio2rdf.org/linkedspls:4b9d7052-a54f-3ee1-ab0e-633b087f4802> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/net/linkedSPLs> ] ;
         foaf:homepage         <http://purl.org/net/linkedSPLs> .
 
-[ void:target   <http://lod-cloud.net/dataset/chebi> , <http://lod-cloud.net/dataset/linked-structured-product-labels> ;
+[ void:target   lod:linked-structured-product-labels , lod:chebi ;
   void:triples  4234
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf.org> , <http://lod-cloud.net/dataset/linked-structured-product-labels> ;
+[ void:target   lod:linked-structured-product-labels , lod:rxnorm ;
+  void:triples  20000
+] .
+
+[ void:target   lod:linked-structured-product-labels , lod:bio2rdf.org ;
   void:triples  1412
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/drugbank> , <http://lod-cloud.net/dataset/linked-structured-product-labels> ;
+[ void:target   lod:linked-structured-product-labels , lod:drugbank ;
   void:triples  706
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rxnorm> , <http://lod-cloud.net/dataset/linked-structured-product-labels> ;
-  void:triples  20000
 ] .

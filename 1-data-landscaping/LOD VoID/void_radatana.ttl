@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,25 +6,24 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/radatana> ;
-  void:triples  311154
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/radatana> ;
+[ void:target   lod:radatana , lod:dbpedia ;
   void:triples  30346
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/radatana> ;
+[ void:target   lod:radatana , lod:viaf ;
+  void:triples  311154
+] .
+
+[ void:target   lod:radatana , lod:dnb-gemeinsame-normdatei ;
   void:triples  209681
 ] .
 
-<http://lod-cloud.net/dataset/radatana>
-        a                     void:Dataset ;
+lod:radatana  a               void:Dataset ;
         dcterms:description   "This is an RDF representation of the personal name authorities in the BIBSYS authority file, the dataset was created with funding from the Norwegian Archive, Library and Museum Authority (ABM-utvikling) by BIBSYS and NTNU University Library.\r\n\r\nSee also [http://brinxmat.posterous.com/bibsys-personal-name-linked-open-data-publish](http://brinxmat.posterous.com/bibsys-personal-name-linked-open-data-publish)."@en ;
         dcterms:publisher     [ rdfs:label  "BIBSYS" ;
                                 foaf:mbox   "support@bibsys.no"
                               ] ;
-        dcterms:subject       "format-owl" , "published-by-producer" , "no-vocab-mappings" , "format-skos" , "bibliographic" , "no-license-metadata" , "persons" , "authorities" , "no-provenance-metadata" , "lod" , "format-xsd" , "deref-vocab" , "lld" , "linked-open-data" , "format-dc" , "linked-data" , "publications" , "format-rdf" , "format-radatana" , "format-rdfs" , "norwegian" , "linkeddata" , "format-whois" , "format-foaf" ;
+        dcterms:subject       "format-owl" , "no-vocab-mappings" , "published-by-producer" , "format-skos" , "bibliographic" , "no-license-metadata" , "persons" , "authorities" , "no-provenance-metadata" , "lod" , "format-xsd" , "deref-vocab" , "lld" , "format-dc" , "linked-open-data" , "linked-data" , "format-rdf" , "publications" , "format-radatana" , "format-rdfs" , "norwegian" , "linkeddata" , "format-whois" , "format-foaf" ;
         dcterms:title         "Rådata nå!"@en ;
         void:dataDump         <http://www.bibsys.no/linked_data/authority> ;
         void:exampleResource  <http://data.bibsys.no/data/notrbib/authorityentry/x90061718> ;

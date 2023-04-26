@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/zbw-labs>
-        a                     void:Dataset ;
+lod:zbw-labs  a               void:Dataset ;
         dcterms:description   "ZBW Labs projects exposed as Linked Open Data.\r\n\r\nZBW Labs gives you insight into some of the latest software developments of ZBW Leibniz Information Cenre for Economis. Through this platform, ZBW's department for Innovative Information Systems and Publishing Technologies is constantly presenting applications and (web)services in an experimental or 'beta' state."@en ;
         dcterms:publisher     [ rdfs:label  "ZBW German National Library of Economics - Leibniz Centre for Economics" ;
                                 foaf:mbox   ""
@@ -17,6 +17,6 @@
         void:triples          1000 ;
         dcat:distribution     [ dcat:accessURL  <http://zbw.eu/labs> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/zbw-labs> ;
+[ void:target   lod:zbw-labs , lod:dbpedia ;
   void:triples  70
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/opencyc> , <http://lod-cloud.net/dataset/scholarometer> ;
+[ void:target   lod:scholarometer , lod:opencyc ;
   void:triples  530
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/l3s-dblp> , <http://lod-cloud.net/dataset/scholarometer> ;
-  void:triples  2500
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/scholarometer> ;
+[ void:target   lod:scholarometer , lod:fu-berlin-dblp ;
   void:triples  1000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/fu-berlin-dblp> , <http://lod-cloud.net/dataset/scholarometer> ;
+[ void:target   lod:scholarometer , lod:freebase ;
   void:triples  1000
 ] .
 
-<http://lod-cloud.net/dataset/scholarometer>
-        a                     void:Dataset ;
+[ void:target   lod:scholarometer , lod:dbpedia ;
+  void:triples  1000
+] .
+
+lod:scholarometer  a          void:Dataset ;
         dcterms:description   "Scholarometer is a social tool for citation analysis, which provides a service to scholars by computing citation-based impact measures. Scholarometer data provides information about authors and disciplines based on citation analysis."@en ;
         dcterms:publisher     [ rdfs:label  "Scholarometer Team" ;
                                 foaf:mbox   "scholarometer@googlegroups.com"
@@ -34,6 +34,6 @@
         dcat:distribution     [ dcat:accessURL  <http://scholarometer.indiana.edu/namespaces/> ] ;
         foaf:homepage         <http://scholarometer.indiana.edu/data.html> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/scholarometer> ;
-  void:triples  1000
+[ void:target   lod:scholarometer , lod:l3s-dblp ;
+  void:triples  2500
 ] .

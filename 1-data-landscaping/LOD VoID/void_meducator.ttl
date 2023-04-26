@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/meducator>
-        a                     void:Dataset ;
+lod:meducator  a              void:Dataset ;
         dcterms:description   "The \"mEducator - Linked Educational Resources\" exposes linked data about publicly available educational Web resources. A light-weight RDF schema is exploited together with clustering and enrichment techniques to gradually interlink educational resources with entities in established LOD datasets."@en ;
         dcterms:publisher     [ rdfs:label  "mEducator Linked Educational Resources team" ;
                                 foaf:mbox   "admin@data.linkededucation.org"
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2011-09-19" , "sparql-endpoint" , "lod" , "format-http" , "education" , "l3s" , "crossdomain" , "format-rdfs" , "cross_domain" , "kmi" , "e-learning" , "format-api" , "educational" , "deref-vocab" , "format-rdf" , "sparql" , "published-by-producer" ;
+        dcterms:subject       "lodcloud-diagram-2011-09-19" , "sparql-endpoint" , "lod" , "format-http" , "education" , "crossdomain" , "l3s" , "format-rdfs" , "kmi" , "cross_domain" , "e-learning" , "format-api" , "educational" , "deref-vocab" , "format-rdf" , "sparql" , "published-by-producer" ;
         dcterms:title         "mEducator: Linked Educational Resources"@en ;
         void:exampleResource  <http://purl.org/meducator/resources/25a8c581-66d7-4186-9411-f9f0f783463e> ;
         void:sparqlEndpoint   <http://meducator.open.ac.uk/resourcesrestapi/rest/meducator/sparql> ;
@@ -19,6 +19,6 @@
         dcat:distribution     [ dcat:accessURL  <http://purl.org/meducator/ns> ] ;
         foaf:homepage         <http://linkededucation.org/meducator> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/meducator> ;
+[ void:target   lod:meducator , lod:dbpedia ;
   void:triples  932
 ] .

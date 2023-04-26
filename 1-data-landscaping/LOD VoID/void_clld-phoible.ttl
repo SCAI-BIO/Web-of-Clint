@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/clld-wals> , <http://lod-cloud.net/dataset/clld-phoible> ;
+[ void:target   lod:clld-phoible , lod:clld-wals ;
   void:triples  1666
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/clld-phoible> ;
-  void:triples  1672
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/clld-phoible> ;
-  void:triples  1672
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/gold> , <http://lod-cloud.net/dataset/clld-phoible> ;
+[ void:target   lod:clld-phoible , lod:gold ;
   void:triples  61973
 ] .
 
-<http://lod-cloud.net/dataset/clld-phoible>
-        a                    void:Dataset ;
+[ void:target   lod:clld-phoible , lod:lexvo ;
+  void:triples  1672
+] .
+
+[ void:target   lod:clld-phoible , lod:dbpedia ;
+  void:triples  1672
+] .
+
+lod:clld-phoible  a          void:Dataset ;
         dcterms:description  "PHOIBLE Online published by the CLLD project"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""

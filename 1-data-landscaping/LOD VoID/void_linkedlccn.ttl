@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,43 +6,42 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/books-isbn> , <http://lod-cloud.net/dataset/linkedlccn> ;
-  void:triples  4468
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/openlibrary> , <http://lod-cloud.net/dataset/linkedlccn> ;
-  void:triples  15331
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbtune-musicbrainz> , <http://lod-cloud.net/dataset/linkedlccn> ;
-  void:triples  6909
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linkedlccn> ;
-  void:triples  10911
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/marc-codes> , <http://lod-cloud.net/dataset/linkedlccn> ;
+[ void:target   lod:linkedlccn , lod:marc-codes ;
   void:triples  80275
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/linkedlccn> ;
-  void:triples  209422
+[ void:target   lod:linkedlccn , lod:openlibrary ;
+  void:triples  15331
 ] .
 
-<http://lod-cloud.net/dataset/linkedlccn>
-        a                     void:Dataset ;
+[ void:target   lod:linkedlccn , lod:books-isbn ;
+  void:triples  4468
+] .
+
+[ void:target   lod:linkedlccn , lod:dbtune-musicbrainz ;
+  void:triples  6909
+] .
+
+[ void:target   lod:linkedlccn , lod:dbpedia ;
+  void:triples  10911
+] .
+
+lod:linkedlccn  a             void:Dataset ;
         dcterms:description   "A wrapper for the Library of Congress' LCCN Permalink service which models the MARCXML output as linked data in RDF.\r\n\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "Ross Singer" ;
                                 foaf:mbox   "rossfsinger@gmail.com"
                               ] ;
-        dcterms:subject       "library" , "format-frbr" , "format-foaf" , "format-mo" , "format-dc" , "no-vocab-mappings" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "lld" , "format-skos" , "published-by-third-party" , "format-bibo" , "format-xhtml" , "format-owl" , "publications" , "no-provenance-metadata" , "lod" , "format-rdf" , "format-rdfs" , "no-proprietary-vocab" ;
+        dcterms:subject       "format-frbr" , "format-foaf" , "format-mo" , "library" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "no-license-metadata" , "format-skos" , "lld" , "format-bibo" , "published-by-third-party" , "format-owl" , "format-xhtml" , "publications" , "no-provenance-metadata" , "format-rdf" , "lod" , "format-rdfs" , "no-proprietary-vocab" , "format-dc" ;
         dcterms:title         "LinkedLCCN"@en ;
         void:exampleResource  <http://purl.org/NET/lccn/93707283.rdf> , <http://purl.org/NET/lccn/76090902> ;
         void:sparqlEndpoint   <http://api.talis.com/stores/rsinger-dev4/services/sparql> ;
         void:triples          1573663 ;
         foaf:homepage         <http://purl.org/NET/lccn/> .
 
-[ void:target   <http://lod-cloud.net/dataset/linkedmdb> , <http://lod-cloud.net/dataset/linkedlccn> ;
+[ void:target   lod:linkedlccn , lod:linkedmdb ;
   void:triples  883
+] .
+
+[ void:target   lod:linkedlccn , lod:viaf ;
+  void:triples  209422
 ] .

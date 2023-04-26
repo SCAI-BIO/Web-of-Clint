@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-wbphenotype> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-wbphenotype> ;
-  void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-wbphenotype> ;
+[ void:target   lod:bioportal-wbphenotype , lod:bioportal-snomedct ;
   void:triples  30
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-wbphenotype> ;
+[ void:target   lod:bioportal-wbphenotype , lod:bioportal-ncit ;
+  void:triples  22
+] .
+
+[ void:target   lod:bioportal-wbphenotype , lod:bioportal-rcd ;
   void:triples  13
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-wbphenotype>
+[ void:target   lod:bioportal-wbphenotype , lod:bioportal-sopharm ;
+  void:triples  13
+] .
+
+lod:bioportal-wbphenotype
         a                    void:Dataset ;
         dcterms:description  "A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes"@en ;
         dcterms:publisher    [ rdfs:label  "Gary Schindelman" ;

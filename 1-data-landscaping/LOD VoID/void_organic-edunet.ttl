@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,26 +6,25 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/organic-edunet>
-        a                     void:Dataset ;
+lod:organic-edunet  a         void:Dataset ;
         dcterms:description   "Organic Edunet Linked Open Data currently contains the metadata of collection of learning objects exposed through the Organic.Edunet portal. These objects come from organizations that have become providers of educational materials on the portal. The topics of the collection include organic agriculture and agroecology.\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "University of Alcala de Henares" ;
                                 foaf:mbox   "enayat.rajabi@uah.es"
                               ] ;
-        dcterms:subject       "vocab-mappings" , "format-rdf" , "life_sciences" , "agroecology" , "lod" , "deref-vocab" , "format-lom" , "format-dcterms" , "agriculture" , "lifesciences" , "license-metadata" , "published-by-producer" , "provenance-metadata" ;
+        dcterms:subject       "vocab-mappings" , "format-rdf" , "life_sciences" , "agroecology" , "deref-vocab" , "format-dcterms" , "lifesciences" , "agriculture" , "format-lom" , "lod" , "license-metadata" , "published-by-producer" , "provenance-metadata" ;
         dcterms:title         "Organic Edunet Linked Open Data"@en ;
         void:exampleResource  <https://ckannet-storage.commondatastorage.googleapis.com/2012-10-27T214250/1454.n3> , <https://ckannet-storage.commondatastorage.googleapis.com/2012-10-27T214009/1454.rdf> ;
         void:sparqlEndpoint   <http://data.organic-edunet.eu/sparql> , <http://data.organic-edunet.eu/snorql/> ;
         void:triples          11091 ;
-        dcat:distribution     [ dcat:accessURL  <http://data.organic-edunet.eu/snorql/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.organic-edunet.eu/void.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.organic-edunet.eu/page/identifier/1454> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://ltsc.ieee.org/xsd/lomv1.0/common/vocabValues.xsd> ] ;
         dcat:distribution     [ dcat:accessURL  <http://lreforschools.eun.org/c/document_library/get_file?p_l_id=10970&folderId=12073&name=DLFE-1.pdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.organic-edunet.eu/page/identifier/1454> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.organic-edunet.eu/snorql/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ltsc.ieee.org/xsd/lomv1.0/common/vocabValues.xsd> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.organic-edunet.eu/void.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.organic-edunet.eu/rdfdump.rdf> ] ;
         foaf:homepage         <http://data.organic-edunet.eu/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/organic-edunet> ;
+[ void:target   lod:organic-edunet , lod:dbpedia ;
   void:triples  11091
 ] .

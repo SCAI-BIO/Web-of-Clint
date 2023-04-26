@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/apache> ;
+[ void:target   lod:apache , lod:personal-homepages ;
   void:triples  104
 ] .
 
-<http://lod-cloud.net/dataset/apache>
-        a                     void:Dataset ;
+lod:apache  a                 void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "format-rdf" , "format-dcterm" , "usergeneratedcontent" , "format-rdfs" , "user_generated" , "LinkedDataCrawl2014" , "format-admin" , "format-foaf" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "format-owl" , "format-pos" , "non-deref-vocab" , "format-rss" , "format-cc" , "format-wot" , "crawledLinkedDataCloud2014" , "format-doap" , "lod" , "format-w3con" , "provenance-metadata" ;
+        dcterms:subject       "format-rdf" , "format-dcterm" , "usergeneratedcontent" , "format-rdfs" , "user_generated" , "LinkedDataCrawl2014" , "format-admin" , "format-foaf" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "format-owl" , "format-pos" , "non-deref-vocab" , "format-cc" , "format-rss" , "crawledLinkedDataCloud2014" , "format-wot" , "format-doap" , "lod" , "format-w3con" , "provenance-metadata" ;
         dcterms:title         "apache"@en ;
         void:exampleResource  <http://lucene.apache.org/core/doap.rdf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/w3c> , <http://lod-cloud.net/dataset/apache> ;
+[ void:target   lod:apache , lod:w3c ;
   void:triples  5
 ] .

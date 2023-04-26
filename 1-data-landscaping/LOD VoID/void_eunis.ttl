@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,28 +6,27 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geospecies> , <http://lod-cloud.net/dataset/eunis> ;
+[ void:target   lod:eunis , lod:geospecies ;
   void:triples  3346
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/eunis> ;
-  void:triples  5683
-] .
-
-<http://lod-cloud.net/dataset/eunis>
-        a                     void:Dataset ;
+lod:eunis  a                  void:Dataset ;
         dcterms:description   "EUNIS consists of information on species, habitat types and sites."@en ;
         dcterms:publisher     [ rdfs:label  "European Environment Agency" ;
                                 foaf:mbox   "eunis@eea.europa.eu"
                               ] ;
-        dcterms:subject       "life_sciences" , "deref-vocab" , "environment" , "published-by-producer" , "provenance-metadata" , "lodcloud-diagram-2011-09-19" , "lod" , "lodcloud-diagram-2014-08-30" , "no-vocab-mappings" , "format-rdf" , "license-metadata" , "geographic" , "void-sparql-endpoint" , "biodiversity" ;
+        dcterms:subject       "life_sciences" , "deref-vocab" , "environment" , "provenance-metadata" , "lodcloud-diagram-2011-09-19" , "lod" , "published-by-producer" , "lodcloud-diagram-2014-08-30" , "no-vocab-mappings" , "format-rdf" , "license-metadata" , "geographic" , "void-sparql-endpoint" , "biodiversity" ;
         dcterms:title         "European Nature Information System"@en ;
         void:exampleResource  <http://eunis.eea.europa.eu/species/4055/rdf> ;
         void:sparqlEndpoint   <http://semantic.eea.europa.eu/sparql> ;
         void:triples          20229105 ;
         dcat:distribution     [ dcat:accessURL  <http://eunis.eea.europa.eu/rdf/species.rdf.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://eunis.eea.europa.eu/rdf/sites.rdf.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://eunis.eea.europa.eu/void.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://eunis.eea.europa.eu/rdf/taxonomies.rdf.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://eunis.eea.europa.eu/rdf/habitats.rdf.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://eunis.eea.europa.eu/rdf/sites.rdf.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://eunis.eea.europa.eu/rdf/taxonomies.rdf.gz> ] ;
         foaf:homepage         <http://eunis.eea.europa.eu> .
+
+[ void:target   lod:eunis , lod:dbpedia ;
+  void:triples  5683
+] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,32 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ocre> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  18
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mf> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
+[ void:target   lod:bioportal-ontodt , lod:bioportal-flu ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-flu> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  12
+[ void:target   lod:bioportal-ontodt , lod:bioportal-ontodm ;
+  void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ogms> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
+[ void:target   lod:bioportal-ontodt , lod:bioportal-ido ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-opl> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  11
-] .
-
-<http://lod-cloud.net/dataset/bioportal-ontodt>
-        a                    void:Dataset ;
+lod:bioportal-ontodt  a      void:Dataset ;
         dcterms:description  "This ontology contains entities such as: datatype, datatype generator, datatype qualiy and others giving the possibility to represent arbitrary complex datatypes. This is an important fact for a general data mining ontology that wants to represent and query over modelling algorithms for mining structured data. \n\nThe ontology was first developed under the OntoDM (Ontology of Data Mining is available at http://kt.ijs.si/panovp/OntoDM) ontology, but for generality and reuse purpose it was decided to export it as a separate ontology. Additionaly, the OntoDT ontology is based on and ISO/IEC 11404 (http://www.iso.org/iso/catalogue_detail.htm?csnumber=39479) standard and can be reused used independently by any domain ontology that requires representation and reasoning about general purpose datatypes."@en ;
         dcterms:publisher    [ rdfs:label  "Pance Panov" ;
                                foaf:mbox   ""
@@ -38,79 +26,91 @@
         dcterms:subject      "biomedicine" , "format-owl" , "life_sciences" , "format-rdf" , "bioportal" , "ontology" , "lod" , "published-by-third-party" ;
         dcterms:title        "Ontology of General Purpose Datatypes"@en ;
         void:triples         1650 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45330?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1588> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
+[ void:target   lod:bioportal-ontodt , lod:bioportal-cheminf ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-ontodt , lod:bioportal-ogms ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ooevv> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
+[ void:target   lod:bioportal-ontodt , lod:bioportal-obi ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-teo> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
+[ void:target   lod:bioportal-ontodt , lod:bioportal-ncit ;
+  void:triples  18
+] .
+
+[ void:target   lod:bioportal-ontodt , lod:bioportal-teo ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cheminf> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  12
+[ void:target   lod:bioportal-ontodt , lod:bioportal-nif ;
+  void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cogpo> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ido> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
+[ void:target   lod:bioportal-ontodt , lod:bioportal-omrse ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omrse> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  11
+[ void:target   lod:bioportal-ontodt , lod:bioportal-aero ;
+  void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-iao> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
+[ void:target   lod:bioportal-ontodt , lod:bioportal-ddi ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-ontodt , lod:bioportal-bao ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-ontodt , lod:bioportal-iao ;
   void:triples  17
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aero> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
+[ void:target   lod:bioportal-ontodt , lod:bioportal-mf ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bao> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ddi> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-clo> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-idobru> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
+[ void:target   lod:bioportal-ontodt , lod:bioportal-ooevv ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mfoem> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
+[ void:target   lod:bioportal-ontodt , lod:bioportal-clo ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-ontodt , lod:bioportal-ocre ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-ontodt , lod:bioportal-cogpo ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ontodm> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  13
+[ void:target   lod:bioportal-ontodt , lod:bioportal-sdo ;
+  void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-ontodt> ;
-  void:triples  13
+[ void:target   lod:bioportal-ontodt , lod:bioportal-mfoem ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-ontodt , lod:bioportal-ero ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-ontodt , lod:bioportal-idobru ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-ontodt , lod:bioportal-opl ;
+  void:triples  11
 ] .

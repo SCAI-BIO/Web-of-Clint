@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,43 +6,39 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/addgene> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
-  void:triples  6929
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/revyu> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
-  void:triples  232
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/semanticweb-org> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
-  void:triples  295
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/cornetto> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/amsterdam-museum-as-edm-lod> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linked-open-camera> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/tcmgenedit_dataset> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/sweto-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
+[ void:target   lod:rkb-explorer-webconf , lod:sweto-dblp ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/rkb-explorer-webconf>
+[ void:target   lod:rkb-explorer-webconf , lod:amsterdam-museum-as-edm-lod ;
+  void:triples  4
+] .
+
+[ void:target   lod:rkb-explorer-webconf , lod:linkedlccn ;
+  void:triples  4
+] .
+
+[ void:target   lod:rkb-explorer-webconf , lod:dbpedia ;
+  void:triples  140
+] .
+
+[ void:target   lod:rkb-explorer-webconf , lod:vu-wordnet ;
+  void:triples  4
+] .
+
+[ void:target   lod:rkb-explorer-webconf , lod:cornetto ;
+  void:triples  4
+] .
+
+[ void:target   lod:rkb-explorer-webconf , lod:tcmgenedit_dataset ;
+  void:triples  4
+] .
+
+[ void:target   lod:rkb-explorer-webconf , lod:revyu ;
+  void:triples  232
+] .
+
+lod:rkb-explorer-webconf
         a                     void:Dataset ;
         dcterms:description   "This is one of several semantic repositories that contains and publishes RDF linked data and co-reference information, forming the underlying distributed storage model behind the RKB Explorer initiative."@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
@@ -52,35 +49,39 @@
         void:exampleResource  <http://data.semanticweb.org/person/michael-grossniklaus/rdf> ;
         void:sparqlEndpoint   <http://webconf.rkbexplorer.com/sparql> ;
         void:triples          167923 ;
-        dcat:distribution     [ dcat:accessURL  <http://webconf.rkbexplorer.com/models/dump.tgz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://webconf.rkbexplorer.com/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://webconf.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://webconf.rkbexplorer.com/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://webconf.rkbexplorer.com/models/dump.tgz> ] ;
         foaf:homepage         <http://webconf.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/vu-wordnet> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
+[ void:target   lod:rkb-explorer-webconf , lod:marc-codes ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
-  void:triples  140
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/tags2con-delicious> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/marc-codes> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linkedlccn> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/w3c-wordnet> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
+[ void:target   lod:rkb-explorer-webconf , lod:w3c-wordnet ;
   void:triples  20
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dcs-sheffield> , <http://lod-cloud.net/dataset/rkb-explorer-webconf> ;
+[ void:target   lod:rkb-explorer-webconf , lod:semantic-web-dog-food ;
+  void:triples  6929
+] .
+
+[ void:target   lod:rkb-explorer-webconf , lod:dcs-sheffield ;
   void:triples  9
+] .
+
+[ void:target   lod:rkb-explorer-webconf , lod:semanticweb-org ;
+  void:triples  295
+] .
+
+[ void:target   lod:rkb-explorer-webconf , lod:addgene ;
+  void:triples  4
+] .
+
+[ void:target   lod:rkb-explorer-webconf , lod:linked-open-camera ;
+  void:triples  4
+] .
+
+[ void:target   lod:rkb-explorer-webconf , lod:tags2con-delicious ;
+  void:triples  2
 ] .

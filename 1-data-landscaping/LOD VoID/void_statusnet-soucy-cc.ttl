@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,15 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-hackerposse-com> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-imirhil-fr ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-chromic-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  4
-] .
-
-<http://lod-cloud.net/dataset/statusnet-soucy-cc>
+lod:statusnet-soucy-cc
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://soucy.cc"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -24,86 +21,90 @@
         void:exampleResource  <http://status.soucy.cc/hs0ucy/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gegeweb-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-lebsanft-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+[ void:target   lod:statusnet-soucy-cc , lod:geonames-semantic-web ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-shnoulle-net> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-belfalas-org ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-deuxpi-ca> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-orangeseeds-org ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-recit-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-quitter-se ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-belfalas-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-imirhil-fr> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-thelovebug-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-gegeweb-org ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-somsants-net> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-somsants-net ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-orangeseeds-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-scoffoni-net> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ssweeny-net> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-fragdev-com ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-thelovebug-org ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-shnoulle-net ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-ssweeny-net ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-ilikefreedom-ro ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-soucy-cc> ;
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-macno-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-chromic-org ;
   void:triples  4
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-postblue-info ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-scoffoni-net ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:personal-homepages ;
+  void:triples  5
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-morphtown-de ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-lebsanft-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-recit-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-hackerposse-com ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-skilledtests-com ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-soucy-cc , lod:statusnet-deuxpi-ca ;
+  void:triples  1
 ] .

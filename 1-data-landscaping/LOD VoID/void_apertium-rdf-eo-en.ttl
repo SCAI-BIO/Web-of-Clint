@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,26 +6,26 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/babelnet> , <http://lod-cloud.net/dataset/apertium-rdf-eo-en> ;
+[ void:target   lod:apertium-rdf-eo-en , lod:babelnet ;
   void:triples  7585
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/apertium-rdf-eo-en> ;
+[ void:target   lod:apertium-rdf-eo-en , lod:lexinfo ;
   void:triples  43289
 ] .
 
-<http://lod-cloud.net/dataset/apertium-rdf-eo-en>
+lod:apertium-rdf-eo-en
         a                    void:Dataset ;
         dcterms:description  "RDF version of the Apertium bilingual dictionary EO-EN. The original dataset (in LMF) comes from http://hdl.handle.net/10230/22863 . The RDF version of the lexica is modelled using lemon (http://lemon-model.net/) and the translation module (http://purl.org/net/translation). More about the Apertium RDF dictionaries at http://linguistic.linkeddata.es/apertium/\r\n"@en ;
         dcterms:publisher    [ rdfs:label  "Jacob Nordfalk ; Universitat Pompeu Fabra. Institut Universitari de Lingüística Aplicada (IULA) ; Universitat d'Alacant. Grup Transducens ; Hector Alòs i Font" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "translation" , "llod" , "lod" , "Esperanto" , "Apertium" , "multilingual" , "rdf" , "dictionary" , "linguistic lod" , "lemon" , "linguistics" , "lexicon" , "English" , "bilingual" ;
+        dcterms:subject      "translation" , "llod" , "lod" , "Esperanto" , "Apertium" , "multilingual" , "rdf" , "dictionary" , "linguistic lod" , "lemon" , "linguistics" , "English" , "lexicon" , "bilingual" ;
         dcterms:title        "Apertium RDF EO-EN"@en ;
         void:triples         617772 ;
-        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconEN> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-02-27T15:10:37.856Z/apertium-eo-en-rdf.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/sparql/> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconEO> ] ;
         dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-03-06T10:17:32.780Z/apertium-eo-en-dataset-metadata.rdf> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/tranSetEO-EN> ] .
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/tranSetEO-EN> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-02-27T15:10:37.856Z/apertium-eo-en-rdf.zip> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconEN> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconEO> ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,24 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/cz-sao-check-actions-law>
+lod:cz-sao-check-actions-law
         a                     void:Dataset ;
         dcterms:description   "List of laws used in inspection reports of the Supreme Audit Office of the Czech Republic"@en ;
         dcterms:publisher     [ rdfs:label  "Martin Nečaský" ;
                                 foaf:mbox   "necasky@opendata.cz"
                               ] ;
-        dcterms:subject       "lod" , "provenance-metadata" , "vocab-mappings" , "license-metadata" , "czech-republic" , "czech" , "no-deref-vocab" , "government" , "published-by-third-party" , "format-schema" ;
+        dcterms:subject       "lod" , "provenance-metadata" , "vocab-mappings" , "license-metadata" , "czech" , "czech-republic" , "no-deref-vocab" , "government" , "published-by-third-party" , "format-schema" ;
         dcterms:title         "List of laws used in inspection reports of SAO"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://data.nku.cz/resource/check-action/2012/33%3E&default-graph-uri=http%3A%2F%2Fdata.nku.cz%2Fresource%2Fdataset%2Fcheck-actions-law&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          9940 ;
-        dcat:distribution     [ dcat:accessURL  <http://data.nku.cz/resource/check-action/2012/33> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/sao-ontology.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.nku.cz/resource/check-action/2012/33> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/sao-check-actions-law.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Fdata.nku.cz%2Fresource%2Fdataset%2Fcheck-actions-law%2Fdistribution%3E&output=text%2Fturtle> ] ;
         dcat:distribution     [ dcat:accessURL  <http://internal.opendata.cz/dumps/sao-ontology.trig> ] ;
         foaf:homepage         <http://data.nku.cz/resource/dataset/check-actions-law> .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-sao-check-actions-law> ;
+[ void:target   lod:cz-sao-check-actions-law ;
   void:triples  7692
 ] .

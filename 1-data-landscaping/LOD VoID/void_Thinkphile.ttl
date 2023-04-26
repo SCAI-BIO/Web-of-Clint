@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/Thinkphile>
-        a                    void:Dataset ;
+lod:Thinkphile  a            void:Dataset ;
         dcterms:description  "ThinkPhilecom is an online publishing Blog ,Content ,News and Media Platform . Helping you realize BIG things for your blog & side-hustle! Served with a complimentary side of snark and a smile.��"@en ;
         dcterms:publisher    [ rdfs:label  "thinkphile" ;
                                foaf:mbox   "contact@thinkphile.com"
@@ -16,6 +16,6 @@
         void:triples         2 ;
         foaf:homepage        <http://www.thinkphile.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/SocialLink> , <http://lod-cloud.net/dataset/Thinkphile> ;
+[ void:target   lod:Thinkphile , lod:SocialLink ;
   void:triples  1
 ] .

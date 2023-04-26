@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/wasabi> ;
+[ void:target   lod:wasabi , lod:dbpedia ;
   void:triples  222329
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/wasabi> ;
-  void:triples  34449
-] .
-
-<http://lod-cloud.net/dataset/wasabi>
-        a                     void:Dataset ;
+lod:wasabi  a                 void:Dataset ;
         dcterms:description   "The WASABI RDF Knowledge Graph provides an RDF representation of the WASABI song corpus, a corpus of 2M+ songs enriched with metadata extracted from music databases on the Web, and resulting from the processing of song lyrics and from audio analysis."@en ;
         dcterms:publisher     [ rdfs:label  "Michel BUFFA" ;
                                 foaf:mbox   "buffa@i3s.unice.fr"
@@ -26,3 +22,7 @@
         void:sparqlEndpoint   <http://wasabi.inria.fr/sparql> ;
         void:triples          183494891 ;
         foaf:homepage         <https://github.com/micbuffa/WasabiDataset> .
+
+[ void:target   lod:wasabi , lod:wikidata ;
+  void:triples  34449
+] .

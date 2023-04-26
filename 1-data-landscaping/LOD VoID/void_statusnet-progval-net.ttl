@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/statusnet-progval-net>
+[ void:target   lod:statusnet-progval-net , lod:geonames-semantic-web ;
+  void:triples  1
+] .
+
+lod:statusnet-progval-net
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://progval.net"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -16,14 +21,10 @@
         void:exampleResource  <http://status.progval.net/progval/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-progval-net> ;
+[ void:target   lod:statusnet-progval-net , lod:personal-homepages ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-progval-net> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-progval-net> ;
+[ void:target   lod:statusnet-progval-net , lod:statusnet-postblue-info ;
   void:triples  1
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/oclc-fast> ;
-  void:triples  1600000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/oclc-fast> ;
+[ void:target   lod:oclc-fast , lod:geonames ;
   void:triples  60000
 ] .
 
-<http://lod-cloud.net/dataset/oclc-fast>
-        a                     void:Dataset ;
+[ void:target   lod:oclc-fast , lod:lcsh ;
+  void:triples  1600000
+] .
+
+lod:oclc-fast  a              void:Dataset ;
         dcterms:description   "FAST (Faceted Application of Subject Terminology) is an enumerative, faceted subject heading schema derived from the Library of Congress Subject Headings (LCSH). Its purpose is to be easier to understand, control, apply, and use than LCSH. Any valid set of LC subject headings can be converted to FAST headings.\r\n\r\nFAST contains 1.6M authority records.\r\n\r\nThe triple count (30M) is a rough estimate based on the number of authority records. The LCSH link count is based on the observation that many but not all of the authority records have LCSH links. The Geonames link count is based on [this account](http://www.oclc.org/nextspace/018/research.htm) that states 100k total geographic entities with 60% matched to Geonames."@en ;
         dcterms:publisher     [ rdfs:label  "OCLC Research" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "format-void" , "lodcloud" , "authorities" , "format-skos" , "format-foaf" , "no-proprietary-vocab" , "format-dc" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "published-by-producer" , "publications" , "lod" , "license-metadata" ;
+        dcterms:subject       "format-void" , "lodcloud" , "authorities" , "format-skos" , "format-foaf" , "format-dc" , "no-proprietary-vocab" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "published-by-producer" , "license-metadata" , "lod" , "publications" ;
         dcterms:title         "Faceted Application of Subject Terminology"@en ;
         void:exampleResource  <http://id.worldcat.org/fast/1411628> ;
         void:triples          30000000 ;

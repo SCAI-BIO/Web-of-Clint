@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,16 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/dbpedia-eu>
-        a                     void:Dataset ;
+lod:dbpedia-eu  a             void:Dataset ;
         dcterms:description   "Basque chapter of DBpedia. DBpedia is a \"community effort to extract structured information from Wikipedia and to make this information available on the Web. DBpedia allows you to ask sophisticated queries against Wikipedia, and to link other data sets on the Web to Wikipedia data. We hope this will make it easier for the amazing amount of information in Wikipedia to be used in new and interesting ways, and that it might inspire new mechanisms for navigating, linking and improving the encyclopedia itself.\""@en ;
         dcterms:publisher     [ rdfs:label  "Jon Lazaro" ;
                                 foaf:mbox   "jlazaro@deusto.es"
                               ] ;
-        dcterms:subject       "basque" , "no-provenance-metadata" , "published-by-producer" , "wikipedia" , "dbpedia" , "no-licence-metadata" , "no-license-metadata" , "lodcloud-diagram-2014-08-30" , "format-xhtml" , "access-api" , "no-vocab-mappings" , "deref-vocab" , "crossdomain" , "lod" , "format-foaf" , "format-rdfs" , "format-rdf" ;
+        dcterms:subject       "basque" , "no-provenance-metadata" , "published-by-producer" , "wikipedia" , "dbpedia" , "no-licence-metadata" , "no-license-metadata" , "lodcloud-diagram-2014-08-30" , "format-xhtml" , "access-api" , "no-vocab-mappings" , "deref-vocab" , "crossdomain" , "format-foaf" , "lod" , "format-rdfs" , "format-rdf" ;
         dcterms:title         "DBpedia in Basque"@en ;
         void:exampleResource  <http://eu.dbpedia.org/data/Euskal_Herria.rdf> ;
         void:sparqlEndpoint   <http://eu.dbpedia.org/sparql> ;
         void:triples          7113378 ;
-        dcat:distribution     [ dcat:accessURL  <http://eu.dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Feu.dbpedia.org%2Fvoid&query=select+*+WHERE+{%3Fs+%3Fp+%3Fo}&should-sponge=&format=text%2Fhtml&timeout=0&debug=on> ] ;
         dcat:distribution     [ dcat:accessURL  <http://eu.dbpedia.org/resource/Euskal_Herria> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://eu.dbpedia.org/sparql> ] ;
         foaf:homepage         <http://eudbpedia.deusto.es> .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,22 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/datos-bcn-cl>
-        a                     void:Dataset ;
+[ void:target   lod:datos-bcn-cl , lod:dbpedia ;
+  void:triples  568
+] .
+
+lod:datos-bcn-cl  a           void:Dataset ;
         dcterms:description   "Linked Open Data about Chile and the political environment of the country. Some important graphs published are: Legislative norms, International treaties (linking countries to dbpedia and geonames), geographical data and parliamentary biographies, and we are publishing every day more."@en ;
         dcterms:publisher     [ rdfs:label  "Library of Congress of Chile" ;
                                 foaf:mbox   "fcifuentes@bcn.cl"
                               ] ;
-        dcterms:subject       "no-deref-vocab" , "format-foaf" , "lod" , "no-proprietary-vocab" , "published-by-producer" , "format-skos" , "provenance-metadata" , "no-license-metadata" , "format-dc" , "format-bcnnorms" , "government" , "format-dbpedia-owl" ;
+        dcterms:subject       "format-foaf" , "no-deref-vocab" , "lod" , "no-proprietary-vocab" , "format-skos" , "published-by-producer" , "provenance-metadata" , "no-license-metadata" , "format-dc" , "format-bcnnorms" , "government" , "format-dbpedia-owl" ;
         dcterms:title         "Datos.bcn.cl"@en ;
         void:exampleResource  <http://datos.bcn.cl/recurso/cl/dto/ministerio-de-relaciones-exteriores/2008-02-07/267/es@2008-02-07> ;
         void:sparqlEndpoint   <http://datos.bcn.cl/sparql> ;
         void:triples          8285886 ;
         dcat:distribution     [ dcat:accessURL  <https://datos.bcn.cl/es/documentacion/normas> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://datos.bcn.cl/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://datos.bcn.cl/downloads/2011-10-25/all_ontologies.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://datos.bcn.cl/sitemap.xml> ] ;
         foaf:homepage         <https://datos.bcn.cl/es/> .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/datos-bcn-cl> ;
-  void:triples  568
-] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/thecontentwrangler-com> ;
-  void:triples  70
-] .
-
-<http://lod-cloud.net/dataset/thecontentwrangler-com>
+lod:thecontentwrangler-com
         a                     void:Dataset ;
         dcterms:description   "The Content Wrangler dataset, built with WordLift from the website https://thecontentwrangler.com/"@en ;
         dcterms:publisher     [ rdfs:label  "WordLift Team" ;
@@ -22,18 +19,22 @@
         void:triples          "3914"^^xsd:int ;
         foaf:homepage         <https://thecontentwrangler.com/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/thecontentwrangler-com> ;
-  void:triples  5
+[ void:target   lod:thecontentwrangler-com , lod:yago ;
+  void:triples  70
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/thecontentwrangler-com> ;
+[ void:target   lod:thecontentwrangler-com , lod:freebase ;
   void:triples  112
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/thecontentwrangler-com> ;
+[ void:target   lod:thecontentwrangler-com , lod:wikidata ;
   void:triples  3
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/thecontentwrangler-com> ;
+[ void:target   lod:thecontentwrangler-com , lod:geonames-semantic-web ;
+  void:triples  5
+] .
+
+[ void:target   lod:thecontentwrangler-com , lod:dbpedia ;
   void:triples  119
 ] .

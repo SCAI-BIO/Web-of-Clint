@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/ub-mannheim-linked-data>
+lod:ub-mannheim-linked-data
         a                     void:Dataset ;
         dcterms:description   "Publishes RDF for a number of bibliographic resources:\r\n\r\n* Bibliograhic data of the Südwestdeutscher Bibliotheksverbund (SWB)\r\n* Bibliographic data of the Hessisches Bibliotheksinformationssystem (HeBIS)\r\n* Classifications of the Regensburger Verbundklassifikation (RVK)\r\n* Bibliographic data of the Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen (HBZ)"@en ;
         dcterms:publisher     [ rdfs:label  "Mannheim University Library" ;
                                 foaf:mbox   "philipp.zumstein@bib.uni-mannheim.de"
                               ] ;
-        dcterms:subject       "published-by-producer" , "germany" , "format-rdf" , "format-dc" , "publications" , "bibliographic" , "format-xhtml" , "lod" , "deref-vocab" , "format-skos" , "library" , "no-vocab-mappings" , "no-license-metadata" , "no-provenance-metadata" , "lld" ;
+        dcterms:subject       "germany" , "published-by-producer" , "format-rdf" , "format-dc" , "publications" , "bibliographic" , "format-xhtml" , "lod" , "deref-vocab" , "format-skos" , "library" , "no-vocab-mappings" , "no-license-metadata" , "no-provenance-metadata" , "lld" ;
         dcterms:title         "Linked Data Service der Universitätsbibliothek Mannheim"@en ;
         void:exampleResource  <http://data.bib.uni-mannheim.de/data/rvk/ST> ;
         void:sparqlEndpoint   <http://data.bib.uni-mannheim.de/sparql> ;
         void:triples          53415605 ;
         foaf:homepage         <http://data.bib.uni-mannheim.de/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rdf-book-mashup> , <http://lod-cloud.net/dataset/ub-mannheim-linked-data> ;
-  void:triples  1429424
+[ void:target   lod:ub-mannheim-linked-data , lod:dnb-gemeinsame-normdatei ;
+  void:triples  3839380
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/ub-mannheim-linked-data> ;
-  void:triples  3839380
+[ void:target   lod:ub-mannheim-linked-data , lod:rdf-book-mashup ;
+  void:triples  1429424
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/seoul-bike-data>
-        a                    void:Dataset ;
+lod:seoul-bike-data  a       void:Dataset ;
         dcterms:description  "This dataset contains data from the seoul, Korea about bike rental et al."@en ;
         dcterms:publisher    [ rdfs:label  "takhee kim" ;
                                foaf:mbox   "takfeb@gmail.com"

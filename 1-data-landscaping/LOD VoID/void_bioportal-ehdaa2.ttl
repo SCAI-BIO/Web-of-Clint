@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  559
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-hao ;
+  void:triples  51
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bto> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  162
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  42
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  211
-] .
-
-<http://lod-cloud.net/dataset/bioportal-ehdaa2>
-        a                    void:Dataset ;
+lod:bioportal-ehdaa2  a      void:Dataset ;
         dcterms:description  "A structured controlled vocabulary of stage-specific anatomical structures of the human. It has been designed to mesh with the mouse anatomy and incorporates each Carnegie stage of development (CS1-20). The abstract version of the human developmental anatomy ontology compresses all the tissues present over Carnegie stages 1-20 into a single hierarchy. The heart, for example, is present from Carnegie Stage 9 onwards and is thus represented by 12 EHDA IDs (one for each stage). In the abstract mouse, it has a single ID so that the abstract term given as just <i>heart</i> really means <i>heart (CS 9-20)</i>. Timing details will be added to the abstract version of the ontology in a future release."@en ;
         dcterms:publisher    [ rdfs:label  "EMAP Administrators" ;
                                foaf:mbox   ""
@@ -31,194 +19,206 @@
         dcterms:title        "Human developmental anatomy, abstract version, v2"@en ;
         void:triples         56358 ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47315?apikey=BP_API_KEY> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1517> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-zfa> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  223
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-bto ;
+  void:triples  162
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  270
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  343
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  167
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mfo> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  111
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aao> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  161
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  449
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  145
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ma> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  318
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  294
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tao> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  229
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  18
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hao> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  51
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vhog> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  417
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  57
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tads> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  29
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aba> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  242
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe-sbc> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-fbbt> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  54
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-xao> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  163
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  247
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  37
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  1432
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  53
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  298
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  244
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  220
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  29
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tgma> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  29
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  619
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pma> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bila> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bho> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vao> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  44
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icf_x1> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-nif ;
   void:triples  73
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  348
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-birnlex ;
+  void:triples  53
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-caro> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-uberon ;
+  void:triples  1432
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-caro ;
   void:triples  29
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  112
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-mfo ;
+  void:triples  111
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-wbbt> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-tads ;
+  void:triples  29
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-aba ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-ev ;
+  void:triples  449
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-syn ;
+  void:triples  298
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-ncit ;
+  void:triples  559
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-ehdaa ;
+  void:triples  1053
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-icd10 ;
+  void:triples  57
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-mccl_x1 ;
+  void:triples  348
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-xao ;
+  void:triples  163
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-omim ;
+  void:triples  18
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-vao ;
+  void:triples  44
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-wbbt ;
   void:triples  26
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aeo> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  148
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-acgt ;
+  void:triples  32
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-galen ;
+  void:triples  242
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-ma ;
+  void:triples  318
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-rcd ;
+  void:triples  247
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-csp ;
+  void:triples  145
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-snomedct ;
+  void:triples  619
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-biomodels ;
+  void:triples  294
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-icf_x1 ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-vhog ;
+  void:triples  417
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-basic-vertebrate-gross-anatomy ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-sdo ;
+  void:triples  42
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-canco ;
+  void:triples  244
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-efo ;
+  void:triples  211
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-ehda ;
   void:triples  3804
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa> , <http://lod-cloud.net/dataset/bioportal-ehdaa2> ;
-  void:triples  1053
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-pma ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-oboe-sbc ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-aeo ;
+  void:triples  148
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-mesh-owl ;
+  void:triples  343
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-msh ;
+  void:triples  220
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-aao ;
+  void:triples  161
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-tgma ;
+  void:triples  29
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-bho ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-mat ;
+  void:triples  112
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-lnc ;
+  void:triples  167
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-mccl ;
+  void:triples  29
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-tao ;
+  void:triples  229
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-bila ;
+  void:triples  45
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-fbbt ;
+  void:triples  54
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-icnp ;
+  void:triples  37
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-rid ;
+  void:triples  270
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-zfa ;
+  void:triples  223
+] .
+
+[ void:target   lod:bioportal-ehdaa2 , lod:bioportal-cst ;
+  void:triples  32
 ] .

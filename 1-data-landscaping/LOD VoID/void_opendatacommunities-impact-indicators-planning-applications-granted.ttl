@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/opendatacommunities-impact-indicators-planning-applications-granted>
+lod:opendatacommunities-impact-indicators-planning-applications-granted
         a                    void:Dataset ;
         dcterms:description  ""@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "sparql" , "format-void" , "provenance-metadata" , "dataset-level-metadata" , "lodcloud-diagram-2014-08-30" , "format-dcterm" , "format-rdfs" , "format-dcat" , "dump" , "crawledLinkedDataCloud2014" , "license-metadata" , "government" , "format-rdf" , "LinkedDataCrawl2014" ;
+        dcterms:subject      "sparql" , "format-void" , "provenance-metadata" , "dataset-level-metadata" , "lodcloud-diagram-2014-08-30" , "format-dcterm" , "format-rdfs" , "format-dcat" , "dump" , "crawledLinkedDataCloud2014" , "license-metadata" , "government" , "LinkedDataCrawl2014" , "format-rdf" ;
         dcterms:title        "opendatacommunities-impact-indicators-planning-applications-granted"@en ;
         void:triples         "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-planning-applications-granted> , <http://lod-cloud.net/dataset/opendatacommunities-impact-indicators-planning-applications-granted> ;
+[ void:target   lod:opendatacommunities-impact-indicators-planning-applications-granted , lod:reference-data-gov-uk ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-impact-indicators-planning-applications-granted> ;
+[ void:target   lod:opendatacommunities-impact-indicators-planning-applications-granted , lod:opendatacommunities-transparency-impact-indicators-planning-applications-granted ;
   void:triples  1
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/open-biomed-flyatlas> , <http://lod-cloud.net/dataset/flybase> ;
-  void:triples  15852
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/open-biomed-flyted> , <http://lod-cloud.net/dataset/flybase> ;
+[ void:target   lod:flybase , lod:open-biomed-flyted ;
   void:triples  2457
 ] .
 
-<http://lod-cloud.net/dataset/flybase>
-        a                    void:Dataset ;
+[ void:target   lod:flybase , lod:open-biomed-flyatlas ;
+  void:triples  15852
+] .
+
+lod:flybase  a               void:Dataset ;
         dcterms:description  ""@en ;
         dcterms:publisher    [ rdfs:label  "Jun Zhao" ;
                                foaf:mbox   ""
@@ -23,8 +23,7 @@
         dcterms:title        "Flybase"@en ;
         void:sparqlEndpoint  <http://www.open-biomed.org.uk/sparql/endpoint/flybase> ;
         void:triples         83743853 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.open-biomed.org.uk/service/flybase/features/name/{name}> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.open-biomed.org.uk/open-biomed-data/flybase-dump-core-fb201102.tar.gz> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.open-biomed.org.uk/service/flybase/features> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.open-biomed.org.uk/service/flybase/features/fbgn/{fbgn}> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.open-biomed.org.uk/open-biomed-data/flybase-dump-core-fb201102.tar.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.open-biomed.org.uk/service/flybase/features/name/> ] ;
         foaf:homepage        <http://code.google.com/p/open-biomed/wiki/Flybase> .

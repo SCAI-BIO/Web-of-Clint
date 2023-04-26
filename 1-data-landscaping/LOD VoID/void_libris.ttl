@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/libris> ;
+[ void:target   lod:libris , lod:viaf ;
   void:triples  248228
 ] .
 
-<http://lod-cloud.net/dataset/libris>
-        a                     void:Dataset ;
+lod:libris  a                 void:Dataset ;
         dcterms:description   "Swedish Union Catalogue. Swedish National Bibliography and authority data. The National Bibliography and authority data is part of Libris, the Swedish Union Catalogue, and the long term goal is to release the whole database under an open license. The data contains links to Wikipedia, DBPedia, LC Authorities (names and subjects) and VIAF."@en ;
         dcterms:publisher     [ rdfs:label  "LIBRIS " ;
                                 foaf:mbox   "libris@kb.se"
@@ -22,10 +22,10 @@
         void:triples          50000000 ;
         foaf:homepage         <http://libris.kb.se> .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/libris> ;
+[ void:target   lod:libris , lod:lcsh ;
   void:triples  12586
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/libris> ;
+[ void:target   lod:libris , lod:dbpedia ;
   void:triples  4669
 ] .

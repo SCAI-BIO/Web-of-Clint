@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-affordable-housing-starts>
+lod:opendatacommunities-transparency-impact-indicators-affordable-housing-starts
         a                    void:Dataset ;
         dcterms:description  ""@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "government" , "format-void" , "crawledLinkedDataCloud2014" , "sparql" , "lodcloud-diagram-2014-08-30" , "format-sdmxa" , "format-sdmxd" , "format-rdfs" , "dataset-level-metadata" , "dump" , "LinkedDataCrawl2014" , "provenance-metadata" , "format-cube" , "format-dcterm" , "format-rdf" , "format-dcat" , "license-metadata" ;
+        dcterms:subject      "crawledLinkedDataCloud2014" , "government" , "format-void" , "sparql" , "lodcloud-diagram-2014-08-30" , "format-sdmxa" , "format-rdfs" , "format-sdmxd" , "LinkedDataCrawl2014" , "dataset-level-metadata" , "dump" , "format-cube" , "provenance-metadata" , "format-dcterm" , "format-rdf" , "format-dcat" , "license-metadata" ;
         dcterms:title        "opendatacommunities-transparency-impact-indicators-affordable-housing-starts"@en ;
         void:triples         "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-affordable-housing-starts> ;
+[ void:target   lod:opendatacommunities-transparency-impact-indicators-affordable-housing-starts , lod:statistics-data-gov-uk ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-transparency-impact-indicators-affordable-housing-starts> ;
+[ void:target   lod:opendatacommunities-transparency-impact-indicators-affordable-housing-starts , lod:reference-data-gov-uk ;
   void:triples  1
 ] .

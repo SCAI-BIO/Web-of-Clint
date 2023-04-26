@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-rank-2010> ;
-  void:triples  1
-] .
-
-<http://lod-cloud.net/dataset/opendatacommunities-societal-wellbeing-deprivation-imd-rank-2010>
+lod:opendatacommunities-societal-wellbeing-deprivation-imd-rank-2010
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "dataset-level-metadata" , "lodcloud-diagram-2014-08-30" , "government" , "format-rdf" , "sparql" , "dump" , "provenance-metadata" , "crawledLinkedDataCloud2014" , "license-metadata" , "format-rdfs" , "format-void" , "format-dcterm" , "format-cube" , "format-dcat" , "LinkedDataCrawl2014" ;
+        dcterms:subject       "dataset-level-metadata" , "lodcloud-diagram-2014-08-30" , "government" , "format-rdf" , "sparql" , "dump" , "provenance-metadata" , "crawledLinkedDataCloud2014" , "license-metadata" , "format-rdfs" , "format-void" , "format-cube" , "format-dcterm" , "format-dcat" , "LinkedDataCrawl2014" ;
         dcterms:title         "opendatacommunities-societal-wellbeing-deprivation-imd-rank-2010"@en ;
         void:exampleResource  <http://opendatacommunities.org/data/societal-wellbeing/deprivation/imd-rank-2010/E01007691> ;
         void:triples          "0"^^xsd:int .
+
+[ void:target   lod:opendatacommunities-societal-wellbeing-deprivation-imd-rank-2010 , lod:statistics-data-gov-uk ;
+  void:triples  1
+] .

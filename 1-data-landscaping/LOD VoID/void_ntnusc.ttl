@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,16 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/ntnusc>
-        a                     void:Dataset ;
+[ void:target   lod:ntnusc , lod:lcsh ;
+  void:triples  292
+] .
+
+lod:ntnusc  a                 void:Dataset ;
         dcterms:description   "The digitized historical manuscripts held in the special collections of the Norwegian university of science and technology (NTNU).\r\n\r\nThe data is a catalogue of manuscripts held by NTNU and these are catalogued directly as RDF.\r\n\r\nThe data is the usage catalogue for the Gunnerus Library Special Collections, and drives their web presences. The data is under constant development and the dataset is growing, and must be seen as unstable. Links to fulltext will be added as these are digitized\r\n\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "NTNU University library" ;
                                 foaf:mbox   "rurik.greenall@ub.ntnu.no"
                               ] ;
-        dcterms:subject       "no-vocab-mappings" , "lld" , "format-dc" , "lod" , "no-license-metadata" , "published-by-producer" , "library" , "format-bibo" , "bibliographic" , "format-rdf" , "no-provenance-metadata" , "english" , "linkedopendata" , "deref-vocab" , "norwegian" , "format-nl" , "publications" , "lodcloud-diagram-2011-09-19" ;
+        dcterms:subject       "lld" , "no-vocab-mappings" , "format-dc" , "lod" , "no-license-metadata" , "published-by-producer" , "library" , "format-bibo" , "bibliographic" , "format-rdf" , "english" , "no-provenance-metadata" , "linkedopendata" , "deref-vocab" , "norwegian" , "format-nl" , "lodcloud-diagram-2011-09-19" , "publications" ;
         dcterms:title         "NTNU special collections"@en ;
         void:exampleResource  <http://www.ntnu.no/ub/digital/document/ntnu22> ;
         void:sparqlEndpoint   <http://api.talis.com/stores/gunnbib-digitalmanuskripter/sparql> ;
@@ -19,18 +23,14 @@
         dcat:distribution     [ dcat:accessURL  <http://www.ntnu.no/ub/data/ntnusc> ] ;
         foaf:homepage         <http://api.talis.com/stores/gunnbib-digitalmanuskripter> .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/ntnusc> ;
-  void:triples  292
+[ void:target   lod:ntnusc , lod:geonames-semantic-web ;
+  void:triples  323
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/radatana> , <http://lod-cloud.net/dataset/ntnusc> ;
-  void:triples  47
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dewey_decimal_classification> , <http://lod-cloud.net/dataset/ntnusc> ;
+[ void:target   lod:ntnusc , lod:dewey_decimal_classification ;
   void:triples  239
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/ntnusc> ;
-  void:triples  323
+[ void:target   lod:ntnusc , lod:radatana ;
+  void:triples  47
 ] .

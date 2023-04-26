@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/edubase> , <http://lod-cloud.net/dataset/near> ;
-  void:triples  "tbc"^^xsd:integer
-] .
-
-<http://lod-cloud.net/dataset/near>
-        a                     void:Dataset ;
+lod:near  a                   void:Dataset ;
         dcterms:description   "The Near dataset provides \"near\" links connecting points of interest that are geographically close to each other. The data set currently cross-links items in DBpedia, Geonames and Edubase.\r\n\r\n*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)"@en ;
         dcterms:publisher     [ rdfs:label  "Tom Heath" ;
                                 foaf:mbox   ""
@@ -23,10 +19,14 @@
         dcat:distribution     [ dcat:accessURL  <http://rdfize.com/geo/point/> ] ;
         foaf:homepage         <http://beta.kasabi.com/dataset/near> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/near> ;
+[ void:target   lod:near , lod:dbpedia ;
   void:triples  "tbc"^^xsd:integer
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/near> ;
+[ void:target   lod:near , lod:edubase ;
+  void:triples  "tbc"^^xsd:integer
+] .
+
+[ void:target   lod:near , lod:geonames-semantic-web ;
   void:triples  "tbc"^^xsd:integer
 ] .

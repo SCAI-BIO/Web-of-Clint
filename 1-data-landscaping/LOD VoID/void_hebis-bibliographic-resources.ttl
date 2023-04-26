@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,27 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/hebis-bibliographic-resources> ;
+[ void:target   lod:hebis-bibliographic-resources , lod:dnb-gemeinsame-normdatei ;
   void:triples  15315081
 ] .
 
-<http://lod-cloud.net/dataset/hebis-bibliographic-resources>
+lod:hebis-bibliographic-resources
         a                     void:Dataset ;
         dcterms:description   "This site contains links to metadata about all types of publications (print media, E-books, E-journals,online resources) originating from the central union database of HeBIS. HeBIS - The Hessische BibliotheksInformationsSystem is one of the six regional library unions in Germany. It is the electronic information and service union of academic libraries in Hessen and parts of the Rhineland Palatinate. The metadata was catalogued by 27 independent cataloging libraries/library systems which are active within the union.\r\n\r\nAdditional information about the producer of this data can be found here:\r\n\r\nhttp://www.hebis.de/eng/englisch_index.php"@en ;
         dcterms:publisher     [ rdfs:label  "Hessisches BibliotheksInformationsSystem (HeBIS)" ;
                                 foaf:mbox   "striffler@hebis.uni-frankfurt.de"
                               ] ;
-        dcterms:subject       "license-metadata" , "library" , "germany" , "format-frbr" , "publications" , "no-proprietary-vocab" , "hesse" , "frankfurt" , "lod" , "bibliographic" , "format-rdf" , "format-bibo" , "published-by-producer" , "no-provenance-metadata" , "lld" , "format-dc" , "university" , "hessen" , "format-dcterms" , "format-wdrs" , "format-owl" ;
+        dcterms:subject       "library" , "license-metadata" , "germany" , "format-frbr" , "publications" , "no-proprietary-vocab" , "frankfurt" , "hesse" , "lod" , "bibliographic" , "format-rdf" , "format-bibo" , "no-provenance-metadata" , "published-by-producer" , "lld" , "format-dc" , "university" , "hessen" , "format-dcterms" , "format-wdrs" , "format-owl" ;
         dcterms:title         "HeBIS - Bibliographic Resources of the Library Union Catalogues of Hessen and parts of the Rhineland Palatinate"@en ;
         void:exampleResource  <https://commondatastorage.googleapis.com/ckannet-storage/2012-07-18T131849/06073998.rdf> ;
         void:sparqlEndpoint   <http://lod.hebis.de/sparql> ;
         void:triples          267038676 ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.hebis.de/lod/hebis-26887668-29873805.rdf.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.hebis.de/de/1ueber_uns/projekte/lod/lod_download.php> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-07-17T084118/hebis-00000001-05051126.rdf.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.hebis.de/lod/hebis-10174116-13050073.rdf.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.hebis.de/lod/hebis-13050074-21257739.rdf.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://lod.hebis.de/lod/void.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://lod.hebis.de/lod/hebis-21257740-26887667.rdf.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://lod.hebis.de/lod/hebis-05051128-10174115.rdf.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.hebis.de/lod/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.hebis.de/lod/hebis-13050074-21257739.rdf.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.hebis.de/de/1ueber_uns/projekte/lod/lod_download.php> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.hebis.de/lod/hebis-26887668-29873805.rdf.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://lod.hebis.de/lod/hebis-10174116-13050073.rdf.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-07-17T084118/hebis-00000001-05051126.rdf.gz> ] ;
         foaf:homepage         <http://www.hebis.de> .

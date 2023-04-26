@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/corporate-body> ;
-  void:triples  162
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/eurovoc> , <http://lod-cloud.net/dataset/corporate-body> ;
+[ void:target   lod:corporate-body , lod:eurovoc ;
   void:triples  212
 ] .
 
-<http://lod-cloud.net/dataset/corporate-body>
-        a                    void:Dataset ;
+[ void:target   lod:corporate-body , lod:wikidata ;
+  void:triples  162
+] .
+
+lod:corporate-body  a        void:Dataset ;
         dcterms:description  "The Corporate bodies name authority list (NAL) or Common Authority Table (CAT) is a controlled vocabulary listing corporate entities such as European institutions and bodies with their authority code and label(s) in the 24 official languages of the EU. The list covers as well subdivisions of the different institutions such as DG's. \nThe Corporate bodies NAL is part of the Core Metadata (CM) used in the data exchange between the institutions involved in the legal decision making process and the Publications Office of the EU. The NAL is under governance of the Interinstitutional Metadata Maintenance Committee (IMMC) and maintained by the Publications Office of the EU in its Metadata Registry (MDR).\nThis table provides the varying names of EU corporate bodies for a given time span. Some other corporate bodies are also included as far as they are used in the various systems in the Publications Office. They are classified accordingly in \"EU\" | \"INT (for international)\" | \"Other\". The traceability of the chronological modifications is ensured when possible.\nFor the EU Corporate bodies, the legal basis is also indicated.\nAs the official languages have changed over the time, the translations are provided in the existing official languages for a given period. The names are provided under the labels and in a longer form (e.g. Committee of the Regions | Committee of the Regions of the European Union)."@en ;
         dcterms:publisher    [ rdfs:label  "EU Vocabularies team" ;
                                foaf:mbox   "op-eu-vocabularies@publications.europa.eu"

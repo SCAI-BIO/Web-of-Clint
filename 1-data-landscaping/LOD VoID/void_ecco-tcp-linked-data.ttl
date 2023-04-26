@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/ecco-tcp-linked-data>
+[ void:target   lod:ecco-tcp-linked-data , lod:dbpedia ;
+  void:triples  50
+] .
+
+lod:ecco-tcp-linked-data
         a                     void:Dataset ;
         dcterms:description   "Linked Data conversion of the metadata about the texts in the ECCO-TCP Eighteenth Century Collections Online Texts dataset.\r\n\r\nThe conversion was done from the csv and plain text files linked to from http://ckan.net/package/tcp-ecco-18th-century-texts"@en ;
         dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
@@ -18,7 +23,3 @@
         void:triples          35215 ;
         dcat:distribution     [ dcat:accessURL  <http://data.kasabi.com/dataset/ecco-tcp-eighteenth-century-collections-online-texts> ] ;
         foaf:homepage         <http://kasabi.com/dataset/ecco-tcp-eighteenth-century-collections-online-texts> .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/ecco-tcp-linked-data> ;
-  void:triples  50
-] .

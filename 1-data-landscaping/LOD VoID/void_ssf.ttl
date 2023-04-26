@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/ssf>
-        a                     void:Dataset ;
+[ void:target   lod:ssf , lod:wordnet ;
+  void:triples  35687
+] .
+
+lod:ssf  a                    void:Dataset ;
         dcterms:description   "Ontology contains over 70.000 lexical entries of Croatian language. The ontology is daily improved in a cooperation with a Mathematical department of the University of Osijek in Croatia"@en ;
         dcterms:publisher     [ rdfs:label  "Marko Orešković" ;
                                 foaf:mbox   "moreskovic@nsk.hr"
@@ -19,14 +23,10 @@
         void:triples          "70366"^^xsd:int ;
         foaf:homepage         <http://www.ss-framework.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/ssf> ;
-  void:triples  67717
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/wordnet> , <http://lod-cloud.net/dataset/ssf> ;
-  void:triples  35687
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/babelnet> , <http://lod-cloud.net/dataset/ssf> ;
+[ void:target   lod:ssf , lod:babelnet ;
   void:triples  20456
+] .
+
+[ void:target   lod:ssf , lod:lexinfo ;
+  void:triples  67717
 ] .

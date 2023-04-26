@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,53 +6,52 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/linklion> ;
-  void:triples  3833561
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/linklion> ;
+[ void:target   lod:linklion , lod:viaf ;
   void:triples  1217461
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/linklion> ;
-  void:triples  631709
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/linklion> ;
-  void:triples  1415243
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/linklion> ;
-  void:triples  1279345
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/l3s-dblp> , <http://lod-cloud.net/dataset/linklion> ;
+[ void:target   lod:linklion , lod:l3s-dblp ;
   void:triples  1081243
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/linklion> ;
-  void:triples  906307
+[ void:target   lod:linklion , lod:rkb-explorer-dblp ;
+  void:triples  3833561
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-drugbank> , <http://lod-cloud.net/dataset/linklion> ;
-  void:triples  680936
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linklion> ;
-  void:triples  1488108
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> , <http://lod-cloud.net/dataset/linklion> ;
+[ void:target   lod:linklion , lod:eprints-harvest-rkbexplorer ;
   void:triples  1422824
 ] .
 
-<http://lod-cloud.net/dataset/linklion>
-        a                    void:Dataset ;
+[ void:target   lod:linklion , lod:rkb-explorer-dotac ;
+  void:triples  1279345
+] .
+
+[ void:target   lod:linklion , lod:bio2rdf-drugbank ;
+  void:triples  680936
+] .
+
+[ void:target   lod:linklion , lod:dbpedia ;
+  void:triples  1488108
+] .
+
+[ void:target   lod:linklion , lod:rkb-explorer-oai ;
+  void:triples  1415243
+] .
+
+[ void:target   lod:linklion , lod:rkb-explorer-acm ;
+  void:triples  631709
+] .
+
+lod:linklion  a              void:Dataset ;
         dcterms:description  "LinkLion is an open-source central repository for the storage of links among resources in the Linked Open Data web. The main goal of LinkLion is to facilitate the publication, retrieval and use of links between knowledge bases. Our repository thus provides dedicated functionality for the upload, storage, querying and download of large sets of links.\r\n\r\n[Example URI](http://www.linklion.org/mapping/0098a704694143bfa0540687a4b0f0a9) of the LinkLion dataset.\r\n\r\n\"LinkLion: A Link Repository for the Web of Data\" by Markus Nentwig, Tommaso Soru, Axel-Cyrille Ngonga Ngomo, and Erhard Rahm. Proceedings of ESWC, (2014) [PDF](http://2014.eswc-conferences.org/sites/default/files/eswc2014pd_submission_56.pdf)"@en ;
         dcterms:publisher    [ rdfs:label  "Tommaso Soru" ;
                                foaf:mbox   "tsoru@informatik.uni-leipzig.de"
                              ] ;
-        dcterms:subject      "vocab-mappings" , "published-by-producer" , "format-prov" , "no-provenance-metadata" , "format-void" , "lodcloud-diagram-2014-08-30" , "topic.schemata" , "schemata" , "lod" , "cross_domain" , "no-license-metadata" , "deref-vocab" ;
+        dcterms:subject      "published-by-producer" , "vocab-mappings" , "format-prov" , "no-provenance-metadata" , "format-void" , "lodcloud-diagram-2014-08-30" , "topic.schemata" , "schemata" , "lod" , "cross_domain" , "no-license-metadata" , "deref-vocab" ;
         dcterms:title        "LinkLion - A Link Repository for the Web of Data"@en ;
         void:sparqlEndpoint  <http://www.linklion.org:8890/sparql> ;
         void:triples         63020609 .
+
+[ void:target   lod:linklion , lod:dnb-gemeinsame-normdatei ;
+  void:triples  906307
+] .

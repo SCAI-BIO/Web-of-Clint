@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/clean-energy-data-reegle> ;
-  void:triples  330
-] .
-
-<http://lod-cloud.net/dataset/clean-energy-data-reegle>
+lod:clean-energy-data-reegle
         a                     void:Dataset ;
         dcterms:description   "Comprehensive set of linked clean energy data including: \r\n\r\n*  policy and regulatory country profiles, \r\n*  key stakeholders (organisation profiles),\r\n*  project outcome documents and a\r\n*  thesaurus (SKOS format) on renewables, energy efficiency and climate change for public re-use. "@en ;
         dcterms:publisher     [ rdfs:label  "Florian Bauer" ;
@@ -21,14 +18,18 @@
         void:exampleResource  <http://www.reegle.info/profiles/40.rdf> , <http://www.reegle.info/actors/2354.rdf> , <http://reegle.info/glossary/39.rdf> , <http://reegle.info/projectoutputs/28.rdf> ;
         void:sparqlEndpoint   <http://sparql.reegle.info/> ;
         void:triples          334049 ;
-        dcat:distribution     [ dcat:accessURL  <http://data.reegle.info/developers/projectoutput> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.reegle.info/thesaurus/concept> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.reegle.info/developers/profile> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.reegle.info/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.reegle.info/schema.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.reegle.info/thesaurus/concept> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.reegle.info/developers/profile> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.reegle.info/developers/actor> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.reegle.info/developers/projectoutput> ] ;
         foaf:homepage         <http://data.reegle.info/> .
 
-[ void:target   <http://lod-cloud.net/dataset/open-energy-info-wiki> , <http://lod-cloud.net/dataset/clean-energy-data-reegle> ;
+[ void:target   lod:clean-energy-data-reegle , lod:dbpedia ;
+  void:triples  330
+] .
+
+[ void:target   lod:clean-energy-data-reegle , lod:open-energy-info-wiki ;
   void:triples  227
 ] .

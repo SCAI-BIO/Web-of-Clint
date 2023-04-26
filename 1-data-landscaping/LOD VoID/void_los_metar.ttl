@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,25 +6,24 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/los_metar>
-        a                     void:Dataset ;
+lod:los_metar  a              void:Dataset ;
         dcterms:description   "Airports producing METAR weather reports with URI scheme based on (pseudo-)ICAO (and IATA) codes (with raw original codes as skos:notation) interlinked with OurAirports, Geonames and DBPedia airports"@en ;
         dcterms:publisher     [ rdfs:label  "Barry Norton" ;
                                 foaf:mbox   "barry.norton@kit.edu"
                               ] ;
-        dcterms:subject       "lod" , "icao" , "no-deref-vocab" , "geography" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "metar" , "iata" , "geographic" ;
+        dcterms:subject       "lod" , "icao" , "no-deref-vocab" , "geography" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "iata" , "metar" , "geographic" ;
         dcterms:title         "Weather Stations"@en ;
         void:exampleResource  <http://www.linkedopenservices.org/services/geo/SpatialResources/point/ICAO/PADK> ;
         void:triples          75184 ;
-        dcat:distribution     [ dcat:accessURL  <http://www.linkedopenservices.org/services/geo/SpatialResources/point/ICAO/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.linkedopenservices.org/services/geo/SpatialResources/point/IATA/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.linkedopenservices.org/services/geo/SpatialResources/point/ICAO/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.linkedopenservices.org/data/METARStations.rdf.xml> ] ;
         foaf:homepage         <http://www.linkedopenservices.org/services/geo/SpatialResources/point/ICAO/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/los_metar> ;
-  void:triples  1123
+[ void:target   lod:los_metar , lod:geonames-semantic-web ;
+  void:triples  107
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/los_metar> ;
-  void:triples  107
+[ void:target   lod:los_metar , lod:dbpedia ;
+  void:triples  1123
 ] .

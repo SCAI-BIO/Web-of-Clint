@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -11,7 +12,7 @@
         dcterms:publisher    [ rdfs:label  "Uros Susa" ;
                                foaf:mbox   "urossusa56@yahoo.com"
                              ] ;
-        dcterms:subject      "cross_domain" , "Numbers" ;
+        dcterms:subject      "Numbers" , "cross_domain" ;
         dcterms:title        "U ime Legije"@en ;
         void:triples         5 ;
         foaf:homepage        <http://www.legion-etrangere.com> .

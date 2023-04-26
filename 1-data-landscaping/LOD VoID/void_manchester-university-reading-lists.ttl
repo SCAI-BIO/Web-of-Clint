@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,18 +6,18 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/openlibrary> , <http://lod-cloud.net/dataset/manchester-university-reading-lists> ;
-  void:triples  120182
-] .
-
-<http://lod-cloud.net/dataset/manchester-university-reading-lists>
+lod:manchester-university-reading-lists
         a                     void:Dataset ;
         dcterms:description   "Reading lists of the university of Manchester"@en ;
         dcterms:publisher     [ rdfs:label  "Ian Davis" ;
                                 foaf:mbox   "ian.davis@talis.com"
                               ] ;
-        dcterms:subject       "lod" , "publications" , "no-provenance-metadata" , "education" , "no-vocab-mappings" , "published-by-producer" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "format-rdf" , "talis" , "no-proprietary-vocab" , "higher-education" ;
+        dcterms:subject       "lod" , "no-provenance-metadata" , "publications" , "education" , "no-vocab-mappings" , "published-by-producer" , "no-license-metadata" , "lodcloud-diagram-2011-09-19" , "format-rdf" , "talis" , "no-proprietary-vocab" , "higher-education" ;
         dcterms:title         "Manchester University Reading Lists"@en ;
         void:exampleResource  <http://www.readinglists.manchester.ac.uk/resources/0AC09934-6B10-B82D-70CC-782B631A6F4A> ;
         void:triples          2383794 ;
         foaf:homepage         <http://www.readinglists.manchester.ac.uk/> .
+
+[ void:target   lod:manchester-university-reading-lists , lod:openlibrary ;
+  void:triples  120182
+] .

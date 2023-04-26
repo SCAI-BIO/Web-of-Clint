@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,16 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/webisalod>
-        a                     void:Dataset ;
+[ void:target   lod:webisalod , lod:yago ;
+  void:triples  2834
+] .
+
+lod:webisalod  a              void:Dataset ;
         dcterms:description   "Providing Hypernymy Relations extracted from the Web as Linked Open Data"@en ;
         dcterms:publisher     [ rdfs:label  "Sven Hertling" ;
                                 foaf:mbox   "sven@informatik.uni-mannheim.de"
                               ] ;
-        dcterms:subject       "format-skos" , "format-rdf" , "format-owl" , "Linked Dataset" , "lod" , "Hearst Patterns" , "crossdomain" , "Hypernyms" , "format-rdfs" , "format-prov" ;
+        dcterms:subject       "format-skos" , "format-rdf" , "format-owl" , "Linked Dataset" , "lod" , "Hearst Patterns" , "crossdomain" , "Hypernyms" , "format-prov" , "format-rdfs" ;
         dcterms:title         "WebIsALOD"@en ;
         void:dataDump         <http://data.dws.informatik.uni-mannheim.de/webisa/webisalod-instances.nq.gz> ;
         void:exampleResource  <http://webisa.webdatacommons.org/concept/_president_> ;
@@ -20,10 +24,6 @@
         dcat:distribution     [ dcat:accessURL  <http://webisa.webdatacommons.org> ] ;
         foaf:homepage         <http://webisa.webdatacommons.org> .
 
-[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/webisalod> ;
-  void:triples  2834
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/webisalod> ;
+[ void:target   lod:webisalod , lod:dbpedia ;
   void:triples  27016
 ] .

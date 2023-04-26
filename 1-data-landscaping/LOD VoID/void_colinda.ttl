@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,16 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/colinda> ;
+[ void:target   lod:colinda , lod:geonames ;
   void:triples  10492
 ] .
 
-<http://lod-cloud.net/dataset/colinda>
-        a                     void:Dataset ;
+lod:colinda  a                void:Dataset ;
         dcterms:description   "COLINDA -COnference LInked DAta \r\nThis data set is linked to GeoNames, DBPedia and DBLP (L3S).\r\nIncludes information about scientific conferences and their location including start and end times\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "Selver Softic" ;
                                 foaf:mbox   "softic.s@gmail.com"
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2014-08-30" , "publications" , "format-rdf" , "format-swrc" , "no-provenance-metadata" , "lod" , "conferences" , "format-owl" , "format-rdfs" , "crossdomain" , "format-geonames" , "format-geo" , "no-license-metadata" , "deref-vocab" , "published-by-producer" , "locations" ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "publications" , "format-rdf" , "format-swrc" , "no-provenance-metadata" , "lod" , "conferences" , "format-owl" , "crossdomain" , "format-rdfs" , "format-geonames" , "format-geo" , "no-license-metadata" , "deref-vocab" , "locations" , "published-by-producer" ;
         dcterms:title         "COLINDA - Conference Linked Data"@en ;
         void:exampleResource  <http://colinda.org/resource/conference/WWW/2012> ;
         void:sparqlEndpoint   <http://data.colinda.org/endpoint.php> , <http://colinda.org/endpoint.php> ;

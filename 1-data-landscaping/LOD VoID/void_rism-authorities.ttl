@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/rism-authorities> ;
-  void:triples  19360
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/rism-authorities> ;
+[ void:target   lod:rism-authorities , lod:viaf ;
   void:triples  6138
 ] .
 
-<http://lod-cloud.net/dataset/rism-authorities>
-        a                    void:Dataset ;
+lod:rism-authorities  a      void:Dataset ;
         dcterms:description  "Authority data used in the ([RISM catalogue](https://opac.rism.info \"RISM Opac\"), [dataset description](http://datahub.io/dataset/rism \"Dataset description for RISM Opac\")). It contains information about persons, organisations and literary works. "@en ;
         dcterms:publisher    [ rdfs:label  "RISM" ;
                                foaf:mbox   ""
@@ -23,5 +19,9 @@
         dcterms:title        "RISM Authority data"@en ;
         void:sparqlEndpoint  <http://data.rism.info/sparql> ;
         void:triples         1154325 ;
-        dcat:distribution    [ dcat:accessURL  <http://data.rism.info/id/rismauthorities/pe2539?format=rdf> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://opac.rism.info/fileadmin/user_upload/lod/update/rismAuthoritiesRDF.ttl.gz> ] .
+        dcat:distribution    [ dcat:accessURL  <https://opac.rism.info/fileadmin/user_upload/lod/update/rismAuthoritiesRDF.ttl.gz> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://data.rism.info/id/rismauthorities/pe2539?format=rdf> ] .
+
+[ void:target   lod:rism-authorities , lod:dnb-gemeinsame-normdatei ;
+  void:triples  19360
+] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,16 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/zaragoza-datosabiertos> , <http://lod-cloud.net/dataset/zaragoza_turruta> ;
-  void:triples  16
-] .
-
-<http://lod-cloud.net/dataset/zaragoza_turruta>
-        a                     void:Dataset ;
+lod:zaragoza_turruta  a       void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "format-pos" , "format-rdf" , "crawledLinkedDataCloud2014" , "format-dcterm" , "provenance-metadata" , "government" , "lodcloud-diagram-2014-08-30" , "non-deref-vocab" , "format-turismo" , "format-prvt" , "format-hartigprov" , "format-rdfg" , "format-foaf" , "format-owl" , "format-skos" , "format-rdfs" , "LinkedDataCrawl2014" ;
+        dcterms:subject       "format-pos" , "format-rdf" , "crawledLinkedDataCloud2014" , "format-dcterm" , "provenance-metadata" , "government" , "lodcloud-diagram-2014-08-30" , "non-deref-vocab" , "format-turismo" , "format-prvt" , "format-hartigprov" , "format-rdfg" , "format-foaf" , "format-owl" , "format-skos" , "LinkedDataCrawl2014" , "format-rdfs" ;
         dcterms:title         "zaragoza_turruta"@en ;
         void:exampleResource  <http://www.zaragoza.es/turruta/resource/data/Edificio-historico/9200> ;
         void:triples          "0"^^xsd:int .
+
+[ void:target   lod:zaragoza_turruta , lod:zaragoza-datosabiertos ;
+  void:triples  16
+] .

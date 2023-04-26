@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/opendatacommunities-households-accommodated-per-1000>
+lod:opendatacommunities-households-accommodated-per-1000
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "government" , "format-void" , "LinkedDataCrawl2014" , "format-dcterm" , "format-rdf" , "dump" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "crawledLinkedDataCloud2014" , "license-metadata" , "dataset-level-metadata" , "sparql" , "format-dcat" , "format-rdfs" ;
+        dcterms:subject       "government" , "format-void" , "LinkedDataCrawl2014" , "format-dcterm" , "format-rdf" , "dump" , "provenance-metadata" , "crawledLinkedDataCloud2014" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "dataset-level-metadata" , "sparql" , "format-dcat" , "format-rdfs" ;
         dcterms:title         "opendatacommunities-households-accommodated-per-1000"@en ;
         void:exampleResource  <http://opendatacommunities.org/data/households-accommodated-per-1000> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-households-accommodated-per-1000> ;
+[ void:target   lod:opendatacommunities-households-accommodated-per-1000 , lod:reference-data-gov-uk ;
   void:triples  1
 ] .

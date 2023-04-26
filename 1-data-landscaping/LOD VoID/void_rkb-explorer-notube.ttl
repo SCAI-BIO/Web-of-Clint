@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/rkb-explorer-notube>
+lod:rkb-explorer-notube
         a                    void:Dataset ;
         dcterms:description  "This co-reference store has been provided for use by the NoTube semantic television project."@en ;
         dcterms:publisher    [ rdfs:label  "Hugh Glaser" ;
@@ -19,14 +20,14 @@
         dcat:distribution    [ dcat:accessURL  <http://notube.rkbexplorer.com/models/void.ttl> ] ;
         foaf:homepage        <http://notube.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/rkb-explorer-notube> ;
+[ void:target   lod:rkb-explorer-notube , lod:bbc-music ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bbc-wildlife-finder> , <http://lod-cloud.net/dataset/rkb-explorer-notube> ;
+[ void:target   lod:rkb-explorer-notube , lod:bbc-wildlife-finder ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bbc-programmes> , <http://lod-cloud.net/dataset/rkb-explorer-notube> ;
+[ void:target   lod:rkb-explorer-notube , lod:bbc-programmes ;
   void:triples  2
 ] .

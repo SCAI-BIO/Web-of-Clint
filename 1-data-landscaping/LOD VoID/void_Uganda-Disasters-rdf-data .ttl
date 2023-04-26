@@ -1,13 +1,10 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/Uganda-Disasters-rdf-data+> ;
-  void:triples  347
-] .
 
 <http://lod-cloud.net/dataset/Uganda-Disasters-rdf-data+>
         a                    void:Dataset ;
@@ -20,3 +17,7 @@
         void:dataDump        <http://ld4du.optimistcarter.com/ugdom.owl/> ;
         void:triples         155993 ;
         foaf:homepage        <http://ld4du.optimistcarter.com> .
+
+[ void:target   <http://lod-cloud.net/dataset/Uganda-Disasters-rdf-data+> , lod:geonames-semantic-web ;
+  void:triples  347
+] .

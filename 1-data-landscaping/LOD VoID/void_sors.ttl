@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/sors>
-        a                     void:Dataset ;
+lod:sors  a                   void:Dataset ;
         dcterms:description   "Statistical Office of the Republic of Serbia\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
@@ -17,6 +17,6 @@
         void:triples          "0"^^xsd:int ;
         foaf:homepage         <http://stat.gov.rs> .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/sors> ;
+[ void:target   lod:sors , lod:personal-homepages ;
   void:triples  1
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,18 +6,18 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/jiscopenbib-bl_bnb-1>
+lod:jiscopenbib-bl_bnb-1
         a                     void:Dataset ;
         dcterms:description   "British Library British National Bibliography package, with records of all new books published in the UK since 1950.\r\n\r\nUse of Data: This data is being made available under a Creative Commons CC0 1.0 Universal Public Domain Dedication licence. This means that the British Library Board makes no copyright, related or neighbouring rights claims to the data and does not apply any restrictions on subsequent use and reuse of the data. The British Library accepts no liability for damages from any use of the supplied data. For more detail please see the terms of the licence.\r\n\r\nSupport: The British Library is committed to providing high quality services and accurate data. If you have any queries or identify any problems with the data please contact metadata@bl.uk.\r\n\r\nShare knowledge: We are also very interested to hear the ways in which you have used this data so we can understand more fully the benefits of sharing it and improve our services. Please contact metadata@bl.uk if you wish to share your experiences with us and those that are using this service.\r\n\r\nGive Credit Where Credit is Due: The British Library has a responsibility to maintain its bibliographic data on the nation’s behalf. Please credit all use of this data to the British Library and link back to www.bl.uk/bibliographic/datafree.html in order that this information can be shared and developed with today’s Internet users as well as future generations.\r\n\r\nDuplicate of package:bluk-bnb"@en ;
         dcterms:publisher     [ rdfs:label  "British Library" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "bibliographic" , "lod" , "published-by-producer" , "no-proprietary-vocab" , "bibliography" , "publications" , "library" , "meta.duplicate" , "format-rdf" , "format-xml" , "format-xhtml" , "cc0" ;
+        dcterms:subject       "bibliographic" , "lod" , "published-by-producer" , "no-proprietary-vocab" , "bibliography" , "publications" , "library" , "format-rdf" , "meta.duplicate" , "format-xml" , "format-xhtml" , "cc0" ;
         dcterms:title         "JISC Open Bibliography British National Bibliography dataset"@en ;
         void:exampleResource  <http://bnb.data.bl.uk/id/agent/%C3%89ditionsdeLaMartini%C3%A8re> ;
         void:sparqlEndpoint   <http://bnb.data.bl.uk/sparql> ;
         void:triples          18376419 ;
-        dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/bibliographic/datafree.html> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://openbiblio.commondatastorage.googleapis.com/BL-BNB-dataset.zip> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/bibliographic/pdfs/british_library_data_model_v1-00.pdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://openbiblio.commondatastorage.googleapis.com/BL-BNB-dataset.zip> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.bl.uk/bibliographic/datafree.html> ] ;
         foaf:homepage         <http://openbiblio.net/2010/11/17/jisc-openbibliography-british-library-data-release/> .

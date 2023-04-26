@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/apertium-rdf-eo-ca>
+[ void:target   lod:apertium-rdf-eo-ca , lod:lexinfo ;
+  void:triples  32378
+] .
+
+lod:apertium-rdf-eo-ca
         a                    void:Dataset ;
         dcterms:description  "RDF version of the Apertium bilingual dictionary EO-CA. The original dataset (in LMF) comes from http://hdl.handle.net/10230/22861 . The RDF version of the lexica is modelled using lemon (http://lemon-model.net/) and the translation module (http://purl.org/net/translation). More about the Apertium RDF dictionaries at http://linguistic.linkeddata.es/apertium/\r\n"@en ;
         dcterms:publisher    [ rdfs:label  "Hèctor Alòs i Font ;  Universitat d'Alacant. Grup Transducens ; Universitat Pompeu Fabra. Institut Universitari de Lingüística Aplicada (IULA)" ;
@@ -15,16 +20,12 @@
         dcterms:title        "Apertium RDF EO-CA"@en ;
         void:triples         426301 ;
         dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-02-27T14:42:29.215Z/apertium-eo-ca-rdf.zip> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-03-06T10:16:37.215Z/apertium-eo-ca-dataset-metadata.rdf> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconCA> ] ;
         dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/tranSetEO-CA> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-03-06T10:16:37.215Z/apertium-eo-ca-dataset-metadata.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/sparql/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconEO> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/sparql/> ] .
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconCA> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/apertium-rdf-eo-ca> ;
-  void:triples  32378
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/babelnet> , <http://lod-cloud.net/dataset/apertium-rdf-eo-ca> ;
+[ void:target   lod:apertium-rdf-eo-ca , lod:babelnet ;
   void:triples  7036
 ] .

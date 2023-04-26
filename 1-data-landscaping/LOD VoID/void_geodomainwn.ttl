@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/geodomainwn> ;
-  void:triples  3939
-] .
-
-<http://lod-cloud.net/dataset/geodomainwn>
-        a                    void:Dataset ;
+lod:geodomainwn  a           void:Dataset ;
         dcterms:description  "This dataset contains the geographical resource, geonames, in a wordnet-like picture. They are 657 concepts extracted from the GLOSS Project. Available in English and Italian. \r\nAlso a lemonization (lemon model) "@en ;
         dcterms:publisher    [ rdfs:label  "Riccardo Del Gratta" ;
                                foaf:mbox   "riccardo.delgratta@ilc.cnr.it"
@@ -18,11 +14,15 @@
         dcterms:subject      "Linguistic Dataset LOD RDF" , "linguistics" ;
         dcterms:title        "geodomainwn"@en ;
         void:triples         "0"^^xsd:int ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/eng/lemon/geodomainWNeng-lemon> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/ita/lemon/geodomainWNita-lemon> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/ita/lemon/geodomainWNita-lemon-list> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/eng/geonames-synset> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/ita/geonames-synset> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/eng/schema/wordsenseandwords> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/ita/schema/wordsenseandwords> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/ita/geonames-synset> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/eng/geonames-synset> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/ita/lemon/geodomainWNita-lemon> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/eng/lemon/geodomainWNeng-lemon-list> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/ita/lemon/geodomainWNita-lemon-list> ] .
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/eng/lemon/geodomainWNeng-lemon> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/geodomainWN/eng/lemon/geodomainWNeng-lemon-list> ] .
+
+[ void:target   lod:geodomainwn , lod:geonames-semantic-web ;
+  void:triples  3939
+] .

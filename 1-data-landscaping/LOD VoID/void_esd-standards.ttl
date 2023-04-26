@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/uk-legislation-api> , <http://lod-cloud.net/dataset/esd-standards> ;
-  void:triples  937
-] .
-
-<http://lod-cloud.net/dataset/esd-standards>
-        a                     void:Dataset ;
+lod:esd-standards  a          void:Dataset ;
         dcterms:description   "Standard controlled vocabularies used within the UK public sector."@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   "support@esd.org.uk"
@@ -21,6 +17,10 @@
         void:triples          234230 ;
         foaf:homepage         <http://standards.esd.org.uk/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/esd-standards> ;
+[ void:target   lod:esd-standards , lod:dbpedia ;
   void:triples  25
+] .
+
+[ void:target   lod:esd-standards , lod:uk-legislation-api ;
+  void:triples  937
 ] .

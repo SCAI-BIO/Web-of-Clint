@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/educationalprograms_sisvu>
+lod:educationalprograms_sisvu
         a                     void:Dataset ;
         dcterms:description   "Semantic ISVU (SISVU) aims to thoroughly describe study programmes offered by ISVU - The Information System of Higher Education (Croatian acronym: ISVU). ISVU integrates data on universities, polytechnics and academies located in Croatia. It contains data on organisations, institutions, programmes, courses, lecturers and every other aspect of educational system. Part of the data that describes study programmes is publicly accessible through the web page www.isvu.hr. SISVU semantically describes that part of data."@en ;
         dcterms:publisher     [ rdfs:label  "Lidia Rovan" ;
                                 foaf:mbox   "lidia.rovan@fer.hr"
                               ] ;
-        dcterms:subject       "university" , "lod" , "format-dc" , "format-geonames" , "format-bibo" , "crossdomain" , "no-vocab-mappings" , "faculty" , "study" , "format-foaf" , "lodcloud-diagram-2014-08-30" , "published-by-third-party" , "format-aiiso" , "course" , "provenance-metadata" , "format-sisvu" , "educational-programs" , "format-univ-ont" , "deref-vocab" , "no-license-metadata" , "lodcloud-diagram-2011-09-19" , "format-skos" , "cross_domain" ;
+        dcterms:subject       "university" , "lod" , "format-dc" , "format-geonames" , "format-bibo" , "crossdomain" , "faculty" , "no-vocab-mappings" , "study" , "format-foaf" , "lodcloud-diagram-2014-08-30" , "published-by-third-party" , "course" , "format-aiiso" , "provenance-metadata" , "format-sisvu" , "educational-programs" , "format-univ-ont" , "deref-vocab" , "no-license-metadata" , "lodcloud-diagram-2011-09-19" , "format-skos" , "cross_domain" ;
         dcterms:title         "Educational programs - SISVU"@en ;
         void:exampleResource  <http://kent.zpr.fer.hr:8080/educationalProgram/all> ;
         void:sparqlEndpoint   <http://kent.zpr.fer.hr:8080/educationalProgram/sparql> ;
         void:triples          2373863 ;
-        dcat:distribution     [ dcat:accessURL  <http://kent.zpr.fer.hr:8080/educationalProgram/vocab/sisvu.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://kent.zpr.fer.hr:8080/educationalProgram/void.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://kent.zpr.fer.hr:8080/educationalProgram/educationalProgram-dump.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kent.zpr.fer.hr:8080/educationalProgram/void.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kent.zpr.fer.hr:8080/educationalProgram/vocab/sisvu.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://kent.zpr.fer.hr:8080/educationalProgram/vocab/sisvu.rdf> ] ;
         foaf:homepage         <http://kent.zpr.fer.hr:8080/educationalProgram/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/educationalprograms_sisvu> ;
+[ void:target   lod:educationalprograms_sisvu , lod:geonames-semantic-web ;
   void:triples  792
 ] .

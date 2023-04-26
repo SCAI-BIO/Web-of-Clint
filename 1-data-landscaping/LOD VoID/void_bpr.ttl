@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bpr>
-        a                     void:Dataset ;
+[ void:target   lod:bpr , lod:viaf ;
+  void:triples  54
+] .
+
+lod:bpr  a                    void:Dataset ;
         dcterms:description   "**dati.camera.it - Linked Open Data della Camera dei deputati**  \r\n**The BPR - Bibliografia del Parlamento italiano e degli studi elettorali**  (Bibliography of the Italian Parliament and Electoral Studies) is a database of bibliographic references of books and articles in periodical journals addressing the history of the Italian Parliament and the history of elections. In particular the BPR provides references to studies on:  \r\n\r\n* the Italian Parliament, from the concession of the Statuto Albertino (Albertine Statute) in 1848, the National Consultative Assembly and the Constituent Assembly;\r\n* elections (laws, procedures, results), with reference to general elections as from 1848.  \r\n\r\nThe BPR addresses primarily studies in law, plus studies in political science, organisational science, political sociology, as well as related historiographical literature. In 2002 the BPR started reporting documents posted on the leading juridical websites.  \r\nEach bibliographic reference is assigned one or more classification codes, which are taken from a directory of over 100 classifications organized into seven major fields.  \r\nThe BPR is also a digital library updated non-stop. By using documents in the public domain or available thanks to agreements with private publishers, it provides a selection of full-text documents (monographs, judgements, articles from periodicals, contributions to miscellaneous works) attached to the bibliographic reference.  "@en ;
         dcterms:publisher     [ rdfs:label  "Library of the Italian Chamber of Deputies" ;
                                 foaf:mbox   "bib_segreteria@camera.it"
                               ] ;
-        dcterms:subject       "bibliographic data" , "library" , "lodlam" , "rdf" , "lod" , "lodcloud-diagram-2014-08-30" , "publications" , "rdf-format" , "bibliography" , "country-italy" ;
+        dcterms:subject       "bibliographic data" , "library" , "lodlam" , "rdf" , "lod" , "lodcloud-diagram-2014-08-30" , "publications" , "rdf-format" , "country-italy" , "bibliography" ;
         dcterms:title         "BPR ? Bibliography of the Italian Parliament and electoral studies"@en ;
         void:exampleResource  <http://dati.camera.it/ocd/bpr/monografia.rdf/1745> ;
         void:sparqlEndpoint   <http://dati.camera.it/sparql> ;
         void:triples          366800 ;
-        dcat:distribution     [ dcat:accessURL  <http://dati.camera.it/it/download/bpr.html> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://dati.camera.it/void.ttl#BPR> ] .
-
-[ void:target   <http://lod-cloud.net/dataset/viaf> , <http://lod-cloud.net/dataset/bpr> ;
-  void:triples  54
-] .
+        dcat:distribution     [ dcat:accessURL  <http://dati.camera.it/void.ttl#BPR> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://dati.camera.it/it/download/bpr.html> ] .

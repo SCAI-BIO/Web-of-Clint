@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
+[ void:target   lod:statusnet-shnoulle-net , lod:statusnet-skilledtests-com ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-shnoulle-net , lod:statusnet-gegeweb-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-shnoulle-net , lod:statusnet-soucy-cc ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-planet-libre-org> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
+[ void:target   lod:statusnet-shnoulle-net , lod:statusnet-planet-libre-org ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-spip-org> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gegeweb-org> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
-  void:triples  1
-] .
-
-<http://lod-cloud.net/dataset/statusnet-shnoulle-net>
+lod:statusnet-shnoulle-net
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://shnoulle.net"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -36,10 +33,14 @@
         void:exampleResource  <http://ostatus.shnoulle.net/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-belfalas-org> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
+[ void:target   lod:statusnet-shnoulle-net , lod:statusnet-postblue-info ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-shnoulle-net> ;
+[ void:target   lod:statusnet-shnoulle-net , lod:statusnet-spip-org ;
+  void:triples  23
+] .
+
+[ void:target   lod:statusnet-shnoulle-net , lod:statusnet-belfalas-org ;
   void:triples  4
 ] .

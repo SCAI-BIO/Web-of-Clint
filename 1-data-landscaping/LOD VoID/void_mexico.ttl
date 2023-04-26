@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/provenanceweb> , <http://lod-cloud.net/dataset/mexico> ;
+[ void:target   lod:mexico , lod:provenanceweb ;
   void:triples  3
 ] .
 
-<http://lod-cloud.net/dataset/mexico>
-        a                     void:Dataset ;
+lod:mexico  a                 void:Dataset ;
         dcterms:description   "MExiCo (short for \"Multimodal Experiment Corpora\") is a data model for data collections containing multimodal linguistic and interaction annotations."@en ;
         dcterms:publisher     [ rdfs:label  "Peter Menke" ;
                                 foaf:mbox   "pmenke@TechFak.Uni-Bielefeld.DE"
@@ -21,14 +21,14 @@
         void:triples          305 ;
         dcat:distribution     [ dcat:accessURL  <http://data.sfb673.org/mexico/mexico-1.0.ttl> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/metashare> , <http://lod-cloud.net/dataset/mexico> ;
+[ void:target   lod:mexico , lod:metashare ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/isocat> , <http://lod-cloud.net/dataset/mexico> ;
+[ void:target   lod:mexico , lod:olia ;
+  void:triples  5
+] .
+
+[ void:target   lod:mexico , lod:isocat ;
   void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/mexico> ;
-  void:triples  5
 ] .

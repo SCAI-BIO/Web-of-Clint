@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/schemapedia> , <http://lod-cloud.net/dataset/linked-open-vocabularies-lov> ;
-  void:triples  45
+[ void:target   lod:linked-open-vocabularies-lov , lod:semantic-web-dog-food ;
+  void:triples  82
 ] .
 
-<http://lod-cloud.net/dataset/linked-open-vocabularies-lov>
+lod:linked-open-vocabularies-lov
         a                     void:Dataset ;
         dcterms:description   "The LOV dataset contains the description of RDFS vocabularies or OWL ontologies defined for and used by datasets in the Linked Data Cloud. Whenever available each vocabulary includes references to the datasets using it, in particular those listed in CKAN. The descriptions use in particular the VOAF vocabulary to state different ways such vocabularies can rely on, extend, specify, annotate or otherwise link to each other, and reuse a lot of vocabularies it describes, such as Dublin Core, voiD, BIBO, and many more."@en ;
         dcterms:publisher     [ rdfs:label  "Bernard Vatant" ;
                                 foaf:mbox   "bernard.vatant@mondeca.com"
                               ] ;
-        dcterms:subject       "crossdomain" , "format-dc" , "lodcloud-diagram-2014-08-30" , "format-foaf" , "format-bibo" , "published-by-producer" , "lodcloud.nolinks" , "lod" , "format-owl" , "format-vann" , "cross_domain" , "lodcloud-diagram-2011-09-19" , "usergeneratedcontent" , "format-xsd" , "format-skos" , "format-rdf" , "deref-vocab" ;
+        dcterms:subject       "crossdomain" , "format-dc" , "format-foaf" , "lodcloud-diagram-2014-08-30" , "format-bibo" , "published-by-producer" , "lodcloud.nolinks" , "format-vann" , "format-owl" , "lod" , "cross_domain" , "lodcloud-diagram-2011-09-19" , "usergeneratedcontent" , "format-skos" , "format-rdf" , "deref-vocab" , "format-xsd" ;
         dcterms:title         "Linked Open Vocabularies (LOV)"@en ;
         void:exampleResource  <http://lov.okfn.org/dataset/lov/rdf/vocabulary_cco.rdf> ;
         void:sparqlEndpoint   <http://lov.okfn.org/endpoint/lov> ;
@@ -23,6 +24,6 @@
         dcat:distribution     [ dcat:accessURL  <http://lov.okfn.org/dataset/lov/lov.rdf> ] ;
         foaf:homepage         <http://lov.okfn.org/dataset/lov/index.html> .
 
-[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/linked-open-vocabularies-lov> ;
-  void:triples  82
+[ void:target   lod:linked-open-vocabularies-lov , lod:schemapedia ;
+  void:triples  45
 ] .

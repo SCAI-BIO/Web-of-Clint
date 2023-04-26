@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/GeoNames> , <http://lod-cloud.net/dataset/govagribus-denmark> ;
-  void:triples  192
-] .
-
-<http://lod-cloud.net/dataset/govagribus-denmark>
+lod:govagribus-denmark
         a                    void:Dataset ;
         dcterms:description  "In this collection we publish the Danish agricultural data sets integrated with the central company registry (CVR) data and make it available to the public via SPARQL endpoint. This integration makes it possible to query across this data. The endpoint is hosted on OpenLink Virtuoso. The original open data sets are provided from: [Central Business Registry of Denmark (CVR)](http://cvr.dk/ \"cvr.dk\"), [The Danish Ministry of the Environment](http://gst.dk/ \"gst.dk\"), [The Ministry of Food, Agriculture, and Fisheries of Denmark](http://fvm.dk/ \"fvm.dk\").\r\n"@en ;
         dcterms:publisher    [ rdfs:label  "EXTBI Team" ;
@@ -19,10 +16,14 @@
         dcterms:title        "GovAgriBus Denmark"@en ;
         void:sparqlEndpoint  <http://extbi.lab.aau.dk/sparql/> ;
         void:triples         "0"^^xsd:int ;
-        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-28T11:27:07.863Z/business-ontology.owl> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://lod.cs.aau.dk/downloads/JIST14/GovAgriBus/govagribus-denmark.rdf.tgz> ] ;
         dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-28T15:15:16.594Z/govagribus-denmark-void.n3> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-28T11:27:38.554Z/govagribus-denmark-ontology.owl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://lod.cs.aau.dk/downloads/JIST14/GovAgriBus/business.rdf> ] ;
         dcat:distribution    [ dcat:accessURL  <http://lod.cs.aau.dk/downloads/JIST14/GovAgriBus/agriculture.rdf> ] ;
         dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-28T11:26:20.234Z/agriculture-ontology.owl> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://lod.cs.aau.dk/downloads/JIST14/GovAgriBus/business.rdf> ] .
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-28T11:27:07.863Z/business-ontology.owl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://lod.cs.aau.dk/downloads/JIST14/GovAgriBus/govagribus-denmark.rdf.tgz> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-28T11:27:38.554Z/govagribus-denmark-ontology.owl> ] .
+
+[ void:target   lod:govagribus-denmark , lod:GeoNames ;
+  void:triples  192
+] .

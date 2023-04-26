@@ -1,9 +1,14 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   <http://lod-cloud.net/dataset/Upper+Ontology> , <http://lod-cloud.net/dataset/Generalized+Super+Ontology> ;
+  void:triples  33
+] .
 
 <http://lod-cloud.net/dataset/Upper+Ontology>
         a                    void:Dataset ;
@@ -13,10 +18,6 @@
                              ] ;
         dcterms:subject      "user_generated" , "Space" , "Time" , "EHCPR" , "Matter" ;
         dcterms:title        "Sup_Ont: An Upper Ontology"@en ;
-        void:sparqlEndpoint  <https://query.wikidata.org/bigdata/namespace/wdq/sparql?query={SPARQL}> ;
+        void:sparqlEndpoint  <https://query.wikidata.org/bigdata/namespace/wdq/sparql> ;
         void:triples         120 ;
         foaf:homepage        <https://sonika-malik.github.io/super-ontology/sup_proton.xml> .
-
-[ void:target   <http://lod-cloud.net/dataset/Generalized Super Ontology> , <http://lod-cloud.net/dataset/Upper+Ontology> ;
-  void:triples  33
-] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,27 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/ontos-news-portal>
+[ void:target   lod:ontos-news-portal , lod:geonames-semantic-web ;
+  void:triples  90
+] .
+
+[ void:target   lod:ontos-news-portal , lod:freebase ;
+  void:triples  30025
+] .
+
+lod:ontos-news-portal
         a                    void:Dataset ;
         dcterms:description  "The Ontos News Portal extracts facts (objects as e. g. persons or organizations as well as relations between them, e. g. a person is working for an organization or living at a location). The facts are merged together and build a huge information-network including references to the respective articles. The portal can manually be searched at news.ontos.com. For all objects, Ontos provides dereferencable GUIDs. The interface at www.ontosearch.com allows to easily generate RDF/XML or HTML information. "@en ;
         dcterms:publisher    [ rdfs:label  "Ontos AG (Christian Ehrlich)" ;
                                foaf:mbox   "christian.ehrlich@ontos.com"
                              ] ;
-        dcterms:subject      "lodcloud-diagram-2014-08-30" , "lod" , "llod" , "semantic-web" , "nlp" , "published-by-producer" , "no-deref-vocab" , "news" , "media" , "linguistics" , "rdf" , "lodcloud-diagram-2011-09-19" ;
+        dcterms:subject      "lodcloud-diagram-2014-08-30" , "lod" , "llod" , "semantic-web" , "nlp" , "published-by-producer" , "no-deref-vocab" , "news" , "linguistics" , "media" , "rdf" , "lodcloud-diagram-2011-09-19" ;
         dcterms:title        "Ontos News Portal"@en ;
         void:triples         2677965 ;
         dcat:distribution    [ dcat:accessURL  <http://www.ontosearch.com/dumps/dump.ttl.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.ontosearch.com/api/ent-rdf?id=EID-3b6e3fb1eb4bef8e669277e73d2e7d56> ] ;
         foaf:homepage        <http://news.ontos.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/ontos-news-portal> ;
+[ void:target   lod:ontos-news-portal , lod:dbpedia ;
   void:triples  6935
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/ontos-news-portal> ;
-  void:triples  30025
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/ontos-news-portal> ;
-  void:triples  90
 ] .

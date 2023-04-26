@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,26 +6,25 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/panlex> ;
-  void:triples  2536556
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/panlex> ;
+[ void:target   lod:panlex , lod:lexvo ;
   void:triples  372
 ] .
 
-<http://lod-cloud.net/dataset/panlex>
-        a                    void:Dataset ;
+lod:panlex  a                void:Dataset ;
         dcterms:description  "A lexical database documenting translations among lexemes of language varieties."@en ;
         dcterms:publisher    [ rdfs:label  "PanLex" ;
                                foaf:mbox   "info@panlex.org"
                              ] ;
-        dcterms:subject      "lexicon" , "linguistics" , "machine_translation" ;
+        dcterms:subject      "linguistics" , "lexicon" , "machine_translation" ;
         dcterms:title        "PanLex"@en ;
         void:sparqlEndpoint  <http://ld.panlex.org/sparql> ;
         void:triples         786205297 ;
-        dcat:distribution    [ dcat:accessURL  <http://ld.panlex.org/downloads/releases/2013-02-14/2013-02-14-panlex-ontology.ttl> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://ld.panlex.org/downloads/releases/> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://ld.panlex.org/rdf.html> ] ;
         dcat:distribution    [ dcat:accessURL  <http://ld.panlex.org/downloads/releases/2013-02-14/2013-02-14-panlex-dump.nt> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://ld.panlex.org/downloads/releases/2013-02-14/2013-02-14-panlex-ontology.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://ld.panlex.org/rdf.html> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://ld.panlex.org/downloads/releases/> ] ;
         foaf:homepage        <http://panlex.org> .
+
+[ void:target   lod:panlex , lod:dbpedia ;
+  void:triples  2536556
+] .

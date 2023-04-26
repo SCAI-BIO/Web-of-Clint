@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/tcga>
-        a                     void:Dataset ;
+lod:tcga  a                   void:Dataset ;
         dcterms:description   "The RDF representation of TCGA was achieved by representing data elements from the TCGA dataset as statements from the S3DB Core Model (see S3DB Core Model for more information on the S3DB Core Model). As such, the RDF graph that fuels this endpoint is structured according the S3DB Core Model entities: Collections, Items, Rules and Statements. The advantage of this annotation is that entities that belong to the description of the domain are annotated as \"Collections\" (for example, \"Sample\" is a Collection) or Rules (for example, \"GenomicCharacterization-obtainedFrom-Sample\" is a Rule) and their instances are annotated as Items (for example, \"TCGA-01-0001\" is an Item of the collection \"Samples) or Statements (for example, \"TCGA-01-0001\"-\"provided\"-\"GC1234\" is as Statement that uses the Rule \"GenomicCharacterization-obtainedFrom-Sample\"). For more information see Deus HF, DF Veiga, PR Freire, JN Weinstein, GB Mills, JS Almeida (2010) Exposing The Cancer Genome Atlas as a SPARQL endpoint. Journal Biomedical Informatics [PMID 20851208]."@en ;
         dcterms:publisher     [ rdfs:label  "Helena F. Deus" ;
                                 foaf:mbox   "helena.deus@deri.org"

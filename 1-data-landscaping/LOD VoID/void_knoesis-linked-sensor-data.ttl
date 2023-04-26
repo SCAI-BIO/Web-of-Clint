@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,13 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/knoesis-linked-sensor-data>
+lod:knoesis-linked-sensor-data
         a                     void:Dataset ;
         dcterms:description   "Datasets for sensors and sensor observations, created at Kno.e.sis Center, and converted from weather data at Mesowest. Contains descriptions of 20 thousand weather stations and 160 million observations."@en ;
         dcterms:publisher     [ rdfs:label  "Harshal Patni (Kno.e.sis)" ;
                                 foaf:mbox   "harshal@knoesis.org"
                               ] ;
-        dcterms:subject       "semantic-web" , "format-xhtml" , "published-by-third-party" , "deref-vocab" , "no-vocab-mappings" , "lodcloud-diagram-2011-09-19" , "sensor-web-enablement" , "no-provenance-metadata" , "lod" , "linked" , "linked-data" , "geography" , "geographic" , "no-license-metadata" , "linked-open-data" ;
+        dcterms:subject       "semantic-web" , "format-xhtml" , "published-by-third-party" , "deref-vocab" , "no-vocab-mappings" , "lodcloud-diagram-2011-09-19" , "sensor-web-enablement" , "no-provenance-metadata" , "linked" , "lod" , "linked-data" , "geography" , "geographic" , "no-license-metadata" , "linked-open-data" ;
         dcterms:title         "Linked Sensor Data (Kno.e.sis)"@en ;
         void:exampleResource  <http://knoesis.wright.edu/ssw/> ;
         void:sparqlEndpoint   <http://sonicbanana.cs.wright.edu:8890/sparql> ;
@@ -20,6 +21,6 @@
         dcat:distribution     [ dcat:accessURL  <http://sonicbanana.cs.wright.edu/knoesis_linkedsensordata.tar.gz> ] ;
         foaf:homepage         <http://wiki.knoesis.org/index.php/SSW_Datasets> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/knoesis-linked-sensor-data> ;
+[ void:target   lod:knoesis-linked-sensor-data , lod:geonames-semantic-web ;
   void:triples  18000
 ] .

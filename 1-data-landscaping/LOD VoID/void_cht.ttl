@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-nl> , <http://lod-cloud.net/dataset/cht> ;
+[ void:target   lod:cht , lod:dbpedia-nl ;
   void:triples  1996
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/getty-aat> , <http://lod-cloud.net/dataset/cht> ;
+[ void:target   lod:cht , lod:getty-aat ;
   void:triples  1683
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/cht> ;
+[ void:target   lod:cht , lod:wikidata ;
   void:triples  36
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/cht> ;
+[ void:target   lod:cht , lod:dbpedia ;
   void:triples  42
 ] .
 
-<http://lod-cloud.net/dataset/cht>
-        a                    void:Dataset ;
+lod:cht  a                   void:Dataset ;
         dcterms:description  "Concepts that cover the cultural heritage field in the Netherlands."@en ;
         dcterms:publisher    [ rdfs:label  "Joop Vanderheiden" ;
                                foaf:mbox   "j.vanderheiden@cultureelerfgoed.nl"

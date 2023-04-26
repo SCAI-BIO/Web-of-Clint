@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,84 +6,83 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-exo> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-exo> ;
+[ void:target   lod:bioportal-exo , lod:bioportal-birnlex ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-exo> ;
+[ void:target   lod:bioportal-exo , lod:bioportal-ehda ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-exo , lod:bioportal-ncit ;
   void:triples  85
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-exo> ;
+[ void:target   lod:bioportal-exo , lod:bioportal-canco ;
   void:triples  27
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-exo> ;
-  void:triples  24
+[ void:target   lod:bioportal-exo , lod:bioportal-csp ;
+  void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-exo> ;
+[ void:target   lod:bioportal-exo , lod:bioportal-galen ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ep> , <http://lod-cloud.net/dataset/bioportal-exo> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-exo> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-exo> ;
+[ void:target   lod:bioportal-exo , lod:bioportal-snomedct ;
   void:triples  54
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-exo> ;
+[ void:target   lod:bioportal-exo , lod:bioportal-rcd ;
+  void:triples  24
+] .
+
+[ void:target   lod:bioportal-exo , lod:bioportal-nif_cell ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-exo> ;
+[ void:target   lod:bioportal-exo , lod:bioportal-efo ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-exo , lod:bioportal-mesh-owl ;
   void:triples  41
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-exo> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-exo> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-exo> ;
-  void:triples  31
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-exo> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-exo> ;
-  void:triples  30
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-exo> ;
+[ void:target   lod:bioportal-exo , lod:bioportal-nif ;
   void:triples  27
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-exo>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-exo , lod:bioportal-lnc ;
+  void:triples  31
+] .
+
+[ void:target   lod:bioportal-exo , lod:bioportal-ep ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-exo , lod:bioportal-nif_dysfunction ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-exo , lod:bioportal-icnp ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-exo , lod:bioportal-msh ;
+  void:triples  30
+] .
+
+lod:bioportal-exo  a         void:Dataset ;
         dcterms:description  "Exposure Ontology. A draft ontology for exposure science."@en ;
         dcterms:publisher    [ rdfs:label  "Carolyn Mattingly" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "format-obo" , "ontology" , "bioportal" , "lod" , "format-rdf" , "life_sciences" , "biomedicine" , "published-by-third-party" ;
+        dcterms:subject      "format-obo" , "ontology" , "bioportal" , "lod" , "format-rdf" , "published-by-third-party" , "biomedicine" , "life_sciences" ;
         dcterms:title        "ExO"@en ;
         void:triples         1241 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/46761?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1575> .

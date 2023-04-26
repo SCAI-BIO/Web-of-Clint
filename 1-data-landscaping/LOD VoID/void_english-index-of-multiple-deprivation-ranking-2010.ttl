@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/odc-lsoa> , <http://lod-cloud.net/dataset/english-index-of-multiple-deprivation-ranking-2010> ;
+[ void:target   lod:english-index-of-multiple-deprivation-ranking-2010 , lod:odc-lsoa ;
   void:triples  32482
 ] .
 
-<http://lod-cloud.net/dataset/english-index-of-multiple-deprivation-ranking-2010>
+lod:english-index-of-multiple-deprivation-ranking-2010
         a                     void:Dataset ;
-        dcterms:description   "This dataset contains the main Index of Multiple Deprivation rankings for 2010.  The regions (Lower Super Output Areas) are ordered according to their IMD score, with a rank of 1 indicating the most deprived.\r\n\r\nIt was created from data provided by the Department of Communities and Local Government. See <a href=\"http://www.communities.gov.uk/publications/corporate/statistics/indices2010\">here</a> for details.\r\n\r\n194892 triples."@en ;
+        dcterms:description   "This dataset contains the main Index of Multiple Deprivation rankings for 2010.  The regions (Lower Super Output Areas) are ordered according to their IMD score, with a rank of 1 indicating the most deprived.\r\n\r\nIt was created from data provided by the Department of Communities and Local Government. See <a+href=\"http://www.communities.gov.uk/publications/corporate/statistics/indices2010\">here</a> for details.\r\n\r\n194892 triples."@en ;
         dcterms:publisher     [ rdfs:label  "Bill Roberts" ;
                                 foaf:mbox   "bill@swirrl.com"
                               ] ;
-        dcterms:subject       "access-good" , "housing" , "license-metadata" , "environment" , "education" , "health" , "employment" , "lod" , "provenance-metadata" , "linkeddata" , "no-vocab-mappings" , "government" , "crime" , "imd" , "published-by-third-party" , "deref-vocab" , "deprivation" ;
+        dcterms:subject       "access-good" , "housing" , "education" , "environment" , "license-metadata" , "employment" , "health" , "lod" , "linkeddata" , "provenance-metadata" , "government" , "crime" , "no-vocab-mappings" , "imd" , "published-by-third-party" , "deref-vocab" , "deprivation" ;
         dcterms:title         "English Index of Multiple Deprivation Ranking 2010"@en ;
         void:exampleResource  <http://opendatacommunities.org/id/IMD/2010/IMD-rank/LSOA/E01000019> ;
         void:sparqlEndpoint   <http://opendatacommunities.org/sparql> ;

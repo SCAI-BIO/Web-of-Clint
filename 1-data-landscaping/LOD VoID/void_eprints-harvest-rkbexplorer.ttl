@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,63 +6,47 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
-  void:triples  25584
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
-  void:triples  100
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/ southampton-ecs-eprints> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
-  void:triples  49979
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/semanticweb-org> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
-  void:triples  2291
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-jisc> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
-  void:triples  337
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
-  void:triples  115
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
-  void:triples  48944
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/l3s-dblp> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:rkb-explorer-acm ;
   void:triples  490
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-biolit> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:rkb-explorer-southampton ;
+  void:triples  25584
+] .
+
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:rkb-explorer-dotac ;
   void:triples  100
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
-  void:triples  52
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:rkb-explorer-dblp ;
+  void:triples  1275
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:dbpedia ;
+  void:triples  337
+] .
+
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:rkb-explorer-jisc ;
+  void:triples  19
+] .
+
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:rkb-explorer-citeseer ;
+  void:triples  115
+] .
+
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:rkb-explorer-oai ;
   void:triples  567620
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
-  void:triples  75
+[ void:target   lod:eprints-harvest-rkbexplorer , <http://lod-cloud.net/dataset/+southampton-ecs-eprints> ;
+  void:triples  49979
 ] .
 
-<http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer>
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:rkb-explorer-biolit ;
+  void:triples  100
+] .
+
+lod:eprints-harvest-rkbexplorer
         a                    void:Dataset ;
         dcterms:description  "The data here comes from harvesting ePrints Open Archives, as listed at [http://roar.eprints.org](http://roar.eprints.org).\r\n\r\nThere is a [list of the 190 repositories](http://foreign.rkbexplorer.com/models/sites.html) we have managed to harvest.\r\n\r\nWe can't provide a typical URI to resolve, as none of the URIs are ours. You can use this URI to do a SPARQL query: http://researchrepository.napier.ac.uk/id/eprint/1615"@en ;
         dcterms:publisher    [ rdfs:label  "Hugh Glaser" ;
@@ -71,16 +56,32 @@
         dcterms:title        "ePrints Harvest (RKBExplorer)"@en ;
         void:sparqlEndpoint  <http://foreign.rkbexplorer.com/sparql/> ;
         void:triples         "0"^^xsd:int ;
-        dcat:distribution    [ dcat:accessURL  <http://foreign.rkbexplorer.com/browse/?type=resource&forceLocal=true&uri=http%3A%2F%2Fresearchrepository.napier.ac.uk%2Fid%2Feprint%2F1615> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://foreign.rkbexplorer.com/models/void.ttl> ] ;
         dcat:distribution    [ dcat:accessURL  <http://foreign.rkbexplorer.com/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://foreign.rkbexplorer.com/crs/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://foreign.rkbexplorer.com/browse/?type=resource&forceLocal=true&uri=http%3A%2F%2Fresearchrepository.napier.ac.uk%2Fid%2Feprint%2F1615> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://foreign.rkbexplorer.com/models/void.ttl> ] ;
         dcat:distribution    [ dcat:accessURL  <http://foreign.rkbexplorer.com/sitemap.xml> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
-  void:triples  1275
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:rkb-explorer-eprints ;
+  void:triples  48944
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/eprints-harvest-rkbexplorer> ;
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:l3s-dblp ;
+  void:triples  15
+] .
+
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:ordnance-survey-linked-data ;
   void:triples  155
+] .
+
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:rkb-explorer-kisti ;
+  void:triples  52
+] .
+
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:semanticweb-org ;
+  void:triples  2291
+] .
+
+[ void:target   lod:eprints-harvest-rkbexplorer , lod:rkb-explorer-rae2001 ;
+  void:triples  75
 ] .

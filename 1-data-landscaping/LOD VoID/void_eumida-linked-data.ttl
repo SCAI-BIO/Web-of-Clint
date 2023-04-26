@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/linked-nuts> , <http://lod-cloud.net/dataset/eumida-linked-data> ;
+[ void:target   lod:eumida-linked-data , lod:linked-nuts ;
   void:triples  286
 ] .
 
-<http://lod-cloud.net/dataset/eumida-linked-data>
+lod:eumida-linked-data
         a                     void:Dataset ;
         dcterms:description   "Data about European Higher Education Institutions, including statistics from 2008 regarding numbers of students, foreign students, PhD students etc. Based on the EUMIDA report."@en ;
         dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
@@ -23,10 +24,10 @@
         dcat:distribution     [ dcat:accessURL  <http://eumida.publicdata.eu/void.ttl> ] ;
         foaf:homepage         <http://eumida.publicdata.eu/> .
 
-[ void:target   <http://lod-cloud.net/dataset/eurostat-linked-data> , <http://lod-cloud.net/dataset/eumida-linked-data> ;
-  void:triples  27
+[ void:target   lod:eumida-linked-data , lod:nuts-geovocab ;
+  void:triples  286
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/nuts-geovocab> , <http://lod-cloud.net/dataset/eumida-linked-data> ;
-  void:triples  286
+[ void:target   lod:eumida-linked-data , lod:eurostat-linked-data ;
+  void:triples  27
 ] .

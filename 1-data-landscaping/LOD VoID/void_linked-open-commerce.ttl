@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/linked-open-commerce>
+lod:linked-open-commerce
         a                     void:Dataset ;
         dcterms:description   "LOC (Linked Open Commerce) is a collaboration of OpenLink Software, Hepp Research GmbH and Linktegration that delivers a structured Linked Data space on the Web for finding products and services related offers, with precision.\r\n\r\nThis project seeks to provide a Linked Data substrate that delivers a foundation for new kinds of e-commerce applications and services.\r\n\r\n### Issues\r\n\r\nThe SPARQL endpoint also contains other, not e-Commerce related, RDF data collected from the Web."@en ;
         dcterms:publisher     [ rdfs:label  "Hepp Research - http://www.heppresearch.com/" ;
@@ -13,7 +14,7 @@
                               ] ;
         dcterms:subject       "format-rdfa" , "lodcloud.unconnected" , "lodcloud.nolinks" , "lod" , "no-proprietary-vocab" , "published-by-producer" , "ecommerce" , "lodcloud.needsinfo" , "format-rdf" ;
         dcterms:title         "Linked Open Commerce"@en ;
-        void:exampleResource  <http://linkedopencommerce.com/sparql?query=define%20sql%3Adescribe-mode%20%22LOD%22%20%20DESCRIBE%20%3Chttp%3A%2F%2Fopenean.kaufkauf.net%2Fid%2FEanUpc_0074645011028%3E&output=text%2Fplain> , <http://linkedopencommerce.com/sparql?query=define%20sql%3Adescribe-mode%20%22LOD%22%20%20DESCRIBE%20%3Chttp%3A%2F%2Fopenean.kaufkauf.net%2Fid%2FEanUpc_0074645011028%3E&output=application%2Frdf%2Bxml> ;
+        void:exampleResource  <http://linkedopencommerce.com/sparql> ;
         void:sparqlEndpoint   <http://linkedopencommerce.com/sparql> ;
         void:triples          9945369 ;
         foaf:homepage         <http://linkedopencommerce.com/> .

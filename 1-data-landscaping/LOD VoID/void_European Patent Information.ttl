@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/CPC> , <http://lod-cloud.net/dataset/European+Patent+Information> ;
-  void:triples  19300000
+[ void:target   <http://lod-cloud.net/dataset/European+Patent+Information> , lod:marc-codes ;
+  void:triples  18000000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/marc-codes> , <http://lod-cloud.net/dataset/European+Patent+Information> ;
-  void:triples  18000000
+[ void:target   <http://lod-cloud.net/dataset/European+Patent+Information> , lod:CPC ;
+  void:triples  19300000
 ] .
 
 <http://lod-cloud.net/dataset/European+Patent+Information>

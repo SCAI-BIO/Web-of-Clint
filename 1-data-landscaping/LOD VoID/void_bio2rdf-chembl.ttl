@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,31 +6,30 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bio2rdf-chembl>
-        a                     void:Dataset ;
+lod:bio2rdf-chembl  a         void:Dataset ;
         dcterms:description   "ChEMBL is a database of bioactive compounds, their quantitative properties and bioactivities (binding constants, pharmacology and ADMET, etc). The data is abstracted and curated from the primary scientific literature."@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
                               ] ;
-        dcterms:subject       "deref-vocab" , "life_sciences" , "provenance-metadata" , "published-by-third-party" , "format-rdfs" , "format-dc" , "format-rdf" , "bio2rdf" , "license-metadata" , "lifesciences" , "lod" , "vocab-mappings" ;
+        dcterms:subject       "provenance-metadata" , "deref-vocab" , "life_sciences" , "published-by-third-party" , "format-rdfs" , "format-dc" , "format-rdf" , "bio2rdf" , "license-metadata" , "lifesciences" , "lod" , "vocab-mappings" ;
         dcterms:title         "Bio2RDF::Chembl"@en ;
         void:exampleResource  <http://bio2rdf.org/chembl:210313> ;
         void:sparqlEndpoint   <http://chembl.bio2rdf.org/sparql> ;
         void:triples          409942525 ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/bio2rdf-chembl.nq> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_activity.ttl.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/chembl/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/chembl/chembl.schema.owl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_moa.ttl.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_document.ttl.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_molecule.ttl.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_assay.ttl.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_cellline.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/chembl/chembl.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_bindingsite.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_moa.ttl.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_biocmpt.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/chembl/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_activity.ttl.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/cco.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_assay.ttl.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/bio2rdf-chembl.nq> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_document.ttl.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/> ] ;
         dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/chembl/bio2rdf_chembl_sio_mapping.owl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_bindingsite.ttl.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/chembl/chembl_18.0_journal.ttl.gz> ] ;
         foaf:homepage         <http://chembl.bio2rdf.org/> .

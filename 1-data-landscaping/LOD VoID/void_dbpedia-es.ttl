@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbpedia-es> ;
-  void:triples  837609
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-de> , <http://lod-cloud.net/dataset/dbpedia-es> ;
+[ void:target   lod:dbpedia-es , lod:dbpedia-de ;
   void:triples  425511
 ] .
 
-<http://lod-cloud.net/dataset/dbpedia-es>
-        a                     void:Dataset ;
+[ void:target   lod:dbpedia-es , lod:dbpedia-ja ;
+  void:triples  257732
+] .
+
+lod:dbpedia-es  a             void:Dataset ;
         dcterms:description   "These data correspond to the ontology DBpedia version 2014. "@en ;
         dcterms:publisher     [ rdfs:label  "Mariano Rico" ;
                                 foaf:mbox   "mariano.rico@fi.upm.es"
@@ -28,34 +28,34 @@
         dcat:distribution     [ dcat:accessURL  <http://data.dws.informatik.uni-mannheim.de/dbpedia/2014/dbpedia_2014.owl> ] ;
         foaf:homepage         <http://es.dbpedia.org> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-ko> , <http://lod-cloud.net/dataset/dbpedia-es> ;
-  void:triples  169592
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-pt> , <http://lod-cloud.net/dataset/dbpedia-es> ;
+[ void:target   lod:dbpedia-es , lod:dbpedia-pt ;
   void:triples  440350
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-it> , <http://lod-cloud.net/dataset/dbpedia-es> ;
-  void:triples  457626
+[ void:target   lod:dbpedia-es , lod:dbpedia ;
+  void:triples  837609
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-fr> , <http://lod-cloud.net/dataset/dbpedia-es> ;
-  void:triples  538425
+[ void:target   lod:dbpedia-es , lod:dbpedia-ko ;
+  void:triples  169592
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-nl> , <http://lod-cloud.net/dataset/dbpedia-es> ;
+[ void:target   lod:dbpedia-es , lod:dbpedia-nl ;
   void:triples  429827
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-el> , <http://lod-cloud.net/dataset/dbpedia-es> ;
+[ void:target   lod:dbpedia-es , lod:dbpedia-el ;
   void:triples  66175
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-ja> , <http://lod-cloud.net/dataset/dbpedia-es> ;
-  void:triples  257732
+[ void:target   lod:dbpedia-es , lod:dbpedia-it ;
+  void:triples  457626
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-cs> , <http://lod-cloud.net/dataset/dbpedia-es> ;
+[ void:target   lod:dbpedia-es , lod:dbpedia-cs ;
   void:triples  161377
+] .
+
+[ void:target   lod:dbpedia-es , lod:dbpedia-fr ;
+  void:triples  538425
 ] .

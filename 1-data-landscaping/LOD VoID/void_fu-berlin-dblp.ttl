@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/fu-berlin-dblp> ;
-  void:triples  100000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/l3s-dblp> , <http://lod-cloud.net/dataset/fu-berlin-dblp> ;
+[ void:target   lod:fu-berlin-dblp , lod:l3s-dblp ;
   void:triples  1000
 ] .
 
-<http://lod-cloud.net/dataset/fu-berlin-dblp>
-        a                     void:Dataset ;
+lod:fu-berlin-dblp  a         void:Dataset ;
         dcterms:description   "This is an RDF conversion of DBLP. The DBLP database provides bibliographic information on major computer science journals and conference proceedings including the WWW2006. The database contains more than 800.000 articles and 400.000 authors. \r\n\r\nThis RDF conversion hasn't been updated since 2007.\r\n\r\nOther RDF conversions of DBLP are available as package:l3s-dblp and package:rkb-explorer-dblp"@en ;
         dcterms:publisher     [ rdfs:label  "Christian Bizer" ;
                                 foaf:mbox   "chris@bizer.de"
@@ -25,3 +21,7 @@
         void:sparqlEndpoint   <http://www4.wiwiss.fu-berlin.de/dblp/sparql> ;
         void:triples          28000000 ;
         foaf:homepage         <http://www4.wiwiss.fu-berlin.de/dblp/> .
+
+[ void:target   lod:fu-berlin-dblp , lod:dbpedia ;
+  void:triples  100000
+] .

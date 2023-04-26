@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,26 +6,26 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/apertium-rdf-fr-es>
+lod:apertium-rdf-fr-es
         a                    void:Dataset ;
         dcterms:description  "RDF version of the Apertium bilingual dictionary FR-ES. The original dataset (in LMF) comes from http://hdl.handle.net/10230/17090. The RDF version of the lexica is modelled using lemon (http://lemon-model.net/) and the translation module (http://purl.org/net/translation). More about the Apertium RDF dictionaries at http://linguistic.linkeddata.es/apertium/"@en ;
         dcterms:publisher    [ rdfs:label  "Prompsit Language Engineering, S.L ; Eleka Ingenieritza Linguistikoa S.L ; Universitat Pompeu Fabra. Institut Universitari de Lingüística Aplicada (IULA)" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "lod" , "Spanish" , "linguistics" , "lemon" , "Apertium" , "French" , "dictionary" , "bilingual" , "linguistic lod" , "lexicon" , "llod" , "rdf" , "translation" , "multilingual" ;
+        dcterms:subject      "lod" , "Spanish" , "linguistics" , "lemon" , "Apertium" , "French" , "bilingual" , "dictionary" , "linguistic lod" , "lexicon" , "llod" , "rdf" , "multilingual" , "translation" ;
         dcterms:title        "Apertium RDF FR-ES"@en ;
         void:triples         495614 ;
-        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-12T14:01:15.900Z/apertium-fr-es-pol-rdf.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconES> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-05T10:37:56.032Z/apertium-fr-es-dataset-metadata.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-12T14:01:15.900Z/apertium-fr-es-pol-rdf.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/tranSetFR-ES> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/sparql/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconFR> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/sparql/> ] .
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-05T10:37:56.032Z/apertium-fr-es-dataset-metadata.rdf> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/babelnet> , <http://lod-cloud.net/dataset/apertium-rdf-fr-es> ;
-  void:triples  29144
+[ void:target   lod:apertium-rdf-fr-es , lod:lexinfo ;
+  void:triples  40121
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/apertium-rdf-fr-es> ;
-  void:triples  40121
+[ void:target   lod:apertium-rdf-fr-es , lod:babelnet ;
+  void:triples  29144
 ] .

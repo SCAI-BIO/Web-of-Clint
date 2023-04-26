@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,26 +6,25 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mesh> ;
+[ void:target   lod:bio2rdf-mesh ;
   void:triples  305392
 ] .
 
-<http://lod-cloud.net/dataset/bio2rdf-mesh>
-        a                     void:Dataset ;
+lod:bio2rdf-mesh  a           void:Dataset ;
         dcterms:description   "The MeSH Browser is an online vocabulary look-up aid available for use with MeSH (Medical Subject Headings). It is designed to help quickly locate descriptors of possible interest and to show the hierarchy in which descriptors of interest appear."@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2014-08-30" , "format-rdfs" , "format-rdf" , "bio2rdf" , "vocab-mappings" , "license-metadata" , "provenance-metadata" , "lod" , "life_sciences" , "lifesciences" , "published-by-third-party" , "format-dc" , "deref-vocab" ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "format-rdfs" , "format-rdf" , "bio2rdf" , "vocab-mappings" , "license-metadata" , "lod" , "provenance-metadata" , "lifesciences" , "life_sciences" , "published-by-third-party" , "format-dc" , "deref-vocab" ;
         dcterms:title         "Bio2RDF::Mesh"@en ;
         void:dataDump         <http://download.bio2rdf.org/current/mesh/mesh_supplementary.nq.gz> , <http://download.bio2rdf.org/current/mesh/mesh_descriptors.nq.gz> , <http://download.bio2rdf.org/current/mesh/mesh_qualifiers.nq.gz> ;
         void:exampleResource  <http://bio2rdf.org/mesh:D018377> ;
         void:sparqlEndpoint   <http://mesh.bio2rdf.org/sparql> ;
         void:triples          7323864 ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/mesh/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/mesh/bio2rdf-mesh.nq> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/mesh/mesh.schema.owl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/mesh/mesh.html> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/mesh/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/mesh/> ] ;
         dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/mesh/bio2rdf_mesh_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/mesh/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/mesh/mesh.html> ] ;
         foaf:homepage         <http://mesh.bio2rdf.org/> .

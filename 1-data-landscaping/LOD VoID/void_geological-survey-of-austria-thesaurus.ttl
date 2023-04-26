@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,39 +6,39 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/geological-survey-of-austria-thesaurus>
+[ void:target   lod:geological-survey-of-austria-thesaurus , lod:freebase ;
+  void:triples  93
+] .
+
+lod:geological-survey-of-austria-thesaurus
         a                     void:Dataset ;
         dcterms:description   "The Thesaurus of the Geological Survey of Austria is a bilingual (de/en) controlled vocabulary for the semantic harmonisation of geoscientific map-based geodata. Currently there are four thematic subjects available : \r\n\r\n* lithology\r\n* geologic timescale\r\n* geologic units\r\n* tectonic units & classification"@en ;
         dcterms:publisher     [ rdfs:label  "Thesaurus Editorial Team" ;
                                 foaf:mbox   "thesaurus@geologie.ac.at"
                               ] ;
-        dcterms:subject       "austria" , "thesaurus" , "geography" , "lod" , "no-license-metadata" , "geology" , "geographic" , "provenance-metadata" , "no-proprietary-vocab" , "geoscience" , "lodcloud-diagram-2014-08-30" , "published-by-producer" , "format-skos" ;
+        dcterms:subject       "austria" , "thesaurus" , "lod" , "geography" , "no-license-metadata" , "geology" , "geographic" , "provenance-metadata" , "no-proprietary-vocab" , "geoscience" , "lodcloud-diagram-2014-08-30" , "format-skos" , "published-by-producer" ;
         dcterms:title         "Geological Survey of Austria (GBA) - Thesaurus"@en ;
-        void:exampleResource  <http://resource.geolba.ac.at/GeologicTimeScale/35.rdf> , <http://resource.geolba.ac.at/lithology/48.rdf> , <http://resource.geolba.ac.at/tectonicunit/115.rdf> , <http://resource.geolba.ac.at/GeologicUnit/291.rdf> ;
+        void:exampleResource  <http://resource.geolba.ac.at/GeologicTimeScale/35.rdf> , <http://resource.geolba.ac.at/lithology/48.rdf> , <http://resource.geolba.ac.at/GeologicUnit/291.rdf> , <http://resource.geolba.ac.at/tectonicunit/115.rdf> ;
         void:sparqlEndpoint   <http://resource.geolba.ac.at/PoolParty/sparql/GeologicTimeScale> , <http://resource.geolba.ac.at/PoolParty/sparql/GeologicUnit> , <http://resource.geolba.ac.at/PoolParty/sparql/lithology> , <http://resource.geolba.ac.at/PoolParty/sparql/tectonicunit> ;
         void:triples          40912 ;
+        dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/PoolParty/OpenConfigPathResourceProvider/backuproot?fileName=urn:uuid:1D87806F-E88C-0001-AFCC-DC87F6001C3A/pp_project_lithologische_einheiten.rdf&contentType=application/rdf%2Bxml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/tectonicunit> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/GeologicUnit.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/PoolParty/OpenConfigPathResourceProvider/backuproot?fileName=d7b07bce-7ce4-4bcb-85ae-e0f774e6fb8d/pp_project_geologische_einheiten.rdf&contentType=application/rdf%2Bxml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/tectonicunit.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/GeologicTimeScale.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/PoolParty/OpenConfigPathResourceProvider/backuproot?fileName=urn:uuid:1D763DCD-0E5C-0001-FBB1-1D401A50B620/pp_project_geologische_zeitskala.rdf&contentType=application/rdf%2Bxml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/GeologicUnit> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/lithology> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/tectonicunit.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/GeologicTimeScale.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/lithology.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/tectonicunit> ] ;
         dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/PoolParty/OpenConfigPathResourceProvider/backuproot?fileName=d13bb3e7-df48-4cba-bd0c-e63c8943d9e0/pp_project_lithotektonische_einheiten.rdf&contentType=application/rdf%2Bxml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/GeologicTimeScale> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/lithology> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/GeologicUnit.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://resource.geolba.ac.at/PoolParty/OpenConfigPathResourceProvider/backuproot?fileName=urn:uuid:1D87806F-E88C-0001-AFCC-DC87F6001C3A/pp_project_lithologische_einheiten.rdf&contentType=application/rdf%2Bxml> ] ;
         foaf:homepage         <http://resource.geolba.ac.at/> .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/geological-survey-of-austria-thesaurus> ;
-  void:triples  93
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/opencyc> , <http://lod-cloud.net/dataset/geological-survey-of-austria-thesaurus> ;
-  void:triples  9
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/geological-survey-of-austria-thesaurus> ;
+[ void:target   lod:geological-survey-of-austria-thesaurus , lod:dbpedia ;
   void:triples  100
+] .
+
+[ void:target   lod:geological-survey-of-austria-thesaurus , lod:opencyc ;
+  void:triples  9
 ] .

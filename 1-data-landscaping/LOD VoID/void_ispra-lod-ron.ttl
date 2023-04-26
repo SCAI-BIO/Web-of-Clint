@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/codes.wmo.int> , <http://lod-cloud.net/dataset/ispra-lod-ron> ;
+[ void:target   lod:ispra-lod-ron , lod:codes.wmo.int ;
   void:triples  338
 ] .
 
-<http://lod-cloud.net/dataset/ispra-lod-ron>
-        a                     void:Dataset ;
+lod:ispra-lod-ron  a          void:Dataset ;
         dcterms:description   "#### dati.isprambiente.it - ISPRA Linked Open Data - The Italian Data Buoy Network (Rete Ondametrica Nazionale - RON) \r\n"@en ;
         dcterms:publisher     [ rdfs:label  "Italian National Institute for Environmental Protection and Research, ISPRA" ;
                                 foaf:mbox   "assistenza-lod@isprambiente.it"
                               ] ;
-        dcterms:subject       "rete" , "buoy" , "onde marine" , "rdf" , "ondametrica" , "mediterraneansea" , "boa" , "oceanography" , "ondametria" , "country-italy" , "oceanografia" , "ocean waves" , "format-rdf" , "onda" , "ron" , "ondametrico" , "lod" , "waves" , "onde" , "network" , "nazionale" , "rdf-format" ;
+        dcterms:subject       "rete" , "buoy" , "onde marine" , "mediterraneansea" , "rdf" , "boa" , "ondametrica" , "oceanography" , "ondametria" , "country-italy" , "oceanografia" , "ocean waves" , "format-rdf" , "onda" , "lod" , "ondametrico" , "ron" , "waves" , "onde" , "network" , "nazionale" , "rdf-format" ;
         dcterms:title         "ISPRA - The Italian Data Buoy Network (RON)"@en ;
         void:exampleResource  <http://dati.isprambiente.it/id/collection/ron/crotone/wave.201307/html> ;
         void:sparqlEndpoint   <http://dati.isprambiente.it/sparql> ;
         void:triples          "0"^^xsd:int ;
-        dcat:distribution     [ dcat:accessURL  <http://dati.isprambiente.it/downloads/ron.nt.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://dati.isprambiente.it/downloads/ron-data.nt.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://dati.isprambiente.it/downloads/ron.nt.gz> ] ;
         foaf:homepage         <http://dati.isprambiente.it/id/website/ronRmn/html> .

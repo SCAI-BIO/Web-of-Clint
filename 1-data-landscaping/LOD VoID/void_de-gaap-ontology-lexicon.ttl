@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,9 +6,9 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/de-gaap-ontology-lexicon>
+lod:de-gaap-ontology-lexicon
         a                     void:Dataset ;
-        dcterms:description   "The dataset is a German-English financial ontology-lexicon with 728 bilingual annotated phrases with Constituent and Part-Of-Speech Tags in <a href=\"http://lexinfo.net/\">lexinfo</a>/<a href=\"http://lemon-model.net/\">lemon</a> format. The ontology lexicon was generated from the rdf version (using xbrl2rdf by Dennis Spohr) of the German <a href=\"http://xbrl.de\">XBRL</a> HGB Taxonomy V4.1 which describes financial concepts used in German reporting. Special thanks to Noëmi Aepli for the part-of-speech annotions. All work was done within the <a href=\"http://monnet-project.eu/\">MONNET (Multilingual Ontologies for Networked Knowledge Project</a>.The ontology-lexicon and its ontology be downloaded here."@en ;
+        dcterms:description   "The dataset is a German-English financial ontology-lexicon with 728 bilingual annotated phrases with Constituent and Part-Of-Speech Tags in <a+href=\"http://lexinfo.net/\">lexinfo</a>/<a+href=\"http://lemon-model.net/\">lemon</a> format. The ontology lexicon was generated from the rdf version (using xbrl2rdf by Dennis Spohr) of the German <a+href=\"http://xbrl.de\">XBRL</a> HGB Taxonomy V4.1 which describes financial concepts used in German reporting. Special thanks to Noëmi Aepli for the part-of-speech annotions. All work was done within the <a+href=\"http://monnet-project.eu/\">MONNET (Multilingual Ontologies for Networked Knowledge Project</a>.The ontology-lexicon and its ontology be downloaded here."@en ;
         dcterms:publisher     [ rdfs:label  "Tobias Wunner" ;
                                 foaf:mbox   ""
                               ] ;
@@ -15,10 +16,10 @@
         dcterms:title         "de-gaap-ontology-lexicon"@en ;
         void:exampleResource  <http://lemon-model.net/lexica/de-gaap/lexicon.en> , <http://lemon-model.net/lexica/de-gaap/lexicon.de> ;
         void:triples          246522 ;
-        dcat:distribution     [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2012-10-18T110739/model.lemon.rdf.zip> ] ;
         dcat:distribution     [ dcat:accessURL  <http://lemon-model.net/lexica/de-gaap/de/Lizenzen+an+Rechten+und+Werten> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2012-10-18T110739/model.lemon.rdf.zip> ] ;
         dcat:distribution     [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-09-24T124029/de-gaap-ontology-lexicon-data-set-description.pdf> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/de-gaap-ontology-lexicon> ;
+[ void:target   lod:de-gaap-ontology-lexicon , lod:lexinfo ;
   void:triples  43727
 ] .

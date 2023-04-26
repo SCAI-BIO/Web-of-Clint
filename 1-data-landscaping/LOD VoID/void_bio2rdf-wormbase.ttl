@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,46 +6,45 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bio2rdf-wormbase>
-        a                     void:Dataset ;
+lod:bio2rdf-wormbase  a       void:Dataset ;
         dcterms:description   "WormBase is an online bioinformatics database of the biology and genome of the model organism Caenorhabditis elegans and related nematodes. It is used by the C. elegans research community both as an information resource and as a mode to publish and distribute their results."@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2014-08-30" , "published-by-third-party" , "bio2rdf" , "provenance-metadata" , "format-dc" , "deref-vocab" , "license-metadata" , "life_sciences" , "lod" , "lifesciences" , "vocab-mappings" , "format-rdf" , "format-rdfs" ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "published-by-third-party" , "bio2rdf" , "provenance-metadata" , "format-dc" , "deref-vocab" , "license-metadata" , "life_sciences" , "lifesciences" , "lod" , "vocab-mappings" , "format-rdf" , "format-rdfs" ;
         dcterms:title         "Bio2RDF::Wormbase"@en ;
         void:dataDump         <http://download.bio2rdf.org/current/wormbase/wormbase.gene_interactions.nq.gz> , <http://download.bio2rdf.org/current/wormbase/wormbase.functional_descriptions.nq.gz> , <http://download.bio2rdf.org/current/wormbase/wormbase.gene_associations.nq.gz> , <http://download.bio2rdf.org/current/wormbase/wormbase.geneIDs.nq.gz> , <http://download.bio2rdf.org/current/wormbase/wormbase.phenotype_associations.nq.gz> ;
         void:exampleResource  <http://bio2rdf.org/wormbase:WBGene00000001> ;
         void:sparqlEndpoint   <http://wormbase.bio2rdf.org/sparql> ;
         void:triples          22682002 ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/wormbase/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wormbase/bio2rdf-wormbase.nq> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wormbase/wormbase.html> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wormbase/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/wormbase/bio2rdf-wormbase.nq> ] ;
         dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/wormbase/bio2rdf_wormbase_sio_mapping.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/wormbase/wormbase.schema.owl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/wormbase/sitemap.xml> ] ;
         foaf:homepage         <http://wormbase.bio2rdf.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-wbphenotype> , <http://lod-cloud.net/dataset/bio2rdf-wormbase> ;
-  void:triples  1778
+[ void:target   lod:bio2rdf-wormbase ;
+  void:triples  1780711
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-go> , <http://lod-cloud.net/dataset/bio2rdf-wormbase> ;
-  void:triples  3696
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxonomy> , <http://lod-cloud.net/dataset/bio2rdf-wormbase> ;
-  void:triples  50836
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-wormbase> ;
+[ void:target   lod:bio2rdf-wormbase , lod:bio2rdf-pubmed ;
   void:triples  3261
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-eco> , <http://lod-cloud.net/dataset/bio2rdf-wormbase> ;
-  void:triples  13
+[ void:target   lod:bio2rdf-wormbase , lod:bio2rdf-go ;
+  void:triples  3696
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-wormbase> ;
-  void:triples  1780711
+[ void:target   lod:bio2rdf-wormbase , lod:bio2rdf-taxonomy ;
+  void:triples  50836
+] .
+
+[ void:target   lod:bio2rdf-wormbase , lod:bio2rdf-wbphenotype ;
+  void:triples  1778
+] .
+
+[ void:target   lod:bio2rdf-wormbase , lod:bio2rdf-eco ;
+  void:triples  13
 ] .

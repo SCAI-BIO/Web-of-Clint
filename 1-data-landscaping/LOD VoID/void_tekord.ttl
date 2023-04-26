@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/tekord>
-        a                     void:Dataset ;
+lod:tekord  a                 void:Dataset ;
         dcterms:description   "RDF-ized controlled vocabulary of Norwegian terms with Universal Decimal Classification numbers; library metadata from the Norwegian University of Science and Technology."@en ;
         dcterms:publisher     [ rdfs:label  "NTNU University Library" ;
                                 foaf:mbox   "rurik.greenall@ub.ntnu.no"
                               ] ;
-        dcterms:subject       "controlled-vocabulary" , "lld" , "rdf" , "no-proprietary-vocab" , "published-by-producer" , "no-license-metadata" , "lod" , "no-provenance-metadata" , "lodcloud-diagram-2014-08-30" , "library" , "cross_domain" , "lodcloud.nolinks" , "norwegian" , "lodcloud.unconnected" , "crossdomain" ;
+        dcterms:subject       "controlled-vocabulary" , "lodcloud.unconnected" , "lld" , "rdf" , "no-proprietary-vocab" , "published-by-producer" , "no-license-metadata" , "lod" , "no-provenance-metadata" , "library" , "lodcloud-diagram-2014-08-30" , "cross_domain" , "lodcloud.nolinks" , "crossdomain" , "norwegian" ;
         dcterms:title         "TEKORD"@en ;
         void:exampleResource  <http://www.ntnu.no/ub/data/tekord#NTUB01506> ;
         void:triples          100000 ;

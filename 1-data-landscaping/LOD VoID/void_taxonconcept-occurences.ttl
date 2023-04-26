@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/taxonconcept-occurences> ;
-  void:triples  9036
-] .
-
-<http://lod-cloud.net/dataset/taxonconcept-occurences>
+lod:taxonconcept-occurences
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "lifesciences" , "format-rdfs" , "format-rdf" , "format-gn" , "geographic" , "LinkedDataCrawl2014" , "format-wdrs" , "format-bibo" , "format-pos" , "format-dcterm" , "crawledLinkedDataCloud2014" , "format-time" , "format-cc" , "lodcloud-diagram-2014-08-30" , "format-owl" , "format-foaf" , "life_sciences" ;
+        dcterms:subject       "lifesciences" , "format-rdf" , "format-rdfs" , "format-gn" , "geographic" , "LinkedDataCrawl2014" , "format-wdrs" , "format-bibo" , "format-pos" , "format-dcterm" , "crawledLinkedDataCloud2014" , "format-time" , "format-cc" , "format-owl" , "lodcloud-diagram-2014-08-30" , "format-foaf" , "life_sciences" ;
         dcterms:title         "taxonconcept-occurences"@en ;
         void:exampleResource  <http://ocs.taxonconcept.org/ocs/ad94a9e5-0c4d-49e4-ac92-d891ecc4c13f.rdf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/taxonconcept> , <http://lod-cloud.net/dataset/taxonconcept-occurences> ;
+[ void:target   lod:taxonconcept-occurences , lod:taxonconcept ;
   void:triples  15939
+] .
+
+[ void:target   lod:taxonconcept-occurences , lod:geonames-semantic-web ;
+  void:triples  9036
 ] .

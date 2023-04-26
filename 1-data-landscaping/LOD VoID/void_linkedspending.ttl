@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/linkedspending>
-        a                     void:Dataset ;
+[ void:target   lod:linkedspending , lod:linkedgeodata ;
+  void:triples  9000000
+] .
+
+lod:linkedspending  a         void:Dataset ;
         dcterms:description   "The conversion of OpenSpending to LinkedSpending, which provides more than five million financial transactions in 955 data sets from\nall over the world as RDF Data Cubes."@en ;
         dcterms:publisher     [ rdfs:label  "Konrad Höffner" ;
                                 foaf:mbox   "konrad.hoeffner@uni-leipzig.de"
                               ] ;
         dcterms:subject       "openspending" , "spending" , "government" ;
         dcterms:title         "LinkedSpending"@en ;
-        void:dataDump         <http://linkedspending.aksw.org/extensions/page/page /export/lscomplete20143.tar.gz> ;
+        void:dataDump         <http://linkedspending.aksw.org/extensions/page/page+/export/lscomplete20143.tar.gz> ;
         void:exampleResource  <http://linkedspending.aksw.org/resource/properties/?r=http%3A%2F%2Flinkedspending.aksw.org%2Finstance%2Ffinland-aid> ;
         void:sparqlEndpoint   <http://linkedspending.aksw.org/sparql> ;
         void:triples          113640534 ;
         foaf:homepage         <http://linkedspending.aksw.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linkedspending> ;
+[ void:target   lod:linkedspending , lod:dbpedia ;
   void:triples  15000000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/linkedspending> ;
-  void:triples  9000000
 ] .

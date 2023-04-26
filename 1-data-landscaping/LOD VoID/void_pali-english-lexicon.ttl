@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/pali-english-lexicon>
+lod:pali-english-lexicon
         a                     void:Dataset ;
         dcterms:description   "A lexicon from Pali to English."@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -16,9 +17,9 @@
         void:exampleResource  <http://data.kasabi.com/dataset/pali-english-lexicon/pts-dictionary/e0.rdf> ;
         void:sparqlEndpoint   <http://api.kasabi.com/dataset/pali-english-lexicon/apis/sparql> ;
         void:triples          202731 ;
-        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2002/07/owl#> ] ;
         dcat:distribution     [ dcat:accessURL  <http://rdf.ontosema.org/lang/language.owl#> ] ;
         dcat:distribution     [ dcat:accessURL  rdfs: ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.kasabi.com/dataset/pali-english-lexicon> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.w3.org/2002/07/owl#> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.kasabi.com/dataset/pali-english-lexicon> ] ;
         foaf:homepage         <http://kasabi.com/dataset/pali-english-lexicon> .

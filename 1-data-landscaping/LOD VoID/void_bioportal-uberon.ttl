@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,252 +6,275 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vhog> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  1111
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vao> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  143
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bila> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  117
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hp_x1> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-spd> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  1052
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-fbbt> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  323
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  28
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe-sbc> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  28
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  1618
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  1661
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bt> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
+[ void:target   lod:bioportal-uberon , lod:bioportal-bt ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  156
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tads> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-xao> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  693
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  1773
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  94
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vandf> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tao> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  975
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-caro> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  46
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-medlineplus> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pedterm> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-envo> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  856
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  1573
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nemo_x1> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  63
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vo> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hao> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  229
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bodysystem> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
+[ void:target   lod:bioportal-uberon , lod:bioportal-bodysystem ;
   void:triples  18
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  205
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hpio> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  1079
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  2701
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aao> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  734
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aba> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  200
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-spo> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  26
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omit> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gaz> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa2> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  1432
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  88
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mfo> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
+[ void:target   lod:bioportal-uberon , lod:bioportal-mfo ;
   void:triples  104
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x1> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  26
+[ void:target   lod:bioportal-uberon , lod:bioportal-vo ;
+  void:triples  14
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ecg> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  15
+[ void:target   lod:bioportal-uberon , lod:bioportal-fbdv ;
+  void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bao> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  24
+[ void:target   lod:bioportal-uberon , lod:bioportal-hao ;
+  void:triples  229
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  162
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncbitaxon> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  29
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aeo> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  140
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  1335
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  853
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bho> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  44
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
+[ void:target   lod:bioportal-uberon , lod:bioportal-ndfrt ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nigo> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  18
+[ void:target   lod:bioportal-uberon , lod:bioportal-bto ;
+  void:triples  1451
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10cm> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icf_x1> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  48
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cco> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
+[ void:target   lod:bioportal-uberon , lod:bioportal-spo ;
   void:triples  26
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
+[ void:target   lod:bioportal-uberon , lod:bioportal-mcbcc ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-mesh-owl ;
+  void:triples  1573
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-nif_cell ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-go_x2 ;
+  void:triples  28
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-tao ;
+  void:triples  975
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-rid ;
+  void:triples  2701
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-dc_cl ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-medlineplus ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-aao ;
+  void:triples  734
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-birnlex ;
+  void:triples  853
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-cst ;
+  void:triples  76
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-idomal ;
   void:triples  18
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  1775
+[ void:target   lod:bioportal-uberon , lod:bioportal-icpc2p ;
+  void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-zfa> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  1125
+[ void:target   lod:bioportal-uberon , lod:bioportal-po ;
+  void:triples  28
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
+[ void:target   lod:bioportal-uberon , lod:bioportal-icnp ;
+  void:triples  88
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-vao ;
+  void:triples  143
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-icd10cm ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-envo ;
+  void:triples  32
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-sopharm ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-nddf ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-ehda ;
+  void:triples  4844
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-biomodels ;
+  void:triples  3953
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-pma ;
+  void:triples  54
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-basic-vertebrate-gross-anatomy ;
+  void:triples  29
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-gaz ;
+  void:triples  20
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-cco ;
+  void:triples  26
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-omim ;
+  void:triples  48
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-pedterm ;
   void:triples  22
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-uberon>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-uberon , lod:bioportal-po_x2 ;
+  void:triples  33
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-tgma ;
+  void:triples  105
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-omit ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-obi ;
+  void:triples  27
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-icd10 ;
+  void:triples  162
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-aba ;
+  void:triples  200
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-vhog ;
+  void:triples  1111
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-vandf ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-nigo ;
+  void:triples  18
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-efo ;
+  void:triples  696
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-snomedct ;
+  void:triples  3826
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-nif ;
+  void:triples  1052
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-icf_x1 ;
+  void:triples  48
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-mdr ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-lnc ;
+  void:triples  590
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-wbbt ;
+  void:triples  83
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-tads ;
+  void:triples  45
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-ecg ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-hl7 ;
+  void:triples  47
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-csp ;
+  void:triples  619
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-ev ;
+  void:triples  1335
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-mat ;
+  void:triples  291
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-bdo ;
+  void:triples  28
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-bila ;
+  void:triples  117
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-ehdaa2 ;
+  void:triples  1432
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-nemo_x1 ;
+  void:triples  63
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-galen ;
+  void:triples  1661
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-go_x1 ;
+  void:triples  26
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-mccl_x1 ;
+  void:triples  4638
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-bao ;
+  void:triples  24
+] .
+
+lod:bioportal-uberon  a      void:Dataset ;
         dcterms:description  "Uberon is a multi-species anatomy ontology created to facilitate comparison of phenotypes across multiple species, and for GO cross-products. Each uberon class is the superclass of all the classes stated as xrefs. The deployed version of uberon is generated from the editors version by stripping out external links and materializing inferred links via the oboedit reasoner."@en ;
         dcterms:publisher    [ rdfs:label  "Chris Mungall" ;
                                foaf:mbox   ""
@@ -258,135 +282,111 @@
         dcterms:subject      "published-by-third-party" , "format-obo" , "lod" , "format-rdf" , "bioportal" , "ontology" , "life_sciences" , "biomedicine" ;
         dcterms:title        "Uber anatomy ontology"@en ;
         void:triples         284209 ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47379?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1404> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ctx> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  47
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-dc_cl> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  2566
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-po> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  28
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sao> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  18
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  48
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  76
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  3826
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nddf> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  619
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
+[ void:target   lod:bioportal-uberon , lod:bioportal-ncbitaxon ;
   void:triples  29
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-fbdv> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  12
+[ void:target   lod:bioportal-uberon , lod:bioportal-canco ;
+  void:triples  856
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tgma> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  105
+[ void:target   lod:bioportal-uberon , lod:bioportal-ncit ;
+  void:triples  2566
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-po_x2> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  33
+[ void:target   lod:bioportal-uberon , lod:bioportal-hpio ;
+  void:triples  15
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ma> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  3340
+[ void:target   lod:bioportal-uberon , lod:bioportal-syn ;
+  void:triples  1773
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  291
+[ void:target   lod:bioportal-uberon , lod:bioportal-ctx ;
+  void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  27
+[ void:target   lod:bioportal-uberon , lod:bioportal-xao ;
+  void:triples  693
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mcbcc> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  16
+[ void:target   lod:bioportal-uberon , lod:bioportal-hp_x1 ;
+  void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  696
+[ void:target   lod:bioportal-uberon , lod:bioportal-rcd ;
+  void:triples  1775
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-wbbt> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  83
+[ void:target   lod:bioportal-uberon , lod:bioportal-sdo ;
+  void:triples  205
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  4638
+[ void:target   lod:bioportal-uberon , lod:bioportal-spd ;
+  void:triples  45
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  4844
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  3953
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x2> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
+[ void:target   lod:bioportal-uberon , lod:bioportal-oboe-sbc ;
   void:triples  28
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gro_x1> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
+[ void:target   lod:bioportal-uberon , lod:bioportal-ma ;
+  void:triples  3340
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-nif_dysfunction ;
+  void:triples  22
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-msh ;
+  void:triples  1079
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-acgt ;
+  void:triples  156
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-fbbt ;
+  void:triples  323
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-bho ;
+  void:triples  44
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-mccl ;
+  void:triples  94
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-gro_x1 ;
   void:triples  33
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ep> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
+[ void:target   lod:bioportal-uberon , lod:bioportal-ehdaa ;
+  void:triples  1618
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-zfa ;
+  void:triples  1125
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-caro ;
+  void:triples  46
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-sao ;
+  void:triples  18
+] .
+
+[ void:target   lod:bioportal-uberon , lod:bioportal-ep ;
   void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pma> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  54
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  590
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc2p> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bto> , <http://lod-cloud.net/dataset/bioportal-uberon> ;
-  void:triples  1451
+[ void:target   lod:bioportal-uberon , lod:bioportal-aeo ;
+  void:triples  140
 ] .

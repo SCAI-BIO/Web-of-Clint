@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-fbdv> ;
+[ void:target   lod:bioportal-fbdv , lod:bioportal-uberon ;
   void:triples  12
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-fbdv>
-        a                    void:Dataset ;
+lod:bioportal-fbdv  a        void:Dataset ;
         dcterms:description  "A structured controlled vocabulary of the development of <i>Drosophila melanogaster</i>."@en ;
         dcterms:publisher    [ rdfs:label  "David Osumi-Sutherland" ;
                                foaf:mbox   ""
@@ -19,6 +19,6 @@
         dcterms:title        "Drosophila development"@en ;
         void:triples         2776 ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45239?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45239?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1016> .

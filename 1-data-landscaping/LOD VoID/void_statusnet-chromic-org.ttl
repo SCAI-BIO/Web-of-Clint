@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,81 +6,81 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-thelovebug-org> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-linuxwrangling-com ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-jonkman-ca ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-jonkman-ca> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-morphtown-de ;
+  void:triples  9
+] .
+
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-gomertronic-com ;
   void:triples  4
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-chromic-org>
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-fragdev-com ;
+  void:triples  28
+] .
+
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-bka-li ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-postblue-info ;
+  void:triples  4
+] .
+
+lod:statusnet-chromic-org
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://chromic.org"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "format-foaf" , "crawledLinkedDataCloud2014" , "format-rdf" , "format-sioc" , "social web" , "LinkedDataCrawl2014" , "lodcloud-diagram-2014-08-30" , "format-bio" , "social_networking" ;
+        dcterms:subject       "format-foaf" , "crawledLinkedDataCloud2014" , "format-rdf" , "format-sioc" , "social web" , "LinkedDataCrawl2014" , "format-bio" , "lodcloud-diagram-2014-08-30" , "social_networking" ;
         dcterms:title         "statusnet-chromic-org"@en ;
         void:exampleResource  <http://sn.chromic.org/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-soucy-cc ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-skilledtests-com ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-lydiastench-com> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-bka-li> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-somsants-net> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
-  void:triples  28
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
-  void:triples  9
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-quitter-se ;
   void:triples  26
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ssweeny-net> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-status-net ;
+  void:triples  5
+] .
+
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-lydiastench-com ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gomertronic-com> , <http://lod-cloud.net/dataset/statusnet-chromic-org> ;
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-somsants-net ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-russwurm-org ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-chromic-org , lod:personal-homepages ;
+  void:triples  16
+] .
+
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-ssweeny-net ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-chromic-org , lod:statusnet-thelovebug-org ;
   void:triples  4
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,150 +6,150 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-curriculum> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-roma> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  24877
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-cordis ;
   void:triples  47
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  2637
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-acm ;
+  void:triples  3142
 ] .
 
-<http://lod-cloud.net/dataset/rkb-explorer-southampton>
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-courseware ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-wiki ;
+  void:triples  12
+] .
+
+lod:rkb-explorer-southampton
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
                                 foaf:mbox   "hg@ecs.soton.ac.uk"
                               ] ;
-        dcterms:subject       "deref-vocab" , "format-dc" , "provenance-metadata" , "published-by-third-party" , "lodcloud-diagram-2014-08-30" , "void-sparql-endpoint" , "no-vocab-mappings" , "format-rdf" , "lodcloud-diagram-2011-09-19" , "lod" , "publications" , "format-akt" , "no-license-metadata" ;
+        dcterms:subject       "deref-vocab" , "format-dc" , "provenance-metadata" , "lodcloud-diagram-2014-08-30" , "published-by-third-party" , "void-sparql-endpoint" , "format-rdf" , "no-vocab-mappings" , "lodcloud-diagram-2011-09-19" , "lod" , "format-akt" , "publications" , "no-license-metadata" ;
         dcterms:title         "School of Electronics and Computer Science, University of Southampton (RKBExplorer)"@en ;
         void:exampleResource  <http://southampton.rkbexplorer.com/id/person-00021> ;
         void:sparqlEndpoint   <http://southampton.rkbexplorer.com/sparql/> ;
         void:triples          298067 ;
         dcat:distribution     [ dcat:accessURL  <http://southampton.rkbexplorer.com/models/dump.tgz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://southampton.rkbexplorer.com/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://southampton.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://southampton.rkbexplorer.com/sitemap.xml> ] ;
         foaf:homepage         <http://southampton.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-courseware> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-pisa> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  6386
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  711
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-nsf> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  41
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-risks> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-budapest ;
   void:triples  6
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/southampton-ecs-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  8526
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  3142
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  39937
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ieee> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ibm> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  6
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  73841
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-jisc> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  9
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/semantic-web-dog-food> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  54
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ulm> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-irit> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-irit ;
   void:triples  104
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  2624
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-ulm ;
+  void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  10
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-ieee ;
+  void:triples  20
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-deploy> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  60
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-nsf ;
+  void:triples  41
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-epsrc> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  36
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-eprints ;
+  void:triples  39937
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  118
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-roma ;
+  void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-bibo> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-budapest> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-risks ;
   void:triples  6
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/ecs> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
-  void:triples  100
+[ void:target   lod:rkb-explorer-southampton , lod:semantic-web-dog-food ;
+  void:triples  54
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-pisa ;
+  void:triples  4
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-jisc ;
+  void:triples  9
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-laas ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/semantictweet> , <http://lod-cloud.net/dataset/rkb-explorer-southampton> ;
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-oai ;
+  void:triples  24877
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-newcastle ;
+  void:triples  118
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:southampton-ecs-eprints ;
+  void:triples  8526
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-kisti ;
+  void:triples  711
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:dbpedia ;
+  void:triples  11
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:semantictweet ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-ibm ;
+  void:triples  6
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-rae2001 ;
+  void:triples  2624
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-epsrc ;
+  void:triples  36
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:freebase ;
+  void:triples  10
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:ecs ;
+  void:triples  100
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-curriculum ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-dblp ;
+  void:triples  6386
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-deploy ;
+  void:triples  60
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-citeseer ;
+  void:triples  2637
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-dotac ;
+  void:triples  73841
+] .
+
+[ void:target   lod:rkb-explorer-southampton , lod:rkb-explorer-bibo ;
   void:triples  1
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/grrp>
-        a                     void:Dataset ;
+lod:grrp  a                   void:Dataset ;
         dcterms:description   "List of accommodations in Piedmont, Italy. The dataset uses GoodRelations and vcard and includes addresses, contact information (where available) and geo-reference. Note: geo-reference is provided in a best effort way, might contain errors."@en ;
         dcterms:publisher     [ rdfs:label  "Linkedopendata.it" ;
                                 foaf:mbox   "info@linkedopendata.it"
@@ -16,10 +16,10 @@
         void:exampleResource  <http://data.linkedopendata.it/grrp/resource/AFFITTACAMERE_ARCOBALENO_2> ;
         void:sparqlEndpoint   <http://sparql.linkedopendata.it/grrp> ;
         void:triples          153935 ;
-        dcat:distribution     [ dcat:accessURL  <http://dump.linkedopendata.it/grrp> ] ;
         dcat:distribution     [ dcat:accessURL  <http://void.linkedopendata.it/grrp> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://dump.linkedopendata.it/grrp> ] ;
         foaf:homepage         <http://www.linkedopendata.it/datasets/grrp> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/grrp> ;
+[ void:target   lod:grrp , lod:geonames-semantic-web ;
   void:triples  934
 ] .

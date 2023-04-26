@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,15 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-kaunas> ;
-  void:triples  7
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-kaunas> ;
+[ void:target   lod:rkb-explorer-kaunas , lod:rkb-explorer-laas ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/rkb-explorer-kaunas>
+lod:rkb-explorer-kaunas
         a                     void:Dataset ;
         dcterms:description   "This repository contains data supplied from Vytautas Magnus University."@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
@@ -24,7 +21,11 @@
         void:exampleResource  <http://kaunas.rkbexplorer.com/id/person-3954> ;
         void:sparqlEndpoint   <http://kaunas.rkbexplorer.com/sparql> ;
         void:triples          32940 ;
-        dcat:distribution     [ dcat:accessURL  <http://kaunas.rkbexplorer.com/models/dump.tgz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://kaunas.rkbexplorer.com/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://kaunas.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kaunas.rkbexplorer.com/models/dump.tgz> ] ;
         foaf:homepage         <http://kaunas.rkbexplorer.com> .
+
+[ void:target   lod:rkb-explorer-kaunas , lod:rkb-explorer-wiki ;
+  void:triples  7
+] .

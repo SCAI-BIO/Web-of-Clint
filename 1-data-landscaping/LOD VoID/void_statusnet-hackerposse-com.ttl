@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,69 +6,69 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-qdnx-org ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-morphtown-de ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-gomertronic-com ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gomertronic-com> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-postblue-info ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-quitter-se ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-piana-eu ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-somsants-net ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-piana-eu> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
-  void:triples  1
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-jonkman-ca ;
+  void:triples  4
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-hackerposse-com>
+lod:statusnet-hackerposse-com
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://hackerposse.com"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "LinkedDataCrawl2014" , "crawledLinkedDataCloud2014" , "format-pos" , "social web" , "format-bio" , "format-foaf" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "social_networking" , "format-sioc" , "format-rdfs" ;
+        dcterms:subject       "LinkedDataCrawl2014" , "crawledLinkedDataCloud2014" , "format-pos" , "social web" , "format-bio" , "format-foaf" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "social_networking" , "format-rdfs" , "format-sioc" ;
         dcterms:title         "statusnet-hackerposse-com"@en ;
         void:exampleResource  <http://status.hackerposse.com/dr/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-skilledtests-com ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-ilikefreedom-ro ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-russwurm-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-status-net ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-somsants-net> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
+[ void:target   lod:statusnet-hackerposse-com , lod:statusnet-soucy-cc ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-qdnx-org> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
+[ void:target   lod:statusnet-hackerposse-com , lod:geonames-semantic-web ;
   void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-jonkman-ca> , <http://lod-cloud.net/dataset/statusnet-hackerposse-com> ;
-  void:triples  4
 ] .

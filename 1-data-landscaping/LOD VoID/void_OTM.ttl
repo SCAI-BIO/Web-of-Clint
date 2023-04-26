@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/OTM>
-        a                    void:Dataset ;
+lod:OTM  a                   void:Dataset ;
         dcterms:description  "The Open Transport Map displays a road network which – is suitable for routing – – visualizes average daily Traffic Volumes for the whole EU – – visualizes time related Traffic Volumes (in OTN Pilot Cities - Antwerp, Birmingham, Issy-le-Moulineaux, Liberec region) – Talking technical, the Open Transport Map – can serve as a map itself as well as a layer embedded in your map – – is derived from the most popular open dataset - OpenStreetMap – – is accessible via both GUI and API – – covers the whole European Union .Presently the OTM linked dataset comprise data from Czech republic, Spain and Poland. RoadLinks only for 'FunctionalRoadClassValue' of type: (‘mainRoad’, ’firstClass’, ’secondClass’, ’thirdClass’, ’fourthClass’)"@en ;
         dcterms:publisher    [ rdfs:label  "Raul Palma, Soumya Brahma" ;
                                foaf:mbox   "rpalma@man.poznan.pl"

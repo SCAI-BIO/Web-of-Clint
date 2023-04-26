@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,91 +6,75 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-jonkman-ca> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  53
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-rainbowdash-net> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  387
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  113
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  66
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-lebsanft-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  142
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-qdnx-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  9
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-piana-eu> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-somsants-net> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  27
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-maymay-net> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  60
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-timttmy-co-uk> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  48
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-spraci-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-spraci-org ;
   void:triples  8
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-m-kuttner-com> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-davidhaberthuer-ch ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-legadolibre-com-ar> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-timttmy-co-uk ;
+  void:triples  48
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-kenzoid-com ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-legadolibre-com-ar ;
   void:triples  33
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wordpress> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-belfalas-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  7
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-thelovebug-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  62
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ced117-net> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-soucy-cc ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-1w6-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-macno-org ;
+  void:triples  23
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-fcac-com ;
+  void:triples  12
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-orangeseeds-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-jonkman-ca ;
   void:triples  53
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-quitter-se>
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-gomertronic-com ;
+  void:triples  40
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-postblue-info ;
+  void:triples  66
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-thornton2-com ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:wordpress ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-datenfahrt-org ;
+  void:triples  5
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-qdnx-org ;
+  void:triples  9
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-thelovebug-org ;
+  void:triples  62
+] .
+
+lod:statusnet-quitter-se
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://quitter.se"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -100,146 +85,162 @@
         void:exampleResource  <http://quitter.se/p1ng0ut/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-mamalibre-com-ar> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-opensim-chat-eu ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-schiessle-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  403
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fcac-com> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-glou-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-exdc-net ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-tekk-com-ar> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  8
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-scoffoni-net> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gegeweb-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-davidhaberthuer-ch> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-tschlotfeldt-de ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-tschlotfeldt-de> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gomertronic-com> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  40
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-mrblog-nl> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-chromic-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  25
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ssweeny-net> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  25
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-hackerposse-com> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-recit-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-bka-li> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-lydiastench-com> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  7
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-kaimi-cc> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  79
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-samnoble-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  7
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-datenfahrt-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  5
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ourcoffs-org-au> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-fragdev-com ;
   void:triples  567
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-orangeseeds-org> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  1
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-ilikefreedom-ro ;
+  void:triples  15
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-cooleysekula-net> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  30
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-schiessle-org ;
+  void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-exdc-net> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-status-net ;
   void:triples  72
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-thornton2-com> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  4
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-rainbowdash-net ;
+  void:triples  32
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-kenzoid-com> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  1
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-lydiastench-com ;
+  void:triples  7
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-atari-frosch-de> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
-  void:triples  43
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-lebsanft-org ;
+  void:triples  20
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-ssweeny-net ;
+  void:triples  25
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-kaimi-cc ;
+  void:triples  79
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-bka-li ;
+  void:triples  23
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-cooleysekula-net ;
+  void:triples  30
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-hackerposse-com ;
+  void:triples  2
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-recit-org ;
+  void:triples  3
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-linuxwrangling-com ;
+  void:triples  60
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-mamalibre-com-ar ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-dtdns-net> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-mrblog-nl ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-samnoble-org ;
+  void:triples  7
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-morphtown-de ;
+  void:triples  142
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-gegeweb-org ;
+  void:triples  5
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-m-kuttner-com ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-piana-eu ;
+  void:triples  23
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-maymay-net ;
+  void:triples  5
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-chromic-org ;
+  void:triples  25
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:personal-homepages ;
+  void:triples  403
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-dtdns-net ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-panda-id-au> , <http://lod-cloud.net/dataset/statusnet-quitter-se> ;
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-atari-frosch-de ;
+  void:triples  43
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-somsants-net ;
+  void:triples  27
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-scoffoni-net ;
+  void:triples  2
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-tekk-com-ar ;
+  void:triples  8
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-ourcoffs-org-au ;
+  void:triples  21
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-glou-org ;
+  void:triples  2
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-skilledtests-com ;
+  void:triples  387
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-russwurm-org ;
+  void:triples  113
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-panda-id-au ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-1w6-org ;
+  void:triples  53
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-belfalas-org ;
+  void:triples  7
+] .
+
+[ void:target   lod:statusnet-quitter-se , lod:statusnet-ced117-net ;
   void:triples  1
 ] .

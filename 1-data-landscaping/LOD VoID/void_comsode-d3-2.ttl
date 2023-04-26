@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,25 +6,24 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/comsode-d3-2>
-        a                     void:Dataset ;
+[ void:target   lod:comsode-d3-2 , lod:cz-ic ;
+  void:triples  1
+] .
+
+lod:comsode-d3-2  a           void:Dataset ;
         dcterms:description   "Requirements on the COMSODE project based on selected datasets"@en ;
         dcterms:publisher     [ rdfs:label  "Jakub Klímek" ;
                                 foaf:mbox   "klimek@opendata.cz"
                               ] ;
         dcterms:subject       "lod" , "czech" , "format-skos" , "provenance-metadata" , "publications" , "license-metadata" , "published-by-third-party" , "no-vocab-mappings" , "deref-vocab" , "czech-republic" ;
         dcterms:title         "Requirements on the COMSODE project based on selected datasets"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://comsode.eu/resource/dqr/CTO_55%3AQ%3A4%3E&default-graph-uri=http%3A%2F%2Fcomsode.eu%2Fresource%2Fdataset%2FCOMSODE_D3.2&output=text%2Fturtle> , <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://comsode.eu/resource/dataset/CTO_55%3E&default-graph-uri=http%3A%2F%2Fcomsode.eu%2Fresource%2Fdataset%2FCOMSODE_D3.2&output=text%2Fturtle> , <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://comsode.eu/resource/dataset/COMSODE_D3.2%3E&default-graph-uri=http%3A%2F%2Fcomsode.eu%2Fresource%2Fdataset%2FCOMSODE_D3.2&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          27572 ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/COMSODE_D3.2-vocabulary.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://comsode.eu/resource/dqr/CTO_55%3AQ%3A4> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Fcomsode.eu%2Fresource%2Fdataset%2FCOMSODE_D3.2%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <http://comsode.eu/resource/dataset/CTO_55> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/COMSODE_D3.2.trig> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://comsode.eu/resource/dqr/CTO_55%3AQ%3A4> ] ;
         dcat:distribution     [ dcat:accessURL  <http://comsode.eu/resource/dataset/COMSODE_D3.2> ] ;
         foaf:homepage         <http://comsode.eu/resource/dataset/COMSODE_D3.2> .
-
-[ void:target   <http://lod-cloud.net/dataset/cz-ic> , <http://lod-cloud.net/dataset/comsode-d3-2> ;
-  void:triples  1
-] .

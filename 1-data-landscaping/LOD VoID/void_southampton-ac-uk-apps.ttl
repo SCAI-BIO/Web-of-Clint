@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/southampton-ac-uk-apps>
+lod:southampton-ac-uk-apps
         a                     void:Dataset ;
         dcterms:description   "Dataset from University of Southampton Open Data Service. A catalog of known websites, web widgets, phone apps and other tools using our datasets."@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -16,7 +17,7 @@
         void:exampleResource  <http://id.southampton.ac.uk/app/soton-map-embed> ;
         void:sparqlEndpoint   <http://sparql.data.southampton.ac.uk/> ;
         void:triples          200 ;
-        dcat:distribution     [ dcat:accessURL  <http://id.southampton.ac.uk/dataset/apps/latest.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.southampton.ac.uk/apps.html> ] ;
         dcat:distribution     [ dcat:accessURL  <http://id.southampton.ac.uk/dataset/apps/latest.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://id.southampton.ac.uk/dataset/apps/latest.ttl> ] ;
         foaf:homepage         <http://data.southampton.ac.uk/> .

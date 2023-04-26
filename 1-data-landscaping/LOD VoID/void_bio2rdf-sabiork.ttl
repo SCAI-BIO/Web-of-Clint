@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,58 +6,57 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxonomy> , <http://lod-cloud.net/dataset/bio2rdf-sabiork> ;
+[ void:target   lod:bio2rdf-sabiork , lod:bio2rdf-taxonomy ;
   void:triples  712
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-sabiork> ;
-  void:triples  495
-] .
-
-<http://lod-cloud.net/dataset/bio2rdf-sabiork>
-        a                     void:Dataset ;
+lod:bio2rdf-sabiork  a        void:Dataset ;
         dcterms:description   "SABIO-RK is a database for biochemical reactions, their kinetic equations with their parameters, and the experimental conditions under which these parameters were measured. "@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
                               ] ;
-        dcterms:subject       "published-by-third-party" , "format-dc" , "format-rdfs" , "vocab-mappings" , "lodcloud-diagram-2014-08-30" , "lod" , "deref-vocab" , "provenance-metadata" , "life_sciences" , "lifesciences" , "bio2rdf" , "license-metadata" , "format-rdf" ;
+        dcterms:subject       "published-by-third-party" , "format-dc" , "format-rdfs" , "lodcloud-diagram-2014-08-30" , "vocab-mappings" , "lod" , "deref-vocab" , "provenance-metadata" , "life_sciences" , "lifesciences" , "bio2rdf" , "license-metadata" , "format-rdf" ;
         dcterms:title         "Bio2RDF::Sabiork"@en ;
         void:dataDump         <http://download.bio2rdf.org/current/sabiork/sabiork.nq.gz> ;
         void:exampleResource  <http://bio2rdf.org/sabiork/describe/rdf?uri=http://sabiork.h-its.org/biopax%23catalysis11900> ;
         void:sparqlEndpoint   <http://sabiork.bio2rdf.org/sparql> ;
         void:triples          2716421 ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/sabiork/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/sabiork/sabiork.html> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/sabiork/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/sabiork/bio2rdf-sabiork.nq> ] ;
         dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/sabiork/bio2rdf_sabiork_sio_mapping.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/sabiork/sabiork.html> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/sabiork/sabiork.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/sabiork/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/sabiork/sitemap.xml> ] ;
         foaf:homepage         <http://sabiork.bio2rdf.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-chebi> , <http://lod-cloud.net/dataset/bio2rdf-sabiork> ;
-  void:triples  2772
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ec> , <http://lod-cloud.net/dataset/bio2rdf-sabiork> ;
-  void:triples  1404
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/bio2rdf-sabiork> ;
-  void:triples  2522
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-sbo> , <http://lod-cloud.net/dataset/bio2rdf-sabiork> ;
-  void:triples  53
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-bto> , <http://lod-cloud.net/dataset/bio2rdf-sabiork> ;
-  void:triples  238
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-nonpubmed> , <http://lod-cloud.net/dataset/bio2rdf-sabiork> ;
+[ void:target   lod:bio2rdf-sabiork , lod:bio2rdf-nonpubmed ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-sabiork> ;
+[ void:target   lod:bio2rdf-sabiork , lod:bio2rdf-sbo ;
+  void:triples  53
+] .
+
+[ void:target   lod:bio2rdf-sabiork , lod:bio2rdf-pubmed ;
+  void:triples  495
+] .
+
+[ void:target   lod:bio2rdf-sabiork , lod:bio2rdf-ec ;
+  void:triples  1404
+] .
+
+[ void:target   lod:bio2rdf-sabiork ;
   void:triples  4848
+] .
+
+[ void:target   lod:bio2rdf-sabiork , lod:bio2rdf-bto ;
+  void:triples  238
+] .
+
+[ void:target   lod:bio2rdf-sabiork , lod:bio2rdf-chebi ;
+  void:triples  2772
+] .
+
+[ void:target   lod:bio2rdf-sabiork , lod:bio2rdf-uniprot ;
+  void:triples  2522
 ] .

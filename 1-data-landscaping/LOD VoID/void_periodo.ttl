@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/pleiades> , <http://lod-cloud.net/dataset/periodo> ;
-  void:triples  116
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/worldcat> , <http://lod-cloud.net/dataset/periodo> ;
-  void:triples  472
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/english-heritage-periods-list> , <http://lod-cloud.net/dataset/periodo> ;
+[ void:target   lod:periodo , lod:english-heritage-periods-list ;
   void:triples  43
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/periodo> ;
+[ void:target   lod:periodo , lod:dbpedia ;
   void:triples  5069
 ] .
 
-<http://lod-cloud.net/dataset/periodo>
-        a                    void:Dataset ;
+[ void:target   lod:periodo , lod:worldcat ;
+  void:triples  472
+] .
+
+[ void:target   lod:periodo , lod:pleiades ;
+  void:triples  116
+] .
+
+lod:periodo  a               void:Dataset ;
         dcterms:description  "[PeriodO](http://perio.do) is a gazetteer of scholarly definitions of historical, art-historical, and archaeological periods. It eases the task of linking among datasets that define periods differently. It also helps scholars and students see where period definitions overlap or diverge."@en ;
         dcterms:publisher    [ rdfs:label  "Ryan Shaw" ;
                                foaf:mbox   "ryanshaw@unc.edu"
@@ -30,11 +30,11 @@
         dcterms:subject      "published-by-producer" , "deref-vocab" , "format-time" , "format-dcterms" , "publications" , "archaeology" , "no-vocab-mappings" , "lod" , "history" , "format-skos" , "schemata" , "license-metadata" , "periodization" , "provenance-metadata" ;
         dcterms:title        "PeriodO Period Gazetteer"@en ;
         void:triples         69033 ;
-        dcat:distribution    [ dcat:accessURL  <http://n2t.net/ark:/99152/p0v> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://n2t.net/ark:/99152/p0d.jsonld> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://n2t.net/ark:/99152/p0h> ] ;
         dcat:distribution    [ dcat:accessURL  <http://n2t.net/ark:/99152/p0/.well-known/void> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://n2t.net/ark:/99152/p0h> ] .
+        dcat:distribution    [ dcat:accessURL  <http://n2t.net/ark:/99152/p0v> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://n2t.net/ark:/99152/p0d.jsonld> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/doi> , <http://lod-cloud.net/dataset/periodo> ;
+[ void:target   lod:periodo , lod:doi ;
   void:triples  7
 ] .

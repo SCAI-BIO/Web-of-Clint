@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/jel-classification>
+lod:jel-classification
         a                    void:Dataset ;
         dcterms:description  "The [Journal of Economic Literature (JEL) Classification System](http://www.aeaweb.org/econlit/jelCodes.php) was created and is maintained by the [American Economic Association](http://www.aeaweb.org/). The AEA provides this widely used resource freely for scholarly purposes.\r\n\r\nThe JEL dataset (as of 2012-09) is mirrored to mint preliminary identifiers for semantic web applications and to publish the translations from the original (English) version to German, French and Spanish which were created by André Davids, K.U. Leuven. This site and especially the translations are not authorized by AEA."@en ;
         dcterms:publisher    [ rdfs:label  "" ;
@@ -14,7 +15,7 @@
         dcterms:subject      "format-rdfa" , "publications" , "format-rdf" , "economics" , "format-skos" , "lld" ;
         dcterms:title        "JEL Classification"@en ;
         void:triples         7000 ;
+        dcat:distribution    [ dcat:accessURL  <http://zbw.eu/beta/external_identifiers/jel/download/jel.nt.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <http://zbw.eu/beta/external_identifiers/jel> ] ;
         dcat:distribution    [ dcat:accessURL  <http://zbw.eu/beta/external_identifiers/jel/download/jel.ttl.zip> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://zbw.eu/beta/external_identifiers/jel/download/jel.nt.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <http://zbw.eu/beta/external_identifiers/jel/download/jel.rdf.zip> ] .

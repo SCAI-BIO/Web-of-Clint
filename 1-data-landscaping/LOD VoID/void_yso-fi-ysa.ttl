@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/yso-fi-ysa>
-        a                     void:Dataset ;
+lod:yso-fi-ysa  a             void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
@@ -16,6 +16,6 @@
         void:exampleResource  <http://www.yso.fi/onto/ysa/Y99974?rdf=xml> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/yso-fi-allars> , <http://lod-cloud.net/dataset/yso-fi-ysa> ;
+[ void:target   lod:yso-fi-ysa , lod:yso-fi-allars ;
   void:triples  29657
 ] .

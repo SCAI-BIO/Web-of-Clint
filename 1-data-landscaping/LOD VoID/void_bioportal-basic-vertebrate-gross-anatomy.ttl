@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,103 +6,99 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  24
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ogi> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  46
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  25
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-xao> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tao> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  68
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  25
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  27
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  34
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aao> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  31
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ma> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  18
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  29
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa2> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-mat ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  80
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-snomedct ;
+  void:triples  68
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-zfa> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-rcd ;
+  void:triples  30
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-aao ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  24
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-mccl_x1 ;
+  void:triples  34
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-syn ;
+  void:triples  26
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-uberon ;
+  void:triples  29
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-ncit ;
+  void:triples  80
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-rid ;
+  void:triples  25
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-sdo ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-lnc ;
+  void:triples  36
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-zfa ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-ehdaa ;
+  void:triples  27
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-efo ;
+  void:triples  26
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-ogi ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-icd10 ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-csp ;
+  void:triples  19
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-ev ;
+  void:triples  45
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-tao ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-bto ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-ehda ;
   void:triples  174
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy>
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-mesh-owl ;
+  void:triples  30
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-acgt ;
+  void:triples  20
+] .
+
+lod:bioportal-basic-vertebrate-gross-anatomy
         a                    void:Dataset ;
         dcterms:description  "A basic vertebrate anatomy derived mainly from FMA. "@en ;
         dcterms:publisher    [ rdfs:label  "" ;
@@ -110,43 +107,47 @@
         dcterms:subject      "lod" , "format-owl" , "life_sciences" , "published-by-third-party" , "ontology" , "biomedicine" , "format-rdf" , "bioportal" ;
         dcterms:title        "Basic Vertebrate Anatomy"@en ;
         void:triples         1028 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/4531?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1056> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bto> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vhog> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-vhog ;
   void:triples  15
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-xao ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-ehdaa2 ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  30
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-nif ;
+  void:triples  24
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  30
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-msh ;
+  void:triples  25
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  26
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-canco ;
+  void:triples  46
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  36
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-ma ;
+  void:triples  18
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-basic-vertebrate-gross-anatomy> ;
-  void:triples  26
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-icnp ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-galen ;
+  void:triples  24
+] .
+
+[ void:target   lod:bioportal-basic-vertebrate-gross-anatomy , lod:bioportal-biomodels ;
+  void:triples  31
 ] .

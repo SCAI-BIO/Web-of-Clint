@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/kore-50-nif-ner-corpus> ;
-  void:triples  144
-] .
-
-<http://lod-cloud.net/dataset/kore-50-nif-ner-corpus>
+lod:kore-50-nif-ner-corpus
         a                    void:Dataset ;
         dcterms:description  "KORE 50[1] (AIDA) is a subset of the larger AIDA corpus, which is based\r\non the dataset of the CoNLL 2003 NER task. The dataset aims to capture hard to disambiguate mentions of entities and it contains a large number of first names referring to persons, whose identity needs to be deduced from the given context. It comprises 50 sentences from different domains, such as music, celebrities, and business and is provided in a clear TSV format.\r\n\r\nThe corpus was converted to NLP Interchange Format (NIF).\r\n\r\n[1] J. Hoffart, S. Seufert, D. B. Nguyen, M. Theobald, and G. Weikum. KORE: Keyphrase overlap relatedness for entity disambiguation. In Proc. of the 21st ACM international conference on Information and knowledge management, pages 545{554. ACM, 2012"@en ;
         dcterms:publisher    [ rdfs:label  "Magnus Knuth" ;
@@ -18,7 +15,11 @@
         dcterms:subject      "corpus" , "linguistic" , "lod" , "training" , "nif" , "evaluation" , "linguistics" , "rdf" , "ner" ;
         dcterms:title        "KORE 50 NIF NER Corpus"@en ;
         void:triples         1410 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.yovisto.com/labs/ner-benchmarks/data/kore50-nif-2014-11-03.ttl> ] ;
         dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2015-09-22T10:28:30.244Z/dataid.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.yovisto.com/labs/ner-benchmarks/data/kore50-nif-2014-11-03.ttl> ] ;
         dcat:distribution    [ dcat:accessURL  <http://ceur-ws.org/Vol-1064/Steinmetz_Statistical.pdf> ] ;
         dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-10-27T12:51:16.896Z/kore50.ttl> ] .
+
+[ void:target   lod:kore-50-nif-ner-corpus , lod:dbpedia ;
+  void:triples  144
+] .

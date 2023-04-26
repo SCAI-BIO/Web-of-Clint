@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/allie-abbreviation-and-long-form-database-in-life-science>
+[ void:target   lod:allie-abbreviation-and-long-form-database-in-life-science , lod:dbpedia ;
+  void:triples  95280
+] .
+
+lod:allie-abbreviation-and-long-form-database-in-life-science
         a                     void:Dataset ;
         dcterms:description   "A database of abbreviations and long forms utilized in Lifesciences. It provides a solution to the issue that many abbreviations are used in the literature, and polysemous or synonymous abbreviations appear frequently, making it difficult to read and understand scientific papers that are not relevant to the reader's expertise. Allie contains abbreviations and their corresponding long forms extracted from titles and abstracts in the entire MEDLINE®, a database of the U.S. National Library of Medicine. MEDLINE stores over 20 million bibliographic information in life science and is suitable for extracting domain specific abbreviations and their long forms appearing in actual literature. "@en ;
         dcterms:publisher     [ rdfs:label  "Database Center for Life Science" ;
@@ -17,10 +22,6 @@
         void:sparqlEndpoint   <http://data.allie.dbcls.jp/sparql> ;
         void:triples          94420988 ;
         dcat:distribution     [ dcat:accessURL  <ftp://ftp.dbcls.jp/allie/allie_rdf/> ] ;
-        dcat:distribution     [ dcat:accessURL  <ftp://ftp.dbcls.jp/allie/allie_rdf/allie_rdf_nt_latest.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://allie.dbcls.jp/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <ftp://ftp.dbcls.jp/allie/allie_rdf/allie_rdf_nt_latest.gz> ] ;
         foaf:homepage         <http://allie.dbcls.jp/> .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/allie-abbreviation-and-long-form-database-in-life-science> ;
-  void:triples  95280
-] .

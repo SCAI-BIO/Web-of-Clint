@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -11,7 +12,7 @@
         dcterms:publisher    [ rdfs:label  "Cindy Hopkins " ;
                                foaf:mbox   "cindy.y.hopkins@gmail.com"
                              ] ;
-        dcterms:subject      "social_networking" , "Jmora7@juno.com" , "Hidden" ;
+        dcterms:subject      "Hidden" , "Jmora7@juno.com" , "social_networking" ;
         dcterms:title        "Usernames "@en ;
         void:triples         "0"^^xsd:int ;
         foaf:homepage        <http://www.google.com> .

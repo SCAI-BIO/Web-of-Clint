@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/govtrack> , <http://lod-cloud.net/dataset/biographical-directory-of-the-united-states-congress> ;
-  void:triples  56
+[ void:target   lod:biographical-directory-of-the-united-states-congress , lod:dbpedia ;
+  void:triples  50
 ] .
 
-<http://lod-cloud.net/dataset/biographical-directory-of-the-united-states-congress>
+lod:biographical-directory-of-the-united-states-congress
         a                     void:Dataset ;
         dcterms:description   "Names, positions, state, party, and congress number of members of US Congress 1774-present.\r\n\r\nScraped from http://bioguide.congress.gov/biosearch/biosearch.asp \r\nby https://scraperwiki.com/scrapers/biographical_directory_usc/#"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -20,14 +21,14 @@
         void:exampleResource  <http://logd.tw.rpi.edu/source/congress-gov/file/biographical-directory-of-the-united-states-congress/version/2012-Jan-04/conversion/congress-gov-biographical-directory-of-the-united-states-congress-2012-Jan-04.e1.sample.ttl> ;
         void:sparqlEndpoint   <http://logd.tw.rpi.edu/sparql> ;
         void:triples          2042215 ;
-        dcat:distribution     [ dcat:accessURL  <http://logd.tw.rpi.edu/source/congress-gov/file/biographical-directory-of-the-united-states-congress/version/2012-Jan-04/conversion/congress-gov-biographical-directory-of-the-united-state s-congress-2012-Jan-04.ttl.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://logd.tw.rpi.edu/source/congress-gov/file/biographical-directory-of-the-united-states-congress/version/2012-Jan-04/conversion/congress-gov-biographical-directory-of-the-united-state+s-congress-2012-Jan-04.ttl.tgz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://logd.tw.rpi.edu/source/congress-gov/file/biographical-directory-of-the-united-states-congress/version/2012-Jan-04/conversion/congress-gov-biographical-directory-of-the-united-states-congress-2012-Jan-04.void.ttl> ] ;
         foaf:homepage         <http://bioguide.congress.gov/biosearch/biosearch.asp> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/biographical-directory-of-the-united-states-congress> ;
-  void:triples  50
+[ void:target   lod:biographical-directory-of-the-united-states-congress , lod:govtrack ;
+  void:triples  56
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/biographical-directory-of-the-united-states-congress> ;
+[ void:target   lod:biographical-directory-of-the-united-states-congress , lod:geonames-semantic-web ;
   void:triples  50
 ] .

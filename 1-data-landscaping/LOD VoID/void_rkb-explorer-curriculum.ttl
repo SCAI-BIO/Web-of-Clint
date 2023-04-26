@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,47 +6,39 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-nsf> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-nsf ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-acm> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-eprints ;
+  void:triples  10
+] .
+
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-dblp ;
+  void:triples  23
+] .
+
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-southampton ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-acm ;
   void:triples  31
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-southampton> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
-  void:triples  1
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-irit ;
+  void:triples  6
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-courseware> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
-  void:triples  3
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dotac> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-eprints> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-oai> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-citeseer> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-citeseer ;
   void:triples  7
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-laas> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
-  void:triples  11
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-rae2001 ;
+  void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-wiki> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
-  void:triples  35
-] .
-
-<http://lod-cloud.net/dataset/rkb-explorer-curriculum>
+lod:rkb-explorer-curriculum
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
@@ -56,35 +49,43 @@
         void:exampleResource  <http://curriculum.rkbexplorer.com/id/course-4.01> ;
         void:sparqlEndpoint   <http://curriculum.rkbexplorer.com/sparql/> ;
         void:triples          37789 ;
-        dcat:distribution     [ dcat:accessURL  <http://curriculum.rkbexplorer.com/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://curriculum.rkbexplorer.com/models/dump.tgz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://curriculum.rkbexplorer.com/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://curriculum.rkbexplorer.com/models/void.ttl> ] ;
         foaf:homepage         <http://curriculum.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-cordis> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
-  void:triples  8
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-laas ;
+  void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-dblp> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-irit> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
-  void:triples  6
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-kisti> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-rae2001> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-newcastle> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-courseware ;
   void:triples  3
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-ieee> , <http://lod-cloud.net/dataset/rkb-explorer-curriculum> ;
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-wiki ;
+  void:triples  35
+] .
+
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-cordis ;
+  void:triples  8
+] .
+
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-ieee ;
+  void:triples  2
+] .
+
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-newcastle ;
+  void:triples  3
+] .
+
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-kisti ;
+  void:triples  1
+] .
+
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-oai ;
+  void:triples  10
+] .
+
+[ void:target   lod:rkb-explorer-curriculum , lod:rkb-explorer-dotac ;
   void:triples  2
 ] .

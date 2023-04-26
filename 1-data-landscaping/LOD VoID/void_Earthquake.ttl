@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/Face Link> , <http://lod-cloud.net/dataset/Earthquake> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bfo> , <http://lod-cloud.net/dataset/Earthquake> ;
+[ void:target   lod:Earthquake , lod:bioportal-bfo ;
   void:triples  20
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/SocialLink> , <http://lod-cloud.net/dataset/Earthquake> ;
+[ void:target   lod:Earthquake , lod:SocialLink ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/linked-open-vocabularies-lov> , <http://lod-cloud.net/dataset/Earthquake> ;
-  void:triples  80
+[ void:target   lod:Earthquake , <http://lod-cloud.net/dataset/Terrorist+Attack+1> ;
+  void:triples  60
 ] .
 
-<http://lod-cloud.net/dataset/Earthquake>
-        a                    void:Dataset ;
+[ void:target   lod:Earthquake , <http://lod-cloud.net/dataset/Face+Link> ;
+  void:triples  2
+] .
+
+lod:Earthquake  a            void:Dataset ;
         dcterms:description  "Related to emergency response"@en ;
         dcterms:publisher    [ rdfs:label  "sonia" ;
                                foaf:mbox   "soniamehla_6160014@nitkkr.ac.in"
@@ -34,6 +34,6 @@
         void:triples         3000 ;
         foaf:homepage        <https://raw.githubusercontent.com/sonia04021991/Ontology> .
 
-[ void:target   <http://lod-cloud.net/dataset/Terrorist Attack 1> , <http://lod-cloud.net/dataset/Earthquake> ;
-  void:triples  60
+[ void:target   lod:Earthquake , lod:linked-open-vocabularies-lov ;
+  void:triples  80
 ] .

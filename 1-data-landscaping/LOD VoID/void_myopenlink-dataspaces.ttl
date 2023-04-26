@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,49 +6,49 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/enipedia> , <http://lod-cloud.net/dataset/myopenlink-dataspaces> ;
+[ void:target   lod:myopenlink-dataspaces , lod:pub-bielefeld ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lod2-project-wiki> , <http://lod-cloud.net/dataset/myopenlink-dataspaces> ;
-  void:triples  1
+[ void:target   lod:myopenlink-dataspaces , lod:dbpedia-el ;
+  void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/myopenlink-dataspaces> ;
-  void:triples  27
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/openlinksw-dataspaces> , <http://lod-cloud.net/dataset/myopenlink-dataspaces> ;
+[ void:target   lod:myopenlink-dataspaces , lod:openlinksw-dataspaces ;
   void:triples  48
 ] .
 
-<http://lod-cloud.net/dataset/myopenlink-dataspaces>
+lod:myopenlink-dataspaces
         a                     void:Dataset ;
         dcterms:description   "dataspaces at myopenlink.net"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "format-owl" , "format-tsioc" , "dataset-level-metadata" , "non-deref-vocab" , "format-rdf" , "sparql" , "format-gr" , "format-dcterm" , "format-cert" , "usergeneratedcontent" , "lodcloud-diagram-2014-08-30" , "format-rdfs" , "crawledLinkedDataCloud2014" , "format-pingback" , "format-void" , "format-sioc" , "user_generated" , "LinkedDataCrawl2014" , "format-foaf" ;
+        dcterms:subject       "format-owl" , "dataset-level-metadata" , "format-tsioc" , "non-deref-vocab" , "format-rdf" , "sparql" , "format-gr" , "format-dcterm" , "format-cert" , "usergeneratedcontent" , "lodcloud-diagram-2014-08-30" , "format-rdfs" , "crawledLinkedDataCloud2014" , "format-pingback" , "format-void" , "format-sioc" , "user_generated" , "LinkedDataCrawl2014" , "format-foaf" ;
         dcterms:title         "myopenlink dataspaces"@en ;
         void:exampleResource  <http://id.myopenlink.net/describe/?url=http%3A%2F%2Fid.myopenlink.net%2Fdataspace%2Fperson%2Fdemo%2Fabout.rdf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/pub-bielefeld> , <http://lod-cloud.net/dataset/myopenlink-dataspaces> ;
+[ void:target   lod:myopenlink-dataspaces , lod:enipedia ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/myopenlink-dataspaces> ;
-  void:triples  101
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-el> , <http://lod-cloud.net/dataset/myopenlink-dataspaces> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/wordpress> , <http://lod-cloud.net/dataset/myopenlink-dataspaces> ;
+[ void:target   lod:myopenlink-dataspaces , lod:wordpress ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/w3c> , <http://lod-cloud.net/dataset/myopenlink-dataspaces> ;
+[ void:target   lod:myopenlink-dataspaces , lod:dbpedia ;
+  void:triples  27
+] .
+
+[ void:target   lod:myopenlink-dataspaces , lod:w3c ;
   void:triples  4
+] .
+
+[ void:target   lod:myopenlink-dataspaces , lod:personal-homepages ;
+  void:triples  101
+] .
+
+[ void:target   lod:myopenlink-dataspaces , lod:lod2-project-wiki ;
+  void:triples  1
 ] .

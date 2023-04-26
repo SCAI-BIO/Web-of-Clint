@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatascotland-simd-health-rank> ;
-  void:triples  1
-] .
-
-<http://lod-cloud.net/dataset/opendatascotland-simd-health-rank>
+lod:opendatascotland-simd-health-rank
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "sparql" , "dataset-level-metadata" , "format-rdfs" , "provenance-metadata" , "format-cube" , "format-rdf" , "format-dcat" , "format-void" , "crawledLinkedDataCloud2014" , "dump" , "government" , "lodcloud-diagram-2014-08-30" , "LinkedDataCrawl2014" , "format-dcterm" , "license-metadata" ;
+        dcterms:subject       "sparql" , "dataset-level-metadata" , "format-rdfs" , "provenance-metadata" , "format-cube" , "format-rdf" , "format-dcat" , "format-void" , "dump" , "crawledLinkedDataCloud2014" , "government" , "lodcloud-diagram-2014-08-30" , "LinkedDataCrawl2014" , "format-dcterm" , "license-metadata" ;
         dcterms:title         "opendatascotland-simd-health-rank"@en ;
         void:exampleResource  <http://data.opendatascotland.org/data/simd/health-rank/2012/S01000961> ;
         void:triples          "0"^^xsd:int .
+
+[ void:target   lod:opendatascotland-simd-health-rank , lod:statistics-data-gov-uk ;
+  void:triples  1
+] .

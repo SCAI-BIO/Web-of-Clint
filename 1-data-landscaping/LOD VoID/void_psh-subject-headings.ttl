@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/psh-subject-headings> ;
+[ void:target   lod:psh-subject-headings , lod:dbpedia ;
   void:triples  3000
 ] .
 
-<http://lod-cloud.net/dataset/psh-subject-headings>
+lod:psh-subject-headings
         a                     void:Dataset ;
         dcterms:description   "Polythematic Structured Subject Headings System (PSH) is a bilingual (Czech/English) structured subject heading system."@en ;
         dcterms:publisher     [ rdfs:label  "National Technical Library, Czech Republic" ;
                                 foaf:mbox   "jindrich.mynarz@techlib.cz"
                               ] ;
-        dcterms:subject       "czech" , "no-vocab-mappings" , "lod" , "format-xhtml" , "no-provenance-metadata" , "no-license-metadata" , "lld" , "no-proprietary-vocab" , "published-by-producer" , "publications" , "format-rdf" , "library" , "lodcloud-diagram-2011-09-19" , "format-skos" ;
+        dcterms:subject       "czech" , "no-vocab-mappings" , "lod" , "format-xhtml" , "no-license-metadata" , "no-provenance-metadata" , "lld" , "no-proprietary-vocab" , "published-by-producer" , "format-rdf" , "publications" , "library" , "lodcloud-diagram-2011-09-19" , "format-skos" ;
         dcterms:title         "Polythematic Structured Subject Heading System"@en ;
         void:exampleResource  <http://psh.ntkcz.cz/skos/PSH320/> ;
         void:triples          100000 ;
         dcat:distribution     [ dcat:accessURL  <http://pshmanager.techlib.cz/static/skos/psh-skos.zip> ] ;
         foaf:homepage         <http://psh.ntkcz.cz/skos/home/html/en> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/psh-subject-headings> ;
+[ void:target   lod:psh-subject-headings , lod:lcsh ;
   void:triples  3000
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,24 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/vu-wordnet> , <http://lod-cloud.net/dataset/tags2con-delicious> ;
-  void:triples  609
-] .
-
-<http://lod-cloud.net/dataset/tags2con-delicious>
+lod:tags2con-delicious
         a                     void:Dataset ;
         dcterms:description   "The tags2con dataset has been manually created by a group of human annotators that linked del.icio.us tags to their real meaning.\r\n\r\nA subset of a delicious dump has been used to create the tags2con dataset, a set of 500 user-bookmarks pairs have been selected randomly and all the tags used by these pairs have been manually cleaned and disambiguated to WordNet synsets.\r\n\r\nMore user-bookmark are being currently annotated."@en ;
         dcterms:publisher     [ rdfs:label  "Pierre Andrews, Ilya Zaihrayeu, Juan Pane" ;
                                 foaf:mbox   "andrews@disi.unitn.it; ilya@disi.unitn.it; pane@disi.unitn.it"
                               ] ;
-        dcterms:subject       "delicious" , "license-metadata" , "user_generated" , "lodcloud-diagram-2014-08-30" , "semantic" , "folksonomy" , "lod" , "deref-vocab" , "published-by-third-party" , "format-foaf" , "provenance-metadata" , "knowdive" , "tagging" , "lodcloud-diagram-2011-09-19" , "insemtives" , "usergeneratedcontent" , "socialweb" ;
+        dcterms:subject       "delicious" , "license-metadata" , "user_generated" , "lodcloud-diagram-2014-08-30" , "semantic" , "folksonomy" , "lod" , "deref-vocab" , "published-by-third-party" , "format-foaf" , "provenance-metadata" , "knowdive" , "lodcloud-diagram-2011-09-19" , "tagging" , "insemtives" , "usergeneratedcontent" , "socialweb" ;
         dcterms:title         "tags2con delicious"@en ;
         void:exampleResource  <http://disi.unitn.it/~knowdive/dataset/delicious/tag/youth_hostels/1691> ;
         void:triples          85908 ;
-        dcat:distribution     [ dcat:accessURL  <http://disi.unitn.it/~knowdive/dataset/delicious/tags2con> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://disi.unitn.it/~knowdive/dataset/delicious/all/tags> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://disi.unitn.it/~knowdive/dataset/delicious/all/concepts> ] ;
         dcat:distribution     [ dcat:accessURL  <http://disi.unitn.it/~knowdive/dataset/delicious/tags2con_dataset.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://disi.unitn.it/~knowdive/dataset/delicious/all/users> ] ;
         dcat:distribution     [ dcat:accessURL  <http://disi.unitn.it/~knowdive/dataset/delicious/all/bookmarks> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://disi.unitn.it/~knowdive/dataset/delicious/tags2con> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://disi.unitn.it/~knowdive/dataset/delicious/all/users> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://disi.unitn.it/~knowdive/dataset/delicious/all/concepts> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://disi.unitn.it/~knowdive/dataset/delicious/all/tags> ] ;
         foaf:homepage         <http://disi.unitn.it/~knowdive/dataset/delicious/> .
+
+[ void:target   lod:tags2con-delicious , lod:vu-wordnet ;
+  void:triples  609
+] .

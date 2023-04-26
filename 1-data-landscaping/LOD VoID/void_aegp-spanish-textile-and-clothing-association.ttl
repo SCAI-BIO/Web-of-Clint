@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,13 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/aegp-spanish-textile-and-clothing-association> ;
-  void:triples  7547
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/aegp-spanish-textile-and-clothing-association> ;
-  void:triples  191
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/aegp-spanish-textile-and-clothing-association> ;
+[ void:target   lod:aegp-spanish-textile-and-clothing-association , lod:freebase ;
   void:triples  3933
 ] .
 
-<http://lod-cloud.net/dataset/aegp-spanish-textile-and-clothing-association>
+lod:aegp-spanish-textile-and-clothing-association
         a                     void:Dataset ;
-        dcterms:description   "<p>\r\nSemantic catalog of the <a href=\"http://www.agrupaciontextil.org/\">Spanish Textile and Clothing Association (AEGP) companies</a>. AEGP is a voluntary professional national association that promotes the competitiveness of its companies through the promotion, defense and representation of their professional, economic and work interests. It offers specialized services that enhance their position in the environment. The catalog includes 2,500 textile and clothing companies.\r\n</p>\r\n<p>\r\nAEGP works with <a href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. The project includes a faceted-based search engine and enriched contexts. Both are developments by GNOSS.\r\n</p>\r\n\r\n<p>\r\nCatálogo semántico de las empresas de la <a href=\"http://www.agrupaciontextil.org/\">Agrupación Española del Género de Punto (AEGP)</a>. AEGP es una asociación profesional voluntaria de ámbito estatal cuyo objetivo es impulsar la competitividad de las empresas asociadas, a través del fomento, la defensa y la representación de sus intereses laborales, profesionales y económicos y, mediante una oferta de servicios especializados que les permitan mejorar su posición en el entorno. El catálogo recoge 2500 empresas del sector.\r\n</p>\r\n<p>\r\nAEGP trabaja con <a href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. El proyecto incluye un buscador facetado y contextos enriquecidos.\r\n</p>"@en ;
+        dcterms:description   "<p>\r\nSemantic catalog of the <a+href=\"http://www.agrupaciontextil.org/\">Spanish Textile and Clothing Association (AEGP) companies</a>. AEGP is a voluntary professional national association that promotes the competitiveness of its companies through the promotion, defense and representation of their professional, economic and work interests. It offers specialized services that enhance their position in the environment. The catalog includes 2,500 textile and clothing companies.\r\n</p>\r\n<p>\r\nAEGP works with <a+href=\"http://gnoss.com/\">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. The project includes a faceted-based search engine and enriched contexts. Both are developments by GNOSS.\r\n</p>\r\n\r\n<p>\r\nCatálogo semántico de las empresas de la <a+href=\"http://www.agrupaciontextil.org/\">Agrupación Española del Género de Punto (AEGP)</a>. AEGP es una asociación profesional voluntaria de ámbito estatal cuyo objetivo es impulsar la competitividad de las empresas asociadas, a través del fomento, la defensa y la representación de sus intereses laborales, profesionales y económicos y, mediante una oferta de servicios especializados que les permitan mejorar su posición en el entorno. El catálogo recoge 2500 empresas del sector.\r\n</p>\r\n<p>\r\nAEGP trabaja con <a+href=\"http://gnoss.com/\">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. El proyecto incluye un buscador facetado y contextos enriquecidos.\r\n</p>"@en ;
         dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
                                 foaf:mbox   "gnoss@gnoss.com"
                               ] ;
@@ -27,11 +20,19 @@
         dcterms:title         "AEGP, Spanish Textile and Clothing Association"@en ;
         void:exampleResource  <http://red.gnoss.com/en/community/buscaempresas/resource/TRICONOVA-SL/77117998-7718-40ce-8642-b600330465bd?rdf> , <http://red.gnoss.com/en/community/buscaempresas/resource/GRIMARDI-SL/e652d94e-03cf-4814-9757-ea748b14b503?rdf> ;
         void:triples          88645 ;
-        dcat:distribution     [ dcat:accessURL  <http://red.gnoss.com/voidAEGP.n3> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://red.gnoss.com/en/community/buscaempresas/Empresas/tag/s?rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://gnoss.com/gnoss.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://red.gnoss.com/en/community/buscaempresas/Empresas/tag/s?rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://red.gnoss.com/voidAEGP.n3> ] ;
         foaf:homepage         <http://red.gnoss.com/comunidad/buscaempresas> .
 
-[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/aegp-spanish-textile-and-clothing-association> ;
+[ void:target   lod:aegp-spanish-textile-and-clothing-association , lod:nytimes-linked-open-data ;
   void:triples  223
+] .
+
+[ void:target   lod:aegp-spanish-textile-and-clothing-association , lod:dbpedia ;
+  void:triples  191
+] .
+
+[ void:target   lod:aegp-spanish-textile-and-clothing-association , lod:geonames-semantic-web ;
+  void:triples  7547
 ] .

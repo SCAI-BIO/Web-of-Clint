@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/lremap-conf>
-        a                    void:Dataset ;
+lod:lremap-conf  a           void:Dataset ;
         dcterms:description  "LREC2014 and related Workshops"@en ;
         dcterms:publisher    [ rdfs:label  "Riccardo Del Gratta" ;
                                foaf:mbox   "riccardo.delgratta@ilc.cnr.it"
                              ] ;
-        dcterms:subject      "linguistic" , "Linguistic Dataset LOD RDF" , "LOD" ;
+        dcterms:subject      "LOD" , "Linguistic Dataset LOD RDF" , "linguistic" ;
         dcterms:title        "LREC2014 and related Workshops"@en ;
         void:triples         129 ;
         dcat:distribution    [ dcat:accessURL  <http://www.resourcebook.eu/lremap/owl/lremap_conf> ] .

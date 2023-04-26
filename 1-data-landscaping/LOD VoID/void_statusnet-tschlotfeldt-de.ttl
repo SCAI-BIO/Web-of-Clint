@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/statusnet-tschlotfeldt-de>
+[ void:target   lod:statusnet-tschlotfeldt-de , lod:statusnet-doomicile-de ;
+  void:triples  4
+] .
+
+lod:statusnet-tschlotfeldt-de
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://tschlotfeldt.de"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -16,22 +21,18 @@
         void:exampleResource  <http://status.tschlotfeldt.de/ts/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-tschlotfeldt-de> ;
+[ void:target   lod:statusnet-tschlotfeldt-de , lod:statusnet-skilledtests-com ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-doomicile-de> , <http://lod-cloud.net/dataset/statusnet-tschlotfeldt-de> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-tschlotfeldt-de> ;
+[ void:target   lod:statusnet-tschlotfeldt-de , lod:geonames-semantic-web ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-tschlotfeldt-de> ;
+[ void:target   lod:statusnet-tschlotfeldt-de , lod:statusnet-quitter-se ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-tschlotfeldt-de> ;
+[ void:target   lod:statusnet-tschlotfeldt-de , lod:statusnet-status-net ;
   void:triples  1
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,22 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/chembl-rdf>
-        a                    void:Dataset ;
+lod:chembl-rdf  a            void:Dataset ;
         dcterms:description  "ChEMBL is a database of bioactive drug-like small molecules, it contains 2-D structures, calculated properties (e.g. logP, Molecular Weight, Lipinski Parameters, etc.) and abstracted bioactivities (e.g. binding constants, pharmacology and ADMET data). The data is abstracted and curated from the primary scientific literature, and cover a significant fraction of the SAR and discovery of modern drugs.\r\n\r\nIt is available in RDF form through EMBL-EBI's RDF Platform."@en ;
         dcterms:publisher    [ rdfs:label  "EMBL-EBI Chemogenomics Team" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "life_sciences" , "linked data" , "lod" , "lifesciences" , "vocab-mappings" , "cheminformatics" , "bioinformatics" , "rdf" , "lodcloud-diagram-2014-08-30" , "provenance-metadata" , "published-by-producer" ;
+        dcterms:subject      "life_sciences" , "linked data" , "lod" , "lifesciences" , "vocab-mappings" , "cheminformatics" , "bioinformatics" , "lodcloud-diagram-2014-08-30" , "rdf" , "provenance-metadata" , "published-by-producer" ;
         dcterms:title        "ChEMBL RDF"@en ;
         void:sparqlEndpoint  <https://www.ebi.ac.uk/rdf/services/chembl/sparql> ;
         void:triples         425304329 ;
         dcat:distribution    [ dcat:accessURL  <ftp://ftp.ebi.ac.uk/pub/databases/RDF/chembl/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rdf.ebi.ac.uk/dataset/chembl/description> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/identifiers.org> , <http://lod-cloud.net/dataset/chembl-rdf> ;
+[ void:target   lod:chembl-rdf , lod:identifiers.org ;
   void:triples  93186
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/uniprotkb> , <http://lod-cloud.net/dataset/chembl-rdf> ;
+[ void:target   lod:chembl-rdf , lod:uniprotkb ;
   void:triples  6795
 ] .

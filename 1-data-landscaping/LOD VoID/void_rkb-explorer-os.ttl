@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/rkb-explorer-unlocode> , <http://lod-cloud.net/dataset/rkb-explorer-os> ;
-  void:triples  7
+[ void:target   lod:rkb-explorer-os , lod:dbpedia ;
+  void:triples  156
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/opencyc> , <http://lod-cloud.net/dataset/rkb-explorer-os> ;
-  void:triples  3
-] .
-
-<http://lod-cloud.net/dataset/rkb-explorer-os>
-        a                     void:Dataset ;
+lod:rkb-explorer-os  a        void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "Hugh Glaser" ;
                                 foaf:mbox   "hg@ecs.soton.ac.uk"
@@ -24,11 +20,15 @@
         void:exampleResource  <http://os.rkbexplorer.com/id/osr7000000000017765> ;
         void:sparqlEndpoint   <http://os.rkbexplorer.com/sparql/> ;
         void:triples          161227 ;
-        dcat:distribution     [ dcat:accessURL  <http://os.rkbexplorer.com/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://os.rkbexplorer.com/models/dump.tgz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://os.rkbexplorer.com/models/void.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://os.rkbexplorer.com/sitemap.xml> ] ;
         foaf:homepage         <http://os.rkbexplorer.com> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rkb-explorer-os> ;
-  void:triples  156
+[ void:target   lod:rkb-explorer-os , lod:rkb-explorer-unlocode ;
+  void:triples  7
+] .
+
+[ void:target   lod:rkb-explorer-os , lod:opencyc ;
+  void:triples  3
 ] .

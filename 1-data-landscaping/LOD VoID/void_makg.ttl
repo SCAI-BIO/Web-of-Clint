@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/makg>
-        a                    void:Dataset ;
+lod:makg  a                  void:Dataset ;
         dcterms:description  "We provide the Microsoft Academic Knowledge Graph (MAKG), a large RDF data set with over eight billion triples with information about scientific publications and related entities, such as authors, institutions, journals, and fields of study. The data set is based on the Microsoft Academic Graph and licensed under the Open Data Attributions license. Furthermore, we provide entity embeddings for all 210M represented scientific papers. "@en ;
         dcterms:publisher    [ rdfs:label  "Michael Färber" ;
                                foaf:mbox   "michael.faerber@kit.edu"

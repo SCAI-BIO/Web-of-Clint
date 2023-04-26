@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,22 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/PGxLOD> ;
-  void:triples  26144
+[ void:target   lod:PGxLOD , lod:bio2rdf-pharmgkb ;
+  void:triples  69015
 ] .
 
-<http://lod-cloud.net/dataset/PGxLOD>
-        a                     void:Dataset ;
+lod:PGxLOD  a                 void:Dataset ;
         dcterms:description   "PGxLOD groups data related to pharmacogenomics (PGx) from various sources such as PharmGKB, DrugBank, ClinVar, DisGeNET, but also the scientific literature. Central elements of PGxLOD are pharmacogenomic relationships, which are n-ary relationships linking drugs, genetic factors and drug-response phenotypes. Such relationships state the atomic elements of knowledge in PGx, i.e., a patient with a specified genetic factor and being treated with a specified drug is likely to experience the specified drug-response phenotypes (such as an adverse effect, no effect, etc.). PGxLOD is developed in the ANR PractiKPharma project (http://practikpharma.loria.fr/)."@en ;
         dcterms:publisher     [ rdfs:label  "PGxLOD staff" ;
                                 foaf:mbox   "pgxlod-contact@inria.fr"
                               ] ;
-        dcterms:subject       "drug response" , "PGx" , "pharmacogenomics" , "metadata" , "lod" , "drug" , "gene" , "life sciences" , "genetic factor" , "ontology" , "pharmacogenetics" , "life_sciences" , "phenotype" , "provenance" , "linked data" ;
+        dcterms:subject       "drug response" , "PGx" , "pharmacogenomics" , "metadata" , "lod" , "drug" , "gene" , "life sciences" , "ontology" , "genetic factor" , "pharmacogenetics" , "phenotype" , "life_sciences" , "provenance" , "linked data" ;
         dcterms:title         "PGxLOD"@en ;
         void:exampleResource  <http://pgxlod.loria.fr/resource/literature_PGxCorpusGold_v2_relation_1> ;
         void:sparqlEndpoint   <https://pgxlod.loria.fr/sparql> ;
         void:triples          5262721 ;
         foaf:homepage         <https://pgxlod.loria.fr/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pharmgkb> , <http://lod-cloud.net/dataset/PGxLOD> ;
-  void:triples  69015
+[ void:target   lod:PGxLOD , lod:bio2rdf-ncbigene ;
+  void:triples  26144
 ] .

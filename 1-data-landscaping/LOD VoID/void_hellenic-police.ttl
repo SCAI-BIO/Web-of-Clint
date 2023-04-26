@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/hellenic-police> ;
-  void:triples  43
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/umbel> , <http://lod-cloud.net/dataset/hellenic-police> ;
+[ void:target   lod:hellenic-police , lod:umbel ;
   void:triples  11115
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/kallikratis-municipalities> , <http://lod-cloud.net/dataset/hellenic-police> ;
-  void:triples  26
+[ void:target   lod:hellenic-police , lod:linked-eurostat ;
+  void:triples  15
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/hellenic-police> ;
+[ void:target   lod:hellenic-police , lod:enakting-crime ;
+  void:triples  20250
+] .
+
+[ void:target   lod:hellenic-police , lod:freebase ;
   void:triples  11116
 ] .
 
-<http://lod-cloud.net/dataset/hellenic-police>
-        a                     void:Dataset ;
+lod:hellenic-police  a        void:Dataset ;
         dcterms:description   "The Hellenic Police project encompasses efforts to extract valuable information from Greek Open Data originating from the Ministry of Public Order & Citizen Protection and in particular from the Hellenic Police Department. It involves mainly crime incidents and aims to exploit these in the best possible manner so as to form meaningful scenarios. The primary goal is to provide applications and services that would reveal potentials for the department to improve upon its management procedures, have economic benefits from cost reductions and improvements in its crime prevention efficiency.\r\nA secondary but equally important goal is to encourage additional contributions of Greek Open Data as well as of innovative applications and services based on the latter."@en ;
         dcterms:publisher     [ rdfs:label  "IOANNIS PARAPONTIS" ;
                                 foaf:mbox   "PARAPONTISJ@GMAIL.COM"
@@ -34,35 +34,35 @@
         void:sparqlEndpoint   <http://greek-lod.auth.gr/police/sparql> ;
         void:triples          145368 ;
         dcat:distribution     [ dcat:accessURL  <http://greek-lod.auth.gr/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://greek-lod.auth.gr/Police/void.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://greek-lod.auth.gr/police> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://greek-lod.auth.gr/Police/void.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://greek-lod.auth.gr/Police/police.rdf.gz> ] ;
         foaf:homepage         <http://greek-lod.math.auth.gr/police/> .
 
-[ void:target   <http://lod-cloud.net/dataset/fu-berlin-eurostat> , <http://lod-cloud.net/dataset/hellenic-police> ;
+[ void:target   lod:hellenic-police , lod:diavgeia ;
+  void:triples  60
+] .
+
+[ void:target   lod:hellenic-police , lod:kallikratis-municipalities ;
+  void:triples  26
+] .
+
+[ void:target   lod:hellenic-police , lod:fu-berlin-eurostat ;
   void:triples  15
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/linked-eurostat> , <http://lod-cloud.net/dataset/hellenic-police> ;
+[ void:target   lod:hellenic-police , lod:nuts-geovocab ;
   void:triples  15
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/enakting-crime> , <http://lod-cloud.net/dataset/hellenic-police> ;
-  void:triples  20250
+[ void:target   lod:hellenic-police , lod:geonames-semantic-web ;
+  void:triples  43
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/hellenic-police> ;
-  void:triples  21916
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-el> , <http://lod-cloud.net/dataset/hellenic-police> ;
+[ void:target   lod:hellenic-police , lod:dbpedia-el ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/nuts-geovocab> , <http://lod-cloud.net/dataset/hellenic-police> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/diavgeia> , <http://lod-cloud.net/dataset/hellenic-police> ;
-  void:triples  60
+[ void:target   lod:hellenic-police , lod:dbpedia ;
+  void:triples  21916
 ] .

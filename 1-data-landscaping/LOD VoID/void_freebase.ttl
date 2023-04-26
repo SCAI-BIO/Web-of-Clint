@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,40 +6,39 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/freebase>
-        a                     void:Dataset ;
+[ void:target   lod:freebase , lod:sec-rdfabout ;
+  void:triples  120626
+] .
+
+[ void:target   lod:freebase , lod:bbc-music ;
+  void:triples  350110
+] .
+
+lod:freebase  a               void:Dataset ;
         dcterms:description   "### Description\r\n\r\n\"Freebase is an open database of the world?s information. It is built by the community and for the community?free for anyone to query, contribute to, built applications on top of, or integrate into their websites.\"\r\n\r\n### Openness: OPEN\r\n\r\n  * License: CC-BY for data.  Variety of open source licenses (or PD) for text blurbs & images.\r\n  * Access: API + bulk.<http://www.freebase.com/view/allDomains>\r\n    * bulk: yes. <http://download.freebase.com/>\r\n    * api: yes. <http://www.freebase.com/view/freebase/api>\r\n\r\nTriple count and link statistics provided by Freebase contributor Tom Morris\r\n\r\n### RDF data and URIs\r\n\r\nFreebase has [an RDF service](http://rdf.freebase.com/) that exposes URIs and generates RDF descriptions for all Freebase topics."@en ;
         dcterms:publisher     [ rdfs:label  "Google" ;
                                 foaf:mbox   "freebase-discuss@freebase.com"
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2014-08-30" , "broken_link" , "lod" , "lodcloud-diagram-2011-09-19" , "deref-vocab" , "access-www" , "provenance-metadata" , "lld" , "crossdomain" , "published-by-producer" , "access-api" , "format-dcterms" , "cross_domain" , "rdf" , "format-rdf" , "size-large" , "license-metadata" , "access-bulk" , "encylopaedia" , "no-vocab-mappings" ;
+        dcterms:subject       "broken_link" , "lodcloud-diagram-2014-08-30" , "lod" , "lodcloud-diagram-2011-09-19" , "deref-vocab" , "access-www" , "provenance-metadata" , "lld" , "crossdomain" , "access-api" , "published-by-producer" , "format-dcterms" , "format-rdf" , "cross_domain" , "rdf" , "size-large" , "license-metadata" , "access-bulk" , "encylopaedia" , "no-vocab-mappings" ;
         dcterms:title         "Freebase"@en ;
         void:exampleResource  <http://rdf.freebase.com/ns/en.blade_runner> ;
         void:triples          337203427 ;
-        dcat:distribution     [ dcat:accessURL  <http://download.freebase.com/datadumps/latest/freebase-datadump-quadruples.tsv.bz2> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.freebase.com/datadumps/latest/browse/> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://freebase.com/api/service/search> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.freebase.com/datadumps/latest/freebase-simple-topic-dump.tsv.bz2> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.freebase.com/datadumps/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.freebase.com/datadumps/latest/freebase-datadump-tsv.tar.bz2> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.freebase.com/datadumps/latest/browse/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.freebase.com/datadumps/latest/freebase-datadump-quadruples.tsv.bz2> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.freebase.com/datadumps/latest/freebase-simple-topic-dump.tsv.bz2> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://freebase.com/api/service/search> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.freebase.com/datadumps/> ] ;
         foaf:homepage         <http://freebase.com/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bbc-music> , <http://lod-cloud.net/dataset/freebase> ;
-  void:triples  350110
+[ void:target   lod:freebase , lod:nytimes-linked-open-data ;
+  void:triples  9930
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geospecies> , <http://lod-cloud.net/dataset/freebase> ;
+[ void:target   lod:freebase , lod:geospecies ;
   void:triples  100000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/freebase> ;
+[ void:target   lod:freebase , lod:dbpedia ;
   void:triples  3348530
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/sec-rdfabout> , <http://lod-cloud.net/dataset/freebase> ;
-  void:triples  120626
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/freebase> ;
-  void:triples  9930
 ] .

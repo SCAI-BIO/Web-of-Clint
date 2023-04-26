@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,25 +6,25 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/talis-openlibrary>
+lod:talis-openlibrary
         a                    void:Dataset ;
         dcterms:description  "Modeled using the JSON data dumps from the Open Library (http://openlibrary.org/data/ol_dump_latest.txt.gz).  Provides a SPARQL endpoint and OpenSearch interface (with RSS 1.0 output).\r\n\r\nThe data model is slightly different than that of the Open Library's native RDF output:  it is designed to link out to more resources in the LOD Cloud. "@en ;
         dcterms:publisher    [ rdfs:label  "Open Library" ;
                                foaf:mbox   "abc@gmail.com"
                              ] ;
-        dcterms:subject      "no-vocab-mappings" , "no-provenance-metadata" , "format-foaf" , "format-bibo" , "no-license-metadata" , "format-skos" , "format-dc" , "format-frbr" , "cross_domain" , "lld" , "license-metadata" , "lodcloud-diagram-2011-09-19" , "broken_link" , "published-by-third-party" , "library" , "publications" , "no-proprietary-vocab" , "rdf" ;
+        dcterms:subject      "no-vocab-mappings" , "no-provenance-metadata" , "format-foaf" , "format-bibo" , "no-license-metadata" , "format-skos" , "format-dc" , "format-frbr" , "license-metadata" , "lld" , "cross_domain" , "broken_link" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "library" , "publications" , "no-proprietary-vocab" , "rdf" ;
         dcterms:title        "Open Library data mirror in the Talis Platform"@en ;
         void:triples         541396055 ;
         foaf:homepage        <http://api.talis.com/stores/openlibrary> .
 
-[ void:target   <http://lod-cloud.net/dataset/marc-codes> , <http://lod-cloud.net/dataset/talis-openlibrary> ;
-  void:triples  30290075
+[ void:target   lod:talis-openlibrary , lod:linkedlccn ;
+  void:triples  8645387
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/talis-openlibrary> ;
+[ void:target   lod:talis-openlibrary , lod:dbpedia ;
   void:triples  1633
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/linkedlccn> , <http://lod-cloud.net/dataset/talis-openlibrary> ;
-  void:triples  8645387
+[ void:target   lod:talis-openlibrary , lod:marc-codes ;
+  void:triples  30290075
 ] .

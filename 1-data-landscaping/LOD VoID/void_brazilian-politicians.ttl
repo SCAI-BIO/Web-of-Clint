@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/brazilian-politicians>
+lod:brazilian-politicians
         a                     void:Dataset ;
         dcterms:description   "Linked Data from brazilian politicians including personal data, election data, disclosure of assets, parliamentary data, leaderships, missions, mandates, clearances, speeches, commissions, proposals and legal occurrences were collected."@en ;
         dcterms:publisher     [ rdfs:label  "Lucas Araújo; Jairo Francisco de Souza" ;
                                 foaf:mbox   "jairo.souza@ufjf.edu.br"
                               ] ;
-        dcterms:subject       "ligado" , "government" , "format-rdf" , "data" , "format-skos" , "format-xhtml" , "format-foaf" , "published-by-third-party" , "vocab-mappings" , "format-dc" , "linked" , "linked-open-data" , "lod" , "provenance-metadata" , "no-license-metadata" , "brazilian" , "politics" , "politicians" , "opendata" , "nos" , "linked-data" , "open-data" , "no-deref-vocab" , "politicos" , "linkeddata" ;
+        dcterms:subject       "ligado" , "government" , "data" , "format-rdf" , "format-skos" , "format-xhtml" , "format-foaf" , "published-by-third-party" , "linked" , "format-dc" , "vocab-mappings" , "linked-open-data" , "lod" , "provenance-metadata" , "no-license-metadata" , "brazilian" , "politics" , "politicians" , "linked-data" , "nos" , "opendata" , "open-data" , "no-deref-vocab" , "politicos" , "linkeddata" ;
         dcterms:title         "Brazilian Politicians"@en ;
         void:exampleResource  <http://ligadonospoliticos.com.br/politico/1/html/> , <http://ligadonospoliticos.com.br/politico/1/rdf/> ;
         void:triples          1700000 ;
         dcat:distribution     [ dcat:accessURL  <http://ligadonospoliticos.com.br/downloads/politico.csv.zip> ] ;
         foaf:homepage         <http://www.ligadonospoliticos.com.br> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/brazilian-politicians> ;
+[ void:target   lod:brazilian-politicians , lod:dbpedia ;
   void:triples  1500
 ] .

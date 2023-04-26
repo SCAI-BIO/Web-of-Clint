@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/freeyork-org> ;
+[ void:target   lod:freeyork-org , lod:freebase ;
   void:triples  4486
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/yago> , <http://lod-cloud.net/dataset/freeyork-org> ;
+[ void:target   lod:freeyork-org , lod:yago ;
   void:triples  2993
 ] .
 
-<http://lod-cloud.net/dataset/freeyork-org>
-        a                     void:Dataset ;
+[ void:target   lod:freeyork-org , lod:wikidata ;
+  void:triples  10
+] .
+
+lod:freeyork-org  a           void:Dataset ;
         dcterms:description   "Freeyork dataset, built with WordLift from the website https://freeyork.org/"@en ;
         dcterms:publisher     [ rdfs:label  "WordLift Team" ;
                                 foaf:mbox   "andrea@wordlift.io"
@@ -26,14 +30,10 @@
         void:triples          "118183"^^xsd:int ;
         foaf:homepage         <https://freeyork.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/freeyork-org> ;
+[ void:target   lod:freeyork-org , lod:geonames-semantic-web ;
   void:triples  858
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/freeyork-org> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/freeyork-org> ;
+[ void:target   lod:freeyork-org , lod:dbpedia ;
   void:triples  4757
 ] .

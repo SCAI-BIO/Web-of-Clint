@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/lcsubjects>
-        a                    void:Dataset ;
+lod:lcsubjects  a            void:Dataset ;
         dcterms:description  "An alternative to http://id.loc.gov/:  includes a SPARQL endpoint, faceted search"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
@@ -18,22 +18,22 @@
         dcat:distribution    [ dcat:accessURL  <http://api.talis.com/stores/lcsh-info/items> ] ;
         foaf:homepage        <http://lcsubjects.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/marc-codes> , <http://lod-cloud.net/dataset/lcsubjects> ;
-  void:triples  622
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/lcsubjects> ;
-  void:triples  221
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/lcsubjects> ;
+[ void:target   lod:lcsubjects , lod:lcsh ;
   void:triples  4622158
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/lcsubjects> ;
-  void:triples  63
+[ void:target   lod:lcsubjects , lod:marc-codes ;
+  void:triples  622
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/stitch-rameau> , <http://lod-cloud.net/dataset/lcsubjects> ;
+[ void:target   lod:lcsubjects , lod:stitch-rameau ;
   void:triples  108836
+] .
+
+[ void:target   lod:lcsubjects , lod:dbpedia ;
+  void:triples  221
+] .
+
+[ void:target   lod:lcsubjects , lod:geonames ;
+  void:triples  63
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/googleart-wrapper> ;
+[ void:target   lod:googleart-wrapper , lod:dbpedia ;
   void:triples  1632
 ] .
 
-<http://lod-cloud.net/dataset/googleart-wrapper>
+lod:googleart-wrapper
         a                     void:Dataset ;
         dcterms:description   "The GoogleArtProject is a place to explore museums from around the world, seeing and learning about the artwork they contain. It is a cool service, offering very high res images of the paintings, but not providing a machine-friendly access to the data shown. This server provides a wrapper around the HTML page for paintings and museums. It exposes part of the information using FOAF and Dublin Core ontologies and links the resource to DBpedia"@en ;
         dcterms:publisher     [ rdfs:label  "Christophe Guéret" ;
                                 foaf:mbox   "c.d.m.gueret@vu.nl"
                               ] ;
-        dcterms:subject       "format-foaf" , "no-provenance-metadata" , "no-proprietary-vocab" , "published-by-third-party" , "opendatachallenge" , "art" , "format-dbp" , "latc" , "lod" , "format-rdf" , "crossdomain" , "no-license-metadata" , "format-dc" ;
+        dcterms:subject       "format-foaf" , "no-provenance-metadata" , "no-proprietary-vocab" , "opendatachallenge" , "published-by-third-party" , "art" , "format-dbp" , "latc" , "lod" , "format-rdf" , "crossdomain" , "no-license-metadata" , "format-dc" ;
         dcterms:title         "GoogleArt wrapper"@en ;
         void:dataDump         <https://github.com/downloads/cgueret/GoogleArt-wrapper/gartwrapper.nq.gz> ;
-        void:exampleResource  <http://linkeddata.few.vu.nl/googleart/museums/rijks> , <http://linkeddata.few.vu.nl/googleart/museums/uffizi/the-birth-of-venus> , <http://linkeddata.few.vu.nl/googleart/museums/rijks/night-watch> , <http://linkeddata.few.vu.nl/googleart/museums/uffizi> ;
+        void:exampleResource  <http://linkeddata.few.vu.nl/googleart/museums/rijks> , <http://linkeddata.few.vu.nl/googleart/museums/rijks/night-watch> , <http://linkeddata.few.vu.nl/googleart/museums/uffizi/the-birth-of-venus> , <http://linkeddata.few.vu.nl/googleart/museums/uffizi> ;
         void:triples          37717 ;
         foaf:homepage         <http://linkeddata.few.vu.nl/googleart/> .

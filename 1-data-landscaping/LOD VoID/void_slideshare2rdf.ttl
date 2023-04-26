@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/slideshare2rdf>
-        a                     void:Dataset ;
+lod:slideshare2rdf  a         void:Dataset ;
         dcterms:description   "### Description\r\n\r\nAn API for [Slideshare.net](http://slideshare.net/), it provides RDF metadata for the presentations uploaded to Slideshare. The RDF representation uses the SIOC ontology.\r\n\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "Paul Groth" ;
                                 foaf:mbox   "pgroth@few.vu.nl"
                               ] ;
-        dcterms:subject       "slides" , "format-dc" , "usergeneratedcontent" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "format-rdf" , "lodcloud.nolinks" , "metadata" , "lod" , "format-sioc" , "presentations" , "api" ;
+        dcterms:subject       "slides" , "format-dc" , "usergeneratedcontent" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "format-rdf" , "lodcloud.nolinks" , "metadata" , "format-sioc" , "lod" , "presentations" , "api" ;
         dcterms:title         "Slideshare2RDF Server"@en ;
         void:exampleResource  <http://linkeddata.few.vu.nl/slideshare/mhelmke/presentation-zen> ;
         void:triples          10000000 ;

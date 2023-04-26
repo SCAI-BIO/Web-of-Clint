@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/research-data-gov-uk> , <http://lod-cloud.net/dataset/business-data-gov-uk> ;
+[ void:target   lod:business-data-gov-uk , lod:research-data-gov-uk ;
   void:triples  1415
 ] .
 
-<http://lod-cloud.net/dataset/business-data-gov-uk>
+lod:business-data-gov-uk
         a                     void:Dataset ;
         dcterms:description   "Business-related data from data.gov.uk:\r\n\r\n* [Namespace for companies](http://business.data.gov.uk/doc/company); this appears to have entries for all companies registered at Companies House.\r\n\r\nPart of package:data-gov-uk."@en ;
         dcterms:publisher     [ rdfs:label  "Data.gov.uk Team" ;
@@ -21,6 +22,6 @@
         void:exampleResource  <http://business.data.gov.uk/id/company/1003142> ;
         void:sparqlEndpoint   <http://services.data.gov.uk/business/sparql> ;
         void:triples          15237 ;
-        dcat:distribution     [ dcat:accessURL  <http://services.data.gov.uk/business/search> ] ;
         dcat:distribution     [ dcat:accessURL  <http://business.data.gov.uk/doc/company> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://services.data.gov.uk/business/search> ] ;
         foaf:homepage         <http://business.data.gov.uk/> .

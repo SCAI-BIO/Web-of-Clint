@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/sears> ;
+[ void:target   lod:sears , lod:dbpedia ;
   void:triples  100
 ] .
 
-<http://lod-cloud.net/dataset/sears>
-        a                     void:Dataset ;
+lod:sears  a                  void:Dataset ;
         dcterms:description   "Sears (sears.com) has GoodRelations markup in all > 15,000,000 item pages"@en ;
         dcterms:publisher     [ rdfs:label  "Sears Brands, LLC" ;
                                 foaf:mbox   ""

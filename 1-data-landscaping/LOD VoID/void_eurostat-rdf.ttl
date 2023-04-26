@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,32 +6,31 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/telegraphis> , <http://lod-cloud.net/dataset/eurostat-rdf> ;
-  void:triples  40
-] .
-
-<http://lod-cloud.net/dataset/eurostat-rdf>
-        a                     void:Dataset ;
+lod:eurostat-rdf  a           void:Dataset ;
         dcterms:description   "Three RDF datasets:\r\n\r\n* Eurostat country codes\r\n* Eurostat NUTS statistical regions (2008)\r\n* Database of Eurostat-related legal acts\r\n\r\nEach is available as an RDF dump. URIs resolve directly into the RDF dump. The country codes are linked to Geonames, to package:fu-berlin-eurostat, and to Telegraphis (40 links each)."@en ;
         dcterms:publisher     [ rdfs:label  "Søren Roug (EAA)" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "nuts" , "no-vocab-mappings" , "government" , "geographic" , "statistics" , "europe" , "format-rdf" , "lod" , "eurostat" , "published-by-producer" , "license-metadata" , "deref-vocab" , "provenance-metadata" , "format-cc" , "eu" , "law" ;
+        dcterms:subject       "nuts" , "government" , "no-vocab-mappings" , "geographic" , "statistics" , "europe" , "format-rdf" , "eurostat" , "lod" , "published-by-producer" , "license-metadata" , "deref-vocab" , "provenance-metadata" , "eu" , "format-cc" , "law" ;
         dcterms:title         "Eurostat RDF datasets"@en ;
         void:exampleResource  <http://ec.europa.eu/eurostat/ramon/rdfdata/nuts2008.rdf#IE01> , <http://ec.europa.eu/eurostat/ramon/rdfdata/estat-legis.rdf#L62450> , <http://ec.europa.eu/eurostat/ramon/rdfdata/countries.rdf#IE> ;
         void:triples          68000 ;
-        dcat:distribution     [ dcat:accessURL  <http://ec.europa.eu/eurostat/ramon/rdfdata/void.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://ec.europa.eu/eurostat/ramon/rdfdata/nace_r2.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://ec.europa.eu/eurostat/ramon/rdfdata/countries.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://ec.europa.eu/eurostat/ramon/rdfdata/nuts2008.rdf> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://ec.europa.eu/eurostat/ramon/rdfdata/estat-legis.rdf> ] ;
         dcat:distribution     [ dcat:accessURL  <http://ec.europa.eu/eurostat/ramon/rdfdata/nace_r2_desc.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ec.europa.eu/eurostat/ramon/rdfdata/void.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ec.europa.eu/eurostat/ramon/rdfdata/estat-legis.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://ec.europa.eu/eurostat/ramon/rdfdata/nuts2008.rdf> ] ;
         foaf:homepage         <http://ec.europa.eu/eurostat/ramon/rdfdata/> .
 
-[ void:target   <http://lod-cloud.net/dataset/fu-berlin-eurostat> , <http://lod-cloud.net/dataset/eurostat-rdf> ;
+[ void:target   lod:eurostat-rdf , lod:fu-berlin-eurostat ;
   void:triples  40
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/eurostat-rdf> ;
+[ void:target   lod:eurostat-rdf , lod:telegraphis ;
+  void:triples  40
+] .
+
+[ void:target   lod:eurostat-rdf , lod:geonames-semantic-web ;
   void:triples  40
 ] .

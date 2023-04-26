@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/iate-rdf>
-        a                    void:Dataset ;
+lod:iate-rdf  a              void:Dataset ;
         dcterms:description  "The IATE Dataset in RDF, converted from TBX"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "linguistics" , "lexicon" ;
+        dcterms:subject      "lexicon" , "linguistics" ;
         dcterms:title        "IATE RDF"@en ;
         void:triples         8081142 ;
         dcat:distribution    [ dcat:accessURL  <http://tbx2rdf.lider-project.eu/data/iate/iate.nt.gz> ] .

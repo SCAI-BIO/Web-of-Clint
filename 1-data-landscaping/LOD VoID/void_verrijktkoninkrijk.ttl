@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/gemeenschappelijke-thesaurus-audiovisuele-archieven> , <http://lod-cloud.net/dataset/verrijktkoninkrijk> ;
+[ void:target   lod:verrijktkoninkrijk , lod:geonames ;
+  void:triples  487
+] .
+
+[ void:target   lod:verrijktkoninkrijk , lod:gemeenschappelijke-thesaurus-audiovisuele-archieven ;
   void:triples  1589
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/verrijktkoninkrijk> ;
-  void:triples  3320
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/cornetto> , <http://lod-cloud.net/dataset/verrijktkoninkrijk> ;
+[ void:target   lod:verrijktkoninkrijk , lod:cornetto ;
   void:triples  250
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia-nl> , <http://lod-cloud.net/dataset/verrijktkoninkrijk> ;
-  void:triples  13160
-] .
-
-<http://lod-cloud.net/dataset/verrijktkoninkrijk>
+lod:verrijktkoninkrijk
         a                     void:Dataset ;
         dcterms:description   "The Verrijkt Koninkrijk Data concerns Dr Loe de Jong?s Het Koninkrijk der Nederlanden in de Tweede Wereldoorlog and was based on the PDFs as provided by NIOD at http://www.niod.knaw.nl/koninkrijk/ . The books have been OCRed and transformed to structured XML by researchers from the Universiteit van Amsterdam. This data is available through www.loedejongdigitaal.nl.\r\n\r\nThis dataset contains a data dump of the Verrijkt Koninkrijk semantic layer (live at http://semanticweb.cs.vu.nl/verrijktkoninkrijk/ ). The files are in SKOS (www.w3.org/2004/02/skos/)\r\nThere are 15 main files/named graphs that make up 3 categories of data:\r\n1. The back of the book index in SKOS format, plus schema and SKOS linksto internal and external datasets\r\n2. The named entities index into the book in SKOS format, plus schema and SKOS links to internal and external datasets\r\n3. The NIOD thesaurus in SKOS format, plus the hierarchy, used for links from Back of the Book and Named Entity links."@en ;
         dcterms:publisher     [ rdfs:label  "Victor de Boer" ;
@@ -35,10 +32,14 @@
         dcat:distribution     [ dcat:accessURL  <http://semanticweb.cs.vu.nl/verrijktkoninkrijk/browse/list_graphs> ] ;
         foaf:homepage         <http://semanticweb.cs.vu.nl/verrijktkoninkrijk/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/verrijktkoninkrijk> ;
-  void:triples  487
+[ void:target   lod:verrijktkoninkrijk , lod:dbpedia ;
+  void:triples  3320
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/getty-aat> , <http://lod-cloud.net/dataset/verrijktkoninkrijk> ;
+[ void:target   lod:verrijktkoninkrijk , lod:dbpedia-nl ;
+  void:triples  13160
+] .
+
+[ void:target   lod:verrijktkoninkrijk , lod:getty-aat ;
   void:triples  159
 ] .

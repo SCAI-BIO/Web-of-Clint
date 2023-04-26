@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,22 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/data-gov-ie>
-        a                     void:Dataset ;
+lod:data-gov-ie  a            void:Dataset ;
         dcterms:description   "Irish Government Data. Includes:\r\n\r\n* Irish Census Data from Central Statistics Office\r\n* Service Indicators of Ireland"@en ;
         dcterms:publisher     [ rdfs:label  "Sarven Capadisli" ;
                                 foaf:mbox   "sarven.capadisli@deri.org"
                               ] ;
-        dcterms:subject       "published-by-third-party" , "format-rdf" , "no-license-metadata" , "format-dc" , "provenance-metadata" , "government" , "void-sparql-endpoint" , "lod" , "lodcloud-diagram-2011-09-19" , "format-skos" , "format-qb" , "format-sdmx" , "format-geo" , "deref-vocab" ;
+        dcterms:subject       "format-rdf" , "published-by-third-party" , "format-dc" , "no-license-metadata" , "government" , "provenance-metadata" , "void-sparql-endpoint" , "lod" , "lodcloud-diagram-2011-09-19" , "format-skos" , "format-qb" , "format-sdmx" , "format-geo" , "deref-vocab" ;
         dcterms:title         "DataGovIE - Irish Government Data"@en ;
         void:exampleResource  <http://geo.data-gov.ie/city/galway.rdf> ;
         void:sparqlEndpoint   <http://data-gov.ie/sparql> ;
         void:triples          12390973 ;
         dcat:distribution     [ dcat:accessURL  <http://data-gov.ie/data/ie-linked-data.tar.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data-gov.ie/void.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data-gov.ie/data/ie-linked-data.tar.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data-gov.ie/data/cso-dataset.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data-gov.ie/data/ie-linked-data.tar.gz> ] ;
         foaf:homepage         <http://data-gov.ie/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-gov-ie> ;
+[ void:target   lod:data-gov-ie , lod:dbpedia ;
   void:triples  70
 ] .

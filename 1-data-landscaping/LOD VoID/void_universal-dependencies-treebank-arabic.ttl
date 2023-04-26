@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/universal-dependencies-treebank-arabic> ;
-  void:triples  72
-] .
-
-<http://lod-cloud.net/dataset/universal-dependencies-treebank-arabic>
+lod:universal-dependencies-treebank-arabic
         a                    void:Dataset ;
         dcterms:description  "Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).\r\n\r\nThis dataset refers to UD's Arabic treebank.\r\n"@en ;
         dcterms:publisher    [ rdfs:label  "Zeman, Daniel; Žabokrtský, Zdeněk; Saleh, Shadi" ;
@@ -21,3 +18,7 @@
         dcat:distribution    [ dcat:accessURL  <https://github.com/UniversalDependencies/UD_Arabic/archive/master.zip> ] ;
         dcat:distribution    [ dcat:accessURL  <https://datahub.ckan.io/dataset/4a059399-2314-4225-96e4-d42b991ce1ff/resource/0aee5d8a-de54-4ec8-b1a1-3711175cfee1/download/udarabic.rdf> ] ;
         foaf:homepage        <https://github.com/UniversalDependencies/UD_Arabic> .
+
+[ void:target   lod:universal-dependencies-treebank-arabic , lod:olia ;
+  void:triples  72
+] .

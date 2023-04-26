@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,18 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/scoreboard>
-        a                    void:Dataset ;
+lod:scoreboard  a            void:Dataset ;
         dcterms:description  "European Commission services have selected around 60 indicators, divided into thematic groups, which illustrate some key dimensions of the European information society."@en ;
         dcterms:publisher    [ rdfs:label  "Michael Martin" ;
                                foaf:mbox   "martin@informatik.uni-leipzig.de"
                              ] ;
-        dcterms:subject      "indicators" , "scoreboard" , "statistics" , "Information society" , "European Commission" , "published-by-third-party" , "government" , "DataCube" , "format-qb" , "ICT" , "european" , "europe" , "Digital Agenda" , "Internet usage" ;
+        dcterms:subject      "indicators" , "scoreboard" , "statistics" , "Information society" , "European Commission" , "published-by-third-party" , "government" , "DataCube" , "format-qb" , "ICT" , "Internet usage" , "Digital Agenda" , "europe" , "european" ;
         dcterms:title        "The Digital Agenda Scoreboard of the European Commission"@en ;
         void:triples         127081 ;
-        dcat:distribution    [ dcat:accessURL  <http://scoreboard.lod2.eu/data/indicators.sql> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://scoreboard.lod2.eu/data/data.sql> ] ;
         dcat:distribution    [ dcat:accessURL  <http://scoreboard.lod2.eu/data/data.csv> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://scoreboard.lod2.eu/data/scoreboardDataCube.rdf> ] ;
         dcat:distribution    [ dcat:accessURL  <http://ec.europa.eu/information_society/digital-agenda/scoreboard/graphs/index_en.htm> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://scoreboard.lod2.eu/data/data.sql> ] ;
         dcat:distribution    [ dcat:accessURL  <http://scoreboard.lod2.eu/data/indicators.csv> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://scoreboard.lod2.eu/data/scoreboardDataCube.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://scoreboard.lod2.eu/data/indicators.sql> ] ;
         foaf:homepage        <http://ec.europa.eu/information_society/digital-agenda/scoreboard/index_en.htm> .

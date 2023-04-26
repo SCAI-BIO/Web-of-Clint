@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/lcsh>
-        a                     void:Dataset ;
+[ void:target   lod:lcsh , lod:stitch-rameau ;
+  void:triples  55281
+] .
+
+lod:lcsh  a                   void:Dataset ;
         dcterms:description   "LCSH has been actively maintained since 1898 to catalog materials held at the Library of Congress. By virtue of cooperative cataloging other libraries around the United States also use LCSH to provide subject access to their collections. In addition LCSH is used internationally, often in translation."@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2014-08-30" , "lod" , "published-by-producer" , "lld" , "no-provenance-metadata" , "no-license-metadata" , "library" , "authorities" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "no-proprietary-vocab" , "format-skos" , "format-rdf" , "publications" , "bibliographic" ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "lod" , "published-by-producer" , "lld" , "no-provenance-metadata" , "no-license-metadata" , "library" , "authorities" , "lodcloud-diagram-2011-09-19" , "format-skos" , "no-proprietary-vocab" , "no-vocab-mappings" , "format-rdf" , "bibliographic" , "publications" ;
         dcterms:title         "Library of Congress Subject Headings"@en ;
         void:dataDump         <http://id.loc.gov/static/data/authoritiessubjects.nt.skos.zip> ;
         void:exampleResource  <http://id.loc.gov/authorities/subjects/sh87001447.rdf> ;
         void:triples          7332816 ;
         dcat:distribution     [ dcat:accessURL  <http://id.loc.gov/static/data/authoritiessubjects.rdfxml.skos.zip> ] ;
         foaf:homepage         <http://id.loc.gov/authorities/> .
-
-[ void:target   <http://lod-cloud.net/dataset/stitch-rameau> , <http://lod-cloud.net/dataset/lcsh> ;
-  void:triples  55281
-] .

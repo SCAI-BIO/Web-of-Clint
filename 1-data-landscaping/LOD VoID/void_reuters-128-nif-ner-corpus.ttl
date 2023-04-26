@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/reuters-128-nif-ner-corpus>
+[ void:target   lod:reuters-128-nif-ner-corpus , lod:dbpedia ;
+  void:triples  650
+] .
+
+lod:reuters-128-nif-ner-corpus
         a                    void:Dataset ;
         dcterms:description  "This English corpus is based on the well known Reuters-21578 corpus which contains economic news articles. In particular, we chose 128 articles containing at least one NE. Compared to the News-100 corpus the documents of Reuters-128 are significantly shorter and thus carry a smaller context.\r\n\r\nTo create the annotation of NEs with URIs, we implemented a supporting judgement tool.\r\n.\r\nThe input for the tool was a subset of more than 150 Reuters-21578 news articles sampled randomly. First, FOX (Ngonga Ngomo et al., 2011) was used for recognizing a first set of NEs. This reduced the amount of work to a feasible portion regarding the size of this dataset. Afterwards, the domain experts corrected the mistakes of FOX manually using the annotation tool. Therefore, the tool highlighted the entities in the texts and added initial URI candidates via simple string matching algorithms. Two scientists determined the correct URI for each named entity manually with an initial voter agreement of 74%. This low\r\ninitial agreement rate hints towards the difficulty of the disambiguation task.\r\nIn some cases judges did not agree initially, but came to an agreement shortly after reviewing the cases. While annotating, we left out ticker symbols of companies (e.g., GOOG for Google Inc.), abbreviations and job descriptions be-\r\ncause those are always preceded by the full company name respectively a person’s name."@en ;
         dcterms:publisher    [ rdfs:label  "Ricardo Usbeck" ;
                                foaf:mbox   "ricardo.usbeck@googlemail.com"
                              ] ;
-        dcterms:subject      "linguistics" , "nif" , "evaluation" , "linguistic" , "lod" , "training" , "corpus" , "rdf" , "ner" ;
+        dcterms:subject      "linguistics" , "nif" , "evaluation" , "linguistic" , "lod" , "training" , "corpus" , "ner" , "rdf" ;
         dcterms:title        "Reuters-128 NIF NER Corpus"@en ;
         void:triples         6967 ;
         dcat:distribution    [ dcat:accessURL  <https://raw.githubusercontent.com/AKSW/n3-collection/master/Reuters-128.ttl> ] ;
         dcat:distribution    [ dcat:accessURL  <http://svn.aksw.org/papers/2014/LREC_N3NIFNERNED/public.pdf> ] ;
         dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-10-29T16:24:39.177Z/dataid.ttl> ] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/reuters-128-nif-ner-corpus> ;
-  void:triples  650
-] .

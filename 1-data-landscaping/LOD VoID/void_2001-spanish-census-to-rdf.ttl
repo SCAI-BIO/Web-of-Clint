@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/2001-spanish-census-to-rdf>
+[ void:target   lod:2001-spanish-census-to-rdf , lod:RDFLicense ;
+  void:triples  1
+] .
+
+lod:2001-spanish-census-to-rdf
         a                     void:Dataset ;
         dcterms:description   "This site offers information of the conversion process of a 5% sampling of the 2001 Spanish census from a plain useless format to RDF, a semantic representation supported by different products, services and protocols."@en ;
         dcterms:publisher     [ rdfs:label  "Javier D. Fernández" ;
@@ -18,17 +23,13 @@
         void:triples          93325760 ;
         dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/census/resource/edificios> ] ;
         dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/censo/census90M.n3.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/census/resource/hogares> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/census/resource/personas> ] ;
         dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/censo/RDFData.html> ] ;
         dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/censo/void.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/census/resource/personas> ] ;
         dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/census/resource/nucleos> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://visualdataweb.infor.uva.es/census/resource/hogares> ] ;
         foaf:homepage         <http://dataweb.infor.uva.es/census2001> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/2001-spanish-census-to-rdf> ;
+[ void:target   lod:2001-spanish-census-to-rdf , lod:geonames ;
   void:triples  507
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/RDFLicense> , <http://lod-cloud.net/dataset/2001-spanish-census-to-rdf> ;
-  void:triples  1
 ] .

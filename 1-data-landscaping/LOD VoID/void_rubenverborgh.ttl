@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/doi> , <http://lod-cloud.net/dataset/rubenverborgh> ;
+[ void:target   lod:rubenverborgh , lod:dbpedia ;
+  void:triples  3165
+] .
+
+[ void:target   lod:rubenverborgh , lod:doi ;
   void:triples  6901
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/rubenverborgh> ;
+[ void:target   lod:rubenverborgh , lod:wikidata ;
   void:triples  979
 ] .
 
-<http://lod-cloud.net/dataset/rubenverborgh>
-        a                    void:Dataset ;
+lod:rubenverborgh  a         void:Dataset ;
         dcterms:description  "Data about Ruben Verborgh's professional activities, including metadata about publications, blog posts, and people."@en ;
         dcterms:publisher    [ rdfs:label  "Ruben Verborgh" ;
                                foaf:mbox   ""
@@ -26,7 +30,3 @@
         dcat:distribution    [ dcat:accessURL  <https://data.verborgh.org/ruben> ] ;
         dcat:distribution    [ dcat:accessURL  <https://data.verborgh.org/ruben> ] ;
         foaf:homepage        <https://data.verborgh.org/ruben> .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rubenverborgh> ;
-  void:triples  3165
-] .

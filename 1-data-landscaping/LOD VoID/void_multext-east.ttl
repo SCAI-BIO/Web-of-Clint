@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/multext-east>
-        a                    void:Dataset ;
+lod:multext-east  a          void:Dataset ;
         dcterms:description  "From the web site: Version 4 of the MULTEXT-East resources, a multilingual dataset for language engineering research and development. This dataset contains, for Bulgarian, Croatian, Czech, English, Estonian, Hungarian, Lithuanian, Macedonian, Persian, Polish, Resian, Romanian, Russian, Serbian, Slovak, Slovene, Ukrainian, some or all of the following resources:\r\n\r\n"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
@@ -18,6 +18,6 @@
         dcat:distribution    [ dcat:accessURL  <http://mlode.nlp2rdf.org/datasets/multextspch.ttl.gz> ] ;
         foaf:homepage        <http://nl.ijs.si/ME/V4/> .
 
-[ void:target   <http://lod-cloud.net/dataset/gold> , <http://lod-cloud.net/dataset/multext-east> ;
+[ void:target   lod:multext-east , lod:gold ;
   void:triples  15355
 ] .

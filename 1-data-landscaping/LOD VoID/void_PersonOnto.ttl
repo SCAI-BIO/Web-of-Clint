@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/PersonOnto>
-        a                    void:Dataset ;
+lod:PersonOnto  a            void:Dataset ;
         dcterms:description  "The ontology contains a hierarchy of people in a university, lecturers and students. Some properties associated with them like which subject they teach or study etc."@en ;
         dcterms:publisher    [ rdfs:label  "Shripriya Dubey" ;
                                foaf:mbox   "shriya2021@gmail.com"

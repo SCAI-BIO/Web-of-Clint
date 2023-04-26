@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,29 +6,24 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/gnoss> , <http://lod-cloud.net/dataset/open-data-risp> ;
-  void:triples  112
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dblp-deusto-gnoss> , <http://lod-cloud.net/dataset/open-data-risp> ;
+[ void:target   lod:open-data-risp , lod:dblp-deusto-gnoss ;
   void:triples  184
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/open-data-risp> ;
+[ void:target   lod:open-data-risp , lod:geonames-semantic-web ;
   void:triples  3
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/open-data-risp> ;
-  void:triples  53
+[ void:target   lod:open-data-risp , lod:freebase ;
+  void:triples  81
 ] .
 
-<http://lod-cloud.net/dataset/open-data-risp>
-        a                     void:Dataset ;
-        dcterms:description   "<p>\r\nThe <a href=\"http://red.gnoss.com/en/community/OpenData\">Open Data RISP / Spanish Open Data Community</a> is a space to discuss issues related to the opening of the public data and reuse. This group is open to any participant with a minimum of interest in the subject. The community is being coordinated by the W3C with the help of the main initiatives in Spain and its re-users (citizens and companies). Open Data RISP offers a selection of 30 resources (November 2012).\r\n</p>\r\n\r\n<p>\r\nLa <a href=\"http://red.gnoss.com/comunidad/OpenData\">comunidad de Trabajo Open Data en España / Open Data RISP</a>  es un espacio para discutir temas relacionados con la apertura de datos de la administración pública y sobre su reutilización. Este grupo es abierto a cualquier participante con un mínimo de interés sobre el tema y está siendo coordinado desde la Oficina del W3C y con el impulso de las principales iniciativas RISP en España y sus reutilizadores (ciudadanía y empresas infomediarias). Open Data RISP ofrece una selección de 30 recursos (Noviembre 2012).\r\n</p>"@en ;
+lod:open-data-risp  a         void:Dataset ;
+        dcterms:description   "<p>\r\nThe <a+href=\"http://red.gnoss.com/en/community/OpenData\">Open Data RISP / Spanish Open Data Community</a> is a space to discuss issues related to the opening of the public data and reuse. This group is open to any participant with a minimum of interest in the subject. The community is being coordinated by the W3C with the help of the main initiatives in Spain and its re-users (citizens and companies). Open Data RISP offers a selection of 30 resources (November 2012).\r\n</p>\r\n\r\n<p>\r\nLa <a+href=\"http://red.gnoss.com/comunidad/OpenData\">comunidad de Trabajo Open Data en España / Open Data RISP</a>  es un espacio para discutir temas relacionados con la apertura de datos de la administración pública y sobre su reutilización. Este grupo es abierto a cualquier participante con un mínimo de interés sobre el tema y está siendo coordinado desde la Oficina del W3C y con el impulso de las principales iniciativas RISP en España y sus reutilizadores (ciudadanía y empresas infomediarias). Open Data RISP ofrece una selección de 30 recursos (Noviembre 2012).\r\n</p>"@en ;
         dcterms:publisher     [ rdfs:label  "GNOSS Team" ;
                                 foaf:mbox   "gnoss@gnoss.com"
                               ] ;
-        dcterms:subject       "format-sioc" , "lod" , "dc" , "sp" , "technology" , "tecnología" , "España" , "estandares" , "format-dc" , "format-wot" , "psi" , "format-dcam" , "provenance-metadata" , "country.es" , "no-vocab-mappings" , "skos" , "format-skos" , "w3c" , "socialweb" , "license-metadata" , "estándares w3c" , "format-rdfg" , "open gov" , "wrapper" , "country-spain" , "open administration" , "open government" , "open data" , "format-foaf" , "schemata" , "spain" , "published-by-third-party" , "risp" , "usergeneratedcontent" , "sioc" , "language-spa" , "no-proprietary-vocab" , "user_generated" , "administracion" , "foaf" ;
+        dcterms:subject       "format-sioc" , "lod" , "dc" , "sp" , "technology" , "España" , "tecnología" , "estandares" , "format-dc" , "format-wot" , "psi" , "format-dcam" , "provenance-metadata" , "country.es" , "no-vocab-mappings" , "skos" , "format-skos" , "w3c" , "socialweb" , "license-metadata" , "estándares w3c" , "format-rdfg" , "open gov" , "wrapper" , "country-spain" , "open administration" , "open government" , "open data" , "format-foaf" , "schemata" , "spain" , "published-by-third-party" , "risp" , "usergeneratedcontent" , "sioc" , "language-spa" , "no-proprietary-vocab" , "user_generated" , "foaf" , "administracion" ;
         dcterms:title         "Open Data RISP, the Spanish Open Data community"@en ;
         void:exampleResource  <http://red.gnoss.com/en/community/OpenData/resource/IOGDS-International-Open-Government-Dataset-Searc/34cc8744-b38f-44bb-9292-fe1cd54f4406?rdf> , <http://red.gnoss.com/en/community/OpenData/resource/Publicando-datos-extraidos-de-un-PDF/deca5597-f39d-46cf-ae1c-8e5f9057f1ea?rdf> , <http://red.gnoss.com/en/community/OpenData/advanced-search/tag/web?rdf> ;
         void:triples          150203 ;
@@ -35,10 +31,14 @@
         dcat:distribution     [ dcat:accessURL  <http://red.gnoss.com/voidOpenDataRISP.n3> ] ;
         foaf:homepage         <http://red.gnoss.com/comunidad/OpenData> .
 
-[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/open-data-risp> ;
+[ void:target   lod:open-data-risp , lod:gnoss ;
+  void:triples  112
+] .
+
+[ void:target   lod:open-data-risp , lod:nytimes-linked-open-data ;
   void:triples  48
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/open-data-risp> ;
-  void:triples  81
+[ void:target   lod:open-data-risp , lod:dbpedia ;
+  void:triples  53
 ] .

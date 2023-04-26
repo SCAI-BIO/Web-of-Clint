@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,57 +6,57 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-fcac-com> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-fcac-com> ;
+[ void:target   lod:statusnet-fcac-com , lod:statusnet-fragdev-com ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-hackerposse-com> , <http://lod-cloud.net/dataset/statusnet-fcac-com> ;
+[ void:target   lod:statusnet-fcac-com , lod:statusnet-hackerposse-com ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-fcac-com> ;
+[ void:target   lod:statusnet-fcac-com , lod:statusnet-thelovebug-org ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> , <http://lod-cloud.net/dataset/statusnet-fcac-com> ;
-  void:triples  1
-] .
-
-<http://lod-cloud.net/dataset/statusnet-fcac-com>
+lod:statusnet-fcac-com
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://fcac.com"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "format-pos" , "LinkedDataCrawl2014" , "social web" , "format-foaf" , "format-bio" , "social_networking" , "crawledLinkedDataCloud2014" , "format-sioc" , "format-rdf" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:subject       "format-pos" , "LinkedDataCrawl2014" , "social web" , "format-foaf" , "format-bio" , "format-sioc" , "crawledLinkedDataCloud2014" , "social_networking" , "format-rdf" , "lodcloud-diagram-2014-08-30" ;
         dcterms:title         "statusnet-fcac-com"@en ;
         void:exampleResource  <http://laconica.fcac.com/salyavin/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-qdnx-org> , <http://lod-cloud.net/dataset/statusnet-fcac-com> ;
+[ void:target   lod:statusnet-fcac-com , lod:statusnet-timttmy-co-uk ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-fcac-com , lod:statusnet-opensim-chat-eu ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-fcac-com> ;
+[ void:target   lod:statusnet-fcac-com , lod:statusnet-russwurm-org ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-opensim-chat-eu> , <http://lod-cloud.net/dataset/statusnet-fcac-com> ;
+[ void:target   lod:statusnet-fcac-com , lod:statusnet-postblue-info ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-fcac-com> ;
+[ void:target   lod:statusnet-fcac-com , lod:statusnet-qdnx-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-fcac-com , lod:statusnet-ilikefreedom-ro ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-fcac-com , lod:personal-homepages ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-fcac-com , lod:statusnet-quitter-se ;
   void:triples  9
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-timttmy-co-uk> , <http://lod-cloud.net/dataset/statusnet-fcac-com> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-thelovebug-org> , <http://lod-cloud.net/dataset/statusnet-fcac-com> ;
-  void:triples  4
 ] .

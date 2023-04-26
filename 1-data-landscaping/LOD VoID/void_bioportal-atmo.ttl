@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,80 +6,79 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
-  void:triples  138
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gaz> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
-  void:triples  46
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
-  void:triples  108
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pma> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
-  void:triples  44
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-natpro> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rs> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
+[ void:target   lod:bioportal-atmo , lod:bioportal-doid ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
-  void:triples  18
+[ void:target   lod:bioportal-atmo , lod:bioportal-nif ;
+  void:triples  17
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
+[ void:target   lod:bioportal-atmo , lod:bioportal-rs ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-atmo , lod:bioportal-ncit ;
   void:triples  100
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
+[ void:target   lod:bioportal-atmo , lod:bioportal-rcd ;
   void:triples  89
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-doid> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
-  void:triples  13
+[ void:target   lod:bioportal-atmo , lod:bioportal-lnc ;
+  void:triples  17
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mcv> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
-  void:triples  41
+[ void:target   lod:bioportal-atmo , lod:bioportal-pma ;
+  void:triples  44
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
+[ void:target   lod:bioportal-atmo , lod:bioportal-csp ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-atmo , lod:bioportal-hl7 ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-atmo , lod:bioportal-mesh-owl ;
+  void:triples  108
+] .
+
+[ void:target   lod:bioportal-atmo , lod:bioportal-efo ;
+  void:triples  18
+] .
+
+[ void:target   lod:bioportal-atmo , lod:bioportal-natpro ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
+[ void:target   lod:bioportal-atmo , lod:bioportal-canco ;
   void:triples  24
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
+[ void:target   lod:bioportal-atmo , lod:bioportal-msh ;
   void:triples  82
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-atmo>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-atmo , lod:bioportal-ehda ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-atmo , lod:bioportal-mcv ;
+  void:triples  41
+] .
+
+[ void:target   lod:bioportal-atmo , lod:bioportal-snomedct ;
+  void:triples  138
+] .
+
+[ void:target   lod:bioportal-atmo , lod:bioportal-gaz ;
+  void:triples  46
+] .
+
+lod:bioportal-atmo  a        void:Dataset ;
         dcterms:description  "African Traditional Medicine Ontology (ATMO) describes the actors' function (healer, fetishist or soothsayer); the different types of proposed process treatment, the symptom's roles and the disease consideration."@en ;
         dcterms:publisher    [ rdfs:label  "Ghislain Atemezing" ;
                                foaf:mbox   ""
@@ -86,11 +86,11 @@
         dcterms:subject      "format-rdf" , "ontology" , "lod" , "biomedicine" , "published-by-third-party" , "bioportal" , "life_sciences" , "format-obo" ;
         dcterms:title        "African Traditional Medicine"@en ;
         void:triples         1460 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/40223?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1099> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-atmo> ;
+[ void:target   lod:bioportal-atmo , lod:bioportal-mccl_x1 ;
   void:triples  14
 ] .

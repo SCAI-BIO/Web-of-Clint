@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/gwa-ili> , <http://lod-cloud.net/dataset/wn-wiki-instances> ;
+[ void:target   lod:wn-wiki-instances , lod:gwa-ili ;
   void:triples  7702
 ] .
 
-<http://lod-cloud.net/dataset/wn-wiki-instances>
+lod:wn-wiki-instances
         a                    void:Dataset ;
         dcterms:description  "A mapping that was created between WordNet and DBpedia"@en ;
         dcterms:publisher    [ rdfs:label  "John McCrae" ;
@@ -21,6 +22,6 @@
         void:triples         7702 ;
         foaf:homepage        <https://github.com/jmccrae/wn-wiki-instances> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/wn-wiki-instances> ;
+[ void:target   lod:wn-wiki-instances , lod:dbpedia ;
   void:triples  7702
 ] .

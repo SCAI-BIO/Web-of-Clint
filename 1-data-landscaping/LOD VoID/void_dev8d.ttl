@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/dev8d>
-        a                     void:Dataset ;
+[ void:target   lod:dev8d , lod:dbpedia ;
+  void:triples  1
+] .
+
+lod:dev8d  a                  void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
@@ -15,7 +19,3 @@
         dcterms:title         "dev8d"@en ;
         void:exampleResource  <http://data.dev8d.org/2012/programme/?person=MarkMacGillivray> ;
         void:triples          "0"^^xsd:int .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dev8d> ;
-  void:triples  1
-] .

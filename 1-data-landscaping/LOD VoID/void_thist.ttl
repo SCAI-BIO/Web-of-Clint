@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,38 +6,37 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/agrovoc-skos> , <http://lod-cloud.net/dataset/thist> ;
-  void:triples  1695
+[ void:target   lod:thist , lod:eurovoc-in-skos ;
+  void:triples  733
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/environmental-applications-reference-thesaurus> , <http://lod-cloud.net/dataset/thist> ;
-  void:triples  1440
-] .
-
-<http://lod-cloud.net/dataset/thist>
-        a                     void:Dataset ;
+lod:thist  a                  void:Dataset ;
         dcterms:description   "ThIST is the Italian Thesaurus of Sciences of the Earth, which has been exposed as Linked Data in the context of LusTRE, a framework currently under development within the EU project eENVplus (CIP-ICT-PSP grant No. 325232) that aims at combining existing thesauri to support the management of environmental resources. LusTRE considers the heterogeneity in scopes and levels of abstraction of environmental thesauri as an asset when managing environmental data, it exploits linked data best practices SKOS  (Simple Knowledge Organization System) and RDF  (Resource Description Framework) in order to provide a multi-thesauri solution for INSPIRE data themes related to the environment. \r\nThe ThIST content is made available by Geological Survey of Italy in ISPRA  (Istituto Superiore per la\r\nProtezione e la Ricerca Ambientale). It is the result of a nearly total revision of the thesaurus born by the integration among the terminological database of the former Library of the Italy Geological Service  and the thesaurus published by the CNR in 1997. ThIST is already used for the cataloguing of the biblio-cartographic material (monographs, articles of periodicals, papers) possessed by the Library and the recovery of the related information.\r\nThe ThIST content is made available by ISPRA (Istituto Superiore per la\r\nProtezione e la Ricerca Ambientale). It is the result of a nearly total revision of the thesaurus born by the integration among the terminological database of the former Library of the Italy Geological Service  and the thesaurus published by the CNR in 1997. ThIST is already used for the cataloguing of the biblio-cartographic material (monographs, articles of periodicals, papers) possessed by the Library and the recovery of the related information."@en ;
         dcterms:publisher     [ rdfs:label  " Servizio Geologico d'Italia in collaboration with ISPRA library (A. Carusone, L. Olivetta, C. Cipolloni, R. Ventura)" ;
                                 foaf:mbox   "carlo.cipolloni@isprambiente.it"
                               ] ;
-        dcterms:subject       "schemata" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "lod" , "provenance-metadata" , "geography" , "no-vocab-mappings" , "format-skos" , "published-by-third-party" , "geographic" , "no-proprietary-vocab" , "thesaurus" , "lld" ;
+        dcterms:subject       "schemata" , "lodcloud-diagram-2014-08-30" , "license-metadata" , "lod" , "provenance-metadata" , "format-skos" , "geography" , "no-vocab-mappings" , "published-by-third-party" , "geographic" , "no-proprietary-vocab" , "thesaurus" , "lld" ;
         dcterms:title         "ThIST"@en ;
         void:exampleResource  <http://linkeddata.ge.imati.cnr.it/resource/ThIST/affioramento> ;
         void:sparqlEndpoint   <http://linkeddata.ge.imati.cnr.it:8890/sparql> ;
         void:triples          396885 ;
+        dcat:distribution     [ dcat:accessURL  <http://purl.org/NET/ThISTVOID> ] ;
         dcat:distribution     [ dcat:accessURL  <http://purl.org/net/DumpThISTnt> ] ;
         dcat:distribution     [ dcat:accessURL  <http://purl.org/net/DumpThISTRDF> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://purl.org/NET/ThISTVOID> ] ;
         foaf:homepage         <http://purl.org/NET/ThISTWebPage> .
 
-[ void:target   <http://lod-cloud.net/dataset/gemet> , <http://lod-cloud.net/dataset/thist> ;
+[ void:target   lod:thist , lod:environmental-applications-reference-thesaurus ;
+  void:triples  1440
+] .
+
+[ void:target   lod:thist , lod:gemet ;
   void:triples  792
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/thist> ;
-  void:triples  158
+[ void:target   lod:thist , lod:agrovoc-skos ;
+  void:triples  1695
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/eurovoc-in-skos> , <http://lod-cloud.net/dataset/thist> ;
-  void:triples  733
+[ void:target   lod:thist , lod:dbpedia ;
+  void:triples  158
 ] .

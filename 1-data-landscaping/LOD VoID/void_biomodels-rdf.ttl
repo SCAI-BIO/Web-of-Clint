@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/identifiers.org> , <http://lod-cloud.net/dataset/biomodels-rdf> ;
-  void:triples  1802347
+[ void:target   lod:biomodels-rdf , lod:uniprotkb ;
+  void:triples  9461
 ] .
 
-<http://lod-cloud.net/dataset/biomodels-rdf>
-        a                    void:Dataset ;
+lod:biomodels-rdf  a         void:Dataset ;
         dcterms:description  "BioModels Database is a reliable repository of computational models of biological processes. It hosts models described in peer-reviewed scientific literature and models generated automatically from pathway resources (Path2Models). A large number of models collected from literature are manually curated and semantically enriched with cross-references from external data resources.\r\n\r\nBioModels Linked Dataset captures the content of the models in BioModels Database (primarilly encoded in the SBML format) in RDF."@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
@@ -19,9 +19,9 @@
         dcterms:title        "BioModels RDF"@en ;
         void:sparqlEndpoint  <https://www.ebi.ac.uk/rdf/services/biomodels/sparql> ;
         void:triples         18955329 ;
-        dcat:distribution    [ dcat:accessURL  <http://rdf.ebi.ac.uk/dataset/biomodels/27/dataset-void.ttl> ] ;
-        dcat:distribution    [ dcat:accessURL  <ftp://ftp.ebi.ac.uk/pub/databases/RDF/biomodels/> ] .
+        dcat:distribution    [ dcat:accessURL  <ftp://ftp.ebi.ac.uk/pub/databases/RDF/biomodels/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rdf.ebi.ac.uk/dataset/biomodels/27/dataset-void.ttl> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/uniprotkb> , <http://lod-cloud.net/dataset/biomodels-rdf> ;
-  void:triples  9461
+[ void:target   lod:biomodels-rdf , lod:identifiers.org ;
+  void:triples  1802347
 ] .

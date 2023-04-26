@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/linked-uspto-patent-data> ;
-  void:triples  2360
-] .
-
-<http://lod-cloud.net/dataset/linked-uspto-patent-data>
+lod:linked-uspto-patent-data
         a                     void:Dataset ;
         dcterms:description   "Linked Data version of the US Patent and Trademark Office (USPTO) data.\r\nNumber of triples: 212,234,735. Number of resources: 3,215,768\r\nLinks to other datasets: DBpedia, EUPatents, WorldBank and LinkedGeoData"@en ;
         dcterms:publisher     [ rdfs:label  "Mofeed Hassan" ;
@@ -20,21 +17,25 @@
         void:dataDump         <https://datahub.ckan.io/dataset/476fc1ee-5bd8-4551-bf67-4fe4e7fa349b/resource/4e1618db-819c-4338-8003-64a53b2f4b89/download/outputsample.nt> ;
         void:exampleResource  <http://us.patents.aksw.org/export/2015.n3.zip> ;
         void:triples          "212,234,735"^^xsd:integer ;
-        dcat:distribution     [ dcat:accessURL  <https://datahub.ckan.io/dataset/476fc1ee-5bd8-4551-bf67-4fe4e7fa349b/resource/30666992-a075-4c2c-addc-63794e13380e/download/output.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://us.patents.aksw.org/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <https://datahub.ckan.io/dataset/476fc1ee-5bd8-4551-bf67-4fe4e7fa349b/resource/f694fd04-8753-44ad-b0db-315e10eb7e1c/download/patents.owl> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://datahub.ckan.io/dataset/476fc1ee-5bd8-4551-bf67-4fe4e7fa349b/resource/c550c190-f891-409c-ae72-9feb7daf58a8/download/mapping.ttl> ] ;
         dcat:distribution     [ dcat:accessURL  <https://datahub.ckan.io/dataset/476fc1ee-5bd8-4551-bf67-4fe4e7fa349b/resource/8a8e089f-7692-4f4b-b672-756a3c966cb5/download/detailedreport.rml.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://datahub.ckan.io/dataset/476fc1ee-5bd8-4551-bf67-4fe4e7fa349b/resource/30666992-a075-4c2c-addc-63794e13380e/download/output.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://datahub.ckan.io/dataset/476fc1ee-5bd8-4551-bf67-4fe4e7fa349b/resource/c550c190-f891-409c-ae72-9feb7daf58a8/download/mapping.ttl> ] ;
         foaf:homepage         <http://aksw.org/Projects/USPatents.html> .
 
-[ void:target   <http://lod-cloud.net/dataset/world-bank-linked-data> , <http://lod-cloud.net/dataset/linked-uspto-patent-data> ;
-  void:triples  162
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linked-uspto-patent-data> ;
+[ void:target   lod:linked-uspto-patent-data , lod:dbpedia ;
   void:triples  1932
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/epo> , <http://lod-cloud.net/dataset/linked-uspto-patent-data> ;
+[ void:target   lod:linked-uspto-patent-data , lod:linkedgeodata ;
+  void:triples  2360
+] .
+
+[ void:target   lod:linked-uspto-patent-data , lod:epo ;
   void:triples  680939
+] .
+
+[ void:target   lod:linked-uspto-patent-data , lod:world-bank-linked-data ;
+  void:triples  162
 ] .

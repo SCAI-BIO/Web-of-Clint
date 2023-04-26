@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,172 +6,171 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  39
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-doid> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd9cm> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  44
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc2p> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  42
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-medlineplus> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  33
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-natpro> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  26
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  35
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ctcae> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  129
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pedterm> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mp> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  29
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
+[ void:target   lod:bioportal-ctx , lod:bioportal-nif ;
   void:triples  50
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  43
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  42
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  325
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hp_x1> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  106
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ontoorpha> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
+[ void:target   lod:bioportal-ctx , lod:bioportal-ontoorpha ;
   void:triples  12
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-ctx>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-ctx , lod:bioportal-icd9cm ;
+  void:triples  22
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-rid ;
+  void:triples  35
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-lnc ;
+  void:triples  42
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-icd10 ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-natpro ;
+  void:triples  26
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-csp ;
+  void:triples  44
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-msh ;
+  void:triples  71
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-acgt ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-bdo ;
+  void:triples  103
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-uberon ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-birnlex ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-medlineplus ;
+  void:triples  33
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-rcd ;
+  void:triples  108
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-hp_x1 ;
+  void:triples  106
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-mdr ;
+  void:triples  73
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-ncit ;
+  void:triples  100
+] .
+
+lod:bioportal-ctx  a         void:Dataset ;
         dcterms:description  "The ontology represents CTX phenotypes, genetic variants, and bidirectional relationships between them though a patient model. The CTX ontology was build reusing the Human Phenotype Ontology (HPO) and the Snomed ct ontologies. \nThree groups of SQWRL queries were designed to query phenotype-genotype bidirectional relationships."@en ;
         dcterms:publisher    [ rdfs:label  "Maria Taboada" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "bioportal" , "ontology" , "format-rdf" , "format-owl" , "biomedicine" , "life_sciences" , "published-by-third-party" , "lod" ;
+        dcterms:subject      "bioportal" , "ontology" , "format-rdf" , "format-owl" , "biomedicine" , "published-by-third-party" , "life_sciences" , "lod" ;
         dcterms:title        "Cerebrotendinous xanthomatosis"@en ;
         void:triples         8131 ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47142?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/3025> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  103
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
+[ void:target   lod:bioportal-ctx , lod:bioportal-cst ;
   void:triples  37
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  31
+[ void:target   lod:bioportal-ctx , lod:bioportal-hl7 ;
+  void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10cm> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
+[ void:target   lod:bioportal-ctx , lod:bioportal-galen ;
+  void:triples  32
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-ctcae ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-doid ;
+  void:triples  32
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-ev ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-mesh-owl ;
+  void:triples  129
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-icd10cm ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  100
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  73
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-who> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  31
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  108
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  36
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
+[ void:target   lod:bioportal-ctx , lod:bioportal-omim ;
   void:triples  81
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-ctx> ;
-  void:triples  71
+[ void:target   lod:bioportal-ctx , lod:bioportal-snomedct ;
+  void:triples  325
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-canco ;
+  void:triples  45
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-efo ;
+  void:triples  31
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-sopharm ;
+  void:triples  39
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-pedterm ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-mp ;
+  void:triples  29
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-ndfrt ;
+  void:triples  43
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-icpc2p ;
+  void:triples  42
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-sdo ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-mccl_x1 ;
+  void:triples  36
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-nif_dysfunction ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-ctx , lod:bioportal-who ;
+  void:triples  31
 ] .

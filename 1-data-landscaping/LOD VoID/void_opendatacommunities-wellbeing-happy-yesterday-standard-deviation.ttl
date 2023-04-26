@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/opendatacommunities-wellbeing-happy-yesterday-standard-deviation>
+[ void:target   lod:opendatacommunities-wellbeing-happy-yesterday-standard-deviation , lod:reference-data-gov-uk ;
+  void:triples  1
+] .
+
+lod:opendatacommunities-wellbeing-happy-yesterday-standard-deviation
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -15,7 +20,3 @@
         dcterms:title         "opendatacommunities-wellbeing-happy-yesterday-standard-deviation"@en ;
         void:exampleResource  <http://opendatacommunities.org/data/wellbeing-happy-yesterday-standard-deviation> ;
         void:triples          "0"^^xsd:int .
-
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/opendatacommunities-wellbeing-happy-yesterday-standard-deviation> ;
-  void:triples  1
-] .

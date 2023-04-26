@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,252 +6,251 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-oae> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  47
+[ void:target   lod:bioportal-iao , lod:bioportal-cheminf ;
+  void:triples  97
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-odgi> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  48
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-idobru> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  60
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rnao> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  39
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pvonto> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ep> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-iao> ;
+[ void:target   lod:bioportal-iao , lod:bioportal-snomedct ;
   void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  13
+[ void:target   lod:bioportal-iao , lod:bioportal-clo ;
+  void:triples  95
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ecg> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  53
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cpr> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  51
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_dysfunction> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  51
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  62
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sdo> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  58
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-neumore> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hpio> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cogpo> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  93
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aero> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  118
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vo> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  43
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ontodt> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cao> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  50
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nemo_x1> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  61
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sio> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  30
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cheminf> , <http://lod-cloud.net/dataset/bioportal-iao> ;
+[ void:target   lod:bioportal-iao , lod:bioportal-ddi ;
   void:triples  97
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-npo> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  36
+[ void:target   lod:bioportal-iao , lod:bioportal-odgi ;
+  void:triples  48
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-flu> , <http://lod-cloud.net/dataset/bioportal-iao> ;
+[ void:target   lod:bioportal-iao , lod:bioportal-ogms ;
+  void:triples  55
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-sao ;
+  void:triples  37
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-flu ;
   void:triples  94
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  47
+[ void:target   lod:bioportal-iao , lod:bioportal-lnc ;
+  void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ocre> , <http://lod-cloud.net/dataset/bioportal-iao> ;
+[ void:target   lod:bioportal-iao , lod:bioportal-ido ;
+  void:triples  56
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-neomark ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-ep ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-sio ;
+  void:triples  30
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-tmo ;
+  void:triples  60
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-cogpo ;
+  void:triples  93
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-cao ;
+  void:triples  50
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-neumore ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-biomodels ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-aero ;
+  void:triples  118
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-ino ;
+  void:triples  39
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-bdo ;
   void:triples  19
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  11
+[ void:target   lod:bioportal-iao , lod:bioportal-acgt ;
+  void:triples  41
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-teo> , <http://lod-cloud.net/dataset/bioportal-iao> ;
+[ void:target   lod:bioportal-iao , lod:bioportal-hpio ;
+  void:triples  45
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-ontodm ;
   void:triples  97
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-iao>
-        a                    void:Dataset ;
-        dcterms:description  "The Information Artifact Ontology (IAO) is a new ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch.<p>\n\n<p><b>To import</b><p>\n\nLatest released version: <a href=\"http://purl.obolibrary.org/obo/iao.owl\">http://purl.obolibrary.org/obo/iao.owl</a><p>\n\n<b>Other versions</b><p>\n\nDeveloper (live) version: <a href=\"http://purl.obolibrary.org/obo/iao/dev/iao.owl\">http://purl.obolibrary.org/obo/iao/dev/iao.owl</a><p>\n\nOntology metadata properties and classes only: <a href=\"http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl\">http://purl.obolibrary.org/obo/iao/dev/iao.owl</a><p>\n\n<b>Dated versions</b>\n<ul>\n<li><a href=\"http://purl.obolibrary.org/obo/iao/2009-11-06/iao.owl\">http://purl.obolibrary.org/obo/iao/2009-11-06/iao.owl</a>\n<li><a href=\"http://purl.obolibrary.org/obo/iao/2010-09-14/iao.owl\">http://purl.obolibrary.org/obo/iao/2010-09-14/iao.owl</a>\n<li><a href=\"http://purl.obolibrary.org/obo/iao/2010-10-26/iao.owl\">http://purl.obolibrary.org/obo/iao/2010-10-26/iao.owl</a>\n<li><a href=\"http://purl.obolibrary.org/obo/iao/2011-05-09/iao.owl\">http://purl.obolibrary.org/obo/iao/2011-05-09/iao.owl</a>\n</ul><p>\n\n<p>Please note: The ontology metrics displayed by BioPortal are incorrect as of 7/23/2011. If you need accurate number you will need to compute them on your own, until further notice. In particular these metrics do not distinguish IAO-developed terms versus terms imported from other ontologies, and do not count existing author or definition annotations\n\n<p><b>Tracker</b>: <a href=\"http://purl.obolibrary.org/obo/iao/tracker\">http://purl.obolibrary.org/obo/iao/tracker</a><br>\n<b>Discussion group</b>: <a href=\"http://groups.google.com/group/information-ontology\">http://groups.google.com/group/information-ontology</a>"@en ;
+[ void:target   lod:bioportal-iao , lod:bioportal-swo ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-ooevv ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-ontodt ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-ncit ;
+  void:triples  47
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-efo ;
+  void:triples  20
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-canco ;
+  void:triples  59
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-idobru ;
+  void:triples  60
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-ogi ;
+  void:triples  41
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-nif ;
+  void:triples  116
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-rnao ;
+  void:triples  39
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-ocre ;
+  void:triples  19
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-nif_dysfunction ;
+  void:triples  51
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-vo ;
+  void:triples  43
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-omrse ;
+  void:triples  55
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-opl ;
+  void:triples  56
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-sdo ;
+  void:triples  58
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-bao ;
+  void:triples  65
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-mf ;
+  void:triples  97
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-mfoem ;
+  void:triples  97
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-pvonto ;
+  void:triples  17
+] .
+
+lod:bioportal-iao  a         void:Dataset ;
+        dcterms:description  "The Information Artifact Ontology (IAO) is a new ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch.<p>\n\n<p><b>To import</b><p>\n\nLatest released version: <a+href=\"http://purl.obolibrary.org/obo/iao.owl\">http://purl.obolibrary.org/obo/iao.owl</a><p>\n\n<b>Other versions</b><p>\n\nDeveloper (live) version: <a+href=\"http://purl.obolibrary.org/obo/iao/dev/iao.owl\">http://purl.obolibrary.org/obo/iao/dev/iao.owl</a><p>\n\nOntology metadata properties and classes only: <a+href=\"http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl\">http://purl.obolibrary.org/obo/iao/dev/iao.owl</a><p>\n\n<b>Dated versions</b>\n<ul>\n<li><a+href=\"http://purl.obolibrary.org/obo/iao/2009-11-06/iao.owl\">http://purl.obolibrary.org/obo/iao/2009-11-06/iao.owl</a>\n<li><a+href=\"http://purl.obolibrary.org/obo/iao/2010-09-14/iao.owl\">http://purl.obolibrary.org/obo/iao/2010-09-14/iao.owl</a>\n<li><a+href=\"http://purl.obolibrary.org/obo/iao/2010-10-26/iao.owl\">http://purl.obolibrary.org/obo/iao/2010-10-26/iao.owl</a>\n<li><a+href=\"http://purl.obolibrary.org/obo/iao/2011-05-09/iao.owl\">http://purl.obolibrary.org/obo/iao/2011-05-09/iao.owl</a>\n</ul><p>\n\n<p>Please note: The ontology metrics displayed by BioPortal are incorrect as of 7/23/2011. If you need accurate number you will need to compute them on your own, until further notice. In particular these metrics do not distinguish IAO-developed terms versus terms imported from other ontologies, and do not count existing author or definition annotations\n\n<p><b>Tracker</b>: <a+href=\"http://purl.obolibrary.org/obo/iao/tracker\">http://purl.obolibrary.org/obo/iao/tracker</a><br>\n<b>Discussion group</b>: <a+href=\"http://groups.google.com/group/information-ontology\">http://groups.google.com/group/information-ontology</a>"@en ;
         dcterms:publisher    [ rdfs:label  "Alan Ruttenberg" ;
                                foaf:mbox   ""
                              ] ;
         dcterms:subject      "format-rdf" , "lod" , "life_sciences" , "published-by-third-party" , "ontology" , "bioportal" , "format-owl" , "biomedicine" ;
         dcterms:title        "Information Artifact Ontology"@en ;
         void:triples         2160 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/40642?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1393> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ontodm> , <http://lod-cloud.net/dataset/bioportal-iao> ;
+[ void:target   lod:bioportal-iao , lod:bioportal-nemo_x1 ;
+  void:triples  61
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-idomal ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-ecg ;
+  void:triples  53
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-teo ;
   void:triples  97
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  116
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-miro> , <http://lod-cloud.net/dataset/bioportal-iao> ;
+[ void:target   lod:bioportal-iao , lod:bioportal-bfo ;
   void:triples  39
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ooevv> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mfoem> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  97
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-neomark> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sao> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  37
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif_cell> , <http://lod-cloud.net/dataset/bioportal-iao> ;
+[ void:target   lod:bioportal-iao , lod:bioportal-cpr ;
   void:triples  51
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ogi> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  41
+[ void:target   lod:bioportal-iao , lod:bioportal-sopharm ;
+  void:triples  45
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ino> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  39
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  47
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bfo> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  39
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-opl> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  56
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-swo> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ogms> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  55
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-clo> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  95
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ddi> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  97
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omrse> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  55
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  86
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mf> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  97
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nmr> , <http://lod-cloud.net/dataset/bioportal-iao> ;
+[ void:target   lod:bioportal-iao , lod:bioportal-nmr ;
   void:triples  37
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  59
+[ void:target   lod:bioportal-iao , lod:bioportal-birnlex ;
+  void:triples  47
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ido> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  56
+[ void:target   lod:bioportal-iao , lod:bioportal-npo ;
+  void:triples  36
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  41
+[ void:target   lod:bioportal-iao , lod:bioportal-nif_cell ;
+  void:triples  51
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tmo> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  60
+[ void:target   lod:bioportal-iao , lod:bioportal-oae ;
+  void:triples  47
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bao> , <http://lod-cloud.net/dataset/bioportal-iao> ;
-  void:triples  65
+[ void:target   lod:bioportal-iao , lod:bioportal-miro ;
+  void:triples  39
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-obi ;
+  void:triples  86
+] .
+
+[ void:target   lod:bioportal-iao , lod:bioportal-ero ;
+  void:triples  62
 ] .

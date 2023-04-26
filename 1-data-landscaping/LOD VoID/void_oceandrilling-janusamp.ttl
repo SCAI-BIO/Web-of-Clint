@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/oceandrilling-codices> , <http://lod-cloud.net/dataset/oceandrilling-janusamp> ;
-  void:triples  6414
-] .
-
-<http://lod-cloud.net/dataset/oceandrilling-janusamp>
+lod:oceandrilling-janusamp
         a                     void:Dataset ;
         dcterms:description   "A collection of age models for the Deep Sea Drilling Program (DSDP), Ocean Drilling Program (ODP) and Integrated Ocean Drilling Program (IODP) drilling sites.\r\n\r\nThese can be used to convert depth measurement to geologic age. \r\n\r\nhttp://data.oceandrilling.org/linkeddata.html\r\n  "@en ;
         dcterms:publisher     [ rdfs:label  "CHRONOS" ;
@@ -21,3 +18,7 @@
         void:sparqlEndpoint   <http://data.oceandrilling.org/sparql> ;
         void:triples          24489366 ;
         foaf:homepage         <http://chronos.org/janusAmp/> .
+
+[ void:target   lod:oceandrilling-janusamp , lod:oceandrilling-codices ;
+  void:triples  6414
+] .

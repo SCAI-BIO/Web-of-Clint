@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-ic> , <http://lod-cloud.net/dataset/cz-ctia-inspections> ;
+[ void:target   lod:cz-ctia-inspections , lod:cz-ic ;
   void:triples  15000
 ] .
 
-<http://lod-cloud.net/dataset/cz-ctia-inspections>
+lod:cz-ctia-inspections
         a                     void:Dataset ;
         dcterms:description   "Basic information about inspections of the Czech Trade Inspection Authority"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -17,10 +18,10 @@
                               ] ;
         dcterms:subject       "license-metadata" , "provenance-metadata" , "format-skos" , "format-schema" , "lod" , "government" , "no-vocab-mappings" , "no-proprietary-vocab" , "format-adms" , "published-by-third-party" ;
         dcterms:title         "Inspections of the Czech Trade Inspection Authority"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdomain%2Fcoi.cz%2Fcheck-action%2F101201020952801%3E&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          ""^^xsd:integer ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/coi-kontroly.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fcoi.cz%2Fkontroly%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/coi.cz/check-action/101201020952801> ] ;
         foaf:homepage         <http://linked.opendata.cz/resource/dataset/coi.cz/kontroly> .

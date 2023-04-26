@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/saldom-rdf>
-        a                    void:Dataset ;
+lod:saldom-rdf  a            void:Dataset ;
         dcterms:description  "SALDO morphology, a morphological Swedish lexicon in RDF."@en ;
         dcterms:publisher    [ rdfs:label  "Dana Dannells" ;
                                foaf:mbox   "dana.dannells@svenska.gu.se"
@@ -18,6 +18,6 @@
         dcat:distribution    [ dcat:accessURL  <http://spraakbanken.gu.se/rdf/saldom.rdf> ] ;
         dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-10-14T10:32:42.453Z/saldom-nt.gz> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/isocat> , <http://lod-cloud.net/dataset/saldom-rdf> ;
+[ void:target   lod:saldom-rdf , lod:isocat ;
   void:triples  69
 ] .

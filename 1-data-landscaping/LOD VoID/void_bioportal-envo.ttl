@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,144 +6,127 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  25
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-medlineplus> , <http://lod-cloud.net/dataset/bioportal-envo> ;
+[ void:target   lod:bioportal-envo , lod:bioportal-obi ;
   void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  124
+[ void:target   lod:bioportal-envo , lod:bioportal-oboe-sbc ;
+  void:triples  22
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-envo> ;
+[ void:target   lod:bioportal-envo , lod:bioportal-canco ;
   void:triples  20
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  24
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  140
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  26
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  24
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bto> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  25
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  129
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  72
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe-sbc> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gaz> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  112
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  54
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vandf> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  69
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  18
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-adw> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nddf> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  129
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ma> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  214
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mcv> , <http://lod-cloud.net/dataset/bioportal-envo> ;
-  void:triples  37
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rxnorm> , <http://lod-cloud.net/dataset/bioportal-envo> ;
+[ void:target   lod:bioportal-envo , lod:bioportal-rxnorm ;
   void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mfo> , <http://lod-cloud.net/dataset/bioportal-envo> ;
+[ void:target   lod:bioportal-envo , lod:bioportal-icnp ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-rcd ;
+  void:triples  124
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-nif ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-csp ;
+  void:triples  69
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-mfo ;
   void:triples  28
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-envo> ;
+[ void:target   lod:bioportal-envo , lod:bioportal-ehda ;
+  void:triples  18
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-snomedct ;
+  void:triples  214
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-ndfrt ;
+  void:triples  26
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-efo ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-nddf ;
+  void:triples  22
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-mcv ;
+  void:triples  37
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-bto ;
+  void:triples  25
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-galen ;
+  void:triples  54
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-gaz ;
+  void:triples  112
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-rid ;
   void:triples  28
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-envo> ;
+[ void:target   lod:bioportal-envo , lod:bioportal-ev ;
+  void:triples  25
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-vandf ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-hl7 ;
+  void:triples  24
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-biomodels ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-ncit ;
+  void:triples  129
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-idomal ;
   void:triples  65
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-envo>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-envo , lod:bioportal-uberon ;
+  void:triples  32
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-msh ;
+  void:triples  129
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-mesh-owl ;
+  void:triples  140
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-medlineplus ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-lnc ;
+  void:triples  72
+] .
+
+lod:bioportal-envo  a        void:Dataset ;
         dcterms:description  "Ontology of environmental features and habitats"@en ;
         dcterms:publisher    [ rdfs:label  "Envo Administrators" ;
                                foaf:mbox   ""
@@ -154,3 +138,19 @@
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45418?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1069> .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-mat ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-adw ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-syn ;
+  void:triples  24
+] .
+
+[ void:target   lod:bioportal-envo , lod:bioportal-ma ;
+  void:triples  19
+] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -11,8 +12,8 @@
         dcterms:publisher    [ rdfs:label  "Tanay Aggarwal" ;
                                foaf:mbox   "tanayaggarwal@outlook.com"
                              ] ;
-        dcterms:subject      "cross_domain" , "Concept of realityUpper OntologyEHCPRSuper OntologyLivingMatterSpaceTimeMedium of restMedium of motion." ;
+        dcterms:subject      "Concept of realityUpper OntologyEHCPRSuper OntologyLivingMatterSpaceTimeMedium of restMedium of motion." , "cross_domain" ;
         dcterms:title        "Super Ontology"@en ;
-        void:sparqlEndpoint  <https://query.wikidata.org/bigdata/namespace/wdq/sparql?query={SPARQL}> ;
+        void:sparqlEndpoint  <https://query.wikidata.org/bigdata/namespace/wdq/sparql> ;
         void:triples         45 ;
         foaf:homepage        <http://dataset.ga/tanay/new.owl> .

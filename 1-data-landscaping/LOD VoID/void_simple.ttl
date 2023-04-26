@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/simple> ;
-  void:triples  31449
-] .
-
-<http://lod-cloud.net/dataset/simple>
-        a                    void:Dataset ;
+lod:simple  a                void:Dataset ;
         dcterms:description  "This dataset contains the conversion of the Italian SIMPLE lexicon in different formats including RDF, TTL and a Lemon version of lexical entries with their pointers to senses."@en ;
         dcterms:publisher    [ rdfs:label  "Riccardo Del Gratta" ;
                                foaf:mbox   "riccardo.delgratta@ilc.cnr.it"
@@ -18,18 +14,22 @@
         dcterms:subject      "lexicon" , "lod" , "linguistic" , "llod" , "lexical-resource" , "linguistics" ;
         dcterms:title        "SIMPLE"@en ;
         void:triples         372294 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/psc/pscLemon.dot> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/psc/lemonentriespointingtosinglefile> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/SimpleOntology> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries.jsont> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries.json> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/psc/pscLemon> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries.dot> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/psc/pscLemon.ttl> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/psc/pscLemon.jsont> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/individualspointingtosinglefile> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/psc/lemonentriespointingtobigfile> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/psc/pscLemon.json> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/psc/pscLemon.jsont> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries.dot> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/psc/pscLemon.dot> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/psc/lemonentriespointingtobigfile> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries.jsont> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/individualspointingtosinglefile> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/psc/pscLemon> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/individualspointingtobigfile> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries.ttl> ] .
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries.json> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/psc/pscLemon.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.languagelibrary.eu/owl/simple/SimpleOntology> ] .
+
+[ void:target   lod:simple , lod:lexinfo ;
+  void:triples  31449
+] .

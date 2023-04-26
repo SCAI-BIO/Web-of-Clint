@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/greek-wordnet>
-        a                     void:Dataset ;
+[ void:target   lod:greek-wordnet , lod:vu-wordnet ;
+  void:triples  "16718 "^^xsd:integer
+] .
+
+[ void:target   lod:greek-wordnet , lod:w3c-wordnet ;
+  void:triples  18457
+] .
+
+lod:greek-wordnet  a          void:Dataset ;
         dcterms:description   "Greek lexical database. Links to package:vu-wordnet and package:w3c-wordnet ."@en ;
         dcterms:publisher     [ rdfs:label  "Sofia Karampataki" ;
                                 foaf:mbox   "sofiakara7@gmail.com"
@@ -17,11 +25,3 @@
         void:sparqlEndpoint   <http://wordnet.okfn.gr:8890/sparql/> ;
         void:triples          356595 ;
         dcat:distribution     [ dcat:accessURL  <http://wordnet.okfn.gr/page/synset-?????-verb-0> ] .
-
-[ void:target   <http://lod-cloud.net/dataset/w3c-wordnet> , <http://lod-cloud.net/dataset/greek-wordnet> ;
-  void:triples  18457
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/vu-wordnet> , <http://lod-cloud.net/dataset/greek-wordnet> ;
-  void:triples  "16718 "^^xsd:integer
-] .

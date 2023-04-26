@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,26 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/fu-berlin-stitch> ;
-  void:triples  123
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-chebi> , <http://lod-cloud.net/dataset/fu-berlin-stitch> ;
-  void:triples  6882
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubchem> , <http://lod-cloud.net/dataset/fu-berlin-stitch> ;
+[ void:target   lod:fu-berlin-stitch , lod:bio2rdf-pubchem ;
   void:triples  9840
 ] .
 
-<http://lod-cloud.net/dataset/fu-berlin-stitch>
-        a                     void:Dataset ;
+[ void:target   lod:fu-berlin-stitch , lod:dbpedia ;
+  void:triples  123
+] .
+
+lod:fu-berlin-stitch  a       void:Dataset ;
         dcterms:description   "Linked Data version of STITCH which contains information on chemicals and proteins as well as their interactions and links. The links were derived from experiments, databases and the literature. STITCH contains interactions for over 68,000 chemicals and over 1.5 million proteins in 373 species."@en ;
         dcterms:publisher     [ rdfs:label  "Anja Jentzsch" ;
                                 foaf:mbox   "anja@anjeve.de"
                               ] ;
-        dcterms:subject       "lod" , "format-rdf" , "deref-vocab" , "no-provenance-metadata" , "lodcloud-diagram-2011-09-19" , "life_sciences" , "lifesciences" , "vocab-mappings" , "no-license-metadata" , "published-by-third-party" ;
+        dcterms:subject       "format-rdf" , "deref-vocab" , "no-provenance-metadata" , "lodcloud-diagram-2011-09-19" , "life_sciences" , "lifesciences" , "no-license-metadata" , "vocab-mappings" , "published-by-third-party" , "lod" ;
         dcterms:title         "STITCH: Chemical-Protein Interactions"@en ;
         void:exampleResource  <http://www4.wiwiss.fu-berlin.de/stitch/resource/organisms/Aeropyrum_pernix> ;
         void:sparqlEndpoint   <http://www4.wiwiss.fu-berlin.de/stitch/sparql> ;
         void:triples          55099700 ;
         foaf:homepage         <http://www4.wiwiss.fu-berlin.de/stitch/> .
+
+[ void:target   lod:fu-berlin-stitch , lod:bio2rdf-chebi ;
+  void:triples  6882
+] .

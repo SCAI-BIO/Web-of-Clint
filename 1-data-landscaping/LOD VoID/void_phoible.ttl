@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/gold> , <http://lod-cloud.net/dataset/phoible> ;
+[ void:target   lod:phoible , lod:gold ;
   void:triples  3422
 ] .
 
-<http://lod-cloud.net/dataset/phoible>
-        a                    void:Dataset ;
+lod:phoible  a               void:Dataset ;
         dcterms:description  "Phonetics Information Base and Lexicon (PHOIBLE) is a data set of phonological inventories with additional linguistic and non-linguistic information."@en ;
         dcterms:publisher    [ rdfs:label  "Steve Moran" ;
                                foaf:mbox   "steven.moran@uzh.ch"
                              ] ;
-        dcterms:subject      "lod" , "typology" , "llod" , "linguistics" , "typological-database" , "phonology" ;
+        dcterms:subject      "lod" , "llod" , "typology" , "linguistics" , "typological-database" , "phonology" ;
         dcterms:title        "Phonetics Information Base and Lexicon (PHOIBLE)"@en ;
         void:sparqlEndpoint  <http://linked-data.org/sparql> ;
         void:triples         133076 ;
-        dcat:distribution    [ dcat:accessURL  <http://phoible.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <https://github.com/phoible> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://phoible.org/> ] ;
         foaf:homepage        <http://phoible.org> .

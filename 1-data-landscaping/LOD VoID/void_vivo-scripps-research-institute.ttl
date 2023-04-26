@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/vivo-scripps-research-institute>
+lod:vivo-scripps-research-institute
         a                    void:Dataset ;
         dcterms:description  "VIVO is a research-focused discovery tool that enables collaboration among scientists across all disciplines.\r\n\r\nBrowse or search information on people, departments, courses, grants, and publications."@en ;
         dcterms:publisher    [ rdfs:label  "VIVO" ;
@@ -17,6 +18,6 @@
         dcat:distribution    [ dcat:accessURL  <https://commondatastorage.googleapis.com/ckannet-storage/2012-04-02T150245/scripps_export.rdf> ] ;
         foaf:homepage        <http://vivo.scripps.edu/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia > , <http://lod-cloud.net/dataset/vivo-scripps-research-institute> ;
+[ void:target   lod:vivo-scripps-research-institute , <http://lod-cloud.net/dataset/dbpedia+> ;
   void:triples  58
 ] .

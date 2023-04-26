@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,15 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/lod2-project-wiki> ;
+[ void:target   lod:lod2-project-wiki , lod:dbpedia ;
   void:triples  75
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/lod2-project-wiki> ;
-  void:triples  24
-] .
-
-<http://lod-cloud.net/dataset/lod2-project-wiki>
+lod:lod2-project-wiki
         a                     void:Dataset ;
         dcterms:description   "Projekt Wiki of the LOD2 EU Project"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -24,3 +21,7 @@
         void:exampleResource  <http://lod2.eu/model/export/?m=http://lod2.eu/&f=rdfxml> ;
         void:triples          "0"^^xsd:int ;
         foaf:homepage         <http://lod2.eu> .
+
+[ void:target   lod:lod2-project-wiki , lod:personal-homepages ;
+  void:triples  24
+] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,30 +6,29 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/dbnary> ;
+[ void:target   lod:dbnary , lod:lexinfo ;
   void:triples  17739763
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/dbnary> ;
+[ void:target   lod:dbnary , lod:olia ;
   void:triples  23459074
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/dbnary> ;
+[ void:target   lod:dbnary , lod:lexvo ;
   void:triples  16546361
 ] .
 
-<http://lod-cloud.net/dataset/dbnary>
-        a                     void:Dataset ;
+lod:dbnary  a                 void:Dataset ;
         dcterms:description   "Extracts of wiktionary data for several languages, structured as an RDF graph, based mainly on the LEMON model. Bulgarian, Dutch, English, Finnish, French, German, Greek, Indonesian, Italian, Japanese, Latin, Lithanian, Malagasy, Norvegian, Portuguese, Russian, Serbo-Croatian, Swedish and Turkish."@en ;
         dcterms:publisher     [ rdfs:label  "Gilles Sérasset" ;
                                 foaf:mbox   "gilles.serasset@imag.fr"
                               ] ;
-        dcterms:subject       "serbo-croatian" , "malagasy" , "spanish" , "lemon" , "turkish" , "llod" , "lod" , "german" , "linguistics" , "russian" , "italian" , "indonesian" , "lexical-resources" , "greek" , "Dutch" , "norvegian" , "portuguese" , "japanese" , "Linguistic Dataset LOD RDF" , "wiktionary" , "french" , "latin" , "finnish" , "lithuanian" , "swedish" , "english" , "bulgarian" , "polish" ;
+        dcterms:subject       "serbo-croatian" , "malagasy" , "spanish" , "lemon" , "turkish" , "llod" , "lod" , "german" , "linguistics" , "russian" , "italian" , "indonesian" , "lexical-resources" , "Dutch" , "greek" , "norvegian" , "japanese" , "portuguese" , "Linguistic Dataset LOD RDF" , "french" , "wiktionary" , "finnish" , "latin" , "lithuanian" , "swedish" , "bulgarian" , "english" , "polish" ;
         dcterms:title         "dbnary"@en ;
         void:exampleResource  <https://ckannet-storage.commondatastorage.googleapis.com/2013-01-16T130120/dictionnaire.ttl> ;
         void:sparqlEndpoint   <http://kaiko.getalp.org/sparql> ;
         void:triples          194822148 ;
-        dcat:distribution     [ dcat:accessURL  <http://kaiko.getalp.org/about-dbnary/ontolex/latest/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://kaiko.getalp.org/static/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://kaiko.getalp.org/about-dbnary/ontolex/latest/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://kaiko.getalp.org/dbnary/fra/dictionnaire> ] ;
         foaf:homepage         <http://kaiko.getalp.org/about-dbnary> .

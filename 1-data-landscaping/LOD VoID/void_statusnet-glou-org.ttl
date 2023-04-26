@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-glou-org> ;
+[ void:target   lod:statusnet-glou-org , lod:geonames-semantic-web ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-glou-org> ;
+[ void:target   lod:statusnet-glou-org , lod:statusnet-quitter-se ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gegeweb-org> , <http://lod-cloud.net/dataset/statusnet-glou-org> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-glou-org> ;
+[ void:target   lod:statusnet-glou-org , lod:statusnet-postblue-info ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-glou-org>
+lod:statusnet-glou-org
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://glou.org"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -32,6 +29,10 @@
         void:exampleResource  <http://statusnet.glou.org/arnaud/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-glou-org> ;
+[ void:target   lod:statusnet-glou-org , lod:statusnet-gegeweb-org ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-glou-org , lod:statusnet-skilledtests-com ;
   void:triples  2
 ] .

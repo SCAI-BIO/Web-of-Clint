@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,20 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/eur-lex-rdf> ;
+[ void:target   lod:eur-lex-rdf , lod:dbpedia ;
   void:triples  3
 ] .
 
-<http://lod-cloud.net/dataset/eur-lex-rdf>
-        a                    void:Dataset ;
+lod:eur-lex-rdf  a           void:Dataset ;
         dcterms:description  "The data contained in this dataset was extracted from An API for European Union legislation and is provided as Linked Data here.\r\n\r\nEUR-Lex provides access to documents published in the Official Journal of the European Union. It contains more than 2.8 million documents with such dating back to the year 1951. The original website provides only access to the original documents via search, whereas the extracted data also contains metadata for better filtering and querying possibilities."@en ;
         dcterms:publisher    [ rdfs:label  "Philipp Frischmuth" ;
                                foaf:mbox   "frischmuth@informatik.uni-leipzig.de"
                              ] ;
-        dcterms:subject      "lod" , "no-vocab-mappings" , "format-rdf" , "publications" , "legal" , "latc" , "published-by-third-party" , "format-rdfa" , "deref-vocab" ;
+        dcterms:subject      "lod" , "no-vocab-mappings" , "format-rdf" , "publications" , "legal" , "latc" , "format-rdfa" , "published-by-third-party" , "deref-vocab" ;
         dcterms:title        "EUR-Lex as Linked Data"@en ;
         void:sparqlEndpoint  <http://eur-lex.publicdata.eu/sparql> ;
         void:triples         3412252 ;
-        dcat:distribution    [ dcat:accessURL  <http://eur-lex.publicdata.eu/id/139911> ] ;
         dcat:distribution    [ dcat:accessURL  <http://eur-lex.publicdata.eu/resource/export/f/rdfxml?r=http%3A%2F%2Feur-lex.publicdata.eu%2Fid%2F139911> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://eur-lex.publicdata.eu/id/139911> ] ;
         foaf:homepage        <http://eur-lex.publicdata.eu/> .

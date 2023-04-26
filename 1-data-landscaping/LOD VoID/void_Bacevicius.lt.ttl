@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/Bacevicius.lt>
-        a                    void:Dataset ;
+lod:Bacevicius.lt  a         void:Dataset ;
         dcterms:description  "Aivaras Bacevičius"@en ;
         dcterms:publisher    [ rdfs:label  "-" ;
                                foaf:mbox   "slamstastika@gmail.com"
                              ] ;
-        dcterms:subject      "cross_domain" , "digital marketing" , "SEO" ;
+        dcterms:subject      "SEO" , "digital marketing" , "cross_domain" ;
         dcterms:title        "Bacevicius.lt"@en ;
         void:triples         "0"^^xsd:int ;
         foaf:homepage        <https://bacevicius.lt> .

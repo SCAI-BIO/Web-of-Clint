@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-planet-libre-org> , <http://lod-cloud.net/dataset/statusnet-otbm-fr> ;
+[ void:target   lod:statusnet-otbm-fr , lod:statusnet-postblue-info ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-otbm-fr> ;
+[ void:target   lod:statusnet-otbm-fr , lod:statusnet-status-net ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-otbm-fr> ;
+[ void:target   lod:statusnet-otbm-fr , lod:statusnet-planet-libre-org ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-otbm-fr> ;
+[ void:target   lod:statusnet-otbm-fr , lod:geonames-semantic-web ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-otbm-fr>
+lod:statusnet-otbm-fr
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://otbm.fr"@en ;
         dcterms:publisher     [ rdfs:label  "" ;

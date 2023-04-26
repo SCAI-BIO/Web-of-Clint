@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,15 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  211
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-msh ;
+  void:triples  53
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ctcae> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  36
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-csp ;
+  void:triples  38
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts>
+lod:bioportal-tm-signs-and-sympts
         a                    void:Dataset ;
         dcterms:description  "The value set for the Signs and Symptoms property of the International Classification of Traditional Medicine (ICTM)."@en ;
         dcterms:publisher    [ rdfs:label  "Tania Tudorache" ;
@@ -22,119 +23,119 @@
         dcterms:subject      "published-by-third-party" , "biomedicine" , "life_sciences" , "ontology" , "lod" , "bioportal" , "format-owl" , "format-rdf" ;
         dcterms:title        "Traditional Medicine Signs and Symptoms Value Set"@en ;
         void:triples         2697 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45217?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1572> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  53
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cst> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  53
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd9cm> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  38
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  132
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  69
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  30
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-icpc ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-medlineplus> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  29
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-who> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-who ;
   void:triples  44
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hp_x1> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  37
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  35
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  42
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icnp> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  35
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  63
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mp> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  72
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10cm> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-icd10cm ;
   void:triples  24
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc2p> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  64
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-sopharm ;
   void:triples  35
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sso> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-canco ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-tm-signs-and-sympts> ;
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-omim ;
+  void:triples  42
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-lnc ;
+  void:triples  30
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-mdr ;
+  void:triples  72
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-sso ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-cst ;
+  void:triples  53
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-galen ;
+  void:triples  35
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-mesh-owl ;
+  void:triples  132
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-nif ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-ndfrt ;
   void:triples  45
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-icd9cm ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-snomedct ;
+  void:triples  211
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-medlineplus ;
+  void:triples  29
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-ctcae ;
+  void:triples  36
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-icpc2p ;
+  void:triples  64
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-icnp ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-bdo ;
+  void:triples  35
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-hp_x1 ;
+  void:triples  37
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-mccl_x1 ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-icd10 ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-mp ;
+  void:triples  22
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-acgt ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-ncit ;
+  void:triples  69
+] .
+
+[ void:target   lod:bioportal-tm-signs-and-sympts , lod:bioportal-rcd ;
+  void:triples  63
 ] .

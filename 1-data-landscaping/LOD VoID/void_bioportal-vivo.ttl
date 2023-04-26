@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,72 +6,75 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
+[ void:target   lod:bioportal-vivo , lod:bioportal-acgt ;
   void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ero> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bro_x1> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tmo> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sio> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  36
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  33
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ecg> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  36
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gaz> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
+[ void:target   lod:bioportal-vivo , lod:bioportal-gaz ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ontodm> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  43
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
+[ void:target   lod:bioportal-vivo , lod:bioportal-rcd ;
   void:triples  27
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-vivo>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-vivo , lod:bioportal-ecg ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-sio ;
+  void:triples  36
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-bro_x1 ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-csp ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-ncit ;
+  void:triples  140
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-flu ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-lnc ;
+  void:triples  54
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-birnlex ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-galen ;
+  void:triples  20
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-ontodm ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-nemo_x1 ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-canco ;
+  void:triples  29
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-tmo ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-vivo , lod:bioportal-mesh-owl ;
+  void:triples  31
+] .
+
+lod:bioportal-vivo  a        void:Dataset ;
         dcterms:description  "The VIVO ontology represents researchers in the context of their experience, outputs, interests, accomplishments, and associated institutions."@en ;
         dcterms:publisher    [ rdfs:label  "Stella Mitchell" ;
                                foaf:mbox   ""
@@ -78,35 +82,31 @@
         dcterms:subject      "published-by-third-party" , "lod" , "life_sciences" , "bioportal" , "ontology" , "format-owl" , "biomedicine" , "format-rdf" ;
         dcterms:title        "VIVO"@en ;
         void:triples         4988 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/46750?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1699> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-flu> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  10
+[ void:target   lod:bioportal-vivo , lod:bioportal-nif ;
+  void:triples  36
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  29
+[ void:target   lod:bioportal-vivo , lod:bioportal-msh ;
+  void:triples  43
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  54
+[ void:target   lod:bioportal-vivo , lod:bioportal-obi ;
+  void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nemo_x1> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  14
+[ void:target   lod:bioportal-vivo , lod:bioportal-hl7 ;
+  void:triples  33
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  23
+[ void:target   lod:bioportal-vivo , lod:bioportal-ero ;
+  void:triples  32
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  140
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-vivo> ;
-  void:triples  31
+[ void:target   lod:bioportal-vivo , lod:bioportal-snomedct ;
+  void:triples  45
 ] .

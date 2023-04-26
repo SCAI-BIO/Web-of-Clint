@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-incubator-our-airports> ;
+[ void:target   lod:data-incubator-our-airports , lod:dbpedia ;
   void:triples  9761
 ] .
 
-<http://lod-cloud.net/dataset/data-incubator-our-airports>
+lod:data-incubator-our-airports
         a                     void:Dataset ;
         dcterms:description   "### Description\r\n\r\nData exposed: Information about airports, originally from package:ourairports, here re-published as RDF.\r\n\r\nNotes: Dump available by contact\r\n\r\n### Issues\r\n\r\nThe dataset does not appear to be actively maintained. There are quality issues with the owl:sameAs links."@en ;
         dcterms:publisher     [ rdfs:label  "Rob Styles" ;

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/uk-postcodes> ;
-  void:triples  3392176
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/uk-postcodes> ;
+[ void:target   lod:uk-postcodes , lod:statistics-data-gov-uk ;
   void:triples  11872616
 ] .
 
-<http://lod-cloud.net/dataset/uk-postcodes>
-        a                     void:Dataset ;
+[ void:target   lod:uk-postcodes , lod:ordnance-survey-linked-data ;
+  void:triples  3392176
+] .
+
+lod:uk-postcodes  a           void:Dataset ;
         dcterms:description   "Linked data for every UK Postcode.\r\n\r\n## License\r\n\r\nContent is licensed under the [OS OpenData License](http://www.ordnancesurvey.co.uk/oswebsite/opendata/licence/index.html)"@en ;
         dcterms:publisher     [ rdfs:label  "Stuart Harrison (@pezholio)" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2011-09-19" , "geographic" , "lod" , "published-by-third-party" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "uk" , "no-provenance-metadata" , "no-vocab-mappings" , "no-license-metadata" , "postcodes" , "geography" , "format-owl" , "country-uk" , "format-geo" , "no-proprietary-vocab" ;
+        dcterms:subject       "lodcloud-diagram-2011-09-19" , "geographic" , "lod" , "format-rdf" , "published-by-third-party" , "lodcloud-diagram-2014-08-30" , "uk" , "no-vocab-mappings" , "no-provenance-metadata" , "no-license-metadata" , "postcodes" , "geography" , "country-uk" , "format-owl" , "format-geo" , "no-proprietary-vocab" ;
         dcterms:title         "UK Postcodes"@en ;
         void:exampleResource  <http://www.uk-postcodes.com/postcode/KT172NG.rdf> ;
         void:triples          27137408 ;

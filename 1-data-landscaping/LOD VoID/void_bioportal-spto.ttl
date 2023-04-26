@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,88 +6,83 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-spto> ;
+[ void:target   lod:bioportal-spto , lod:bioportal-to ;
   void:triples  29
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-po> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  281
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-to> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  29
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-fypo> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  18
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bto> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gro_x1> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  281
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  103
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  37
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-soy> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-teo> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tao> , <http://lod-cloud.net/dataset/bioportal-spto> ;
+[ void:target   lod:bioportal-spto , lod:bioportal-tao ;
   void:triples  14
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  38
+[ void:target   lod:bioportal-spto , lod:bioportal-po ;
+  void:triples  281
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ep> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  149
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-po_x2> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  525
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mat> , <http://lod-cloud.net/dataset/bioportal-spto> ;
+[ void:target   lod:bioportal-spto , lod:bioportal-nif ;
   void:triples  11
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-spto>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-spto , lod:bioportal-efo ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-mesh-owl ;
+  void:triples  38
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-bto ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-soy ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-lnc ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-ep ;
+  void:triples  149
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-msh ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-galen ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-nbo ;
+  void:triples  25
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-teo ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-pato ;
+  void:triples  150
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-csp ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-gro_x1 ;
+  void:triples  281
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-po_x2 ;
+  void:triples  525
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-rcd ;
+  void:triples  13
+] .
+
+lod:bioportal-spto  a        void:Dataset ;
         dcterms:description  "Solanaceae crop phenotypes and traits, developed in collaboration with the research community, especially for breeder traits of agronomic importance."@en ;
         dcterms:publisher    [ rdfs:label  "Naama Menda" ;
                                foaf:mbox   ""
@@ -94,27 +90,31 @@
         dcterms:subject      "format-rdf" , "ontology" , "published-by-third-party" , "lod" , "bioportal" , "format-obo" , "life_sciences" , "biomedicine" ;
         dcterms:title        "Solanaceae Phenotype Ontology"@en ;
         void:triples         4089 ;
-        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47161?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47161?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/3029> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-spto> ;
+[ void:target   lod:bioportal-spto , lod:bioportal-ncit ;
+  void:triples  37
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-fypo ;
+  void:triples  18
+] .
+
+[ void:target   lod:bioportal-spto , lod:bioportal-ndfrt ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nbo> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  25
+[ void:target   lod:bioportal-spto , lod:bioportal-snomedct ;
+  void:triples  29
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  17
+[ void:target   lod:bioportal-spto , lod:bioportal-mat ;
+  void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pato> , <http://lod-cloud.net/dataset/bioportal-spto> ;
-  void:triples  150
+[ void:target   lod:bioportal-spto , lod:bioportal-canco ;
+  void:triples  103
 ] .

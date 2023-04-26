@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/yale_senselab>
-        a                     void:Dataset ;
+lod:yale_senselab  a          void:Dataset ;
         dcterms:description   "### About\r\n\r\nData exposed: Yale Senselab\r\nSize of dump and data set: 216 KB\r\nNotes: released without contract\r\n\r\n> The Semantic Web development of SenseLab involves exporting data from NeuronDB, ModelDB, and BrainPharm to RDF and/or OWL format. The overall goal is to facilitate neuroscience data aggregation, integration, and reasoning using Semantic Web technologies.\r\n\r\n> This project is part of the current and ongoing SenseLab effort including the following SenseLab team members: Kei Cheung, Huajun Chen, Ernest Lim, Matthias Samwald, Peter Masiar, Luis Marenco, Tom Morse, Nian Liu, Chiquito Crasto, Perry Miller, and Gordon Shepherd.\r\n\r\n### Openness\r\n\r\nNo information found."@en ;
         dcterms:publisher     [ rdfs:label  "Kei Cheung" ;
                                 foaf:mbox   "Kei.Cheung@Yale.edu"
                               ] ;
-        dcterms:subject       "lifesciences" , "format-rdf" , "published-by-third-party" , "rdf" , "lodcloud.nolinks" , "lod" , "linkeddata" , "ckanupload.esw.200910" , "broken_link" , "deref-vocab" , "owl" , "lodcloud.unconnected" , "ontology" ;
+        dcterms:subject       "lifesciences" , "format-rdf" , "published-by-third-party" , "rdf" , "lodcloud.nolinks" , "lod" , "linkeddata" , "ckanupload.esw.200910" , "broken_link" , "deref-vocab" , "lodcloud.unconnected" , "owl" , "ontology" ;
         dcterms:title         "Yale Senselab"@en ;
         void:exampleResource  <http://purl.org/ycmi/senselab/neuron_ontology.owl#GALNR2_Gene> ;
         void:sparqlEndpoint   <http://neuroweb.med.yale.edu:8890/sparql> ;

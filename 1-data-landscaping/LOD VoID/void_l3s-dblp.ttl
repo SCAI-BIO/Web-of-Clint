@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/l3s-dblp>
-        a                     void:Dataset ;
+lod:l3s-dblp  a               void:Dataset ;
         dcterms:description   "D2R Server publishing the DBLP Bibliography Database, hosted at L3S Research Center"@en ;
         dcterms:publisher     [ rdfs:label  "Jörg Diederich" ;
                                 foaf:mbox   "diederich@l3s.de"
                               ] ;
-        dcterms:subject       "format-dc" , "format-swrc" , "publications" , "no-license-metadata" , "published-by-third-party" , "no-proprietary-vocab" , "no-vocab-mappings" , "lodcloud.nolinks" , "lod" , "no-provenance-metadata" , "format-rdf" , "format-foaf" ;
+        dcterms:subject       "format-dc" , "format-swrc" , "no-license-metadata" , "publications" , "published-by-third-party" , "no-proprietary-vocab" , "lodcloud.nolinks" , "no-vocab-mappings" , "lod" , "no-provenance-metadata" , "format-rdf" , "format-foaf" ;
         dcterms:title         "DBLP in RDF (L3S)"@en ;
         void:dataDump         <http://dblp.l3s.de/dblp.rdf.gz> ;
         void:exampleResource  <http://dblp.l3s.de/d2r/resource/authors/Chris_Bizer> ;

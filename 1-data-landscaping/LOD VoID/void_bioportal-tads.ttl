@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,56 +6,75 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  18
+[ void:target   lod:bioportal-tads , lod:bioportal-ncit ;
+  void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa2> , <http://lod-cloud.net/dataset/bioportal-tads> ;
+[ void:target   lod:bioportal-tads , lod:bioportal-ehdaa2 ;
   void:triples  29
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-xao> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  28
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-tads> ;
+[ void:target   lod:bioportal-tads , lod:bioportal-fbbt ;
   void:triples  45
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aeo> , <http://lod-cloud.net/dataset/bioportal-tads> ;
+[ void:target   lod:bioportal-tads , lod:bioportal-mccl_x1 ;
+  void:triples  18
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-canco ;
+  void:triples  22
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-zfa ;
+  void:triples  30
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-rid ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-vao ;
+  void:triples  45
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-oboe-sbc ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-tao ;
+  void:triples  32
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-aao ;
   void:triples  44
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tgma> , <http://lod-cloud.net/dataset/bioportal-tads> ;
+[ void:target   lod:bioportal-tads , lod:bioportal-tgma ;
   void:triples  42
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehdaa> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  84
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-tads> ;
+[ void:target   lod:bioportal-tads , lod:bioportal-snomedct ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-caro> , <http://lod-cloud.net/dataset/bioportal-tads> ;
+[ void:target   lod:bioportal-tads , lod:bioportal-ehda ;
+  void:triples  273
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-bila ;
+  void:triples  46
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-aeo ;
+  void:triples  44
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-caro ;
   void:triples  45
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hao> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  45
-] .
-
-<http://lod-cloud.net/dataset/bioportal-tads>
-        a                    void:Dataset ;
+lod:bioportal-tads  a        void:Dataset ;
         dcterms:description  "The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>"@en ;
         dcterms:publisher    [ rdfs:label  "Daniel Sonenshine" ;
                                foaf:mbox   ""
@@ -67,50 +87,30 @@
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1065> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bila> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  46
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-zfa> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  30
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vao> , <http://lod-cloud.net/dataset/bioportal-tads> ;
+[ void:target   lod:bioportal-tads , lod:bioportal-hao ;
   void:triples  45
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-tads> ;
+[ void:target   lod:bioportal-tads , lod:bioportal-xao ;
+  void:triples  28
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-uberon ;
+  void:triples  45
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-vhog ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-tads , lod:bioportal-efo ;
   void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-tao> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  32
+[ void:target   lod:bioportal-tads , lod:bioportal-ehdaa ;
+  void:triples  84
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-aao> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  44
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-oboe-sbc> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ehda> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  273
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vhog> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-fbbt> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  45
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-tads> ;
+[ void:target   lod:bioportal-tads , lod:bioportal-biomodels ;
   void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-tads> ;
-  void:triples  17
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bio2rdf-genage>
-        a                     void:Dataset ;
+lod:bio2rdf-genage  a         void:Dataset ;
         dcterms:description   "GenAge is a database of human and model organism genes related to longevity and aging, maintained by the Human Ageing Genomics Resources (HAGR) group. "@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
@@ -17,38 +17,38 @@
         void:exampleResource  <http://bio2rdf.org/genage:0001> ;
         void:sparqlEndpoint   <http://genage.bio2rdf.org/sparql> ;
         void:triples          73048 ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/genage/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/genage/genage.schema.owl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/genage/bio2rdf-genage.nq> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/genage/genage.html> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/genage/bio2rdf-genage.nq> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/genage/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/genage/genage.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/genage/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/genage/bio2rdf_genage_sio_mapping.owl> ] ;
         foaf:homepage         <http://genage.bio2rdf.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot> , <http://lod-cloud.net/dataset/bio2rdf-genage> ;
-  void:triples  38
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-unigene> , <http://lod-cloud.net/dataset/bio2rdf-genage> ;
+[ void:target   lod:bio2rdf-genage , lod:bio2rdf-unigene ;
   void:triples  296
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-taxonomy> , <http://lod-cloud.net/dataset/bio2rdf-genage> ;
-  void:triples  8
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-genage> ;
-  void:triples  2365
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-genage> ;
-  void:triples  2115
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-hagr> , <http://lod-cloud.net/dataset/bio2rdf-genage> ;
+[ void:target   lod:bio2rdf-genage , lod:bio2rdf-hagr ;
   void:triples  298
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-genage> ;
+[ void:target   lod:bio2rdf-genage ;
   void:triples  1856
+] .
+
+[ void:target   lod:bio2rdf-genage , lod:bio2rdf-taxonomy ;
+  void:triples  8
+] .
+
+[ void:target   lod:bio2rdf-genage , lod:bio2rdf-uniprot ;
+  void:triples  38
+] .
+
+[ void:target   lod:bio2rdf-genage , lod:bio2rdf-ncbigene ;
+  void:triples  2115
+] .
+
+[ void:target   lod:bio2rdf-genage , lod:bio2rdf-pubmed ;
+  void:triples  2365
 ] .

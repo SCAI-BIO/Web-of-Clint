@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,29 +6,29 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/linked-open-data-of-ecology> ;
-  void:triples  3870
+[ void:target   lod:linked-open-data-of-ecology , lod:nytimes-linked-open-data ;
+  void:triples  1023
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/linked-open-data-of-ecology> ;
-  void:triples  10000
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/linked-open-data-of-ecology> ;
+[ void:target   lod:linked-open-data-of-ecology , lod:geonames-semantic-web ;
   void:triples  230
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geospecies> , <http://lod-cloud.net/dataset/linked-open-data-of-ecology> ;
+[ void:target   lod:linked-open-data-of-ecology , lod:bio2rdf-uniprot-taxonomy ;
+  void:triples  28059
+] .
+
+[ void:target   lod:linked-open-data-of-ecology , lod:geospecies ;
   void:triples  3739
 ] .
 
-<http://lod-cloud.net/dataset/linked-open-data-of-ecology>
+lod:linked-open-data-of-ecology
         a                     void:Dataset ;
         dcterms:description   "Linked Open Data of Ecology ([LODE][]) is a prototype to integrate the data of ecology by linked data approach. So far the subjects include most of [wildfire][], [taxonomy][], biodiversity data of [plants][] and [insects][] in Taiwan. \r\n\r\n2011/07/20: Recently we added a new dataset about measurements of DBH(diameters breast height) of tree entities in Nansi forest dynamics plot ([FDP-NS][]).\r\n\r\n[LODE]: http://ecowlim.tfri.gov.tw/lode\r\n[wildfire]: http://ecowlim.tfri.gov.tw/lode/resource/firedb/ForestFireEvent\r\n[taxonomy]: http://ecowlim.tfri.gov.tw/lode/page/taibnet/Species\r\n[plants]: http://ecowlim.tfri.gov.tw/lode/page/taif/Species\r\n[insects]: http://ecowlim.tfri.gov.tw/lode/page/flyhorse/Species\r\n[FDP-NS]: http://ecowlim.tfri.gov.tw/lode/resource/fdp/NansiForestDynamicsPlotCensus/01"@en ;
         dcterms:publisher     [ rdfs:label  "Jason Mai" ;
                                 foaf:mbox   "trashmai@gmail.com"
                               ] ;
-        dcterms:subject       "crossdomain" , "insects" , "environment" , "format-skos" , "format-dbpowl" , "format-dbpprop" , "lodcloud-diagram-2014-08-30" , "format-rdfs" , "wildfire" , "format-rdf" , "format-foaf" , "biodiversity" , "format-tl" , "format-dc" , "format-ucum" , "lodcloud-diagram-2011-09-19" , "plants" , "deref-vocab" , "provenance-metadata" , "format-dbpedia" , "format-time" , "format-geo" , "format-event" , "format-dbo" , "published-by-producer" , "ecology" , "measurement" , "license-metadata" , "format-dwc" , "format-muo" , "lod" ;
+        dcterms:subject       "crossdomain" , "insects" , "environment" , "format-skos" , "format-dbpowl" , "format-dbpprop" , "lodcloud-diagram-2014-08-30" , "format-rdfs" , "format-rdf" , "wildfire" , "format-foaf" , "biodiversity" , "format-tl" , "format-dc" , "format-ucum" , "lodcloud-diagram-2011-09-19" , "plants" , "deref-vocab" , "provenance-metadata" , "format-dbpedia" , "format-time" , "format-geo" , "format-event" , "format-dbo" , "published-by-producer" , "ecology" , "measurement" , "license-metadata" , "format-dwc" , "format-muo" , "lod" ;
         dcterms:title         "Linked Open Data of Ecology"@en ;
         void:exampleResource  <http://ecowlim.tfri.gov.tw/lode/data/taif/Specimen/TAIF-PLANT-1-1-10026-187900?output=n3> , <http://ecowlim.tfri.gov.tw/lode/data/firedb/ForestFireEvent/1065?output=xml> , <http://ecowlim.tfri.gov.tw/lode/data/taibnet/Species/Callyodon_laxtoni?output=xml> , <http://ecowlim.tfri.gov.tw/lode/data/flyhorse/CollectingEvent/10015?output=xml> ;
         void:sparqlEndpoint   <http://ecowlim.tfri.gov.tw/sparql/query> ;
@@ -36,10 +37,10 @@
         dcat:distribution     [ dcat:accessURL  <http://ecowlim.tfri.gov.tw/sitemap_index.xml> ] ;
         foaf:homepage         <http://ecowlim.tfri.gov.tw/lode> .
 
-[ void:target   <http://lod-cloud.net/dataset/nytimes-linked-open-data> , <http://lod-cloud.net/dataset/linked-open-data-of-ecology> ;
-  void:triples  1023
+[ void:target   lod:linked-open-data-of-ecology , lod:dbpedia ;
+  void:triples  10000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-uniprot-taxonomy> , <http://lod-cloud.net/dataset/linked-open-data-of-ecology> ;
-  void:triples  28059
+[ void:target   lod:linked-open-data-of-ecology , lod:freebase ;
+  void:triples  3870
 ] .

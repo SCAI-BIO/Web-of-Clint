@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,36 +6,31 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-peo> ;
+[ void:target   lod:bioportal-peo , lod:bioportal-msh ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-peo , lod:bioportal-nif ;
+  void:triples  19
+] .
+
+[ void:target   lod:bioportal-peo , lod:bioportal-so_x1 ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-peo , lod:bioportal-rcd ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-peo , lod:bioportal-snpo ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-peo , lod:bioportal-canco ;
   void:triples  15
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-peo> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-opl> , <http://lod-cloud.net/dataset/bioportal-peo> ;
-  void:triples  28
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-peo> ;
-  void:triples  54
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-peo> ;
-  void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-peo> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-obi> , <http://lod-cloud.net/dataset/bioportal-peo> ;
-  void:triples  33
-] .
-
-<http://lod-cloud.net/dataset/bioportal-peo>
-        a                    void:Dataset ;
+lod:bioportal-peo  a         void:Dataset ;
         dcterms:description  "The Parasite Experiment Ontology (PEO) models provenance metadata associated with experiment protocols used in parasite research. The PEO extends the upper-level Provenir ontology (http://knoesis.wright.edu/provenir/provenir.owl) to represent parasite domain-specific provenance terms.\n\nThe PEO (v 1.0) includes Proteome, Microarray, Gene Knockout, and Strain Creation experiment terms along with other terms that are used in pathway."@en ;
         dcterms:publisher    [ rdfs:label  "Priti Parikh" ;
                                foaf:mbox   ""
@@ -47,30 +43,34 @@
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1335> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-peo> ;
-  void:triples  14
+[ void:target   lod:bioportal-peo , lod:bioportal-sopharm ;
+  void:triples  17
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-peo> ;
-  void:triples  29
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snpo> , <http://lod-cloud.net/dataset/bioportal-peo> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-so_x1> , <http://lod-cloud.net/dataset/bioportal-peo> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sio> , <http://lod-cloud.net/dataset/bioportal-peo> ;
+[ void:target   lod:bioportal-peo , lod:bioportal-csp ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-peo> ;
-  void:triples  10
+[ void:target   lod:bioportal-peo , lod:bioportal-sio ;
+  void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-peo> ;
-  void:triples  19
+[ void:target   lod:bioportal-peo , lod:bioportal-ncit ;
+  void:triples  54
+] .
+
+[ void:target   lod:bioportal-peo , lod:bioportal-mesh-owl ;
+  void:triples  22
+] .
+
+[ void:target   lod:bioportal-peo , lod:bioportal-opl ;
+  void:triples  28
+] .
+
+[ void:target   lod:bioportal-peo , lod:bioportal-snomedct ;
+  void:triples  29
+] .
+
+[ void:target   lod:bioportal-peo , lod:bioportal-obi ;
+  void:triples  33
 ] .

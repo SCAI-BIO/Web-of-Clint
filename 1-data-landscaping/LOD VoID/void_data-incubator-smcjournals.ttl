@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/data-incubator-smcjournals>
+lod:data-incubator-smcjournals
         a                     void:Dataset ;
         dcterms:description   " This is a Linked Data representation of a digital archive of 'Scottish Mountaineering Club Journal Issues 1 to 36, 1890-1901', which was created by Alan Dawson, Centre for Digital Library Research, University of Strathclyde, with funding from the Scottish Mountaineering Trust.\r\n  The Linked Data representation currently covers the relationships between places, people, journal issues and articles gathered from the Cumulative Indexes of Authors, Hills, People and Articles.\r\n  \r\n  TODO:\r\n    \r\n  (from the Cumulative Indexes)\r\n  Events\r\n  Illustrations\r\n  Reviews\r\n  Topics  \r\n\r\n  And:\r\n\r\n  \"The SMC in 1894: Rules, officers, members\" (http://gdl.cdlr.strath.ac.uk/smcj/smc1894.htm)\r\n\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "Keith Alexander" ;
@@ -19,18 +20,18 @@
         dcat:distribution     [ dcat:accessURL  <http://smcjournals.dataincubator.org/> ] ;
         foaf:homepage         <http://smcjournals.dataincubator.org> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/data-incubator-smcjournals> ;
+[ void:target   lod:data-incubator-smcjournals , lod:dbpedia ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/data-incubator-smcjournals> ;
+[ void:target   lod:data-incubator-smcjournals , lod:data-incubator-climb ;
+  void:triples  123
+] .
+
+[ void:target   lod:data-incubator-smcjournals , lod:geonames-semantic-web ;
   void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/ordnance-survey-linked-data> , <http://lod-cloud.net/dataset/data-incubator-smcjournals> ;
+[ void:target   lod:data-incubator-smcjournals , lod:ordnance-survey-linked-data ;
   void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/data-incubator-climb> , <http://lod-cloud.net/dataset/data-incubator-smcjournals> ;
-  void:triples  123
 ] .

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/finnish-municipalities>
+lod:finnish-municipalities
         a                     void:Dataset ;
         dcterms:description   "An RDF vocabulary describing Finnish municipalities and many regional classifications, including \r\n\r\n* Centres for Economic Development, Transport and the Environment\r\n* Provinces\r\n* Regional State Administrative Agencies\r\n* Regions\r\n* Major regions\r\n* Statistical grouping of municipalities\r\n* Employment and economic development centres\r\n\r\nThe data is based on classifications by Statistics Finland. The format is SKOS-based, but extends SKOS by defining separate classes (subclasses of skos:Concept) for each entity type and similarly uses subproperties of SKOS properties to relate the entities.\r\n\r\nLinks to DBpedia and Wikipedia are also provided for the municipalities."@en ;
         dcterms:publisher     [ rdfs:label  "Osma Suominen" ;
                                 foaf:mbox   "osma.suominen@tkk.fi"
                               ] ;
-        dcterms:subject       "format-rdf" , "deref-vocab" , "regions" , "government" , "lod" , "country-finland" , "published-by-third-party" , "lodcloud-diagram-2011-09-19" , "local-government" , "geographic" , "format-rdfs" , "provenance-metadata" , "regional" , "format-skos" , "municipal" , "vocab-mappings" , "opendatachallenge" ;
+        dcterms:subject       "format-rdf" , "deref-vocab" , "regions" , "government" , "country-finland" , "lod" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "local-government" , "geographic" , "format-rdfs" , "provenance-metadata" , "regional" , "format-skos" , "municipal" , "vocab-mappings" , "opendatachallenge" ;
         dcterms:title         "Finnish municipalities and regional classifications"@en ;
         void:exampleResource  <http://www.yso.fi/onto/kunnat/k91> ;
         void:triples          11380 ;
         dcat:distribution     [ dcat:accessURL  <http://onki.fi/en/browser/downloadfile/kunnat?o=http%3A%2F%2Fwww.yso.fi%2Fonto%2Fkunnat&f=kunnat%2Fkunnat2011-skos.ttl> ] ;
         foaf:homepage         <http://onki.fi/en/browser/overview/kunnat> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/finnish-municipalities> ;
+[ void:target   lod:finnish-municipalities , lod:dbpedia ;
   void:triples  336
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wikipedia> , <http://lod-cloud.net/dataset/finnish-municipalities> ;
+[ void:target   lod:finnish-municipalities , lod:wikipedia ;
   void:triples  336
 ] .

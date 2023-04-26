@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-panda-id-au> ;
+[ void:target   lod:statusnet-panda-id-au , lod:statusnet-skilledtests-com ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-panda-id-au> ;
+[ void:target   lod:statusnet-panda-id-au , lod:statusnet-quitter-se ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ourcoffs-org-au> , <http://lod-cloud.net/dataset/statusnet-panda-id-au> ;
+[ void:target   lod:statusnet-panda-id-au , lod:statusnet-ourcoffs-org-au ;
   void:triples  2
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-panda-id-au>
+lod:statusnet-panda-id-au
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://panda.id.au"@en ;
         dcterms:publisher     [ rdfs:label  "" ;

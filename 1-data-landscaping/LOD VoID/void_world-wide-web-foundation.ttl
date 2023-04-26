@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,26 +6,26 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/fao-geopolitical-ontology> , <http://lod-cloud.net/dataset/world-wide-web-foundation> ;
-  void:triples  64
+[ void:target   lod:world-wide-web-foundation , lod:personal-homepages ;
+  void:triples  72
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/world-wide-web-foundation> ;
+[ void:target   lod:world-wide-web-foundation , lod:dbpedia ;
   void:triples  61
 ] .
 
-<http://lod-cloud.net/dataset/world-wide-web-foundation>
+lod:world-wide-web-foundation
         a                     void:Dataset ;
         dcterms:description   "WebIndex and OpenData Barometer from the World Wide Web Foundation"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "format-rdfs" , "format-rdf" , "format-dcterm" , "format-time" , "format-cube" , "dataset-level-metadata" , "LinkedDataCrawl2014" , "lodcloud-diagram-2014-08-30" , "format-pos" , "crawledLinkedDataCloud2014" , "dump" , "part-deref-vocab" , "format-foaf" , "format-org" , "format-skos" , "format-void" , "government" ;
+        dcterms:subject       "format-rdf" , "format-rdfs" , "format-dcterm" , "format-time" , "format-cube" , "dataset-level-metadata" , "LinkedDataCrawl2014" , "lodcloud-diagram-2014-08-30" , "format-pos" , "crawledLinkedDataCloud2014" , "dump" , "part-deref-vocab" , "format-foaf" , "format-org" , "format-skos" , "format-void" , "government" ;
         dcterms:title         "World Wide Web Foundation"@en ;
         void:exampleResource  <http://data.webfoundation.org/webindex/data/observation/WBC-Imputed/obs27> ;
         void:triples          "0"^^xsd:int ;
         foaf:homepage         <http://data.webfoundation.org> .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/world-wide-web-foundation> ;
-  void:triples  72
+[ void:target   lod:world-wide-web-foundation , lod:fao-geopolitical-ontology ;
+  void:triples  64
 ] .

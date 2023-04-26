@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/semantic-web-grundlagen>
+lod:semantic-web-grundlagen
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
@@ -16,6 +17,6 @@
         void:exampleResource  <http://semantic-web-grundlagen.de/wiki/Spezial:ExportRDF/Praxisvortrag_(14._Vorlesung_SWebT1_WS12/13)> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/semantic-web-grundlagen> ;
+[ void:target   lod:semantic-web-grundlagen , lod:personal-homepages ;
   void:triples  1
 ] .

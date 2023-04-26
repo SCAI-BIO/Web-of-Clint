@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-ic> , <http://lod-cloud.net/dataset/cz-cenia-pollution> ;
+[ void:target   lod:cz-cenia-pollution , lod:cz-ic ;
   void:triples  2000
 ] .
 
-<http://lod-cloud.net/dataset/cz-cenia-pollution>
+lod:cz-cenia-pollution
         a                     void:Dataset ;
         dcterms:description   "Data about business entities that pollute the environment."@en ;
         dcterms:publisher     [ rdfs:label  "Jakub Klímek" ;
                                 foaf:mbox   "klimek@opendata.cz"
                               ] ;
-        dcterms:subject       "format-adms" , "format-schema" , "czech-republic" , "published-by-third-party" , "format-skos" , "format-gr" , "format-dcterms" , "provenance-metadata" , "lod" , "deref-vocab" , "government" , "no-vocab-mappings" , "license-metadata" , "format-owl" , "czech" ;
+        dcterms:subject       "format-adms" , "format-schema" , "czech-republic" , "published-by-third-party" , "format-skos" , "format-gr" , "format-dcterms" , "provenance-metadata" , "lod" , "deref-vocab" , "government" , "format-owl" , "license-metadata" , "no-vocab-mappings" , "czech" ;
         dcterms:title         "Integrated pollution registry"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/business-entity/CZ27800890%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fcenia.cz%2Firz&output=text%2Fturtle> , <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/cenia.cz/provozovny/id/2004/144704/checks/2004/celkový-dusík/voda%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fcenia.cz%2Firz&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          379372 ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/cenia.cz/provozovny/id/2004/144704/checks/2004/celkový-dusík/voda> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/business-entity/CZ27800890> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/cenia.cz/provozovny/id/2004/144704/checks/2004/celkový-dusík/voda> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/CZ_MZP_01-cenia-cz-pollution.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fcenia.cz%2Firz%2Fdistribution%3E&output=text%2Fturtle> ] ;
         foaf:homepage         <http://linked.opendata.cz/resource/dataset/cenia.cz/irz> .

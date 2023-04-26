@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,15 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/fu-berlin-euraxess> ;
+[ void:target   lod:fu-berlin-euraxess , lod:dbpedia ;
   void:triples  200
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/fu-berlin-euraxess> ;
+[ void:target   lod:fu-berlin-euraxess , lod:lexvo ;
   void:triples  200
 ] .
 
-<http://lod-cloud.net/dataset/fu-berlin-euraxess>
+lod:fu-berlin-euraxess
         a                     void:Dataset ;
         dcterms:description   "EURAXESS Jobs is a website for research job vacancies, funding opportunities and fellowships throughout Europe."@en ;
         dcterms:publisher     [ rdfs:label  "Anja Jentzsch" ;

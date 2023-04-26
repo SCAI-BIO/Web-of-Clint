@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/KnowledgeFusion>
-        a                    void:Dataset ;
+lod:KnowledgeFusion  a       void:Dataset ;
         dcterms:description  "A knowledge forest is a domain-specific knowledge graph, describing the learning dependencies between topics in a given course. A knowledge forest is constructed by the combination of materialized facet trees of topics and learning dependencies between topics. A facet tree is a set of facets with facet hyponymy. Knowledge fragments from different sources are assembled to corresponding facets of the facet tree to form a materialized facet tree."@en ;
         dcterms:publisher    [ rdfs:label  "Qinghua Zheng; Jun Liu; Bifan Wei" ;
                                foaf:mbox   "weibifan@gmail.com"
                              ] ;
-        dcterms:subject      "cross_domain" , "Knowledge Fragment" , "Knowlege Graph" ;
+        dcterms:subject      "Knowlege Graph" , "Knowledge Fragment" , "cross_domain" ;
         dcterms:title        "Knowledge Forest"@en ;
         void:triples         2100000 ;
         foaf:homepage        <http://kfm.skyclass.net> .

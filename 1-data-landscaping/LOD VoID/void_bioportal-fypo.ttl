@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bioportal-fypo>
-        a                    void:Dataset ;
+lod:bioportal-fypo  a        void:Dataset ;
         dcterms:description  "FYPO is a formal ontology of phenotypes observed in fission yeast. FYPO is being developed to support the comprehensive and detailed representation of phenotypes in PomBase, the new online fission yeast resource (www.pombaes.org). Its scope is similar to that of the Ascomycete Phenotype Ontology (APO), but FYPO includes more detailed pre-composed terms as well as computable definitions."@en ;
         dcterms:publisher    [ rdfs:label  "Midoria Harris" ;
                                foaf:mbox   ""
@@ -19,42 +19,42 @@
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47344?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1689> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mp> , <http://lod-cloud.net/dataset/bioportal-fypo> ;
-  void:triples  26
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-spto> , <http://lod-cloud.net/dataset/bioportal-fypo> ;
+[ void:target   lod:bioportal-fypo , lod:bioportal-spto ;
   void:triples  18
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-apo> , <http://lod-cloud.net/dataset/bioportal-fypo> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-fypo> ;
+[ void:target   lod:bioportal-fypo , lod:bioportal-snomedct ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-fypo> ;
+[ void:target   lod:bioportal-fypo , lod:bioportal-ncit ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x1> , <http://lod-cloud.net/dataset/bioportal-fypo> ;
+[ void:target   lod:bioportal-fypo , lod:bioportal-go_x1 ;
   void:triples  326
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-fypo> ;
+[ void:target   lod:bioportal-fypo , lod:bioportal-biomodels ;
   void:triples  479
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-fypo> ;
+[ void:target   lod:bioportal-fypo , lod:bioportal-nif ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nigo> , <http://lod-cloud.net/dataset/bioportal-fypo> ;
-  void:triples  95
+[ void:target   lod:bioportal-fypo , lod:bioportal-sopharm ;
+  void:triples  21
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-fypo> ;
-  void:triples  21
+[ void:target   lod:bioportal-fypo , lod:bioportal-mp ;
+  void:triples  26
+] .
+
+[ void:target   lod:bioportal-fypo , lod:bioportal-apo ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-fypo , lod:bioportal-nigo ;
+  void:triples  95
 ] .

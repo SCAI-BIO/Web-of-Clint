@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,21 +6,20 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/the-view-from>
-        a                     void:Dataset ;
+[ void:target   lod:the-view-from , lod:dbpedia ;
+  void:triples  31
+] .
+
+lod:the-view-from  a          void:Dataset ;
         dcterms:description   "A set of data about photos of the view from various places"@en ;
         dcterms:publisher     [ rdfs:label  "Tom Heath" ;
                                 foaf:mbox   "tom.heath@talis.com"
                               ] ;
-        dcterms:subject       "void-sparql-endpoint" , "published-by-third-party" , "no-deref-vocab" , "photography" , "tourism" , "geography" , "lodcloud.unconnected" , "format-dc" , "geographic" , "format-rdf" , "lod" , "usergeneratedcontent" , "photo" ;
+        dcterms:subject       "void-sparql-endpoint" , "published-by-third-party" , "no-deref-vocab" , "photography" , "tourism" , "geography" , "geographic" , "format-dc" , "lodcloud.unconnected" , "format-rdf" , "lod" , "usergeneratedcontent" , "photo" ;
         dcterms:title         "The View From"@en ;
         void:exampleResource  <http://theviewfrom.org/things/en/Banff_Springs_Hotel> ;
         void:sparqlEndpoint   <http://api.talis.com/stores/theviewfrom/services/sparql> ;
         void:triples          368 ;
-        dcat:distribution     [ dcat:accessURL  <http://api.talis.com/stores/theviewfrom/items> ] ;
         dcat:distribution     [ dcat:accessURL  <http://theviewfrom.org/.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://api.talis.com/stores/theviewfrom/items> ] ;
         foaf:homepage         <http://theviewfrom.org/> .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/the-view-from> ;
-  void:triples  31
-] .

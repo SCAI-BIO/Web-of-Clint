@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,52 +6,51 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-cmo> ;
-  void:triples  260
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-cmo> ;
-  void:triples  35
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ecg> , <http://lod-cloud.net/dataset/bioportal-cmo> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vt> , <http://lod-cloud.net/dataset/bioportal-cmo> ;
+[ void:target   lod:bioportal-cmo , lod:bioportal-vt ;
   void:triples  31
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-cmo> ;
-  void:triples  77
+[ void:target   lod:bioportal-cmo , lod:bioportal-snomedct ;
+  void:triples  260
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-cmo> ;
-  void:triples  27
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-cmo> ;
+[ void:target   lod:bioportal-cmo , lod:bioportal-mdr ;
   void:triples  37
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-cmo> ;
-  void:triples  12
+[ void:target   lod:bioportal-cmo , lod:bioportal-ecg ;
+  void:triples  14
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-cmo> ;
+[ void:target   lod:bioportal-cmo , lod:bioportal-csp ;
   void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-cmo> ;
-  void:triples  84
+[ void:target   lod:bioportal-cmo , lod:bioportal-ncit ;
+  void:triples  35
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-cmo> ;
+[ void:target   lod:bioportal-cmo , lod:bioportal-galen ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-cmo , lod:bioportal-canco ;
   void:triples  15
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-cmo>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-cmo , lod:bioportal-lnc ;
+  void:triples  68
+] .
+
+[ void:target   lod:bioportal-cmo , lod:bioportal-mesh-owl ;
+  void:triples  84
+] .
+
+[ void:target   lod:bioportal-cmo , lod:bioportal-msh ;
+  void:triples  27
+] .
+
+lod:bioportal-cmo  a         void:Dataset ;
         dcterms:description  "The Clinical Measurement Ontology is designed to be used to standardize morphological and physiological measurement records generated from clinical and model organism research and health programs"@en ;
         dcterms:publisher    [ rdfs:label  "Mary Shimoyama" ;
                                foaf:mbox   ""
@@ -63,6 +63,6 @@
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/47157?apikey=BP_API_KEY> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1583> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-cmo> ;
-  void:triples  68
+[ void:target   lod:bioportal-cmo , lod:bioportal-rcd ;
+  void:triples  77
 ] .

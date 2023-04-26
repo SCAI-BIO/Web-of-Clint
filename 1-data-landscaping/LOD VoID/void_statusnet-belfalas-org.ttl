@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,65 +6,65 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
+[ void:target   lod:statusnet-belfalas-org , lod:geonames-semantic-web ;
   void:triples  2
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-shnoulle-net> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
-  void:triples  8
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-keuser-fr> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
+[ void:target   lod:statusnet-belfalas-org , lod:statusnet-scoffoni-net ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-planet-libre-org> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
+[ void:target   lod:statusnet-belfalas-org , lod:statusnet-status-net ;
   void:triples  9
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gegeweb-org> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
-  void:triples  8
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
-  void:triples  7
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-soucy-cc> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
+[ void:target   lod:statusnet-belfalas-org , lod:statusnet-planet-libre-org ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-20100-org> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
-  void:triples  4
+[ void:target   lod:statusnet-belfalas-org , lod:statusnet-imirhil-fr ;
+  void:triples  8
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-belfalas-org>
+lod:statusnet-belfalas-org
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://belfalas.org"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "lodcloud-diagram-2014-08-30" , "format-bio" , "social web" , "format-sioc" , "format-rdf" , "crawledLinkedDataCloud2014" , "LinkedDataCrawl2014" , "format-pos" , "format-rdfs" , "format-foaf" ;
+        dcterms:subject       "lodcloud-diagram-2014-08-30" , "format-bio" , "social web" , "format-rdf" , "format-sioc" , "crawledLinkedDataCloud2014" , "LinkedDataCrawl2014" , "format-pos" , "format-rdfs" , "format-foaf" ;
         dcterms:title         "statusnet-belfalas-org"@en ;
         void:exampleResource  <http://www.belfalas.org/flink/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-imirhil-fr> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
-  void:triples  8
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
+[ void:target   lod:statusnet-belfalas-org , lod:statusnet-postblue-info ;
   void:triples  9
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ced117-net> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
+[ void:target   lod:statusnet-belfalas-org , lod:statusnet-shnoulle-net ;
+  void:triples  8
+] .
+
+[ void:target   lod:statusnet-belfalas-org , lod:statusnet-20100-org ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-scoffoni-net> , <http://lod-cloud.net/dataset/statusnet-belfalas-org> ;
+[ void:target   lod:statusnet-belfalas-org , lod:statusnet-ced117-net ;
+  void:triples  4
+] .
+
+[ void:target   lod:statusnet-belfalas-org , lod:statusnet-soucy-cc ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-belfalas-org , lod:statusnet-quitter-se ;
+  void:triples  7
+] .
+
+[ void:target   lod:statusnet-belfalas-org , lod:statusnet-keuser-fr ;
   void:triples  5
+] .
+
+[ void:target   lod:statusnet-belfalas-org , lod:statusnet-gegeweb-org ;
+  void:triples  8
 ] .

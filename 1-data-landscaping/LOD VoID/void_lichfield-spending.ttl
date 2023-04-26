@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/reference-data-gov-uk> , <http://lod-cloud.net/dataset/lichfield-spending> ;
-  void:triples  51
+[ void:target   lod:lichfield-spending , lod:statistics-data-gov-uk ;
+  void:triples  4641
 ] .
 
-<http://lod-cloud.net/dataset/lichfield-spending>
+[ void:target   lod:lichfield-spending , lod:dbpedia ;
+  void:triples  17
+] .
+
+[ void:target   lod:lichfield-spending , lod:opencorporates ;
+  void:triples  304
+] .
+
+lod:lichfield-spending
         a                     void:Dataset ;
         dcterms:description   "Monthly published data on expenditure over £500 including VAT of Lichfield District."@en ;
         dcterms:publisher     [ rdfs:label  "Lichfield District Council" ;
@@ -23,14 +32,6 @@
         dcat:distribution     [ dcat:accessURL  <http://spending.lichfielddc.gov.uk/all.rdf> ] ;
         foaf:homepage         <http://spending.lichfielddc.gov.uk> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/lichfield-spending> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/opencorporates> , <http://lod-cloud.net/dataset/lichfield-spending> ;
-  void:triples  304
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/lichfield-spending> ;
-  void:triples  4641
+[ void:target   lod:lichfield-spending , lod:reference-data-gov-uk ;
+  void:triples  51
 ] .

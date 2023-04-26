@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,46 +6,45 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/fao-linked-data> , <http://lod-cloud.net/dataset/oecd-linked-data> ;
-  void:triples  3360
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/ecb-linked-data> , <http://lod-cloud.net/dataset/oecd-linked-data> ;
+[ void:target   lod:oecd-linked-data , lod:ecb-linked-data ;
   void:triples  3495
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bfs-linked-data> , <http://lod-cloud.net/dataset/oecd-linked-data> ;
+[ void:target   lod:oecd-linked-data , lod:transparency-linked-data ;
   void:triples  3335
 ] .
 
-<http://lod-cloud.net/dataset/oecd-linked-data>
-        a                     void:Dataset ;
+[ void:target   lod:oecd-linked-data , lod:world-bank-linked-data ;
+  void:triples  3487
+] .
+
+[ void:target   lod:oecd-linked-data , lod:dbpedia ;
+  void:triples  2613
+] .
+
+lod:oecd-linked-data  a       void:Dataset ;
         dcterms:description   "OECD data and metadata for OECD countries and selected non-member economies."@en ;
         dcterms:publisher     [ rdfs:label  "Sarven Capadisli" ;
                                 foaf:mbox   "info@csarven.ca"
                               ] ;
-        dcterms:subject       "linked-data" , "statistics" , "world" , "government" , "published-by-third-party" , "lodcloud.candidate" , "indicators" , "format-sdmx" , "format-dcterms" , "format-qb" , "country-codes" , "license-metadata" , "format-prov" , "lodcloud" , "provenance-metadata" , "education" , "lodcloud-diagram-2014-08-30" , "format-skos" , "void-sparql-endpoint" , "vocab-mappings" , "lod" , "projects" , "no-proprietary-vocab" , "international" , "economics" , "format-rdf" ;
+        dcterms:subject       "linked-data" , "statistics" , "world" , "government" , "lodcloud.candidate" , "published-by-third-party" , "indicators" , "format-dcterms" , "format-sdmx" , "format-qb" , "country-codes" , "license-metadata" , "format-prov" , "lodcloud" , "provenance-metadata" , "education" , "lodcloud-diagram-2014-08-30" , "format-skos" , "void-sparql-endpoint" , "lod" , "vocab-mappings" , "projects" , "international" , "no-proprietary-vocab" , "economics" , "format-rdf" ;
         dcterms:title         "Organisation for Economic Co-operation and Development (OECD) Linked Data"@en ;
         void:exampleResource  <http://oecd.270a.info/dataset/7HA> ;
         void:sparqlEndpoint   <http://oecd.270a.info/sparql> ;
         void:triples          225178954 ;
-        dcat:distribution     [ dcat:accessURL  <http://oecd.270a.info/data/meta.tar.gz> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://oecd.270a.info/.well-known/void> ] ;
         dcat:distribution     [ dcat:accessURL  <http://oecd.270a.info/data/data.tar.gz> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://oecd.270a.info/.well-known/void> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://oecd.270a.info/data/meta.tar.gz> ] ;
         foaf:homepage         <http://oecd.270a.info/> .
 
-[ void:target   <http://lod-cloud.net/dataset/oecd-linked-data> ;
-  void:triples  266259
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/transparency-linked-data> , <http://lod-cloud.net/dataset/oecd-linked-data> ;
+[ void:target   lod:oecd-linked-data , lod:bfs-linked-data ;
   void:triples  3335
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/world-bank-linked-data> , <http://lod-cloud.net/dataset/oecd-linked-data> ;
-  void:triples  3487
+[ void:target   lod:oecd-linked-data , lod:fao-linked-data ;
+  void:triples  3360
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/oecd-linked-data> ;
-  void:triples  2613
+[ void:target   lod:oecd-linked-data ;
+  void:triples  266259
 ] .

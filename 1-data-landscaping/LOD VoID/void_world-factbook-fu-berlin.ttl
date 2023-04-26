@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,13 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/world-factbook-fu-berlin>
+lod:world-factbook-fu-berlin
         a                     void:Dataset ;
         dcterms:description   "A partial RDF conversion of the CIA World Factbook, package:cia-world-factbook."@en ;
         dcterms:publisher     [ rdfs:label  "Christian Bizer" ;
                                 foaf:mbox   "christian.bizer@fu-berlin.de"
                               ] ;
-        dcterms:subject       "country" , "lodcloud.nolinks" , "government" , "published-by-third-party" , "no-provenance-metadata" , "no-license-metadata" , "format-factbook" , "geographic" , "lodcloud-diagram-2014-08-30" , "lodcloud-diagram-2011-09-19" , "accident-statistics" , "no-vocab-mappings" , "deref-vocab" , "lod" , "lodcloud-diagram-2007-05-01" , "format-rdf" ;
+        dcterms:subject       "country" , "lodcloud.nolinks" , "no-license-metadata" , "format-factbook" , "no-provenance-metadata" , "published-by-third-party" , "government" , "geographic" , "lodcloud-diagram-2011-09-19" , "lodcloud-diagram-2014-08-30" , "accident-statistics" , "no-vocab-mappings" , "deref-vocab" , "lod" , "lodcloud-diagram-2007-05-01" , "format-rdf" ;
         dcterms:title         "World Factbook (FU Berlin)"@en ;
         void:exampleResource  <http://www4.wiwiss.fu-berlin.de/factbook/resource/Akrotiri> ;
         void:sparqlEndpoint   <http://www4.wiwiss.fu-berlin.de/factbook/sparql> ;

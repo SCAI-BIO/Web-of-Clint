@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,85 +6,85 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-cooleysekula-net> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-fragdev-com ;
+  void:triples  25
+] .
+
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-1w6-org ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-cooleysekula-net ;
   void:triples  8
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-skilledtests-com> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-linuxwrangling-com> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-russwurm-org> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-russwurm-org ;
   void:triples  5
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-postblue-info> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-chromic-org ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-macno-org> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
-  void:triples  17
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-1w6-org> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
-  void:triples  1
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-morphtown-de> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
-  void:triples  8
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-chromic-org> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-ilikefreedom-ro ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-tekk-com-ar> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-macno-org ;
   void:triples  1
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-status-net> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
-  void:triples  3
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-hackerposse-com ;
+  void:triples  4
 ] .
 
-<http://lod-cloud.net/dataset/statusnet-jonkman-ca>
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-lydiastench-com ;
+  void:triples  4
+] .
+
+lod:statusnet-jonkman-ca
         a                     void:Dataset ;
         dcterms:description   "StatusNet instance hosted at http://jonkman.ca"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "social_networking" , "format-bio" , "format-sioc" , "format-foaf" , "crawledLinkedDataCloud2014" , "format-rdfs" , "format-pos" , "LinkedDataCrawl2014" , "social web" , "format-rdf" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:subject       "social_networking" , "format-bio" , "format-foaf" , "format-sioc" , "crawledLinkedDataCloud2014" , "format-rdfs" , "format-pos" , "LinkedDataCrawl2014" , "format-rdf" , "social web" , "lodcloud-diagram-2014-08-30" ;
         dcterms:title         "statusnet-jonkman-ca"@en ;
         void:exampleResource  <http://sn.jonkman.ca/administrator/foaf> ;
         void:triples          "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-hackerposse-com> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
+[ void:target   lod:statusnet-jonkman-ca , lod:personal-homepages ;
+  void:triples  17
+] .
+
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-status-net ;
+  void:triples  3
+] .
+
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-skilledtests-com ;
+  void:triples  14
+] .
+
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-tekk-com-ar ;
+  void:triples  1
+] .
+
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-linuxwrangling-com ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-lydiastench-com> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-gomertronic-com ;
   void:triples  4
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-fragdev-com> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
-  void:triples  25
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-morphtown-de ;
+  void:triples  8
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-gomertronic-com> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
-  void:triples  4
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/statusnet-quitter-se> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-quitter-se ;
   void:triples  53
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/statusnet-ilikefreedom-ro> , <http://lod-cloud.net/dataset/statusnet-jonkman-ca> ;
+[ void:target   lod:statusnet-jonkman-ca , lod:statusnet-postblue-info ;
   void:triples  4
 ] .

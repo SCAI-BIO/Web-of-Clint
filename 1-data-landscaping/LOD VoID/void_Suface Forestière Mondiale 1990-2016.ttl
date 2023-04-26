@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,8 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/Suface+Foresti%C3%A8re+Mondiale+1990-2016> ;
-  void:triples  4024
+[ void:target   <http://lod-cloud.net/dataset/Suface+Foresti%C3%A8re+Mondiale+1990-2016> , lod:w3c ;
+  void:triples  9389
 ] .
 
 <http://lod-cloud.net/dataset/Suface+Foresti%C3%A8re+Mondiale+1990-2016>
@@ -22,6 +23,6 @@
         void:triples         34875 ;
         foaf:homepage        <https://data.world/mhoangvslev/suface-forestire-mondiale-1990-2016> .
 
-[ void:target   <http://lod-cloud.net/dataset/w3c> , <http://lod-cloud.net/dataset/Suface+Foresti%C3%A8re+Mondiale+1990-2016> ;
-  void:triples  9389
+[ void:target   <http://lod-cloud.net/dataset/Suface+Foresti%C3%A8re+Mondiale+1990-2016> , lod:dbpedia ;
+  void:triples  4024
 ] .

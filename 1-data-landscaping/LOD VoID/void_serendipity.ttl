@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/loc> , <http://lod-cloud.net/dataset/serendipity> ;
-  void:triples  14251
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/serendipity> ;
+[ void:target   lod:serendipity , lod:dbpedia ;
   void:triples  15982
 ] .
 
-<http://lod-cloud.net/dataset/serendipity>
-        a                    void:Dataset ;
+[ void:target   lod:serendipity , lod:loc ;
+  void:triples  14251
+] .
+
+lod:serendipity  a           void:Dataset ;
         dcterms:description  "Serendipity Linked Open Data includes data about OpenCourseWare and Open Educational Resources. The data was published in RDF format according to the design issues of Linked Open Data. Data can be accessed from a SPARQL endpoint. \r\n## Data: ##\r\n* OCW Institutions: 262\r\n* OCW Repositories:  80\r\n* Localities: 221\r\n* OCW: 15000\r\n* OER: 70000\r\n## Demographics: ##\r\n* Open Educational Resources are in different languages: English, Spanish, Catalan, Arabic, Chinese, Danish, Dutch, Finnish, French, German, Greek, Hebrew, Hindi, Indonesian, Italian, Japanese, Korean, Macedonian, Persian, Polish, Portuguese, Russian, Slovenian, Swedish, Thai, Turkish, Vietnamese\r\n* OER Providers are from different countries: Afghanistan, Australia, Belgium, Brazil, Canada, Chile, China, Colombia, Costa Rica, Denmark, Dominican Republic, Ecuador, Finland, France, Germany, Greece, India, Indonesia, Iran, Israel, Italy, Japan, Kenya, Malaysia, Mexico, Netherlands, Nigeria, Oman, Pakistan, Panama, Peru, Poland, Portugal, Puerto Rico, Republic of Macedonia, Russia, Saudi Arabia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, United Arab Emirates, United Kingdom, United States, Venezuela and Vietnam."@en ;
         dcterms:publisher    [ rdfs:label  "Nelson Piedra" ;
                                foaf:mbox   "nopiedra@utpl.edu.ec"

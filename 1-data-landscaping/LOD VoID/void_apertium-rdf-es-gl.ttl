@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/apertium-rdf-es-gl>
+lod:apertium-rdf-es-gl
         a                    void:Dataset ;
         dcterms:description  "RDF version of the Apertium bilingual dictionary ES-GL. The original dataset (in LMF) comes from http://hdl.handle.net/10230/17121 . The RDF version of the lexica is modelled using lemon (http://lemon-model.net/) and the translation module (http://purl.org/net/translation). More about the Apertium RDF dictionaries at http://linguistic.linkeddata.es/apertium/\r\n"@en ;
         dcterms:publisher    [ rdfs:label  "Universitat Pompeu Fabra. Institut Universitari de Lingüística Aplicada (IULA); Universidade de Vigo. Seminario de Lingüística Informática; Prompsit Language Engineering, S.L ; Universitat Politècnica de Catalunya. TALP Research Center\t; Universitat d'Alacant. Grup Transducens" ;
@@ -14,17 +15,17 @@
         dcterms:subject      "Apertium" , "translation" , "Galician" , "llod" , "rdf" , "linguistics" , "dictionary" , "multilingual" , "lexicon" , "linguistic lod" , "lemon" , "lod" , "Spanish" , "bilingual" ;
         dcterms:title        "Apertium RDF ES-GL"@en ;
         void:triples         206284 ;
-        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-05T15:12:07.895Z/apertium-es-gl-dataset-metadata.rdf> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconGL> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-07T15:11:48.579Z/apertium-es-gl-rdf.zip> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconES> ] ;
         dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/tranSetES-GL> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/sparql/> ] .
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-05T15:12:07.895Z/apertium-es-gl-dataset-metadata.rdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-07T15:11:48.579Z/apertium-es-gl-rdf.zip> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/sparql/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconES> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://linguistic.linkeddata.es/id/apertium/lexiconGL> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lexinfo> , <http://lod-cloud.net/dataset/apertium-rdf-es-gl> ;
+[ void:target   lod:apertium-rdf-es-gl , lod:lexinfo ;
   void:triples  16631
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/babelnet> , <http://lod-cloud.net/dataset/apertium-rdf-es-gl> ;
+[ void:target   lod:apertium-rdf-es-gl , lod:babelnet ;
   void:triples  4386
 ] .

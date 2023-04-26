@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,13 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/fu-berlin-ec-competition>
+lod:fu-berlin-ec-competition
         a                     void:Dataset ;
         dcterms:description   "Case database of antitrust cases, cartels, mergers, and state aid, maintained by the European Commission. Republished as Linked Data."@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "europeanunion" , "competition" , "ec" , "europe" , "eccompetition" , "cartels" , "business" , "stateaid" , "lod" , "latc" , "antitrust" , "mergers" ;
+        dcterms:subject       "europeanunion" , "competition" , "ec" , "europe" , "eccompetition" , "cartels" , "business" , "latc" , "lod" , "stateaid" , "antitrust" , "mergers" ;
         dcterms:title         "European Commission Competition data set (FU Berlin)"@en ;
         void:exampleResource  <http://www4.wiwiss.fu-berlin.de/eccompetition/resource/Merger/M.10> ;
         void:sparqlEndpoint   <http://www4.wiwiss.fu-berlin.de/eccompetition/sparql> ;

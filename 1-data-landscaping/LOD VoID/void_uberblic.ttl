@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/uberblic>
-        a                     void:Dataset ;
+lod:uberblic  a               void:Dataset ;
         dcterms:description   "### SPARQL access\r\n\r\nAccording to [this page](http://uberblic.org/developers/apis/sparql/), there should be a SPARQL endpoint at [this location](http://platform.uberblic.org/api/v1/sparql), but it refuses any request with a 403 Not Authorized error."@en ;
         dcterms:publisher     [ rdfs:label  "Uberblic Labs" ;
                                 foaf:mbox   "contact@uberblic.com"
@@ -19,14 +19,14 @@
         dcat:distribution     [ dcat:accessURL  <http://platform.uberblic.org/dumps/> ] ;
         foaf:homepage         <http://platform.uberblic.org> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/uberblic> ;
-  void:triples  135132
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/freebase> , <http://lod-cloud.net/dataset/uberblic> ;
+[ void:target   lod:uberblic , lod:freebase ;
   void:triples  155193
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/uberblic> ;
+[ void:target   lod:uberblic , lod:dbpedia ;
   void:triples  1196
+] .
+
+[ void:target   lod:uberblic , lod:geonames-semantic-web ;
+  void:triples  135132
 ] .

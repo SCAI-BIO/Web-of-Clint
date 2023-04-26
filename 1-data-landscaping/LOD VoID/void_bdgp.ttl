@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bdgp>
-        a                    void:Dataset ;
+lod:bdgp  a                  void:Dataset ;
         dcterms:description  ""@en ;
         dcterms:publisher    [ rdfs:label  "Jun Zhao" ;
                                foaf:mbox   ""
@@ -15,7 +15,7 @@
         dcterms:title        "Bdgp"@en ;
         void:sparqlEndpoint  <http://www.open-biomed.org.uk/sparql/endpoint/bdgp_20081030> ;
         void:triples         1080060 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.open-biomed.org.uk/service/bdgp/geneproducts> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.open-biomed.org.uk/open-biomed-data/bdgp-images-all-20110211.tar.gz> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://www.open-biomed.org.uk/service/bdgp/images/gene/{gene}> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.open-biomed.org.uk/service/bdgp/geneproducts> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.open-biomed.org.uk/service/bdgp/images/gene/> ] ;
         foaf:homepage        <http://code.google.com/p/open-biomed/wiki/Bdgp> .

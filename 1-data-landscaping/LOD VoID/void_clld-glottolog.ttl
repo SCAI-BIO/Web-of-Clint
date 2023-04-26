@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,31 +6,30 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/clld-glottolog>
-        a                    void:Dataset ;
+lod:clld-glottolog  a        void:Dataset ;
         dcterms:description  "Glottolog 2.7 published by the CLLD project"@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "llod" , "lod" , "linguistics" ;
+        dcterms:subject      "lod" , "llod" , "linguistics" ;
         dcterms:title        "CLLD-GLOTTOLOG"@en ;
         void:triples         8322839 ;
-        dcat:distribution    [ dcat:accessURL  <http://glottolog.org/static/download/glottolog-dataset.n3.gz> ] ;
         dcat:distribution    [ dcat:accessURL  <http://glottolog.org/void.ttl> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://glottolog.org/static/download/glottolog-dataset.n3.gz> ] ;
         foaf:homepage        <http://glottolog.org> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/clld-glottolog> ;
+[ void:target   lod:clld-glottolog , lod:dbpedia ;
   void:triples  7822
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/gold> , <http://lod-cloud.net/dataset/clld-glottolog> ;
-  void:triples  24393
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/geonames> , <http://lod-cloud.net/dataset/clld-glottolog> ;
+[ void:target   lod:clld-glottolog , lod:geonames ;
   void:triples  10763
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/clld-glottolog> ;
+[ void:target   lod:clld-glottolog , lod:lexvo ;
   void:triples  7822
+] .
+
+[ void:target   lod:clld-glottolog , lod:gold ;
+  void:triples  24393
 ] .

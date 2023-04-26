@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,18 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/calames>
-        a                     void:Dataset ;
+lod:calames  a                void:Dataset ;
         dcterms:description   "Source : [Calames](http://www.calames.abes.fr)\r\n\r\nCalames is the French academic union catalogue of archives and manuscripts, maintained by ABES\r\n\r\nLicensing : not yet, but will be as open as possible\r\n\r\nNB : in order to extract the RDFa, please use the URL as it is given in the following example, not as it is resolved by the application and displayed in the address bar. (Ajax trick)"@en ;
         dcterms:publisher     [ rdfs:label  "ABES" ;
                                 foaf:mbox   "apisudoc@abes.fr"
                               ] ;
-        dcterms:subject       "published-by-producer" , "archives" , "provenance-metadata" , "abes" , "ead" , "rdfa" , "france" , "lodcloud-diagram-2011-09-19" , "publications" , "no-license-metadata" , "manuscripts" , "lod" , "no-proprietary-vocab" , "lld" ;
+        dcterms:subject       "published-by-producer" , "archives" , "provenance-metadata" , "abes" , "ead" , "rdfa" , "france" , "lodcloud-diagram-2011-09-19" , "no-license-metadata" , "publications" , "manuscripts" , "lod" , "no-proprietary-vocab" , "lld" ;
         dcterms:title         "Calames"@en ;
         void:exampleResource  <http://www.calames.abes.fr/pub/ms/Calames-2010914119419211> ;
         void:triples          2000000 ;
         dcat:distribution     [ dcat:accessURL  <http://www.calames.abes.fr/sitemap.xml> ] ;
         foaf:homepage         <http://www.calames.abes.fr/> .
 
-[ void:target   <http://lod-cloud.net/dataset/idreffr> , <http://lod-cloud.net/dataset/calames> ;
+[ void:target   lod:calames , lod:idreffr ;
   void:triples  10000
 ] .

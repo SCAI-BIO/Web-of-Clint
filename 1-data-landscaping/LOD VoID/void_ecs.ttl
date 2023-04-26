@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,13 +6,12 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/ecs>
-        a                     void:Dataset ;
+lod:ecs  a                    void:Dataset ;
         dcterms:description   "Note: The number of triple is a wild guess based on the 2600 RDF documents found in Sindice and an assumption of ~20 triples per page.http://rdf.ecs.soton.ac.uk/ontology/ecs#"@en ;
         dcterms:publisher     [ rdfs:label  "School of Electronics and Computer Science Webmaster" ;
                                 foaf:mbox   "webmaster@ecs.soton.ac.uk"
                               ] ;
-        dcterms:subject       "lod" , "deref-vocab" , "no-provenance-metadata" , "no-license-metadata" , "higher-education" , "format-rdf" , "format-foaf" , "education" , "format-geo" , "format-cc" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "published-by-third-party" , "publications" , "lodcloud.nolinks" ;
+        dcterms:subject       "lod" , "deref-vocab" , "no-provenance-metadata" , "no-license-metadata" , "format-rdf" , "higher-education" , "format-foaf" , "education" , "format-geo" , "format-cc" , "lodcloud-diagram-2011-09-19" , "no-vocab-mappings" , "published-by-third-party" , "lodcloud.nolinks" , "publications" ;
         dcterms:title         "School of Electronics and Computer Science, University of Southampton"@en ;
         void:exampleResource  <http://rdf.ecs.soton.ac.uk/person/1248> , <http://rdf.ecs.soton.ac.uk/location/UoS/site/HighfieldCampus> ;
         void:triples          50000 ;

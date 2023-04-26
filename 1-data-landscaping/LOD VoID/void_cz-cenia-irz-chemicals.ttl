@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,24 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-cenia-pollution> , <http://lod-cloud.net/dataset/cz-cenia-irz-chemicals> ;
+[ void:target   lod:cz-cenia-irz-chemicals , lod:cz-cenia-pollution ;
   void:triples  80
 ] .
 
-<http://lod-cloud.net/dataset/cz-cenia-irz-chemicals>
+lod:cz-cenia-irz-chemicals
         a                     void:Dataset ;
         dcterms:description   "Information about chemicals reported to the Integrated register of pollution and methods of their measurement"@en ;
         dcterms:publisher     [ rdfs:label  "Jakub Klímek" ;
                                 foaf:mbox   "klimek@opendata.cz"
                               ] ;
-        dcterms:subject       "government" , "format-schema" , "provenance-metadata" , "czech-republic" , "format-skos" , "license-metadata" , "no-vocab-mappings" , "lod" , "deref-vocab" , "published-by-third-party" , "czech" ;
+        dcterms:subject       "format-schema" , "government" , "provenance-metadata" , "czech-republic" , "format-skos" , "license-metadata" , "no-vocab-mappings" , "lod" , "published-by-third-party" , "deref-vocab" , "czech" ;
         dcterms:title         "Chemicals reported to the Integrated register of pollution"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/irz/latka/zinek-a-slou%C4%8Deniny-jako-zn-%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fcenia-irz-chemicals&output=text%2Fturtle> , <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/domain/irz/latka/vinylchlorid%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fcenia-irz-chemicals&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          4155 ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/irz/latka/zinek-a-slou%C4%8Deniny-jako-zn-> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/CZ_MZP_02-cenia-irz-chemicals-vocabulary.trig> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/CZ_MZP_02-cenia-irz-chemicals.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fcenia-irz-chemicals%2Fdistribution%3E&output=text%2Fturtle> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/irz/latka/vinylchlorid> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         foaf:homepage         <http://linked.opendata.cz/resource/dataset/cenia-irz-chemicals> .

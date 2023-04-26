@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,22 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/vivo> ;
-  void:triples  58
-] .
-
-<http://lod-cloud.net/dataset/vivo>
-        a                     void:Dataset ;
+lod:vivo  a                   void:Dataset ;
         dcterms:description   "VIVO has been funded by NIH to create a semantic Facebook for scientist. It utilizes Semantic Web technologies to model scientists and provides federated search to enhance the discovery of researchers and collaborators across the country. The PI is the lead for the VIVO ontology team that is developing a core ontology for modeling scientists, publications, resources, grants, locations, and services. There are 236 classes in VIVO core version 1.0 ontology with 278 object properties and 222 data properties, incorporating classes from popular ontologies, such as BIBO, Dublin Core, Event, FOAF, geopolitical, and SKOS. VIVO data is based on high quality personnel data for VIVO partner institutions (i.e., University of Florida, Cornell University, Indiana University, Washington University, Weill Cornell Medical College, Scripps, and Ponce School of Medicine) that comes primarily from faculty annual reports, with additional publication data from Scopus and PubMed. VIVO data is for scientists with a focus on research (i.e., educational background, publications, expertise, grants), teaching (i.e., courses, seminars, training), and service (i.e., organizing conferences, editorial boards, other community services).\r\n\r\nIndividual packages are available:\r\n\r\n* package:vivo-cornell-university\r\n* package:vivo-indiana-university\r\n* package:vivo-university-of-florida"@en ;
         dcterms:publisher     [ rdfs:label  "VIVO" ;
                                 foaf:mbox   "dingying@indiana.edu"
                               ] ;
-        dcterms:subject       "social-networks" , "vivo" , "format-rdf" , "lod" , "social_networking" , "void-sparql-endpoint" , "dataset-collection" , "science" , "education" , "deref-vocab" , "crossdomain" , "published-by-producer" ;
+        dcterms:subject       "social-networks" , "vivo" , "format-rdf" , "lod" , "social_networking" , "void-sparql-endpoint" , "dataset-collection" , "science" , "deref-vocab" , "education" , "crossdomain" , "published-by-producer" ;
         dcterms:title         "VIVO"@en ;
         void:exampleResource  <http://vivo.ufl.edu/display/n1622> ;
         void:triples          4514025 ;
+        dcat:distribution     [ dcat:accessURL  <http://vivo.iu.edu/IU-VIVO.n3> ] ;
         dcat:distribution     [ dcat:accessURL  <http://thedatahub.org/dataset/vivo-ponce/resource/7c353a8e-92f4-4aa5-8af5-53857d6c483c> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://vivo.ufl.edu/data/all.n3> ] ;
         dcat:distribution     [ dcat:accessURL  <http://vivo.cornell.edu/Cornell-VIVO.n3> ] ;
         dcat:distribution     [ dcat:accessURL  <http://vivo-onto.slis.indiana.edu/sitemap.xml> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://vivo.ufl.edu/data/all.n3> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://vivo.iu.edu/IU-VIVO.n3> ] ;
         foaf:homepage         <http://vivoweb.org/> .
+
+[ void:target   lod:vivo , lod:dbpedia ;
+  void:triples  58
+] .

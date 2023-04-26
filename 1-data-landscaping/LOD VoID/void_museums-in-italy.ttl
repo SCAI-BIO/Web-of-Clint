@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,25 +6,24 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/museums-in-italy> ;
-  void:triples  1570
+[ void:target   lod:museums-in-italy , lod:dbpedia ;
+  void:triples  2894
 ] .
 
-<http://lod-cloud.net/dataset/museums-in-italy>
-        a                     void:Dataset ;
+lod:museums-in-italy  a       void:Dataset ;
         dcterms:description   "List of geo-referenced italian museums. Places are linked to Geonames. Museum categories are linked to dbpedia.\r\nMore info at [http://www.linkedopendata.it/datasets/musei](http://www.linkedopendata.it/datasets/musei)"@en ;
         dcterms:publisher     [ rdfs:label  "linkedopendata.it" ;
                                 foaf:mbox   "info@linkedopendata.it"
                               ] ;
-        dcterms:subject       "format-rdf" , "rdf" , "lod" , "lodcloud-diagram-2011-09-19" , "license-metadata" , "void-sparql-endpoint" , "deref-vocab" , "country-italy" , "provenance-metadata" , "published-by-producer" , "format-vcard" , "crossdomain" , "linked-open-data" , "cross_domain" , "media" , "linkeddata" , "museum" ;
+        dcterms:subject       "format-rdf" , "rdf" , "lod" , "license-metadata" , "lodcloud-diagram-2011-09-19" , "void-sparql-endpoint" , "country-italy" , "deref-vocab" , "provenance-metadata" , "published-by-producer" , "format-vcard" , "crossdomain" , "linked-open-data" , "cross_domain" , "media" , "linkeddata" , "museum" ;
         dcterms:title         "Italian Museums"@en ;
         void:exampleResource  <http://data.linkedopendata.it/musei/resource/Musei_Vaticani_Collezione_d%27arte_religiosa_Moderna-Roma> ;
         void:sparqlEndpoint   <http://sparql.linkedopendata.it/musei> ;
         void:triples          49897 ;
-        dcat:distribution     [ dcat:accessURL  <http://void.linkedopendata.it/musei> ] ;
         dcat:distribution     [ dcat:accessURL  <http://dump.linkedopendata.it/musei> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://void.linkedopendata.it/musei> ] ;
         foaf:homepage         <http://www.linkedopendata.it/datasets/musei> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/museums-in-italy> ;
-  void:triples  2894
+[ void:target   lod:museums-in-italy , lod:geonames-semantic-web ;
+  void:triples  1570
 ] .

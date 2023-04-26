@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,22 +6,21 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/doapspace> , <http://lod-cloud.net/dataset/rdfohloh> ;
+[ void:target   lod:rdfohloh , lod:dbpedia ;
   void:triples  1000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/rdfohloh> ;
-  void:triples  1000
-] .
-
-<http://lod-cloud.net/dataset/rdfohloh>
-        a                     void:Dataset ;
+lod:rdfohloh  a               void:Dataset ;
         dcterms:description   "RDFohloh is a RDFizer of Ohloh. It provides Linked Data from Ohloh. Using content negotiation, the RDF data can be founded serialized in XHTML+RDFa, RDF/XML and N3, and interlinked with DBpedia concepts.\r\n\r\nPlease, introduce here your project/user information:"@en ;
         dcterms:publisher     [ rdfs:label  "Sergio Fernández" ;
                                 foaf:mbox   "sergio@wikier.org"
                               ] ;
-        dcterms:subject       "lod" , "no-license-metadata" , "no-provenance-metadata" , "format-sioc" , "no-proprietary-vocab" , "user_generated" , "format-rdf" , "format-doap" , "no-vocab-mappings" , "usergeneratedcontent" , "published-by-third-party" ;
+        dcterms:subject       "lod" , "no-license-metadata" , "no-provenance-metadata" , "format-sioc" , "no-proprietary-vocab" , "format-doap" , "format-rdf" , "user_generated" , "no-vocab-mappings" , "usergeneratedcontent" , "published-by-third-party" ;
         dcterms:title         "RDFohloh"@en ;
         void:exampleResource  <http://rdfohloh.wikier.org/project/swaml/rdf> ;
         void:triples          700000 ;
         foaf:homepage         <http://rdfohloh.wikier.org> .
+
+[ void:target   lod:rdfohloh , lod:doapspace ;
+  void:triples  1000
+] .

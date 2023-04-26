@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,22 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/cz-ctia-inspections> , <http://lod-cloud.net/dataset/cz-ctia-bans> ;
-  void:triples  19500
-] .
-
-<http://lod-cloud.net/dataset/cz-ctia-bans>
-        a                     void:Dataset ;
+lod:cz-ctia-bans  a           void:Dataset ;
         dcterms:description   "Basic information about bans issued by the Czech Trade Inspection Authority"@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
         dcterms:subject       "format-gr" , "license-metadata" , "provenance-metadata" , "government" , "published-by-third-party" , "format-skos" , "no-vocab-mappings" , "no-deref-vocab" , "lod" ;
         dcterms:title         "Bans of the Czech Trade Inspection Authority"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdomain%2Fcoi.cz%2Fban%2F75715%3E&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          458039 ;
-        dcat:distribution     [ dcat:accessURL  <http://www.coi.cz/cz/spotrebitel/open-data-databaze-kontrol-sankci-a-zakazu/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dump/coi-zakazy.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fcoi.cz%2Fzakazy%2Fdistribution%3E&output=text%2Fturtle> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/domain/coi.cz/ban/75715> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.coi.cz/cz/spotrebitel/open-data-databaze-kontrol-sankci-a-zakazu/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         foaf:homepage         <http://linked.opendata.cz/resource/dataset/coi.cz/zakazy> .
+
+[ void:target   lod:cz-ctia-bans , lod:cz-ctia-inspections ;
+  void:triples  19500
+] .

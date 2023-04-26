@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/agrovoc> , <http://lod-cloud.net/dataset/eurovoc> ;
-  void:triples  1783
-] .
-
-<http://lod-cloud.net/dataset/eurovoc>
-        a                    void:Dataset ;
+lod:eurovoc  a               void:Dataset ;
         dcterms:description  "EuroVoc is a multilingual, multidisciplinary thesaurus covering the activities of the EU, the European Parliament in particular. It contains terms in 23 EU languages (Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish and Swedish), plus in three languages of countries which are candidates for EU accession: македонски (mk), shqip (sq) and cрпски (sr)."@en ;
         dcterms:publisher    [ rdfs:label  "EU Vocabularies team" ;
                                foaf:mbox   "op-eu-vocabularies@publications.europa.eu"
@@ -22,18 +18,22 @@
         void:triples         4064340 ;
         foaf:homepage        <https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc> .
 
-[ void:target   <http://lod-cloud.net/dataset/umthes> , <http://lod-cloud.net/dataset/eurovoc> ;
-  void:triples  23
+[ void:target   lod:eurovoc , lod:agrovoc ;
+  void:triples  1783
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/gemet> , <http://lod-cloud.net/dataset/eurovoc> ;
-  void:triples  117
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/eurovoc> ;
+[ void:target   lod:eurovoc , lod:lcsh ;
   void:triples  246
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wikidata> , <http://lod-cloud.net/dataset/eurovoc> ;
+[ void:target   lod:eurovoc , lod:gemet ;
+  void:triples  117
+] .
+
+[ void:target   lod:eurovoc , lod:umthes ;
+  void:triples  23
+] .
+
+[ void:target   lod:eurovoc , lod:wikidata ;
   void:triples  3050
 ] .

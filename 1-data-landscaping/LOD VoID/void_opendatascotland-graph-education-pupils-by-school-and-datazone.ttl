@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/statistics-data-gov-uk> , <http://lod-cloud.net/dataset/opendatascotland-graph-education-pupils-by-school-and-datazone> ;
+[ void:target   lod:opendatascotland-graph-education-pupils-by-school-and-datazone , lod:statistics-data-gov-uk ;
   void:triples  1
 ] .
 
-<http://lod-cloud.net/dataset/opendatascotland-graph-education-pupils-by-school-and-datazone>
+lod:opendatascotland-graph-education-pupils-by-school-and-datazone
         a                     void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
                               ] ;
-        dcterms:subject       "LinkedDataCrawl2014" , "format-rdf" , "sparql" , "format-cube" , "license-metadata" , "dump" , "dataset-level-metadata" , "government" , "provenance-metadata" , "format-dcterm" , "format-dcat" , "format-void" , "crawledLinkedDataCloud2014" , "lodcloud-diagram-2014-08-30" , "format-rdfs" ;
+        dcterms:subject       "LinkedDataCrawl2014" , "format-rdf" , "format-cube" , "sparql" , "license-metadata" , "dump" , "dataset-level-metadata" , "government" , "provenance-metadata" , "format-dcterm" , "format-dcat" , "format-void" , "crawledLinkedDataCloud2014" , "lodcloud-diagram-2014-08-30" , "format-rdfs" ;
         dcterms:title         "opendatascotland-graph-education-pupils-by-school-and-datazone"@en ;
         void:exampleResource  <http://data.opendatascotland.org/data/education/pupils-by-school-and-datazone/5137721/2012/S01003891> ;
         void:triples          "0"^^xsd:int .

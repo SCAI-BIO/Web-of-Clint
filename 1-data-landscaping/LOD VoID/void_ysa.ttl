@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,18 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/yso> , <http://lod-cloud.net/dataset/ysa> ;
+[ void:target   lod:ysa , lod:yso ;
   void:triples  28000
 ] .
 
-<http://lod-cloud.net/dataset/ysa>
-        a                    void:Dataset ;
+lod:ysa  a                   void:Dataset ;
         dcterms:description  "YSA is a general thesaurus in Finnish which covers all fields of research and knowledge, which contains the most common terms and geographical names used in content description. YSA is a tool for providing index terms for printed and electronic materials as well as subject-based information retrieval. The thesaurus works as a shared language between information depositaries and searchers, which improves the ease of finding information. "@en ;
         dcterms:publisher    [ rdfs:label  "Finto service" ;
                                foaf:mbox   "finto-posti@helsinki.fi"
                              ] ;
-        dcterms:subject      "publications" , "format-dc" , "lld" , "format-skos" , "format-rdf" , "bibliographic" , "thesaurus" , "lod" ;
+        dcterms:subject      "publications" , "format-dc" , "lld" , "format-skos" , "format-rdf" , "bibliographic" , "lod" , "thesaurus" ;
         dcterms:title        "YSA - General Finnish Thesaurus"@en ;
         void:triples         390000 ;
-        dcat:distribution    [ dcat:accessURL  <http://finto.fi/rest/v1/ysa/data?format=application/rdf%2Bxml> ] ;
         dcat:distribution    [ dcat:accessURL  <http://finto.fi/rest/v1/ysa/data?format=text/turtle> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://finto.fi/rest/v1/ysa/data?format=application/rdf%2Bxml> ] ;
         foaf:homepage        <http://finto.fi/ysa/> .

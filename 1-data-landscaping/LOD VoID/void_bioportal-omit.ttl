@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,104 +6,87 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  31
+[ void:target   lod:bioportal-omit , lod:bioportal-mesh-owl ;
+  void:triples  52
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  120
+[ void:target   lod:bioportal-omit , lod:bioportal-natpro ;
+  void:triples  16
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-omit> ;
+[ void:target   lod:bioportal-omit , lod:bioportal-biomodels ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-msh ;
   void:triples  58
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  39
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  49
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ev> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-doid> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  22
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rid> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  32
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  26
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  38
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-omit> ;
+[ void:target   lod:bioportal-omit , lod:bioportal-uberon ;
   void:triples  15
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pdq> , <http://lod-cloud.net/dataset/bioportal-omit> ;
+[ void:target   lod:bioportal-omit , lod:bioportal-rid ;
+  void:triples  32
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-icd10cm ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-pdq ;
   void:triples  19
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-medlineplus> , <http://lod-cloud.net/dataset/bioportal-omit> ;
+[ void:target   lod:bioportal-omit , lod:bioportal-mdr ;
+  void:triples  26
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-ndfrt ;
+  void:triples  31
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-medlineplus ;
   void:triples  14
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  110
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bao> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ontoorpha> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  35
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icd10cm> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  10
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-uberon> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  15
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-natpro> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  16
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icpc2p> , <http://lod-cloud.net/dataset/bioportal-omit> ;
+[ void:target   lod:bioportal-omit , lod:bioportal-icpc2p ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-omit> ;
+[ void:target   lod:bioportal-omit , lod:bioportal-canco ;
+  void:triples  64
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-efo ;
+  void:triples  49
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-nif ;
+  void:triples  40
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-galen ;
   void:triples  25
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-omit>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-omit , lod:bioportal-ncit ;
+  void:triples  110
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-omim ;
+  void:triples  15
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-mpath ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-syn ;
+  void:triples  12
+] .
+
+lod:bioportal-omit  a        void:Dataset ;
         dcterms:description  "The purpose of the OMIT ontology is to facilitate the identification and characterization of important roles microRNAs (miRNAs) played in human cancer. To be more specific, it aims to assist cancer biologists in unraveling important roles of miRNAs in human cancer."@en ;
         dcterms:publisher    [ rdfs:label  "Jingshan Huang" ;
                                foaf:mbox   ""
@@ -110,35 +94,51 @@
         dcterms:subject      "lod" , "bioportal" , "biomedicine" , "format-rdf" , "published-by-third-party" , "format-owl" , "life_sciences" , "ontology" ;
         dcterms:title        "Ontology for MicroRNA Target Prediction"@en ;
         void:triples         1610 ;
-        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/42998?apikey=BP_API_KEY> ] ;
         dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1505> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  52
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  40
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mpath> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-omit> ;
+[ void:target   lod:bioportal-omit , lod:bioportal-lnc ;
   void:triples  19
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  64
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-syn> , <http://lod-cloud.net/dataset/bioportal-omit> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-omit> ;
+[ void:target   lod:bioportal-omit , lod:bioportal-acgt ;
   void:triples  10
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-bao ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-ontoorpha ;
+  void:triples  16
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-mccl_x1 ;
+  void:triples  39
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-icd10 ;
+  void:triples  10
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-doid ;
+  void:triples  22
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-rcd ;
+  void:triples  38
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-ev ;
+  void:triples  32
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-snomedct ;
+  void:triples  120
+] .
+
+[ void:target   lod:bioportal-omit , lod:bioportal-csp ;
+  void:triples  35
 ] .

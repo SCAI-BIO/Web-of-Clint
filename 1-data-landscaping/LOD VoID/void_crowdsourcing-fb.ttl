@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/linked-open-data-of-ecology> , <http://lod-cloud.net/dataset/crowdsourcing-fb> ;
+[ void:target   lod:crowdsourcing-fb , lod:linked-open-data-of-ecology ;
   void:triples  500
 ] .
 
-<http://lod-cloud.net/dataset/crowdsourcing-fb>
-        a                    void:Dataset ;
+lod:crowdsourcing-fb  a      void:Dataset ;
         dcterms:description  "Data extracted from facebook interest groups of roadkilled and moth observation."@en ;
         dcterms:publisher    [ rdfs:label  "" ;
                                foaf:mbox   ""
@@ -20,6 +20,6 @@
         void:sparqlEndpoint  <http://140.109.28.64:2020/sparql> ;
         void:triples         "0"^^xsd:int .
 
-[ void:target   <http://lod-cloud.net/dataset/taiwan-geographic-names> , <http://lod-cloud.net/dataset/crowdsourcing-fb> ;
+[ void:target   lod:crowdsourcing-fb , lod:taiwan-geographic-names ;
   void:triples  300
 ] .

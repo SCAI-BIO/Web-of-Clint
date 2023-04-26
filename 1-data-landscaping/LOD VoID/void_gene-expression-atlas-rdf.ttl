@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,23 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/uniprotkb> , <http://lod-cloud.net/dataset/gene-expression-atlas-rdf> ;
-  void:triples  453390
+[ void:target   lod:gene-expression-atlas-rdf , lod:identifiers.org ;
+  void:triples  559805
 ] .
 
-<http://lod-cloud.net/dataset/gene-expression-atlas-rdf>
+lod:gene-expression-atlas-rdf
         a                    void:Dataset ;
         dcterms:description  "The Gene Expression Atlas RDF provides information on gene expression patterns under different biological conditions. Gene expression data is re-analysed in-house to detect genes showing interesting baseline and differential expression patterns."@en ;
         dcterms:publisher    [ rdfs:label  "Samples Phenotypes and Ontologies Team" ;
                                foaf:mbox   ""
                              ] ;
-        dcterms:subject      "life_sciences" , "published-by-producer" , "rdf" , "lodcloud-diagram-2014-08-30" , "functional genomics" , "lod" , "provenance-metadata" , "gene expression" , "linked data" , "vocab-mappings" , "experimental factor ontology" , "lifesciences" ;
+        dcterms:subject      "life_sciences" , "published-by-producer" , "rdf" , "lodcloud-diagram-2014-08-30" , "functional genomics" , "lod" , "provenance-metadata" , "gene expression" , "linked data" , "lifesciences" , "experimental factor ontology" , "vocab-mappings" ;
         dcterms:title        "Gene Expression Atlas RDF"@en ;
         void:sparqlEndpoint  <http://www.ebi.ac.uk/rdf/services/atlas/sparql> ;
         void:triples         447149547 ;
         dcat:distribution    [ dcat:accessURL  <http://rdf.ebi.ac.uk/dataset/atlas> ] ;
         dcat:distribution    [ dcat:accessURL  <ftp://ftp.ebi.ac.uk/pub/databases//microarray/data/gxa/rdf> ] .
 
-[ void:target   <http://lod-cloud.net/dataset/identifiers.org> , <http://lod-cloud.net/dataset/gene-expression-atlas-rdf> ;
-  void:triples  559805
+[ void:target   lod:gene-expression-atlas-rdf , lod:uniprotkb ;
+  void:triples  453390
 ] .

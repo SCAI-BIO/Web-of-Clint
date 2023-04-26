@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/oceandrilling-codices> , <http://lod-cloud.net/dataset/oceandrilling-forams> ;
-  void:triples  38237
-] .
-
-<http://lod-cloud.net/dataset/oceandrilling-forams>
+lod:oceandrilling-forams
         a                     void:Dataset ;
         dcterms:description   "Foram data from the planktonic foram working group.  Hosted at chronos.org. "@en ;
         dcterms:publisher     [ rdfs:label  "CHRONOS" ;
@@ -21,3 +18,7 @@
         void:sparqlEndpoint   <http://data.oceandrilling.org/sparql> ;
         void:triples          24489366 ;
         foaf:homepage         <http://data.oceandrilling.org/linkeddata.html> .
+
+[ void:target   lod:oceandrilling-forams , lod:oceandrilling-codices ;
+  void:triples  38237
+] .

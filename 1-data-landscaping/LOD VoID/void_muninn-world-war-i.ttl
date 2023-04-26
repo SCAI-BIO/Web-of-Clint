@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,27 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/Orlando> , <http://lod-cloud.net/dataset/muninn-world-war-i> ;
-  void:triples  2
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/linkedgeodata> , <http://lod-cloud.net/dataset/muninn-world-war-i> ;
+[ void:target   lod:muninn-world-war-i , lod:linkedgeodata ;
   void:triples  311
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/ww1lod> , <http://lod-cloud.net/dataset/muninn-world-war-i> ;
-  void:triples  973
+[ void:target   lod:muninn-world-war-i , lod:LCSH ;
+  void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/muninn-world-war-i> ;
-  void:triples  1895
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/ GeoNames> , <http://lod-cloud.net/dataset/muninn-world-war-i> ;
+[ void:target   lod:muninn-world-war-i , <http://lod-cloud.net/dataset/+GeoNames> ;
   void:triples  32306
 ] .
 
-<http://lod-cloud.net/dataset/muninn-world-war-i>
+[ void:target   lod:muninn-world-war-i , lod:Orlando ;
+  void:triples  2
+] .
+
+[ void:target   lod:muninn-world-war-i , lod:dbpedia ;
+  void:triples  1895
+] .
+
+lod:muninn-world-war-i
         a                     void:Dataset ;
         dcterms:description   "The Muninn Project is a multi-disciplinary, multi-national, academic research project investigating millions of records pertaining to the First World War in archives around the world."@en ;
         dcterms:publisher     [ rdfs:label  "Rob Warren" ;
@@ -37,14 +38,14 @@
         void:exampleResource  <http://rdf.muninn-project.org/modern/2011/11/11/Cenotaph/ca12581df8bc9fc3c1535de9daa1814a> ;
         void:sparqlEndpoint   <http://rdf.muninn-project.org/sparql> ;
         void:triples          38927740 ;
-        dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Muninn.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Downloads/muninn-Dump-Latest.n3> ] ;
         dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/sitemap.xml> ] ;
         dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Downloads/muninn-ontologies-latest.tar.bz2> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Downloads/muninn-Dump-Latest.n3> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Downloads/muninn-ontologies-latest.tar.bz2> ] ;
         dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Downloads> ] ;
-        foaf:homepage         <rdf.muninn-project.org> .
+        dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Muninn.rdf> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://rdf.muninn-project.org/Downloads/muninn-ontologies-latest.tar.bz2> ] ;
+        foaf:homepage         <file:///C:/Users/Marc%20Jacobs/git/Web-of-Clint/3-data-RDF-conversion/EIOS-tooling/rdf.muninn-project.org> .
 
-[ void:target   <http://lod-cloud.net/dataset/LCSH> , <http://lod-cloud.net/dataset/muninn-world-war-i> ;
-  void:triples  10
+[ void:target   lod:muninn-world-war-i , lod:ww1lod ;
+  void:triples  973
 ] .

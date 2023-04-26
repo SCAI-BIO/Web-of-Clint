@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,40 +6,43 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-pmr> ;
-  void:triples  27
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-pmr> ;
-  void:triples  131
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-pmr> ;
-  void:triples  51
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-pmr> ;
-  void:triples  27
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-icf_x1> , <http://lod-cloud.net/dataset/bioportal-pmr> ;
+[ void:target   lod:bioportal-pmr , lod:bioportal-nif ;
   void:triples  13
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-pmr> ;
+[ void:target   lod:bioportal-pmr , lod:bioportal-mesh-owl ;
+  void:triples  27
+] .
+
+[ void:target   lod:bioportal-pmr , lod:bioportal-galen ;
   void:triples  15
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-pmr> ;
+[ void:target   lod:bioportal-pmr , lod:bioportal-hl7 ;
+  void:triples  17
+] .
+
+[ void:target   lod:bioportal-pmr , lod:bioportal-canco ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-pmr , lod:bioportal-rcd ;
   void:triples  31
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-pmr> ;
-  void:triples  13
+[ void:target   lod:bioportal-pmr , lod:bioportal-ncit ;
+  void:triples  51
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-pmr>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-pmr , lod:bioportal-msh ;
+  void:triples  27
+] .
+
+[ void:target   lod:bioportal-pmr , lod:bioportal-lnc ;
+  void:triples  50
+] .
+
+lod:bioportal-pmr  a         void:Dataset ;
         dcterms:description  "Knowledge representation related to computer-based decision support in rehabilitation; concepts and relationships in the rehabilitation domain, integrating clinical practice, the ICD (specifically its 11th revision), the clinical investigator record ontology, the ICF and SNOMED CT."@en ;
         dcterms:publisher    [ rdfs:label  "X" ;
                                foaf:mbox   ""
@@ -51,14 +55,10 @@
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/3015> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-hl7> , <http://lod-cloud.net/dataset/bioportal-pmr> ;
-  void:triples  17
+[ void:target   lod:bioportal-pmr , lod:bioportal-snomedct ;
+  void:triples  131
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-pmr> ;
-  void:triples  50
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-pmr> ;
-  void:triples  14
+[ void:target   lod:bioportal-pmr , lod:bioportal-icf_x1 ;
+  void:triples  13
 ] .

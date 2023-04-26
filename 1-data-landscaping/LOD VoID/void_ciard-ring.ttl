@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/ciard-ring>
-        a                     void:Dataset ;
+[ void:target   lod:ciard-ring , lod:personal-homepages ;
+  void:triples  1
+] .
+
+lod:ciard-ring  a             void:Dataset ;
         dcterms:description   ""@en ;
         dcterms:publisher     [ rdfs:label  "" ;
                                 foaf:mbox   ""
@@ -15,7 +19,3 @@
         dcterms:title         "ciard-ring"@en ;
         void:exampleResource  <http://ring.ciard.net/field_collection_item/1850.rdf> ;
         void:triples          "0"^^xsd:int .
-
-[ void:target   <http://lod-cloud.net/dataset/personal-homepages> , <http://lod-cloud.net/dataset/ciard-ring> ;
-  void:triples  1
-] .

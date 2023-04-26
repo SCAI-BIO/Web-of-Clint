@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,17 +6,17 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/geonames-semantic-web> , <http://lod-cloud.net/dataset/amsterdam-museum-as-edm-lod> ;
-  void:triples  658
+[ void:target   lod:amsterdam-museum-as-edm-lod , lod:dbpedia ;
+  void:triples  43
 ] .
 
-<http://lod-cloud.net/dataset/amsterdam-museum-as-edm-lod>
+lod:amsterdam-museum-as-edm-lod
         a                    void:Dataset ;
         dcterms:description  "The Amsterdam Museum dataset describes more than 70.000 cultural heritage objects related to the city of Amsterdam described by the museum. \r\n\r\nThe metadata was retrieved from an XML Web API of the museum's Adlib collection database and converted to RDF compliant with the Europeana Data Model (EDM). This makes the Amsterdam Museum data the first of its kind to be officially converted and made available in this format.\r\n\r\n"@en ;
         dcterms:publisher    [ rdfs:label  "Victor de Boer, Jan Wielemaker, Jacco van Ossenbruggen, Antoine Isaac, Guus Schreiber" ;
                                foaf:mbox   "v.de.boer@vu.nl"
                              ] ;
-        dcterms:subject      "europeana" , "cultural" , "amsterdam" , "culturalheritage" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "crossdomain" , "edm" , "lodcloud-diagram-2014-08-30" , "country-netherlands" , "museum" , "no-license-metadata" , "deref-vocab" , "datagovuk" , "rdf" , "publications" , "vu" , "no-provenance-metadata" , "lod" ;
+        dcterms:subject      "europeana" , "cultural" , "amsterdam" , "culturalheritage" , "lodcloud-diagram-2011-09-19" , "published-by-third-party" , "crossdomain" , "edm" , "lodcloud-diagram-2014-08-30" , "country-netherlands" , "museum" , "no-license-metadata" , "deref-vocab" , "datagovuk" , "publications" , "rdf" , "vu" , "no-provenance-metadata" , "lod" ;
         dcterms:title        "Amsterdam Museum as Linked Open Data in the Europeana Data Model"@en ;
         void:sparqlEndpoint  <http://data.dive.beeldengeluid.nl/sparql/> ;
         void:triples         5000000 ;
@@ -23,6 +24,6 @@
         dcat:distribution    [ dcat:accessURL  <http://d> ] ;
         foaf:homepage        <http://semanticweb.cs.vu.nl/lod/am/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/amsterdam-museum-as-edm-lod> ;
-  void:triples  43
+[ void:target   lod:amsterdam-museum-as-edm-lod , lod:geonames-semantic-web ;
+  void:triples  658
 ] .

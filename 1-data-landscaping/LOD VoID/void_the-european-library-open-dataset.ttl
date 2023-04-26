@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,39 +6,39 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/the-european-library-open-dataset> ;
-  void:triples  42000
-] .
-
-<http://lod-cloud.net/dataset/the-european-library-open-dataset>
+lod:the-european-library-open-dataset
         a                     void:Dataset ;
         dcterms:description   "The dataset is derived from the data aggregated by The European Library. It is comprised of all the aggregated data that is made openly available by the data providing libraries (European national and research libraries). The dataset includes national bibliographies, library catalogues, and research collections including both digital and physical resources. The data is made available under open licensing terms, which allow the unrestricted use of the data for any purpose by anyone, including commercial use."@en ;
         dcterms:publisher     [ rdfs:label  "The European Library" ;
                                 foaf:mbox   "info@theeuropeanlibrary.org "
                               ] ;
-        dcterms:subject       "provenance-metadata" , "publications" , "format-foaf" , "published-by-third-party" , "license-metadata" , "format-wgs" , "format-dctypes" , "format-owl" , "format-skos" , "format-dcterms" , "format-rda" , "no-proprietary-vocab" , "crossdomain" , "format-schema" , "format-frbr" , "lod" , "bibliographic data" ;
+        dcterms:subject       "provenance-metadata" , "publications" , "format-foaf" , "format-wgs" , "published-by-third-party" , "license-metadata" , "format-dctypes" , "format-owl" , "format-skos" , "format-dcterms" , "format-rda" , "no-proprietary-vocab" , "crossdomain" , "format-frbr" , "format-schema" , "lod" , "bibliographic data" ;
         dcterms:title         "The European Library Open Dataset"@en ;
         void:exampleResource  <https://ckannet-storage.commondatastorage.googleapis.com/2015-02-09T17:53:33.979Z/tel-open-dataset-example.ttl> ;
         void:triples          4418628287 ;
+        dcat:distribution     [ dcat:accessURL  <http://data.theeuropeanlibrary.org/download/opendata/datasets.rdf.tar> ] ;
         dcat:distribution     [ dcat:accessURL  <https://datahub.ckan.io/dataset/71714db9-6dd7-4551-b021-83f0ed82ab87/resource/5b33837e-2588-4295-bef0-90051c9547ac/download/theeuropeanlibraryopendataset.ttl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://www.theeuropeanlibrary.org/tel4/access/data/opendata> ] ;
         dcat:distribution     [ dcat:accessURL  <http://www.theeuropeanlibrary.org/tel4/access/data/opendata/details> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.theeuropeanlibrary.org/download/opendata/datasets.ttl.tar> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://www.theeuropeanlibrary.org/tel4/access/data/opendata> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://data.theeuropeanlibrary.org/download/opendata/datasets.rdf.tar> ] ;
         foaf:homepage         <https://lod-cloud.net/edit-dataset/the-european-library-open-dataset> .
 
-[ void:target   <http://lod-cloud.net/dataset/data-bnf-fr> , <http://lod-cloud.net/dataset/the-european-library-open-dataset> ;
-  void:triples  75000
+[ void:target   lod:the-european-library-open-dataset , lod:lcsh ;
+  void:triples  7500000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/b3kat> , <http://lod-cloud.net/dataset/the-european-library-open-dataset> ;
+[ void:target   lod:the-european-library-open-dataset , lod:b3kat ;
   void:triples  1000000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dewey_decimal_classification> , <http://lod-cloud.net/dataset/the-european-library-open-dataset> ;
+[ void:target   lod:the-european-library-open-dataset , lod:dewey_decimal_classification ;
   void:triples  600000
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/the-european-library-open-dataset> ;
-  void:triples  7500000
+[ void:target   lod:the-european-library-open-dataset , lod:dnb-gemeinsame-normdatei ;
+  void:triples  42000
+] .
+
+[ void:target   lod:the-european-library-open-dataset , lod:data-bnf-fr ;
+  void:triples  75000
 ] .

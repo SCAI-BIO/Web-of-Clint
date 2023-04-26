@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,27 +6,27 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-taxrank> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-taxrank> ;
-  void:triples  55
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ato> , <http://lod-cloud.net/dataset/bioportal-taxrank> ;
-  void:triples  29
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-birnlex> , <http://lod-cloud.net/dataset/bioportal-taxrank> ;
-  void:triples  23
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncbitaxon> , <http://lod-cloud.net/dataset/bioportal-taxrank> ;
+[ void:target   lod:bioportal-taxrank , lod:bioportal-ncbitaxon ;
   void:triples  57
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-taxrank>
+[ void:target   lod:bioportal-taxrank , lod:bioportal-ato ;
+  void:triples  29
+] .
+
+[ void:target   lod:bioportal-taxrank , lod:bioportal-birnlex ;
+  void:triples  23
+] .
+
+[ void:target   lod:bioportal-taxrank , lod:bioportal-ncit ;
+  void:triples  55
+] .
+
+[ void:target   lod:bioportal-taxrank , lod:bioportal-lnc ;
+  void:triples  12
+] .
+
+lod:bioportal-taxrank
         a                    void:Dataset ;
         dcterms:description  "A vocabulary of taxonomic ranks intended to replace the sets of rank terms found in the Teleost Taxonomy Ontology, the OBO translation of the NCBI taxonomy and similar OBO taxonomy ontologies.  It provides terms for taxonomic ranks drawn from both the NCBI taxonomy database and from a rank vocabulary developed for the TDWG biodiversity information standards group.  Cross references to appearances of each term in each source are provided.  Consistent with its intended use as a vocabulary of labels, there is no relation specifying an ordering of the rank terms."@en ;
         dcterms:publisher    [ rdfs:label  "Peter Midford" ;

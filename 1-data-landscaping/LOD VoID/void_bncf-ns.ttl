@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,29 +6,24 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/data-bnf-fr> , <http://lod-cloud.net/dataset/bncf-ns> ;
-  void:triples  13730
+[ void:target   lod:bncf-ns , lod:getty-aat ;
+  void:triples  84
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/dnb-gemeinsame-normdatei> , <http://lod-cloud.net/dataset/bncf-ns> ;
-  void:triples  4227
+[ void:target   lod:bncf-ns , lod:agrovoc ;
+  void:triples  3046
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lcsh> , <http://lod-cloud.net/dataset/bncf-ns> ;
-  void:triples  15847
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/datos-bne-es> , <http://lod-cloud.net/dataset/bncf-ns> ;
+[ void:target   lod:bncf-ns , lod:datos-bne-es ;
   void:triples  3173
 ] .
 
-<http://lod-cloud.net/dataset/bncf-ns>
-        a                     void:Dataset ;
+lod:bncf-ns  a                void:Dataset ;
         dcterms:description   "Nuovo soggettario (NS), edited by the National Central Library of Florence, is the Italian subject indexing tool for various types of resources. It has been developed in compliance with the IFLA recommendations, and other international standards in the field of subject indexing. This tool has been created for general and specialized Italian libraries, and for museums, multimedia libraries, archives and documentation centres. The main component of the NS is a general thesaurus available on the web since 2007 (http://thes.bncf.firenze.sbn.it/ricerca.php). The thesaurus comprises nowadays approximately 69.400 terms and it is updated on a regular basis.\nAll metadata can be used, in accordance with Creative Commons Attribution 4.0 licence."@en ;
         dcterms:publisher     [ rdfs:label  "BNCF - settore Ricerche e strumenti di indicizzazione semantica" ;
                                 foaf:mbox   "bnc-fi.nuovosoggettario@beniculturali.it"
                               ] ;
-        dcterms:subject       "format-rdf" , "bibliographics" , "authorities" , "library" , "publications" , "linkeddata" , "format-skos" ;
+        dcterms:subject       "format-rdf" , "bibliographics" , "authorities" , "library" , "publications" , "format-skos" , "linkeddata" ;
         dcterms:title         "Thesaurus BNCF"@en ;
         void:dataDump         <https://github.com/m-pepe/BNCF-NS/raw/main/ns201803.zip> , <https://github.com/m-pepe/BNCF-NS/raw/main/ns202004.zip> , <https://github.com/m-pepe/BNCF-NS/raw/main/ns201910.zip> , <https://github.com/m-pepe/BNCF-NS/blob/main/ns202203.zip> , <https://github.com/m-pepe/BNCF-NS/raw/main/ns202104.zip> , <https://github.com/m-pepe/BNCF-NS/raw/main/ns201904.zip> , <https://github.com/m-pepe/BNCF-NS/raw/main/ns202110.zip> , <https://github.com/m-pepe/BNCF-NS/raw/main/ns201810.zip> , <https://github.com/m-pepe/BNCF-NS/raw/main/ns202010.zip> ;
         void:exampleResource  <http://thes.bncf.firenze.sbn.it/dati.php?id=50006> ;
@@ -35,10 +31,14 @@
         void:triples          786062 ;
         foaf:homepage         <http://thes.bncf.firenze.sbn.it/> .
 
-[ void:target   <http://lod-cloud.net/dataset/agrovoc> , <http://lod-cloud.net/dataset/bncf-ns> ;
-  void:triples  3046
+[ void:target   lod:bncf-ns , lod:lcsh ;
+  void:triples  15847
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/getty-aat> , <http://lod-cloud.net/dataset/bncf-ns> ;
-  void:triples  84
+[ void:target   lod:bncf-ns , lod:dnb-gemeinsame-normdatei ;
+  void:triples  4227
+] .
+
+[ void:target   lod:bncf-ns , lod:data-bnf-fr ;
+  void:triples  13730
 ] .

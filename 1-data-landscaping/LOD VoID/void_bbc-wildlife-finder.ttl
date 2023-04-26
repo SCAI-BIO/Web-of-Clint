@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/bbc-wildlife-finder>
+lod:bbc-wildlife-finder
         a                     void:Dataset ;
         dcterms:description   "Information about:\r\n\r\n- wildlife biota (kingdom > Species)\r\n- habitats\r\n- adaptations\r\n- ecozones\r\n\r\nData includes: \r\n\r\n- IUCN conservation status\r\n- background descriptions\r\n- photos\r\n- BBC news stories and \r\n- video clips from the BBC archive."@en ;
         dcterms:publisher     [ rdfs:label  "Tom Scott" ;
@@ -19,10 +20,10 @@
         dcat:distribution     [ dcat:accessURL  <http://purl.org/ontology/wo> ] ;
         foaf:homepage         <http://www.bbc.co.uk/wildlifefinder/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/bbc-wildlife-finder> ;
+[ void:target   lod:bbc-wildlife-finder , lod:dbpedia ;
   void:triples  415
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bbc-programmes> , <http://lod-cloud.net/dataset/bbc-wildlife-finder> ;
+[ void:target   lod:bbc-wildlife-finder , lod:bbc-programmes ;
   void:triples  1958
 ] .

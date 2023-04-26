@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/massobservationarchivecatalogue>
+lod:massobservationarchivecatalogue
         a                     void:Dataset ;
         dcterms:description   "The data is the catalogue records of the Mass Observation Archive, a Designated collection. The Mass Observation Archive is a written record of everyday life in Britain 1937-55. It's a unique insight in to life during the Second World War. \r\n\r\nhttp://data.lib.sussex.ac.uk/data/mass-observation/\r\n\r\nhttp://www.massobs.org.uk/a_brief_history.htm\r\n\r\nThe conversion to Linked Data was carried out as part of the JISC funded SALDA project by the University of Sussex Library with key support from Eduserv."@en ;
         dcterms:publisher     [ rdfs:label  "Karen Watson" ;
@@ -16,6 +17,6 @@
         void:exampleResource  <http://data.lib.sussex.ac.uk/archive/id/archivalresource/gb181SxMOA1> ;
         void:sparqlEndpoint   <http://api.talis.com/stores/massobservation/services/sparql> ;
         void:triples          428035 ;
-        dcat:distribution     [ dcat:accessURL  <http://data.lib.sussex.ac.uk/archive/> ] ;
         dcat:distribution     [ dcat:accessURL  <http://data.lib.sussex.ac.uk/files/massobservation/rdf/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://data.lib.sussex.ac.uk/archive/> ] ;
         foaf:homepage         <http://specialcollections.lib.sussex.ac.uk/CalmView/Record.aspx?src=Catalog&id=SxMOA1> .

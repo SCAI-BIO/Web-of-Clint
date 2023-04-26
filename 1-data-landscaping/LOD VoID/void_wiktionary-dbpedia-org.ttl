@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/wiktionary-dbpedia-org> ;
+[ void:target   lod:wiktionary-dbpedia-org , lod:dbpedia ;
   void:triples  25155
 ] .
 
-<http://lod-cloud.net/dataset/wiktionary-dbpedia-org>
+lod:wiktionary-dbpedia-org
         a                     void:Dataset ;
         dcterms:description   "We aim to provide a open-source framework (based on DBpedia) to extract semantic lexical resources (a ontology about language use) from Wiktionary. The data currently includes language, part of speech, senses, definitions, synonyms, taxonomies (hyponyms, hyperonyms, synonyms, antonyms) and translations for each lexical word."@en ;
         dcterms:publisher     [ rdfs:label  "Jonas Brekle" ;

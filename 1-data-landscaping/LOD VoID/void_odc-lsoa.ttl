@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/stats> , <http://lod-cloud.net/dataset/odc-lsoa> ;
+[ void:target   lod:odc-lsoa , lod:stats ;
   void:triples  32482
 ] .
 
-<http://lod-cloud.net/dataset/odc-lsoa>
-        a                     void:Dataset ;
+lod:odc-lsoa  a               void:Dataset ;
         dcterms:description   "This dataset describes the 'Lower layer Super Output Areas' used by the Office for National Statistics for many of its statistical outputs. \r\n\r\nExample resource:\r\nhttp://opendatacommunities.org/id/geography/lsoa/E01000001\r\n\r\nDownload\r\nhttp://opendatacommunities-downloads.s3.amazonaws.com/lsoa.ttl.zip"@en ;
         dcterms:publisher     [ rdfs:label  "http://www.ons.gov.uk" ;
                                 foaf:mbox   ""

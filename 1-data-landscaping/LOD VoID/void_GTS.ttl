@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,12 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/GTS> ;
+[ void:target   lod:GTS , lod:GTS-ont ;
+  void:triples  1700
+] .
+
+[ void:target   lod:GTS , lod:dbpedia ;
   void:triples  342
 ] .
 
-<http://lod-cloud.net/dataset/GTS>
-        a                     void:Dataset ;
+lod:GTS  a                    void:Dataset ;
         dcterms:description   "RDF representation of the Geological Timescale, as described in the International Chronostratigraphic Chart from the International Commission on Stratigraphy."@en ;
         dcterms:publisher     [ rdfs:label  "Simon Cox" ;
                                 foaf:mbox   "simon.cox@csiro.au"
@@ -23,7 +27,3 @@
         void:triples          15421 ;
         dcat:distribution     [ dcat:accessURL  <http://raw.githack.com/CGI-IUGS/timescale-data/master/rdf/isc2020.ttl> ] ;
         foaf:homepage         <https://github.com/CGI-IUGS/timescale-data> .
-
-[ void:target   <http://lod-cloud.net/dataset/GTS-ont> , <http://lod-cloud.net/dataset/GTS> ;
-  void:triples  1700
-] .

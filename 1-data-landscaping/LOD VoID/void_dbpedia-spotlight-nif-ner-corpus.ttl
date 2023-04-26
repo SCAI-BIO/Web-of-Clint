@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,7 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/dbpedia-spotlight-nif-ner-corpus>
+[ void:target   lod:dbpedia-spotlight-nif-ner-corpus , lod:dbpedia ;
+  void:triples  325
+] .
+
+lod:dbpedia-spotlight-nif-ner-corpus
         a                    void:Dataset ;
         dcterms:description  "Based on P. N. Mendes, M. Jakob, A. García-Silva, and C. Bizer. DBpedia Spotlight: shedding light on the web of documents. In Proc. of the 7th Int. Conf. on Semantic Systems, 2011.\r\n\r\nIt contains 60 natural language sentences from ten different New York Times articles with overall 249 annotated DBpedia entities, i. e. the entities are not explicitely bound to mentions within the texts, which causes a certain lack of clarity. Therefore, we (in all conscience) retroactively have allocated the entities to their positions within the texts.\r\nThe entities dbp:Markup_Language and dbp:PBC_CSKA_Moscow could not be linked in the texts, since there was also a more specific entity enlisted occupying their solely possible location, e. g. hypertext markup language has been annotated with dbp:HTML rather than dbp:Markup_language."@en ;
         dcterms:publisher    [ rdfs:label  "Magnus Knuth" ;
@@ -14,10 +19,6 @@
         dcterms:subject      "spotlight" , "linguistic" , "evaluatio" , "ner" , "linguistics" , "nif" , "lod" , "dbpedia" , "training" ;
         dcterms:title        "DBpedia Spotlight NIF NER Corpus"@en ;
         void:triples         3425 ;
-        dcat:distribution    [ dcat:accessURL  <http://ceur-ws.org/Vol-1064/Steinmetz_Statistical.pdf> ] ;
+        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-10-29T16:26:34.291Z/dataid.ttl> ] ;
         dcat:distribution    [ dcat:accessURL  <http://www.yovisto.com/labs/ner-benchmarks/data/dbpedia-spotlight-nif.ttl> ] ;
-        dcat:distribution    [ dcat:accessURL  <https://ckannet-storage.commondatastorage.googleapis.com/2014-10-29T16:26:34.291Z/dataid.ttl> ] .
-
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/dbpedia-spotlight-nif-ner-corpus> ;
-  void:triples  325
-] .
+        dcat:distribution    [ dcat:accessURL  <http://ceur-ws.org/Vol-1064/Steinmetz_Statistical.pdf> ] .

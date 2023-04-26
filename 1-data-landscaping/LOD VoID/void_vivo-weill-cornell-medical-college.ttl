@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,11 +6,11 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia > , <http://lod-cloud.net/dataset/vivo-weill-cornell-medical-college> ;
+[ void:target   lod:vivo-weill-cornell-medical-college , <http://lod-cloud.net/dataset/dbpedia+> ;
   void:triples  58
 ] .
 
-<http://lod-cloud.net/dataset/vivo-weill-cornell-medical-college>
+lod:vivo-weill-cornell-medical-college
         a                    void:Dataset ;
         dcterms:description  "VIVO is a research-focused discovery tool that enables collaboration among scientists across all disciplines. VIVO contains information about researchers associated with the Clinical and Translational Science Center."@en ;
         dcterms:publisher    [ rdfs:label  "VIVO" ;

@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,16 +6,15 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/eutc-productions> ;
-  void:triples  166
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bbc-programmes> , <http://lod-cloud.net/dataset/eutc-productions> ;
+[ void:target   lod:eutc-productions , lod:bbc-programmes ;
   void:triples  55
 ] .
 
-<http://lod-cloud.net/dataset/eutc-productions>
-        a                     void:Dataset ;
+[ void:target   lod:eutc-productions , lod:dbpedia ;
+  void:triples  166
+] .
+
+lod:eutc-productions  a       void:Dataset ;
         dcterms:description   "A dataset of productions put on by the Edinburgh University Theatre Company past and present, including linked cast & crew lists."@en ;
         dcterms:publisher     [ rdfs:label  "Luke Blaney" ;
                                 foaf:mbox   "ckan@lukeblaney.co.uk"

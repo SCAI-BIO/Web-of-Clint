@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,112 +6,119 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gro_x2> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mcbcc> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  13
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-gaz> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-chebi> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  408
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bdo> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  28
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nif> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  667
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-omim> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  1072
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bao> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  43
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-efo> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  58
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x2> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  54
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ncit> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  1433
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl> , <http://lod-cloud.net/dataset/bioportal-imr> ;
+[ void:target   lod:bioportal-imr , lod:bioportal-mod ;
   void:triples  14
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vandf> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  57
+[ void:target   lod:bioportal-imr , lod:bioportal-pr ;
+  void:triples  1337
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sopharm> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  345
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mod> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  14
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-lnc> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  348
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rcd> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  201
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-acgt> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  11
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-dc_cl> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  20
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cco> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  3942
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-rxnorm> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  65
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-galen> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  105
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-bootstrep> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-cpt> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  21
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mesh-owl> , <http://lod-cloud.net/dataset/bioportal-imr> ;
+[ void:target   lod:bioportal-imr , lod:bioportal-mesh-owl ;
   void:triples  1198
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-csp> , <http://lod-cloud.net/dataset/bioportal-imr> ;
+[ void:target   lod:bioportal-imr , lod:bioportal-biomodels ;
+  void:triples  115
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-mcbcc ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-go_x2 ;
+  void:triples  54
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-mccl ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-chebi ;
+  void:triples  408
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-sao ;
+  void:triples  40
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-omim ;
+  void:triples  1072
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-nddf ;
+  void:triples  80
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-mi ;
+  void:triples  13
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-rxnorm ;
+  void:triples  65
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-snomedct ;
+  void:triples  552
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-bao ;
+  void:triples  43
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-dc_cl ;
+  void:triples  20
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-galen ;
+  void:triples  105
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-bdo ;
+  void:triples  28
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-cpt ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-ddi ;
+  void:triples  11
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-gro_x2 ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-canco ;
+  void:triples  71
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-gaz ;
+  void:triples  12
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-bootstrep ;
+  void:triples  21
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-efo ;
+  void:triples  58
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-pdq ;
+  void:triples  75
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-csp ;
   void:triples  417
 ] .
 
-<http://lod-cloud.net/dataset/bioportal-imr>
-        a                    void:Dataset ;
+[ void:target   lod:bioportal-imr , lod:bioportal-sopharm ;
+  void:triples  345
+] .
+
+lod:bioportal-imr  a         void:Dataset ;
         dcterms:description  "A structured controlled vocabulary of concrete protein names and generic (abstract) protein names. This ontology is a INOH pathway annotation ontology, one of a set of ontologies intended to be used in pathway data annotation to ease data integration. This ontology is used to annotate protein names, protein family names, generic/concrete protein names in the INOH pathway data.<br>INOH is part of the BioPAX working group."@en ;
         dcterms:publisher    [ rdfs:label  "Event Administrators" ;
                                foaf:mbox   ""
@@ -119,90 +127,82 @@
         dcterms:title        "Molecule role (INOH Protein name/family name ontology)"@en ;
         void:triples         123081 ;
         dcat:distribution    [ dcat:accessURL  <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ] ;
-        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         dcat:distribution    [ dcat:accessURL  <http://rest.bioontology.org/bioportal/ontologies/download/45784?apikey=BP_API_KEY> ] ;
+        dcat:distribution    [ dcat:accessURL  <http://sparql.bioontology.org/> ] ;
         foaf:homepage        <http://bioportal.bioontology.org/ontologies/1029> .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mccl_x1> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  122
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-idomal> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  19
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ontoorpha> , <http://lod-cloud.net/dataset/bioportal-imr> ;
+[ void:target   lod:bioportal-imr , lod:bioportal-ontoorpha ;
   void:triples  49
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-nddf> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  80
+[ void:target   lod:bioportal-imr , lod:bioportal-mdr ;
+  void:triples  41
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-msh> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  941
+[ void:target   lod:bioportal-imr , lod:bioportal-nif ;
+  void:triples  667
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-go_x1> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  54
+[ void:target   lod:bioportal-imr , lod:bioportal-mccl_x1 ;
+  void:triples  122
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-vo> , <http://lod-cloud.net/dataset/bioportal-imr> ;
+[ void:target   lod:bioportal-imr , lod:bioportal-natpro ;
   void:triples  14
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snpo> , <http://lod-cloud.net/dataset/bioportal-imr> ;
+[ void:target   lod:bioportal-imr , lod:bioportal-snpo ;
   void:triples  10
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pr> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  1337
+[ void:target   lod:bioportal-imr , lod:bioportal-lnc ;
+  void:triples  348
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-natpro> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  14
+[ void:target   lod:bioportal-imr , lod:bioportal-ncit ;
+  void:triples  1433
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-pdq> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  75
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-npo> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  12
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-biomodels> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  115
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ndfrt> , <http://lod-cloud.net/dataset/bioportal-imr> ;
+[ void:target   lod:bioportal-imr , lod:bioportal-ndfrt ;
   void:triples  685
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ddi> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  11
+[ void:target   lod:bioportal-imr , lod:bioportal-rcd ;
+  void:triples  201
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-sao> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  40
+[ void:target   lod:bioportal-imr , lod:bioportal-idomal ;
+  void:triples  19
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-ep> , <http://lod-cloud.net/dataset/bioportal-imr> ;
+[ void:target   lod:bioportal-imr , lod:bioportal-npo ;
   void:triples  12
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mi> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  13
+[ void:target   lod:bioportal-imr , lod:bioportal-vandf ;
+  void:triples  57
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-snomedct> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  552
+[ void:target   lod:bioportal-imr , lod:bioportal-acgt ;
+  void:triples  11
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-canco> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  71
+[ void:target   lod:bioportal-imr , lod:bioportal-msh ;
+  void:triples  941
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bioportal-mdr> , <http://lod-cloud.net/dataset/bioportal-imr> ;
-  void:triples  41
+[ void:target   lod:bioportal-imr , lod:bioportal-vo ;
+  void:triples  14
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-cco ;
+  void:triples  3942
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-go_x1 ;
+  void:triples  54
+] .
+
+[ void:target   lod:bioportal-imr , lod:bioportal-ep ;
+  void:triples  12
 ] .

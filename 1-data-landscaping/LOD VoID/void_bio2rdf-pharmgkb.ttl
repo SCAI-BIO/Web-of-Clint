@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,62 +6,61 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-pubmed> , <http://lod-cloud.net/dataset/bio2rdf-pharmgkb> ;
-  void:triples  3724
+[ void:target   lod:bio2rdf-pharmgkb , lod:bio2rdf-omim ;
+  void:triples  16536
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ndc> , <http://lod-cloud.net/dataset/bio2rdf-pharmgkb> ;
-  void:triples  962
+[ void:target   lod:bio2rdf-pharmgkb , lod:bio2rdf-dbsnp ;
+  void:triples  24785215
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ncbigene> , <http://lod-cloud.net/dataset/bio2rdf-pharmgkb> ;
+[ void:target   lod:bio2rdf-pharmgkb , lod:bio2rdf-ncbigene ;
   void:triples  26757
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-mesh> , <http://lod-cloud.net/dataset/bio2rdf-pharmgkb> ;
-  void:triples  2861
+[ void:target   lod:bio2rdf-pharmgkb , lod:bio2rdf-drugbank ;
+  void:triples  1624
 ] .
 
-<http://lod-cloud.net/dataset/bio2rdf-pharmgkb>
-        a                     void:Dataset ;
+lod:bio2rdf-pharmgkb  a       void:Dataset ;
         dcterms:description   "PharmGKB curates primary genotype and phenotype data, annotates gene variants and gene-drug-disease relationships via literature review, and summarizes important PGx genes and drug pathways."@en ;
         dcterms:publisher     [ rdfs:label  "Bio2RDF" ;
                                 foaf:mbox   "bio2rdf@googlegroups.com"
                               ] ;
-        dcterms:subject       "life_sciences" , "license-metadata" , "format-dc" , "format-rdf" , "vocab-mappings" , "lodcloud-diagram-2014-08-30" , "bio2rdf" , "published-by-third-party" , "lifesciences" , "provenance-metadata" , "format-rdfs" , "lod" , "deref-vocab" ;
+        dcterms:subject       "license-metadata" , "life_sciences" , "format-dc" , "format-rdf" , "lodcloud-diagram-2014-08-30" , "vocab-mappings" , "bio2rdf" , "published-by-third-party" , "lifesciences" , "format-rdfs" , "provenance-metadata" , "deref-vocab" , "lod" ;
         dcterms:title         "Bio2RDF::Pharmgkb"@en ;
-        void:dataDump         <http://download.bio2rdf.org/current/pharmgkb/offsides.nq.gz> , <http://download.bio2rdf.org/current/pharmgkb/genes.nq.gz> , <http://download.bio2rdf.org/current/pharmgkb/diseases.nq.gz> , <http://download.bio2rdf.org/current/pharmgkb/drugs.nq.gz> , <http://download.bio2rdf.org/current/pharmgkb/rsid.nq.gz> , <http://download.bio2rdf.org/current/pharmgkb/twosides.nq.gz> ;
+        void:dataDump         <http://download.bio2rdf.org/current/pharmgkb/offsides.nq.gz> , <http://download.bio2rdf.org/current/pharmgkb/genes.nq.gz> , <http://download.bio2rdf.org/current/pharmgkb/rsid.nq.gz> , <http://download.bio2rdf.org/current/pharmgkb/diseases.nq.gz> , <http://download.bio2rdf.org/current/pharmgkb/drugs.nq.gz> , <http://download.bio2rdf.org/current/pharmgkb/twosides.nq.gz> ;
         void:exampleResource  <http://bio2rdf.org/pharmgkb:PA445062> ;
         void:sparqlEndpoint   <http://pharmgkb.bio2rdf.org/sparql> ;
         void:triples          278049209 ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pharmgkb/pharmgkb.html> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/pharmgkb/pharmgkb.schema.owl> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pharmgkb/bio2rdf-pharmgkb.nq> ] ;
-        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/pharmgkb/bio2rdf_pharmgkb_sio_mapping.owl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pharmgkb/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pharmgkb/pharmgkb.html> ] ;
         dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/pharmgkb/sitemap.xml> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/release/3/pharmgkb/pharmgkb.schema.owl> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://download.bio2rdf.org/current/pharmgkb/> ] ;
+        dcat:distribution     [ dcat:accessURL  <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/pharmgkb/bio2rdf_pharmgkb_sio_mapping.owl> ] ;
         foaf:homepage         <http://pharmgkb.bio2rdf.org/> .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-ctd> , <http://lod-cloud.net/dataset/bio2rdf-pharmgkb> ;
+[ void:target   lod:bio2rdf-pharmgkb , lod:bio2rdf-mesh ;
+  void:triples  2861
+] .
+
+[ void:target   lod:bio2rdf-pharmgkb , lod:bio2rdf-pubmed ;
+  void:triples  3724
+] .
+
+[ void:target   lod:bio2rdf-pharmgkb , lod:bio2rdf-ndc ;
+  void:triples  962
+] .
+
+[ void:target   lod:bio2rdf-pharmgkb , lod:bio2rdf-ctd ;
   void:triples  10729
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-hgnc> , <http://lod-cloud.net/dataset/bio2rdf-pharmgkb> ;
-  void:triples  26184
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-drugbank> , <http://lod-cloud.net/dataset/bio2rdf-pharmgkb> ;
-  void:triples  1624
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-clinicaltrials> , <http://lod-cloud.net/dataset/bio2rdf-pharmgkb> ;
+[ void:target   lod:bio2rdf-pharmgkb , lod:bio2rdf-clinicaltrials ;
   void:triples  516
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-dbsnp> , <http://lod-cloud.net/dataset/bio2rdf-pharmgkb> ;
-  void:triples  24785215
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/bio2rdf-omim> , <http://lod-cloud.net/dataset/bio2rdf-pharmgkb> ;
-  void:triples  16536
+[ void:target   lod:bio2rdf-pharmgkb , lod:bio2rdf-hgnc ;
+  void:triples  26184
 ] .

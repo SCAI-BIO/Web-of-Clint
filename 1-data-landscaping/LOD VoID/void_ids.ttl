@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,24 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-[ void:target   <http://lod-cloud.net/dataset/wals> , <http://lod-cloud.net/dataset/ids> ;
+[ void:target   lod:ids , lod:wals ;
   void:triples  216
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/wiktionary-dbpedia-org> , <http://lod-cloud.net/dataset/ids> ;
-  void:triples  1832
-] .
-
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/ids> ;
+[ void:target   lod:ids , lod:lexvo ;
   void:triples  217
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/glottolog-langdoc> , <http://lod-cloud.net/dataset/ids> ;
-  void:triples  216
+[ void:target   lod:ids , lod:wiktionary-dbpedia-org ;
+  void:triples  1832
 ] .
 
-<http://lod-cloud.net/dataset/ids>
-        a                     void:Dataset ;
+lod:ids  a                    void:Dataset ;
         dcterms:description   "1200 words in 200 languages"@en ;
         dcterms:publisher     [ rdfs:label  "Bernard Comrie" ;
                                 foaf:mbox   ""
@@ -32,6 +28,10 @@
         void:exampleResource  <http://mlode.nlp2rdf.org/resource/data/ids/entry/e110-c17?output=ttl> ;
         void:sparqlEndpoint   <http://mlode.nlp2rdf.org/sparql> ;
         void:triples          2000000 ;
-        dcat:distribution     [ dcat:accessURL  <http://mlode.nlp2rdf.org/datasets/ids.nt.gz> ] ;
         dcat:distribution     [ dcat:accessURL  <https://dl.dropbox.com/u/65483422/ids-model-diagram.png> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://mlode.nlp2rdf.org/datasets/ids.nt.gz> ] ;
         foaf:homepage         <http://lingweb.eva.mpg.de/ids/> .
+
+[ void:target   lod:ids , lod:glottolog-langdoc ;
+  void:triples  216
+] .

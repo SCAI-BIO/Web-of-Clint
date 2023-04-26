@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,8 +6,7 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/fu-berlin-eures>
-        a                     void:Dataset ;
+lod:fu-berlin-eures  a        void:Dataset ;
         dcterms:description   "EURES (European Employment Services) is a cooperation network designed to facilitate the free movement of workers within the European Economic Area (Switzerland is also involved). It publishes Job vacancies in 31 European countries. Partners in the network include public employment services, trade union and employers' organisations. The network is coordinated by the European Commission."@en ;
         dcterms:publisher     [ rdfs:label  "Anja Jentzsch" ;
                                 foaf:mbox   "anja@anjeve.de"
@@ -18,10 +18,10 @@
         void:triples          7011899 ;
         foaf:homepage         <http://www4.wiwiss.fu-berlin.de/eures/> .
 
-[ void:target   <http://lod-cloud.net/dataset/dbpedia> , <http://lod-cloud.net/dataset/fu-berlin-eures> ;
-  void:triples  2146
+[ void:target   lod:fu-berlin-eures , lod:lexvo ;
+  void:triples  184
 ] .
 
-[ void:target   <http://lod-cloud.net/dataset/lexvo> , <http://lod-cloud.net/dataset/fu-berlin-eures> ;
-  void:triples  184
+[ void:target   lod:fu-berlin-eures , lod:dbpedia ;
+  void:triples  2146
 ] .

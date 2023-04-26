@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,19 +6,19 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/brown-corpus-in-rdf-nif>
+[ void:target   lod:brown-corpus-in-rdf-nif , lod:olia ;
+  void:triples  1161028
+] .
+
+lod:brown-corpus-in-rdf-nif
         a                     void:Dataset ;
         dcterms:description   "RDF version of the Brown Corpus (W. N. Francis, H. Kucera; Brown University; 1979). 1,014,312 words in 500 documents, taken from newspapers texts on diverse topics, non-fiction and fiction books as well as government documents.\r\n\r\nOriginal corpus contains manually annotated sentence and token boundaries as well as word class annotations(such as POS, inflectional morphemes, such as noun plural, verb tense and adjective comparison and special tags for foreign words and proper nouns).\r\n\r\nConverted corpus contains complete texts reconstructed from TEI/XML version of the Brown corpus. Word classes where linked via OLiA to ontological categories for aggregated querying.\r\n"@en ;
         dcterms:publisher     [ rdfs:label  "Martin Brümmer" ;
                                 foaf:mbox   "bruemmer@informatik.uni-leipzig.de"
                               ] ;
-        dcterms:subject       "rdf" , "linguistics" , "corpus" , "lod" , "linguistic" , "nif" ;
+        dcterms:subject       "rdf" , "linguistics" , "lod" , "corpus" , "linguistic" , "nif" ;
         dcterms:title         "Brown Corpus in RDF/NIF"@en ;
         void:exampleResource  <http://brown.nlp2rdf.org/lod/a01.ttl> ;
         void:triples          14335131 ;
-        dcat:distribution     [ dcat:accessURL  <http://brown.nlp2rdf.org/dataid.ttl> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://brown.nlp2rdf.org/lod/> ] .
-
-[ void:target   <http://lod-cloud.net/dataset/olia> , <http://lod-cloud.net/dataset/brown-corpus-in-rdf-nif> ;
-  void:triples  1161028
-] .
+        dcat:distribution     [ dcat:accessURL  <http://brown.nlp2rdf.org/lod/> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://brown.nlp2rdf.org/dataid.ttl> ] .

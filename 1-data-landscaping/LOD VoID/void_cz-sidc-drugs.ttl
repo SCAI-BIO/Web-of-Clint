@@ -1,3 +1,4 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -5,23 +6,22 @@
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://lod-cloud.net/dataset/cz-sidc-drugs>
-        a                     void:Dataset ;
+[ void:target   lod:cz-sidc-drugs , lod:cz-eh-1-atc ;
+  void:triples  108737
+] .
+
+lod:cz-sidc-drugs  a          void:Dataset ;
         dcterms:description   "Medicinal products marketed in Czech Republic according to the State Institute for Drug Control in Czech Republic"@en ;
         dcterms:publisher     [ rdfs:label  "Martin Nečaský" ;
                                 foaf:mbox   "necasky@opendata.cz"
                               ] ;
         dcterms:subject       "format-dcterms" , "lod" , "czech-republic" , "published-by-third-party" , "lifesciences" , "format-skos" , "life_sciences" , "no-vocab-mappings" , "czech" , "provenance-metadata" , "license-metadata" , "deref-vocab" ;
         dcterms:title         "Medicinal products marketed in Czech Republic"@en ;
-        void:exampleResource  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/sukl/medicinal-product-packaging/0032080%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fsukl%2Fdrugs&output=text%2Fturtle> , <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp://linked.opendata.cz/resource/sukl/medicinal-product/IBALGIN-400%3E&default-graph-uri=http%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fsukl%2Fdrugs&output=text%2Fturtle> ;
+        void:exampleResource  <http://linked.opendata.cz/sparql> ;
         void:sparqlEndpoint   <http://linked.opendata.cz/sparql> ;
         void:triples          1144314 ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/sukl/medicinal-product-packaging/0032080> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/sukl/medicinal-product/IBALGIN-400> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql> ] ;
         dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/dumps/sukl-drugs.trig> ] ;
-        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/sparql?query=DESCRIBE+%3Chttp%3A%2F%2Flinked.opendata.cz%2Fresource%2Fdataset%2Fsukl%2Fdrugs%2Fdistribution%3E&output=text%2Fturtle> ] ;
+        dcat:distribution     [ dcat:accessURL  <http://linked.opendata.cz/resource/sukl/medicinal-product/IBALGIN-400> ] ;
         foaf:homepage         <http://linked.opendata.cz/resource/dataset/sukl/drugs> .
-
-[ void:target   <http://lod-cloud.net/dataset/cz-eh-1-atc> , <http://lod-cloud.net/dataset/cz-sidc-drugs> ;
-  void:triples  108737
-] .
