@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.10.11-slim-bullseye
 
 RUN apt-get update && apt upgrade -y && apt install nano
 
@@ -9,9 +9,6 @@ ENV TS_PWD "pw123"
 ENV NEO4J_HOST "localhost:7687"
 ENV NEO4J_DB_USER "neo4j"
 ENV NEO4J_DB_PWD "neo4j"
-
-ENV NEO4J_UPLOAD_USER "admin"
-ENV NEO4J_UPLOAD_PWD "pw123"
 
 WORKDIR api/
 

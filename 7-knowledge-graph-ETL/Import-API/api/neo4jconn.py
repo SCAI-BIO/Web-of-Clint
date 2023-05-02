@@ -8,7 +8,7 @@ from constants import TS_HOST, TS_USER, TS_PWD
 
 class Neo4jConnection:
 
-    def __init__(self, uri, user, pwd, database):
+    def __init__(self, uri, user, pwd, database: str = None):
         self.__uri = uri
         self.__user = user
         self.__pwd = pwd

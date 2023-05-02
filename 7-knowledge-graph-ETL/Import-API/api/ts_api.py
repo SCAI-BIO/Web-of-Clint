@@ -13,7 +13,8 @@ from rdflib import Graph
 
 from SPARQLWrapper import TURTLE, XML, JSONLD, DESCRIBE, SELECT, ASK, CONSTRUCT
 
-from fastapi import FastAPI, File, UploadFile, Path, Request, HTTPException, Depends, Form, BackgroundTasks, status
+from fastapi import FastAPI, File, UploadFile, Path, Request, HTTPException, Depends, Form, BackgroundTasks, status, \
+    Query
 from fastapi.responses import JSONResponse, HTMLResponse, Response, FileResponse
 from fastapi.security import OAuth2PasswordRequestForm
 from fastapi.middleware.cors import CORSMiddleware
@@ -21,7 +22,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from neo4jconn import Neo4jConnection
 from constants import TS_HOST, TS_PWD, TS_USER, NEO4J_HOST, NEO4J_DB_USER, NEO4J_UPLOAD_USER, NEO4J_UPLOAD_PWD, \
-    NEO4J_URI, NEO4J_DB_PWD, ROOT_PATH, SECRET_KEY
+    NEO4J_URI, NEO4J_DB_PWD, ROOT_PATH, SECRET_KEY, SHARED
 from models import ReturnFormat, MissingDatasetException, InvalidQueryTypeException, SparqlQuery, TripleCount, \
     ConfigOption
 from utils import create_sparql_wrapper_for_triplestore, count_triples_in_dataset, get_datasets_in_triplestore, \
@@ -316,13 +317,14 @@ async def upload_data(
         raise HTTPException(status_code=400, detail=str(e))
 
 
-@app.put("/upload/neo4j/{database}", tags=["Upload"])
+@app.put("/upload/neo4j", tags=["Upload"])
 def upload_file_neo4j(
         config: ConfigOption,
         rdf_file: UploadFile = File(..., description="RDF file to upload to the triple store"),
-        database: str = Path(
-            description="The name of the database to upload data to.",
-            example="testbruce"
+        database: str | None = Query(
+            description="The name of the database to upload data to. If using the community version of Neo4J, this can "
+                        "be left blank since there is only one database.",
+            default=None,
         ),
         user=Depends(get_current_active_user),
 ):
@@ -333,28 +335,45 @@ def upload_file_neo4j(
 
     upload_url = f"{NEO4J_HOST}/upload/{database}/{uploaded_file_name}"
 
-    try:
-        upload_resp = requests.put(
-            upload_url,
-            data=open(uploaded_file_name, 'rb').read(),
-            auth=(NEO4J_UPLOAD_USER, NEO4J_UPLOAD_PWD),
-            headers={
-                'Content-type': 'application/x-turtle',
-            },
-        )
-        if not upload_resp.ok:
-            return upload_resp.text
+    if not SHARED:  # Neo4J hosted remotely
+        try:
+            upload_resp = requests.put(
+                upload_url,
+                data=open(uploaded_file_name, 'rb').read(),
+                auth=(NEO4J_UPLOAD_USER, NEO4J_UPLOAD_PWD),
+                headers={
+                    'Content-type': 'application/x-turtle',
+                },
+            )
+            if not upload_resp.ok:
+                return upload_resp.text
 
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=e)
+        except Exception as e:
+            raise HTTPException(status_code=400, detail=e)
 
-    finally:  # Remove uploaded file
+        finally:  # Remove uploaded file
+            pathlib.Path(uploaded_file_name).unlink()
+
+        file_path = f"/neo4j/upload/{database}/{uploaded_file_name}"
+
+    else:
+        with open(uploaded_file_name, 'r') as upf:
+            content = upf.read()
+
         pathlib.Path(uploaded_file_name).unlink()
 
+        tmp_file = pathlib.Path(f"/upload/{uploaded_file_name}")
+        with open(tmp_file, "w") as upf:
+            upf.write(content)
+
+        file_path = f"/import/{uploaded_file_name}"
+
     # Import
-    file_path = f"/neo4j/upload/{database}/{uploaded_file_name}"
     db = Neo4jConnection(uri=NEO4J_URI, user=NEO4J_DB_USER, pwd=NEO4J_DB_PWD, database=database)
     import_resp = db.import_ttl_file(file_uri=file_path, config=config)
+
+    if SHARED:
+        tmp_file.unlink()
 
     return import_resp
 
@@ -414,7 +433,7 @@ async def convert_csv_to_ttl(
     )
 
 
-@app.put("/import/{dataset}/{database}", tags=["Pipeline"])
+@app.put("/import/{dataset}", tags=["Pipeline"])
 def import_data_from_triplestore_to_neo4j(
         current_user: Annotated[User, Depends(get_current_active_user)],
         bg_task: BackgroundTasks,
@@ -423,9 +442,10 @@ def import_data_from_triplestore_to_neo4j(
             description="The dataset in the triplestore to extract data from.",
             example="fluid",
         ),
-        database: str = Path(
-            description="The name of the Neo4J graph database to import data into.",
-            example="mydataset",
+        database: str | None = Query(
+            description="The name of the database to upload data to. If using the community version of Neo4J, this can "
+                        "be left blank since there is only one database.",
+            default=None,
         ),
 ):
     """Here the user can specify the dataset to query in the triplestore and have the results automatically uploaded
