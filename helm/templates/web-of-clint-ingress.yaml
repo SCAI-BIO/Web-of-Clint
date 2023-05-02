@@ -11,7 +11,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ .Release.Name }}-who-etl-api-ingress
+  name: {{ .Release.Name }}-webofclint-api-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /$2
     nginx.ingress.kubernetes.io/proxy-connect-timeout: "300s"
@@ -19,7 +19,7 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-read-timeout: "300s"
     nginx.ingress.kubernetes.io/proxy-body-size: "10g"
   labels:
-    component: who-etl-api-service
+    component: webofclint-api-service
     version: {{ .Chart.AppVersion }}
     deployment-id:  {{ .Release.Name }}
 spec:
@@ -31,6 +31,32 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: {{ .Release.Name }}-who-etl-api-service
+                name: {{ .Release.Name }}-webofclint-api-service
                 port:
                   name: api
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ .Release.Name }}-webofclint-fuseki-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "300s"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "300s"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "300s"
+    nginx.ingress.kubernetes.io/proxy-body-size: 10g
+  labels:
+    component: webofclint-fuseki
+    deployment-id: webofclint-fuseki
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: {{ .Values.triplestore.domain }}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: webofclint-fuseki-service
+                port:
+                  name: secoresearch

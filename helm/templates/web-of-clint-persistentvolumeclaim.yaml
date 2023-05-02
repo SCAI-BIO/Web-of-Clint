@@ -9,22 +9,29 @@
 # an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
 # specific language governing permissions and limitations under the License.
 apiVersion: v1
-kind: Service
+kind: PersistentVolumeClaim
 metadata:
-  name: {{ .Release.Name }}-who-etl-api-service
   labels:
-    component: who-etl-api-service
-    version: {{ .Chart.AppVersion }}
-    deployment-id:  {{ .Release.Name }}
+    io.kompose.service: secoresearch-fuseki-data
+  name: secoresearch-fuseki-data
 spec:
-  ports:
-  - name: api
-    port: 8000
-  - name: http
-    port: 7474
-  - name: bolt
-    port: 7687
-  selector:
-    component: who-etl-api-service
-    version: {{ .Chart.AppVersion }}
-    deployment-id:  {{ .Release.Name }}
+  storageClassName: rook-ceph-block-hdd
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    io.kompose.service: neo4j-data
+  name: neo4j-data
+spec:
+  storageClassName: rook-ceph-block-hdd
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
