@@ -22,7 +22,7 @@ scaiview:
         valueFrom:
           secretKeyRef:
             name: ewaa-scaiview-broker-service-secret
-            key:  artemis-password # apacheartemis
+            key:  artemis-password
       - name: SPRING_ARTEMIS_USER
         value: "artemis"
     mongo:

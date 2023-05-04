@@ -49,7 +49,7 @@ metadata:
   name: {{ .Release.Name }}-service-secret
 type: Opaque
 data:
-  artemis-password: c2ltZXRyYWVoY2FwYQ==  # echo -n 'simetraehcapa' | base64
+  artemis-password: # echo -n 'your_password' | base64
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -96,6 +96,4 @@ spec:
                 secretKeyRef:
                   name: winning-liger-activemq-artemis
                   key:  artemis-password
-          #        - name: JAVA_TOOL_OPTIONS # enable debugging
-          #          value: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
 
