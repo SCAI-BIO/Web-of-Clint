@@ -1,20 +1,14 @@
+DOCKER_URL: <docker_url>
 ui:
   version: 0.3.10-SNAPSHOT
   domain:
-  - academia.scaiview.demo.k8s.bio.scai.fraunhofer.de
+  - <domain_name_to_expose>
   api:
-    url: https://api.academia.scaiview.com
+    url: <api_url_to_expose>
   sam:
-    url: https://sam.academia.scaiview.com
+    url: <sam_url>
   ols:
-    url: https://ols.academia.scaiview.com
-  oidc:
-    - name: REACT_APP_KEYCLOAK_URL
-      value: "https://keycloak.scai.fraunhofer.de/auth"
-    - name: REACT_APP_KEYCLOAK_REALM
-      value: "SCAI-Bio"
-    - name: REACT_APP_KEYCLOAK_CLIENTID
-      value: "scaiview-frontend-production"
+    url: <ols_url>
   warning:
     status: "doNotShow" # "show" is the only working value here
     text: "Update in progress, please visit us later"

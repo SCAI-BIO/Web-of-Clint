@@ -28,7 +28,7 @@ jpm:
   - name: JPM_TERMINOLOGIES
     value:
 
-URL: crackit.sam.api.k8s.bio.scai.fraunhofer.de
+URL: <hostname>
 PROJECT: crackit
 
 oidc:
@@ -38,3 +38,4 @@ oidc:
     value: fd36cff5-2c93-49a6-aa86-b9442dce68bb
 
 AppVersion: 1.1-SNAPSHOT
+DOCKER_URL: <docker_url>

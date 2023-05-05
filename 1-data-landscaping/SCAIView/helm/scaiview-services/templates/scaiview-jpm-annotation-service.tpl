@@ -67,7 +67,7 @@ spec:
         fsGroup: 0
       containers:
       - name: container
-        image: docker.arty.scai.fraunhofer.de/scaiview-jpm-annotation-service:{{ .Values.scaiview.api.version }}
+        image: {{ .Values.DOCKER_URL }}/scaiview-jpm-annotation-service:{{ .Values.scaiview.api.version }}
         imagePullPolicy: Always
         ports:
         - containerPort: 8092

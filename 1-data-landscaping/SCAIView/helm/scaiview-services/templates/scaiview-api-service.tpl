@@ -93,7 +93,7 @@ spec:
     spec:
       containers:
       - name: container
-        image: docker.arty.scai.fraunhofer.de/scaiview-api-service:{{ .Values.scaiview.api.version }}
+        image: {{ .Values.DOCKER_URL }}/scaiview-api-service:{{ .Values.scaiview.api.version }}
         imagePullPolicy: Always
         ports:
           - containerPort: 8081

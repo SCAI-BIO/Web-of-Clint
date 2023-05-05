@@ -65,7 +65,7 @@ spec:
     spec:
       containers:
       - name: container
-        image: docker.arty.scai.fraunhofer.de/scaiview-document-service-mongodb:{{ .Values.scaiview.api.version }}
+        image: {{ .Values.DOCKER_URL }}/scaiview-document-service-mongodb:{{ .Values.scaiview.api.version }}
         imagePullPolicy: Always
         ports:
         - containerPort: 8092

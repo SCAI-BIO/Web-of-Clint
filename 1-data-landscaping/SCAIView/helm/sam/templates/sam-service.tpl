@@ -74,7 +74,7 @@ spec:
     spec:
       containers:
         - name: container
-          image: docker.arty.scai.fraunhofer.de/sam-api:{{.Values.AppVersion}}
+          image: {{ .Values.DOCKER_URL }}/sam-api:{{.Values.AppVersion}}
           imagePullPolicy: Always
           ports:
             - containerPort: 8081

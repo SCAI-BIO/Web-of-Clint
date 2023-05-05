@@ -14,7 +14,6 @@ ols:
   - name: OLS_ENABLE
     value: "true"
   - name: OLS_URL
-#    value: "http://ewaa-scaiview-ols-dev-web-service.bio.svc.cluster.local/api/,https://www.ebi.ac.uk/ols/api/"
     value: "https://ols.ewaa.scaiview.com/api/,https://www.ebi.ac.uk/ols/api/"
   - name: OLS_MAXSIZE
     value: "500"
@@ -31,12 +30,4 @@ jpm:
   - name: JPM_SYN_FILE_FOLDER
     value: "/usr/share/sam/terminologies"
   - name: JPM_TERMINOLOGIES
-    #value: "ADO_riskfactor.syn,ADO_signs_and_symptoms.syn,ADO_treatment.syn,ADO_updated.syn,GO_biological_process_1_.syn"
     value: ""
-
-oidc:
-  - name: KEYCLOAK_AUTH-SERVER-URL
-    value: "https://keycloak.scai.fraunhofer.de/auth"
-  - name: KEYCLOAK_CREDENTIALS_SECRET
-    value: fd36cff5-2c93-49a6-aa86-b9442dce68bb
-AppVersion: 1.1-SNAPSHOT

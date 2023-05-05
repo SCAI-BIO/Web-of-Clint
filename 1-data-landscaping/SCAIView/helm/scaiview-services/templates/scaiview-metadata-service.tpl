@@ -65,7 +65,7 @@ spec:
     spec:
       containers:
       - name: scaiview-metadata-service
-        image: docker.arty.scai.fraunhofer.de/scaiview-metadata-service:{{ .Values.scaiview.api.version }}
+        image: {{ .Values.DOCKER_URL }}/scaiview-metadata-service:{{ .Values.scaiview.api.version }}
         imagePullPolicy: Always
         ports:
         - containerPort: 8092

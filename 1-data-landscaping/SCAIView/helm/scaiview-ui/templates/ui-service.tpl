@@ -66,7 +66,7 @@ spec:
         deployment-id: {{ .Release.Name }}
     spec:
       containers:
-        - image: docker.arty.scai.fraunhofer.de/scaiview-frontend:{{ .Values.ui.version }}
+        - image: {{ .Values.DOCKER_URL }}/scaiview-frontend:{{ .Values.ui.version }}
           name: container
           imagePullPolicy: Always
           ports:
@@ -86,4 +86,3 @@ spec:
             value: {{ .Values.ui.warning.status }}
           - name: REACT_APP_SHOW_WARNING_TEXT
             value: {{ .Values.ui.warning.text }}
-{{ toYaml .Values.ui.oidc | indent 10}}
