@@ -24,6 +24,7 @@ package de.fraunhofer.scai.bio.eiostooling.rdf;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -51,10 +52,12 @@ import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.Statement;
 import org.apache.jena.rdf.model.StmtIterator;
 import org.apache.jena.shared.NoWriterForLangException;
+import org.apache.jena.ttl.turtle.TurtleReader;
 import org.apache.jena.vocabulary.DCTerms;
 import org.apache.jena.vocabulary.DC_11;
 import org.apache.jena.vocabulary.OA;
@@ -79,7 +82,7 @@ import lombok.extern.slf4j.Slf4j;
  *
  */
 @Slf4j public class RDFUtils {
-    
+
     public static final String WHO_URL = "https://int.who/";
     public static final String SCAI_URL = "https://www.scai.fraunhofer.de/";
     public static final String DOCUMENT = "Document_";
@@ -102,39 +105,55 @@ import lombok.extern.slf4j.Slf4j;
         fout.close();
     }
 
+    public static Model readModelFromFile(File file) throws IOException  {
+        TurtleReader turtleReader = new TurtleReader();
+        Model model = ModelFactory.createDefaultModel();
+        turtleReader.read(model, new FileReader(file), null);
+
+        return model;
+    }
+
     /**
      * @param name
      * @param format
      * @param path 
+     * @return 
      * @throws IOException
      */
-    public static void writeModelToFile(Model model, String path, String name, String format) throws IOException {
+    public static boolean writeModelToFile(Model model, String path, String name, String format) throws IOException {
 
-        String suffix = null;
+        if(model != null && model.size() > 0) {
+            String suffix = null;
 
-        try {
-            if(format.equals("N3")) { suffix = ".n3"; } 
-            else if(format.equals("RDF/XML")) { suffix = ".rdf"; } 
-            else if(format.equals("N-TRIPLE")) { suffix = ".nt"; }
-            else if(format.equals("TURTLE")) { suffix = ".ttl"; }
-            else if(format.equals("TTL")) { suffix = ".ttl"; }
-            else if(format.equals("gephi")) {
-                RDFUtils.writeGephiTable(model, name);
-            }
+            try {
+                if(format.equals("N3")) { suffix = ".n3"; } 
+                else if(format.equals("RDF/XML")) { suffix = ".rdf"; } 
+                else if(format.equals("N-TRIPLE")) { suffix = ".nt"; }
+                else if(format.equals("TURTLE")) { suffix = ".ttl"; }
+                else if(format.equals("TTL")) { suffix = ".ttl"; }
+                else if(format.equals("gephi")) {
+                    RDFUtils.writeGephiTable(model, name);
+                }
 
-            if(suffix != null) {
-                String fname = path + File.separator + name+suffix;
-                FileOutputStream fout=new FileOutputStream(fname);
-                RDFUtils.writeModelToStream(model, fout, format);
-                log.info(" >> written {}", fname);
-            } else {
+                if(suffix != null) {
+                    String fname = path + File.separator + name+suffix;
+                    FileOutputStream fout=new FileOutputStream(fname);
+                    RDFUtils.writeModelToStream(model, fout, format);
+                    log.info(" >> written {}", fname);
+                    
+                    return true;
+                } else {
+                    log.error("supported formats: N3, RDF/XML, N-TRIPLE, TURTLE, TTL, gephi");
+
+                }
+            } catch(NoWriterForLangException ex) {
                 log.error("supported formats: N3, RDF/XML, N-TRIPLE, TURTLE, TTL, gephi");
-
             }
-        } catch(NoWriterForLangException ex) {
-            log.error("supported formats: N3, RDF/XML, N-TRIPLE, TURTLE, TTL, gephi");
+        } else {
+            log.warn("empty model - abort.");
         }
-
+        
+        return false;
     }
 
     /**
@@ -346,7 +365,7 @@ import lombok.extern.slf4j.Slf4j;
             log.error(e.getLocalizedMessage());
             log.debug(e.getLocalizedMessage(), e);
         }
-        
+
         log.info(" >> done ");
     }
 
@@ -432,15 +451,15 @@ import lombok.extern.slf4j.Slf4j;
         model.setNsPrefix("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
         model.setNsPrefix("rdfs", "http://www.w3.org/2000/01/rdf-schema#");
         model.setNsPrefix("dbpedia","http://dbpedia.org/resource/");
-        
+
         if(prefixes != null) {
             prefixes.entrySet().forEach(entry -> {
                 model.setNsPrefix(entry.getKey(), entry.getValue());
             });
         }
-        
+
     }
-    
+
     /**
      * @param dataset
      * @return
@@ -485,7 +504,7 @@ import lombok.extern.slf4j.Slf4j;
      * @param annotation
      */
     public static void createAnnotationClass(Model model, Resource anot, Annotation annotation) {
-               
+
         log.debug("{}",annotation.getAnnotationType() );
         if(annotation.getAnnotationType().equals("gn")) {
             anot.addProperty(RDF.type, DCTerms.Location);                   
@@ -494,7 +513,7 @@ import lombok.extern.slf4j.Slf4j;
         } else if( annotation.getAnnotationType().equals(DocumentBuilder.PEOPLE)) {
             anot.addProperty(RDF.type, model.createResource(FOAF.PERSON.stringValue()));                                 
         } else if( annotation.getAnnotationType().equals(DocumentBuilder.ORGANIZATIONS)) {
-                anot.addProperty(RDF.type, model.createResource(FOAF.ORGANIZATION.stringValue()));                   
+            anot.addProperty(RDF.type, model.createResource(FOAF.ORGANIZATION.stringValue()));                   
         } else {
             anot.addProperty(RDF.type, OWL.Thing);
         }
@@ -509,30 +528,78 @@ import lombok.extern.slf4j.Slf4j;
     }
 
 
-    public static void queryModel(Model model, String sparql) {
-        
+    /**
+     * perform a count query on the model and return <code>long</code>
+     * @param model
+     * @param sparql - query string; must return a '?count' as long
+     * @return
+     */
+    public static long countModel(Model model, String sparql) {
+
         Query query = QueryFactory.create(sparql);
 
         try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
             ResultSet results = qexec.execSelect() ;
-            
-            log.debug(results.getResultVars().toString());
-            
-            while(results.hasNext()) {
-                QuerySolution result = results.next();
-                
-                for(String varName : results.getResultVars()) {
-                    log.debug(result.get(varName).toString());
-                }
-                
-                log.debug("");
-            
-            }
-            
+            QuerySolution result = results.next();
+            return result.get("count").asLiteral().getLong();
+
         } catch (Exception ex) {
             log.error("Couldn't query model" );
             log.info(ex.getLocalizedMessage(), ex);
         }       
 
+        return -1;
+    }
+
+    /**
+     * perform a SPARQL query and return an array of <code>RDFNode</code>
+     * @param model
+     * @param sparql - query string
+     * @return <code>List<List<RDFNode>></code>
+     */
+    public static List<List<RDFNode>> queryModel(Model model, String sparql) {
+
+        List<List<RDFNode>> results = new ArrayList<List<RDFNode>>();
+        Query query = QueryFactory.create(sparql);
+
+        try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
+            ResultSet set = qexec.execSelect() ;            
+            while(set.hasNext()) {
+                QuerySolution result = set.next();
+
+                List<RDFNode> row = new ArrayList<RDFNode>();
+
+                for(String varName : set.getResultVars()) {
+                    row.add(result.get(varName));
+                }
+
+                results.add(row);
+            }
+
+            log.info(results.toString());
+            return results;
+
+        } catch (Exception ex) {
+            log.error("Couldn't query model" );
+            log.info(ex.getLocalizedMessage(), ex);
+        }       
+
+        return null;
+    }
+
+    /**
+     * print all statements to the logger
+     * @param model
+     */
+    public static void logStatements(Model model) {
+        if(model == null || model.size() <= 0) {
+            log.warn("empty model");
+        } else {
+
+            StmtIterator  iter = model.listStatements();
+            while(iter.hasNext()) {
+                log.info(iter.nextStatement().toString());
+            }
+        }
     }
 }

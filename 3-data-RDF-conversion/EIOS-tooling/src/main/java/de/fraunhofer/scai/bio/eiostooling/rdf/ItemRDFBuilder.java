@@ -209,7 +209,7 @@ public class ItemRDFBuilder {
             Property derived = model.createProperty(PROV.WAS_DERIVED_FROM.stringValue());
             
             Resource rss = model.createResource(RDFUtils.WHO_URL+item.getRssItemId());  // "rssItemId": "Tagespiegel-efa6a489d5574a21471bc32d32d82212", 
-            rss.addProperty(RDF.type, "https://schema.org/webFeed");
+            rss.addProperty(RDF.type, model.createResource("https://schema.org/webFeed"));
             eiosItem.addProperty(derived, rss);
             
             if (item.getParentId() != null) {

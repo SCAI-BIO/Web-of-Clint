@@ -88,6 +88,15 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.jsonschema2pojo</groupId>
+			<artifactId>jsonschema2pojo-core</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
 			<groupId>de.fraunhofer.scai.bio</groupId>
 			<artifactId>DocTypeSystem</artifactId>
 			<version>1.3.1-SNAPSHOT</version>
@@ -101,18 +110,20 @@
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 		</dependency>
-		<!-- <dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-api</artifactId> 
-			</dependency> <dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId> 
-			</dependency> -->
 		<dependency>
 			<groupId>org.apache.jena</groupId>
 			<artifactId>jena-core</artifactId>
-			<version>3.16.0</version>
+			<version>3.17.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-commonsrdf</artifactId>
+			<version>3.17.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.jena</groupId>
 			<artifactId>jena-arq</artifactId>
-			<version>3.16.0</version>
+			<version>3.17.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -136,23 +147,10 @@
 			<artifactId>rdf4j-model-vocabulary</artifactId>
 			<version>3.6.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
 		<dependency>
 			<groupId>com.squareup.okhttp3</groupId>
 			<artifactId>okhttp</artifactId>
 		</dependency>
-
-		<!-- <dependency> <groupId>org.elasticsearch.client</groupId> <artifactId>elasticsearch-rest-high-level-client</artifactId> 
-			<version>7.6.2</version> </dependency> <dependency> <groupId>org.elasticsearch</groupId> 
-			<artifactId>elasticsearch</artifactId> <version>7.6.2</version> </dependency> 
-			<dependency> <groupId>org.elasticsearch.client</groupId> <artifactId>elasticsearch-rest-client</artifactId> 
-			<version>7.6.2</version> </dependency> -->
-
-		<!-- <dependency> <groupId>org.elasticsearch.client</groupId> <artifactId>elasticsearch-rest-client</artifactId> 
-			<version>8.6.0</version> </dependency> <dependency> <groupId>org.elasticsearch.client</groupId> 
-			<artifactId>transport</artifactId> <version>7.17.8</version> </dependency> 
-			<dependency> <groupId>org.elasticsearch.client</groupId> <artifactId>x-pack-transport</artifactId> 
-			<version>7.17.8</version> </dependency> -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
@@ -177,14 +175,6 @@
 					</archive>
 				</configuration>
 			</plugin>
-			<!-- <plugin> <groupId>pl.project13.maven</groupId> <artifactId>git-commit-id-plugin</artifactId> 
-				<executions> <execution> <id>get-the-git-infos</id> <goals> <goal>revision</goal> 
-				</goals> </execution> <execution> <id>validate-the-git-infos</id> <goals> 
-				<goal>validateRevision</goal> </goals> *NOTE*: The default phase of validateRevision 
-				is verify, but in case you want to change it, you can do so by adding the 
-				phase here <phase>package</phase> </execution> </executions> <configuration> 
-				<generateGitPropertiesFile>true</generateGitPropertiesFile> </configuration> 
-				</plugin> -->
 		</plugins>
 	</build>
 </project>
