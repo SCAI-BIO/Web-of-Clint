@@ -176,19 +176,38 @@ import okhttp3.Response;
     }
 
     /**
+     * extract RDF mentioning from document file
+     * 
+     * @param doc <code>Document</code>
+     * @param prefixes RDF prefix map
+     * @param outPath where to store
+     * @param filename under which name
+     */
+    public static void extractMentioningsFromDocument(Document doc, Map<String, String> prefixes, String outPath, String filename) {
+        try {
+            MentioningBuilder mb = new MentioningBuilder(doc, prefixes, false);
+            RDFUtils.writeModelToFile(mb.getMentionsModel(), outPath, "mentionings_"+filename, "TTL");
+            
+        } catch (Exception e) {
+            log.error(e.getLocalizedMessage());
+            log.debug(e.getLocalizedMessage(), e);
+        }
+    }
+    
+    /**
      * extract RDF mappings from document file
      * 
      * @param basePath
-     * @param mappings
+     * @param filename
      * @param prefixes 
      */
-    public static void extractMentioningsFromFile(String outPath, String mappings, Map<String, String> prefixes) {
-        Document doc = null;
-        try {
-            doc = DocumentUtils.read(mappings);
-            MentioningBuilder mb = new MentioningBuilder(doc, prefixes, false);
+    public static void extractMentioningsFromFile(String outPath, String filename, Map<String, String> prefixes) {
+        try {            
+            extractMentioningsFromDocument(DocumentUtils.read(filename), 
+                    prefixes, outPath, 
+                    FilenameUtils.getBaseName(filename)
+                    );
 
-            RDFUtils.writeModelToFile(mb.getMentionsModel(), outPath, "mentionings_"+FilenameUtils.getBaseName(mappings), "TTL");
         } catch (Exception e) {
             log.error(e.getLocalizedMessage());
             log.debug(e.getLocalizedMessage(), e);

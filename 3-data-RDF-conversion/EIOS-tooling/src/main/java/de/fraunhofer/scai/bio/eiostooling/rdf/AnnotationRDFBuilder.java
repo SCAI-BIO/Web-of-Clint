@@ -58,7 +58,7 @@ import lombok.extern.slf4j.Slf4j;
     }
 
     /**
-     * constructor 
+     * constructor - reqding a document and a prefix map
      * 
      * @param doc @see de.fraunhofer.scai.bio.Document
      */

@@ -45,7 +45,6 @@ import de.fraunhofer.scai.bio.types.text.doc.structure.TextElement;
  * @see de.fraunhofer.scai.bio.Document
  * 
  * @author Marc Jacobs
- * @
  *
  */
 public class DocumentUtils {
@@ -57,6 +56,11 @@ public class DocumentUtils {
         return objectMapper.readValue(new File(filename), Document.class);        
     }
     
+    /**
+     * searches all Annotations in the document and maps TexteElements to them
+     * @param doc <code>Document</code>
+     * @return <code>Map(Annotation, TextElement)</code>
+     */
     public static Map<Annotation, TextElement> extractAnnotations(Document doc) {
         Map<Annotation, TextElement> annotations = new HashMap<Annotation, TextElement>();
         
