@@ -23,6 +23,7 @@ package de.fraunhofer.scai.bio.eiostooling.rdf;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -40,9 +41,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import org.apache.commons.compress.utils.FileNameUtils;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
-import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
@@ -52,6 +53,7 @@ import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.Statement;
@@ -140,7 +142,7 @@ import lombok.extern.slf4j.Slf4j;
                     FileOutputStream fout=new FileOutputStream(fname);
                     RDFUtils.writeModelToStream(model, fout, format);
                     log.info(" >> written {}", fname);
-                    
+
                     return true;
                 } else {
                     log.error("supported formats: N3, RDF/XML, N-TRIPLE, TURTLE, TTL, gephi");
@@ -152,7 +154,7 @@ import lombok.extern.slf4j.Slf4j;
         } else {
             log.warn("empty model - abort.");
         }
-        
+
         return false;
     }
 
@@ -283,83 +285,61 @@ import lombok.extern.slf4j.Slf4j;
     }
 
     /**
-     * go through the mappings and ad curies to them
+     * go through the mappings and write to skos scheme
      * 
      * @param prefixes 
      * @param oufile 
+     * @param infile 
      * 
      */
-    public static void enrichingMappings(Map<String, String> prefixes, String oufile) {
+    public static void createMappings(Map<String, String> prefixes, String oufile, String infile) {
         try {
-            log.info(" >>> parsing EIOS mappings...");
+            log.info(" >>> parsing EIOS mappings from {}...", infile);
 
-            InputStream in = new ClassPathResource("new_eios_mappings.csv").getInputStream();
+            InputStream in = new FileInputStream(new File(infile));  //ClassPathResource("new_eios_mappings.csv").getInputStream();
+            Model model = ModelFactory.createDefaultModel();
+            Property exact = model.createProperty("http://www.w3.org/2004/02/skos/core#exactMatch");
 
-            FileWriter sw = new FileWriter(oufile);
-            CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT);
+            RDFUtils.addNSPrefixes(model, RDFUtils.parsingPrefixes());
 
             try {
                 CSVParser parser = CSVParser.parse(in, Charset.forName("UTF-8"), CSVFormat.DEFAULT.withAllowMissingColumnNames());
 
                 for(CSVRecord record : parser.getRecords()) { 
-
-                    // header
-                    if(record.getRecordNumber() ==1l) {
-                        record.forEach(value -> {
-                            try {
-                                printer.print(value);
-                            } catch (IOException e) {
-                                // TODO Auto-generated catch block
-                                e.printStackTrace();
-                            }
-                        });
-                        try {
-                            printer.print("curie");
-                            printer.println();
-                        } catch (IOException e) {
-                            // TODO Auto-generated catch block
-                            e.printStackTrace();
-                        }
-
-                    } else if(record.isConsistent() && record.size() == 4) {
-                        if(!record.get(3).isEmpty()) {
-
-                            record.forEach(value -> {
-                                try {
-                                    printer.print(value);
-                                } catch (IOException e) {
-                                    // TODO Auto-generated catch block
-                                    e.printStackTrace();
-                                }
-                            });
-
-                            String key = findUri(prefixes, record.get(3));
-                            String curie = "";
-
-                            try {
-                                if(key != null) {
-                                    curie = key + ":" + record.get(3).substring(prefixes.get(key).length());
-                                    printer.print(curie);
-                                }
-                                printer.println();
-                            } catch (IOException e) {
-                                // TODO Auto-generated catch block
-                                e.printStackTrace();
-                            }
+                    if(record.getRecordNumber() > 1l && record.isConsistent() && record.size() == 4) {
+                        if(!record.get(3).isEmpty() && !record.get(0).isEmpty()) {
+                            Resource anot = model.createResource("https://int.who/EIOS_category/" + record.get(0).replaceAll("\\s", "_"));
+                            anot.addProperty(exact, model.createResource(record.get(3))); 
                         } else {
-                            log.error("invalid record: {}", record.toString());
+                            log.error("empty record: {}", record.toString());
                         }
+
+                    } else {
+                        log.error("invalid record: {}", record.toString());
                     }
-                };
-            } catch (Exception e) {
-                log.error(" >>> wrong prefixes.tsv file");
+
+                }
+            } catch (IOException e) {
+                log.error(e.getLocalizedMessage());
                 log.debug(e.getLocalizedMessage(), e);
             }
 
-            in.close();
 
-            printer.flush();
-            printer.close();
+            // category:TyphoidFever -> "Typhoid fever,typhoid fever,DOID_13258,http://purl.obolibrary.org/obo/DOID_13258"
+
+
+            //                                    a                 who:Category ;
+            //                                    rdfs:label        "Coronavirus"@en , "coronavirus"@en ;
+            //                                    dc11:identifier   "category:CoronavirusInfection" ;
+            //                                    EIOS:mentionedIn  who:TextElement_66ef5400-f9b1-3efd-a024-c4753c68fea8 , who:TextElement_17a9b981-1cde-36b7-a1be-d4e6dca2ff34 , who:TextElement_f8a27977-8f07-3ca6-bc43-d4a452b5ea3b .
+            //
+            //                                    @prefix category: <https://int.who/EIOS_category/>
+            //
+            //                                    category:Cyclospora  a    who:Category ;
+
+
+            RDFUtils.writeModelToFile(model, new File(infile).getParent() , FileNameUtils.getBaseName(infile), "TTL");
+            in.close();
 
         } catch (IOException e) {
             log.error(e.getLocalizedMessage());

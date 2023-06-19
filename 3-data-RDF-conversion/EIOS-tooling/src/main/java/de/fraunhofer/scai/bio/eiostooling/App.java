@@ -85,7 +85,7 @@ import lombok.extern.slf4j.Slf4j;
         options.addOption("r", "RDF", true, "RDF output format");
         options.addOption("s", OUTDIR, false, "export SCAIView documents");
         options.addOption("c", "chunksize", true, "how many documents in one chunk");
-        options.addOption("pc", "curie", false, "add curie to prefixes");
+        options.addOption("sk", "skos", true, "write skos mappings");
         options.addOption("q", "query", true, "category to be searched");
         options.addOption("zp", "zipProcess", true, "input zip file");
         options.addOption("idx", "indexes", true, "indexes to be queried as a list");
@@ -142,11 +142,12 @@ import lombok.extern.slf4j.Slf4j;
                 chunksize = Integer.parseInt(cmd.getOptionValue("chunksize"));
             }
 
-            if(cmd.hasOption("curie")) {
+            if(cmd.hasOption("skos")) {
 
-                RDFUtils.enrichingMappings(
+                RDFUtils.createMappings(
                         RDFUtils.parsingPrefixes(),
-                        "./src/main/resources/curie.csv"
+                        "./src/main/resources/curie.csv",
+                        cmd.getOptionValue("skos")
                         );
 
                 System.exit(0);
