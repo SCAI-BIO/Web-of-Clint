@@ -103,7 +103,7 @@ import lombok.extern.slf4j.Slf4j;
 
         builder = new de.fraunhofer.scai.bio.util.DocumentBuilder();
 
-        log.info(" >> working on {} - {}", i, item.getId());
+        log.debug(" >> working on {} - {}", i, item.getId());
         documentOrig = createDocument(item, false, mappings);
 
         if(!item.getTranslatedTitle().isEmpty()) {

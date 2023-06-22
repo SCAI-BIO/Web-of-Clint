@@ -498,9 +498,12 @@ import okhttp3.Response;
      * @param limit <code>Integer</code> total number of results
      * @param queryFile <code>String</String> file name which contains the query
      * @param outPath <code>String</String> path where to store the results as JSON
+     * @param rdf 
+     * @param scaiview 
+     * @param format 
      * @return <code>EiosQueryResult</code> last chunk of results
      */
-    public static EiosQueryResult queryEIOS(String idx, Integer from, Integer chunk, Integer limit, String queryFile, String outPath) {
+    public static EiosQueryResult queryEIOS(String idx, Integer from, Integer chunk, Integer limit, String queryFile, String outPath, boolean rdf, boolean scaiview, String format) {
         OkHttpClient client = new OkHttpClient.Builder()
                 .callTimeout(300, TimeUnit.SECONDS)
                 .readTimeout(300, TimeUnit.SECONDS)
@@ -548,7 +551,7 @@ import okhttp3.Response;
                     if(outPath != null) {
 
                         String basename = FilenameUtils.getBaseName(queryFile);
-                        String fname = String.format("%s/%s/%s/chunk_%08d.json" , outPath, basename, idx, count);
+                        String fname = String.format("%s/%s/%s/eios_chunk_%08d.json" , outPath, basename, idx, count);
 
                         FileUtils.writeStringToFile(
                                 new File(fname), 
@@ -556,8 +559,19 @@ import okhttp3.Response;
                                 Charset.forName("UTF-8"));
 
                         log.info(" >> written {} ", fname);
-                    }
+                        
+                        if(rdf) {
+                            AppIOHelper.exportRDF(result, outPath+"/"+basename+"/"+idx, String.format("rdf_chunk_%08d", count), format);
+                        }
 
+                        if(scaiview) {
+                            List<Document> documents = AppIOHelper.exportSCAIViewDocument(result, outPath+"/"+basename+"/"+idx, String.format("scaiview_chunk_%08d", count));            
+    
+                            AppIOHelper.extractMentioningsFromList(documents, outPath+"/"+basename+"/"+idx, String.format("chunk_%08d", count), chunk);
+                        }
+                        
+                    }
+                    
                     String hit = hits.get(hits.size()-1).getAdditionalProperties().get("sort").toString();
                     last =   "{\n" + "\"search_after\": " + hit + ",";
                     log.info(" >> last {}", hit);

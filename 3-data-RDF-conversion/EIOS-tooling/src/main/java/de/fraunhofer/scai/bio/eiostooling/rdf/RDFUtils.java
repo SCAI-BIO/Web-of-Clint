@@ -87,6 +87,7 @@ import lombok.extern.slf4j.Slf4j;
 
     public static final String WHO_URL = "https://int.who/";
     public static final String SCAI_URL = "https://www.scai.fraunhofer.de/";
+    public static final String EIOS = "https://www.scai.fraunhofer.de/EiosTooling/";
     public static final String DOCUMENT = "Document_";
     public static final String TEXT_ELEMENT = "TextElement_";
     public static final String DAY = "Day_";

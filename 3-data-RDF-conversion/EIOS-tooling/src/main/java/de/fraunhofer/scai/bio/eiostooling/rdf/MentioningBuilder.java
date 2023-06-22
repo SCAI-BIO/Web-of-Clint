@@ -44,7 +44,7 @@ import lombok.extern.slf4j.Slf4j;
         Concept c = doc.getDocumentElement().getMetaElement().getConcept(); 
 
         String id = c.getPreferredLabel().getText();
-        log.info(" >> Working on {}", id);
+        log.debug(" >> Working on {}", id);
 
         mentionsModel = ModelFactory.createDefaultModel();
 

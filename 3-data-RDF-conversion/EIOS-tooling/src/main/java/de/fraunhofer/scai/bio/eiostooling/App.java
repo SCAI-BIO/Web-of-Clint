@@ -173,8 +173,9 @@ import lombok.extern.slf4j.Slf4j;
                 }
                 
                 for(String idx : idxs.split(",")) {
-                    result = AppIOHelper.queryEIOS(idx, 0, chunksize, limit, query, outputPath);
+                    result = AppIOHelper.queryEIOS(idx, 0, chunksize, limit, query, outputPath, cmd.hasOption("r"), cmd.hasOption("s"), cmd.getOptionValue("r"));
                 }
+                
                 System.exit(0);
             }
 

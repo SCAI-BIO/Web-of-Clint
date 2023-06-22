@@ -71,10 +71,12 @@ public class ItemRDFBuilder {
         documentsModel = new HashMap<String, Model>();
 
         // createProvenance(hit.getSource());
+        
+        Map<String, String> prefixes = RDFUtils.parsingPrefixes();
 
         int i = 0;
         for (Hit hit : result.getHits().getHits()) {
-            documentsModel.put("item_" + hit.getId().toString(), createDocument(hit.getSource(), ++i, null));
+            documentsModel.put("item_" + hit.getId().toString(), createDocument(hit.getSource(), ++i, prefixes));
         }
     }
 
@@ -131,12 +133,12 @@ public class ItemRDFBuilder {
      * @return
      */
     public Model createDocument(Item item, int i, Map<String, String> prefixes) {
-        log.info(" >> Working on {} - {}", i, item.getId());
+        log.debug(" >> Working on {} - {}", i, item.getId());
 
         Model model = ModelFactory.createDefaultModel();
         RDFUtils.addNSPrefixes(model, prefixes);
         
-        Resource eiosItem = model.createResource(RDFUtils.WHO_URL + RDFUtils.DOCUMENT + item.getId()); // "id":
+        Resource eiosItem = model.createResource(RDFUtils.EIOS + RDFUtils.DOCUMENT + item.getId()); // "id":
                                                                                                        // 401863018,
         eiosItem.addProperty(RDF.type, model.createResource("https://schema.org/TextDigitalDocument"));
         eiosItem.addProperty(DC_11.creator, model.createResource("https://www.who.int/initiatives/eios"));
