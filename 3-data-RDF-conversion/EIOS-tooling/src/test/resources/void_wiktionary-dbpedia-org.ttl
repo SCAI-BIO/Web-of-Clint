@@ -1,0 +1,25 @@
+@prefix lod:   <http://lod-cloud.net/dataset/> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+[ void:target   lod:wiktionary-dbpedia-org , lod:dbpedia ;
+  void:triples  25155
+] .
+
+lod:wiktionary-dbpedia-org
+        a                     void:Dataset ;
+        dcterms:description   "We aim to provide a open-source framework (based on DBpedia) to extract semantic lexical resources (a ontology about language use) from Wiktionary. The data currently includes language, part of speech, senses, definitions, synonyms, taxonomies (hyponyms, hyperonyms, synonyms, antonyms) and translations for each lexical word."@en ;
+        dcterms:publisher     [ rdfs:label  "Jonas Brekle" ;
+                                foaf:mbox   "jonas.brekle@gmail.com"
+                              ] ;
+        dcterms:subject       "crossdomain" , "linguistics" , "lodcloud-diagram-2014-08-30" ;
+        dcterms:title         "wiktionary.dbpedia.org"@en ;
+        void:dataDump         <http://downloads.dbpedia.org/wiktionary/> ;
+        void:exampleResource  <http://wiktionary.dbpedia.org/data/dog.n3> , <http://wiktionary.dbpedia.org/data/dog.rdf> , <http://wiktionary.dbpedia.org/page/dog> , <http://wiktionary.dbpedia.org/data/dog.ntriples> ;
+        void:sparqlEndpoint   <http://wiktionary.dbpedia.org/sparql> ;
+        void:triples          "0"^^xsd:int ;
+        foaf:homepage         <http://wiktionary.dbpedia.org> .

@@ -1,0 +1,80 @@
+{
+    "_id": "wiktionary-dbpedia-org",
+    "identifier": "wiktionary-dbpedia-org",
+    "doi": "",
+    "image": "",
+    "links": [
+      {
+        "target": "dbpedia",
+        "value": "25155"
+      }
+    ],
+    "keywords": [
+      "crossdomain",
+      "linguistics",
+      "lodcloud-diagram-2014-08-30"
+    ],
+    "license": "http://www.opendefinition.org/licenses/cc-by-sa",
+    "title": "wiktionary.dbpedia.org",
+    "full_download": [
+      {
+        "media_type": "application/x-ntriples",
+        "description": "Downloads",
+        "status": "FAIL (404)",
+        "title": "Downloads",
+        "mirror": [],
+        "download_url": "http://downloads.dbpedia.org/wiktionary/"
+      }
+    ],
+    "example": [
+      {
+        "title": "RDFa Example",
+        "media_type": "example/rdfa",
+        "description": "",
+        "access_url": "http://wiktionary.dbpedia.org/page/dog",
+        "status": "FAIL (HTTPConnectionPool(host='wiktionary.dbpedia.org', port=80): Max retries exceeded with url: /page/dog (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fc190>, 'Connection to wiktionary.dbpedia.org timed out. (connect timeout=30)')))"
+      },
+      {
+        "title": "RDF/XML Example",
+        "media_type": "example/rdf+xml",
+        "description": "",
+        "access_url": "http://wiktionary.dbpedia.org/data/dog.rdf",
+        "status": "FAIL (HTTPConnectionPool(host='wiktionary.dbpedia.org', port=80): Max retries exceeded with url: /data/dog.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fe6b0>, 'Connection to wiktionary.dbpedia.org timed out. (connect timeout=30)')))"
+      },
+      {
+        "title": "N3 Example",
+        "media_type": "example/n3",
+        "description": "",
+        "access_url": "http://wiktionary.dbpedia.org/data/dog.n3",
+        "status": "FAIL (HTTPConnectionPool(host='wiktionary.dbpedia.org', port=80): Max retries exceeded with url: /data/dog.n3 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fd990>, 'Connection to wiktionary.dbpedia.org timed out. (connect timeout=30)')))"
+      },
+      {
+        "title": "N-Triples Example",
+        "media_type": "example/ntriples",
+        "description": "",
+        "access_url": "http://wiktionary.dbpedia.org/data/dog.ntriples",
+        "status": "FAIL (HTTPConnectionPool(host='wiktionary.dbpedia.org', port=80): Max retries exceeded with url: /data/dog.ntriples (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843feb60>, 'Connection to wiktionary.dbpedia.org timed out. (connect timeout=30)')))"
+      }
+    ],
+    "sparql": [
+      {
+        "title": "sparql endpoint",
+        "description": "",
+        "access_url": "http://wiktionary.dbpedia.org/sparql",
+        "status": "FAIL (HTTPConnectionPool(host='wiktionary.dbpedia.org', port=80): Max retries exceeded with url: /sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843ff160>, 'Connection to wiktionary.dbpedia.org timed out. (connect timeout=30)')))"
+      }
+    ],
+    "other_download": [],
+    "description": {
+      "en": "We aim to provide a open-source framework (based on DBpedia) to extract semantic lexical resources (a ontology about language use) from Wiktionary. The data currently includes language, part of speech, senses, definitions, synonyms, taxonomies (hyponyms, hyperonyms, synonyms, antonyms) and translations for each lexical word."
+    },
+    "owner": "",
+    "website": "http://wiktionary.dbpedia.org",
+    "triples": 0,
+    "domain": "linguistics",
+    "namespace": "",
+    "contact_point": {
+      "name": "Jonas Brekle",
+      "email": "jonas.brekle@gmail.com"
+    }
+}
