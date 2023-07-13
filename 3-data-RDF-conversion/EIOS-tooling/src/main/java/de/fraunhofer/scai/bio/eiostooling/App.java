@@ -88,14 +88,26 @@ import lombok.extern.slf4j.Slf4j;
         options.addOption("sk", "skos", true, "write skos mappings");
         options.addOption("q", "query", true, "category to be searched");
         options.addOption("zp", "zipProcess", true, "input zip file");
+        options.addOption("ze", "zipExtract", true, "output dir");
         options.addOption("idx", "indexes", true, "indexes to be queried as a list");
         options.addOption("li", "listindexes", false, "list all indexes");
-        
+        options.addOption("cm", "colmap", true, "mappings of columns");
+        options.addOption("ff", "fileFilter", true, "filter of files to be unzipped");
+
         CommandLineParser parser = new DefaultParser();
         CommandLine cmd = null;
 
         try {
             cmd = parser.parse(options, args);
+
+            if(cmd.hasOption("zipExtract")) {
+                AppIOHelper.extractZipDir(
+                        new File(cmd.getOptionValue("zipExtract")), 
+                        cmd.getOptionValue("outputpath"), 
+                        cmd.getOptionValue("fileFilter"));
+                System.exit(0);
+            }
+
 
             if(cmd.hasOption("listindexes")) {
                 log.info(AppIOHelper.listIndexes());
@@ -144,10 +156,19 @@ import lombok.extern.slf4j.Slf4j;
 
             if(cmd.hasOption("skos")) {
 
+                String mapping = cmd.getOptionValue("colmap");
+                char[] delim = new char[1];
+                mapping.substring(0,1).getChars(0, 1, delim, 0);
+                int total = Integer.parseInt(mapping.substring(1).split(":")[0]);
+                int from = Integer.parseInt(mapping.substring(1).split(":")[1].split(">")[0]);
+                int to = Integer.parseInt(mapping.substring(1).split(":")[1].split(">")[1]);
+
                 RDFUtils.createMappings(
                         RDFUtils.parsingPrefixes(),
                         "./src/main/resources/curie.csv",
-                        cmd.getOptionValue("skos")
+                        cmd.getOptionValue("skos"),
+                        from, to, total,
+                        delim[0]
                         );
 
                 System.exit(0);
@@ -159,23 +180,23 @@ import lombok.extern.slf4j.Slf4j;
 
             if(cmd.hasOption("query")) {
                 String query = cmd.getOptionValue("query");
-                
+
                 if(!cmd.hasOption("indexes")) {
                     log.error(" >> no index to be queried provided.");
                     printHelpAndExit(options);
                 }
-                    
+
                 String idxs = cmd.getOptionValue("indexes");
 
                 if(idxs == null || idxs.isEmpty()) {
                     log.error(" >> no index to be queried provided.");
                     printHelpAndExit(options);                    
                 }
-                
+
                 for(String idx : idxs.split(",")) {
                     result = AppIOHelper.queryEIOS(idx, 0, chunksize, limit, query, outputPath, cmd.hasOption("r"), cmd.hasOption("s"), cmd.getOptionValue("r"));
                 }
-                
+
                 System.exit(0);
             }
 
@@ -192,7 +213,7 @@ import lombok.extern.slf4j.Slf4j;
 
         log.info(" >> starting EIOS Tooling");
 
-                        
+
         if(result != null) {
 
             if(cmd.hasOption("r")) {
@@ -216,7 +237,7 @@ import lombok.extern.slf4j.Slf4j;
 
         log.info(" >> exit.");
     }
-    
+
     /**
      * command line help
      * @param options

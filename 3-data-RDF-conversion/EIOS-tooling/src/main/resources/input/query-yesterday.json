@@ -1,0 +1,26 @@
+{ 
+  "track_total_hits": true,
+  "from": 0,
+  "query" : {
+    "range": {
+      "processedOnDate": {
+        "gte": "now-24h/h",
+        "lte": "now/h"            
+      }
+    }
+  }, 
+  "sort": [
+    {
+      "processedOnDate": {
+        "order": "desc"
+      },
+      "id" : {
+        "order": "asc" 
+      }  
+    }
+  ],
+  "_source": {
+    "includes": [
+      "*"    ]
+  }
+}

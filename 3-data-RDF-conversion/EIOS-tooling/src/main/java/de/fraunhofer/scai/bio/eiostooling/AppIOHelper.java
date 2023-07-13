@@ -27,6 +27,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -37,6 +38,8 @@ import java.util.zip.ZipOutputStream;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.io.filefilter.FileFilterUtils;
+import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 
@@ -66,6 +69,57 @@ import okhttp3.Response;
  *
  */
 @Slf4j public class AppIOHelper {
+
+    public static void extractZipDir(File dir, String destDir, String filter) {
+
+        int i = 0;
+
+        Iterator<File> fileIter = FileUtils.iterateFiles(dir, FileFilterUtils.prefixFileFilter(filter), TrueFileFilter.INSTANCE );
+
+        File dest = new File(destDir);
+        
+        if (!dest.exists()) {
+            dest.mkdirs();
+        }
+        
+        while(fileIter.hasNext()) {
+
+            File nextFile = fileIter.next();
+            log.info("processing {}", nextFile.getName());
+
+            try {
+                byte[] buffer = new byte[1024];
+                @SuppressWarnings("resource")
+                ZipInputStream zis = new ZipInputStream(new FileInputStream(nextFile));
+                ZipEntry zipEntry = zis.getNextEntry();
+
+                while (zipEntry != null) {
+                    File newFile = new File(destDir,  String.format("%s_%05d-%s", filter, ++i, zipEntry.getName()) );
+
+                    // write file content
+                    FileOutputStream fos = new FileOutputStream(newFile);
+                    int len;
+                    while ((len = zis.read(buffer)) > 0) {
+                        fos.write(buffer, 0, len);
+                    }
+                    fos.close();
+
+                    log.info("written {}", newFile.getAbsolutePath());
+
+                    zipEntry = zis.getNextEntry();
+                }
+
+                zis.closeEntry();
+                zis.close();
+
+            } catch (IOException e) {
+                log.error(e.getLocalizedMessage());
+                log.debug(e.getLocalizedMessage(), e);
+            }
+        }
+        
+        log.info("done.");
+    }
 
     /**
      * 
@@ -187,13 +241,13 @@ import okhttp3.Response;
         try {
             MentioningBuilder mb = new MentioningBuilder(doc, prefixes, false);
             RDFUtils.writeModelToFile(mb.getMentionsModel(), outPath, "mentionings_"+filename, "TTL");
-            
+
         } catch (Exception e) {
             log.error(e.getLocalizedMessage());
             log.debug(e.getLocalizedMessage(), e);
         }
     }
-    
+
     /**
      * extract RDF mappings from document file
      * 
@@ -559,19 +613,19 @@ import okhttp3.Response;
                                 Charset.forName("UTF-8"));
 
                         log.info(" >> written {} ", fname);
-                        
+
                         if(rdf) {
                             AppIOHelper.exportRDF(result, outPath+"/"+basename+"/"+idx, String.format("rdf_chunk_%08d", count), format);
                         }
 
                         if(scaiview) {
                             List<Document> documents = AppIOHelper.exportSCAIViewDocument(result, outPath+"/"+basename+"/"+idx, String.format("scaiview_chunk_%08d", count));            
-    
+
                             AppIOHelper.extractMentioningsFromList(documents, outPath+"/"+basename+"/"+idx, String.format("chunk_%08d", count), chunk);
                         }
-                        
+
                     }
-                    
+
                     String hit = hits.get(hits.size()-1).getAdditionalProperties().get("sort").toString();
                     last =   "{\n" + "\"search_after\": " + hit + ",";
                     log.info(" >> last {}", hit);

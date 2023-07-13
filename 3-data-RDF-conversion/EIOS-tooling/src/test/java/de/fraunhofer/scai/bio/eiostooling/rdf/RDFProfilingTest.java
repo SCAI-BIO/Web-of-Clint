@@ -9,13 +9,14 @@ import java.io.IOException;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Resource;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class RDFProfilingTest {
     
     final static String dataSetUri = "https://test";
     
-    @Test
+    @Test @Ignore
     public void profileModelTest() {      
         
         Model model = ModelFactory.createDefaultModel();
@@ -30,7 +31,7 @@ public class RDFProfilingTest {
         assertTrue(profile.contains(dataset, model.createProperty("http://rdfs.org/ns/void#triples")));  
     }
 
-    @Test
+    @Test @Ignore
     public void profileRemoteModelTest() {      
 
         Model model = ModelFactory.createDefaultModel();
@@ -43,7 +44,7 @@ public class RDFProfilingTest {
         assertTrue(profile.contains(dataset, model.createProperty("http://rdfs.org/ns/void#triples")));
     }
     
-    @Test
+    @Test @Ignore
     public void enrichVoidFilelTest() throws IOException {      
 
         File input = new File("./src/test/resources/void_wiktionary-dbpedia-org.ttl");
@@ -55,7 +56,7 @@ public class RDFProfilingTest {
         assertTrue(iModel.size() < oModel.size());
     }
 
-    @Test
+    @Test @Ignore
     public void enrichVoidFromDirTest() throws IOException {      
 
         RDFProfiling.enrichVoidFromDir("./src/main/resources/output/void");

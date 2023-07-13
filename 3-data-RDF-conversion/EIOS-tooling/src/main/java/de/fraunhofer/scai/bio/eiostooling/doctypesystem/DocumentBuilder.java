@@ -25,6 +25,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.Date;
@@ -136,14 +137,25 @@ import lombok.extern.slf4j.Slf4j;
 
         setDocType(item, document, biblio);
 
-        ZonedDateTime  date = ZonedDateTime.parse(item.getPubDate());  //2023-01-02T15:40:00Z
-        builder.setPublicationDate(document,date.getDayOfMonth(), date.getMonthValue(), date.getYear());
-
-        ZonedDateTime  pdate = ZonedDateTime.parse(item.getPubDate());  //2023-01-02T15:40:00Z
+        try {
+            ZonedDateTime  date = ZonedDateTime.parse(item.getPubDate());  //2023-01-02T15:40:00Z
+            builder.setPublicationDate(document,date.getDayOfMonth(), date.getMonthValue(), date.getYear());
+        } catch (Exception ex) {
+            
+        }
+        
+        LocalDate pdate = null;
+        
+        try {
+            pdate = ZonedDateTime.parse(item.getPubDate()).toLocalDate();  //2023-01-02T15:40:00Z
+        } catch (Exception ex) {
+            
+        }
+        
         ArrayList<Author> authors= new ArrayList<Author>();
         authors.add(builder.createAuthor(null, item.getSource().getName()));
 
-        builder.addReference(document, "Origin", item.getSource().getUrl(), item.getSource().getId().toString(), item.getSource().getCategory(), item.getTitle(), authors , pdate.toLocalDate());
+        builder.addReference(document, "Origin", item.getSource().getUrl(), item.getSource().getId().toString(), item.getSource().getCategory(), item.getTitle(), authors , pdate);
 
         if(translated) {
             builder.setLanguage(document, "en");

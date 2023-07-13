@@ -291,9 +291,10 @@ import lombok.extern.slf4j.Slf4j;
      * @param prefixes 
      * @param oufile 
      * @param infile 
+     * @param delimiter 
      * 
      */
-    public static void createMappings(Map<String, String> prefixes, String oufile, String infile) {
+    public static void createMappings(Map<String, String> prefixes, String oufile, String infile, int from, int to, int total, char delimiter) {
         try {
             log.info(" >>> parsing EIOS mappings from {}...", infile);
 
@@ -304,13 +305,14 @@ import lombok.extern.slf4j.Slf4j;
             RDFUtils.addNSPrefixes(model, RDFUtils.parsingPrefixes());
 
             try {
-                CSVParser parser = CSVParser.parse(in, Charset.forName("UTF-8"), CSVFormat.DEFAULT.withAllowMissingColumnNames());
+                CSVParser parser = CSVParser.parse(in, Charset.forName("UTF-8"), CSVFormat.DEFAULT.withAllowMissingColumnNames().withDelimiter(delimiter));
 
                 for(CSVRecord record : parser.getRecords()) { 
-                    if(record.getRecordNumber() > 1l && record.isConsistent() && record.size() == 4) {
-                        if(!record.get(3).isEmpty() && !record.get(0).isEmpty()) {
-                            Resource anot = model.createResource("https://int.who/EIOS_category/" + record.get(0).replaceAll("\\s", "_"));
-                            anot.addProperty(exact, model.createResource(record.get(3))); 
+                    if(record.getRecordNumber() > 1l && record.isConsistent() && record.size() == total) {
+                        if(!record.get(to).isEmpty() && !record.get(from).isEmpty()) {
+//                            Resource anot = model.createResource("https://int.who/EIOS_category/" + record.get(0).replaceAll("\\s", "_"));
+                            Resource anot = model.createResource(record.get(from).trim());
+                            anot.addProperty(exact, model.createResource(record.get(to).trim())); 
                         } else {
                             log.error("empty record: {}", record.toString());
                         }
