@@ -359,7 +359,7 @@ import lombok.extern.slf4j.Slf4j;
      * @param uri
      * @return
      */
-    private static String findUri(Map<String, String> prefixes, String uri) {
+    public static String findUri(Map<String, String> prefixes, String uri) {
 
         String prefix = null;
         int maxUri = 0;
