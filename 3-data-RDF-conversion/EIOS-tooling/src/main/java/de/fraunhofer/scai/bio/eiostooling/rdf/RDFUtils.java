@@ -378,6 +378,21 @@ import lombok.extern.slf4j.Slf4j;
     }
 
     /**
+     * creates a map with the uri as key and the prefix as value
+     * @param prefixes
+     * @return
+     */
+    public static Map<String, String> inversePrefixMap(Map<String, String> prefixes) {
+        Map<String, String> inversePrefixes = new TreeMap<String, String>();
+
+        for(String prefix : prefixes.keySet()) {
+            inversePrefixes.put(prefixes.get(prefix), prefix);
+        }
+        
+        return inversePrefixes;
+    }
+    
+    /**
      * @return
      */
     public static Map<String, String> parsingPrefixes() {
@@ -584,5 +599,44 @@ import lombok.extern.slf4j.Slf4j;
                 log.info(iter.nextStatement().toString());
             }
         }
+    }
+
+    /**
+     * find the longest possible uri and identifier combination
+     * @param uri
+     * @return
+     */
+    public static String guessUri(String uri) {
+        String prefix = null;
+        
+        if(uri != null) {
+            if( uri.lastIndexOf("#") >0 
+                    && ( prefix == null 
+                    || uri.substring(0, uri.lastIndexOf("#")).length() > prefix.length())) {
+                prefix  = uri.substring(0, uri.lastIndexOf("#")+1 );
+            }
+            if( uri.lastIndexOf("_") >0  
+                    && ( prefix == null 
+                    || uri.substring(0, uri.lastIndexOf("_") ).length() > prefix.length())) {
+                prefix  = uri.substring(0, uri.lastIndexOf("_")+1 );
+            }
+            if( uri.lastIndexOf(":") >0 
+                    && ( prefix == null 
+                    || uri.substring(0, uri.lastIndexOf(":") ).length() > prefix.length())) {
+                prefix  = uri.substring(0, uri.lastIndexOf(":")+1 );
+            }
+            if( uri.lastIndexOf("/") >0 
+                    && ( prefix == null 
+                    || uri.substring(0, uri.lastIndexOf("/") ).length() > prefix.length())) {
+                prefix  = uri.substring(0, uri.lastIndexOf("/")+1 );
+            }
+            if( uri.lastIndexOf("=") >0 
+                    && ( prefix == null 
+                    || uri.substring(0, uri.lastIndexOf("=") ).length() > prefix.length())) {
+                prefix  = uri.substring(0, uri.lastIndexOf("=")+1 );
+            }
+        }
+        
+        return prefix;
     }
 }

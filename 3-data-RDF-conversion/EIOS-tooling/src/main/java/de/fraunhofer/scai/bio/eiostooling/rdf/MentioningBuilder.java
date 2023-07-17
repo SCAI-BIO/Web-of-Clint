@@ -112,15 +112,14 @@ import lombok.extern.slf4j.Slf4j;
     private Model createModel(Annotation annotation, TextElement elem, Map<String, String> prefixes, Date date, Resource eiosItem) {
         Model model = ModelFactory.createDefaultModel();
 
-        String dateStr = String.format("%04d-%02d-%02d", date.getYear(), date.getMonth(), date.getDay());
-        
         Resource mentioning = model.createResource(RDFUtils.WHO_URL+RDFUtils.TEXT_ELEMENT+elem.getUuid());
         mentioning.addProperty(RDF.type, model.createResource("https://www.scai.fraunhofer.de/EiosTooling/Mentioning"));
         mentioning.addProperty(RDFS.label, model.createLiteral(elem.getText()));
         mentioning.addProperty(DC_11.identifier, mentioning.getLocalName());   //"id": 401863018,    
         mentioning.addProperty(model.createProperty("https://www.scai.fraunhofer.de/EiosTooling/", "partOf"), eiosItem);
         
-        if(addDayNode ) {
+        if(addDayNode && date != null) {
+            String dateStr = String.format("%04d-%02d-%02d", date.getYear(), date.getMonth(), date.getDay());
             Resource day = model.createResource(RDFUtils.WHO_URL+RDFUtils.DAY+dateStr);
             day.addProperty(RDF.type, model.createResource("https://www.scai.fraunhofer.de/EiosTooling/Date"));
             day.addProperty(RDFS.label, model.createLiteral(dateStr));

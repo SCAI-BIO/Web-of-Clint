@@ -204,8 +204,12 @@ public class ItemRDFBuilder {
                 eiosItem.addProperty(DC_11.subject, ac);
             }
         }
-        if (item.getAffectedCountriesIso() != null && !item.getAffectedCountriesIso().isEmpty())
-            item.getAffectedCountriesIso(); // "affectedCountriesIso": [ "AF","DE" ],
+        if (item.getAffectedCountriesIso() != null && !item.getAffectedCountriesIso().isEmpty()) {
+            for (String ac : item.getAffectedCountriesIso()) { // "affectedCountriesIso": [ "AF","DE" ],
+                eiosItem.addProperty(DC_11.subject, ac);
+            }        
+        }
+        
         if (item.getEmmMisInfo() != null)
             item.getEmmMisInfo(); // "emmMisInfo": { "label": "reliable", "confidenceScore": 0.0002
 

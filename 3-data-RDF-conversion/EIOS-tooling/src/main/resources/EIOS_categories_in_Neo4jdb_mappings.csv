@@ -1,0 +1,312 @@
+identifier;label;uri;Ontology ;Concept;IRI
+category:MedicalDevices;medical devices;https://int.who/EIOS_category/MedicalDevices;product safety;Medical device;http://purl.obolibrary.org/obo/NCIT_C16830
+category:Quarantine;quarantine;https://int.who/EIOS_category/Quarantine;preventive measure;quarantine;http://purl.obolibrary.org/obo/NCIT_C71902
+category:EMRO;???;https://int.who/EIOS_category/EMRO;covid;Eastern Mediterranean Regional Office;https://bio.scai.fraunhofer.de/ontology/covid#easternMediterraneanRegionalOffice
+category:MedicinalXucts;???????;https://int.who/EIOS_category/MedicinalXucts;product safety;Medical product;https://bio.scai.fraunhofer.de/ontology/productsafety#medical_product
+category:Nuclearsafety;???????;https://int.who/EIOS_category/Nuclearsafety;disaster;nuclear emergency;https://bio.scai.fraunhofer.de/ontology/disaster#nuclear_emergency
+category:MedicinesSafety;medicines;https://int.who/EIOS_category/MedicinesSafety;product safety;medical product safety;https://bio.scai.fraunhofer.de/ontology/productsafety#medical_product_safety
+category:TravelRestriction;ship;https://int.who/EIOS_category/TravelRestriction;preventive measure;travel restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#travel_restriction
+category:MethanolPoisoning;died;https://int.who/EIOS_category/MethanolPoisoning;foodborne illness;methanol poisoning;http://purl.obolibrary.org/obo/MONDO_0017860
+category:Clinicaltrial;ensayo;https://int.who/EIOS_category/Clinicaltrial;health system;clinical trail;http://purl.obolibrary.org/obo/CTO_0000220
+category:Pesticide_residues;eau;https://int.who/EIOS_category/Pesticide_residues;chemical;presticide residue;https://bio.scai.fraunhofer.de/ontology/chemical#pesticideResidues
+category:FoodSecurityFoodAid;Starvation;https://int.who/EIOS_category/FoodSecurityFoodAid;foodborne illness;food security;http://purl.bioontology.org/ontology/SNOMEDCT/1078229009
+category:YellowFever;febre amarela;https://int.who/EIOS_category/YellowFever;who_disease;;http://purl.obolibrary.org/obo/DOID_9682
+category:Immunization;??;https://int.who/EIOS_category/Immunization;immunity;vaccination;http://purl.obolibrary.org/obo/NCIT_C15346
+category:PAHO;???????? ???????;https://int.who/EIOS_category/PAHO;;pan american health organization;https://bio.scai.fraunhofer.de/ontology/covid#panAmericanHealthOrganization
+category:Vaccinationrisks;morte;https://int.who/EIOS_category/Vaccinationrisks;immunity;vaccination risk;https://bio.scai.fraunhofer.de/ontology/immunity#vaccinationRisk
+category:StLouisEncephalitis;St;https://int.who/EIOS_category/StLouisEncephalitis;DOID;St. Louis encephalitis;http://purl.obolibrary.org/obo/DOID_10845
+category:AfricanSwineFever;Afrikanische Schweinepest;https://int.who/EIOS_category/AfricanSwineFever;who_disease;;http://purl.obolibrary.org/obo/MONDO_0025377
+category:Drought;drought;https://int.who/EIOS_category/Drought;disaster;drought;http://purl.obolibrary.org/obo/ENVO_1000745
+category:EscherichiacoliInfection;Novel;https://int.who/EIOS_category/EscherichiacoliInfection;who_disease;;http://purl.obolibrary.org/obo/MONDO_0020920
+category:CholeraInfection;surto;https://int.who/EIOS_category/CholeraInfection;who_disease;;http://purl.obolibrary.org/obo/DOID_1498
+category:Chemicalthreats;chemical;https://int.who/EIOS_category/Chemicalthreats;disaster;chemical threat;https://bio.scai.fraunhofer.de/ontology/disaster#chemical_threat
+category:Radiologmaterial;??????;https://int.who/EIOS_category/Radiologmaterial;chemical;;https://bio.scai.fraunhofer.de/ontology/chemical#radiologmaterial
+category:FIFA2018ParticipatingCountries;??;https://int.who/EIOS_category/FIFA2018ParticipatingCountries;mass gathering;FIFA;https://bio.scai.fraunhofer.de/ontology/massgathering#FIFA_World_Cup
+category:Probiotic;Lactic Acid Bacteria;https://int.who/EIOS_category/Probiotic;foodborne illness;probiotic;http://purl.obolibrary.org/obo/NCIT_C93144
+category:Antimicrobialresist;Resistance;https://int.who/EIOS_category/Antimicrobialresist;who_disease;;https://bio.scai.fraunhofer.de/ontology/disease#antiMicrobialResist
+category:Malaria;locales;https://int.who/EIOS_category/Malaria;who_disease;;http://purl.obolibrary.org/obo/DOID_12365
+category:Society;United Nations;https://int.who/EIOS_category/Society;societal;societal;https://bio.scai.fraunhofer.de/ontology/societal#societal
+category:Rotavirus;Rotavirus;https://int.who/EIOS_category/Rotavirus;NCBITaxon;Rotavirus;http://purl.obolibrary.org/obo/NCBITaxon_10912
+category:Radiologicalthreats;nuclear;https://int.who/EIOS_category/Radiologicalthreats;disaster;radiological emergency;https://bio.scai.fraunhofer.de/ontology/disaster#radiological_emergency
+category:theft;rubato;https://int.who/EIOS_category/theft;disaster;theft;https://bio.scai.fraunhofer.de/ontology/disaster#theft
+category:Fungi;Penicillium;https://int.who/EIOS_category/Fungi;organism;fungi;http://purl.obolibrary.org/obo/NCBITaxon_4751
+category:AttackOnHCW;patients;https://int.who/EIOS_category/AttackOnHCW;societal;;https://bio.scai.fraunhofer.de/ontology/societal#attack_on_healthcare_workers
+category:FIFA2018-ParticipatingCountries_Diseases-WHO;eradication;https://int.who/EIOS_category/FIFA2018-ParticipatingCountries_Diseases-WHO;mass gathering;FIFA world cup;https://bio.scai.fraunhofer.de/ontology/massgathering#FIFA_World_Cup
+category:Contamination;dead;https://int.who/EIOS_category/Contamination;disaster;water pollution?;http://purl.obolibrary.org/obo/ENVO_02500039
+category:Syphilis;Syphilis;https://int.who/EIOS_category/Syphilis;who_disease;;http://purl.obolibrary.org/obo/DOID_4166
+category:Rubella;Rosolia;https://int.who/EIOS_category/Rubella;;;http://purl.obolibrary.org/obo/DOID_8781
+category:HumanitarianAid;humanitäre;https://int.who/EIOS_category/HumanitarianAid;disaster;humanitarian aid;https://bio.scai.fraunhofer.de/ontology/disaster#humanitarianAid
+category:TerroristAttack;Gunmen;https://int.who/EIOS_category/TerroristAttack;disaster;terrorism;http://purl.obolibrary.org/obo/GSSO_003009
+category:FIFA2018-Places-WHO;Moscú;https://int.who/EIOS_category/FIFA2018-Places-WHO;mass gathering;FIFA world cup;https://bio.scai.fraunhofer.de/ontology/massgathering#FIFA_World_Cup
+category:FIFA-2018-WHO;FIFA;https://int.who/EIOS_category/FIFA-2018-WHO;mass gathering;FIFA world cup;https://bio.scai.fraunhofer.de/ontology/massgathering#FIFA_World_Cup
+category:WHO;Organización Mundial de la Salud;https://int.who/EIOS_category/WHO;covid;World health organization;https://bio.scai.fraunhofer.de/ontology/covid#worldHealthOrganization
+category:Epidemic;????????;https://int.who/EIOS_category/Epidemic;;;http://purl.obolibrary.org/obo/APOLLO_SV_00000298
+category:Zika;zika;https://int.who/EIOS_category/Zika;NCBITaxon;Zika virus;http://purl.obolibrary.org/obo/NCBITaxon_64320
+category:Conflict;war;https://int.who/EIOS_category/Conflict;disaster;Conflict;http://snomed.info/id/15863006
+category:Footandmouthdisease;????? ????????;https://int.who/EIOS_category/Footandmouthdisease;;;http://purl.obolibrary.org/obo/MONDO_0005765
+category:EbolaHemorrhagicFever;epidemia;https://int.who/EIOS_category/EbolaHemorrhagicFever;;;http://purl.obolibrary.org/obo/DOID_4325
+category:Conflict_Version_WHO2;war;https://int.who/EIOS_category/Conflict_Version_WHO2;disaster;Conflict;http://snomed.info/id/15863006
+category:Tropicaldiseases;Tropicali;https://int.who/EIOS_category/Tropicaldiseases;who_disease;tropical disease;http://purl.obolibrary.org/obo/NCIT_C28356
+category:TyphoidFever;surto;https://int.who/EIOS_category/TyphoidFever;;;http://purl.obolibrary.org/obo/DOID_13258
+category:NaturalDisasters;Hurricane;https://int.who/EIOS_category/NaturalDisasters;disaster;natural disaster;https://bio.scai.fraunhofer.de/ontology/disaster#natural_disaster
+category:PoliticalUnrest;siyasi;https://int.who/EIOS_category/PoliticalUnrest;disaster;political unrest;https://bio.scai.fraunhofer.de/ontology/disaster#political_unrest
+category:AIDS-HIV;HIV;https://int.who/EIOS_category/AIDS-HIV;;;http://purl.obolibrary.org/obo/DOID_526
+category:Conflict_Version_WHO;arbede;https://int.who/EIOS_category/Conflict_Version_WHO;disaster;Conflict;http://snomed.info/id/15863006
+category:Virus;????;https://int.who/EIOS_category/Virus;organism;viruses;http://purl.obolibrary.org/obo/NCBITaxon_10239
+category:WPRO;SEOUL;https://int.who/EIOS_category/WPRO;covid;Western Pacific Regional Office;https://bio.scai.fraunhofer.de/ontology/covid#westernPacificRegionalOffice
+category:FIFA2018-PriorityDiseases-ParticipatingCountries;polio;https://int.who/EIOS_category/FIFA2018-PriorityDiseases-ParticipatingCountries;mass gathering;FIFA world cup;https://bio.scai.fraunhofer.de/ontology/massgathering#FIFA_World_Cup
+category:WestNileDisease;Virus del Nilo Occidental;https://int.who/EIOS_category/WestNileDisease;;;http://purl.obolibrary.org/obo/DOID_2366
+category:TradeBan;yasaklayaca??;https://int.who/EIOS_category/TradeBan;preventive measure;trade restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#trade_restriction
+category:Hospital;hospital;https://int.who/EIOS_category/Hospital;health system;hospital;http://purl.obolibrary.org/obo/ENVO_00002173
+category:SEARO;India;https://int.who/EIOS_category/SEARO;covid;South East Asian Regional office;https://bio.scai.fraunhofer.de/ontology/covid#southEastAsianRegionalOffice
+category:ManMadeDisasters;Petrol;https://int.who/EIOS_category/ManMadeDisasters;disaster;man made disaster;https://bio.scai.fraunhofer.de/ontology/disaster#manMadeDisaster
+category:MedicalDevicesRisks;infection;https://int.who/EIOS_category/MedicalDevicesRisks;product safety;medical device;http://purl.obolibrary.org/obo/NCIT_C16830
+category:DengueFever;dengue;https://int.who/EIOS_category/DengueFever;;;http://purl.obolibrary.org/obo/DOID_12205
+category:AFRO;Angola;https://int.who/EIOS_category/AFRO;covid;African Regional Office;https://bio.scai.fraunhofer.de/ontology/covid#africanRegionalOffice
+category:Poliomyelitis;eradication;https://int.who/EIOS_category/Poliomyelitis;;;http://purl.obolibrary.org/obo/DOID_4953
+category:Gastroenteritis;gastroenteritis;https://int.who/EIOS_category/Gastroenteritis;;;http://purl.obolibrary.org/obo/DOID_2326
+category:SwineFever;swine fever;https://int.who/EIOS_category/SwineFever;;;http://purl.obolibrary.org/obo/DOID_0050211
+category:Fever;malattia;https://int.who/EIOS_category/Fever;SYMP;fever;http://purl.obolibrary.org/obo/SYMP_0000613
+category:Teargas;???????????? ???;https://int.who/EIOS_category/Teargas;chemical;tear gases;http://purl.obolibrary.org/obo/OMIT_0014522
+category:MRSA;resistance;https://int.who/EIOS_category/MRSA;who_disease;MRSA;https://bio.scai.fraunhofer.de/ontology/disease#MRSA
+category:Chemicalaccidents;contamination;https://int.who/EIOS_category/Chemicalaccidents;disaster;chemical incidents;https://bio.scai.fraunhofer.de/ontology/disaster#chemical_incident
+category:ToxinsEFSA;antibodies;https://int.who/EIOS_category/ToxinsEFSA;foodborne illness;ToxinEFSA;https://bio.scai.fraunhofer.de/ontology/foodborneillness#toxinEFSA
+category:HemorrhagicFever;fever;https://int.who/EIOS_category/HemorrhagicFever;;;http://purl.obolibrary.org/obo/MONDO_0600002
+category:PAHOSearchTerms;Measles;https://int.who/EIOS_category/PAHOSearchTerms;;pan american health organization;https://bio.scai.fraunhofer.de/ontology/covid#panAmericanHealthOrganization
+category:Mustardgas;sulfur;https://int.who/EIOS_category/Mustardgas;chemical;mustard gas;http://purl.obolibrary.org/obo/NCIT_C44406
+category:Fluoride;Fluorid;https://int.who/EIOS_category/Fluoride;chemical;mustard gas;http://purl.obolibrary.org/obo/NCIT_C44406
+category:NairobiSheepDisease;Nairobi;https://int.who/EIOS_category/NairobiSheepDisease;;;http://purl.obolibrary.org/obo/MONDO_0025369
+category:TravelRestrictionsEbola;Ebola;https://int.who/EIOS_category/TravelRestrictionsEbola;preventive measure;travel restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#travel_restriction
+category:Herpes;herpes;https://int.who/EIOS_category/Herpes;;;http://purl.obolibrary.org/obo/DOID_8536
+category:FIFA2018-Places_Diseases-WHO;Covid-19;https://int.who/EIOS_category/FIFA2018-Places_Diseases-WHO;mass gathering;FIFA world cup;https://bio.scai.fraunhofer.de/ontology/massgathering#FIFA_World_Cup
+category:Chagasdisease;Trypanosoma;https://int.who/EIOS_category/Chagasdisease;;;http://purl.obolibrary.org/obo/DOID_12140
+category:YersiniaPestis;?????;https://int.who/EIOS_category/YersiniaPestis;NCBITaxon;Yersinia pestis;http://purl.obolibrary.org/obo/NCBITaxon_632
+category:RespiratorySyncytialVirusInfection;solunum;https://int.who/EIOS_category/RespiratorySyncytialVirusInfection;;;http://purl.obolibrary.org/obo/NCIT_C157971
+category:NecrotizingFasciitis;skin;https://int.who/EIOS_category/NecrotizingFasciitis;;;http://purl.obolibrary.org/obo/DOID_9602
+category:Measles;measles;https://int.who/EIOS_category/Measles;;;http://purl.obolibrary.org/obo/DOID_8622
+category:Communicabledisease;disease;https://int.who/EIOS_category/Communicabledisease;open reference;Communicable disease;https://bio.scai.fraunhofer.de/ontology/ORO#communicable_disease
+category:Genocide;Genocide;https://int.who/EIOS_category/Genocide;disaster;genocide;http://purl.obolibrary.org/obo/GSSO_006817
+category:Meningitis;meningite;https://int.who/EIOS_category/Meningitis;;;http://purl.obolibrary.org/obo/DOID_9470
+category:Constipation;táo bón;https://int.who/EIOS_category/Constipation;who_disease;Constipation;http://purl.obolibrary.org/obo/SYMP_0019180
+category:UnknownDisease;Unusual;https://int.who/EIOS_category/UnknownDisease;who_disease;unknown disease;https://bio.scai.fraunhofer.de/ontology/disease#unknown_disease
+category:TradeRestrictionsCholera;outbreak;https://int.who/EIOS_category/TradeRestrictionsCholera;preventive measure;travel restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#travel_restriction
+category:PseudomonasAeruginosa;Pseudomonas aeruginosa;https://int.who/EIOS_category/PseudomonasAeruginosa;NCBITaxon;Pseudomonas aeruginosa;http://purl.obolibrary.org/obo/NCBITaxon_287
+category:H1N1;H1N1;https://int.who/EIOS_category/H1N1;NCBITaxon;H1N1;http://purl.obolibrary.org/obo/NCBITaxon_114727
+category:Hepatitis;hepatitis;https://int.who/EIOS_category/Hepatitis;;;http://purl.obolibrary.org/obo/DOID_2237
+category:heatwave;canicule;https://int.who/EIOS_category/heatwave;disaster;heat wave;https://bio.scai.fraunhofer.de/ontology/disaster#heat_wave
+category:SwineFlu;influenza A;https://int.who/EIOS_category/SwineFlu;;;http://purl.obolibrary.org/obo/DOID_0050211
+category:MeaslesOld;measles;https://int.who/EIOS_category/MeaslesOld;;;http://purl.obolibrary.org/obo/DOID_8622
+category:Emergingdisease;???????;https://int.who/EIOS_category/Emergingdisease;who_disease;emerging disease;https://bio.scai.fraunhofer.de/ontology/disease#emerging_disease
+category:Chikungunya;fever;https://int.who/EIOS_category/Chikungunya;;;http://purl.obolibrary.org/obo/DOID_0050012
+category:HepatitisC;HCV;https://int.who/EIOS_category/HepatitisC;;;http://purl.obolibrary.org/obo/DOID_1883
+category:HepatitisE;HEV;https://int.who/EIOS_category/HepatitisE;;;http://purl.obolibrary.org/obo/DOID_4411
+category:Diphtheria;caso;https://int.who/EIOS_category/Diphtheria;;;http://purl.obolibrary.org/obo/DOID_11405
+category:Importeddisease;imported;https://int.who/EIOS_category/Importeddisease;who_disease;imported disease;https://bio.scai.fraunhofer.de/ontology/disease#imported_disease
+category:Nerveagents;agente;https://int.who/EIOS_category/Nerveagents;chemical;nerve agents;http://purl.obolibrary.org/obo/OMIT_0001155
+category:WaterConflict;water;https://int.who/EIOS_category/WaterConflict;disaster;water conflict;https://bio.scai.fraunhofer.de/ontology/disaster#water_conflict
+category:Food-borne;??????;https://int.who/EIOS_category/Food-borne;foodborne illness;foodborne Illness;http://purl.obolibrary.org/obo/NCIT_C128351
+category:HaemorrhagicSyndrome;?miertelne;https://int.who/EIOS_category/HaemorrhagicSyndrome;who_disease;Haemorrhagic Syndrome;https://bio.scai.fraunhofer.de/ontology/disease#haemorrhagic_syndrome
+category:STD;Sexually transmitted infections;https://int.who/EIOS_category/STD;;;http://purl.obolibrary.org/obo/MONDO_0021681
+category:HepatitisB;???????? ?;https://int.who/EIOS_category/HepatitisB;;;http://purl.obolibrary.org/obo/DOID_2043
+category:Avianflu;bird flu;https://int.who/EIOS_category/Avianflu;;;http://purl.obolibrary.org/obo/DOID_4492
+category:IntensiveCareUnit;intensive care unit;https://int.who/EIOS_category/IntensiveCareUnit;health system;Intensive care unit;http://purl.obolibrary.org/obo/NCIT_C53511
+category:Cryptosporidiosis;Cryptosporidiosis;https://int.who/EIOS_category/Cryptosporidiosis;;;http://purl.obolibrary.org/obo/DOID_1733
+category:CryptosporidiosisOld;crypto;https://int.who/EIOS_category/CryptosporidiosisOld;;;http://purl.obolibrary.org/obo/DOID_1733
+category:StaphInfection;Staphylococcus aureus;https://int.who/EIOS_category/StaphInfection;;;http://purl.obolibrary.org/obo/MONDO_0024313
+category:TravelRestrictionsCholera;outbreaks;https://int.who/EIOS_category/TravelRestrictionsCholera;preventive measure;travel restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#travel_restriction
+category:Vomiting;??;https://int.who/EIOS_category/Vomiting;who_disease;Vomiting;http://purl.obolibrary.org/obo/SYMP_0019145
+category:Chickenpox;Shingles;https://int.who/EIOS_category/Chickenpox;;;http://purl.obolibrary.org/obo/DOID_8659
+category:Nosocomial;????????;https://int.who/EIOS_category/Nosocomial;;;http://purl.obolibrary.org/obo/MONDO_0043544
+category:Warfare;chemischen;https://int.who/EIOS_category/Warfare;disaster;warfare;http://purl.obolibrary.org/obo/GSSO_010912
+category:Zoonoses;zoonoser;https://int.who/EIOS_category/Zoonoses;who_disease;Zoonosis;http://purl.obolibrary.org/obo/MONDO_0025481
+category:Viralhepatitis;Viral;https://int.who/EIOS_category/Viralhepatitis;;;http://purl.obolibrary.org/obo/DOID_2237
+category:Watercontam;water;https://int.who/EIOS_category/Watercontam;disaster;water contamination;http://purl.obolibrary.org/obo/ENVO_02500039
+category:Hajj_DiseasesSyndrome;Covid-19;https://int.who/EIOS_category/Hajj_DiseasesSyndrome;;;https://bio.scai.fraunhofer.de/ontology/disease#Hajj_disease_syndrome
+category:Deliberate-Chemical-Incidents;threatens;https://int.who/EIOS_category/Deliberate-Chemical-Incidents;disaster;chemical incidents;https://bio.scai.fraunhofer.de/ontology/disaster#chemical_incident
+category:Flameretardants;polybrominated diphenyl ethers;https://int.who/EIOS_category/Flameretardants;chemical;flame retardants;http://purl.obolibrary.org/obo/OMIT_0006622
+category:TradeRestrictionsListeriosis;outbreak;https://int.who/EIOS_category/TradeRestrictionsListeriosis;preventive measure;trade restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#trade_restriction
+category:Containment;??????;https://int.who/EIOS_category/Containment;preventive measure;containment strategy;http://www.co-ode.org/ontologies/ont.owl#containment_strategy
+category:GastroentericSyndrome;Verstopfung;https://int.who/EIOS_category/GastroentericSyndrome;who_disease;;http://purl.obolibrary.org/obo/DOID_2326
+category:G20-OsakaSummit;G20;https://int.who/EIOS_category/G20-OsakaSummit;mass gathering;g20 osaka summit;https://bio.scai.fraunhofer.de/ontology/massgathering#g20Osaka
+category:Saccharomyces;Saccharomyces;https://int.who/EIOS_category/Saccharomyces;NCBITaxon;saccharomyces;http://purl.obolibrary.org/obo/NCBITaxon_4930
+category:RockyMountainSpottedFever;fièvre pourprée des Montagnes Rocheuses;https://int.who/EIOS_category/RockyMountainSpottedFever;;;http://purl.obolibrary.org/obo/DOID_0050052
+category:Helicobacter;Helicobacter;https://int.who/EIOS_category/Helicobacter;NCBITaxon;Helicobacer;http://purl.obolibrary.org/obo/NCBITaxon_209
+category:Legionellosis;cluster;https://int.who/EIOS_category/Legionellosis;;;http://purl.obolibrary.org/obo/DOID_10458
+category:HerpesZoster;Shingles;https://int.who/EIOS_category/HerpesZoster;;;http://purl.obolibrary.org/obo/DOID_8536
+category:CampylobacterInfection;campylobacter;https://int.who/EIOS_category/CampylobacterInfection;;;http://purl.obolibrary.org/obo/DOID_13622
+category:Listeriosis;listeriosis;https://int.who/EIOS_category/Listeriosis;;;http://purl.obolibrary.org/obo/DOID_11573
+category:SleepingSickness;??? ????????? ????????;https://int.who/EIOS_category/SleepingSickness;SYMP;sleeping distrubance;http://purl.obolibrary.org/obo/SYMP_0000566
+category:Tularemia;??????????;https://int.who/EIOS_category/Tularemia;;;http://purl.obolibrary.org/obo/DOID_2123
+category:QFever;Q-koorts;https://int.who/EIOS_category/QFever;;;http://purl.obolibrary.org/obo/DOID_11100
+category:Chagas;chagas;https://int.who/EIOS_category/Chagas;;;http://purl.obolibrary.org/obo/DOID_12140
+category:FoodFeedSafety;GM;https://int.who/EIOS_category/FoodFeedSafety;foodborne illness;food safety;http://purl.obolibrary.org/obo/NCIT_C26037
+category:StrepAInfection;STREPTOCOCCUS;https://int.who/EIOS_category/StrepAInfection;who_disease;;http://purl.obolibrary.org/obo/MONDO_0021680
+category:H7N9;H7N9;https://int.who/EIOS_category/H7N9;NCBITaxon;H7N9 subtype;http://purl.obolibrary.org/obo/NCBITaxon_333278
+category:H7N7;H7N7;https://int.who/EIOS_category/H7N7;NCBITaxon;H7N7 subtype;http://purl.obolibrary.org/obo/NCBITaxon_119218
+category:TravelRestrictionsListeriosis;listeriosis;https://int.who/EIOS_category/TravelRestrictionsListeriosis;preventive measure;travel restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#travel_restriction
+category:Monkeypox;Monkeypox;https://int.who/EIOS_category/Monkeypox;;;http://purl.obolibrary.org/obo/DOID_3292
+category:H5N1;H5N1;https://int.who/EIOS_category/H5N1;NCBITaxon;H5N1 subtype;http://purl.obolibrary.org/obo/NCBITaxon_102793
+category:Bioterror;bioterroristi;https://int.who/EIOS_category/Bioterror;disaster;bioterrorism;http://purl.obolibrary.org/obo/GSSO_006603
+category:Bio-Attack;bioterror;https://int.who/EIOS_category/Bio-Attack;disaster;bioterrorism;http://purl.obolibrary.org/obo/GSSO_006603
+category:Pertussis;???;https://int.who/EIOS_category/Pertussis;;;http://purl.obolibrary.org/obo/DOID_1116
+category:Tetanus;vacinação;https://int.who/EIOS_category/Tetanus;;;http://purl.obolibrary.org/obo/DOID_11338
+category:Candida;candida;https://int.who/EIOS_category/Candida;NCBITaxon;Candida;http://purl.obolibrary.org/obo/NCBITaxon_5475
+category:Cytomegalovirus;CMV;https://int.who/EIOS_category/Cytomegalovirus;NCBITaxon;Cytomegalovirus;NCBITaxon_10358
+category:JapaneseEncephalitis;Japanese encephalitis;https://int.who/EIOS_category/JapaneseEncephalitis;;Japanese encephalitis virus;http://purl.obolibrary.org/obo/NCBITaxon_11072
+category:PneumococcalInfection;????;https://int.who/EIOS_category/PneumococcalInfection;;;http://purl.obolibrary.org/obo/MONDO_0005114
+category:RadioactivityTradeBan;threat;https://int.who/EIOS_category/RadioactivityTradeBan;preventive measure;trade restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#trade_restriction
+category:Brucellosis;bruceloza;https://int.who/EIOS_category/Brucellosis;;;http://purl.obolibrary.org/obo/DOID_11077
+category:HaemorrhagicSepticaemia;haemorrhagic;https://int.who/EIOS_category/HaemorrhagicSepticaemia;;;https://bio.scai.fraunhofer.de/ontology/disease#haemorrhagic_septicaemia
+category:BovineTuberculosis;bovina;https://int.who/EIOS_category/BovineTuberculosis;;;http://purl.obolibrary.org/obo/MONDO_0025136
+category:InfectiousBursalDiseaseGumborodisease;Gumboro;https://int.who/EIOS_category/InfectiousBursalDiseaseGumborodisease;;;https://bio.scai.fraunhofer.de/ontology/disease#infectious_bursal_disease
+category:NutrilonPreBabyFormula;Aptamil;https://int.who/EIOS_category/NutrilonPreBabyFormula;foodborne illness;;https://bio.scai.fraunhofer.de/ontology/foodborneillness#Nutrilon_pre_0_baby_milk_powder
+category:HantaFever;Hantavirus;https://int.who/EIOS_category/HantaFever;;;http://purl.obolibrary.org/obo/DOID_14472
+category:HFMD;????;https://int.who/EIOS_category/HFMD;;;http://purl.obolibrary.org/obo/DOID_10881
+category:RiftValleyFeverAnimals;fièvre de la Vallée du Rift;https://int.who/EIOS_category/RiftValleyFeverAnimals;;;http://purl.obolibrary.org/obo/DOID_1328
+category:RiftValleyFever;???? ?????? ???????;https://int.who/EIOS_category/RiftValleyFever;;;http://purl.obolibrary.org/obo/DOID_1328
+category:Gonococcal;Gonorrhoea;https://int.who/EIOS_category/Gonococcal;;;http://purl.obolibrary.org/obo/NCIT_C35730
+category:Gonorrhea;gonorrhoea;https://int.who/EIOS_category/Gonorrhea;;;http://purl.obolibrary.org/obo/DOID_7551
+category:HerpesSimplexVirus;HSV-1;https://int.who/EIOS_category/HerpesSimplexVirus;;Herpes simplex virus unknown type;http://purl.obolibrary.org/obo/NCBITaxon_126283
+category:Enterovirus;Enterovirus;https://int.who/EIOS_category/Enterovirus;;Enterovirus;http://purl.obolibrary.org/obo/NCBITaxon_12059
+category:InfluenzaHXNXAnimal;H5N8;https://int.who/EIOS_category/InfluenzaHXNXAnimal;NCBITaxon;H5N8 subtype;http://purl.obolibrary.org/obo/NCBITaxon_232441
+category:Salmonella;Salmonella;https://int.who/EIOS_category/Salmonella;;Salmonella;http://purl.obolibrary.org/obo/NCBITaxon_590
+category:CoronavirusInfection;????????????;https://int.who/EIOS_category/CoronavirusInfection;who_disease;SARS ;http://purl.obolibrary.org/obo/DOID_2945
+category:Arenavirus;Arenavirus;https://int.who/EIOS_category/Arenavirus;;Arenavirus;http://purl.obolibrary.org/obo/NCBITaxon_11618
+category:Scabies;Sarna;https://int.who/EIOS_category/Scabies;;;http://purl.obolibrary.org/obo/DOID_8295
+category:HendraVirus;Hendra, virus;https://int.who/EIOS_category/HendraVirus;;Hendra virus horse/Australia/Hendra/1994;http://purl.obolibrary.org/obo/NCBITaxon_928303
+category:Echinococcosishydatidosis;echinococcosis;https://int.who/EIOS_category/Echinococcosishydatidosis;;;http://purl.obolibrary.org/obo/DOID_1496
+category:Lumpyskindisease;?????;https://int.who/EIOS_category/Lumpyskindisease;;;http://purl.obolibrary.org/obo/MONDO_0005830
+category:H5N6;H5N6;https://int.who/EIOS_category/H5N6;NCBITaxon;H5N6 subtype;http://purl.obolibrary.org/obo/NCBITaxon_329376
+category:NewcastleDisease;Newcastle Disease;https://int.who/EIOS_category/NewcastleDisease;;;http://purl.obolibrary.org/obo/DOID_2929
+category:EpsteinBarrVirus;Epstein-Barr-Virus;https://int.who/EIOS_category/EpsteinBarrVirus;;;http://purl.obolibrary.org/obo/NCBITaxon_82830
+category:Superwarfarin;Waran;https://int.who/EIOS_category/Superwarfarin;chemical;superwarfin;https://bio.scai.fraunhofer.de/ontology/chemical#superwarfarin
+category:Filariasis;filariasis;https://int.who/EIOS_category/Filariasis;;;http://purl.obolibrary.org/obo/DOID_1080
+category:Schistosomiasis;Schistosomiasis;https://int.who/EIOS_category/Schistosomiasis;;;http://purl.obolibrary.org/obo/DOID_1395
+category:Entamoeba;Entamoeba;https://int.who/EIOS_category/Entamoeba;;Entamoeba;http://purl.obolibrary.org/obo/NCBITaxon_5758
+category:H9N2;H9N2;https://int.who/EIOS_category/H9N2;NCBITaxon;H9N2 subtype;http://purl.obolibrary.org/obo/NCBITaxon_102796
+category:Adenovirus;adenovirus;https://int.who/EIOS_category/Adenovirus;;;http://purl.obolibrary.org/obo/NCBITaxon_1967472
+category:H10N7;H10N7;https://int.who/EIOS_category/H10N7;NCBITaxon;H10N7 subtype;http://purl.obolibrary.org/obo/NCBITaxon_102801
+category:CoxsackieInfection;Coxsackievirus;https://int.who/EIOS_category/CoxsackieInfection;;;http://purl.obolibrary.org/obo/MONDO_0005721
+category:UsutuVirus;USUV;https://int.who/EIOS_category/UsutuVirus;NCBITaxon;Usutu virus;NCBITaxon_64286
+category:Tick-borneEncephalitis;Diseases;https://int.who/EIOS_category/Tick-borneEncephalitis;;;http://purl.obolibrary.org/obo/DOID_0050175
+category:NipahVirus;Nipah Virus;https://int.who/EIOS_category/NipahVirus;;Nipah henipavirus;http://purl.obolibrary.org/obo/NCBITaxon_121791
+category:Vibrio;Vibrio;https://int.who/EIOS_category/Vibrio;;Vibrio;http://purl.obolibrary.org/obo/NCBITaxon_662
+category:YersiniaEnterocolitica;Yersinia enterocolitica;https://int.who/EIOS_category/YersiniaEnterocolitica;;;http://purl.obolibrary.org/obo/NCIT_C128337
+category:Giardiasis;giardíase;https://int.who/EIOS_category/Giardiasis;;;http://purl.obolibrary.org/obo/DOID_10718
+category:Shigellosis;Shigellosis;https://int.who/EIOS_category/Shigellosis;;;http://purl.obolibrary.org/obo/DOID_12385
+category:Iodine_food;food;https://int.who/EIOS_category/Iodine_food;foodborne illness;iodine rich food;https://bio.scai.fraunhofer.de/ontology/foodborneillness#iodine_rich_food
+category:HaemophilusinfluenzaeInfection;Influenza;https://int.who/EIOS_category/HaemophilusinfluenzaeInfection;;;http://snomed.info/id/70036007
+category:MushroomPoisoning;Mushroom poisoning;https://int.who/EIOS_category/MushroomPoisoning;foodborne illness;Mushroom Poisoning;http://purl.obolibrary.org/obo/OMIT_0010184
+category:NoddingDisease;nodding disease;https://int.who/EIOS_category/NoddingDisease;;;http://purl.obolibrary.org/obo/OMIT_0028353
+category:Trypanosomosis;??? ????????? ????????;https://int.who/EIOS_category/Trypanosomosis;;;http://purl.obolibrary.org/obo/DOID_10113
+category:LaCrosseEncephalitis;La Crosse encephalitis;https://int.who/EIOS_category/LaCrosseEncephalitis;;;http://purl.obolibrary.org/obo/DOID_0050118
+category:Trichomonosis;trichomoniasis;https://int.who/EIOS_category/Trichomonosis;;;http://purl.obolibrary.org/obo/DOID_1947
+category:Trichomoniasis;trichomoniasis;https://int.who/EIOS_category/Trichomoniasis;;;http://purl.obolibrary.org/obo/DOID_1947
+category:nucleartheft;energia nucleare;https://int.who/EIOS_category/nucleartheft;disaster;nuclear theft;https://bio.scai.fraunhofer.de/ontology/disaster#nuclear_theft
+category:Orthobunyavirus;orthobunyavirus;https://int.who/EIOS_category/Orthobunyavirus;NCBITaxon;Orthobunyavirus;NCBITaxon_11572
+category:SchmallenbergVirus;Schmallenberg virus;https://int.who/EIOS_category/SchmallenbergVirus;NCBITaxon;Schmallenberg virus;NCBITaxon_1133363
+category:Sulfurmustard;sulfur;https://int.who/EIOS_category/Sulfurmustard;chemical;sulfur mustard compound;http://purl.obolibrary.org/obo/NCIT_C2128
+category:Aeromonas;????;https://int.who/EIOS_category/Aeromonas;;Aeromonas;http://purl.obolibrary.org/obo/NCBITaxon_642
+category:Pediococcus;Pediococcus;https://int.who/EIOS_category/Pediococcus;;Pediococcus;http://purl.obolibrary.org/obo/NCBITaxon_1253
+category:Bacillus_cereus;food;https://int.who/EIOS_category/Bacillus_cereus;;;http://snomed.info/id/19894004
+category:TradeRestrictionsRVF;vaccine;https://int.who/EIOS_category/TradeRestrictionsRVF;preventive measure;trade restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#trade_restriction
+category:AfricanHorseSickness;African Horse Sickness;https://int.who/EIOS_category/AfricanHorseSickness;;;http://purl.obolibrary.org/obo/MONDO_0025376
+category:SeoulVirus;Seoul virus;https://int.who/EIOS_category/SeoulVirus;;SeoulVirus;http://purl.obolibrary.org/obo/NCBITaxon_1980929
+category:Lymphogranuloma;Lymphogranuloma venereum;https://int.who/EIOS_category/Lymphogranuloma;;;http://purl.obolibrary.org/obo/GSSO_011374
+category:Dracunculus;Guinea Worm;https://int.who/EIOS_category/Dracunculus;;Dracunculus;http://purl.obolibrary.org/obo/NCBITaxon_318478
+category:Ascaris;helminthic infection;https://int.who/EIOS_category/Ascaris;foodborne illness;Ascaris;http://purl.obolibrary.org/obo/NCBITaxon_6251
+category:Cryptococcosis;Cryptococcosis;https://int.who/EIOS_category/Cryptococcosis;;;http://purl.obolibrary.org/obo/DOID_1733
+category:Rhinotracheitis;????;https://int.who/EIOS_category/Rhinotracheitis;;;http://purl.obolibrary.org/obo/MONDO_0025089
+category:VXagent;VX nerve;https://int.who/EIOS_category/VXagent;chemical;V-series nerve agent VX;http://purl.obolibrary.org/obo/NCIT_C161531
+category:Vagents;nerve agent;https://int.who/EIOS_category/Vagents;chemical;V-series nerve agents;https://bio.scai.fraunhofer.de/ontology/chemical#v-series_nerve_agent
+category:TilapiaLakeVirus;Emerging Diseases;https://int.who/EIOS_category/TilapiaLakeVirus;NCBITaxon;Tilapia lake virus;NCBITaxon_1549864
+category:TravelRestrictionsRVF;epidemic;https://int.who/EIOS_category/TravelRestrictionsRVF;preventive measure;travel restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#travel_restriction
+category:Chlorobenzylidenemalononitrile;CS gas;https://int.who/EIOS_category/Chlorobenzylidenemalononitrile;chemical;;https://bio.scai.fraunhofer.de/ontology/chemical#2-chlorobenzylidenemalononitrile
+category:Paratuberculosis;Paratuberculosis;https://int.who/EIOS_category/Paratuberculosis;;;http://purl.obolibrary.org/obo/MONDO_0025449
+category:H7N3;H7N3;https://int.who/EIOS_category/H7N3;NCBITaxon;H7N3 subtype;http://purl.obolibrary.org/obo/NCBITaxon_119215
+category:TradeRestrictionsNipah;outbreak;https://int.who/EIOS_category/TradeRestrictionsNipah;preventive measure;trade restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#trade_restriction
+category:Enterobiasis;??????????;https://int.who/EIOS_category/Enterobiasis;;;http://purl.obolibrary.org/obo/MONDO_0043579
+category:Strongyloidiasis;Strongyloidiasis;https://int.who/EIOS_category/Strongyloidiasis;;;http://purl.obolibrary.org/obo/DOID_10955
+category:H7N2;H7N2;https://int.who/EIOS_category/H7N2;NCBITaxon;H7N2 subtype;http://purl.obolibrary.org/obo/NCBITaxon_119214
+category:Scrapie;scrapie;https://int.who/EIOS_category/Scrapie;;;http://purl.obolibrary.org/obo/DOID_5434
+category:Glanders;Burkholderia mallei;https://int.who/EIOS_category/Glanders;;;http://purl.obolibrary.org/obo/DOID_13444
+category:Cyclospora;Cyclospora;https://int.who/EIOS_category/Cyclospora;foodborne illness;cyclospora;http://purl.obolibrary.org/obo/NCBITaxon_44417
+category:FIFA2018-Diseases-WHO;coronavirus;https://int.who/EIOS_category/FIFA2018-Diseases-WHO;mass gathering;FIFA world cup;https://bio.scai.fraunhofer.de/ontology/massgathering#FIFA_World_Cup
+category:Cysticercus;Taenia;https://int.who/EIOS_category/Cysticercus;;;http://purl.obolibrary.org/obo/DOID_10079
+category:HepatitisD;C???;https://int.who/EIOS_category/HepatitisD;;;http://purl.obolibrary.org/obo/DOID_2047
+category:Selenium75;SE 75;https://int.who/EIOS_category/Selenium75;chemical;Selenium75;http://snomed.info/id/43239002
+category:CreutzfeldtJakobDisease;CJD;https://int.who/EIOS_category/CreutzfeldtJakobDisease;;;http://purl.obolibrary.org/obo/DOID_5435
+category:Plutonium239;???????? 239;https://int.who/EIOS_category/Plutonium239;chemical;Plutonium239;http://purl.obolibrary.org/obo/NCIT_C29774
+category:Lujo;virus;https://int.who/EIOS_category/Lujo;;Lujo mammarenavirus;http://purl.obolibrary.org/obo/NCBITaxon_649188
+category:Tabun;nerve agents;https://int.who/EIOS_category/Tabun;chemical;Tabun nerve agent;http://snomed.info/id/363648006
+category:BovineBabesiosis;Bovine Babesiosis;https://int.who/EIOS_category/BovineBabesiosis;;;https://bio.scai.fraunhofer.de/ontology/disease#bovine_babesiosis
+category:Taenia;Taenia;https://int.who/EIOS_category/Taenia;;;http://purl.obolibrary.org/obo/DOID_0050596
+category:Myxomatosis;myxomatosis;https://int.who/EIOS_category/Myxomatosis;;;http://purl.obolibrary.org/obo/MONDO_0005811
+category:VinylChloride;Vinyl chloride;https://int.who/EIOS_category/VinylChloride;chemical;VinylChloride;http://purl.obolibrary.org/obo/OMIT_0015583
+category:Kluyvera;Kluyvera;https://int.who/EIOS_category/Kluyvera;;Kluyvera;http://purl.obolibrary.org/obo/NCBITaxon_579
+category:H10N8;H10N8;https://int.who/EIOS_category/H10N8;NCBITaxon;H10N8 subtype;http://purl.obolibrary.org/obo/NCBITaxon_286285
+category:Sapovirus;sapovirus;https://int.who/EIOS_category/Sapovirus;;Sapovirus;http://purl.obolibrary.org/obo/NCBITaxon_95341
+category:SindbisVirus;Sindbis Virus;https://int.who/EIOS_category/SindbisVirus;NCBITaxon;Sindbis virus;NCBITaxon_11034
+category:Orthopoxvirus;orthopoxvirus;https://int.who/EIOS_category/Orthopoxvirus;;Orthopoxvirus;http://purl.obolibrary.org/obo/NCBITaxon_10242
+category:Anisakis;Anisakis;https://int.who/EIOS_category/Anisakis;;Anisakis;http://purl.obolibrary.org/obo/NCBITaxon_6268
+category:Conflict-Old;war;https://int.who/EIOS_category/Conflict-Old;disaster;Conflict;http://snomed.info/id/15863006
+category:Spirometra;Spirometra;https://int.who/EIOS_category/Spirometra;NCBITaxon;Spirometra;NCBITaxon_46580
+category:Cronobacter;Cronobacter;https://int.who/EIOS_category/Cronobacter;;Cronobacter;http://purl.obolibrary.org/obo/NCBITaxon_413496
+category:H2N2;H2N2;https://int.who/EIOS_category/H2N2;NCBITaxon;H2N2 subtype;http://purl.obolibrary.org/obo/NCBITaxon_114729
+category:RadioactivityFood;?????;https://int.who/EIOS_category/RadioactivityFood;foodborne illness;radioactive food;https://bio.scai.fraunhofer.de/ontology/foodborneillness#radioactive_food
+category:Erysipelothrix;Erysipelothrix;https://int.who/EIOS_category/Erysipelothrix;NCBITaxon;Erysipelothrix;NCBITaxon_1647
+category:HepatitisD-WHO;Epatite D;https://int.who/EIOS_category/HepatitisD-WHO;;;http://purl.obolibrary.org/obo/DOID_2047
+category:SheepPoxandGoatPox;Sheeppox;https://int.who/EIOS_category/SheepPoxandGoatPox;;;https://bio.scai.fraunhofer.de/ontology/disease#sheep_pox
+category:TravelRestrictionsNipah;Nipah virus;https://int.who/EIOS_category/TravelRestrictionsNipah;preventive measure;travel restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#travel_restriction
+category:Novichok;Novichock;https://int.who/EIOS_category/Novichok;chemical;Novichok;https://bio.scai.fraunhofer.de/ontology/chemical#novichok
+category:Yaws;Yaws;https://int.who/EIOS_category/Yaws;;;http://purl.obolibrary.org/obo/DOID_10371
+category:RossRiverVirus;Ross River virus;https://int.who/EIOS_category/RossRiverVirus;NCBITaxon;Ross River virus;NCBITaxon_11029
+category:H6N1;H6N1;https://int.who/EIOS_category/H6N1;NCBITaxon;H6N1 subtype;http://purl.obolibrary.org/obo/NCBITaxon_119212
+category:Dientamoeba;Dientamoeba;https://int.who/EIOS_category/Dientamoeba;;Dientamoeba;http://purl.obolibrary.org/obo/NCBITaxon_43351
+category:BacterialMeningitis;??????????????????;https://int.who/EIOS_category/BacterialMeningitis;;;http://purl.obolibrary.org/obo/DOID_9470
+category:TravelRestrictionsMeasles;cases;https://int.who/EIOS_category/TravelRestrictionsMeasles;preventive measure;travel restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#travel_restriction
+category:TradeRestrictionsMeasles;trade;https://int.who/EIOS_category/TradeRestrictionsMeasles;preventive measure;trade restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#trade_restriction
+category:AkabaneVirus;Akabane virus;https://int.who/EIOS_category/AkabaneVirus;;AkabaneVirus;http://purl.obolibrary.org/obo/NCBITaxon_70566
+category:H1N2;a H1N2;https://int.who/EIOS_category/H1N2;NCBITaxon;H1N2 subtype;http://purl.obolibrary.org/obo/NCBITaxon_114728
+category:Iridium192;iridio-192;https://int.who/EIOS_category/Iridium192;;Iridium Ir 192;http://purl.obolibrary.org/obo/NCIT_C104270
+category:Nanofood;colloidal silver;https://int.who/EIOS_category/Nanofood;foodborne illness;;https://bio.scai.fraunhofer.de/ontology/foodborneillness#nano_food
+category:Methylisocyanate;methyl isocyanate;https://int.who/EIOS_category/Methylisocyanate;chemical;Methyl isocyanate;http://purl.obolibrary.org/obo/CHEBI_59059
+category:Theileriosis;East Coast fever;https://int.who/EIOS_category/Theileriosis;;;http://purl.obolibrary.org/obo/DOID_3733
+category:Dicrocoelium;Dicrocoelium;https://int.who/EIOS_category/Dicrocoelium;NCBITaxon;Dicrocoelium;NCBITaxon_57077
+category:OxyElite;OxyElite;https://int.who/EIOS_category/OxyElite;foodborne illness;Oxyelite pro;https://bio.scai.fraunhofer.de/ontology/foodborneillness#OxyELITE_Pro
+category:CaprineArthritisEncephalitis;caprine arthritis-encephalitis;https://int.who/EIOS_category/CaprineArthritisEncephalitis;;;https://bio.scai.fraunhofer.de/ontology/disease#caprine_arthritis_encephalitis
+category:Cyclosarin;cyclosarin;https://int.who/EIOS_category/Cyclosarin;chemical;Cyclosarin - nerve agent (substance);http://snomed.info/id/363649003
+category:Rabbithaemorrhagicdisease;lagomorphs;https://int.who/EIOS_category/Rabbithaemorrhagicdisease;;;https://bio.scai.fraunhofer.de/ontology/disease#rabbit_haemorrhagic_disease
+category:H3N2v;H3N2v;https://int.who/EIOS_category/H3N2v;NCBITaxon;H3N2 subtype;http://purl.obolibrary.org/obo/NCBITaxon_119210
+category:Equineinfluenza;ANIMAL;https://int.who/EIOS_category/Equineinfluenza;;Equine influenza virus H3N8;http://purl.obolibrary.org/obo/NCBITaxon_31660
+category:Gnathostoma;Gnathostoma;https://int.who/EIOS_category/Gnathostoma;;Gnathostoma;http://purl.obolibrary.org/obo/NCBITaxon_61463
+category:HaemophilusDucreyi;Haemophilus ducreyi;https://int.who/EIOS_category/HaemophilusDucreyi;;[Haemophilus] ducreyi;http://purl.obolibrary.org/obo/NCBITaxon_730
+category:Maedi-visna;maedi;https://int.who/EIOS_category/Maedi-visna;;Visna-maedi virus;http://purl.obolibrary.org/obo/NCBITaxon_2169971
+category:Phosphorus32;Phosphorus 32;https://int.who/EIOS_category/Phosphorus32;chemical;Phosphorus-32;http://snomed.info/id/32505007
+category:TravelRestrictionsNovelCoronavirus;travelers;https://int.who/EIOS_category/TravelRestrictionsNovelCoronavirus;preventive measure;travel restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#travel_restriction
+category:TradeRestrictionsNovelCoronavirus;trade;https://int.who/EIOS_category/TradeRestrictionsNovelCoronavirus;preventive measure;trade restriction;https://bio.scai.fraunhofer.de/ontology/preventivemeasures#trade_restriction
+category:Coronavirus20200129;Coronavírus;https://int.who/EIOS_category/Coronavirus20200129;who_disease;SARS CoV;http://purl.obolibrary.org/obo/DOID_2945
+category:Agent15;agent 15;https://int.who/EIOS_category/Agent15;chemical;Quinuclidinyl Benzilate;http://purl.obolibrary.org/obo/OMIT_0012747
+category:BZagent;Bz Agent;https://int.who/EIOS_category/BZagent;chemical;Quinuclidinyl Benzilate;http://purl.obolibrary.org/obo/OMIT_0012747
+category:MurrayValleyEncephalitisVirus;Murray Valley encephalitis;https://int.who/EIOS_category/MurrayValleyEncephalitisVirus;NCBITaxon;Murray Valley encephalitis virus;NCBITaxon_11079
+category:BarmahForestVirus;Barmah Forest virus;https://int.who/EIOS_category/BarmahForestVirus;;Barmah Forest virus;http://purl.obolibrary.org/obo/NCBITaxon_11020
+category:Molybdenum99;molybdenum-99;https://int.who/EIOS_category/Molybdenum99;chemical;Molybdenum-99;http://snomed.info/id/48861002
+category:ContagiousAgalactia;Agalactia;https://int.who/EIOS_category/ContagiousAgalactia;;;https://bio.scai.fraunhofer.de/ontology/disease#contagious_agalactia
+category:H7N4;A(H7N4;https://int.who/EIOS_category/H7N4;NCBITaxon;H7N4 subtype;http://purl.obolibrary.org/obo/NCBITaxon_325678
+category:LoupingIll;Louping ill;https://int.who/EIOS_category/LoupingIll;;;http://purl.obolibrary.org/obo/DOID_10250
+category:Gathering;Federation;https://int.who/EIOS_category/Gathering;mass gathering;human social gathering activity;http://purl.obolibrary.org/obo/PCO_0000033
+category:PullorumDisease;Pullorum;https://int.who/EIOS_category/PullorumDisease;;;https://bio.scai.fraunhofer.de/ontology/disease#pullorum_disease
+category:KunjinVirus;Kunjin Virus;https://int.who/EIOS_category/KunjinVirus;;Kunjin virus;http://purl.obolibrary.org/obo/NCBITaxon_11077
+category:Bromobenzylcyanide;????????;https://int.who/EIOS_category/Bromobenzylcyanide;chemical;bromobenzyl cyanide;https://bio.scai.fraunhofer.de/ontology/chemical#bromobenzyl_cyanide
+category:Camelpox;virus;https://int.who/EIOS_category/Camelpox;NCBITaxon;Camelpox virus;NCBITaxon_28873
+category:Adamsite;adamsyt;https://int.who/EIOS_category/Adamsite;chemical;adamsite;http://snomed.info/id/50914008
+category:Strontium90;Sr. 90;https://int.who/EIOS_category/Strontium90;chemical;;http://snomed.info/id/14071002
+category:HealthSystemCapacity;collapse;https://int.who/EIOS_category/HealthSystemCapacity;health system;health system capacity;https://bio.scai.fraunhofer.de/ontology/healthsystem#health_system_capacity
+category:OropoucheFever;Oropouche fever;https://int.who/EIOS_category/OropoucheFever;;;http://purl.obolibrary.org/obo/DOID_0050521
+category:HealthSystemCapacityCoronavirus;coronavirus;https://int.who/EIOS_category/HealthSystemCapacityCoronavirus;health system;health system capacity;https://bio.scai.fraunhofer.de/ontology/healthsystem#health_system_capacity
+category:Disabilities;maison de retraite;https://int.who/EIOS_category/Disabilities;outcomes;disability;http://purl.obolibrary.org/obo/NCIT_C21007
+category:Glaucoma;glaucoma;https://int.who/EIOS_category/Glaucoma;;;http://purl.obolibrary.org/obo/DOID_1686
+category:TestingCapacityCoronavirus;covid-19;https://int.who/EIOS_category/TestingCapacityCoronavirus;health system;testing capacity;https://bio.scai.fraunhofer.de/ontology/healthsystem#testing_capacity
+category:PogostaDisease;Pogostantauti;https://int.who/EIOS_category/PogostaDisease;;;https://bio.scai.fraunhofer.de/ontology/disease#pogosta_disease
+category:Floods;???????;https://int.who/EIOS_category/Floods;disaster;floods;http://purl.obolibrary.org/obo/ENVO_01000710
+category:TestingCapacity;testing;https://int.who/EIOS_category/TestingCapacity;health system;testing capacity;https://bio.scai.fraunhofer.de/ontology/healthsystem#testing_capacity

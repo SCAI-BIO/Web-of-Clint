@@ -277,6 +277,7 @@ import okhttp3.Response;
         List<Document> documents = new ArrayList<Document>();
 
         Map<String, String> mappings = DocumentBuilder.parsingMappings();
+        Map<String, String> prefixes = RDFUtils.inversePrefixMap(RDFUtils.parsingPrefixes());
 
         byte[] data;
         ZipEntry e;                   
@@ -288,11 +289,19 @@ import okhttp3.Response;
 
             int j=0;
             for(Hit eiositem : result.getHits().getHits()) {
-                DocumentBuilder db = new DocumentBuilder(eiositem.getSource(), ++i, mappings);
+                DocumentBuilder db = new DocumentBuilder(eiositem.getSource(), ++i, mappings, prefixes);
 
                 try {
                     if(db.getDocumentOrig() != null) {
-                        e = new ZipEntry(eiositem.getId() + "_" + eiositem.getSource().getLanguageCode() + ".json");
+                        String language = "und";    // undefined
+                        
+                        if (eiositem.getSource() != null 
+                                && eiositem.getSource().getLanguageCode() != null
+                                && !eiositem.getSource().getLanguageCode().isEmpty()) {
+                            language = eiositem.getSource().getLanguageCode();
+                        }
+                            
+                        e = new ZipEntry(eiositem.getId() + "_" + language + ".json");
                         out.putNextEntry(e);
                         data = db.writeToJSON(db.getDocumentOrig()).getBytes();
                         out.write(data, 0, data.length);

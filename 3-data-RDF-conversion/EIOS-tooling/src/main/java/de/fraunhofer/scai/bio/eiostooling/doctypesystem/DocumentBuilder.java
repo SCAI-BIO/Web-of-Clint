@@ -91,24 +91,24 @@ import lombok.extern.slf4j.Slf4j;
     private List<TextElement> textElements;
 
     public DocumentBuilder(Item item, int i) {
-        
-        this(item, i, parsingMappings());
+
+        this(item, i, parsingMappings(), RDFUtils.inversePrefixMap(RDFUtils.parsingPrefixes()) );
     }
-    
+
     /**
      * @param item
      */
-    public DocumentBuilder(Item item, int i, Map<String, String> mappings) {
-        
+    public DocumentBuilder(Item item, int i, Map<String, String> mappings, Map<String, String> prefixes) {
+
         textElements = new ArrayList<TextElement>();
 
         builder = new de.fraunhofer.scai.bio.util.DocumentBuilder();
 
         log.debug(" >> working on {} - {}", i, item.getId());
-        documentOrig = createDocument(item, false, mappings);
+        documentOrig = createDocument(item, false, mappings, prefixes);
 
         if(!item.getTranslatedTitle().isEmpty()) {
-            documentTranslated = createDocument(item, true, mappings);            
+            documentTranslated = createDocument(item, true, mappings, prefixes);            
         }
 
         log.debug(" >> done.");
@@ -120,7 +120,7 @@ import lombok.extern.slf4j.Slf4j;
      * @param mappings 
      * @return
      */
-    private Document createDocument(Item item, boolean translated, Map<String, String> mappings) {
+    private Document createDocument(Item item, boolean translated, Map<String, String> mappings, Map<String, String> prefixes) {
         Document document = new Document();
         document.setOriginalMimeType("Application/JSON");
         builder.setSource(document, WHO);
@@ -141,17 +141,17 @@ import lombok.extern.slf4j.Slf4j;
             ZonedDateTime  date = ZonedDateTime.parse(item.getPubDate());  //2023-01-02T15:40:00Z
             builder.setPublicationDate(document,date.getDayOfMonth(), date.getMonthValue(), date.getYear());
         } catch (Exception ex) {
-            
+
         }
-        
+
         LocalDate pdate = null;
-        
+
         try {
             pdate = ZonedDateTime.parse(item.getPubDate()).toLocalDate();  //2023-01-02T15:40:00Z
         } catch (Exception ex) {
-            
+
         }
-        
+
         ArrayList<Author> authors= new ArrayList<Author>();
         authors.add(builder.createAuthor(null, item.getSource().getName()));
 
@@ -195,12 +195,12 @@ import lombok.extern.slf4j.Slf4j;
         }
 
         createKeywords(item, meta);
-        createAnnotations(item, body, front, mappings);
+        createAnnotations(item, body, front, mappings, prefixes);
 
         return document;
     }
 
-    private void createAnnotations(Item item, BodyMatter body, FrontMatter front, Map<String, String> mappings) {
+    private void createAnnotations(Item item, BodyMatter body, FrontMatter front, Map<String, String> mappings, Map<String, String> prefixes) {
         textElements.add(front.getTitleText());
         gatherTextElements(front.getDocumentAbstract().getAbstractSections());
         if(body.getChapters()!= null) {
@@ -211,15 +211,15 @@ import lombok.extern.slf4j.Slf4j;
         gatherTextElements(body.getSections()); 
 
         // create trigger annotations
-        if(item.getTriggers() != null) {
+        if(item.getTriggers() != null && !item.getTriggers().isEmpty()) {
             for(Trigger trigger : item.getTriggers()) {
                 if(trigger.getKey().startsWith("l:")) {
                     log.debug(" >> trigger {}: {}", trigger.getKey(), trigger.getValues());
                     for(String text : trigger.getValues()) {
-                        
+
                         String identifier = trigger.getKey().substring(2);
                         String type = TAGS;
-                        
+
                         if(mappings.containsKey(identifier)) {
                             String curie = mappings.get(identifier);  //  PCO:0000033
                             String[] parts = curie.split(":");
@@ -232,16 +232,48 @@ import lombok.extern.slf4j.Slf4j;
                                 identifier = identifier.substring(1);
                             }
                         }
-                        
+
                         mapAnnotation(
                                 RDFUtils.WHO_URL+RDFUtils.DOCUMENT+item.getId(), textElements, identifier, text, type, item.getLanguageCode()
                                 );
                     }
                 }
             }
+        } 
+        
+        {    // get the information from the tags itself
+
+            if(item.getTags() != null && !item.getTags().isEmpty()) {
+                
+                TextElement elem = front.getTitleText();                
+                int len = elem.getText().length();
+
+                for(String tag : item.getTags()) {
+                    if(tag != null && tag.startsWith("l:")) {
+                        String identifier = tag.substring(2);
+                        String type = TAGS;
+
+                        if(mappings.containsKey(identifier)) {
+                            String uri = RDFUtils.guessUri(mappings.get(identifier));  
+                            
+                            
+                        //  PCO:0000033
+                            if(uri != null && prefixes.get(uri) != null) {
+                                type = prefixes.get(uri);
+                                identifier = mappings.get(identifier).substring(uri.length());
+                            }                            
+                        }
+
+                        elem.addAnnotation(
+                                createAnnotation(RDFUtils.WHO_URL+RDFUtils.DOCUMENT+item.getId(), identifier, 0, len, type, item.getLanguageCode())
+                                );
+                    }
+                }
+            }
+
         }
 
-        if(item.getLocations() != null) {
+        if(item.getLocations() != null && !item.getLocations().isEmpty()) {
             for(Location loc : item.getLocations()) {
                 if(!loc.getTrigger().isEmpty() && loc.getArea() != null && !loc.getArea().getId().isEmpty()) {
                     log.debug(" >> location {}: {}", loc.getTrigger(), loc.getArea().getId());
@@ -249,6 +281,19 @@ import lombok.extern.slf4j.Slf4j;
                             RDFUtils.WHO_URL+RDFUtils.DOCUMENT+item.getId(), textElements, loc.getArea().getId().substring(9)+"/", loc.getTrigger(), LOCATION, item.getLanguageCode()
                             );                
                 }
+            }
+        } else {  // get the information from the affected countries itself
+            if(item.getAffectedCountriesIso() != null && !item.getAffectedCountriesIso().isEmpty()) {
+                TextElement elem = front.getTitleText();
+                int len = elem.getText().length();
+                
+                for(String country : item.getAffectedCountriesIso()) {
+               
+                    elem.addAnnotation(
+                        createAnnotation(RDFUtils.WHO_URL+RDFUtils.DOCUMENT+item.getId(), "countries/"+country+"/", 0, len, LOCATION, item.getLanguageCode())
+                        );
+                }
+
             }
         }
 
@@ -474,17 +519,17 @@ import lombok.extern.slf4j.Slf4j;
         try {
             log.debug(" >>> parsing EIOS mappings...");
 
-            InputStream in = new ClassPathResource("curie.csv").getInputStream();
+            InputStream in = new ClassPathResource("EIOS_categories_in_Neo4jdb_mappings.csv").getInputStream();
 
             try {
-                CSVParser parser = CSVParser.parse(in, Charset.forName("UTF-8"), CSVFormat.DEFAULT.withAllowMissingColumnNames());
-                
+                CSVParser parser = CSVParser.parse(in, Charset.forName("UTF-8"), CSVFormat.DEFAULT.withAllowMissingColumnNames().withDelimiter(';'));
+
                 log.debug("{}", parser.getHeaderNames());
-                
+
                 parser.forEach(record -> {
-                    if(record.isConsistent() && record.size() == 5) {
-                        if(!record.get(1).isEmpty() && !record.get(4).isEmpty()) {
-                            mappings.put(record.get(1), record.get(4));
+                    if(record.isConsistent() && record.size() == 6) {
+                        if(!record.get(0).isEmpty() && !record.get(5).isEmpty()) {
+                            mappings.put(record.get(0).substring(9), record.get(5));
                         }
                     } else {
                         log.error("invalid record: {}", record.toString());
@@ -496,13 +541,13 @@ import lombok.extern.slf4j.Slf4j;
             }
 
             in.close();
-            
+
             log.debug(" >>> got {} mappings.", mappings.size());
         } catch (IOException e) {
             log.error(e.getLocalizedMessage());
             log.debug(e.getLocalizedMessage(), e);
         }
-        
+
         return mappings;
     }
 
